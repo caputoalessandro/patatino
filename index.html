@@ -3095,6 +3095,38 @@ const PALETTES = [
 ];
 function applyPalette(){ try{ document.documentElement.setAttribute("data-palette", S.palette || "frietkot"); }catch(e){} }
 
+/* ---------- navigazione: il gesto "indietro" del telefono segue le schermate ---------- */
+// profondità: percorso 0 · unità e impostazioni 1 · esercizi e risultati 2
+const DEPTH = {home:0, settings:1, lesson:1, quiz:2, res:2};
+let curDepth = 0, fromPop = false, skipPop = null;
+function screen(st){
+  if(fromPop) return;                       // la schermata arriva dal gesto: la cronologia è già giusta
+  const d = DEPTH[st.s];
+  try{
+    if(d > curDepth) history.pushState(st, "");
+    else if(d === curDepth) history.replaceState(st, "");
+    else { skipPop = st; history.go(d - curDepth); }   // si torna indietro: allinea la cronologia
+  }catch(e){}
+  curDepth = d;
+}
+function showState(st){
+  st = st || {s:"home"};
+  if(st.s === "lesson" && unitById(st.id)) lesson(st.id);
+  else if(st.s === "settings") settings();
+  else if((st.s === "quiz" || st.s === "res") && st.unit && unitById(st.unit)) lesson(st.unit);
+  else home();
+}
+window.addEventListener("popstate", (e) => {
+  if(skipPop){ const st = skipPop; skipPop = null; try{ history.replaceState(st, ""); }catch(err){} return; }
+  try{ if(TTS) TTS.cancel(); }catch(err){}
+  let st = e.state || {s:"home"};
+  if(st.s === "quiz" || st.s === "res") st = {s:"lesson", id:st.unit};   // un esercizio lasciato non si riprende a metà
+  fromPop = true;
+  try{ showState(st); } finally { fromPop = false; }
+  curDepth = DEPTH[st.s] || 0;
+  if(st !== e.state){ try{ history.replaceState(st, ""); }catch(err){} }
+});
+
 /* ---------- HOME ---------- */
 const GROUPS = [
   {t:"Le basi", s:"Pronomi, presente, articoli, numeri", u:["u1","u2","u3","u4","u5"]},
@@ -3139,6 +3171,7 @@ function partSub(u, n){
 }
 
 function home(){
+  screen({s:"home"});
   const nu = nextUnit(); const ni = unitIndex(nu.id);
   if(!openGroups) openGroups = new Set([Math.max(0, GROUPS.findIndex(g => g.u.includes(nu.id)))]);
   const started = Object.keys(S.best).length + Object.keys(S.vbest).length > 0;
@@ -3218,6 +3251,7 @@ function home(){
 /* ---------- IMPOSTAZIONI ---------- */
 const SAMPLE = "Goedemorgen! Ik woon in Gent en ik leer Nederlands.";
 function settings(){
+  screen({s:"settings"});
   const vs = nlVoices();
   const cur = phoneVoice();
   const pal = S.palette || "frietkot";
@@ -3272,6 +3306,7 @@ function wordGrid(list){
   return `<div class="vocab">${list.map(([nl, it]) => `<button class="vw" data-say="${esc(nl.split("/")[0].trim())}"><span class="ico">${ICON.sound}</span><span class="w"><b>${esc(nl)}</b><span class="m">${esc(it)}</span></span></button>`).join("")}</div>`;
 }
 function lesson(id){
+  screen({s:"lesson", id});
   const u = unitById(id), i = unitIndex(id);
   const sc = PARTS.map(p => partScore(id, p.n)), np = nextPart(id);
   const v = $(`<div class="pop">
@@ -3339,6 +3374,7 @@ function grammarPicks(uid){
   return intro.concat(drills, mixed);   // prima la regola, poi le frasi che uniscono tutto
 }
 function begin(mode, unit, list, block){
+  screen({s:"quiz", unit});
   R = {mode, unit, block, queue:list, pos:0, total:list.filter(c => !c.intro).length, first:0, xp:0};
   renderItem();
 }
@@ -3579,6 +3615,7 @@ function advance(){
 }
 
 function finish(){
+  screen({s:"res", unit:R.unit});
   const pct = Math.round(R.first / R.total * 100);
   if(R.mode === "unit") S.best[R.unit] = Math.max(S.best[R.unit] || 0, pct);
   if(R.mode === "vocab"){
@@ -3633,6 +3670,7 @@ document.addEventListener("keydown", e => {
 });
 
 applyPalette();
+try{ history.replaceState({s:"home"}, ""); }catch(e){}
 window.__goesting = { get session(){ return R; } };  // usato solo dai test
 home();
 })();
