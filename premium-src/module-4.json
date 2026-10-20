@@ -1,0 +1,2796 @@
+{
+ "app": "patatino",
+ "module": 4,
+ "version": 1,
+ "title": "Agire e raccontare",
+ "units": [
+  {
+   "id": "u16",
+   "nl": "Bijwoorden",
+   "it": "Gli avverbi",
+   "note": "\n<h3>L'idea</h3>\n<p>In italiano un avverbio si forma spesso aggiungendo <i>-mente</i> all'aggettivo: lento → lentamente. In olandese è molto più semplice: si usa <b>l'aggettivo così com'è</b>, senza nessuna desinenza. <i>Hij rijdt langzaam</i> = lui guida lentamente. <i>Ze zingt goed</i> = lei canta bene. Lo stesso <b>goed</b> vale quindi per \"buono\" e per \"bene\".</p>\n<h3>Aggettivo o avverbio?</h3>\n<p>Nell'unità sugli aggettivi hai visto che davanti a un nome l'aggettivo prende spesso una <b>-e</b>: <i>een goede kok</i>. Quando invece descrive <b>come si fa</b> un'azione, l'aggettivo non prende mai la -e:</p>\n<table><tr><th>aggettivo (davanti al nome)</th><th>avverbio (con il verbo)</th></tr>\n<tr><td>een snelle fiets</td><td>Ze fietst snel.</td></tr>\n<tr><td>een langzame bus</td><td>De bus rijdt langzaam.</td></tr>\n<tr><td>een goede kok</td><td>Hij kookt goed.</td></tr></table>\n<h3>Gli avverbi più comuni</h3>\n<table><tr><th>frequenza</th><th>tempo</th><th>altri</th></tr>\n<tr><td><b>altijd</b> sempre</td><td><b>nu</b> ora</td><td><b>ook</b> anche</td></tr>\n<tr><td><b>vaak</b> spesso</td><td><b>al</b> già</td><td><b>graag</b> volentieri</td></tr>\n<tr><td><b>soms</b> a volte</td><td><b>nog</b> ancora</td><td><b>hier</b> qui</td></tr>\n<tr><td><b>nooit</b> mai</td><td><b>vroeg / laat</b> presto / tardi</td><td><b>daar</b> lì, là</td></tr></table>\n<h3>Dove si mettono</h3>\n<p>Di solito l'avverbio va <b>subito dopo il verbo coniugato</b> (e dopo il soggetto, se c'è inversione): <i>Ik drink <b>altijd</b> thee</i>. <i>Morgen werk ik <b>ook</b></i>. Un pronome oggetto viene prima dell'avverbio: <i>Ik zie hem vaak</i>.</p>\n<p>Con un modale l'avverbio resta nel mezzo e l'infinito va in fondo: <i>Ik moet <b>vaak</b> laat werken</i>.</p>\n<p>Puoi anche mettere l'avverbio al <b>primo posto</b>: allora scatta l'inversione (unità 10). <i><b>Soms</b> werk ik thuis</i>, mai <s>Soms ik werk</s>.</p>\n<h3>Graag: \"mi piace\"</h3>\n<p>Per dire che ti piace <b>fare</b> qualcosa, l'olandese non usa un verbo come \"piacere\": aggiunge <b>graag</b> al verbo. <i>Ik zwem graag</i> = mi piace nuotare (alla lettera: nuoto volentieri). <i>Ik eet graag frieten</i> = mi piace mangiare le patatine. Il contrario è <b>niet graag</b>: <i>Ik kook niet graag</i>.</p>\n<h3>Al e nog</h3>\n<p><b>al</b> = già: <i>Ben je al klaar?</i> (hai già finito?). Con un periodo di tempo traduce il nostro \"da\": <i>Ik woon al drie jaar in Gent</i> = abito a Gand da tre anni. <b>nog</b> = ancora: <i>Ben je nog moe?</i>. Attenzione all'ordine: \"non ancora\" è <b>nog niet</b>.</p>\n<h3>Ook</h3>\n<p><b>ook</b> = anche. Va dopo il verbo: <i>Ik spreek ook Frans</i>. Per rispondere \"anch'io\" si dice <b>Ik ook</b>.</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Aggiungere la -e all'avverbio: <s>Hij kookt goede</s> → <b>Hij kookt goed</b>.</li>\n<li>Mettere l'avverbio prima del verbo: <s>Ik altijd drink thee</s> → <b>Ik drink altijd thee</b>.</li>\n<li>Dimenticare l'inversione: <s>Soms ik werk thuis</s> → <b>Soms werk ik thuis</b>.</li>\n<li>Invertire \"non ancora\": <s>niet nog</s> → <b>nog niet</b>.</li>\n</ul>",
+   "vlaams": "Nel parlato fiammingo senti spesso <b>seffens</b> (subito, tra poco): \"Tot seffens!\" = a dopo! Nello standard si dice <i>straks</i> o <i>zo meteen</i>. Un'altra parola tipica è <b>efkes</b> (un attimo): \"Wacht efkes\".",
+   "vocab": [
+    [
+     "langzaam",
+     "lento, lentamente"
+    ],
+    [
+     "snel",
+     "veloce, velocemente"
+    ],
+    [
+     "goed",
+     "buono, bene"
+    ],
+    [
+     "slecht",
+     "cattivo, male"
+    ],
+    [
+     "vroeg",
+     "presto"
+    ],
+    [
+     "laat",
+     "tardi"
+    ],
+    [
+     "nu",
+     "ora, adesso"
+    ],
+    [
+     "klaar",
+     "pronto, finito"
+    ],
+    [
+     "zingen",
+     "cantare"
+    ],
+    [
+     "rijden",
+     "guidare, andare (con un veicolo)"
+    ],
+    [
+     "fietsen",
+     "andare in bici"
+    ],
+    [
+     "de thee",
+     "il tè"
+    ],
+    [
+     "het ontbijt",
+     "la colazione"
+    ],
+    [
+     "de bus",
+     "l'autobus"
+    ],
+    [
+     "de kok",
+     "il cuoco"
+    ]
+   ],
+   "core": {
+    "words": [
+     [
+      "altijd",
+      "sempre"
+     ],
+     [
+      "vaak",
+      "spesso"
+     ],
+     [
+      "soms",
+      "a volte"
+     ],
+     [
+      "nooit",
+      "mai"
+     ],
+     [
+      "al",
+      "già"
+     ],
+     [
+      "nog",
+      "ancora"
+     ],
+     [
+      "ook",
+      "anche"
+     ],
+     [
+      "graag",
+      "volentieri (mi piace)"
+     ]
+    ],
+    "drills": [
+     {
+      "t": "mc",
+      "q": "Hij zingt ___. (bene)",
+      "o": [
+       "goed",
+       "goede",
+       "goeds",
+       "goedmente"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "L'avverbio è l'aggettivo senza desinenza: <b>goed</b>.",
+      "g": {
+       "goed": "bene (avverbio)",
+       "goede": "buono/a: la -e solo davanti a un nome",
+       "goeds": "forma sbagliata qui",
+       "goedmente": "forma che non esiste: niente -mente in olandese"
+      },
+      "tt": "Lui canta bene."
+     },
+     {
+      "t": "mc",
+      "q": "lentamente",
+      "o": [
+       "langzaam",
+       "langzame",
+       "langzaamlijk",
+       "langzamer"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Aggettivo senza -e: <b>langzaam</b>.",
+      "g": {
+       "langzaam": "lentamente",
+       "langzame": "lento/a, solo davanti a un nome",
+       "langzaamlijk": "forma che non esiste",
+       "langzamer": "più lentamente (comparativo)"
+      },
+      "tt": "lentamente"
+     },
+     {
+      "t": "mc",
+      "q": "mai",
+      "o": [
+       "nooit",
+       "altijd",
+       "soms",
+       "vaak"
+      ],
+      "a": 0,
+      "e": "<b>nooit</b> = mai.",
+      "g": {
+       "nooit": "mai",
+       "altijd": "sempre",
+       "soms": "a volte",
+       "vaak": "spesso"
+      }
+     },
+     {
+      "t": "mc",
+      "q": "a volte",
+      "o": [
+       "soms",
+       "ook",
+       "nog",
+       "al"
+      ],
+      "a": 0,
+      "e": "<b>soms</b> = a volte.",
+      "g": {
+       "soms": "a volte",
+       "ook": "anche",
+       "nog": "ancora",
+       "al": "già"
+      }
+     },
+     {
+      "t": "mc",
+      "q": "Quale frase è corretta?",
+      "o": [
+       "Ik drink altijd thee.",
+       "Ik altijd drink thee.",
+       "Altijd ik drink thee.",
+       "Ik drinken altijd thee."
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "L'avverbio va dopo il verbo coniugato: <b>Ik drink altijd thee</b>.",
+      "g": {
+       "Ik drink altijd thee.": "Bevo sempre tè (corretta)",
+       "Ik altijd drink thee.": "l'avverbio non va prima del verbo",
+       "Altijd ik drink thee.": "dopo Altijd serve l'inversione: drink ik",
+       "Ik drinken altijd thee.": "con ik il verbo è drink"
+      },
+      "tt": "Bevo sempre tè."
+     },
+     {
+      "t": "mc",
+      "q": "Soms ___ thuis.",
+      "o": [
+       "werk ik",
+       "ik werk"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Avverbio al primo posto → inversione: <b>Soms werk ik</b>.",
+      "g": {
+       "werk ik": "lavoro (con inversione)",
+       "ik werk": "io lavoro: dopo soms serve l'inversione"
+      },
+      "tt": "A volte lavoro a casa."
+     },
+     {
+      "t": "mc",
+      "q": "già",
+      "o": [
+       "al",
+       "nog",
+       "ook",
+       "nooit"
+      ],
+      "a": 0,
+      "e": "<b>al</b> = già.",
+      "g": {
+       "al": "già",
+       "nog": "ancora",
+       "ook": "anche",
+       "nooit": "mai"
+      }
+     },
+     {
+      "t": "mc",
+      "q": "Sei ancora stanco? → Ben je ___ moe?",
+      "o": [
+       "nog",
+       "al",
+       "ook",
+       "soms"
+      ],
+      "a": 0,
+      "e": "ancora = <b>nog</b>.",
+      "g": {
+       "nog": "ancora",
+       "al": "già",
+       "ook": "anche",
+       "soms": "a volte"
+      },
+      "tt": "Sei ancora stanco?"
+     },
+     {
+      "t": "fill",
+      "q": "Ik zwem ___.",
+      "h": "mi piace",
+      "a": [
+       "graag"
+      ],
+      "e": "<b>graag</b> dopo il verbo = mi piace farlo.",
+      "tt": "Mi piace nuotare."
+     },
+     {
+      "t": "order",
+      "q": "Lui parla anche francese.",
+      "a": "Hij spreekt ook Frans",
+      "alt": [
+       "Frans spreekt hij ook"
+      ],
+      "x": [
+       "spreken",
+       "hem"
+      ],
+      "e": "<b>ook</b> va dopo il verbo coniugato."
+     }
+    ]
+   },
+   "items": [
+    {
+     "t": "mc",
+     "q": "Mijn vader rijdt ___.",
+     "h": "lentamente",
+     "o": [
+      "langzaam",
+      "langzame",
+      "langzaams"
+     ],
+     "a": 0,
+     "oit": true,
+     "e": "Con il verbo l'aggettivo non prende desinenze: <b>langzaam</b>."
+    },
+    {
+     "t": "fill",
+     "q": "Anna fietst ___ naar het station.",
+     "h": "velocemente",
+     "a": [
+      "snel",
+      "vlug"
+     ],
+     "e": "<b>snel</b> (o <i>vlug</i>), senza -e perché descrive l'azione."
+    },
+    {
+     "t": "mc",
+     "q": "Hij komt ___ vroeg.",
+     "h": "sempre",
+     "o": [
+      "altijd",
+      "nooit",
+      "soms",
+      "nog"
+     ],
+     "a": 0,
+     "e": "sempre = <b>altijd</b>."
+    },
+    {
+     "t": "order",
+     "q": "A volte lavoro a casa.",
+     "a": "Soms werk ik thuis",
+     "alt": [
+      "Ik werk soms thuis",
+      "Thuis werk ik soms"
+     ],
+     "x": [
+      "werkt",
+      "mij"
+     ],
+     "e": "Se cominci con <b>soms</b>, il verbo viene subito dopo: Soms <b>werk</b> ik."
+    },
+    {
+     "t": "tr",
+     "q": "Mi piace cantare.",
+     "a": [
+      "Ik zing graag"
+     ],
+     "e": "verbo + <b>graag</b>: Ik zing graag."
+    },
+    {
+     "t": "fill",
+     "q": "Ben je ___ klaar? — Nee, nog niet.",
+     "h": "già",
+     "a": [
+      "al"
+     ],
+     "e": "<b>al</b> = già. La risposta <i>nog niet</i> = non ancora."
+    },
+    {
+     "t": "mc",
+     "q": "Quale frase è corretta?",
+     "o": [
+      "Ik moet vaak laat werken.",
+      "Ik moet werken vaak laat.",
+      "Ik vaak moet laat werken.",
+      "Vaak ik moet laat werken."
+     ],
+     "a": 0,
+     "oit": true,
+     "e": "Modale al secondo posto, avverbi nel mezzo, infinito alla fine."
+    },
+    {
+     "t": "tr",
+     "q": "Lui guida bene.",
+     "a": [
+      "Hij rijdt goed"
+     ],
+     "e": "<b>goed</b> = bene, senza desinenza."
+    },
+    {
+     "t": "fill",
+     "q": "Woon je ___ in Brussel? — Nee, nu woon ik in Gent.",
+     "h": "ancora",
+     "a": [
+      "nog"
+     ],
+     "e": "ancora = <b>nog</b>."
+    },
+    {
+     "t": "order",
+     "q": "Il bambino mangia lentamente.",
+     "a": "Het kind eet langzaam",
+     "alt": [
+      "Langzaam eet het kind"
+     ],
+     "x": [
+      "langzame",
+      "eten"
+     ],
+     "e": "L'avverbio non prende la -e: <b>langzaam</b>."
+    },
+    {
+     "t": "mc",
+     "q": "Ik drink graag thee. — Ik ___!",
+     "h": "anch'io",
+     "o": [
+      "ook",
+      "al",
+      "nog",
+      "soms"
+     ],
+     "a": 0,
+     "e": "anch'io = <b>Ik ook</b>."
+    },
+    {
+     "t": "tr",
+     "q": "Bevo spesso tè.",
+     "a": [
+      "Ik drink vaak thee",
+      "Vaak drink ik thee"
+     ],
+     "e": "<b>vaak</b> dopo il verbo coniugato."
+    }
+   ],
+   "gloss": {
+    "0": {
+     "g": {
+      "langzaam": "lentamente",
+      "langzame": "lento/a, solo davanti a un nome",
+      "langzaams": "forma che non esiste"
+     },
+     "t": "Mio padre guida lentamente."
+    },
+    "1": {
+     "t": "Anna va in bici velocemente alla stazione."
+    },
+    "2": {
+     "g": {
+      "altijd": "sempre",
+      "nooit": "mai",
+      "soms": "a volte",
+      "nog": "ancora"
+     },
+     "t": "Arriva sempre presto."
+    },
+    "3": {
+     "t": "A volte lavoro a casa."
+    },
+    "4": {
+     "t": "Mi piace cantare."
+    },
+    "5": {
+     "t": "Hai già finito? — No, non ancora."
+    },
+    "6": {
+     "g": {
+      "Ik moet vaak laat werken.": "Devo spesso lavorare fino a tardi (corretta)",
+      "Ik moet werken vaak laat.": "l'infinito va alla fine",
+      "Ik vaak moet laat werken.": "l'avverbio non va prima del verbo coniugato",
+      "Vaak ik moet laat werken.": "dopo Vaak serve l'inversione: moet ik"
+     },
+     "t": "Devo spesso lavorare fino a tardi."
+    },
+    "7": {
+     "t": "Lui guida bene."
+    },
+    "8": {
+     "t": "Abiti ancora a Bruxelles? — No, ora abito a Gand."
+    },
+    "9": {
+     "t": "Il bambino mangia lentamente."
+    },
+    "10": {
+     "g": {
+      "ook": "anche (Ik ook = anch'io)",
+      "al": "già",
+      "nog": "ancora",
+      "soms": "a volte"
+     },
+     "t": "Mi piace bere il tè. — Anche a me!"
+    },
+    "11": {
+     "t": "Bevo spesso tè."
+    }
+   }
+  },
+  {
+   "id": "u17",
+   "nl": "Scheidbare werkwoorden",
+   "it": "I verbi separabili",
+   "note": "\n<h3>L'idea</h3>\n<p>Molti verbi olandesi sono formati da una <b>particella</b> + un verbo: <i>op</i> + <i>staan</i> = <b>opstaan</b> (alzarsi), <i>mee</i> + <i>gaan</i> = <b>meegaan</b> (andare con qualcuno). Somigliano a espressioni italiane come \"andare via\" o \"tirare su\", dove una piccola parola cambia il senso del verbo. La particolarità è che in olandese queste due parti, nella frase principale, <b>si separano</b>.</p>\n<h3>La regola: la particella va in fondo</h3>\n<p>Al presente il verbo coniugato sta come sempre al <b>secondo posto</b>, mentre la particella va alla <b>fine della frase</b>. Si crea la stessa \"cornice\" che hai visto con i modali.</p>\n<table><tr><th>infinito</th><th>frase</th><th>italiano</th></tr>\n<tr><td>opstaan</td><td>Ik <b>sta</b> om zeven uur <b>op</b>.</td><td>Mi alzo alle sette.</td></tr>\n<tr><td>opbellen</td><td>Hij <b>belt</b> zijn moeder <b>op</b>.</td><td>Telefona a sua madre.</td></tr>\n<tr><td>aankomen</td><td>De trein <b>komt</b> om tien uur <b>aan</b>.</td><td>Il treno arriva alle dieci.</td></tr>\n<tr><td>uitgaan</td><td>We <b>gaan</b> vanavond <b>uit</b>.</td><td>Stasera usciamo.</td></tr>\n<tr><td>meegaan</td><td><b>Ga</b> je <b>mee</b>?</td><td>Vieni con noi?</td></tr></table>\n<p>Anche con l'inversione e nelle domande la particella resta in fondo: <i>Morgen <b>kom</b> ik <b>terug</b></i>. <i>Hoe laat <b>kom</b> je <b>aan</b>?</i></p>\n<h3>Con un modale: il verbo resta intero</h3>\n<p>Quando c'è un modale (unità 9), il verbo separabile è all'infinito in fondo alla frase e quindi resta <b>unito</b>: <i>Ik moet morgen vroeg <b>opstaan</b></i>. <i>Wil je vanavond <b>uitgaan</b>?</i></p>\n<h3>Le particelle più comuni</h3>\n<p><b>op</b> (su), <b>mee</b> (con), <b>aan</b> (a, su), <b>uit</b> (fuori), <b>terug</b> (indietro), <b>binnen</b> (dentro). Le riconosci anche dalla pronuncia: nei verbi separabili l'accento cade sulla particella: <i>ÓPstaan, MÉEgaan, teRUGkomen</i>.</p>\n<h3>I prefissi che non si separano mai</h3>\n<p>I verbi che cominciano con <b>be-, ver-, ont-, her-</b> (e anche ge-, er-) sono <b>inseparabili</b>: il prefisso resta sempre attaccato e l'accento cade sul verbo, non sul prefisso.</p>\n<table><tr><th>infinito</th><th>frase</th></tr>\n<tr><td>betalen (pagare)</td><td>Ik betaal de koffie.</td></tr>\n<tr><td>vertellen (raccontare)</td><td>Hij vertelt het aan zijn zus.</td></tr>\n<tr><td>ontmoeten (incontrare)</td><td>Ik ontmoet Sofie vanavond.</td></tr>\n<tr><td>herhalen (ripetere)</td><td>Kunt u dat herhalen?</td></tr>\n<tr><td>begrijpen (capire)</td><td>Ik begrijp het niet.</td></tr></table>\n<p>Nell'unità 19 vedrai che i separabili si comportano in modo speciale anche nel participio passato.</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Lasciare il verbo intero al presente: <s>Ik opsta om zeven uur</s> → <b>Ik sta om zeven uur op</b>.</li>\n<li>Mettere la particella subito dopo il verbo: <s>Hij belt op zijn moeder</s> → <b>Hij belt zijn moeder op</b>.</li>\n<li>Separare il verbo dopo un modale: <s>Ik moet sta op</s> → <b>Ik moet opstaan</b>.</li>\n<li>Separare un verbo inseparabile: <s>Ik taal de koffie be</s> → <b>Ik betaal de koffie</b>.</li>\n</ul>",
+   "vlaams": "In Belgio senti spesso <b>buitengaan</b> per \"uscire, andare fuori\": \"Ik ga buiten\" (vado fuori). Nei Paesi Bassi si dice piuttosto <i>naar buiten gaan</i>. <b>uitgaan</b> invece significa ovunque \"uscire la sera, andare a divertirsi\".",
+   "vocab": [
+    [
+     "opbellen",
+     "telefonare a"
+    ],
+    [
+     "opstaan",
+     "alzarsi"
+    ],
+    [
+     "meegaan",
+     "andare con, venire con"
+    ],
+    [
+     "aankomen",
+     "arrivare"
+    ],
+    [
+     "uitgaan",
+     "uscire (la sera)"
+    ],
+    [
+     "meenemen",
+     "portare con sé"
+    ],
+    [
+     "terugkomen",
+     "tornare"
+    ],
+    [
+     "betalen",
+     "pagare"
+    ],
+    [
+     "vertellen",
+     "raccontare"
+    ],
+    [
+     "ontmoeten",
+     "incontrare"
+    ],
+    [
+     "herhalen",
+     "ripetere"
+    ],
+    [
+     "begrijpen",
+     "capire"
+    ],
+    [
+     "vergeten",
+     "dimenticare"
+    ],
+    [
+     "de paraplu",
+     "l'ombrello"
+    ],
+    [
+     "het feest",
+     "la festa"
+    ]
+   ],
+   "core": {
+    "words": [
+     [
+      "op",
+      "su (op-staan)"
+     ],
+     [
+      "mee",
+      "con (mee-gaan)"
+     ],
+     [
+      "aan",
+      "a, su (aan-komen)"
+     ],
+     [
+      "uit",
+      "fuori (uit-gaan)"
+     ],
+     [
+      "terug",
+      "indietro (terug-komen)"
+     ],
+     [
+      "be-, ver-, ont-, her-",
+      "prefissi che non si separano"
+     ]
+    ],
+    "drills": [
+     {
+      "t": "mc",
+      "q": "opstaan: Ik ___ om zeven uur op.",
+      "o": [
+       "sta",
+       "opsta",
+       "staan",
+       "staat"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Al presente la particella va in fondo; al secondo posto resta <b>sta</b>.",
+      "g": {
+       "sta": "mi alzo (con op in fondo)",
+       "opsta": "forma sbagliata: op va alla fine",
+       "staan": "forma del plurale / infinito",
+       "staat": "si alza (lui/lei)"
+      },
+      "tt": "Mi alzo alle sette."
+     },
+     {
+      "t": "mc",
+      "q": "Quale frase è corretta?",
+      "o": [
+       "Hij belt zijn moeder op.",
+       "Hij opbelt zijn moeder.",
+       "Hij belt op zijn moeder.",
+       "Hij op belt zijn moeder."
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "La particella <b>op</b> va alla fine della frase.",
+      "g": {
+       "Hij belt zijn moeder op.": "Telefona a sua madre (corretta)",
+       "Hij opbelt zijn moeder.": "al presente il verbo si separa",
+       "Hij belt op zijn moeder.": "la particella va in fondo, dopo l'oggetto",
+       "Hij op belt zijn moeder.": "ordine sbagliato"
+      },
+      "tt": "Telefona a sua madre."
+     },
+     {
+      "t": "mc",
+      "q": "Ik moet morgen vroeg ___.",
+      "o": [
+       "opstaan",
+       "sta op",
+       "op staan",
+       "opstaat"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Con un modale l'infinito resta intero in fondo: <b>opstaan</b>.",
+      "g": {
+       "opstaan": "alzarsi (infinito intero)",
+       "sta op": "dopo un modale serve l'infinito",
+       "op staan": "l'infinito si scrive attaccato",
+       "opstaat": "forma che non esiste"
+      },
+      "tt": "Domani devo alzarmi presto."
+     },
+     {
+      "t": "mc",
+      "q": "Quale verbo è inseparabile?",
+      "o": [
+       "betalen",
+       "opbellen",
+       "meegaan",
+       "uitgaan"
+      ],
+      "a": 0,
+      "e": "<b>be-</b> non si separa mai: ik betaal.",
+      "g": {
+       "betalen": "pagare (be- inseparabile)",
+       "opbellen": "telefonare (separabile: ik bel … op)",
+       "meegaan": "andare con (separabile: ik ga … mee)",
+       "uitgaan": "uscire (separabile: ik ga … uit)"
+      }
+     },
+     {
+      "t": "mc",
+      "q": "begrijpen: Ik ___ het niet.",
+      "o": [
+       "begrijp",
+       "grijp",
+       "grijp be",
+       "begrijpen"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "<b>be-</b> resta attaccato: ik <b>begrijp</b>.",
+      "g": {
+       "begrijp": "capisco",
+       "grijp": "afferro (verbo diverso, manca be-)",
+       "grijp be": "be- non si separa mai",
+       "begrijpen": "capire (infinito / plurale)"
+      },
+      "tt": "Non lo capisco."
+     },
+     {
+      "t": "mc",
+      "q": "aankomen: De trein ___ om tien uur aan.",
+      "o": [
+       "komt",
+       "aankomt",
+       "komen",
+       "kom"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Verbo coniugato al secondo posto, <b>aan</b> in fondo: de trein <b>komt</b> … aan.",
+      "g": {
+       "komt": "arriva (con aan in fondo)",
+       "aankomt": "al presente il verbo si separa",
+       "komen": "forma del plurale",
+       "kom": "forma di ik"
+      },
+      "tt": "Il treno arriva alle dieci."
+     },
+     {
+      "t": "mc",
+      "q": "Nella frase principale al presente, la particella (op, mee, uit…) va:",
+      "o": [
+       "alla fine della frase",
+       "subito dopo il verbo",
+       "prima del soggetto",
+       "prima del verbo"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Sempre <b>alla fine</b>, come l'infinito con i modali."
+     },
+     {
+      "t": "fill",
+      "q": "Ga je vanavond ___?",
+      "h": "meegaan",
+      "a": [
+       "mee"
+      ],
+      "e": "<b>meegaan</b>: Ga je … <b>mee</b>?",
+      "tt": "Vieni con noi stasera?"
+     },
+     {
+      "t": "fill",
+      "q": "Wanneer kom je ___?",
+      "h": "terugkomen",
+      "a": [
+       "terug"
+      ],
+      "e": "<b>terugkomen</b>: Wanneer kom je <b>terug</b>?",
+      "tt": "Quando torni?"
+     },
+     {
+      "t": "order",
+      "q": "Esco stasera.",
+      "a": "Ik ga vanavond uit",
+      "alt": [
+       "Vanavond ga ik uit"
+      ],
+      "x": [
+       "uitga",
+       "gaat"
+      ],
+      "e": "<b>uitgaan</b>: ga al secondo posto, <b>uit</b> in fondo."
+     }
+    ]
+   },
+   "items": [
+    {
+     "t": "fill",
+     "q": "Ik ___ je morgen op.",
+     "h": "opbellen",
+     "a": [
+      "bel"
+     ],
+     "e": "Al secondo posto <b>bel</b>, la particella <i>op</i> in fondo."
+    },
+    {
+     "t": "mc",
+     "q": "Hoe laat komt de trein in Brussel ___?",
+     "o": [
+      "aan",
+      "op",
+      "uit",
+      "mee"
+     ],
+     "a": 0,
+     "e": "arrivare = <b>aankomen</b>: komt … <b>aan</b>."
+    },
+    {
+     "t": "order",
+     "q": "Ci alziamo alle sette.",
+     "a": "We staan om zeven uur op",
+     "alt": [
+      "Om zeven uur staan we op"
+     ],
+     "x": [
+      "opstaan",
+      "staat"
+     ],
+     "e": "<b>opstaan</b>: staan al secondo posto, <b>op</b> alla fine."
+    },
+    {
+     "t": "tr",
+     "q": "Venite con noi?",
+     "a": [
+      "Gaan jullie met ons mee",
+      "Gaan jullie mee",
+      "Komen jullie met ons mee",
+      "Komen jullie mee"
+     ],
+     "e": "<b>meegaan</b>: Gaan jullie (met ons) <b>mee</b>?"
+    },
+    {
+     "t": "mc",
+     "q": "Quale frase è corretta?",
+     "o": [
+      "Ik betaal de koffie.",
+      "Ik taal de koffie be.",
+      "Ik betaal de koffie be.",
+      "Ik be de koffie taal."
+     ],
+     "a": 0,
+     "oit": true,
+     "e": "<b>be-</b> non si separa mai: Ik <b>betaal</b> de koffie."
+    },
+    {
+     "t": "fill",
+     "q": "Ik ___ altijd mijn sleutel.",
+     "h": "vergeten",
+     "a": [
+      "vergeet"
+     ],
+     "e": "<b>ver-</b> resta attaccato: ik <b>vergeet</b>."
+    },
+    {
+     "t": "mc",
+     "q": "Ik wil vanavond ___.",
+     "o": [
+      "uitgaan",
+      "uit gaan",
+      "ga uit",
+      "uitgaat"
+     ],
+     "a": 0,
+     "oit": true,
+     "e": "Dopo il modale l'infinito resta intero: <b>uitgaan</b>."
+    },
+    {
+     "t": "order",
+     "q": "Lei porta con sé l'ombrello.",
+     "a": "Ze neemt haar paraplu mee",
+     "alt": [
+      "Haar paraplu neemt ze mee"
+     ],
+     "x": [
+      "meeneemt",
+      "nemen"
+     ],
+     "e": "<b>meenemen</b>: neemt al secondo posto, <b>mee</b> in fondo."
+    },
+    {
+     "t": "tr",
+     "q": "Torno domani.",
+     "a": [
+      "Ik kom morgen terug",
+      "Morgen kom ik terug"
+     ],
+     "e": "<b>terugkomen</b>: Ik kom morgen <b>terug</b>."
+    },
+    {
+     "t": "fill",
+     "q": "Ik ___ Sofie vanavond.",
+     "h": "ontmoeten",
+     "a": [
+      "ontmoet"
+     ],
+     "e": "<b>ont-</b> non si separa: ik <b>ontmoet</b>."
+    },
+    {
+     "t": "mc",
+     "q": "Kunt u dat ___, alstublieft?",
+     "h": "ripetere",
+     "o": [
+      "herhalen",
+      "herhaal",
+      "herhaalt",
+      "halen"
+     ],
+     "a": 0,
+     "e": "Dopo il modale: infinito intero, <b>herhalen</b>."
+    },
+    {
+     "t": "order",
+     "q": "A che ora arrivi?",
+     "a": "Hoe laat kom je aan",
+     "x": [
+      "aankom",
+      "komt"
+     ],
+     "e": "Anche nella domanda la particella <b>aan</b> va in fondo."
+    }
+   ],
+   "gloss": {
+    "0": {
+     "t": "Ti chiamo domani."
+    },
+    "1": {
+     "g": {
+      "aan": "aankomen = arrivare",
+      "op": "opkomen = sorgere (il sole): non adatto",
+      "uit": "uitkomen = uscire, risultare: non adatto",
+      "mee": "meekomen = venire con: non adatto"
+     },
+     "t": "A che ora arriva il treno a Bruxelles?"
+    },
+    "2": {
+     "t": "Ci alziamo alle sette."
+    },
+    "3": {
+     "t": "Venite con noi?"
+    },
+    "4": {
+     "g": {
+      "Ik betaal de koffie.": "Pago io il caffè (corretta)",
+      "Ik taal de koffie be.": "be- non si separa mai",
+      "Ik betaal de koffie be.": "be- compare due volte",
+      "Ik be de koffie taal.": "ordine impossibile"
+     },
+     "t": "Pago io il caffè."
+    },
+    "5": {
+     "t": "Dimentico sempre la chiave."
+    },
+    "6": {
+     "g": {
+      "uitgaan": "uscire (infinito intero)",
+      "uit gaan": "l'infinito si scrive attaccato",
+      "ga uit": "dopo un modale serve l'infinito",
+      "uitgaat": "forma che non esiste"
+     },
+     "t": "Stasera voglio uscire."
+    },
+    "7": {
+     "t": "Lei porta con sé l'ombrello."
+    },
+    "8": {
+     "t": "Torno domani."
+    },
+    "9": {
+     "t": "Stasera incontro Sofie."
+    },
+    "10": {
+     "g": {
+      "herhalen": "ripetere (infinito)",
+      "herhaal": "ripeto (io)",
+      "herhaalt": "ripete (lui/lei)",
+      "halen": "andare a prendere (un altro verbo)"
+     },
+     "t": "Può ripeterlo, per favore?"
+    },
+    "11": {
+     "t": "A che ora arrivi?"
+    }
+   }
+  },
+  {
+   "id": "u18",
+   "nl": "De gebiedende wijs",
+   "it": "L'imperativo",
+   "note": "\n<h3>L'idea</h3>\n<p>L'imperativo serve per dare ordini, consigli, istruzioni e inviti: \"vieni!\", \"ascolta!\", \"entri pure\". In italiano ha forme diverse per tu, voi e Lei (vieni, venite, venga). In olandese è molto più semplice: c'è <b>una sola forma</b> per tu e voi, la <b>radice</b> del verbo, cioè la forma di <i>ik</i>.</p>\n<h3>Come si forma</h3>\n<p>Prendi la forma di <b>ik</b> al presente e mettila all'inizio della frase, senza soggetto:</p>\n<table><tr><th>infinito</th><th>ik</th><th>imperativo</th></tr>\n<tr><td>komen</td><td>ik kom</td><td><b>Kom</b> hier!</td></tr>\n<tr><td>luisteren</td><td>ik luister</td><td><b>Luister</b> naar mij!</td></tr>\n<tr><td>nemen</td><td>ik neem</td><td><b>Neem</b> je jas mee!</td></tr>\n<tr><td>gaan</td><td>ik ga</td><td><b>Ga</b> naar huis!</td></tr>\n<tr><td>doen</td><td>ik doe</td><td><b>Doe</b> de deur dicht!</td></tr></table>\n<p>La stessa forma vale per una persona o per tante: <i>Kom, kinderen!</i> Niente -t, anche se parli a \"tu\": <s>Komt hier!</s>.</p>\n<p>Unica eccezione importante: <b>zijn</b> → <b>wees</b>. <i>Wees voorzichtig!</i> (stai attento!), <i>Wees stil!</i> (sta' zitto!).</p>\n<h3>Verbi separabili</h3>\n<p>La particella va in fondo, come al presente (unità 17): <i><b>Sta</b> op!</i> (alzati!), <i><b>Bel</b> me morgen <b>op</b>!</i>, <i><b>Doe</b> het raam <b>open</b>!</i></p>\n<h3>La forma di cortesia: Komt u binnen</h3>\n<p>Con chi dai del Lei puoi usare la radice + <b>-t</b>, seguita da <b>u</b>: <i>Komt u binnen</i> (entri), <i>Neemt u plaats</i> (si accomodi), <i>Gaat u zitten</i>. È una forma educata ma un po' formale. Nella vita di tutti i giorni si usa molto anche una domanda con un modale: <i>Kunt u dat herhalen?</i> o <i>Wilt u even wachten?</i></p>\n<h3>Ammorbidire l'ordine</h3>\n<p>Un imperativo secco può sembrare brusco. Gli olandesi aggiungono spesso piccole parole:</p>\n<ul>\n<li><b>even</b> = un attimo: <i>Wacht even!</i> (aspetta un attimo).</li>\n<li><b>maar</b> = pure (incoraggiamento): <i>Kom maar binnen!</i> (entra pure).</li>\n<li><b>alsjeblieft / alstublieft</b> = per favore (con je / con u).</li>\n</ul>\n<h3>La forma negativa</h3>\n<p>Per dire \"non fare\" metti <b>niet</b> dopo il verbo e dopo l'eventuale oggetto: <i>Rook hier <b>niet</b>!</i> (non fumare qui), <i>Vergeet je sleutel <b>niet</b>!</i>. Sui cartelli trovi spesso l'infinito: <i>Niet roken</i> (vietato fumare).</p>\n<h3>Laten we: \"facciamo…\"</h3>\n<p>Per proporre qualcosa al gruppo, come l'italiano \"andiamo!\", \"mangiamo!\", si usa <b>laten we</b> + infinito in fondo: <i>Laten we gaan!</i> (andiamo!), <i>Laten we morgen naar Brugge gaan</i>. È simile a <i>Zullen we…?</i> (unità 9), ma è una proposta, non una domanda.</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Aggiungere la -t con tu: <s>Komt hier!</s> → <b>Kom hier!</b></li>\n<li>Usare <i>ben</i> per zijn: <s>Ben voorzichtig!</s> → <b>Wees voorzichtig!</b></li>\n<li>Mettere niet all'inizio come in italiano: <s>Niet rook hier!</s> → <b>Rook hier niet!</b></li>\n<li>Dimenticare la particella: <s>Sta om zeven uur!</s> → <b>Sta om zeven uur op!</b></li>\n</ul>",
+   "vlaams": "In Fiandra senti continuamente <b>allez</b> (dal francese) per incoraggiare: \"Allez, kom!\" (dai, vieni!). Al posto di <i>laten we</i> i belgi dicono spesso <b>laat ons</b>: \"Laat ons gaan!\" (andiamo!). Entrambe le forme sono corrette.",
+   "vocab": [
+    [
+     "luisteren",
+     "ascoltare"
+    ],
+    [
+     "kijken",
+     "guardare"
+    ],
+    [
+     "nemen",
+     "prendere"
+    ],
+    [
+     "zeggen",
+     "dire"
+    ],
+    [
+     "opendoen",
+     "aprire"
+    ],
+    [
+     "dichtdoen",
+     "chiudere"
+    ],
+    [
+     "binnenkomen",
+     "entrare"
+    ],
+    [
+     "laten",
+     "lasciare, fare (laten we = facciamo)"
+    ],
+    [
+     "de deur",
+     "la porta"
+    ],
+    [
+     "het raam",
+     "la finestra"
+    ],
+    [
+     "de plaats",
+     "il posto"
+    ],
+    [
+     "stil",
+     "zitto, silenzioso"
+    ],
+    [
+     "rustig",
+     "calmo, tranquillo"
+    ],
+    [
+     "voorzichtig",
+     "prudente, attento"
+    ]
+   ],
+   "core": {
+    "words": [
+     [
+      "wees",
+      "sii (imperativo di zijn)"
+     ],
+     [
+      "laten we",
+      "facciamo…, andiamo… (proposta)"
+     ],
+     [
+      "even",
+      "un attimo"
+     ],
+     [
+      "maar",
+      "pure (incoraggiamento)"
+     ],
+     [
+      "alsjeblieft / alstublieft",
+      "per favore (con je / con u)"
+     ]
+    ],
+    "drills": [
+     {
+      "t": "mc",
+      "q": "komen → imperativo (a un amico)",
+      "o": [
+       "Kom!",
+       "Komt!",
+       "Komen!",
+       "Kommen!"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Imperativo = radice: <b>Kom!</b>",
+      "g": {
+       "Kom!": "Vieni!",
+       "Komt!": "con -t solo nella forma di cortesia: Komt u!",
+       "Komen!": "è l'infinito",
+       "Kommen!": "forma che non esiste"
+      },
+      "tt": "Vieni!"
+     },
+     {
+      "t": "mc",
+      "q": "nemen → imperativo",
+      "o": [
+       "Neem",
+       "Nemen",
+       "Neemt",
+       "Nem"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Radice con vocale lunga doppia: <b>Neem</b>.",
+      "g": {
+       "Neem": "prendi",
+       "Nemen": "è l'infinito",
+       "Neemt": "prende (lui) / forma di cortesia con u",
+       "Nem": "forma che non esiste: la e è lunga"
+      },
+      "tt": "Prendi"
+     },
+     {
+      "t": "mc",
+      "q": "zijn → imperativo",
+      "o": [
+       "Wees",
+       "Ben",
+       "Bent",
+       "Zijn"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Irregolare: <b>Wees</b>!",
+      "g": {
+       "Wees": "sii",
+       "Ben": "sono (io): non è l'imperativo",
+       "Bent": "sei (tu)",
+       "Zijn": "essere (infinito)"
+      },
+      "tt": "Sii"
+     },
+     {
+      "t": "mc",
+      "q": "Forma di cortesia: ___ u binnen.",
+      "o": [
+       "Komt",
+       "Kom",
+       "Komen",
+       "Koom"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Cortesia: radice + t + u: <b>Komt u</b> binnen.",
+      "g": {
+       "Komt": "entri (cortesia, con u)",
+       "Kom": "forma per tu: con u serve la -t",
+       "Komen": "è l'infinito",
+       "Koom": "forma che non esiste"
+      },
+      "tt": "Entri."
+     },
+     {
+      "t": "mc",
+      "q": "Non fumare qui!",
+      "o": [
+       "Rook hier niet!",
+       "Niet rook hier!",
+       "Rookt hier niet!",
+       "Hier rook niet!"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Verbo all'inizio, <b>niet</b> dopo: Rook hier niet!",
+      "g": {
+       "Rook hier niet!": "Non fumare qui! (corretta)",
+       "Niet rook hier!": "niet non va prima del verbo",
+       "Rookt hier niet!": "con tu niente -t",
+       "Hier rook niet!": "il verbo deve stare all'inizio"
+      },
+      "tt": "Non fumare qui!"
+     },
+     {
+      "t": "mc",
+      "q": "Laten we naar huis ___.",
+      "o": [
+       "gaan",
+       "ga",
+       "gaat"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Dopo <b>laten we</b> l'infinito va in fondo: <b>gaan</b>.",
+      "g": {
+       "gaan": "andare (infinito)",
+       "ga": "vai! (imperativo)",
+       "gaat": "va (lui/lei)"
+      },
+      "tt": "Andiamo a casa."
+     },
+     {
+      "t": "mc",
+      "q": "opstaan → imperativo",
+      "o": [
+       "Sta op!",
+       "Opsta!",
+       "Staat op!",
+       "Op sta!"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Verbo all'inizio, particella in fondo: <b>Sta op!</b>",
+      "g": {
+       "Sta op!": "Alzati!",
+       "Opsta!": "la particella va separata",
+       "Staat op!": "con tu niente -t",
+       "Op sta!": "ordine sbagliato"
+      },
+      "tt": "Alzati!"
+     },
+     {
+      "t": "fill",
+      "q": "___ even!",
+      "h": "wachten",
+      "a": [
+       "wacht"
+      ],
+      "e": "Radice di wachten: <b>Wacht</b> even!",
+      "tt": "Aspetta un attimo!"
+     },
+     {
+      "t": "fill",
+      "q": "___ voorzichtig!",
+      "h": "zijn",
+      "a": [
+       "wees"
+      ],
+      "e": "Imperativo di zijn: <b>Wees</b>.",
+      "tt": "Stai attento!"
+     },
+     {
+      "t": "order",
+      "q": "Chiudi la porta, per favore.",
+      "a": "Doe de deur dicht alsjeblieft",
+      "alt": [
+       "Doe alsjeblieft de deur dicht"
+      ],
+      "x": [
+       "doet",
+       "dichtdoen"
+      ],
+      "e": "<b>dichtdoen</b>: Doe all'inizio, <b>dicht</b> in fondo."
+     }
+    ]
+   },
+   "items": [
+    {
+     "t": "fill",
+     "q": "___ naar mij!",
+     "h": "luisteren",
+     "a": [
+      "luister"
+     ],
+     "e": "Radice di luisteren: <b>Luister</b>!"
+    },
+    {
+     "t": "mc",
+     "q": "Mevrouw, ___ u plaats.",
+     "o": [
+      "neemt",
+      "neem",
+      "nemen"
+     ],
+     "a": 0,
+     "e": "Cortesia: radice + t + <b>u</b>: <b>Neemt u</b> plaats."
+    },
+    {
+     "t": "order",
+     "q": "Porta con te la giacca!",
+     "a": "Neem je jas mee",
+     "x": [
+      "neemt",
+      "meeneem"
+     ],
+     "e": "<b>meenemen</b>: Neem all'inizio, <b>mee</b> in fondo."
+    },
+    {
+     "t": "tr",
+     "q": "Entri, per favore.",
+     "a": [
+      "Komt u binnen alstublieft",
+      "Komt u alstublieft binnen",
+      "Kom binnen alstublieft",
+      "Kom alstublieft binnen"
+     ],
+     "e": "Cortesia: <b>Komt u binnen</b>, alstublieft."
+    },
+    {
+     "t": "mc",
+     "q": "Non dimenticare la chiave!",
+     "o": [
+      "Vergeet je sleutel niet!",
+      "Niet vergeet je sleutel!",
+      "Je sleutel vergeet niet!",
+      "Vergeten je sleutel niet!"
+     ],
+     "a": 0,
+     "oit": true,
+     "e": "Verbo all'inizio, <b>niet</b> dopo l'oggetto."
+    },
+    {
+     "t": "fill",
+     "q": "___ we morgen naar Brugge gaan!",
+     "h": "proposta: facciamo…",
+     "a": [
+      "laten"
+     ],
+     "e": "<b>Laten we</b> + infinito in fondo."
+    },
+    {
+     "t": "tr",
+     "q": "Bambini, state tranquilli!",
+     "a": [
+      "Kinderen wees rustig",
+      "Wees rustig kinderen",
+      "Kinderen wees stil",
+      "Wees stil kinderen"
+     ],
+     "e": "L'imperativo è uguale al plurale: <b>Wees</b> rustig!"
+    },
+    {
+     "t": "mc",
+     "q": "Bel me morgen ___!",
+     "o": [
+      "op",
+      "aan",
+      "uit",
+      "mee"
+     ],
+     "a": 0,
+     "e": "<b>opbellen</b>: Bel me morgen <b>op</b>!"
+    },
+    {
+     "t": "order",
+     "q": "Non aprire la finestra!",
+     "a": "Doe het raam niet open",
+     "x": [
+      "opendoen",
+      "doet"
+     ],
+     "e": "<b>opendoen</b>: Doe … <b>niet open</b>. Niet va prima della particella."
+    },
+    {
+     "t": "mc",
+     "q": "Al tuo amico Tom: ___ even, Tom!",
+     "o": [
+      "Wacht",
+      "Wacht u",
+      "Wachten",
+      "Wachtt"
+     ],
+     "a": 0,
+     "e": "Con un amico basta la radice: <b>Wacht</b> even!"
+    },
+    {
+     "t": "tr",
+     "q": "Parla lentamente, per favore.",
+     "a": [
+      "Spreek langzaam alsjeblieft",
+      "Spreek alsjeblieft langzaam",
+      "Spreekt u langzaam alstublieft",
+      "Spreekt u alstublieft langzaam",
+      "Spreek langzaam alstublieft",
+      "Praat langzaam alsjeblieft",
+      "Praat alsjeblieft langzaam"
+     ],
+     "e": "<b>Spreek</b> langzaam, alsjeblieft."
+    },
+    {
+     "t": "fill",
+     "q": "Rook hier ___!",
+     "h": "non",
+     "a": [
+      "niet"
+     ],
+     "e": "Imperativo negativo: verbo + … + <b>niet</b>."
+    }
+   ],
+   "gloss": {
+    "0": {
+     "t": "Ascoltami!"
+    },
+    "1": {
+     "g": {
+      "neemt": "prenda (cortesia, con u)",
+      "neem": "prendi (forma per tu)",
+      "nemen": "prendere (infinito)"
+     },
+     "t": "Signora, si accomodi."
+    },
+    "2": {
+     "t": "Porta con te la giacca!"
+    },
+    "3": {
+     "t": "Entri, per favore."
+    },
+    "4": {
+     "g": {
+      "Vergeet je sleutel niet!": "Non dimenticare la chiave! (corretta)",
+      "Niet vergeet je sleutel!": "niet non va all'inizio",
+      "Je sleutel vergeet niet!": "il verbo deve stare all'inizio",
+      "Vergeten je sleutel niet!": "vergeten è l'infinito"
+     },
+     "t": "Non dimenticare la chiave!"
+    },
+    "5": {
+     "t": "Andiamo a Bruges domani!"
+    },
+    "6": {
+     "t": "Bambini, state tranquilli!"
+    },
+    "7": {
+     "g": {
+      "op": "opbellen = telefonare",
+      "aan": "aanbellen = suonare il campanello: non con 'me'",
+      "uit": "uitbellen non esiste",
+      "mee": "meebellen non ha senso qui"
+     },
+     "t": "Chiamami domani!"
+    },
+    "8": {
+     "t": "Non aprire la finestra!"
+    },
+    "9": {
+     "g": {
+      "Wacht": "aspetta (a un amico)",
+      "Wacht u": "aspetti (cortesia): non con un amico",
+      "Wachten": "aspettare (infinito)",
+      "Wachtt": "forma che non esiste"
+     },
+     "t": "Aspetta un attimo, Tom!"
+    },
+    "10": {
+     "t": "Parla lentamente, per favore."
+    },
+    "11": {
+     "t": "Non fumare qui!"
+    }
+   }
+  },
+  {
+   "id": "u19",
+   "nl": "De voltooide tijd",
+   "it": "Il passato prossimo",
+   "note": "\n<h3>L'idea</h3>\n<p>La <b>voltooide tijd</b> funziona quasi come il nostro passato prossimo: un ausiliare (<b>hebben</b> o <b>zijn</b>) + il <b>participio passato</b>. <i>Ik heb gewerkt</i> = ho lavorato. <i>Ik ben gegaan</i> = sono andato. È il passato più usato nella conversazione per dire che cosa hai fatto.</p>\n<h3>La posizione: il participio va in fondo</h3>\n<p>L'ausiliare coniugato sta al <b>secondo posto</b>, il participio va alla <b>fine della frase</b>: la stessa cornice dei modali.</p>\n<p><i>Ik <b>heb</b> gisteren een boek <b>gelezen</b>.</i> — <i>Gisteren <b>heb</b> ik een boek <b>gelezen</b>.</i></p>\n<h3>Verbi deboli: ge- + radice + -t o -d</h3>\n<p>La maggior parte dei verbi forma il participio così: <b>ge</b> + radice + <b>t</b> oppure <b>d</b>. Per scegliere fra t e d c'è un trucco: la parola <b>'t kofschip</b>. Se la radice finisce con una delle consonanti di <b>t, k, f, s, ch, p</b>, aggiungi <b>-t</b>; in tutti gli altri casi <b>-d</b>.</p>\n<table><tr><th>infinito</th><th>radice</th><th>participio</th></tr>\n<tr><td>werken</td><td>werk (k)</td><td>gewerkt</td></tr>\n<tr><td>fietsen</td><td>fiets (s)</td><td>gefietst</td></tr>\n<tr><td>spelen</td><td>speel (l)</td><td>gespeeld</td></tr>\n<tr><td>wonen</td><td>woon (n)</td><td>gewoond</td></tr></table>\n<p>Attenzione ai verbi con <b>v</b> o <b>z</b> nell'infinito: guarda l'infinito, non la forma di ik. <i>reizen</i> → ik reis, ma z non è nel kofschip: <b>gereisd</b>. Se la radice finisce già in t o d, non aggiungi niente: <i>wachten</i> → <b>gewacht</b>.</p>\n<h3>Verbi forti: participio in -en</h3>\n<p>Molti verbi frequenti hanno un participio in <b>-en</b>, spesso con un cambio di vocale. Vanno imparati a memoria (<i>zijn</i> e <i>hebben</i> sono del tutto irregolari):</p>\n<table><tr><th>infinito</th><th>participio</th><th>infinito</th><th>participio</th></tr>\n<tr><td>eten</td><td>gegeten</td><td>drinken</td><td>gedronken</td></tr>\n<tr><td>lezen</td><td>gelezen</td><td>spreken</td><td>gesproken</td></tr>\n<tr><td>zien</td><td>gezien</td><td>nemen</td><td>genomen</td></tr>\n<tr><td>gaan</td><td>gegaan</td><td>komen</td><td>gekomen</td></tr>\n<tr><td>doen</td><td>gedaan</td><td>blijven</td><td>gebleven</td></tr>\n<tr><td>zijn</td><td>geweest</td><td>hebben</td><td>gehad</td></tr></table>\n<p>Alcuni sono irregolari anche se finiscono in -t: <i>kopen</i> → <b>gekocht</b>, <i>zoeken</i> → <b>gezocht</b>.</p>\n<h3>Separabili e inseparabili</h3>\n<p>Nei verbi separabili <b>ge-</b> va fra particella e verbo: <i>opbellen</i> → <b>opgebeld</b>, <i>opstaan</i> → <b>opgestaan</b>. I verbi con <b>be-, ver-, ont-, her-</b> non prendono ge-: <i>betalen</i> → <b>betaald</b>, <i>verhuizen</i> → <b>verhuisd</b>, <i>vergeten</i> → <b>vergeten</b>.</p>\n<h3>Hebben o zijn?</h3>\n<p>Quasi tutti i verbi usano <b>hebben</b>, anche quando in italiano usiamo \"essere\". Si usa <b>zijn</b> con:</p>\n<ul>\n<li>i verbi che indicano un <b>cambiamento di luogo</b>: gaan, komen, vertrekken, aankomen, terugkomen, verhuizen;</li>\n<li>i verbi di <b>cambiamento</b> (worden = diventare) e con <b>zijn</b> e <b>blijven</b>: <i>Ik ben thuis gebleven</i>.</li>\n</ul>\n<p>Con fietsen, rijden, wandelen, zwemmen: <b>hebben</b> se conta l'attività, <b>zijn</b> se c'è una meta. <i>Ik heb gefietst</i> ma <i>Ik ben naar Gent gefietst</i>.</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Mettere il participio subito dopo l'ausiliare: <s>Ik heb gelezen een boek</s> → <b>Ik heb een boek gelezen</b>.</li>\n<li>Usare zijn con un movimento senza meta: <s>Ik ben gisteren gefietst</s> → <b>Ik heb gisteren gefietst</b> (ma: <i>Ik ben naar Gent gefietst</i>).</li>\n<li>Sbagliare t/d: <s>gewoont</s> → <b>gewoond</b>, <s>gewerkd</s> → <b>gewerkt</b>.</li>\n<li>Mettere ge- nei verbi inseparabili: <s>gebetaald</s> → <b>betaald</b>.</li>\n</ul>",
+   "vlaams": "In Fiandra si dice <b>naar de zee gaan</b> (andare al mare), mentre nei Paesi Bassi è più comune \"naar zee\". Con <b>gij/ge</b> l'ausiliare zijn diventa <i>zijt</i>: \"Zijt ge gisteren uitgegaan?\" (sei uscito ieri sera?).",
+   "vocab": [
+    [
+     "gisteren",
+     "ieri"
+    ],
+    [
+     "vorig",
+     "scorso (vorige week = la settimana scorsa)"
+    ],
+    [
+     "het weekend",
+     "il fine settimana"
+    ],
+    [
+     "kopen",
+     "comprare"
+    ],
+    [
+     "reizen",
+     "viaggiare"
+    ],
+    [
+     "wandelen",
+     "passeggiare"
+    ],
+    [
+     "spelen",
+     "giocare"
+    ],
+    [
+     "verhuizen",
+     "traslocare, trasferirsi"
+    ],
+    [
+     "de film",
+     "il film"
+    ],
+    [
+     "de zee",
+     "il mare"
+    ],
+    [
+     "het brood",
+     "il pane"
+    ],
+    [
+     "de krant",
+     "il giornale"
+    ]
+   ],
+   "core": {
+    "words": [
+     [
+      "hebben",
+      "avere (ausiliare)"
+     ],
+     [
+      "zijn",
+      "essere (ausiliare)"
+     ],
+     [
+      "ge-",
+      "prefisso del participio"
+     ],
+     [
+      "'t kofschip",
+      "t, k, f, s, ch, p → -t"
+     ]
+    ],
+    "drills": [
+     {
+      "t": "mc",
+      "q": "werken → participio",
+      "o": [
+       "gewerkt",
+       "gewerkd",
+       "werkt",
+       "gewerken"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "k è nel kofschip → <b>-t</b>: gewerkt.",
+      "g": {
+       "gewerkt": "lavorato",
+       "gewerkd": "k è nel kofschip: serve -t",
+       "werkt": "lavora (presente)",
+       "gewerken": "forma che non esiste"
+      },
+      "tt": "lavorato"
+     },
+     {
+      "t": "mc",
+      "q": "wonen → participio",
+      "o": [
+       "gewoond",
+       "gewoont",
+       "gewonen",
+       "woonde"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "n non è nel kofschip → <b>-d</b>: gewoond.",
+      "g": {
+       "gewoond": "abitato",
+       "gewoont": "n non è nel kofschip: serve -d",
+       "gewonen": "forma che non esiste",
+       "woonde": "abitava (passato semplice, unità 20)"
+      },
+      "tt": "abitato"
+     },
+     {
+      "t": "mc",
+      "q": "reizen → participio",
+      "o": [
+       "gereisd",
+       "gereist",
+       "gereizd",
+       "gereisen"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "L'infinito ha la z, che non è nel kofschip → <b>-d</b>; a fine sillaba si scrive s: gereisd.",
+      "g": {
+       "gereisd": "viaggiato",
+       "gereist": "guarda l'infinito (z): serve -d",
+       "gereizd": "prima di d si scrive s, non z",
+       "gereisen": "forma che non esiste"
+      },
+      "tt": "viaggiato"
+     },
+     {
+      "t": "mc",
+      "q": "Ik ___ naar Gent gegaan.",
+      "o": [
+       "ben",
+       "heb",
+       "is",
+       "word"
+      ],
+      "a": 0,
+      "e": "Spostamento verso un luogo → <b>zijn</b>: ik <b>ben</b> gegaan.",
+      "g": {
+       "ben": "sono (ausiliare zijn)",
+       "heb": "ho: gaan vuole zijn",
+       "is": "è (lui/lei): con ik serve ben",
+       "word": "divento"
+      },
+      "tt": "Sono andato a Gand."
+     },
+     {
+      "t": "mc",
+      "q": "Ik ___ een film gezien.",
+      "o": [
+       "heb",
+       "ben",
+       "heeft",
+       "hebt"
+      ],
+      "a": 0,
+      "e": "zien usa <b>hebben</b>: ik <b>heb</b> gezien.",
+      "g": {
+       "heb": "ho",
+       "ben": "sono: zien vuole hebben",
+       "heeft": "ha (lui/lei)",
+       "hebt": "hai (tu)"
+      },
+      "tt": "Ho visto un film."
+     },
+     {
+      "t": "mc",
+      "q": "drinken → participio",
+      "o": [
+       "gedronken",
+       "gedrinkt",
+       "gedrinken",
+       "gedronkt"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Verbo forte: <b>gedronken</b>.",
+      "g": {
+       "gedronken": "bevuto",
+       "gedrinkt": "forma che non esiste: drinken è forte",
+       "gedrinken": "forma che non esiste: la vocale cambia",
+       "gedronkt": "forma che non esiste"
+      },
+      "tt": "bevuto"
+     },
+     {
+      "t": "mc",
+      "q": "opbellen → participio",
+      "o": [
+       "opgebeld",
+       "geopbeld",
+       "opgebelt",
+       "gebeld op"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "ge- va fra particella e verbo: <b>opgebeld</b>.",
+      "g": {
+       "opgebeld": "telefonato",
+       "geopbeld": "ge- va dopo la particella",
+       "opgebelt": "l non è nel kofschip: serve -d",
+       "gebeld op": "il participio si scrive attaccato"
+      },
+      "tt": "telefonato"
+     },
+     {
+      "t": "mc",
+      "q": "betalen → participio",
+      "o": [
+       "betaald",
+       "gebetaald",
+       "betaalt",
+       "gebetaalt"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "be- è inseparabile: niente ge-, <b>betaald</b>.",
+      "g": {
+       "betaald": "pagato",
+       "gebetaald": "con be- niente ge-",
+       "betaalt": "paga (presente)",
+       "gebetaalt": "niente ge- e serve -d"
+      },
+      "tt": "pagato"
+     },
+     {
+      "t": "fill",
+      "q": "Wij hebben brood ___.",
+      "h": "eten",
+      "a": [
+       "gegeten"
+      ],
+      "e": "Verbo forte: eten → <b>gegeten</b>.",
+      "tt": "Abbiamo mangiato pane."
+     },
+     {
+      "t": "order",
+      "q": "Ieri ho lavorato.",
+      "a": "Gisteren heb ik gewerkt",
+      "alt": [
+       "Ik heb gisteren gewerkt"
+      ],
+      "x": [
+       "ben",
+       "gewerkd"
+      ],
+      "e": "Ausiliare al secondo posto, participio in fondo."
+     }
+    ]
+   },
+   "items": [
+    {
+     "t": "fill",
+     "q": "Ik heb gisteren een boek ___.",
+     "h": "lezen",
+     "a": [
+      "gelezen"
+     ],
+     "e": "Verbo forte: lezen → <b>gelezen</b>, in fondo alla frase."
+    },
+    {
+     "t": "mc",
+     "q": "Vorige week ___ we naar de zee gereden.",
+     "o": [
+      "zijn",
+      "hebben",
+      "is",
+      "worden"
+     ],
+     "a": 0,
+     "e": "rijden con una meta (naar de zee) → <b>zijn</b>."
+    },
+    {
+     "t": "order",
+     "q": "Ho comprato un giornale.",
+     "a": "Ik heb een krant gekocht",
+     "alt": [
+      "Een krant heb ik gekocht"
+     ],
+     "x": [
+      "ben",
+      "gekoopt"
+     ],
+     "e": "kopen è irregolare: <b>gekocht</b>."
+    },
+    {
+     "t": "tr",
+     "q": "Lei è rimasta a casa.",
+     "a": [
+      "Ze is thuis gebleven",
+      "Zij is thuis gebleven",
+      "Ze is thuisgebleven",
+      "Zij is thuisgebleven"
+     ],
+     "e": "blijven usa <b>zijn</b>: is … <b>gebleven</b>."
+    },
+    {
+     "t": "mc",
+     "q": "Hoe laat ben je ___?",
+     "h": "opstaan",
+     "o": [
+      "opgestaan",
+      "geopstaan",
+      "opgestaant",
+      "opstaan"
+     ],
+     "a": 0,
+     "oit": true,
+     "e": "Separabile: ge- in mezzo, <b>opgestaan</b>."
+    },
+    {
+     "t": "fill",
+     "q": "Wij ___ in het weekend gewandeld.",
+     "h": "ausiliare",
+     "a": [
+      "hebben"
+     ],
+     "e": "wandelen senza meta → <b>hebben</b>."
+    },
+    {
+     "t": "mc",
+     "q": "De kinderen hebben in de tuin ___.",
+     "o": [
+      "gespeeld",
+      "gespeelt",
+      "gespelen",
+      "speelden"
+     ],
+     "a": 0,
+     "oit": true,
+     "e": "l non è nel kofschip → <b>-d</b>: gespeeld."
+    },
+    {
+     "t": "tr",
+     "q": "Ho visto un bel film.",
+     "a": [
+      "Ik heb een mooie film gezien",
+      "Ik heb een goede film gezien",
+      "Ik heb een leuke film gezien"
+     ],
+     "e": "<b>heb</b> … <b>gezien</b>; participio in fondo."
+    },
+    {
+     "t": "mc",
+     "q": "Quale frase è corretta?",
+     "o": [
+      "Ik heb gisteren met Anna gesproken.",
+      "Ik heb gesproken gisteren met Anna.",
+      "Ik gesproken heb gisteren met Anna.",
+      "Gisteren ik heb met Anna gesproken."
+     ],
+     "a": 0,
+     "oit": true,
+     "e": "Ausiliare al secondo posto, participio <b>alla fine</b>."
+    },
+    {
+     "t": "fill",
+     "q": "Mijn zus is vorig jaar naar Antwerpen ___.",
+     "h": "verhuizen",
+     "a": [
+      "verhuisd"
+     ],
+     "e": "ver- senza ge-, z → s + d: <b>verhuisd</b>."
+    },
+    {
+     "t": "order",
+     "q": "Il treno è partito alle otto.",
+     "a": "De trein is om acht uur vertrokken",
+     "alt": [
+      "Om acht uur is de trein vertrokken"
+     ],
+     "x": [
+      "heeft",
+      "gevertrokken"
+     ],
+     "e": "vertrekken usa <b>zijn</b>; ver- senza ge-: <b>vertrokken</b>."
+    },
+    {
+     "t": "tr",
+     "q": "Che cosa hai fatto ieri?",
+     "a": [
+      "Wat heb je gisteren gedaan",
+      "Wat heb jij gisteren gedaan",
+      "Wat hebt u gisteren gedaan",
+      "Wat heeft u gisteren gedaan"
+     ],
+     "e": "doen → <b>gedaan</b>. Nella domanda: Wat <b>heb je</b> … gedaan?"
+    }
+   ],
+   "gloss": {
+    "0": {
+     "t": "Ieri ho letto un libro."
+    },
+    "1": {
+     "g": {
+      "zijn": "siamo (zijn con una meta)",
+      "hebben": "abbiamo: con una meta serve zijn",
+      "is": "è (singolare)",
+      "worden": "diventiamo"
+     },
+     "t": "La settimana scorsa siamo andati al mare in macchina."
+    },
+    "2": {
+     "t": "Ho comprato un giornale."
+    },
+    "3": {
+     "t": "Lei è rimasta a casa."
+    },
+    "4": {
+     "g": {
+      "opgestaan": "alzato",
+      "geopstaan": "ge- va dopo la particella",
+      "opgestaant": "forma che non esiste",
+      "opstaan": "alzarsi (infinito)"
+     },
+     "t": "A che ora ti sei alzato?"
+    },
+    "5": {
+     "t": "Nel fine settimana abbiamo passeggiato."
+    },
+    "6": {
+     "g": {
+      "gespeeld": "giocato",
+      "gespeelt": "l non è nel kofschip: serve -d",
+      "gespelen": "forma che non esiste",
+      "speelden": "giocavano (passato semplice): qui serve il participio"
+     },
+     "t": "I bambini hanno giocato in giardino."
+    },
+    "7": {
+     "t": "Ho visto un bel film."
+    },
+    "8": {
+     "g": {
+      "Ik heb gisteren met Anna gesproken.": "Ieri ho parlato con Anna (corretta)",
+      "Ik heb gesproken gisteren met Anna.": "il participio va alla fine",
+      "Ik gesproken heb gisteren met Anna.": "l'ausiliare deve stare al secondo posto",
+      "Gisteren ik heb met Anna gesproken.": "dopo Gisteren serve l'inversione: heb ik"
+     },
+     "t": "Ieri ho parlato con Anna."
+    },
+    "9": {
+     "t": "L'anno scorso mia sorella si è trasferita ad Anversa."
+    },
+    "10": {
+     "t": "Il treno è partito alle otto."
+    },
+    "11": {
+     "t": "Che cosa hai fatto ieri?"
+    }
+   }
+  },
+  {
+   "id": "u20",
+   "nl": "De verleden tijd",
+   "it": "Il passato semplice / imperfetto",
+   "note": "\n<h3>L'idea</h3>\n<p>Oltre alla voltooide tijd (unità 19) l'olandese ha un passato di una sola parola: la <b>verleden tijd</b>. <i>Ik werkte</i> può voler dire \"lavoravo\", \"lavorai\" o \"ho lavorato\": dipende dal contesto. In pratica corrisponde soprattutto al nostro <b>imperfetto</b> e al passato dei racconti.</p>\n<h3>Verbi deboli: -te(n) o -de(n)</h3>\n<p>Si aggiunge alla radice <b>-te</b> (plurale <b>-ten</b>) oppure <b>-de</b> (plurale <b>-den</b>). La scelta segue la stessa regola del participio: <b>'t kofschip</b>. Se la radice finisce in t, k, f, s, ch, p → <b>-te</b>; altrimenti → <b>-de</b>. C'è una sola forma per tutto il singolare.</p>\n<table><tr><th></th><th>werken</th><th>wonen</th><th>reizen</th></tr>\n<tr><td>ik / jij / hij</td><td>werkte</td><td>woonde</td><td>reisde</td></tr>\n<tr><td>wij / jullie / zij</td><td>werkten</td><td>woonden</td><td>reisden</td></tr></table>\n<p>Come per il participio, guarda l'infinito: <i>reizen</i> ha la z → <b>reisde</b>. Se la radice finisce già in t o d, si scrivono due consonanti anche se se ne sente una sola: <i>wachten</i> → <b>wachtte</b>.</p>\n<h3>Verbi forti e irregolari: la vocale cambia</h3>\n<p>I verbi forti non prendono desinenza al singolare: cambiano la vocale. Al plurale aggiungono <b>-en</b>. Sono i verbi più frequenti, quindi vale la pena impararli subito:</p>\n<table><tr><th>infinito</th><th>singolare</th><th>plurale</th></tr>\n<tr><td>zijn</td><td>was</td><td>waren</td></tr>\n<tr><td>hebben</td><td>had</td><td>hadden</td></tr>\n<tr><td>gaan</td><td>ging</td><td>gingen</td></tr>\n<tr><td>komen</td><td>kwam</td><td>kwamen</td></tr>\n<tr><td>zien</td><td>zag</td><td>zagen</td></tr>\n<tr><td>eten</td><td>at</td><td>aten</td></tr>\n<tr><td>lezen</td><td>las</td><td>lazen</td></tr>\n<tr><td>drinken</td><td>dronk</td><td>dronken</td></tr></table>\n<p>Anche i modali hanno forme proprie: <i>kunnen</i> → <b>kon</b>, <i>moeten</i> → <b>moest</b>, <i>mogen</i> → <b>mocht</b>, <i>willen</i> → <b>wilde</b> (o <b>wou</b>). E <i>kopen</i> → <b>kocht</b>.</p>\n<p>Nei verbi separabili la particella va in fondo, come al presente: <i>We <b>kwamen</b> om acht uur <b>aan</b></i>.</p>\n<h3>Quando si usa: verleden tijd o voltooide tijd?</h3>\n<ul>\n<li><b>Voltooide tijd</b> (ik heb gewerkt): per dire che cosa è successo, soprattutto in una conversazione. <i>Wat heb je gisteren gedaan? — Ik heb een film gezien.</i></li>\n<li><b>Verleden tijd</b> (ik werkte): per <b>descrivere</b> una situazione o un'abitudine nel passato, come il nostro imperfetto. <i>Vroeger woonde ik in een klein dorp.</i> <i>Het regende.</i> Si usa anche per <b>raccontare</b> una serie di fatti, nelle storie e nei libri.</li>\n<li>Con <b>zijn, hebben</b> e i <b>modali</b> la verleden tijd è normalissima anche nel parlato: <i>Ik was moe</i>, <i>We hadden honger</i>, <i>Ik moest werken</i>.</li>\n</ul>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Trattare un verbo forte come debole: <s>ik gade</s>, <s>ik komde</s> → <b>ik ging</b>, <b>ik kwam</b>.</li>\n<li>Sbagliare -te/-de: <s>woonte</s> → <b>woonde</b>, <s>werkde</s> → <b>werkte</b>.</li>\n<li>Dimenticare il plurale: <s>wij was</s> → <b>wij waren</b>.</li>\n<li>Usare la voltooide tijd per descrivere uno stato: \"ero stanco\" è più naturale come <b>ik was moe</b>.</li>\n</ul>",
+   "vlaams": "Per \"volevo\" nel parlato si sente spesso <b>ik wou</b> invece di <i>ik wilde</i>, in Belgio come nei Paesi Bassi: entrambe le forme sono corrette. Con <b>gij/ge</b> il passato di zijn è <b>waart</b>: \"Waart ge moe?\" (eri stanco?).",
+   "vocab": [
+    [
+     "vroeger",
+     "una volta, in passato"
+    ],
+    [
+     "het weer",
+     "il tempo (meteo)"
+    ],
+    [
+     "de tijd",
+     "il tempo (che passa)"
+    ],
+    [
+     "koud",
+     "freddo"
+    ],
+    [
+     "warm",
+     "caldo"
+    ],
+    [
+     "de honger",
+     "la fame (honger hebben = avere fame)"
+    ],
+    [
+     "klein",
+     "piccolo"
+    ],
+    [
+     "het dorp",
+     "il paese, il villaggio"
+    ],
+    [
+     "de vakantie",
+     "le vacanze"
+    ],
+    [
+     "regenen",
+     "piovere"
+    ],
+    [
+     "lachen",
+     "ridere"
+    ],
+    [
+     "de school",
+     "la scuola"
+    ]
+   ],
+   "core": {
+    "words": [
+     [
+      "was / waren",
+      "ero, era / eravamo, erano"
+     ],
+     [
+      "had / hadden",
+      "avevo, aveva / avevamo, avevano"
+     ],
+     [
+      "ging / gingen",
+      "andavo / andavamo"
+     ],
+     [
+      "kwam / kwamen",
+      "venivo / venivamo"
+     ],
+     [
+      "zag / zagen",
+      "vedevo / vedevamo"
+     ],
+     [
+      "-te / -de",
+      "desinenza dei verbi deboli"
+     ]
+    ],
+    "drills": [
+     {
+      "t": "mc",
+      "q": "werken → ik (passato)",
+      "o": [
+       "werkte",
+       "werkde",
+       "werkt",
+       "werkten"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "k è nel kofschip → <b>-te</b>: werkte.",
+      "g": {
+       "werkte": "lavoravo",
+       "werkde": "k è nel kofschip: serve -te",
+       "werkt": "lavora (presente)",
+       "werkten": "lavoravamo (plurale)"
+      },
+      "tt": "io lavoravo"
+     },
+     {
+      "t": "mc",
+      "q": "wonen → hij (passato)",
+      "o": [
+       "woonde",
+       "woonte",
+       "wonde",
+       "woonden"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "n non è nel kofschip → <b>-de</b>: woonde.",
+      "g": {
+       "woonde": "abitava",
+       "woonte": "n non è nel kofschip: serve -de",
+       "wonde": "la o lunga va scritta doppia (wonde = ferita)",
+       "woonden": "abitavamo / abitavano (plurale)"
+      },
+      "tt": "lui abitava"
+     },
+     {
+      "t": "mc",
+      "q": "zijn → ik (passato)",
+      "o": [
+       "was",
+       "ben",
+       "waren",
+       "wees"
+      ],
+      "a": 0,
+      "e": "Irregolare: ik <b>was</b>.",
+      "g": {
+       "was": "ero",
+       "ben": "sono (presente)",
+       "waren": "eravamo / erano (plurale)",
+       "wees": "sii (imperativo)"
+      },
+      "tt": "io ero"
+     },
+     {
+      "t": "mc",
+      "q": "hebben → wij (passato)",
+      "o": [
+       "hadden",
+       "had",
+       "hebden",
+       "hebten"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Irregolare, plurale: <b>hadden</b>.",
+      "g": {
+       "hadden": "avevamo",
+       "had": "avevo / aveva (singolare)",
+       "hebden": "forma che non esiste",
+       "hebten": "forma che non esiste"
+      },
+      "tt": "noi avevamo"
+     },
+     {
+      "t": "mc",
+      "q": "gaan → zij, loro (passato)",
+      "o": [
+       "gingen",
+       "ging",
+       "gaanden",
+       "gegaan"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Forte, plurale: <b>gingen</b>.",
+      "g": {
+       "gingen": "andavano",
+       "ging": "andavo / andava (singolare)",
+       "gaanden": "forma che non esiste",
+       "gegaan": "andato (participio)"
+      },
+      "tt": "loro andavano"
+     },
+     {
+      "t": "mc",
+      "q": "reizen → hij (passato)",
+      "o": [
+       "reisde",
+       "reiste",
+       "reizde",
+       "reizte"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "L'infinito ha la z → <b>-de</b>, scritto con s: reisde.",
+      "g": {
+       "reisde": "viaggiava",
+       "reiste": "guarda l'infinito (z): serve -de",
+       "reizde": "davanti a d si scrive s",
+       "reizte": "forma che non esiste"
+      },
+      "tt": "lui viaggiava"
+     },
+     {
+      "t": "mc",
+      "q": "komen → ik (passato)",
+      "o": [
+       "kwam",
+       "kom",
+       "komde",
+       "kwamen"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Forte: ik <b>kwam</b>.",
+      "g": {
+       "kwam": "venivo",
+       "kom": "vengo (presente)",
+       "komde": "forma che non esiste: komen è forte",
+       "kwamen": "venivamo (plurale)"
+      },
+      "tt": "io venivo"
+     },
+     {
+      "t": "mc",
+      "q": "Vroeger ___ ik in Rome.",
+      "o": [
+       "woonde",
+       "woon",
+       "woonden",
+       "gewoond"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Situazione nel passato → verleden tijd: <b>woonde</b>.",
+      "g": {
+       "woonde": "abitavo",
+       "woon": "abito (presente): non va con vroeger",
+       "woonden": "abitavamo (plurale)",
+       "gewoond": "abitato: il participio ha bisogno di heb"
+      },
+      "tt": "Una volta abitavo a Roma."
+     },
+     {
+      "t": "fill",
+      "q": "Gisteren ___ het koud.",
+      "h": "zijn",
+      "a": [
+       "was"
+      ],
+      "e": "zijn al passato: <b>was</b>.",
+      "tt": "Ieri faceva freddo."
+     },
+     {
+      "t": "order",
+      "q": "Avevamo fame.",
+      "a": "We hadden honger",
+      "alt": [
+       "Honger hadden we"
+      ],
+      "x": [
+       "had",
+       "waren"
+      ],
+      "e": "hebben al plurale: <b>hadden</b>. Honger <i>hebben</i>, non zijn."
+     }
+    ]
+   },
+   "items": [
+    {
+     "t": "fill",
+     "q": "Vroeger ___ ik in een klein dorp.",
+     "h": "wonen",
+     "a": [
+      "woonde"
+     ],
+     "e": "n non è nel kofschip → <b>woonde</b>."
+    },
+    {
+     "t": "mc",
+     "q": "Gisteren ___ we naar de zee.",
+     "o": [
+      "gingen",
+      "ging",
+      "gaan",
+      "gegaan"
+     ],
+     "a": 0,
+     "oit": true,
+     "e": "Forte, plurale: we <b>gingen</b>."
+    },
+    {
+     "t": "order",
+     "q": "Il tempo era brutto.",
+     "a": "Het weer was slecht",
+     "x": [
+      "waren",
+      "weest"
+     ],
+     "e": "het weer è singolare: <b>was</b>."
+    },
+    {
+     "t": "tr",
+     "q": "Lui aveva molto tempo.",
+     "a": [
+      "Hij had veel tijd"
+     ],
+     "e": "hebben al passato: <b>had</b>."
+    },
+    {
+     "t": "mc",
+     "q": "De kinderen ___ in de tuin en lachten.",
+     "o": [
+      "speelden",
+      "speelde",
+      "speelten",
+      "spelen"
+     ],
+     "a": 0,
+     "oit": true,
+     "e": "Plurale, l non è nel kofschip → <b>speelden</b>."
+    },
+    {
+     "t": "fill",
+     "q": "Ik ___ gisteren een mooie film.",
+     "h": "zien",
+     "a": [
+      "zag"
+     ],
+     "e": "Forte: zien → <b>zag</b>."
+    },
+    {
+     "t": "mc",
+     "q": "Ik ___ gisteren werken.",
+     "h": "moeten",
+     "o": [
+      "moest",
+      "moette",
+      "moesten",
+      "gemoeten"
+     ],
+     "a": 0,
+     "oit": true,
+     "e": "moeten al passato: <b>moest</b>."
+    },
+    {
+     "t": "tr",
+     "q": "Ero stanco.",
+     "a": [
+      "Ik was moe"
+     ],
+     "e": "zijn al passato: ik <b>was</b> moe."
+    },
+    {
+     "t": "fill",
+     "q": "Wij ___ om acht uur in Brussel aan.",
+     "h": "aankomen",
+     "a": [
+      "kwamen"
+     ],
+     "e": "komen è forte (<b>kwamen</b>) e la particella <i>aan</i> resta in fondo."
+    },
+    {
+     "t": "order",
+     "q": "Una volta pioveva spesso.",
+     "a": "Vroeger regende het vaak",
+     "alt": [
+      "Het regende vroeger vaak",
+      "Vaak regende het vroeger"
+     ],
+     "x": [
+      "regenden",
+      "geregend"
+     ],
+     "e": "Abitudine nel passato → verleden tijd: <b>regende</b>."
+    },
+    {
+     "t": "mc",
+     "q": "Zij ___ de krant.",
+     "h": "leggeva",
+     "o": [
+      "las",
+      "leesde",
+      "lazen",
+      "lees"
+     ],
+     "a": 0,
+     "oit": true,
+     "e": "Forte: lezen → <b>las</b>."
+    },
+    {
+     "t": "tr",
+     "q": "In vacanza mangiavamo spesso patatine fritte.",
+     "a": [
+      "Op vakantie aten we vaak frieten",
+      "We aten op vakantie vaak frieten",
+      "In de vakantie aten we vaak frieten",
+      "We aten in de vakantie vaak frieten",
+      "Tijdens de vakantie aten we vaak frieten"
+     ],
+     "e": "eten al passato plurale: <b>aten</b>."
+    }
+   ],
+   "gloss": {
+    "0": {
+     "t": "Una volta abitavo in un piccolo paese."
+    },
+    "1": {
+     "g": {
+      "gingen": "andammo / siamo andati (plurale)",
+      "ging": "andavo / andava (singolare)",
+      "gaan": "andiamo (presente)",
+      "gegaan": "andato (participio): serve zijn"
+     },
+     "t": "Ieri siamo andati al mare."
+    },
+    "2": {
+     "t": "Il tempo era brutto."
+    },
+    "3": {
+     "t": "Lui aveva molto tempo."
+    },
+    "4": {
+     "g": {
+      "speelden": "giocavano",
+      "speelde": "giocava (singolare)",
+      "speelten": "l non è nel kofschip: serve -den",
+      "spelen": "giocano (presente): la frase è al passato"
+     },
+     "t": "I bambini giocavano in giardino e ridevano."
+    },
+    "5": {
+     "t": "Ieri ho visto un bel film."
+    },
+    "6": {
+     "g": {
+      "moest": "dovevo / dovetti",
+      "moette": "forma che non esiste",
+      "moesten": "dovevamo (plurale)",
+      "gemoeten": "participio: qui serve il passato semplice"
+     },
+     "t": "Ieri ho dovuto lavorare."
+    },
+    "7": {
+     "t": "Ero stanco."
+    },
+    "8": {
+     "t": "Siamo arrivati a Bruxelles alle otto."
+    },
+    "9": {
+     "t": "Una volta pioveva spesso."
+    },
+    "10": {
+     "g": {
+      "las": "leggeva",
+      "leesde": "forma che non esiste: lezen è forte",
+      "lazen": "leggevano (plurale)",
+      "lees": "leggo (presente)"
+     },
+     "t": "Lei leggeva il giornale."
+    },
+    "11": {
+     "t": "In vacanza mangiavamo spesso patatine fritte."
+    }
+   }
+  }
+ ],
+ "orderSets": [
+  {
+   "id": "sep",
+   "unit": "u17",
+   "t": "Verbi separabili",
+   "s": "La particella va alla fine",
+   "rule": "Nei verbi separabili (<i>opstaan, opbellen, meenemen</i>) la parte coniugata sta al <b>2° posto</b> e la <b>particella</b> va <b>alla fine</b>: <i>Ik <b>sta</b> om zeven uur <b>op</b></i>. Con un modale il verbo resta <b>intero</b> alla fine: <i>Ik moet vroeg <b>opstaan</b></i>.",
+   "items": [
+    {
+     "it": "Mi alzo alle sette.",
+     "a": [
+      "Ik",
+      "sta",
+      "om zeven uur",
+      "op"
+     ],
+     "alt": [
+      [
+       "Om zeven uur",
+       "sta",
+       "ik",
+       "op"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      3
+     ],
+     "e": "<b>opstaan</b>: <b>sta</b> al 2° posto, <b>op</b> alla fine."
+    },
+    {
+     "it": "Il treno arriva alle dieci.",
+     "a": [
+      "De trein",
+      "komt",
+      "om tien uur",
+      "aan"
+     ],
+     "alt": [
+      [
+       "Om tien uur",
+       "komt",
+       "de trein",
+       "aan"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      3
+     ],
+     "e": "<b>aankomen</b>: la particella <b>aan</b> chiude la frase."
+    },
+    {
+     "it": "Telefono a mia madre.",
+     "a": [
+      "Ik",
+      "bel",
+      "mijn moeder",
+      "op"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      3
+     ],
+     "e": "<b>opbellen</b>: l'oggetto sta tra <b>bel</b> e <b>op</b>."
+    },
+    {
+     "it": "Si porta dietro un ombrello.",
+     "a": [
+      "Hij",
+      "neemt",
+      "een paraplu",
+      "mee"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      3
+     ],
+     "e": "<b>meenemen</b>: <b>neemt … mee</b>."
+    },
+    {
+     "it": "Stasera usciamo.",
+     "a": [
+      "We",
+      "gaan",
+      "vanavond",
+      "uit"
+     ],
+     "alt": [
+      [
+       "Vanavond",
+       "gaan",
+       "we",
+       "uit"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      3
+     ],
+     "e": "<b>uitgaan</b>: <b>uit</b> alla fine, anche dopo il tempo."
+    },
+    {
+     "it": "Quando torni?",
+     "a": [
+      "Wanneer",
+      "kom",
+      "je",
+      "terug"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      3
+     ],
+     "e": "<b>terugkomen</b>: anche nella domanda la particella va in fondo."
+    },
+    {
+     "it": "Il negozio apre alle nove.",
+     "a": [
+      "De winkel",
+      "gaat",
+      "om negen uur",
+      "open"
+     ],
+     "alt": [
+      [
+       "Om negen uur",
+       "gaat",
+       "de winkel",
+       "open"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      3
+     ],
+     "e": "<b>opengaan</b>: <b>gaat … open</b>."
+    },
+    {
+     "it": "Domani devo alzarmi presto.",
+     "a": [
+      "Ik",
+      "moet",
+      "morgen",
+      "vroeg",
+      "opstaan"
+     ],
+     "alt": [
+      [
+       "Morgen",
+       "moet",
+       "ik",
+       "vroeg",
+       "opstaan"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      4
+     ],
+     "e": "Con il modale <b>moet</b> il verbo separabile resta intero alla fine: <b>opstaan</b>."
+    },
+    {
+     "it": "Domani mi puoi chiamare?",
+     "a": [
+      "Kun",
+      "je",
+      "me",
+      "morgen",
+      "opbellen"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      0
+     ],
+     "end": [
+      4
+     ],
+     "e": "Modale all'inizio (domanda), <b>opbellen</b> intero alla fine; il pronome <b>me</b> subito dopo il soggetto."
+    },
+    {
+     "it": "Stasera non voglio uscire.",
+     "a": [
+      "Ik",
+      "wil",
+      "vanavond",
+      "niet",
+      "uitgaan"
+     ],
+     "alt": [
+      [
+       "Vanavond",
+       "wil",
+       "ik",
+       "niet",
+       "uitgaan"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      4
+     ],
+     "e": "<b>niet</b> prima dell'infinito, che resta intero: <b>uitgaan</b>."
+    }
+   ]
+  },
+  {
+   "id": "perf",
+   "unit": "u19",
+   "t": "Passato prossimo",
+   "s": "Il participio va alla fine",
+   "rule": "L'ausiliare (<i>hebben</i> o <i>zijn</i>) è coniugato e sta al <b>2° posto</b>; il <b>participio</b> va <b>alla fine</b>: <i>Ik <b>heb</b> koffie <b>gedronken</b></i>. Tutto il resto sta in mezzo.",
+   "items": [
+    {
+     "it": "Ho bevuto un caffè.",
+     "a": [
+      "Ik",
+      "heb",
+      "koffie",
+      "gedronken"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      3
+     ],
+     "e": "<b>heb</b> al 2° posto, <b>gedronken</b> alla fine."
+    },
+    {
+     "it": "Siamo andati a Bruges.",
+     "a": [
+      "We",
+      "zijn",
+      "naar Brugge",
+      "gegaan"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      3
+     ],
+     "e": "Con <b>gaan</b> l'ausiliare è <b>zijn</b>; il participio chiude la frase."
+    },
+    {
+     "it": "Ieri ha lavorato.",
+     "a": [
+      "Hij",
+      "heeft",
+      "gisteren",
+      "gewerkt"
+     ],
+     "alt": [
+      [
+       "Gisteren",
+       "heeft",
+       "hij",
+       "gewerkt"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      3
+     ],
+     "e": "<b>gisteren</b> sta in mezzo (o all'inizio con inversione), <b>gewerkt</b> in fondo."
+    },
+    {
+     "it": "Cosa hai mangiato?",
+     "a": [
+      "Wat",
+      "heb",
+      "je",
+      "gegeten"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      3
+     ],
+     "e": "Parola interrogativa, ausiliare, soggetto, participio."
+    },
+    {
+     "it": "I miei genitori hanno comprato una casa nuova.",
+     "a": [
+      "Mijn ouders",
+      "hebben",
+      "een nieuw huis",
+      "gekocht"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      3
+     ],
+     "e": "L'oggetto sta tra <b>hebben</b> e <b>gekocht</b>."
+    },
+    {
+     "it": "È partita alle otto.",
+     "a": [
+      "Ze",
+      "is",
+      "om acht uur",
+      "vertrokken"
+     ],
+     "alt": [
+      [
+       "Om acht uur",
+       "is",
+       "ze",
+       "vertrokken"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      3
+     ],
+     "e": "<b>vertrekken</b> vuole <b>zijn</b>; il participio va in fondo."
+    },
+    {
+     "it": "Hai letto il giornale?",
+     "a": [
+      "Heb",
+      "je",
+      "de krant",
+      "gelezen"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      0
+     ],
+     "end": [
+      3
+     ],
+     "e": "Domanda: ausiliare al 1° posto, participio sempre alla fine."
+    },
+    {
+     "it": "Ieri sono rimasto a casa.",
+     "a": [
+      "Ik",
+      "ben",
+      "gisteren",
+      "thuis",
+      "gebleven"
+     ],
+     "alt": [
+      [
+       "Gisteren",
+       "ben",
+       "ik",
+       "thuis",
+       "gebleven"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      4
+     ],
+     "e": "Tempo prima del luogo, e <b>gebleven</b> alla fine."
+    },
+    {
+     "it": "A Gand abbiamo mangiato le patatine fritte.",
+     "a": [
+      "We",
+      "hebben",
+      "in Gent",
+      "frieten",
+      "gegeten"
+     ],
+     "alt": [
+      [
+       "In Gent",
+       "hebben",
+       "we",
+       "frieten",
+       "gegeten"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      4
+     ],
+     "e": "Il participio <b>gegeten</b> in fondo; <b>frieten</b> resta vicino al verbo."
+    },
+    {
+     "it": "L'anno scorso sono andato in Italia in treno.",
+     "a": [
+      "Ik",
+      "ben",
+      "vorig jaar",
+      "met de trein",
+      "naar Italië",
+      "gereisd"
+     ],
+     "alt": [
+      [
+       "Vorig jaar",
+       "ben",
+       "ik",
+       "met de trein",
+       "naar Italië",
+       "gereisd"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      5
+     ],
+     "e": "Tempo – modo – luogo in mezzo, il participio <b>gereisd</b> alla fine."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2977 @@
+{
+ "app": "patatino",
+ "module": 2,
+ "version": 1,
+ "title": "Prime frasi",
+ "units": [
+  {
+   "id": "u6",
+   "nl": "Het meervoud",
+   "it": "Il plurale",
+   "note": "\n<h3>L'idea</h3>\n<p>In italiano il plurale cambia l'ultima vocale (libro → libri). In olandese si <b>aggiunge</b> una desinenza. Le desinenze principali sono due: <b>-en</b> e <b>-s</b>. Ricorda che al plurale l'articolo è sempre <b>de</b>.</p>\n<h3>Quale desinenza?</h3>\n<ul>\n<li><b>-en</b> è la regola generale: boek → <b>boeken</b>, fiets → <b>fietsen</b>.</li>\n<li><b>-s</b> per le parole che finiscono in <b>-el, -em, -en, -er, -je</b> (sillaba finale debole): tafel → <b>tafels</b>, meisje → <b>meisjes</b>, kamer → <b>kamers</b>.</li>\n<li><b>-'s</b> (con apostrofo) per le parole che finiscono in <b>a, i, o, u, y</b>: auto → <b>auto's</b>, menu → <b>menu's</b>. L'apostrofo serve a mantenere lunga la vocale.</li>\n</ul>\n<h3>L'ortografia con -en</h3>\n<p>È la stessa logica dei verbi (unità 2): il suono resta uguale, cambia la scrittura.</p>\n<ul>\n<li><b>Vocale lunga</b> scritta doppia diventa singola, perché la sillaba si apre: boom → <b>bo-men</b>, jaar → <b>ja-ren</b>.</li>\n<li><b>Vocale breve</b>: raddoppi la consonante per tenerla breve: man → <b>man-nen</b>, bus → <b>bus-sen</b>.</li>\n<li><b>f → v</b> e <b>s → z</b> tra due vocali: brief → <b>brieven</b>, huis → <b>huizen</b>.</li>\n</ul>\n<h3>Gli irregolari da memorizzare</h3>\n<table><tr><th>singolare</th><th>plurale</th></tr>\n<tr><td>het kind</td><td>de kinderen</td></tr>\n<tr><td>het ei</td><td>de eieren</td></tr>\n<tr><td>de stad</td><td>de steden</td></tr>\n<tr><td>het schip</td><td>de schepen</td></tr></table>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Lasciare la vocale doppia: <s>boomen</s> → <b>bomen</b>.</li>\n<li>Dimenticare l'apostrofo: <s>autos</s> → <b>auto's</b>.</li>\n<li>Usare het al plurale: <s>het kinderen</s> → <b>de kinderen</b>.</li>\n</ul>",
+   "vlaams": "Le patatine fritte in Belgio sono <b>frieten</b> (de friet, de frieten) e si comprano in un <b>frituur</b> o \"frietkot\". Nei Paesi Bassi diresti \"patat\". Nel parlato, soprattutto nei Paesi Bassi, la -n finale del plurale spesso non si pronuncia: \"boeke\".",
+   "vocab": [
+    [
+     "de man",
+     "l'uomo"
+    ],
+    [
+     "de boom",
+     "l'albero"
+    ],
+    [
+     "de brief",
+     "la lettera"
+    ],
+    [
+     "de stad",
+     "la città"
+    ],
+    [
+     "het kind",
+     "il bambino"
+    ],
+    [
+     "het meisje",
+     "la ragazza"
+    ],
+    [
+     "de tafel",
+     "il tavolo"
+    ],
+    [
+     "het menu",
+     "il menù"
+    ],
+    [
+     "de fiets",
+     "la bici"
+    ],
+    [
+     "het huis",
+     "la casa"
+    ],
+    [
+     "de friet",
+     "la patatina fritta"
+    ],
+    [
+     "het ei",
+     "l'uovo"
+    ],
+    [
+     "veel",
+     "molto, molti"
+    ]
+   ],
+   "core": {
+    "words": [],
+    "drills": [
+     {
+      "t": "mc",
+      "q": "een boek → twee ___",
+      "o": [
+       "boeken",
+       "boeks",
+       "boekken",
+       "boekes"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Regola generale: <b>-en</b>.",
+      "g": {
+       "boeken": "libri",
+       "boeks": "forma che non esiste",
+       "boekken": "forma che non esiste: la oe resta così",
+       "boekes": "forma che non esiste"
+      },
+      "tt": "un libro → due libri"
+     },
+     {
+      "t": "mc",
+      "q": "een tafel → twee ___",
+      "o": [
+       "tafels",
+       "tafelen",
+       "tafel's",
+       "tafles"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Dopo -el: <b>-s</b>.",
+      "g": {
+       "tafels": "tavoli",
+       "tafelen": "forma che non esiste",
+       "tafel's": "l'apostrofo si usa solo dopo vocale",
+       "tafles": "forma che non esiste"
+      },
+      "tt": "un tavolo → due tavoli"
+     },
+     {
+      "t": "mc",
+      "q": "een auto → twee ___",
+      "o": [
+       "auto's",
+       "autos",
+       "autoen",
+       "auten"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Dopo vocale: <b>-'s</b>.",
+      "g": {
+       "auto's": "auto (plurale)",
+       "autos": "manca l'apostrofo",
+       "autoen": "forma che non esiste",
+       "auten": "forma che non esiste"
+      },
+      "tt": "un'auto → due auto"
+     },
+     {
+      "t": "mc",
+      "q": "Quale desinenza dopo -el, -er, -je?",
+      "o": [
+       "-s",
+       "-en",
+       "-'s",
+       "nessuna"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Sillaba finale debole: <b>-s</b> (tafels, kamers, meisjes)."
+     },
+     {
+      "t": "mc",
+      "q": "een man → twee ___",
+      "o": [
+       "mannen",
+       "manen",
+       "mans",
+       "man's"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Vocale breve: raddoppi la consonante, <b>mannen</b>.",
+      "g": {
+       "mannen": "uomini",
+       "manen": "lune: con una n la a diventa lunga",
+       "mans": "forma che non esiste",
+       "man's": "forma che non esiste"
+      },
+      "tt": "un uomo → due uomini"
+     },
+     {
+      "t": "mc",
+      "q": "een boom → twee ___",
+      "o": [
+       "bomen",
+       "boomen",
+       "boommen",
+       "booms"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Sillaba aperta: la vocale lunga si scrive singola, <b>bomen</b>.",
+      "g": {
+       "bomen": "alberi",
+       "boomen": "forma che non esiste: oo diventa o",
+       "boommen": "forma che non esiste",
+       "booms": "forma che non esiste"
+      },
+      "tt": "un albero → due alberi"
+     },
+     {
+      "t": "mc",
+      "q": "een huis → twee ___",
+      "o": [
+       "huizen",
+       "huisen",
+       "huises",
+       "huis's"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "s diventa z tra due vocali: <b>huizen</b>.",
+      "g": {
+       "huizen": "case",
+       "huisen": "forma che non esiste: s → z",
+       "huises": "forma che non esiste",
+       "huis's": "forma che non esiste"
+      },
+      "tt": "una casa → due case"
+     },
+     {
+      "t": "fill",
+      "q": "een fiets → twee ___",
+      "a": [
+       "fietsen"
+      ],
+      "e": "<b>fietsen</b>.",
+      "tt": "una bici → due bici"
+     },
+     {
+      "t": "fill",
+      "q": "een meisje → twee ___",
+      "a": [
+       "meisjes"
+      ],
+      "e": "Dopo -je: <b>meisjes</b>.",
+      "tt": "una ragazza → due ragazze"
+     },
+     {
+      "t": "fill",
+      "q": "een kind → twee ___",
+      "a": [
+       "kinderen"
+      ],
+      "e": "Irregolare: <b>kinderen</b>.",
+      "tt": "un bambino → due bambini"
+     }
+    ]
+   },
+   "items": [
+    {
+     "t": "fill",
+     "q": "één boek → twee ___",
+     "a": [
+      "boeken"
+     ],
+     "e": "Regola generale: <b>boeken</b>."
+    },
+    {
+     "t": "fill",
+     "q": "één tafel → twee ___",
+     "a": [
+      "tafels"
+     ],
+     "e": "Dopo -el: <b>tafels</b>."
+    },
+    {
+     "t": "fill",
+     "q": "één auto → twee ___",
+     "a": [
+      "auto's"
+     ],
+     "e": "Dopo -o: <b>auto's</b> con apostrofo."
+    },
+    {
+     "t": "fill",
+     "q": "één man → twee ___",
+     "a": [
+      "mannen"
+     ],
+     "e": "Vocale breve: raddoppia la n, <b>mannen</b>."
+    },
+    {
+     "t": "fill",
+     "q": "één boom → twee ___",
+     "a": [
+      "bomen"
+     ],
+     "e": "Vocale lunga in sillaba aperta: <b>bomen</b>."
+    },
+    {
+     "t": "fill",
+     "q": "één huis → twee ___",
+     "a": [
+      "huizen"
+     ],
+     "e": "s → z: <b>huizen</b>."
+    },
+    {
+     "t": "fill",
+     "q": "één kind → twee ___",
+     "a": [
+      "kinderen"
+     ],
+     "e": "Irregolare: <b>kinderen</b>."
+    },
+    {
+     "t": "fill",
+     "q": "één meisje → twee ___",
+     "a": [
+      "meisjes"
+     ],
+     "e": "Dopo -je: <b>meisjes</b>."
+    },
+    {
+     "t": "mc",
+     "oit": true,
+     "q": "één stad → twee ___",
+     "o": [
+      "stadden",
+      "steden",
+      "stads",
+      "stadenen"
+     ],
+     "a": 1,
+     "e": "Irregolare: <b>steden</b>."
+    },
+    {
+     "t": "fill",
+     "q": "één brief → twee ___",
+     "a": [
+      "brieven"
+     ],
+     "e": "f → v: <b>brieven</b>."
+    },
+    {
+     "t": "mc",
+     "oit": true,
+     "q": "één menu → twee ___",
+     "o": [
+      "menus",
+      "menu's",
+      "menuen",
+      "menuën"
+     ],
+     "a": 1,
+     "e": "<b>menu's</b>."
+    },
+    {
+     "t": "mc",
+     "oit": true,
+     "q": "één fiets → twee ___",
+     "o": [
+      "fietsen",
+      "fiets",
+      "fietses",
+      "fietzen"
+     ],
+     "a": 0,
+     "e": "<b>fietsen</b>."
+    },
+    {
+     "t": "tr",
+     "q": "due bambini",
+     "a": [
+      "twee kinderen"
+     ],
+     "e": "<b>kinderen</b>."
+    }
+   ],
+   "gloss": {
+    "0": {
+     "t": "un libro → due libri"
+    },
+    "1": {
+     "t": "un tavolo → due tavoli"
+    },
+    "2": {
+     "t": "un'auto → due auto"
+    },
+    "3": {
+     "t": "un uomo → due uomini"
+    },
+    "4": {
+     "t": "un albero → due alberi"
+    },
+    "5": {
+     "t": "una casa → due case"
+    },
+    "6": {
+     "t": "un bambino → due bambini"
+    },
+    "7": {
+     "t": "una ragazza → due ragazze"
+    },
+    "8": {
+     "g": {
+      "stadden": "forma che non esiste",
+      "steden": "città (plurale irregolare)",
+      "stads": "forma che non esiste",
+      "stadenen": "forma che non esiste"
+     },
+     "t": "una città → due città"
+    },
+    "9": {
+     "t": "una lettera → due lettere"
+    },
+    "10": {
+     "g": {
+      "menus": "manca l'apostrofo",
+      "menu's": "menù (plurale)",
+      "menuen": "forma che non esiste",
+      "menuën": "forma che non esiste"
+     },
+     "t": "un menù → due menù"
+    },
+    "11": {
+     "g": {
+      "fietsen": "bici (plurale)",
+      "fiets": "bici (singolare)",
+      "fietses": "forma che non esiste",
+      "fietzen": "forma che non esiste"
+     },
+     "t": "una bici → due bici"
+    }
+   }
+  },
+  {
+   "id": "u7",
+   "nl": "Vragen",
+   "it": "Domande",
+   "note": "\n<h3>Domande sì/no: il verbo va all'inizio</h3>\n<p>In italiano una domanda si riconosce spesso solo dall'intonazione (\"Parli olandese?\"). In olandese bisogna <b>cambiare l'ordine</b>: il verbo va in prima posizione, prima del soggetto.</p>\n<table><tr><th>affermazione</th><th>domanda</th></tr>\n<tr><td>Hij spreekt Frans.</td><td>Spreekt hij Frans?</td></tr>\n<tr><td>Jij woont in Gent.</td><td>Woon je in Gent?</td></tr>\n<tr><td>U komt morgen.</td><td>Komt u morgen?</td></tr></table>\n<p>Ricorda la regola dell'unità 2: davanti a <b>je/jij</b> la -t del verbo cade.</p>\n<h3>Domande con parola interrogativa</h3>\n<p>L'ordine è: <b>parola interrogativa + verbo + soggetto</b> + resto.</p>\n<table><tr><th>olandese</th><th>italiano</th><th>esempio</th></tr>\n<tr><td>wie</td><td>chi</td><td>Wie is dat?</td></tr>\n<tr><td>wat</td><td>che cosa</td><td>Wat doe je?</td></tr>\n<tr><td>waar</td><td>dove</td><td>Waar woon je?</td></tr>\n<tr><td>wanneer</td><td>quando</td><td>Wanneer kom je?</td></tr>\n<tr><td>waarom</td><td>perché</td><td>Waarom leer je Nederlands?</td></tr>\n<tr><td>hoe</td><td>come</td><td>Hoe heet je?</td></tr>\n<tr><td>hoeveel</td><td>quanto</td><td>Hoeveel kost dat?</td></tr></table>\n<h3>Welke o welk?</h3>\n<p>\"Quale\" si dice <b>welke</b>, tranne davanti a una <b>het-parola al singolare</b>, dove si dice <b>welk</b>: <i>welk huis?</i> ma <i>welke fiets?</i> e <i>welke huizen?</i></p>\n<h3>Da dove: waar … vandaan</h3>\n<p>\"Da dove vieni?\" si dice <b>Waar kom je vandaan?</b> La parola <i>waar</i> va all'inizio e <i>vandaan</i> alla fine della frase.</p>\n<h3>Hoe heet je?</h3>\n<p>Per chiedere il nome si usa <b>hoe</b> (come), non wat: <i>Hoe heet je?</i> Alla lettera \"come ti chiami\", esattamente come in italiano.</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Fare la domanda solo con l'intonazione: <s>Je woont in Gent?</s> → <b>Woon je in Gent?</b></li>\n<li>Mettere il soggetto prima del verbo dopo la parola interrogativa: <s>Waar je woont?</s> → <b>Waar woon je?</b></li>\n<li>Usare <i>wat</i> per il nome: <s>Wat heet je?</s> → <b>Hoe heet je?</b></li>\n</ul>",
+   "vlaams": "Senti spesso \"<b>Hoe gaat het met u?</b>\" anche in contesti informali. Una risposta tipica è \"Goed, merci!\": i fiamminghi usano spesso <b>merci</b> per dire grazie, accanto a \"dank u\".",
+   "vocab": [
+    [
+     "heten",
+     "chiamarsi"
+    ],
+    [
+     "kosten",
+     "costare"
+    ],
+    [
+     "vandaag",
+     "oggi"
+    ],
+    [
+     "de broer",
+     "il fratello"
+    ],
+    [
+     "Frans",
+     "francese"
+    ],
+    [
+     "de trein",
+     "il treno"
+    ],
+    [
+     "het station",
+     "la stazione"
+    ]
+   ],
+   "core": {
+    "words": [
+     [
+      "wie",
+      "chi"
+     ],
+     [
+      "wat",
+      "che cosa"
+     ],
+     [
+      "waar",
+      "dove"
+     ],
+     [
+      "wanneer",
+      "quando"
+     ],
+     [
+      "waarom",
+      "perché"
+     ],
+     [
+      "hoe",
+      "come"
+     ],
+     [
+      "hoeveel",
+      "quanto"
+     ],
+     [
+      "welke / welk",
+      "quale"
+     ]
+    ],
+    "drills": [
+     {
+      "t": "mc",
+      "q": "dove",
+      "o": [
+       "waar",
+       "wie",
+       "wat",
+       "wanneer"
+      ],
+      "a": 0,
+      "e": "<b>waar</b> = dove.",
+      "g": {
+       "waar": "dove",
+       "wie": "chi",
+       "wat": "che cosa",
+       "wanneer": "quando"
+      }
+     },
+     {
+      "t": "mc",
+      "q": "quando",
+      "o": [
+       "wanneer",
+       "waarom",
+       "waar",
+       "hoe"
+      ],
+      "a": 0,
+      "e": "<b>wanneer</b> = quando.",
+      "g": {
+       "wanneer": "quando",
+       "waarom": "perché",
+       "waar": "dove",
+       "hoe": "come"
+      }
+     },
+     {
+      "t": "mc",
+      "q": "perché",
+      "o": [
+       "waarom",
+       "wanneer",
+       "wat",
+       "welke"
+      ],
+      "a": 0,
+      "e": "<b>waarom</b> = perché.",
+      "g": {
+       "waarom": "perché",
+       "wanneer": "quando",
+       "wat": "che cosa",
+       "welke": "quale"
+      }
+     },
+     {
+      "t": "mc",
+      "q": "come",
+      "o": [
+       "hoe",
+       "wie",
+       "hoeveel",
+       "waar"
+      ],
+      "a": 0,
+      "e": "<b>hoe</b> = come.",
+      "g": {
+       "hoe": "come",
+       "wie": "chi",
+       "hoeveel": "quanto",
+       "waar": "dove"
+      }
+     },
+     {
+      "t": "mc",
+      "q": "Quale domanda è corretta?",
+      "o": [
+       "Woon je in Gent?",
+       "Je woont in Gent?",
+       "Woont je in Gent?",
+       "In Gent je woont?"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Verbo all'inizio e niente t davanti a je.",
+      "g": {
+       "Woon je in Gent?": "Abiti a Gand? (corretta)",
+       "Je woont in Gent?": "solo intonazione: serve l'inversione",
+       "Woont je in Gent?": "davanti a je la t cade",
+       "In Gent je woont?": "il verbo deve venire prima del soggetto"
+      },
+      "tt": "Abiti a Gand?"
+     },
+     {
+      "t": "mc",
+      "q": "___ boek? (quale)",
+      "o": [
+       "Welk",
+       "Welke"
+      ],
+      "a": 0,
+      "e": "het boek → <b>welk</b>.",
+      "g": {
+       "Welk": "quale (het-parola singolare)",
+       "Welke": "quale (de-parola o plurale)"
+      },
+      "tt": "Quale libro?"
+     },
+     {
+      "t": "mc",
+      "q": "___ boeken? (quali)",
+      "o": [
+       "Welke",
+       "Welk"
+      ],
+      "a": 0,
+      "e": "Plurale → <b>welke</b>.",
+      "g": {
+       "Welke": "quale / quali (de-parole e plurali)",
+       "Welk": "solo het-parole al singolare"
+      },
+      "tt": "Quali libri?"
+     },
+     {
+      "t": "order",
+      "q": "Dove lavori?",
+      "a": "Waar werk je",
+      "x": [
+       "werkt",
+       "wie"
+      ],
+      "e": "Parola interrogativa + verbo + soggetto."
+     },
+     {
+      "t": "order",
+      "q": "Quanto costa?",
+      "a": "Hoeveel kost dat",
+      "x": [
+       "kosten",
+       "wie"
+      ],
+      "e": "<b>Hoeveel</b> kost dat?"
+     },
+     {
+      "t": "fill",
+      "q": "___ is dat?",
+      "h": "chi",
+      "a": [
+       "wie"
+      ],
+      "e": "Persona → <b>wie</b>.",
+      "tt": "Chi è?"
+     }
+    ]
+   },
+   "items": [
+    {
+     "t": "mc",
+     "q": "___ woon je? — In Gent.",
+     "o": [
+      "Wie",
+      "Waar",
+      "Wat",
+      "Hoe"
+     ],
+     "a": 1,
+     "e": "<b>Waar</b> = dove."
+    },
+    {
+     "t": "mc",
+     "q": "___ heet je? — Sofie.",
+     "o": [
+      "Hoe",
+      "Wat",
+      "Wie",
+      "Welk"
+     ],
+     "a": 0,
+     "e": "Si dice <b>Hoe</b> heet je? (letteralmente: come ti chiami)."
+    },
+    {
+     "t": "mc",
+     "q": "___ kom je? — Morgen.",
+     "o": [
+      "Waarom",
+      "Wanneer",
+      "Waar",
+      "Hoeveel"
+     ],
+     "a": 1,
+     "e": "<b>Wanneer</b> = quando."
+    },
+    {
+     "t": "mc",
+     "q": "___ huis is van jou?",
+     "o": [
+      "Welk",
+      "Welke"
+     ],
+     "a": 0,
+     "e": "het huis → <b>welk</b>."
+    },
+    {
+     "t": "mc",
+     "q": "___ fiets is van jou?",
+     "o": [
+      "Welk",
+      "Welke"
+     ],
+     "a": 1,
+     "e": "de fiets → <b>welke</b>."
+    },
+    {
+     "t": "fill",
+     "q": "___ kost dat? — Vijf euro.",
+     "a": [
+      "hoeveel",
+      "wat"
+     ],
+     "e": "<b>Hoeveel</b> (o Wat) kost dat?"
+    },
+    {
+     "t": "order",
+     "q": "Lavori oggi?",
+     "a": "Werk je vandaag",
+     "x": [
+      "werkt",
+      "wat"
+     ],
+     "e": "Verbo all'inizio, la -t cade davanti a je."
+    },
+    {
+     "t": "tr",
+     "q": "Dove abiti?",
+     "a": [
+      "Waar woon je",
+      "Waar woon jij",
+      "Waar woont u",
+      "Waar woont ge"
+     ],
+     "e": "<b>Waar woon je?</b>"
+    },
+    {
+     "t": "mc",
+     "oit": true,
+     "say": "Spreekt hij Frans?",
+     "q": "Hij spreekt Frans. → domanda:",
+     "o": [
+      "Spreekt hij Frans?",
+      "Hij spreekt Frans?",
+      "Spreek hij Frans?",
+      "Frans spreekt hij?"
+     ],
+     "a": 0,
+     "e": "Verbo all'inizio: <b>Spreekt hij</b> Frans?"
+    },
+    {
+     "t": "tr",
+     "q": "Perché impari l'olandese?",
+     "a": [
+      "Waarom leer je Nederlands",
+      "Waarom leer jij Nederlands",
+      "Waarom leert u Nederlands"
+     ],
+     "e": "<b>Waarom leer je</b> Nederlands?"
+    },
+    {
+     "t": "mc",
+     "q": "___ is dat? — Mijn broer.",
+     "o": [
+      "Wat",
+      "Wie",
+      "Welke",
+      "Hoe"
+     ],
+     "a": 1,
+     "e": "Persona → <b>Wie</b>."
+    },
+    {
+     "t": "fill",
+     "q": "Waar kom je ___? — Uit Italië.",
+     "a": [
+      "vandaan"
+     ],
+     "e": "<b>waar … vandaan</b> = da dove."
+    }
+   ],
+   "gloss": {
+    "0": {
+     "g": {
+      "Wie": "chi",
+      "Waar": "dove",
+      "Wat": "che cosa",
+      "Hoe": "come"
+     },
+     "t": "Dove abiti? A Gand."
+    },
+    "1": {
+     "g": {
+      "Hoe": "come",
+      "Wat": "che cosa",
+      "Wie": "chi",
+      "Welk": "quale"
+     },
+     "t": "Come ti chiami? Sofie."
+    },
+    "2": {
+     "g": {
+      "Waarom": "perché",
+      "Wanneer": "quando",
+      "Waar": "dove",
+      "Hoeveel": "quanto"
+     },
+     "t": "Quando vieni? Domani."
+    },
+    "3": {
+     "g": {
+      "Welk": "quale (het-parola singolare)",
+      "Welke": "quale (de-parola o plurale)"
+     },
+     "t": "Quale casa è tua?"
+    },
+    "4": {
+     "g": {
+      "Welk": "quale (het-parola singolare)",
+      "Welke": "quale (de-parola o plurale)"
+     },
+     "t": "Quale bici è tua?"
+    },
+    "5": {
+     "t": "Quanto costa? Cinque euro."
+    },
+    "8": {
+     "g": {
+      "Spreekt hij Frans?": "Parla francese? (verbo all'inizio)",
+      "Hij spreekt Frans?": "solo intonazione: in olandese serve l'inversione",
+      "Spreek hij Frans?": "con hij la -t resta",
+      "Frans spreekt hij?": "ordine da affermazione, non da domanda"
+     },
+     "t": "Parla francese?"
+    },
+    "10": {
+     "g": {
+      "Wat": "che cosa",
+      "Wie": "chi",
+      "Welke": "quale",
+      "Hoe": "come"
+     },
+     "t": "Chi è? Mio fratello."
+    },
+    "11": {
+     "t": "Da dove vieni? Dall'Italia."
+    }
+   }
+  },
+  {
+   "id": "u8",
+   "nl": "Bezittelijke voornaamwoorden",
+   "it": "Possessivi",
+   "note": "\n<h3>L'idea</h3>\n<p>I possessivi dicono <b>di chi</b> è qualcosa. Due differenze importanti con l'italiano:</p>\n<ul>\n<li><b>Niente articolo</b> davanti al possessivo: \"il mio libro\" è <i>mijn boek</i>, non <s>het mijn boek</s>.</li>\n<li>Il possessivo dipende dal <b>possessore</b>, non dall'oggetto. In italiano \"suo\" è ambiguo; in olandese no: <i>zijn moeder</i> è la madre di lui, <i>haar moeder</i> è la madre di lei.</li>\n</ul>\n<h3>La tabella</h3>\n<table><tr><th>persona</th><th>possessivo</th><th>esempio</th></tr>\n<tr><td>ik</td><td>mijn</td><td>mijn naam</td></tr>\n<tr><td>jij</td><td>jouw / je</td><td>jouw fiets</td></tr>\n<tr><td>u</td><td>uw</td><td>uw jas</td></tr>\n<tr><td>hij</td><td>zijn</td><td>zijn moeder</td></tr>\n<tr><td>zij (lei)</td><td>haar</td><td>haar vader</td></tr>\n<tr><td>wij</td><td>ons / onze</td><td>ons huis, onze stad</td></tr>\n<tr><td>jullie</td><td>jullie / je</td><td>jullie kinderen</td></tr>\n<tr><td>zij (loro)</td><td>hun</td><td>hun boeken</td></tr></table>\n<h3>Ons o onze?</h3>\n<p>È l'unico possessivo che cambia. <b>ons</b> davanti a una <b>het-parola al singolare</b> (ons huis), <b>onze</b> in tutti gli altri casi: de-parole (onze stad) e plurali (onze kinderen).</p>\n<h3>Jouw o je?</h3>\n<p>Come per i pronomi, <b>je</b> è la forma non accentata e più comune: <i>Is dat je fiets?</i>. <b>jouw</b> serve per l'enfasi: <i>Is dat jouw fiets of mijn fiets?</i></p>\n<h3>\"È mio\": van mij</h3>\n<p>Quando il possessivo sta da solo, dopo il verbo, si usa <b>van</b> + pronome oggetto: <i>Van wie is dat? — Het is van mij</i> (di chi è? — è mio). Per i nomi si usa <b>van</b>: <i>de fiets van Tom</i> (la bici di Tom).</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Aggiungere l'articolo: <s>de mijn auto</s> → <b>mijn auto</b>.</li>\n<li>Scegliere zijn/haar in base all'oggetto: Anna e suo padre è <b>haar vader</b>, perché il possessore è lei.</li>\n<li>Usare <i>ons</i> con una de-parola: <s>ons stad</s> → <b>onze stad</b>.</li>\n</ul>",
+   "vlaams": "Nel parlato fiammingo, insieme a gij/ge, si usa <b>uw</b> anche tra amici: \"Is dat uw fiets?\" può essere detto in modo del tutto informale.",
+   "vocab": [
+    [
+     "de moeder",
+     "la madre"
+    ],
+    [
+     "de vader",
+     "il padre"
+    ],
+    [
+     "de jas",
+     "la giacca"
+    ],
+    [
+     "de tas",
+     "la borsa"
+    ],
+    [
+     "de naam",
+     "il nome"
+    ],
+    [
+     "meneer",
+     "signore"
+    ],
+    [
+     "dit",
+     "questo"
+    ],
+    [
+     "dat",
+     "quello"
+    ],
+    [
+     "daar",
+     "là"
+    ]
+   ],
+   "core": {
+    "words": [
+     [
+      "mijn",
+      "mio"
+     ],
+     [
+      "jouw / je",
+      "tuo"
+     ],
+     [
+      "uw",
+      "Suo (cortesia)"
+     ],
+     [
+      "zijn",
+      "suo (di lui)"
+     ],
+     [
+      "haar",
+      "suo (di lei)"
+     ],
+     [
+      "ons / onze",
+      "nostro"
+     ],
+     [
+      "hun",
+      "loro (possessivo)"
+     ]
+    ],
+    "drills": [
+     {
+      "t": "mc",
+      "q": "mio",
+      "o": [
+       "mijn",
+       "mij",
+       "jouw",
+       "ons"
+      ],
+      "a": 0,
+      "e": "<b>mijn</b> = mio.",
+      "g": {
+       "mijn": "mio",
+       "mij": "mi / me",
+       "jouw": "tuo",
+       "ons": "nostro"
+      }
+     },
+     {
+      "t": "mc",
+      "q": "suo (di lei)",
+      "o": [
+       "haar",
+       "zijn",
+       "hun",
+       "uw"
+      ],
+      "a": 0,
+      "e": "Possessore femminile: <b>haar</b>.",
+      "g": {
+       "haar": "suo (di lei)",
+       "zijn": "suo (di lui)",
+       "hun": "loro",
+       "uw": "Suo (cortesia)"
+      }
+     },
+     {
+      "t": "mc",
+      "q": "suo (di lui)",
+      "o": [
+       "zijn",
+       "haar",
+       "hun",
+       "hem"
+      ],
+      "a": 0,
+      "e": "Possessore maschile: <b>zijn</b>.",
+      "g": {
+       "zijn": "suo (di lui)",
+       "haar": "suo (di lei)",
+       "hun": "loro",
+       "hem": "lo / lui (oggetto)"
+      }
+     },
+     {
+      "t": "mc",
+      "q": "loro (possessivo)",
+      "o": [
+       "hun",
+       "hen",
+       "zij",
+       "jullie"
+      ],
+      "a": 0,
+      "e": "<b>hun</b> boeken = i loro libri.",
+      "g": {
+       "hun": "loro (possessivo)",
+       "hen": "li / loro (oggetto)",
+       "zij": "loro (soggetto)",
+       "jullie": "voi / vostro"
+      }
+     },
+     {
+      "t": "mc",
+      "q": "___ huis (nostro)",
+      "o": [
+       "ons",
+       "onze"
+      ],
+      "a": 0,
+      "e": "het-parola singolare → <b>ons</b>.",
+      "g": {
+       "ons": "nostro (het-parola singolare)",
+       "onze": "nostro (de-parola o plurale)"
+      },
+      "tt": "la nostra casa"
+     },
+     {
+      "t": "mc",
+      "q": "___ stad (nostra)",
+      "o": [
+       "onze",
+       "ons"
+      ],
+      "a": 0,
+      "e": "de-parola → <b>onze</b>.",
+      "g": {
+       "onze": "nostro (de-parola o plurale)",
+       "ons": "solo het-parole al singolare"
+      },
+      "tt": "la nostra città"
+     },
+     {
+      "t": "mc",
+      "q": "Anna en ___ vader",
+      "o": [
+       "haar",
+       "zijn",
+       "hun",
+       "jouw"
+      ],
+      "a": 0,
+      "e": "Il possessore è Anna: <b>haar</b> vader.",
+      "g": {
+       "haar": "suo (di lei)",
+       "zijn": "suo (di lui)",
+       "hun": "loro",
+       "jouw": "tuo"
+      },
+      "tt": "Anna e suo padre"
+     },
+     {
+      "t": "mc",
+      "q": "Het is ___ (è mio)",
+      "o": [
+       "van mij",
+       "mijn",
+       "mij",
+       "van ik"
+      ],
+      "a": 0,
+      "e": "Da solo dopo il verbo: <b>van mij</b>.",
+      "g": {
+       "van mij": "mio (da solo)",
+       "mijn": "mio (davanti a un nome)",
+       "mij": "mi / me",
+       "van ik": "dopo van serve mij"
+      },
+      "tt": "È mio."
+     },
+     {
+      "t": "fill",
+      "q": "___ naam is Luca.",
+      "h": "mio",
+      "a": [
+       "mijn"
+      ],
+      "e": "<b>mijn</b> naam.",
+      "tt": "Il mio nome è Luca."
+     },
+     {
+      "t": "fill",
+      "q": "Is dit ___ jas, meneer?",
+      "h": "Suo, cortesia",
+      "a": [
+       "uw"
+      ],
+      "e": "Cortesia: <b>uw</b>.",
+      "tt": "È Sua questa giacca, signore?"
+     }
+    ]
+   },
+   "items": [
+    {
+     "t": "mc",
+     "q": "___ huis",
+     "h": "nostra casa",
+     "o": [
+      "ons",
+      "onze"
+     ],
+     "a": 0,
+     "e": "het huis → <b>ons</b>."
+    },
+    {
+     "t": "mc",
+     "q": "___ auto",
+     "h": "nostra auto",
+     "o": [
+      "ons",
+      "onze"
+     ],
+     "a": 1,
+     "e": "de auto → <b>onze</b>."
+    },
+    {
+     "t": "mc",
+     "q": "___ kinderen",
+     "h": "nostri figli",
+     "o": [
+      "ons",
+      "onze"
+     ],
+     "a": 1,
+     "e": "Plurale → <b>onze</b>."
+    },
+    {
+     "t": "fill",
+     "q": "Dit is ___ moeder.",
+     "h": "sua — di lui",
+     "a": [
+      "zijn"
+     ],
+     "e": "Possessore maschile: <b>zijn</b>."
+    },
+    {
+     "t": "fill",
+     "q": "Dat is ___ fiets.",
+     "h": "sua — di lei",
+     "a": [
+      "haar"
+     ],
+     "e": "Possessore femminile: <b>haar</b>."
+    },
+    {
+     "t": "mc",
+     "q": "Is dit ___ jas, meneer?",
+     "o": [
+      "u",
+      "uw",
+      "jouw",
+      "zijn"
+     ],
+     "a": 1,
+     "e": "Cortesia: <b>uw</b>."
+    },
+    {
+     "t": "fill",
+     "q": "Dat zijn ___ boeken.",
+     "h": "loro",
+     "a": [
+      "hun"
+     ],
+     "e": "<b>hun</b> = loro."
+    },
+    {
+     "t": "tr",
+     "q": "Il mio nome è Luca.",
+     "a": [
+      "Mijn naam is Luca"
+     ],
+     "e": "<b>mijn</b> naam."
+    },
+    {
+     "t": "mc",
+     "q": "___ tas staat daar.",
+     "h": "tua, con enfasi",
+     "o": [
+      "Jouw",
+      "Jou",
+      "Jij",
+      "Jullie"
+     ],
+     "a": 0,
+     "e": "<b>jouw</b> (non accentato: je)."
+    },
+    {
+     "t": "order",
+     "q": "Questa è la nostra città.",
+     "a": "Dit is onze stad",
+     "x": [
+      "ons",
+      "deze"
+     ],
+     "e": "de stad → <b>onze</b>."
+    },
+    {
+     "t": "mc",
+     "say": "Van wie is dat? Het is van mij.",
+     "q": "Van wie is dat? — Het is ___.",
+     "h": "mio",
+     "o": [
+      "van mij",
+      "mijn",
+      "van ik",
+      "mij"
+     ],
+     "a": 0,
+     "e": "<b>van mij</b> = mio."
+    }
+   ],
+   "gloss": {
+    "0": {
+     "g": {
+      "ons": "nostro (het-parola singolare)",
+      "onze": "nostro (de-parola o plurale)"
+     },
+     "t": "la nostra casa"
+    },
+    "1": {
+     "g": {
+      "ons": "nostro (het-parola singolare)",
+      "onze": "nostro (de-parola o plurale)"
+     },
+     "t": "la nostra auto"
+    },
+    "2": {
+     "g": {
+      "ons": "nostro (het-parola singolare)",
+      "onze": "nostro (de-parola o plurale)"
+     },
+     "t": "i nostri figli"
+    },
+    "3": {
+     "t": "Questa è sua madre (di lui)."
+    },
+    "4": {
+     "t": "Quella è la sua bici (di lei)."
+    },
+    "5": {
+     "g": {
+      "u": "Lei (pronome, non possessivo)",
+      "uw": "Suo (cortesia)",
+      "jouw": "tuo (informale)",
+      "zijn": "suo (di lui)"
+     },
+     "t": "È Sua questa giacca, signore?"
+    },
+    "6": {
+     "t": "Quelli sono i loro libri."
+    },
+    "8": {
+     "g": {
+      "Jouw": "tuo (possessivo)",
+      "Jou": "te (oggetto)",
+      "Jij": "tu (soggetto)",
+      "Jullie": "voi / vostro"
+     },
+     "t": "La tua borsa è là."
+    },
+    "10": {
+     "g": {
+      "van mij": "mio (da solo, dopo il verbo)",
+      "mijn": "mio (solo davanti a un nome)",
+      "van ik": "ik è soggetto: dopo van serve mij",
+      "mij": "mi / me"
+     },
+     "t": "Di chi è? È mio."
+    }
+   }
+  },
+  {
+   "id": "u9",
+   "nl": "Modale werkwoorden",
+   "it": "Verbi modali",
+   "note": "\n<h3>L'idea</h3>\n<p>I verbi modali sono quelli che in italiano sono potere, dovere, volere: si usano insieme a un altro verbo all'infinito. La regola più importante riguarda la <b>posizione</b>: il modale coniugato sta al secondo posto, l'<b>infinito va alla fine della frase</b>. Le due parti formano una specie di \"cornice\".</p>\n<p><i>Ik <b>wil</b> morgen met de trein naar Gent <b>gaan</b>.</i> (Voglio andare a Gand domani in treno.)</p>\n<h3>Il significato di ciascuno</h3>\n<ul>\n<li><b>kunnen</b>: essere capace o essere possibile. <i>Ik kan zwemmen</i> (so nuotare). <i>Kun je morgen komen?</i> (puoi venire domani?)</li>\n<li><b>mogen</b>: avere il permesso. <i>Mag ik hier parkeren?</i> (posso parcheggiare qui?). <b>niet mogen</b> = è vietato: <i>Je mag hier niet roken</i>.</li>\n<li><b>moeten</b>: dovere. <i>Ik moet werken</i>. Attenzione: \"non devo\" nel senso di \"non è necessario\" si dice con un altro verbo, <i>hoeven</i>, che vedrai più avanti.</li>\n<li><b>willen</b>: volere. <i>Ik wil koffie</i>. Per chiedere in modo cortese si usa <i>graag</i>: <i>Ik wil graag koffie</i>.</li>\n<li><b>zullen</b>: futuro, promessa o proposta. <i>Ik zal je helpen</i> (ti aiuterò). <i>Zal ik je helpen?</i> (vuoi che ti aiuti?)</li>\n</ul>\n<h3>La coniugazione</h3>\n<p>I modali sono irregolari al singolare: con ik, hij e zij non hanno la -t.</p>\n<table><tr><th></th><th>kunnen</th><th>moeten</th><th>willen</th><th>mogen</th><th>zullen</th></tr>\n<tr><td>ik</td><td>kan</td><td>moet</td><td>wil</td><td>mag</td><td>zal</td></tr>\n<tr><td>jij / u</td><td>kunt / kan</td><td>moet</td><td>wilt / wil</td><td>mag</td><td>zult / zal</td></tr>\n<tr><td>hij / zij</td><td>kan</td><td>moet</td><td>wil</td><td>mag</td><td>zal</td></tr>\n<tr><td>wij / jullie / zij</td><td>kunnen</td><td>moeten</td><td>willen</td><td>mogen</td><td>zullen</td></tr></table>\n<h3>Senza l'infinito</h3>\n<p>Con un movimento l'infinito spesso si omette, perché è chiaro: <i>Ik moet naar huis</i> (devo andare a casa), <i>Ik wil naar Brugge</i>.</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Mettere l'infinito subito dopo il modale: <s>Ik wil gaan morgen naar Gent</s> → <b>Ik wil morgen naar Gent gaan</b>.</li>\n<li>Aggiungere la -t con hij: <s>hij kant</s> → <b>hij kan</b>.</li>\n<li>Confondere kunnen e mogen: per chiedere il permesso si usa di solito <b>mogen</b>.</li>\n</ul>",
+   "vlaams": "Per il futuro nel parlato si usa molto <b>gaan</b> + infinito: \"Ik ga dat morgen doen\" (lo farò domani). \"<b>Ge moogt</b>\" (= je mag, puoi) è tipicamente fiammingo.",
+   "vocab": [
+    [
+     "zwemmen",
+     "nuotare"
+    ],
+    [
+     "koken",
+     "cucinare"
+    ],
+    [
+     "parkeren",
+     "parcheggiare"
+    ],
+    [
+     "roken",
+     "fumare"
+    ],
+    [
+     "vertrekken",
+     "partire"
+    ],
+    [
+     "hier",
+     "qui"
+    ],
+    [
+     "vanavond",
+     "stasera"
+    ],
+    [
+     "graag",
+     "volentieri"
+    ]
+   ],
+   "core": {
+    "words": [
+     [
+      "kunnen",
+      "potere, saper fare"
+     ],
+     [
+      "moeten",
+      "dovere"
+     ],
+     [
+      "willen",
+      "volere"
+     ],
+     [
+      "mogen",
+      "avere il permesso"
+     ],
+     [
+      "zullen",
+      "futuro, proposta"
+     ]
+    ],
+    "drills": [
+     {
+      "t": "mc",
+      "q": "ik + kunnen",
+      "o": [
+       "kan",
+       "kun",
+       "kunt",
+       "kunnen"
+      ],
+      "a": 0,
+      "e": "ik <b>kan</b>.",
+      "g": {
+       "kan": "posso / so (io)",
+       "kun": "puoi (solo davanti a je)",
+       "kunt": "puoi (tu, u)",
+       "kunnen": "possiamo / potere"
+      },
+      "tt": "io posso"
+     },
+     {
+      "t": "mc",
+      "q": "hij + willen",
+      "o": [
+       "wil",
+       "wilt",
+       "willen",
+       "wille"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Con ik e hij senza -t: hij <b>wil</b> (ma jij <b>wilt</b>).",
+      "g": {
+       "wil": "vuole",
+       "wilt": "vuoi (tu)",
+       "willen": "vogliamo / volere",
+       "wille": "forma che non esiste"
+      },
+      "tt": "lui vuole"
+     },
+     {
+      "t": "mc",
+      "q": "wij + moeten",
+      "o": [
+       "moeten",
+       "moet",
+       "moest",
+       "moetten"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Plurale = infinito: <b>moeten</b>.",
+      "g": {
+       "moeten": "dobbiamo",
+       "moet": "devo / devi / deve",
+       "moest": "dovevo / doveva (passato)",
+       "moetten": "forma che non esiste"
+      },
+      "tt": "noi dobbiamo"
+     },
+     {
+      "t": "mc",
+      "q": "ik + mogen",
+      "o": [
+       "mag",
+       "mogt",
+       "moog",
+       "mogen"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Irregolare: ik <b>mag</b>.",
+      "g": {
+       "mag": "posso (ho il permesso)",
+       "mogt": "forma che non esiste",
+       "moog": "forma che non esiste",
+       "mogen": "possiamo / potere"
+      },
+      "tt": "io posso (ho il permesso)"
+     },
+     {
+      "t": "mc",
+      "q": "Ik wil morgen ___.",
+      "o": [
+       "komen",
+       "kom",
+       "komt",
+       "gekomen"
+      ],
+      "a": 0,
+      "e": "Dopo un modale: infinito alla fine, <b>komen</b>.",
+      "g": {
+       "komen": "venire (infinito)",
+       "kom": "vengo (io)",
+       "komt": "viene",
+       "gekomen": "venuto (participio)"
+      },
+      "tt": "Voglio venire domani."
+     },
+     {
+      "t": "mc",
+      "q": "Chiedi il permesso: ___ ik binnenkomen?",
+      "o": [
+       "Mag",
+       "Moet",
+       "Wil",
+       "Zal"
+      ],
+      "a": 0,
+      "e": "Permesso → <b>mogen</b>: Mag ik binnenkomen?",
+      "g": {
+       "Mag": "posso (permesso)",
+       "Moet": "devo",
+       "Wil": "voglio",
+       "Zal": "vuoi che… (proposta)"
+      },
+      "tt": "Posso entrare?"
+     },
+     {
+      "t": "mc",
+      "q": "Vuoi che ti aiuti? → ___ ik je helpen?",
+      "o": [
+       "Zal",
+       "Mag",
+       "Moet",
+       "Wil"
+      ],
+      "a": 0,
+      "e": "Proposta → <b>zullen</b>: Zal ik je helpen?",
+      "g": {
+       "Zal": "vuoi che… (proposta)",
+       "Mag": "posso (permesso)",
+       "Moet": "devo",
+       "Wil": "voglio"
+      },
+      "tt": "Vuoi che ti aiuti?"
+     },
+     {
+      "t": "order",
+      "q": "Devo lavorare.",
+      "a": "Ik moet werken",
+      "x": [
+       "werk",
+       "moeten"
+      ],
+      "e": "Modale al secondo posto, infinito alla fine."
+     },
+     {
+      "t": "order",
+      "q": "Voglio un caffè.",
+      "a": "Ik wil een koffie",
+      "x": [
+       "wilt",
+       "willen"
+      ],
+      "e": "ik <b>wil</b>, senza -t."
+     },
+     {
+      "t": "fill",
+      "q": "Hij ___ goed koken.",
+      "h": "kunnen",
+      "a": [
+       "kan"
+      ],
+      "e": "hij <b>kan</b>.",
+      "tt": "Lui sa cucinare bene."
+     }
+    ]
+   },
+   "items": [
+    {
+     "t": "fill",
+     "q": "Ik ___ goed zwemmen.",
+     "h": "kunnen",
+     "a": [
+      "kan"
+     ],
+     "e": "ik <b>kan</b>."
+    },
+    {
+     "t": "fill",
+     "q": "Hij ___ vandaag werken.",
+     "h": "moeten",
+     "a": [
+      "moet"
+     ],
+     "e": "hij <b>moet</b>."
+    },
+    {
+     "t": "mc",
+     "q": "Jij ___ koffie.",
+     "h": "willen",
+     "oit": true,
+     "o": [
+      "wilt",
+      "willen",
+      "wille",
+      "willt"
+     ],
+     "a": 0,
+     "e": "jij <b>wilt</b> (anche: wil)."
+    },
+    {
+     "t": "order",
+     "q": "Voglio imparare l'olandese.",
+     "a": "Ik wil Nederlands leren",
+     "x": [
+      "leer",
+      "wilt"
+     ],
+     "e": "Infinito alla fine: ... <b>leren</b>."
+    },
+    {
+     "t": "mc",
+     "q": "Mag ik hier ___?",
+     "o": [
+      "parkeren",
+      "parkeer",
+      "parkeert",
+      "geparkeerd"
+     ],
+     "a": 0,
+     "e": "Dopo un modale: <b>infinito</b>."
+    },
+    {
+     "t": "fill",
+     "q": "Wij ___ morgen komen.",
+     "h": "zullen",
+     "a": [
+      "zullen"
+     ],
+     "e": "wij <b>zullen</b>."
+    },
+    {
+     "t": "tr",
+     "q": "Posso aiutarti?",
+     "a": [
+      "Kan ik je helpen",
+      "Kan ik jou helpen",
+      "Mag ik je helpen",
+      "Mag ik jou helpen",
+      "Kan ik u helpen",
+      "Mag ik u helpen"
+     ],
+     "e": "<b>Kan ik je helpen?</b>"
+    },
+    {
+     "t": "mc",
+     "oit": true,
+     "q": "Con un verbo modale, l'infinito va:",
+     "o": [
+      "alla fine della frase",
+      "subito dopo il modale",
+      "all'inizio",
+      "prima del soggetto"
+     ],
+     "a": 0,
+     "e": "Sempre <b>alla fine</b>."
+    },
+    {
+     "t": "mc",
+     "oit": true,
+     "q": "'mogen' significa soprattutto:",
+     "o": [
+      "avere il permesso",
+      "dovere",
+      "volere",
+      "sapere"
+     ],
+     "a": 0,
+     "e": "<b>mogen</b> = potere nel senso di permesso."
+    },
+    {
+     "t": "fill",
+     "q": "___ je mij helpen?",
+     "h": "kunnen, domanda",
+     "a": [
+      "kun",
+      "kan"
+     ],
+     "e": "<b>Kun</b> je (o Kan je) mij helpen?"
+    },
+    {
+     "t": "tr",
+     "q": "Devo andare.",
+     "a": [
+      "Ik moet gaan",
+      "Ik moet weg",
+      "Ik moet vertrekken"
+     ],
+     "e": "<b>Ik moet gaan</b>, nel parlato anche: ik moet weg."
+    }
+   ],
+   "gloss": {
+    "0": {
+     "t": "So nuotare bene."
+    },
+    "1": {
+     "t": "Oggi lui deve lavorare."
+    },
+    "2": {
+     "g": {
+      "wilt": "vuoi (tu)",
+      "willen": "vogliamo / volete / vogliono",
+      "wille": "forma che non esiste",
+      "willt": "forma che non esiste"
+     },
+     "t": "Vuoi un caffè."
+    },
+    "4": {
+     "g": {
+      "parkeren": "parcheggiare (infinito)",
+      "parkeer": "parcheggio (io)",
+      "parkeert": "parcheggia (lui)",
+      "geparkeerd": "parcheggiato (participio)"
+     },
+     "t": "Posso parcheggiare qui?"
+    },
+    "5": {
+     "t": "Verremo domani."
+    },
+    "9": {
+     "t": "Puoi aiutarmi?"
+    }
+   }
+  },
+  {
+   "id": "u10",
+   "nl": "Woordvolgorde",
+   "it": "Ordine delle parole",
+   "note": "\n<h3>L'idea: il verbo in seconda posizione</h3>\n<p>In italiano l'ordine delle parole è abbastanza libero. In olandese c'è una regola fissa per la frase principale: il <b>verbo coniugato sta sempre al secondo posto</b>. Al primo posto può esserci il soggetto, ma anche un'altra parte della frase.</p>\n<table><tr><th>1° posto</th><th>2° (verbo)</th><th>resto</th></tr>\n<tr><td>Ik</td><td>werk</td><td>vandaag thuis.</td></tr>\n<tr><td>Vandaag</td><td>werk</td><td>ik thuis.</td></tr>\n<tr><td>Thuis</td><td>werk</td><td>ik vandaag.</td></tr></table>\n<h3>L'inversione</h3>\n<p>Se al primo posto metti qualcosa che non è il soggetto (un'espressione di tempo, un luogo, un oggetto), il soggetto passa <b>dopo il verbo</b>. Questo si chiama inversione: <i>Morgen <b>ga ik</b> naar Brugge</i>, mai <s>Morgen ik ga</s>. È l'errore più comune per chi parla italiano.</p>\n<h3>Tempo – modo – luogo</h3>\n<p>Quando nella stessa frase ci sono più indicazioni, l'ordine abituale è: <b>quando</b>, poi <b>come</b>, poi <b>dove</b>.</p>\n<p><i>Ik ga <b>morgen</b> <b>met de trein</b> <b>naar Gent</b>.</i> (Domani vado a Gand in treno.)</p>\n<h3>La cornice con due verbi</h3>\n<p>Con un verbo modale (unità 9) il verbo coniugato resta al secondo posto e l'infinito va in fondo: <i>Vanavond <b>willen</b> we in Gent <b>eten</b></i>.</p>\n<h3>Le congiunzioni</h3>\n<p><b>en</b> (e), <b>maar</b> (ma), <b>of</b> (o) e <b>want</b> (perché, dato che) non contano come posizione: dopo di loro l'ordine resta normale. <i>Ik blijf thuis, want ik <b>ben</b> moe.</i></p>\n<p><b>dus</b> (quindi) è più libero: può occupare il primo posto (<i>Ik ben moe, dus <b>blijf ik</b> thuis</i>) oppure comportarsi come want (<i>dus <b>ik blijf</b> thuis</i>). Entrambe le forme sono corrette.</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Dimenticare l'inversione: <s>Vandaag ik werk</s> → <b>Vandaag werk ik</b>.</li>\n<li>Mettere il luogo prima del tempo: <s>Ik ga naar Gent morgen</s> → <b>Ik ga morgen naar Gent</b>.</li>\n<li>Invertire dopo <i>want</i>: <s>want ben ik moe</s> → <b>want ik ben moe</b>.</li>\n</ul>",
+   "vlaams": "Le regole sono identiche in tutto il territorio, cambia il lessico. In Fiandra dici <b>een broodje smos</b> (panino farcito con verdure), <b>de gsm</b> (il cellulare) e <b>'s voormiddags</b> (in mattinata).",
+   "vocab": [
+    [
+     "vandaag",
+     "oggi"
+    ],
+    [
+     "morgen",
+     "domani"
+    ],
+    [
+     "vanavond",
+     "stasera"
+    ],
+    [
+     "thuis",
+     "a casa (stato)"
+    ],
+    [
+     "blijven",
+     "restare"
+    ],
+    [
+     "de trein",
+     "il treno"
+    ],
+    [
+     "de zus",
+     "la sorella"
+    ],
+    [
+     "vaak",
+     "spesso"
+    ],
+    [
+     "elke dag",
+     "ogni giorno"
+    ]
+   ],
+   "core": {
+    "words": [
+     [
+      "en",
+      "e"
+     ],
+     [
+      "maar",
+      "ma"
+     ],
+     [
+      "of",
+      "o"
+     ],
+     [
+      "want",
+      "perché (dato che)"
+     ],
+     [
+      "dus",
+      "quindi"
+     ]
+    ],
+    "drills": [
+     {
+      "t": "mc",
+      "q": "Vandaag ___ thuis.",
+      "o": [
+       "werk ik",
+       "ik werk",
+       "werken ik",
+       "ik werken"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Verbo al secondo posto, soggetto dopo: <b>werk ik</b>.",
+      "g": {
+       "werk ik": "lavoro (con inversione)",
+       "ik werk": "io lavoro: dopo vandaag serve l'inversione",
+       "werken ik": "werken è plurale",
+       "ik werken": "verbo sbagliato e niente inversione"
+      },
+      "tt": "Oggi lavoro a casa."
+     },
+     {
+      "t": "mc",
+      "q": "Morgen ___ naar Gent.",
+      "o": [
+       "gaan we",
+       "we gaan",
+       "gaat we",
+       "we gaat"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Inversione: Morgen <b>gaan we</b>.",
+      "g": {
+       "gaan we": "andiamo (con inversione)",
+       "we gaan": "andiamo: qui serve l'inversione",
+       "gaat we": "gaat è singolare",
+       "we gaat": "verbo sbagliato e niente inversione"
+      },
+      "tt": "Domani andiamo a Gand."
+     },
+     {
+      "t": "mc",
+      "q": "In seconda posizione nella frase principale c'è sempre:",
+      "o": [
+       "il verbo coniugato",
+       "il soggetto",
+       "l'infinito",
+       "l'oggetto"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Regola fissa: il <b>verbo coniugato</b> è al secondo posto."
+     },
+     {
+      "t": "mc",
+      "q": "Ik blijf thuis, want ___ moe.",
+      "o": [
+       "ik ben",
+       "ben ik"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Dopo <b>want</b> l'ordine resta normale.",
+      "g": {
+       "ik ben": "sono (ordine normale)",
+       "ben ik": "dopo want non si inverte"
+      },
+      "tt": "Resto a casa perché sono stanco."
+     },
+     {
+      "t": "mc",
+      "q": "Ik ben moe, ___ ik blijf thuis.",
+      "o": [
+       "dus",
+       "want",
+       "maar",
+       "of"
+      ],
+      "a": 0,
+      "e": "<b>dus</b> = quindi. Dopo dus vanno bene sia <i>dus ik blijf</i> sia <i>dus blijf ik</i>.",
+      "g": {
+       "dus": "quindi",
+       "want": "perché (dato che): non ha senso qui",
+       "maar": "ma",
+       "of": "o"
+      },
+      "tt": "Sono stanco, quindi resto a casa."
+     },
+     {
+      "t": "mc",
+      "q": "e",
+      "o": [
+       "en",
+       "maar",
+       "of",
+       "want"
+      ],
+      "a": 0,
+      "e": "<b>en</b> = e.",
+      "g": {
+       "en": "e",
+       "maar": "ma",
+       "of": "o",
+       "want": "perché (dato che)"
+      }
+     },
+     {
+      "t": "mc",
+      "q": "ma",
+      "o": [
+       "maar",
+       "dus",
+       "en",
+       "of"
+      ],
+      "a": 0,
+      "e": "<b>maar</b> = ma.",
+      "g": {
+       "maar": "ma",
+       "dus": "quindi",
+       "en": "e",
+       "of": "o"
+      }
+     },
+     {
+      "t": "order",
+      "q": "Oggi lavoro.",
+      "a": "Vandaag werk ik",
+      "alt": [
+       "Ik werk vandaag"
+      ],
+      "x": [
+       "werkt",
+       "mij"
+      ],
+      "e": "Se inizi con vandaag, il verbo viene subito dopo: <b>Vandaag werk ik</b>."
+     },
+     {
+      "t": "order",
+      "q": "Domani andiamo a Bruges.",
+      "a": "Morgen gaan we naar Brugge",
+      "alt": [
+       "We gaan morgen naar Brugge"
+      ],
+      "x": [
+       "gaat",
+       "ons"
+      ],
+      "e": "Morgen + <b>gaan</b> + we."
+     },
+     {
+      "t": "fill",
+      "q": "Elke dag ___ ik koffie.",
+      "h": "drinken",
+      "a": [
+       "drink"
+      ],
+      "e": "Inversione: Elke dag <b>drink</b> ik.",
+      "tt": "Ogni giorno bevo caffè."
+     }
+    ]
+   },
+   "items": [
+    {
+     "t": "order",
+     "q": "Oggi lavoro a casa.",
+     "a": "Vandaag werk ik thuis",
+     "alt": [
+      "Ik werk vandaag thuis"
+     ],
+     "x": [
+      "werkt",
+      "mij"
+     ],
+     "e": "Verbo in seconda posizione: Vandaag <b>werk</b> ik."
+    },
+    {
+     "t": "mc",
+     "oit": true,
+     "q": "Morgen ___ naar Brugge.",
+     "o": [
+      "ga ik",
+      "ik ga",
+      "gaan ik",
+      "ik gaan"
+     ],
+     "a": 0,
+     "e": "Inversione: Morgen <b>ga ik</b>."
+    },
+    {
+     "t": "mc",
+     "oit": true,
+     "say": "Ik ga morgen met de trein naar Gent.",
+     "q": "Quale frase è corretta?",
+     "o": [
+      "Ik ga morgen met de trein naar Gent.",
+      "Ik ga naar Gent morgen met de trein.",
+      "Morgen ik ga met de trein naar Gent.",
+      "Ik morgen ga naar Gent."
+     ],
+     "a": 0,
+     "e": "Tempo – modo – luogo."
+    },
+    {
+     "t": "order",
+     "q": "Stasera vogliamo mangiare a Gand.",
+     "a": "Vanavond willen we in Gent eten",
+     "alt": [
+      "We willen vanavond in Gent eten"
+     ],
+     "x": [
+      "eet",
+      "wil"
+     ],
+     "e": "Verbo coniugato in seconda posizione, infinito alla fine."
+    },
+    {
+     "t": "mc",
+     "q": "In Antwerpen ___ mijn zus.",
+     "o": [
+      "woont",
+      "woon",
+      "wonen",
+      "is wonen"
+     ],
+     "a": 0,
+     "e": "In Antwerpen <b>woont</b> mijn zus."
+    },
+    {
+     "t": "tr",
+     "q": "Domani vado a Bruxelles.",
+     "a": [
+      "Morgen ga ik naar Brussel",
+      "Ik ga morgen naar Brussel"
+     ],
+     "e": "<b>Morgen ga ik</b> naar Brussel."
+    },
+    {
+     "t": "mc",
+     "oit": true,
+     "q": "Il verbo coniugato nella frase principale sta in posizione:",
+     "o": [
+      "prima",
+      "seconda",
+      "ultima",
+      "dopo l'oggetto"
+     ],
+     "a": 1,
+     "e": "<b>Seconda</b> posizione."
+    },
+    {
+     "t": "order",
+     "q": "Mangio spesso le patatine fritte.",
+     "a": "Ik eet vaak frieten",
+     "x": [
+      "eten",
+      "frietje"
+     ],
+     "e": "In Belgio: <b>frieten</b>."
+    },
+    {
+     "t": "fill",
+     "q": "Elke dag ___ hij koffie.",
+     "h": "drinken",
+     "a": [
+      "drinkt"
+     ],
+     "e": "Inversione: Elke dag <b>drinkt</b> hij."
+    },
+    {
+     "t": "mc",
+     "oit": true,
+     "q": "Dopo 'want' (perché):",
+     "o": [
+      "l'ordine resta normale",
+      "il verbo va alla fine",
+      "il verbo va al primo posto",
+      "si usa l'infinito"
+     ],
+     "a": 0,
+     "e": "en, maar, of, want: ordine <b>normale</b>."
+    },
+    {
+     "t": "tr",
+     "q": "Stasera lavoro.",
+     "a": [
+      "Vanavond werk ik",
+      "Ik werk vanavond"
+     ],
+     "e": "<b>Vanavond werk ik.</b>"
+    }
+   ],
+   "gloss": {
+    "1": {
+     "g": {
+      "ga ik": "vado (verbo + soggetto dopo Morgen)",
+      "ik ga": "io vado: qui serve l'inversione",
+      "gaan ik": "gaan è plurale",
+      "ik gaan": "verbo sbagliato e niente inversione"
+     },
+     "t": "Domani vado a Bruges."
+    },
+    "2": {
+     "g": {
+      "Ik ga morgen met de trein naar Gent.": "Domani vado a Gand in treno (tempo, modo, luogo)",
+      "Ik ga naar Gent morgen met de trein.": "il luogo va dopo tempo e modo",
+      "Morgen ik ga met de trein naar Gent.": "dopo Morgen serve l'inversione: ga ik",
+      "Ik morgen ga naar Gent.": "il verbo deve stare al secondo posto"
+     },
+     "t": "Domani vado a Gand in treno."
+    },
+    "4": {
+     "g": {
+      "woont": "abita (lui/lei)",
+      "woon": "abito (io)",
+      "wonen": "abitiamo / abitano",
+      "is wonen": "forma che non esiste"
+     },
+     "t": "Ad Anversa abita mia sorella."
+    },
+    "8": {
+     "t": "Ogni giorno lui beve caffè."
+    }
+   }
+  }
+ ],
+ "orderSets": [
+  {
+   "id": "v2",
+   "unit": "u10",
+   "t": "Il verbo al secondo posto",
+   "s": "Soggetto, verbo, resto",
+   "rule": "Nella frase principale il verbo coniugato sta sempre al <b>secondo posto</b>. In queste frasi al primo posto c'è il soggetto: <b>soggetto – verbo – resto</b>. Se metti un luogo o un tempo all'inizio, il soggetto passa dopo il verbo.",
+   "items": [
+    {
+     "it": "Lavoro a Bruxelles.",
+     "a": [
+      "Ik",
+      "werk",
+      "in Brussel"
+     ],
+     "alt": [
+      [
+       "In Brussel",
+       "werk",
+       "ik"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Soggetto <b>ik</b>, poi il verbo <b>werk</b> al 2° posto, poi il luogo."
+    },
+    {
+     "it": "Mia sorella abita a Gand.",
+     "a": [
+      "Mijn zus",
+      "woont",
+      "in Gent"
+     ],
+     "alt": [
+      [
+       "In Gent",
+       "woont",
+       "mijn zus"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "<b>Mijn zus</b> è un solo blocco (il soggetto), quindi <b>woont</b> è comunque al 2° posto."
+    },
+    {
+     "it": "Bevo un caffè.",
+     "a": [
+      "Ik",
+      "drink",
+      "een koffie"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Soggetto – verbo – oggetto, come in italiano, ma il soggetto non si omette mai."
+    },
+    {
+     "it": "Mio padre legge il giornale.",
+     "a": [
+      "Mijn vader",
+      "leest",
+      "de krant"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Il verbo <b>leest</b> viene subito dopo il soggetto, l'oggetto dopo il verbo."
+    },
+    {
+     "it": "Parliamo olandese.",
+     "a": [
+      "Wij",
+      "spreken",
+      "Nederlands"
+     ],
+     "alt": [
+      [
+       "Nederlands",
+       "spreken",
+       "wij"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "<b>Wij</b> è obbligatorio; il verbo è al 2° posto."
+    },
+    {
+     "it": "I bambini giocano in giardino.",
+     "a": [
+      "De kinderen",
+      "spelen",
+      "in de tuin"
+     ],
+     "alt": [
+      [
+       "In de tuin",
+       "spelen",
+       "de kinderen"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Soggetto (due parole, un blocco) – verbo – luogo."
+    },
+    {
+     "it": "Il nostro appartamento è molto bello.",
+     "a": [
+      "Ons appartement",
+      "is",
+      "heel mooi"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Anche <b>is</b> è un verbo coniugato: 2° posto."
+    },
+    {
+     "it": "Il treno è in ritardo.",
+     "a": [
+      "De trein",
+      "is",
+      "te laat"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Soggetto – verbo – resto: <b>te laat</b> chiude la frase."
+    },
+    {
+     "it": "Il negozio chiude alle sei.",
+     "a": [
+      "De winkel",
+      "sluit",
+      "om zes uur"
+     ],
+     "alt": [
+      [
+       "Om zes uur",
+       "sluit",
+       "de winkel"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Il verbo <b>sluit</b> al 2° posto; se metti l'ora all'inizio, il soggetto va dopo il verbo."
+    },
+    {
+     "it": "Marc regala dei fiori a sua madre.",
+     "a": [
+      "Marc",
+      "geeft",
+      "zijn moeder",
+      "bloemen"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Verbo al 2° posto; senza <i>aan</i>, la persona (<b>zijn moeder</b>) viene prima della cosa (<b>bloemen</b>)."
+    }
+   ]
+  },
+  {
+   "id": "inv",
+   "unit": "u10",
+   "t": "Inversione",
+   "s": "Tempo o luogo all'inizio",
+   "rule": "Se la frase comincia con un tempo o un luogo, il verbo resta al <b>2° posto</b> e il soggetto va <b>dopo</b> il verbo: <b>tempo/luogo – verbo – soggetto – resto</b>. Il primo blocco è già al suo posto.",
+   "items": [
+    {
+     "it": "Domani vado a Gand.",
+     "a": [
+      "Morgen",
+      "ga",
+      "ik",
+      "naar Gent"
+     ],
+     "alt": [],
+     "start": 1,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "<b>Morgen</b> occupa il 1° posto, quindi <b>ga</b> e poi <b>ik</b>."
+    },
+    {
+     "it": "A Gand abita mia zia.",
+     "a": [
+      "In Gent",
+      "woont",
+      "mijn tante"
+     ],
+     "alt": [],
+     "start": 1,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Luogo all'inizio → verbo → soggetto."
+    },
+    {
+     "it": "Oggi lavoro a casa.",
+     "a": [
+      "Vandaag",
+      "werk",
+      "ik",
+      "thuis"
+     ],
+     "alt": [],
+     "start": 1,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Dopo <b>vandaag</b> viene subito il verbo, poi il soggetto <b>ik</b>."
+    },
+    {
+     "it": "Stasera cuciniamo la pasta.",
+     "a": [
+      "Vanavond",
+      "koken",
+      "we",
+      "pasta"
+     ],
+     "alt": [],
+     "start": 1,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Inversione: <b>koken we</b>, non <s>we koken</s>."
+    },
+    {
+     "it": "Il sabato andiamo al mercato.",
+     "a": [
+      "Op zaterdag",
+      "gaan",
+      "we",
+      "naar de markt"
+     ],
+     "alt": [],
+     "start": 1,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Tempo al 1° posto, verbo al 2°, soggetto al 3°."
+    },
+    {
+     "it": "Dopo il lavoro bevo una birra.",
+     "a": [
+      "Na het werk",
+      "drink",
+      "ik",
+      "een pintje"
+     ],
+     "alt": [],
+     "start": 1,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "<b>Na het werk</b> è un solo elemento: dopo viene il verbo. (<i>Een pintje</i> = una birra, in Belgio.)"
+    },
+    {
+     "it": "Alle otto comincia la lezione.",
+     "a": [
+      "Om acht uur",
+      "begint",
+      "de les"
+     ],
+     "alt": [],
+     "start": 1,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Ora all'inizio → <b>begint</b> → soggetto."
+    },
+    {
+     "it": "D'estate andiamo spesso al mare.",
+     "a": [
+      "In de zomer",
+      "gaan",
+      "we",
+      "vaak",
+      "naar zee"
+     ],
+     "alt": [],
+     "start": 1,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Verbo, soggetto, e poi l'avverbio <b>vaak</b> prima del luogo."
+    },
+    {
+     "it": "Ogni giorno mio figlio va a scuola in bici.",
+     "a": [
+      "Elke dag",
+      "gaat",
+      "mijn zoon",
+      "met de fiets",
+      "naar school"
+     ],
+     "alt": [],
+     "start": 1,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Verbo, soggetto, poi modo (<b>met de fiets</b>) prima del luogo (<b>naar school</b>)."
+    },
+    {
+     "it": "Domattina mia madre chiama il medico.",
+     "a": [
+      "Morgenvroeg",
+      "belt",
+      "mijn moeder",
+      "de dokter"
+     ],
+     "alt": [],
+     "start": 1,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Dopo il tempo: verbo <b>belt</b>, soggetto, oggetto."
+    }
+   ]
+  },
+  {
+   "id": "tmp",
+   "unit": "u10",
+   "t": "Tempo – modo – luogo",
+   "s": "Quando, come, dove",
+   "rule": "Dopo il verbo le informazioni seguono di solito l'ordine <b>tempo – modo – luogo</b>: <i>Ik ga <b>morgen</b> <b>met de trein</b> <b>naar Gent</b></i>. Il soggetto è già al suo posto.",
+   "items": [
+    {
+     "it": "Domani vado a Gand.",
+     "a": [
+      "Ik",
+      "ga",
+      "morgen",
+      "naar Gent"
+     ],
+     "alt": [],
+     "start": 1,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Prima il tempo (<b>morgen</b>), poi il luogo (<b>naar Gent</b>)."
+    },
+    {
+     "it": "Stasera mangiamo a casa.",
+     "a": [
+      "We",
+      "eten",
+      "vanavond",
+      "thuis"
+     ],
+     "alt": [],
+     "start": 1,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Tempo prima del luogo: <b>vanavond thuis</b>."
+    },
+    {
+     "it": "Mio fratello va al lavoro in bici.",
+     "a": [
+      "Mijn broer",
+      "gaat",
+      "met de fiets",
+      "naar het werk"
+     ],
+     "alt": [],
+     "start": 1,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Modo (<b>met de fiets</b>) prima del luogo."
+    },
+    {
+     "it": "Domani vado a Gand in treno.",
+     "a": [
+      "Ik",
+      "ga",
+      "morgen",
+      "met de trein",
+      "naar Gent"
+     ],
+     "alt": [],
+     "start": 1,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Tempo – modo – luogo: <b>morgen – met de trein – naar Gent</b>."
+    },
+    {
+     "it": "Lavora ogni giorno a Bruxelles.",
+     "a": [
+      "Ze",
+      "werkt",
+      "elke dag",
+      "in Brussel"
+     ],
+     "alt": [],
+     "start": 1,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Il tempo (<b>elke dag</b>) viene prima del luogo."
+    },
+    {
+     "it": "Viene in ufficio alle nove con l'autobus.",
+     "a": [
+      "Hij",
+      "komt",
+      "om negen uur",
+      "met de bus",
+      "naar kantoor"
+     ],
+     "alt": [],
+     "start": 1,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Tempo – modo – luogo, anche se in italiano l'ordine è diverso."
+    },
+    {
+     "it": "Sabato andiamo al mare con gli amici.",
+     "a": [
+      "We",
+      "gaan",
+      "zaterdag",
+      "met vrienden",
+      "naar zee"
+     ],
+     "alt": [],
+     "start": 1,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Quando (<b>zaterdag</b>), con chi/come (<b>met vrienden</b>), dove (<b>naar zee</b>)."
+    },
+    {
+     "it": "Oggi i miei genitori vanno ad Anversa in macchina.",
+     "a": [
+      "Mijn ouders",
+      "gaan",
+      "vandaag",
+      "met de auto",
+      "naar Antwerpen"
+     ],
+     "alt": [],
+     "start": 1,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Tempo – modo – luogo: <b>vandaag – met de auto – naar Antwerpen</b>."
+    },
+    {
+     "it": "Mia sorella pedala ogni mattina nel parco.",
+     "a": [
+      "Mijn zus",
+      "fietst",
+      "elke ochtend",
+      "in het park"
+     ],
+     "alt": [],
+     "start": 1,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Il tempo prima del luogo."
+    },
+    {
+     "it": "Domani alle otto i bambini vanno a scuola con l'autobus.",
+     "a": [
+      "De kinderen",
+      "gaan",
+      "morgen",
+      "om acht uur",
+      "met de bus",
+      "naar school"
+     ],
+     "alt": [],
+     "start": 1,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Tempo generico prima di quello preciso (<b>morgen om acht uur</b>), poi modo e luogo."
+    }
+   ]
+  },
+  {
+   "id": "q",
+   "unit": "u7",
+   "t": "Le domande",
+   "s": "Verbo all'inizio o dopo la parola interrogativa",
+   "rule": "Domanda sì/no: il <b>verbo</b> va al <b>1° posto</b>: <i>Woon je in Gent?</i> Con una parola interrogativa: <b>parola interrogativa – verbo – soggetto – resto</b>: <i>Waar woon je?</i> Con <i>je/jij</i> dopo il verbo cade la <b>-t</b>.",
+   "items": [
+    {
+     "it": "Abiti a Gand?",
+     "a": [
+      "Woon",
+      "je",
+      "in Gent"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      0
+     ],
+     "end": [],
+     "e": "Domanda sì/no: verbo al 1° posto. <b>Woon je</b>, senza -t."
+    },
+    {
+     "it": "Parli francese?",
+     "a": [
+      "Spreek",
+      "je",
+      "Frans"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      0
+     ],
+     "end": [],
+     "e": "Verbo, soggetto, resto."
+    },
+    {
+     "it": "Hai un giardino?",
+     "a": [
+      "Heb",
+      "je",
+      "een tuin"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      0
+     ],
+     "end": [],
+     "e": "Il verbo <b>heb</b> apre la domanda."
+    },
+    {
+     "it": "Dove abiti?",
+     "a": [
+      "Waar",
+      "woon",
+      "je"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Parola interrogativa, poi subito il verbo, poi il soggetto."
+    },
+    {
+     "it": "Cosa bevi?",
+     "a": [
+      "Wat",
+      "drink",
+      "jij"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "<b>Wat</b> al 1° posto, verbo al 2°."
+    },
+    {
+     "it": "Come si chiama tuo fratello?",
+     "a": [
+      "Hoe",
+      "heet",
+      "je broer"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Parola interrogativa – verbo – soggetto."
+    },
+    {
+     "it": "Quanto costa il formaggio?",
+     "a": [
+      "Hoeveel",
+      "kost",
+      "de kaas"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "<b>Hoeveel</b>, poi il verbo, poi il soggetto."
+    },
+    {
+     "it": "Domani lavori a casa?",
+     "a": [
+      "Werk",
+      "je",
+      "morgen",
+      "thuis"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      0
+     ],
+     "end": [],
+     "e": "Verbo al 1° posto; dopo il soggetto, tempo prima del luogo."
+    },
+    {
+     "it": "Quando andate a Bruges?",
+     "a": [
+      "Wanneer",
+      "gaan",
+      "jullie",
+      "naar Brugge"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "Parola interrogativa – verbo – soggetto – resto."
+    },
+    {
+     "it": "Perché studi l'olandese?",
+     "a": [
+      "Waarom",
+      "leer",
+      "je",
+      "Nederlands"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [],
+     "e": "<b>Waarom leer je</b>: verbo al 2° posto, soggetto subito dopo."
+    }
+   ]
+  },
+  {
+   "id": "mod",
+   "unit": "u9",
+   "t": "Verbi modali",
+   "s": "L'infinito va alla fine",
+   "rule": "Il verbo modale (<i>willen, kunnen, moeten, mogen</i>) è coniugato e sta al <b>2° posto</b>; l'<b>infinito</b> va <b>alla fine</b>: <i>Ik <b>wil</b> koffie <b>drinken</b></i>. Tutto il resto sta in mezzo.",
+   "items": [
+    {
+     "it": "Voglio bere un caffè.",
+     "a": [
+      "Ik",
+      "wil",
+      "koffie",
+      "drinken"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      3
+     ],
+     "e": "<b>wil</b> al 2° posto, <b>drinken</b> in fondo."
+    },
+    {
+     "it": "Qui puoi parcheggiare.",
+     "a": [
+      "Je",
+      "mag",
+      "hier",
+      "parkeren"
+     ],
+     "alt": [
+      [
+       "Hier",
+       "mag",
+       "je",
+       "parkeren"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      3
+     ],
+     "e": "Modale al 2° posto, infinito alla fine; <b>hier</b> sta in mezzo (o all'inizio, con inversione)."
+    },
+    {
+     "it": "Domani dobbiamo lavorare.",
+     "a": [
+      "We",
+      "moeten",
+      "morgen",
+      "werken"
+     ],
+     "alt": [
+      [
+       "Morgen",
+       "moeten",
+       "we",
+       "werken"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      3
+     ],
+     "e": "<b>werken</b> va in fondo, dopo <b>morgen</b>."
+    },
+    {
+     "it": "Mi puoi aiutare?",
+     "a": [
+      "Kun",
+      "je",
+      "me",
+      "helpen"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      0
+     ],
+     "end": [
+      3
+     ],
+     "e": "Domanda: modale al 1° posto, infinito sempre alla fine."
+    },
+    {
+     "it": "Sa cucinare bene.",
+     "a": [
+      "Hij",
+      "kan",
+      "goed",
+      "koken"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      3
+     ],
+     "e": "<b>kan</b> al 2° posto, <b>koken</b> alla fine, l'avverbio in mezzo."
+    },
+    {
+     "it": "Mia sorella vuole abitare ad Anversa.",
+     "a": [
+      "Mijn zus",
+      "wil",
+      "in Antwerpen",
+      "wonen"
+     ],
+     "alt": [
+      [
+       "In Antwerpen",
+       "wil",
+       "mijn zus",
+       "wonen"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      3
+     ],
+     "e": "Il luogo sta in mezzo, <b>wonen</b> chiude la frase."
+    },
+    {
+     "it": "Vogliamo comprare una bici nuova.",
+     "a": [
+      "Wij",
+      "willen",
+      "een nieuwe fiets",
+      "kopen"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      3
+     ],
+     "e": "L'oggetto in mezzo, l'infinito <b>kopen</b> in fondo."
+    },
+    {
+     "it": "Qui non puoi fumare.",
+     "a": [
+      "Je",
+      "mag",
+      "hier",
+      "niet",
+      "roken"
+     ],
+     "alt": [
+      [
+       "Hier",
+       "mag",
+       "je",
+       "niet",
+       "roken"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      4
+     ],
+     "e": "<b>niet</b> sta subito prima dell'infinito finale."
+    },
+    {
+     "it": "Stasera devo pulire la cucina.",
+     "a": [
+      "Ik",
+      "moet",
+      "vanavond",
+      "de keuken",
+      "poetsen"
+     ],
+     "alt": [
+      [
+       "Vanavond",
+       "moet",
+       "ik",
+       "de keuken",
+       "poetsen"
+      ],
+      [
+       "Ik",
+       "moet",
+       "de keuken",
+       "vanavond",
+       "poetsen"
+      ],
+      [
+       "De keuken",
+       "moet",
+       "ik",
+       "vanavond",
+       "poetsen"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      4
+     ],
+     "e": "<b>poetsen</b> (pulire, in Belgio) va in fondo; tutto il resto sta tra modale e infinito."
+    },
+    {
+     "it": "Quando possiamo andare a Gand?",
+     "a": [
+      "Wanneer",
+      "kunnen",
+      "we",
+      "naar Gent",
+      "gaan"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      4
+     ],
+     "e": "Parola interrogativa, modale, soggetto… e <b>gaan</b> alla fine."
+    }
+   ]
+  }
+ ]
+}

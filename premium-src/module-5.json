@@ -1,0 +1,2612 @@
+{
+ "app": "patatino",
+ "module": 5,
+ "version": 1,
+ "title": "Precisare",
+ "units": [
+  {
+   "id": "u21",
+   "nl": "Wederkerende werkwoorden",
+   "it": "I verbi riflessivi",
+   "note": "\n<h3>L'idea</h3>\n<p>Anche in olandese esistono i verbi riflessivi, come lavarsi o sentirsi: il soggetto fa l'azione su se stesso. Si costruiscono con un <b>pronome riflessivo</b>, che corrisponde al nostro mi, ti, si, ci, vi. Due differenze importanti con l'italiano: il pronome va <b>dopo il verbo</b> (<i>ik was me</i> = mi lavo), e non tutti i verbi riflessivi italiani lo sono anche in olandese.</p>\n<h3>I pronomi riflessivi</h3>\n<table><tr><th>soggetto</th><th>riflessivo</th><th>esempio</th></tr>\n<tr><td>ik</td><td>me (mij)</td><td>ik was me</td></tr>\n<tr><td>jij</td><td>je</td><td>jij wast je</td></tr>\n<tr><td>u</td><td>zich / u</td><td>u wast zich</td></tr>\n<tr><td>hij / zij / het</td><td>zich</td><td>hij wast zich</td></tr>\n<tr><td>wij</td><td>ons</td><td>wij wassen ons</td></tr>\n<tr><td>jullie</td><td>je</td><td>jullie wassen je</td></tr>\n<tr><td>zij (loro)</td><td>zich</td><td>zij wassen zich</td></tr></table>\n<p>Come vedi, sono quasi uguali ai pronomi oggetto (unità 4). L'unica forma nuova è <b>zich</b>, per lui, lei, loro e per la cortesia: è il nostro \"si\". Con <b>u</b> puoi dire sia <i>u vergist zich</i> sia <i>u vergist u</i>. Con <b>jullie</b> il riflessivo è <b>je</b>. <i>mij</i> al posto di <i>me</i> si usa per dare enfasi o in uno stile più formale (in Belgio è frequente anche nel parlato).</p>\n<h3>Dove va il pronome</h3>\n<ul>\n<li>Subito dopo il verbo coniugato: <i>Ik voel me goed.</i> (mi sento bene)</li>\n<li>Con l'inversione va dopo il soggetto: <i>Vandaag voel ik me goed.</i></li>\n<li>Nelle domande con je trovi due volte \"je\": <i>Voel je je goed?</i> Il primo è il soggetto (tu), il secondo il riflessivo (ti).</li>\n<li>Con un modale l'infinito va in fondo: <i>Ik moet me haasten.</i> (mi devo affrettare)</li>\n<li>Con un verbo separabile la particella va in fondo: <i>Ik kleed me aan.</i> (mi vesto)</li>\n</ul>\n<h3>Il passato prossimo vuole hebben</h3>\n<p>In italiano i riflessivi vogliono \"essere\" (mi sono sbagliato). In olandese si usa sempre <b>hebben</b>: <i>Ik heb me vergist</i> (mi sono sbagliato), <i>We hebben ons geamuseerd</i> (ci siamo divertiti).</p>\n<h3>Riflessivi solo in italiano</h3>\n<p>Molti verbi che in italiano hanno il \"si\" in olandese sono verbi normali: chiamarsi = <b>heten</b> (<i>ik heet Luca</i>), alzarsi = <b>opstaan</b>, dimenticarsi = <b>vergeten</b>, sedersi = <b>gaan zitten</b>. Per questo conviene imparare i riflessivi insieme a <b>zich</b>, come nella lista delle parole: zich wassen, zich herinneren (ricordarsi), zich haasten (affrettarsi).</p>\n<h3>Zichzelf: se stesso</h3>\n<p>Aggiungendo <b>-zelf</b> ottieni \"me stesso, se stesso\": <i>mezelf, jezelf, zichzelf, onszelf</i>. Si usa con verbi che di solito non sono riflessivi, soprattutto dopo una preposizione: <i>Hij denkt alleen aan zichzelf</i> (pensa solo a se stesso). Con i verbi veramente riflessivi non si usa: <s>ik vergis mezelf</s> → <i>ik vergis me</i>.</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Rendere riflessivo \"chiamarsi\": <s>Ik heet me Luca</s> → <b>Ik heet Luca</b>.</li>\n<li>Usare \"essere\" al passato: <s>Ik ben me vergist</s> → <b>Ik heb me vergist</b>.</li>\n<li>Mettere il pronome prima del verbo: <s>Ik me was</s> → <b>Ik was me</b>.</li>\n<li>Usare zich con tutti: <s>Wij wassen zich</s> → <b>Wij wassen ons</b>.</li>\n</ul>",
+   "vlaams": "Con <b>gij/ge</b> il riflessivo è <b>u</b>: \"Ge moet u niet haasten\" (non devi affrettarti). Prima di una festa nelle Fiandre senti spesso \"<b>Amuseer u!</b>\" o \"Amuseer je!\", cioè \"divertiti!\".",
+   "vocab": [
+    [
+     "zich wassen",
+     "lavarsi"
+    ],
+    [
+     "zich voelen",
+     "sentirsi"
+    ],
+    [
+     "zich vergissen",
+     "sbagliarsi"
+    ],
+    [
+     "zich herinneren",
+     "ricordarsi"
+    ],
+    [
+     "zich haasten",
+     "affrettarsi"
+    ],
+    [
+     "zich vervelen",
+     "annoiarsi"
+    ],
+    [
+     "zich amuseren",
+     "divertirsi"
+    ],
+    [
+     "zich scheren",
+     "radersi"
+    ],
+    [
+     "zich aankleden",
+     "vestirsi"
+    ],
+    [
+     "zich zorgen maken",
+     "preoccuparsi"
+    ],
+    [
+     "denken aan",
+     "pensare a"
+    ],
+    [
+     "ziek",
+     "malato"
+    ],
+    [
+     "snel",
+     "veloce, in fretta"
+    ],
+    [
+     "alleen",
+     "solo, soltanto"
+    ],
+    [
+     "het feest",
+     "la festa"
+    ]
+   ],
+   "core": {
+    "words": [
+     [
+      "me",
+      "mi (riflessivo)"
+     ],
+     [
+      "je",
+      "ti, vi (riflessivo)"
+     ],
+     [
+      "zich",
+      "si (lui, lei, loro)"
+     ],
+     [
+      "u",
+      "Si (cortesia, riflessivo)"
+     ],
+     [
+      "ons",
+      "ci (riflessivo)"
+     ],
+     [
+      "zichzelf",
+      "se stesso"
+     ]
+    ],
+    "drills": [
+     {
+      "t": "mc",
+      "q": "Ik was ___.",
+      "o": [
+       "me",
+       "zich",
+       "je",
+       "ons"
+      ],
+      "a": 0,
+      "e": "ik → <b>me</b>.",
+      "g": {
+       "me": "mi (con ik)",
+       "zich": "si: solo per lui, lei, loro",
+       "je": "ti: per jij",
+       "ons": "ci: per wij"
+      },
+      "tt": "Mi lavo."
+     },
+     {
+      "t": "mc",
+      "q": "Hij voelt ___ niet goed.",
+      "o": [
+       "zich",
+       "hem",
+       "je",
+       "me"
+      ],
+      "a": 0,
+      "e": "hij → <b>zich</b>.",
+      "g": {
+       "zich": "si (con hij)",
+       "hem": "lo (pronome oggetto): qui serve il riflessivo",
+       "je": "ti: per jij",
+       "me": "mi: per ik"
+      },
+      "tt": "Lui non si sente bene."
+     },
+     {
+      "t": "mc",
+      "q": "Wij haasten ___.",
+      "o": [
+       "ons",
+       "zich",
+       "onze",
+       "we"
+      ],
+      "a": 0,
+      "e": "wij → <b>ons</b>.",
+      "g": {
+       "ons": "ci (con wij)",
+       "zich": "si: non si usa con wij",
+       "onze": "nostro (possessivo)",
+       "we": "noi (soggetto)"
+      },
+      "tt": "Ci affrettiamo."
+     },
+     {
+      "t": "mc",
+      "q": "Jullie vergissen ___.",
+      "o": [
+       "je",
+       "jullie",
+       "ons",
+       "hun"
+      ],
+      "a": 0,
+      "e": "Con jullie il riflessivo è <b>je</b>.",
+      "g": {
+       "je": "vi (con jullie)",
+       "jullie": "voi: non è un riflessivo",
+       "ons": "ci: per wij",
+       "hun": "loro (possessivo / a loro)"
+      },
+      "tt": "Vi sbagliate."
+     },
+     {
+      "t": "mc",
+      "q": "Ze (loro) amuseren ___.",
+      "o": [
+       "zich",
+       "hun",
+       "ze",
+       "hen"
+      ],
+      "a": 0,
+      "e": "zij (loro) → <b>zich</b>.",
+      "g": {
+       "zich": "si (con loro)",
+       "hun": "loro (possessivo / a loro)",
+       "ze": "li, le (oggetto): qui serve il riflessivo",
+       "hen": "li, loro (oggetto): qui serve il riflessivo"
+      },
+      "tt": "Loro si divertono."
+     },
+     {
+      "t": "mc",
+      "q": "Voel je ___ goed?",
+      "o": [
+       "je",
+       "zich",
+       "jou",
+       "jij"
+      ],
+      "a": 0,
+      "e": "Il primo je è il soggetto, il secondo il riflessivo: <b>Voel je je goed?</b>",
+      "g": {
+       "je": "ti (riflessivo di jij)",
+       "zich": "si: non si usa con jij",
+       "jou": "te (forma accentata dell'oggetto): non è riflessivo",
+       "jij": "tu (soggetto)"
+      },
+      "tt": "Ti senti bene?"
+     },
+     {
+      "t": "mc",
+      "q": "U moet ___ niet haasten, meneer.",
+      "o": [
+       "zich",
+       "je",
+       "me",
+       "ons"
+      ],
+      "a": 0,
+      "e": "Con u: <b>zich</b> (oppure u).",
+      "g": {
+       "zich": "Si (cortesia)",
+       "je": "ti: forma informale, non va con u",
+       "me": "mi: per ik",
+       "ons": "ci: per wij"
+      },
+      "tt": "Non deve affrettarsi, signore."
+     },
+     {
+      "t": "order",
+      "q": "Domani mi devo affrettare.",
+      "a": "Morgen moet ik me haasten",
+      "alt": [
+       "Ik moet me morgen haasten"
+      ],
+      "x": [
+       "zich",
+       "jou"
+      ],
+      "e": "Modale al secondo posto, riflessivo dopo il soggetto, infinito alla fine."
+     },
+     {
+      "t": "fill",
+      "q": "Ik herinner ___ zijn naam niet.",
+      "h": "mi",
+      "a": [
+       "me",
+       "mij"
+      ],
+      "e": "<b>zich herinneren</b>: ik herinner <b>me</b>.",
+      "tt": "Non mi ricordo il suo nome."
+     },
+     {
+      "t": "mc",
+      "q": "Quale verbo è riflessivo in olandese?",
+      "o": [
+       "vergissen",
+       "heten",
+       "opstaan",
+       "vergeten"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "<b>zich vergissen</b> = sbagliarsi. Chiamarsi, alzarsi e dimenticarsi in olandese non sono riflessivi.",
+      "g": {
+       "vergissen": "sbagliarsi: zich vergissen, riflessivo",
+       "heten": "chiamarsi: in olandese NON è riflessivo",
+       "opstaan": "alzarsi: NON è riflessivo",
+       "vergeten": "dimenticare, dimenticarsi: NON è riflessivo"
+      }
+     }
+    ]
+   },
+   "items": [
+    {
+     "t": "mc",
+     "q": "Ben je ziek? — Ja, ik voel ___ niet goed.",
+     "o": [
+      "me",
+      "mijn",
+      "ik",
+      "zich"
+     ],
+     "a": 0,
+     "e": "ik → <b>me</b>: ik voel me."
+    },
+    {
+     "t": "fill",
+     "q": "Hij scheert ___ elke dag.",
+     "h": "si",
+     "a": [
+      "zich"
+     ],
+     "e": "hij → <b>zich</b>."
+    },
+    {
+     "t": "fill",
+     "q": "We ___ ons, want de trein vertrekt.",
+     "h": "zich haasten",
+     "a": [
+      "haasten"
+     ],
+     "e": "wij + verbo al plurale: we <b>haasten</b> ons."
+    },
+    {
+     "t": "order",
+     "q": "I bambini si annoiano.",
+     "a": "De kinderen vervelen zich",
+     "x": [
+      "onze",
+      "verveelt"
+     ],
+     "e": "zij (loro) → <b>zich</b>; soggetto plurale → <b>vervelen</b>."
+    },
+    {
+     "t": "tr",
+     "q": "Mi sono sbagliato.",
+     "a": [
+      "Ik heb me vergist",
+      "Ik heb mij vergist",
+      "Ik vergiste me",
+      "Ik vergiste mij"
+     ],
+     "e": "I riflessivi vogliono <b>hebben</b>: ik <b>heb</b> me vergist."
+    },
+    {
+     "t": "mc",
+     "oit": true,
+     "q": "Mevrouw, u ___ zich.",
+     "h": "zich vergissen",
+     "o": [
+      "vergist",
+      "vergis",
+      "vergissen",
+      "vergisst"
+     ],
+     "a": 0,
+     "e": "u si coniuga come jij: u <b>vergist</b> zich."
+    },
+    {
+     "t": "tr",
+     "q": "Ti ricordi il mio nome?",
+     "a": [
+      "Herinner je je mijn naam",
+      "Herinner jij je mijn naam",
+      "Herinnert u zich mijn naam",
+      "Herinnert u u mijn naam",
+      "Weet je mijn naam nog",
+      "Weet jij mijn naam nog"
+     ],
+     "e": "<b>Herinner je je</b> mijn naam? Il secondo je è il riflessivo."
+    },
+    {
+     "t": "order",
+     "q": "Mi vesto in fretta.",
+     "a": "Ik kleed me snel aan",
+     "alt": [
+      "Snel kleed ik me aan"
+     ],
+     "x": [
+      "zich",
+      "kleedt"
+     ],
+     "e": "Separabile: il riflessivo dopo il verbo, <b>aan</b> alla fine."
+    },
+    {
+     "t": "mc",
+     "oit": true,
+     "q": "Come si dice 'Mi chiamo Luca'?",
+     "o": [
+      "Ik heet Luca",
+      "Ik heet me Luca",
+      "Ik heet zich Luca",
+      "Mij heet Luca"
+     ],
+     "a": 0,
+     "e": "<b>heten</b> non è riflessivo: <b>Ik heet Luca</b>."
+    },
+    {
+     "t": "tr",
+     "q": "Sofie si preoccupa.",
+     "a": [
+      "Sofie maakt zich zorgen",
+      "Sofie is bezorgd"
+     ],
+     "e": "<b>zich zorgen maken</b>: Sofie maakt <b>zich</b> zorgen."
+    },
+    {
+     "t": "mc",
+     "q": "Hij denkt alleen aan ___.",
+     "h": "se stesso",
+     "o": [
+      "zichzelf",
+      "mezelf",
+      "hem",
+      "zijn"
+     ],
+     "a": 0,
+     "e": "Dopo una preposizione, \"se stesso\" = <b>zichzelf</b>."
+    },
+    {
+     "t": "order",
+     "q": "Oggi mi sento bene.",
+     "a": "Vandaag voel ik me goed",
+     "alt": [
+      "Ik voel me vandaag goed",
+      "Ik voel me goed vandaag"
+     ],
+     "x": [
+      "zich",
+      "mijn"
+     ],
+     "e": "Inversione: Vandaag <b>voel ik me</b> goed."
+    }
+   ],
+   "gloss": {
+    "0": {
+     "g": {
+      "me": "mi (riflessivo di ik)",
+      "mijn": "mio (possessivo)",
+      "ik": "io (soggetto)",
+      "zich": "si: solo per lui, lei, loro"
+     },
+     "t": "Sei malato? — Sì, non mi sento bene."
+    },
+    "1": {
+     "t": "Lui si rade ogni giorno."
+    },
+    "2": {
+     "t": "Ci affrettiamo, perché il treno parte."
+    },
+    "4": {
+     "t": "Mi sono sbagliato."
+    },
+    "5": {
+     "g": {
+      "vergist": "si sbaglia (con u)",
+      "vergis": "mi sbaglio (io): con u serve la -t",
+      "vergissen": "ci sbagliamo / si sbagliano (plurale)",
+      "vergisst": "forma che non esiste"
+     },
+     "t": "Signora, Lei si sbaglia."
+    },
+    "6": {
+     "t": "Ti ricordi il mio nome?"
+    },
+    "8": {
+     "g": {
+      "Ik heet Luca": "Mi chiamo Luca (corretta)",
+      "Ik heet me Luca": "heten non è riflessivo: niente me",
+      "Ik heet zich Luca": "heten non è riflessivo, e zich non va con ik",
+      "Mij heet Luca": "il soggetto è ik, non mij"
+     },
+     "t": "Mi chiamo Luca."
+    },
+    "9": {
+     "t": "Sofie si preoccupa."
+    },
+    "10": {
+     "g": {
+      "zichzelf": "se stesso",
+      "mezelf": "me stesso: il soggetto è hij",
+      "hem": "lui (un'altra persona)",
+      "zijn": "suo (possessivo)"
+     },
+     "t": "Lui pensa solo a se stesso."
+    },
+    "11": {
+     "t": "Oggi mi sento bene."
+    }
+   }
+  },
+  {
+   "id": "u22",
+   "nl": "Verkleinwoorden",
+   "it": "I diminutivi",
+   "note": "\n<h3>L'idea</h3>\n<p>In italiano formi i diminutivi con -ino, -etto, -ello: casetta, gattino. In olandese c'è una sola famiglia di desinenze, tutte basate su <b>-je</b>: <i>huis → huisje</i> (casetta), <i>kat → katje</i> (gattino). Gli olandesi e i fiamminghi usano i diminutivi molto più di noi: non solo per le cose piccole, ma anche per affetto, per rendere una frase più leggera e informale, o con un significato tutto nuovo.</p>\n<h3>Due regole fisse</h3>\n<ul>\n<li>Il diminutivo è <b>sempre het</b>, anche se il nome base è una de-parola: <i>de hond → het hondje</i>.</li>\n<li>Il plurale si fa sempre con <b>-s</b>: <i>het hondje → de hondjes</i>.</li>\n</ul>\n<h3>Quale desinenza?</h3>\n<p>La forma dipende dal suono finale della parola. Non devi impararla a memoria: è quella che si pronuncia più facilmente.</p>\n<table><tr><th>desinenza</th><th>quando</th><th>esempi</th></tr>\n<tr><td>-je</td><td>dopo la maggior parte delle consonanti (p, t, k, d, f, s...)</td><td>boek → boekje, hond → hondje, huis → huisje</td></tr>\n<tr><td>-tje</td><td>dopo una vocale; dopo l, n, r con vocale lunga prima; dopo -el, -en, -er finali</td><td>auto → autootje, stoel → stoeltje, deur → deurtje, tafel → tafeltje</td></tr>\n<tr><td>-pje</td><td>dopo m con vocale lunga prima, e dopo -lm, -rm</td><td>boom → boompje, film → filmpje</td></tr>\n<tr><td>-etje</td><td>dopo vocale breve accentata + l, m, n, r, ng (la consonante raddoppia)</td><td>bal → balletje, man → mannetje, ring → ringetje</td></tr>\n<tr><td>-kje</td><td>dopo -ing non accentato: ng diventa nk</td><td>koning → koninkje</td></tr></table>\n<p>Nelle parole che finiscono in <b>a, o, u</b> la vocale si raddoppia per restare lunga: <i>auto → autootje</i>, <i>menu → menuutje</i>.</p>\n<h3>Diminutivi con un significato proprio</h3>\n<p>Alcuni diminutivi sono diventati parole a sé, da imparare come tali:</p>\n<ul>\n<li><b>het broodje</b>: il panino (non \"il pane piccolo\"). <i>Een broodje kaas</i> = un panino al formaggio.</li>\n<li><b>het koekje</b>: il biscotto.</li>\n<li><b>het kopje</b>: la tazzina. <i>Een kopje koffie</i>.</li>\n<li><b>het ijsje</b>: un gelato (la porzione, il cono).</li>\n<li><b>het biertje</b>: una birra, detto in modo informale e simpatico.</li>\n<li><b>het meisje</b>: la ragazza (unità 3).</li>\n<li><b>een beetje</b>: un po'. <i>Ik spreek een beetje Nederlands.</i></li>\n</ul>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Tenere l'articolo della parola base: <s>de hondje</s> → <b>het hondje</b>.</li>\n<li>Fare il plurale con -en: <s>twee huisjen</s> → <b>twee huisjes</b>.</li>\n<li>Aggiungere sempre -je: <s>autoje</s>, <s>balje</s> → <b>autootje</b>, <b>balletje</b>.</li>\n<li>Tradurre \"un panino\" con <s>een klein brood</s> → <b>een broodje</b>.</li>\n</ul>",
+   "vlaams": "Nel parlato fiammingo il diminutivo finisce spesso in <b>-ke</b> invece di -je: \"een manneke\" (un ometto), da cui il nome del <b>Manneken Pis</b> di Bruxelles. Al bar in Belgio si chiede volentieri \"<b>een pintje</b>\", cioè una birra chiara alla spina.",
+   "vocab": [
+    [
+     "het brood",
+     "il pane"
+    ],
+    [
+     "het broodje",
+     "il panino"
+    ],
+    [
+     "het bier",
+     "la birra"
+    ],
+    [
+     "het koekje",
+     "il biscotto"
+    ],
+    [
+     "de kop",
+     "la tazza"
+    ],
+    [
+     "het kopje",
+     "la tazzina"
+    ],
+    [
+     "het ijs",
+     "il gelato"
+    ],
+    [
+     "de stoel",
+     "la sedia"
+    ],
+    [
+     "de kamer",
+     "la stanza"
+    ],
+    [
+     "de bal",
+     "la palla"
+    ],
+    [
+     "de film",
+     "il film"
+    ],
+    [
+     "de deur",
+     "la porta"
+    ],
+    [
+     "de hond",
+     "il cane"
+    ],
+    [
+     "de kat",
+     "il gatto"
+    ],
+    [
+     "de koning",
+     "il re"
+    ],
+    [
+     "klein",
+     "piccolo"
+    ],
+    [
+     "lekker",
+     "buono (di sapore)"
+    ]
+   ],
+   "core": {
+    "words": [
+     [
+      "-je",
+      "diminutivo (regola generale)"
+     ],
+     [
+      "-tje",
+      "dopo vocale, o dopo l, n, r con vocale lunga"
+     ],
+     [
+      "-pje",
+      "dopo m con vocale lunga"
+     ],
+     [
+      "-etje",
+      "dopo vocale breve + l, m, n, r, ng"
+     ],
+     [
+      "-kje",
+      "-ing diventa -inkje"
+     ],
+     [
+      "een beetje",
+      "un po'"
+     ]
+    ],
+    "drills": [
+     {
+      "t": "mc",
+      "q": "de hond → ___ hondje",
+      "o": [
+       "het",
+       "de"
+      ],
+      "a": 0,
+      "e": "I diminutivi sono sempre <b>het</b>.",
+      "g": {
+       "het": "articolo di tutti i diminutivi",
+       "de": "no: il diminutivo è sempre het"
+      },
+      "tt": "il cane → il cagnolino"
+     },
+     {
+      "t": "mc",
+      "oit": true,
+      "q": "het boek → het ___",
+      "o": [
+       "boekje",
+       "boektje",
+       "boekpje",
+       "boekjen"
+      ],
+      "a": 0,
+      "e": "Dopo k: <b>-je</b>.",
+      "g": {
+       "boekje": "il libretto",
+       "boektje": "forma che non esiste: dopo k basta -je",
+       "boekpje": "forma che non esiste",
+       "boekjen": "forma che non esiste"
+      },
+      "tt": "il libro → il libretto"
+     },
+     {
+      "t": "mc",
+      "oit": true,
+      "q": "de stoel → het ___",
+      "o": [
+       "stoeltje",
+       "stoelje",
+       "stoelletje",
+       "stoelpje"
+      ],
+      "a": 0,
+      "e": "Vocale lunga (oe) + l: <b>-tje</b>.",
+      "g": {
+       "stoeltje": "la seggiolina",
+       "stoelje": "forma che non esiste: dopo vocale lunga + l serve -tje",
+       "stoelletje": "forma che non esiste: -etje solo dopo vocale breve",
+       "stoelpje": "forma che non esiste"
+      },
+      "tt": "la sedia → la seggiolina"
+     },
+     {
+      "t": "mc",
+      "oit": true,
+      "q": "de boom → het ___",
+      "o": [
+       "boompje",
+       "boomje",
+       "boomtje",
+       "boometje"
+      ],
+      "a": 0,
+      "e": "Vocale lunga + m: <b>-pje</b>.",
+      "g": {
+       "boompje": "l'alberello",
+       "boomje": "forma che non esiste",
+       "boomtje": "forma che non esiste: dopo m serve -pje",
+       "boometje": "forma che non esiste: la vocale è lunga"
+      },
+      "tt": "l'albero → l'alberello"
+     },
+     {
+      "t": "mc",
+      "oit": true,
+      "q": "de bal → het ___",
+      "o": [
+       "balletje",
+       "baltje",
+       "balje",
+       "balpje"
+      ],
+      "a": 0,
+      "e": "Vocale breve + l: la l raddoppia e si aggiunge <b>-etje</b>.",
+      "g": {
+       "balletje": "la pallina",
+       "baltje": "forma che non esiste: la a è breve",
+       "balje": "forma che non esiste",
+       "balpje": "forma che non esiste"
+      },
+      "tt": "la palla → la pallina"
+     },
+     {
+      "t": "mc",
+      "oit": true,
+      "q": "de auto → het ___",
+      "o": [
+       "autootje",
+       "autotje",
+       "autoje",
+       "auto'tje"
+      ],
+      "a": 0,
+      "e": "Dopo -o la vocale raddoppia: <b>autootje</b>.",
+      "g": {
+       "autootje": "la macchinina",
+       "autotje": "ortografia sbagliata: la o va raddoppiata",
+       "autoje": "forma che non esiste: dopo vocale serve -tje",
+       "auto'tje": "forma che non esiste: niente apostrofo"
+      },
+      "tt": "l'auto → la macchinina"
+     },
+     {
+      "t": "mc",
+      "oit": true,
+      "q": "de koning → het ___",
+      "o": [
+       "koninkje",
+       "koningje",
+       "koningetje",
+       "koningtje"
+      ],
+      "a": 0,
+      "e": "-ing non accentato: ng → nk + <b>-je</b>.",
+      "g": {
+       "koninkje": "il piccolo re, il reuccio",
+       "koningje": "forma che non esiste: ng diventa nk",
+       "koningetje": "forma che non esiste: -ing non è accentato",
+       "koningtje": "forma che non esiste"
+      },
+      "tt": "il re → il reuccio"
+     },
+     {
+      "t": "mc",
+      "oit": true,
+      "q": "de tafel → het ___",
+      "o": [
+       "tafeltje",
+       "tafelje",
+       "tafelletje",
+       "tafelpje"
+      ],
+      "a": 0,
+      "e": "Dopo -el finale: <b>-tje</b>.",
+      "g": {
+       "tafeltje": "il tavolino",
+       "tafelje": "forma che non esiste: dopo -el serve -tje",
+       "tafelletje": "forma che non esiste: -el non è accentato",
+       "tafelpje": "forma che non esiste"
+      },
+      "tt": "il tavolo → il tavolino"
+     },
+     {
+      "t": "fill",
+      "q": "één huisje → twee ___",
+      "a": [
+       "huisjes"
+      ],
+      "e": "Plurale dei diminutivi: sempre <b>-s</b>.",
+      "tt": "una casetta → due casette"
+     },
+     {
+      "t": "fill",
+      "q": "de kat → het ___",
+      "h": "diminutivo",
+      "a": [
+       "katje"
+      ],
+      "e": "Dopo t: <b>-je</b>, katje.",
+      "tt": "il gatto → il gattino"
+     }
+    ]
+   },
+   "items": [
+    {
+     "t": "fill",
+     "q": "Een ___ kaas, alstublieft.",
+     "h": "panino",
+     "a": [
+      "broodje"
+     ],
+     "e": "<b>het broodje</b> = il panino."
+    },
+    {
+     "t": "mc",
+     "q": "'een koekje' è:",
+     "o": [
+      "un biscotto",
+      "una piccola torta",
+      "un cuoco",
+      "un panino"
+     ],
+     "a": 0,
+     "oit": true,
+     "e": "<b>het koekje</b> = il biscotto."
+    },
+    {
+     "t": "mc",
+     "q": "Het meisje zit met ___ katje in de tuin.",
+     "o": [
+      "het",
+      "de"
+     ],
+     "a": 0,
+     "e": "Diminutivo → <b>het</b> katje."
+    },
+    {
+     "t": "fill",
+     "q": "We hebben twee ___.",
+     "h": "de hond, diminutivo plurale",
+     "a": [
+      "hondjes"
+     ],
+     "e": "hond → hondje → <b>hondjes</b>."
+    },
+    {
+     "t": "order",
+     "q": "Il bambino mangia un biscotto.",
+     "a": "Het kind eet een koekje",
+     "x": [
+      "de",
+      "koektje"
+     ],
+     "e": "<b>het</b> kind, een <b>koekje</b>."
+    },
+    {
+     "t": "tr",
+     "q": "Una birra, per favore.",
+     "a": [
+      "Een biertje alstublieft",
+      "Een bier alstublieft",
+      "Een pintje alstublieft",
+      "Een biertje graag",
+      "Een bier graag",
+      "Een pintje graag",
+      "Een biertje alsjeblieft",
+      "Een bier alsjeblieft",
+      "Een pintje alsjeblieft"
+     ],
+     "e": "Al bar si dice volentieri <b>een biertje</b> (in Belgio anche: een pintje)."
+    },
+    {
+     "t": "mc",
+     "oit": true,
+     "q": "de deur → het ___",
+     "o": [
+      "deurtje",
+      "deurje",
+      "deurretje",
+      "deurpje"
+     ],
+     "a": 0,
+     "e": "Vocale lunga (eu) + r: <b>-tje</b>."
+    },
+    {
+     "t": "mc",
+     "oit": true,
+     "q": "de film → het ___",
+     "o": [
+      "filmpje",
+      "filmje",
+      "filmetje",
+      "filmtje"
+     ],
+     "a": 0,
+     "e": "Dopo -lm: <b>-pje</b>, filmpje."
+    },
+    {
+     "t": "fill",
+     "q": "Mijn zus woont in een klein ___.",
+     "h": "huis, diminutivo",
+     "a": [
+      "huisje"
+     ],
+     "e": "huis → <b>huisje</b>."
+    },
+    {
+     "t": "tr",
+     "q": "I bambini mangiano un gelato.",
+     "a": [
+      "De kinderen eten een ijsje",
+      "De kinderen eten een ijs"
+     ],
+     "e": "<b>een ijsje</b> = un gelato (porzione)."
+    },
+    {
+     "t": "mc",
+     "oit": true,
+     "q": "Spreek je Nederlands? — Ja, een ___.",
+     "o": [
+      "beetje",
+      "beet",
+      "bietje",
+      "beetjes"
+     ],
+     "a": 0,
+     "e": "<b>een beetje</b> = un po'."
+    },
+    {
+     "t": "order",
+     "q": "I gattini sono nella stanza.",
+     "a": "De katjes zijn in de kamer",
+     "alt": [
+      "In de kamer zijn de katjes"
+     ],
+     "x": [
+      "het",
+      "is"
+     ],
+     "e": "Al plurale anche i diminutivi prendono <b>de</b>: de katjes."
+    }
+   ],
+   "gloss": {
+    "0": {
+     "t": "Un panino al formaggio, per favore."
+    },
+    "1": {
+     "t": "un biscotto"
+    },
+    "2": {
+     "g": {
+      "het": "articolo di tutti i diminutivi",
+      "de": "no: il diminutivo è sempre het"
+     },
+     "t": "La ragazza è seduta in giardino con il gattino."
+    },
+    "3": {
+     "t": "Abbiamo due cagnolini."
+    },
+    "5": {
+     "t": "Una birra, per favore."
+    },
+    "6": {
+     "g": {
+      "deurtje": "la porticina",
+      "deurje": "forma che non esiste: dopo vocale lunga + r serve -tje",
+      "deurretje": "forma che non esiste: la eu è lunga",
+      "deurpje": "forma che non esiste"
+     },
+     "t": "la porta → la porticina"
+    },
+    "7": {
+     "g": {
+      "filmpje": "il filmato, il video breve",
+      "filmje": "forma che non esiste",
+      "filmetje": "forma che non esiste",
+      "filmtje": "forma che non esiste: dopo -lm serve -pje"
+     },
+     "t": "il film → il filmato"
+    },
+    "8": {
+     "t": "Mia sorella abita in una casetta."
+    },
+    "9": {
+     "t": "I bambini mangiano un gelato."
+    },
+    "10": {
+     "g": {
+      "beetje": "un po'",
+      "beet": "morso: parola diversa",
+      "bietje": "forma che non esiste",
+      "beetjes": "plurale: qui non si usa"
+     },
+     "t": "Parli olandese? — Sì, un po'."
+    }
+   }
+  },
+  {
+   "id": "u23",
+   "nl": "Het woordje 'er'",
+   "it": "La parola er",
+   "note": "\n<h3>L'idea</h3>\n<p><b>er</b> è una parolina piccolissima che compare dappertutto. Per un italiano è meno strana di quanto sembra, perché fa più o meno il lavoro delle nostre particelle <b>ci</b> e <b>ne</b>: c'è, ci abito, ne ho due, ci penso. Ha quattro usi principali.</p>\n<h3>1. er = ci (luogo)</h3>\n<p>Sostituisce un luogo già nominato, come il nostro \"ci\": <i>Woon je in Gent? — Ja, ik woon er graag.</i> (sì, ci abito volentieri). <b>er</b> non è mai accentato. Se vuoi dare enfasi, o metterlo al primo posto, usi <b>daar</b> (là): <i>Daar woon ik graag.</i></p>\n<h3>2. er + numero = ne</h3>\n<p>Quando rispondi con un numero o una quantità senza ripetere il nome, serve <b>er</b>, proprio come il nostro \"ne\": <i>Hoeveel broers heb je? — Ik heb er twee.</i> (ne ho due). Funziona anche con <i>veel</i> e <i>geen</i>: <i>Ik heb er veel</i> (ne ho molti), <i>Ik heb er geen</i> (non ne ho). Senza er la frase è incompleta.</p>\n<h3>3. er is / er zijn = c'è / ci sono</h3>\n<p>Per dire che qualcosa esiste o si trova da qualche parte: <i>Er is een probleem</i> (c'è un problema), <i>Er zijn veel mensen in de winkel</i> (ci sono molte persone nel negozio). Il verbo si accorda con il nome che segue. Nella domanda: <i>Is er een bank in deze straat?</i> Si usa con un nome indeterminato (een, veel, twee...). Con un nome determinato non serve: <i>De bank is daar.</i></p>\n<h3>4. er + preposizione</h3>\n<p>Per le <b>cose</b> l'olandese non dice \"preposizione + het/hem/ze\", ma unisce <b>er</b> e la preposizione in una sola parola:</p>\n<table><tr><th>con una cosa</th><th>diventa</th><th>italiano</th></tr>\n<tr><td>op de trein</td><td>erop</td><td>Ik wacht erop. (lo aspetto)</td></tr>\n<tr><td>over de film</td><td>erover</td><td>We praten erover. (ne parliamo)</td></tr>\n<tr><td>aan het feest</td><td>eraan</td><td>Ik denk eraan. (ci penso)</td></tr>\n<tr><td>met de pen</td><td>ermee</td><td>Ik schrijf ermee. (ci scrivo)</td></tr></table>\n<p>Attenzione: <b>met</b> diventa <b>mee</b>. Con l'enfasi usi <b>daar-</b> (<i>daarover</i>), nelle domande <b>waar-</b>: <i>Waarmee betaal je?</i> (con che cosa paghi?), <i>Waarop wacht je?</i> Spesso er (o waar) e la preposizione si separano: <i>Ik heb er geen zin in</i> (non ne ho voglia), <i>Waar wacht je op?</i></p>\n<p>Per le <b>persone</b> invece resta preposizione + pronome: <i>Ik denk aan haar</i> (penso a lei), mai <s>eraan</s>.</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Dimenticare il \"ne\": <s>Ik heb twee</s> → <b>Ik heb er twee</b>.</li>\n<li>Tradurre \"c'è\" con het: <s>Het is een probleem</s> → <b>Er is een probleem</b>.</li>\n<li>Usare il pronome per una cosa: <s>Ik schrijf met het</s> → <b>Ik schrijf ermee</b>.</li>\n<li>Scrivere <s>ermet</s> → <b>ermee</b>.</li>\n<li>Usare er per una persona: <s>Ik denk eraan</s> (a mia madre) → <b>Ik denk aan haar</b>.</li>\n</ul>",
+   "vlaams": "In Belgio \"avere voglia\" si dice spesso con <b>goesting</b> invece di zin: \"Ik heb er geen goesting in\" (non ne ho voglia), \"Daar heb ik goesting in!\" (ne ho proprio voglia!). Nello scritto standard usa <b>zin</b>.",
+   "vocab": [
+    [
+     "het probleem",
+     "il problema"
+    ],
+    [
+     "de mens",
+     "la persona, l'essere umano"
+    ],
+    [
+     "de mensen",
+     "la gente, le persone"
+    ],
+    [
+     "de pen",
+     "la penna"
+    ],
+    [
+     "schrijven",
+     "scrivere"
+    ],
+    [
+     "praten over",
+     "parlare di"
+    ],
+    [
+     "denken aan",
+     "pensare a"
+    ],
+    [
+     "zin hebben in",
+     "aver voglia di"
+    ],
+    [
+     "de winkel",
+     "il negozio"
+    ],
+    [
+     "de straat",
+     "la strada"
+    ],
+    [
+     "betalen",
+     "pagare"
+    ],
+    [
+     "de kaart",
+     "la carta (bancaria)"
+    ],
+    [
+     "het glas",
+     "il bicchiere"
+    ],
+    [
+     "de film",
+     "il film"
+    ]
+   ],
+   "core": {
+    "words": [
+     [
+      "er",
+      "ci, ne"
+     ],
+     [
+      "er is / er zijn",
+      "c'è / ci sono"
+     ],
+     [
+      "daar",
+      "là (accentato)"
+     ],
+     [
+      "erop, eraan, erover",
+      "su questo, a questo, di questo"
+     ],
+     [
+      "ermee",
+      "con questo, con quello"
+     ],
+     [
+      "waarmee, waarop",
+      "con che cosa, su che cosa"
+     ]
+    ],
+    "drills": [
+     {
+      "t": "mc",
+      "q": "___ is een probleem.",
+      "h": "c'è",
+      "o": [
+       "Er",
+       "Het",
+       "Hij",
+       "Dat"
+      ],
+      "a": 0,
+      "e": "c'è = <b>er is</b>.",
+      "g": {
+       "Er": "c'è (er is)",
+       "Het": "è (het is): non vuol dire c'è",
+       "Hij": "lui",
+       "Dat": "quello: 'quello è un problema', non 'c'è'"
+      },
+      "tt": "C'è un problema."
+     },
+     {
+      "t": "mc",
+      "q": "Er ___ veel mensen in de winkel.",
+      "o": [
+       "zijn",
+       "is",
+       "heeft",
+       "hebben"
+      ],
+      "a": 0,
+      "e": "Il verbo si accorda con <i>veel mensen</i>: <b>er zijn</b>.",
+      "g": {
+       "zijn": "ci sono (plurale)",
+       "is": "c'è: qui il nome è plurale",
+       "heeft": "ha",
+       "hebben": "hanno"
+      },
+      "tt": "Ci sono molte persone nel negozio."
+     },
+     {
+      "t": "mc",
+      "q": "Hoeveel broers heb je? — Ik heb ___ twee.",
+      "o": [
+       "er",
+       "het",
+       "ze",
+       "daar"
+      ],
+      "a": 0,
+      "e": "numero senza nome → <b>er</b> (ne).",
+      "g": {
+       "er": "ne",
+       "het": "lo: non si usa con un numero",
+       "ze": "li: non si usa con un numero",
+       "daar": "là: qui serve er"
+      },
+      "tt": "Quanti fratelli hai? — Ne ho due."
+     },
+     {
+      "t": "mc",
+      "q": "Ik wacht op de trein. → Ik wacht ___.",
+      "o": [
+       "erop",
+       "op het",
+       "op hem",
+       "eraan"
+      ],
+      "a": 0,
+      "e": "Cosa + preposizione → <b>er + op</b>.",
+      "g": {
+       "erop": "lo (su di esso): er + op",
+       "op het": "per una cosa non si dice op het",
+       "op hem": "op hem è per una persona; per una cosa: erop",
+       "eraan": "er + aan: preposizione sbagliata"
+      },
+      "tt": "Aspetto il treno. → Lo aspetto."
+     },
+     {
+      "t": "mc",
+      "oit": true,
+      "q": "er + met →",
+      "o": [
+       "ermee",
+       "ermet",
+       "metter",
+       "erbij"
+      ],
+      "a": 0,
+      "e": "<b>met</b> diventa <b>mee</b>: ermee.",
+      "g": {
+       "ermee": "con questo",
+       "ermet": "forma che non esiste: met diventa mee",
+       "metter": "forma che non esiste",
+       "erbij": "er + bij (presso): preposizione diversa"
+      },
+      "tt": "con questo"
+     },
+     {
+      "t": "mc",
+      "q": "Ik denk aan mijn moeder. → Ik denk aan ___.",
+      "o": [
+       "haar",
+       "eraan",
+       "er",
+       "het"
+      ],
+      "a": 0,
+      "e": "Per le <b>persone</b>: preposizione + pronome, <b>aan haar</b>.",
+      "g": {
+       "haar": "lei (dopo preposizione)",
+       "eraan": "solo per le cose, non per le persone",
+       "er": "qui manca il pronome per la persona",
+       "het": "esso (cosa)"
+      },
+      "tt": "Penso a mia madre. → Penso a lei."
+     },
+     {
+      "t": "mc",
+      "q": "___ schrijf je? — Met een pen.",
+      "o": [
+       "Waarmee",
+       "Waarmet",
+       "Wat met",
+       "Met wie"
+      ],
+      "a": 0,
+      "e": "Domanda su una cosa con met: <b>waarmee</b>.",
+      "g": {
+       "Waarmee": "con che cosa",
+       "Waarmet": "forma che non esiste: met diventa mee",
+       "Wat met": "ordine sbagliato",
+       "Met wie": "con chi (persona)"
+      },
+      "tt": "Con che cosa scrivi? — Con una penna."
+     },
+     {
+      "t": "fill",
+      "q": "Woon je in Brugge? — Ja, ik woon ___ graag.",
+      "h": "ci",
+      "a": [
+       "er",
+       "daar"
+      ],
+      "e": "Luogo già nominato → <b>er</b> (con enfasi: daar).",
+      "tt": "Abiti a Bruges? — Sì, ci abito volentieri."
+     },
+     {
+      "t": "fill",
+      "q": "Heb je appels? — Ja, ik heb ___ veel.",
+      "h": "ne",
+      "a": [
+       "er"
+      ],
+      "e": "Quantità senza nome → <b>er</b>.",
+      "tt": "Hai delle mele? — Sì, ne ho molte."
+     },
+     {
+      "t": "order",
+      "q": "Non ne ho voglia.",
+      "a": "Ik heb er geen zin in",
+      "x": [
+       "het",
+       "eraan"
+      ],
+      "e": "<b>zin hebben in</b>: er e in si separano, in va alla fine."
+     }
+    ]
+   },
+   "items": [
+    {
+     "t": "mc",
+     "q": "___ zijn veel mensen op straat.",
+     "h": "ci sono",
+     "o": [
+      "Er",
+      "Het",
+      "Ze",
+      "Hun"
+     ],
+     "a": 0,
+     "e": "ci sono = <b>er zijn</b>."
+    },
+    {
+     "t": "fill",
+     "q": "Is ___ een winkel in deze straat?",
+     "h": "c'è",
+     "a": [
+      "er"
+     ],
+     "e": "Domanda: <b>Is er</b> ...?"
+    },
+    {
+     "t": "mc",
+     "q": "Hoeveel glazen wil je? — Ik wil ___ drie.",
+     "o": [
+      "er",
+      "ze",
+      "het",
+      "daar"
+     ],
+     "a": 0,
+     "e": "Numero senza nome → <b>er</b>."
+    },
+    {
+     "t": "fill",
+     "q": "Betaal je met de kaart? — Ja, ik betaal ___.",
+     "h": "con quella",
+     "a": [
+      "ermee",
+      "daarmee"
+     ],
+     "e": "met + cosa → <b>ermee</b>."
+    },
+    {
+     "t": "order",
+     "q": "Ci penso spesso.",
+     "a": "Ik denk er vaak aan",
+     "x": [
+      "het",
+      "mee"
+     ],
+     "e": "<b>er</b> dopo il verbo, <b>aan</b> alla fine."
+    },
+    {
+     "t": "tr",
+     "q": "C'è un problema.",
+     "a": [
+      "Er is een probleem"
+     ],
+     "e": "<b>Er is</b> een probleem."
+    },
+    {
+     "t": "mc",
+     "q": "Praten jullie over de film? — Ja, we praten ___.",
+     "o": [
+      "erover",
+      "over het",
+      "over hem",
+      "ervan"
+     ],
+     "a": 0,
+     "e": "over + cosa → <b>erover</b>."
+    },
+    {
+     "t": "fill",
+     "q": "___ wacht je? — Op de trein.",
+     "h": "che cosa (con op)",
+     "a": [
+      "waarop"
+     ],
+     "e": "Domanda su una cosa con op: <b>waarop</b>."
+    },
+    {
+     "t": "tr",
+     "q": "Ne ho due.",
+     "a": [
+      "Ik heb er twee"
+     ],
+     "e": "Il \"ne\" è <b>er</b>: Ik heb er twee."
+    },
+    {
+     "t": "mc",
+     "q": "Ken je Gent? — Ja, ___ woont mijn zus.",
+     "o": [
+      "daar",
+      "er",
+      "waar",
+      "het"
+     ],
+     "a": 0,
+     "e": "Al primo posto e con enfasi: <b>daar</b>."
+    },
+    {
+     "t": "order",
+     "q": "Ci sono due bicchieri sul tavolo.",
+     "a": "Er zijn twee glazen op de tafel",
+     "alt": [
+      "Op de tafel zijn er twee glazen",
+      "Er zijn op de tafel twee glazen"
+     ],
+     "x": [
+      "is",
+      "het"
+     ],
+     "e": "<b>Er zijn</b> + plurale."
+    },
+    {
+     "t": "tr",
+     "q": "Con che cosa paghi?",
+     "a": [
+      "Waarmee betaal je",
+      "Waarmee betaal jij",
+      "Waarmee betaalt u",
+      "Waar betaal je mee",
+      "Waar betaal jij mee",
+      "Waar betaalt u mee"
+     ],
+     "e": "<b>Waarmee</b> betaal je? (anche: Waar betaal je mee?)"
+    }
+   ],
+   "gloss": {
+    "0": {
+     "g": {
+      "Er": "ci (er zijn = ci sono)",
+      "Het": "esso: non vuol dire 'ci sono'",
+      "Ze": "loro: frase sbagliata",
+      "Hun": "loro (possessivo / a loro)"
+     },
+     "t": "Ci sono molte persone per strada."
+    },
+    "1": {
+     "t": "C'è un negozio in questa strada?"
+    },
+    "2": {
+     "g": {
+      "er": "ne",
+      "ze": "li: non si usa con un numero",
+      "het": "lo: non si usa con un numero",
+      "daar": "là: qui serve er"
+     },
+     "t": "Quanti bicchieri vuoi? — Ne voglio tre."
+    },
+    "3": {
+     "t": "Paghi con la carta? — Sì, pago con quella."
+    },
+    "4": {
+     "t": "Ci penso spesso."
+    },
+    "5": {
+     "t": "C'è un problema."
+    },
+    "6": {
+     "g": {
+      "erover": "ne (di esso): er + over",
+      "over het": "per una cosa non si dice over het",
+      "over hem": "over hem è per una persona",
+      "ervan": "er + van: preposizione sbagliata"
+     },
+     "t": "Parlate del film? — Sì, ne parliamo."
+    },
+    "7": {
+     "t": "Che cosa aspetti? — Il treno."
+    },
+    "8": {
+     "t": "Ne ho due."
+    },
+    "9": {
+     "g": {
+      "daar": "là (accentato, al primo posto)",
+      "er": "ci: non sta al primo posto con questo senso",
+      "waar": "dove (domanda)",
+      "het": "esso"
+     },
+     "t": "Conosci Gand? — Sì, lì abita mia sorella."
+    },
+    "10": {
+     "t": "Ci sono due bicchieri sul tavolo."
+    },
+    "11": {
+     "t": "Con che cosa paghi?"
+    }
+   }
+  },
+  {
+   "id": "u24",
+   "nl": "Voorzetsels",
+   "it": "Le preposizioni",
+   "note": "\n<h3>L'idea</h3>\n<p>Le preposizioni quasi mai si traducono parola per parola. In italiano \"a\" e \"da\" fanno mille lavori diversi; in olandese ognuno di questi lavori ha una preposizione propria. Per scegliere quella giusta chiediti sempre: <b>stato o moto?</b> <b>Dentro, sopra o attaccato?</b> <b>Una persona o un luogo?</b></p>\n<h3>Dove si trova qualcosa</h3>\n<table><tr><th>olandese</th><th>significato</th><th>esempio</th></tr>\n<tr><td>in</td><td>dentro</td><td>in de kast (nell'armadio)</td></tr>\n<tr><td>op</td><td>sopra, a contatto</td><td>op de tafel (sul tavolo)</td></tr>\n<tr><td>boven</td><td>sopra, senza contatto</td><td>boven de tafel (sopra il tavolo, appeso)</td></tr>\n<tr><td>onder</td><td>sotto</td><td>onder het bed</td></tr>\n<tr><td>voor</td><td>davanti a</td><td>voor het huis</td></tr>\n<tr><td>achter</td><td>dietro</td><td>achter het huis</td></tr>\n<tr><td>naast</td><td>accanto a</td><td>naast de deur</td></tr>\n<tr><td>tussen</td><td>tra</td><td>tussen de stoel en de tafel</td></tr>\n<tr><td>aan</td><td>attaccato a, sul bordo di</td><td>aan de muur, aan zee</td></tr>\n<tr><td>bij</td><td>presso, da (una persona)</td><td>bij de bakker (dal panettiere)</td></tr></table>\n<h3>Moto e provenienza</h3>\n<ul>\n<li><b>naar</b>: verso, a (con movimento). <i>Ik ga naar Gent, naar de bakker.</i></li>\n<li><b>van</b>: da (punto di partenza), di (appartenenza). <i>van Gent naar Brugge</i>, <i>het boek van Tom</i>.</li>\n<li><b>uit</b>: fuori da, provenienza. <i>Ik kom uit Italië</i>, <i>Ik kijk uit het raam</i>.</li>\n<li><b>over</b>: sopra, attraverso, e \"di\" (argomento). <i>over de straat</i>, <i>praten over muziek</i>.</li>\n<li><b>met</b>: con, anche per i mezzi di trasporto. <i>met de trein</i> (in treno).</li>\n</ul>\n<h3>\"A\" e \"da\" in olandese</h3>\n<table><tr><th>italiano</th><th>olandese</th></tr>\n<tr><td>sono a Gand / vado a Gand</td><td>in Gent / naar Gent</td></tr>\n<tr><td>sono dal medico / vado dal medico</td><td>bij de dokter / naar de dokter</td></tr>\n<tr><td>vengo dall'Italia</td><td>uit Italië</td></tr>\n<tr><td>sono al lavoro</td><td>op het werk</td></tr>\n<tr><td>siamo al mare / andiamo al mare</td><td>aan zee / naar zee</td></tr>\n<tr><td>vado in treno</td><td>met de trein</td></tr></table>\n<h3>Verbi con preposizione fissa</h3>\n<p>Molti verbi vogliono sempre la stessa preposizione, spesso diversa dall'italiano (o assente in italiano). Imparali come un blocco unico: <b>wachten op</b> (aspettare), <b>kijken naar</b> (guardare), <b>luisteren naar</b> (ascoltare), <b>denken aan</b> (pensare a), <b>houden van</b> (amare), <b>praten over</b> (parlare di), <b>bang zijn voor</b> (aver paura di).</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Usare in con il movimento: <s>Ik ga in Gent</s> → <b>Ik ga naar Gent</b>.</li>\n<li>Dimenticare la preposizione: <s>Ik wacht de trein</s> → <b>Ik wacht op de trein</b>; <s>Ik luister muziek</s> → <b>Ik luister naar muziek</b>.</li>\n<li>Usare van per il paese d'origine: <s>Ik kom van Italië</s> → <b>Ik kom uit Italië</b>.</li>\n<li>Tradurre \"in treno\" alla lettera: <s>in de trein</s> → <b>met de trein</b> (in de trein = dentro il treno).</li>\n<li>Usare op per qualcosa che non tocca: la lampada appesa è <b>boven</b> de tafel.</li>\n</ul>",
+   "vlaams": "In Belgio senti spesso \"<b>bang zijn van</b>\" accanto a bang zijn voor: entrambe sono accettate. Nel parlato fiammingo \"<b>Ik ben van Gent</b>\" significa \"sono di Gand\", cioè ci sei nato o cresciuto.",
+   "vocab": [
+    [
+     "de muur",
+     "il muro"
+    ],
+    [
+     "de bakker",
+     "il panettiere"
+    ],
+    [
+     "de kast",
+     "l'armadio"
+    ],
+    [
+     "het bed",
+     "il letto"
+    ],
+    [
+     "de lamp",
+     "la lampada"
+    ],
+    [
+     "de zee",
+     "il mare"
+    ],
+    [
+     "het raam",
+     "la finestra"
+    ],
+    [
+     "de straat",
+     "la strada"
+    ],
+    [
+     "het werk",
+     "il lavoro"
+    ],
+    [
+     "de muziek",
+     "la musica"
+    ],
+    [
+     "de kat",
+     "il gatto"
+    ],
+    [
+     "kijken naar",
+     "guardare"
+    ],
+    [
+     "luisteren naar",
+     "ascoltare"
+    ],
+    [
+     "bang zijn voor",
+     "aver paura di"
+    ],
+    [
+     "liggen",
+     "stare disteso, trovarsi (in orizzontale)"
+    ],
+    [
+     "hangen",
+     "essere appeso"
+    ]
+   ],
+   "core": {
+    "words": [
+     [
+      "in",
+      "in, dentro"
+     ],
+     [
+      "op",
+      "su (a contatto)"
+     ],
+     [
+      "aan",
+      "a, attaccato a"
+     ],
+     [
+      "bij",
+      "presso, da (stato)"
+     ],
+     [
+      "naar",
+      "a, verso (moto)"
+     ],
+     [
+      "van / uit",
+      "da, di / fuori da (origine)"
+     ],
+     [
+      "voor / achter / naast / tussen",
+      "davanti / dietro / accanto / tra"
+     ],
+     [
+      "onder / boven / over",
+      "sotto / sopra / sopra, di (argomento)"
+     ]
+    ],
+    "drills": [
+     {
+      "t": "mc",
+      "q": "Il libro è sul tavolo. → Het boek ligt ___ de tafel.",
+      "o": [
+       "op",
+       "in",
+       "aan",
+       "boven"
+      ],
+      "a": 0,
+      "e": "Sopra e a contatto: <b>op</b>.",
+      "g": {
+       "op": "su (a contatto)",
+       "in": "dentro",
+       "aan": "attaccato a, al bordo di",
+       "boven": "sopra ma senza contatto"
+      },
+      "tt": "Il libro è sul tavolo."
+     },
+     {
+      "t": "mc",
+      "q": "Vado a Bruxelles. → Ik ga ___ Brussel.",
+      "o": [
+       "naar",
+       "in",
+       "op",
+       "bij"
+      ],
+      "a": 0,
+      "e": "Movimento verso un luogo: <b>naar</b>.",
+      "g": {
+       "naar": "a, verso (moto)",
+       "in": "in (stato): non per il movimento",
+       "op": "su",
+       "bij": "presso (stato)"
+      },
+      "tt": "Vado a Bruxelles."
+     },
+     {
+      "t": "mc",
+      "q": "Abito a Bruxelles. → Ik woon ___ Brussel.",
+      "o": [
+       "in",
+       "naar",
+       "op",
+       "aan"
+      ],
+      "a": 0,
+      "e": "Stato in una città: <b>in</b>.",
+      "g": {
+       "in": "in, a (stato in luogo)",
+       "naar": "verso (moto)",
+       "op": "su",
+       "aan": "attaccato a, al bordo di"
+      },
+      "tt": "Abito a Bruxelles."
+     },
+     {
+      "t": "mc",
+      "q": "Vengo dall'Italia. → Ik kom ___ Italië.",
+      "o": [
+       "uit",
+       "naar",
+       "bij",
+       "op"
+      ],
+      "a": 0,
+      "e": "Paese d'origine: <b>uit</b>.",
+      "g": {
+       "uit": "da (origine)",
+       "naar": "verso (moto)",
+       "bij": "presso",
+       "op": "su"
+      },
+      "tt": "Vengo dall'Italia."
+     },
+     {
+      "t": "mc",
+      "q": "Sono dal medico. → Ik ben ___ de dokter.",
+      "o": [
+       "bij",
+       "naar",
+       "van",
+       "op"
+      ],
+      "a": 0,
+      "e": "Stato presso una persona: <b>bij</b>.",
+      "g": {
+       "bij": "da, presso (stato)",
+       "naar": "da, verso (moto): qui non c'è movimento",
+       "van": "da (provenienza), di",
+       "op": "su"
+      },
+      "tt": "Sono dal medico."
+     },
+     {
+      "t": "mc",
+      "q": "La lampada è appesa sopra il tavolo. → De lamp hangt ___ de tafel.",
+      "o": [
+       "boven",
+       "op",
+       "onder",
+       "naast"
+      ],
+      "a": 0,
+      "e": "Sopra senza contatto: <b>boven</b>.",
+      "g": {
+       "boven": "sopra (senza contatto)",
+       "op": "su, a contatto: non è appesa",
+       "onder": "sotto",
+       "naast": "accanto a"
+      },
+      "tt": "La lampada è appesa sopra il tavolo."
+     },
+     {
+      "t": "mc",
+      "q": "Aspetto il treno. → Ik wacht ___ de trein.",
+      "o": [
+       "op",
+       "naar",
+       "aan",
+       "van"
+      ],
+      "a": 0,
+      "e": "Combinazione fissa: <b>wachten op</b>.",
+      "g": {
+       "op": "wachten op = aspettare",
+       "naar": "wachten naar non esiste",
+       "aan": "wachten aan non esiste",
+       "van": "wachten van non esiste"
+      },
+      "tt": "Aspetto il treno."
+     },
+     {
+      "t": "fill",
+      "q": "Ik luister ___ muziek.",
+      "h": "ascoltare: luisteren + ?",
+      "a": [
+       "naar"
+      ],
+      "e": "Combinazione fissa: <b>luisteren naar</b>.",
+      "tt": "Ascolto musica."
+     },
+     {
+      "t": "fill",
+      "q": "De kat zit ___ de stoel en de tafel.",
+      "h": "tra",
+      "a": [
+       "tussen"
+      ],
+      "e": "tra = <b>tussen</b>.",
+      "tt": "Il gatto è tra la sedia e il tavolo."
+     },
+     {
+      "t": "order",
+      "q": "La bici è dietro la casa.",
+      "a": "De fiets is achter het huis",
+      "x": [
+       "naar",
+       "hem"
+      ],
+      "e": "dietro = <b>achter</b>."
+     }
+    ]
+   },
+   "items": [
+    {
+     "t": "mc",
+     "q": "Il gatto dorme sotto il letto. → De kat ligt ___ het bed.",
+     "o": [
+      "onder",
+      "op",
+      "in",
+      "naast"
+     ],
+     "a": 0,
+     "e": "sotto = <b>onder</b>."
+    },
+    {
+     "t": "fill",
+     "q": "De lamp hangt ___ de muur.",
+     "h": "attaccata a",
+     "a": [
+      "aan"
+     ],
+     "e": "Attaccato a una parete: <b>aan</b> de muur."
+    },
+    {
+     "t": "mc",
+     "q": "Domani vado dal panettiere. → Morgen ga ik ___ de bakker.",
+     "o": [
+      "naar",
+      "bij",
+      "van",
+      "uit"
+     ],
+     "a": 0,
+     "e": "Movimento verso una persona o un negozio: <b>naar</b>."
+    },
+    {
+     "t": "tr",
+     "q": "Sono al lavoro.",
+     "a": [
+      "Ik ben op het werk",
+      "Ik ben op mijn werk"
+     ],
+     "e": "al lavoro = <b>op het werk</b>."
+    },
+    {
+     "t": "order",
+     "q": "Domani andiamo al mare.",
+     "a": "Morgen gaan we naar zee",
+     "alt": [
+      "We gaan morgen naar zee"
+     ],
+     "x": [
+      "bij",
+      "gaat"
+     ],
+     "e": "Moto: <b>naar zee</b> (stato: aan zee)."
+    },
+    {
+     "t": "mc",
+     "q": "Siamo al mare. → We zijn ___ zee.",
+     "o": [
+      "aan",
+      "naar",
+      "uit",
+      "bij"
+     ],
+     "a": 0,
+     "e": "Stato al mare: <b>aan zee</b>."
+    },
+    {
+     "t": "fill",
+     "q": "Ik kijk graag ___ films.",
+     "h": "guardare: kijken + ?",
+     "a": [
+      "naar"
+     ],
+     "e": "Combinazione fissa: <b>kijken naar</b>."
+    },
+    {
+     "t": "mc",
+     "q": "Ho paura dei cani. → Ik ben bang ___ honden.",
+     "o": [
+      "voor",
+      "op",
+      "aan",
+      "naar"
+     ],
+     "a": 0,
+     "e": "<b>bang zijn voor</b> = aver paura di."
+    },
+    {
+     "t": "tr",
+     "q": "Il libro è accanto alla lampada.",
+     "a": [
+      "Het boek ligt naast de lamp",
+      "Het boek is naast de lamp",
+      "Het boek staat naast de lamp"
+     ],
+     "e": "accanto a = <b>naast</b>."
+    },
+    {
+     "t": "order",
+     "q": "Guardo fuori dalla finestra.",
+     "a": "Ik kijk uit het raam",
+     "x": [
+      "van",
+      "op"
+     ],
+     "e": "fuori da = <b>uit</b>."
+    },
+    {
+     "t": "fill",
+     "q": "Het raam is ___ de deur.",
+     "h": "sopra",
+     "a": [
+      "boven"
+     ],
+     "e": "Sopra senza contatto: <b>boven</b>."
+    },
+    {
+     "t": "mc",
+     "q": "Il treno va da Gand a Bruges. → De trein gaat ___ Gent naar Brugge.",
+     "o": [
+      "van",
+      "op",
+      "bij",
+      "aan"
+     ],
+     "a": 0,
+     "e": "Punto di partenza: <b>van</b> ... naar."
+    }
+   ],
+   "gloss": {
+    "0": {
+     "g": {
+      "onder": "sotto",
+      "op": "su",
+      "in": "dentro",
+      "naast": "accanto a"
+     },
+     "t": "Il gatto dorme sotto il letto."
+    },
+    "1": {
+     "t": "La lampada è appesa al muro."
+    },
+    "2": {
+     "g": {
+      "naar": "da, verso (moto)",
+      "bij": "da, presso (stato): qui c'è movimento",
+      "van": "da (provenienza)",
+      "uit": "fuori da"
+     },
+     "t": "Domani vado dal panettiere."
+    },
+    "3": {
+     "t": "Sono al lavoro."
+    },
+    "4": {
+     "t": "Domani andiamo al mare."
+    },
+    "5": {
+     "g": {
+      "aan": "al (mare), sul bordo di",
+      "naar": "verso (moto): qui non c'è movimento",
+      "uit": "fuori da",
+      "bij": "presso: per il mare si dice aan zee"
+     },
+     "t": "Siamo al mare."
+    },
+    "6": {
+     "t": "Mi piace guardare i film."
+    },
+    "7": {
+     "g": {
+      "voor": "bang zijn voor = aver paura di",
+      "op": "bang op non esiste",
+      "aan": "bang aan non esiste",
+      "naar": "bang naar non esiste"
+     },
+     "t": "Ho paura dei cani."
+    },
+    "8": {
+     "t": "Il libro è accanto alla lampada."
+    },
+    "9": {
+     "t": "Guardo fuori dalla finestra."
+    },
+    "10": {
+     "t": "La finestra è sopra la porta."
+    },
+    "11": {
+     "g": {
+      "van": "da (punto di partenza)",
+      "op": "su",
+      "bij": "presso",
+      "aan": "attaccato a"
+     },
+     "t": "Il treno va da Gand a Bruges."
+    }
+   }
+  },
+  {
+   "id": "u25",
+   "nl": "Infinitief met 'te'",
+   "it": "L'infinito con te",
+   "note": "\n<h3>L'idea</h3>\n<p>In italiano molti verbi si collegano a un infinito con <b>a</b> o <b>di</b>: provo <i>a</i> parlare, comincio <i>a</i> capire, ho dimenticato <i>di</i> chiamare. In olandese al loro posto c'è sempre la stessa parolina: <b>te</b>. E come tutti gli infiniti, <b>te + infinito</b> va <b>alla fine della frase</b>.</p>\n<p><i>Ik probeer elke dag Nederlands <b>te spreken</b>.</i> (Provo a parlare olandese ogni giorno.)</p>\n<h3>Verbi che vogliono te</h3>\n<table><tr><th>olandese</th><th>italiano</th><th>esempio</th></tr>\n<tr><td>proberen te</td><td>provare a</td><td>Ik probeer te koken.</td></tr>\n<tr><td>beginnen te</td><td>cominciare a</td><td>Het begint te regenen.</td></tr>\n<tr><td>vergeten te</td><td>dimenticare di</td><td>Ik vergeet brood te kopen.</td></tr>\n<tr><td>hopen te</td><td>sperare di</td><td>Ik hoop je morgen te zien.</td></tr>\n<tr><td>niet hoeven te</td><td>non essere necessario</td><td>Je hoeft niet te komen.</td></tr></table>\n<p><b>niet hoeven te</b> è il contrario di moeten: <i>Je moet komen</i> (devi venire) → <i>Je hoeft niet te komen</i> (non c'è bisogno che tu venga).</p>\n<p>Con i verbi separabili, <b>te</b> va in mezzo: <i>opstaan → op te staan</i>. <i>Ik probeer vroeg op te staan.</i></p>\n<h3>Om … te = per</h3>\n<p>Per indicare lo <b>scopo</b> (per + infinito) si usa <b>om … te</b>: <i>Ik ga naar de stad <b>om</b> brood <b>te</b> kopen</i> (vado in città per comprare il pane). Om sta all'inizio del gruppo, te + infinito alla fine. Si trova anche dopo aggettivi come moeilijk e makkelijk: <i>Het is moeilijk om Nederlands te leren</i> (qui om si può anche omettere).</p>\n<h3>Zonder … te = senza</h3>\n<p>\"Senza + infinito\" funziona allo stesso modo: <i>Ze vertrekt <b>zonder</b> iets <b>te</b> zeggen</i> (parte senza dire niente).</p>\n<h3>Verbi SENZA te</h3>\n<p>Alcuni verbi frequenti si legano all'infinito direttamente, senza te:</p>\n<ul>\n<li>i modali: <i>Ik wil koken, ik kan zwemmen</i> (unità 9)</li>\n<li><b>gaan</b>: <i>We gaan zwemmen</i> (andiamo a nuotare)</li>\n<li><b>laten</b>: <i>Ik laat de kinderen spelen</i> (lascio giocare i bambini)</li>\n<li><b>blijven</b>: <i>We blijven thuis eten</i> (restiamo a mangiare a casa)</li>\n<li><b>zien</b> e <b>horen</b>: <i>Ik zie hem komen</i>, <i>Ik hoor haar zingen</i></li>\n</ul>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Mettere te + infinito subito dopo il verbo: <s>Ik probeer te spreken Nederlands</s> → <b>Ik probeer Nederlands te spreken</b>.</li>\n<li>Aggiungere te dopo un modale o gaan: <s>Ik wil te komen</s> → <b>Ik wil komen</b>.</li>\n<li>Tradurre \"per\" con voor: <s>voor brood te kopen</s> → <b>om brood te kopen</b>.</li>\n<li>Staccare male i separabili: <s>te opstaan</s> → <b>op te staan</b>.</li>\n</ul>",
+   "vlaams": "Nel parlato belga si sente spesso <b>voor … te</b> al posto di om … te: \"Ik kom voor te helpen\". È molto diffuso, ma nello standard e nello scritto si usa sempre <b>om te helpen</b>.",
+   "vocab": [
+    [
+     "proberen",
+     "provare"
+    ],
+    [
+     "beginnen",
+     "cominciare"
+    ],
+    [
+     "vergeten",
+     "dimenticare"
+    ],
+    [
+     "hopen",
+     "sperare"
+    ],
+    [
+     "regenen",
+     "piovere"
+    ],
+    [
+     "kopen",
+     "comprare"
+    ],
+    [
+     "zeggen",
+     "dire"
+    ],
+    [
+     "spelen",
+     "giocare"
+    ],
+    [
+     "zingen",
+     "cantare"
+    ],
+    [
+     "laten",
+     "lasciare, far fare"
+    ],
+    [
+     "horen",
+     "sentire (con l'udito)"
+    ],
+    [
+     "moeilijk",
+     "difficile"
+    ],
+    [
+     "makkelijk",
+     "facile"
+    ],
+    [
+     "de deur",
+     "la porta"
+    ],
+    [
+     "sluiten",
+     "chiudere"
+    ],
+    [
+     "iets",
+     "qualcosa"
+    ],
+    [
+     "het brood",
+     "il pane"
+    ]
+   ],
+   "core": {
+    "words": [
+     [
+      "te",
+      "a, di (davanti all'infinito)"
+     ],
+     [
+      "om … te",
+      "per (+ infinito, scopo)"
+     ],
+     [
+      "zonder … te",
+      "senza (+ infinito)"
+     ],
+     [
+      "niet hoeven te",
+      "non essere necessario"
+     ]
+    ],
+    "drills": [
+     {
+      "t": "mc",
+      "oit": true,
+      "q": "Ik probeer Nederlands ___.",
+      "o": [
+       "te spreken",
+       "spreken",
+       "te spreek",
+       "spreek te"
+      ],
+      "a": 0,
+      "e": "proberen + <b>te</b> + infinito, alla fine.",
+      "g": {
+       "te spreken": "a parlare (te + infinito)",
+       "spreken": "manca te: proberen lo vuole",
+       "te spreek": "dopo te serve l'infinito",
+       "spreek te": "te va prima dell'infinito"
+      },
+      "tt": "Provo a parlare olandese."
+     },
+     {
+      "t": "mc",
+      "oit": true,
+      "q": "Ik probeer morgen vroeg ___.",
+      "h": "opstaan",
+      "o": [
+       "op te staan",
+       "te opstaan",
+       "opstaan te",
+       "op staan te"
+      ],
+      "a": 0,
+      "e": "Separabile: te va tra particella e verbo, <b>op te staan</b>.",
+      "g": {
+       "op te staan": "ad alzarmi (te in mezzo)",
+       "te opstaan": "con i separabili te va in mezzo",
+       "opstaan te": "te va prima del verbo",
+       "op staan te": "ordine sbagliato"
+      },
+      "tt": "Domani provo ad alzarmi presto."
+     },
+     {
+      "t": "mc",
+      "oit": true,
+      "q": "Het begint ___.",
+      "h": "piovere",
+      "o": [
+       "te regenen",
+       "regenen",
+       "regent",
+       "om regenen"
+      ],
+      "a": 0,
+      "e": "beginnen + <b>te</b> + infinito.",
+      "g": {
+       "te regenen": "a piovere",
+       "regenen": "manca te",
+       "regent": "piove (forma coniugata)",
+       "om regenen": "om non si usa qui, e manca te"
+      },
+      "tt": "Comincia a piovere."
+     },
+     {
+      "t": "mc",
+      "q": "Ik ga naar de stad ___ brood te kopen.",
+      "o": [
+       "om",
+       "te",
+       "met",
+       "van"
+      ],
+      "a": 0,
+      "e": "Scopo (per): <b>om … te</b>.",
+      "g": {
+       "om": "per (om … te)",
+       "te": "te c'è già davanti a kopen",
+       "met": "con",
+       "van": "di, da"
+      },
+      "tt": "Vado in città per comprare il pane."
+     },
+     {
+      "t": "mc",
+      "q": "Ze vertrekt ___ iets te zeggen.",
+      "h": "senza",
+      "o": [
+       "zonder",
+       "om",
+       "met",
+       "niet"
+      ],
+      "a": 0,
+      "e": "senza + infinito = <b>zonder … te</b>.",
+      "g": {
+       "zonder": "senza",
+       "om": "per (scopo): non vuol dire senza",
+       "met": "con",
+       "niet": "non"
+      },
+      "tt": "Lei parte senza dire niente."
+     },
+     {
+      "t": "mc",
+      "q": "Quale verbo NON vuole te davanti all'infinito?",
+      "o": [
+       "kunnen",
+       "proberen",
+       "beginnen",
+       "vergeten"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "I modali come <b>kunnen</b> vogliono l'infinito senza te.",
+      "g": {
+       "kunnen": "potere: modale, senza te",
+       "proberen": "provare: vuole te",
+       "beginnen": "cominciare: vuole te",
+       "vergeten": "dimenticare: vuole te"
+      }
+     },
+     {
+      "t": "mc",
+      "q": "We gaan vanavond ___.",
+      "h": "zwemmen",
+      "o": [
+       "zwemmen",
+       "te zwemmen",
+       "om te zwemmen",
+       "zwemt"
+      ],
+      "a": 0,
+      "oit": true,
+      "e": "Dopo <b>gaan</b> niente te: we gaan <b>zwemmen</b>.",
+      "g": {
+       "zwemmen": "nuotare (infinito senza te)",
+       "te zwemmen": "dopo gaan non si usa te",
+       "om te zwemmen": "dopo gaan non si usa om te",
+       "zwemt": "nuota (forma coniugata)"
+      },
+      "tt": "Stasera andiamo a nuotare."
+     },
+     {
+      "t": "fill",
+      "q": "Vergeet niet de deur ___ sluiten.",
+      "h": "dimenticare di chiudere",
+      "a": [
+       "te"
+      ],
+      "e": "vergeten + <b>te</b> + infinito.",
+      "tt": "Non dimenticare di chiudere la porta."
+     },
+     {
+      "t": "fill",
+      "q": "Ik hoor de kinderen ___.",
+      "h": "cantare",
+      "a": [
+       "zingen"
+      ],
+      "e": "Dopo <b>horen</b> niente te: ik hoor ze <b>zingen</b>.",
+      "tt": "Sento i bambini cantare."
+     },
+     {
+      "t": "order",
+      "q": "Spero di vederti domani.",
+      "a": "Ik hoop je morgen te zien",
+      "alt": [
+       "Morgen hoop ik je te zien"
+      ],
+      "x": [
+       "om",
+       "gezien"
+      ],
+      "e": "hopen + <b>te</b> + infinito alla fine."
+     }
+    ]
+   },
+   "items": [
+    {
+     "t": "fill",
+     "q": "Ze begint ___ zingen.",
+     "h": "comincia a cantare",
+     "a": [
+      "te"
+     ],
+     "e": "beginnen + <b>te</b> + infinito."
+    },
+    {
+     "t": "mc",
+     "oit": true,
+     "q": "We hopen u morgen ___.",
+     "o": [
+      "te zien",
+      "zien",
+      "om zien",
+      "te ziet"
+     ],
+     "a": 0,
+     "e": "hopen + <b>te</b> + infinito."
+    },
+    {
+     "t": "order",
+     "q": "Vado in città per comprare il pane.",
+     "a": "Ik ga naar de stad om brood te kopen",
+     "alt": [
+      "Om brood te kopen ga ik naar de stad"
+     ],
+     "x": [
+      "met",
+      "gekocht"
+     ],
+     "e": "Scopo: <b>om</b> brood <b>te kopen</b>."
+    },
+    {
+     "t": "tr",
+     "q": "È difficile imparare l'olandese.",
+     "a": [
+      "Het is moeilijk om Nederlands te leren",
+      "Het is moeilijk Nederlands te leren",
+      "Nederlands leren is moeilijk"
+     ],
+     "e": "Dopo moeilijk: (<b>om</b>) Nederlands <b>te leren</b>."
+    },
+    {
+     "t": "mc",
+     "oit": true,
+     "q": "De kinderen spelen in de tuin. Ik laat ze ___.",
+     "h": "giocare",
+     "o": [
+      "spelen",
+      "te spelen",
+      "om te spelen",
+      "speelt"
+     ],
+     "a": 0,
+     "e": "Dopo <b>laten</b> niente te."
+    },
+    {
+     "t": "fill",
+     "q": "Ze vertrekt zonder iets ___ zeggen.",
+     "h": "senza dire niente",
+     "a": [
+      "te"
+     ],
+     "e": "<b>zonder</b> iets <b>te</b> zeggen."
+    },
+    {
+     "t": "mc",
+     "q": "Je ___ niet te komen.",
+     "h": "non è necessario",
+     "o": [
+      "hoeft",
+      "moet",
+      "wil",
+      "kan"
+     ],
+     "a": 0,
+     "e": "<b>niet hoeven te</b> = non è necessario."
+    },
+    {
+     "t": "tr",
+     "q": "Provo a cucinare.",
+     "a": [
+      "Ik probeer te koken"
+     ],
+     "e": "proberen + <b>te</b> + infinito."
+    },
+    {
+     "t": "order",
+     "q": "Comincia a piovere.",
+     "a": "Het begint te regenen",
+     "x": [
+      "geregend",
+      "om"
+     ],
+     "e": "beginnen + <b>te</b> + infinito."
+    },
+    {
+     "t": "mc",
+     "oit": true,
+     "q": "Quale frase è corretta?",
+     "o": [
+      "Ik ga morgen koken.",
+      "Ik ga morgen te koken.",
+      "Ik ga te morgen koken.",
+      "Ik ga morgen om koken."
+     ],
+     "a": 0,
+     "e": "Dopo <b>gaan</b> l'infinito senza te, alla fine."
+    },
+    {
+     "t": "fill",
+     "q": "Vergeet niet brood te ___!",
+     "h": "comprare",
+     "a": [
+      "kopen"
+     ],
+     "e": "te + infinito: <b>te kopen</b>."
+    },
+    {
+     "t": "tr",
+     "q": "Lo sento cantare.",
+     "a": [
+      "Ik hoor hem zingen"
+     ],
+     "e": "Dopo <b>horen</b> niente te: ik hoor hem <b>zingen</b>."
+    }
+   ],
+   "gloss": {
+    "0": {
+     "t": "Lei comincia a cantare."
+    },
+    "1": {
+     "g": {
+      "te zien": "di vedere (te + infinito)",
+      "zien": "manca te: hopen lo vuole",
+      "om zien": "om non serve qui, e manca te",
+      "te ziet": "dopo te serve l'infinito"
+     },
+     "t": "Speriamo di vederLa domani."
+    },
+    "2": {
+     "t": "Vado in città per comprare il pane."
+    },
+    "3": {
+     "t": "È difficile imparare l'olandese."
+    },
+    "4": {
+     "g": {
+      "spelen": "giocare (infinito senza te)",
+      "te spelen": "dopo laten non si usa te",
+      "om te spelen": "dopo laten non si usa om te",
+      "speelt": "gioca (forma coniugata)"
+     },
+     "t": "I bambini giocano in giardino. Li lascio giocare."
+    },
+    "5": {
+     "t": "Lei parte senza dire niente."
+    },
+    "6": {
+     "g": {
+      "hoeft": "è necessario (niet hoeven te = non è necessario)",
+      "moet": "devi: moeten non vuole te",
+      "wil": "vuoi: willen non vuole te",
+      "kan": "puoi: kunnen non vuole te"
+     },
+     "t": "Non è necessario che tu venga."
+    },
+    "7": {
+     "t": "Provo a cucinare."
+    },
+    "8": {
+     "t": "Comincia a piovere."
+    },
+    "9": {
+     "g": {
+      "Ik ga morgen koken.": "Domani cucino (corretta)",
+      "Ik ga morgen te koken.": "dopo gaan non si usa te",
+      "Ik ga te morgen koken.": "te non va davanti a morgen",
+      "Ik ga morgen om koken.": "om non serve, e manca te"
+     },
+     "t": "Domani cucino."
+    },
+    "10": {
+     "t": "Non dimenticare di comprare il pane!"
+    },
+    "11": {
+     "t": "Lo sento cantare."
+    }
+   }
+  }
+ ],
+ "orderSets": [
+  {
+   "id": "te",
+   "unit": "u25",
+   "t": "te + infinito",
+   "s": "e om … te",
+   "rule": "Dopo molti verbi ed espressioni si usa <b>te + infinito</b>, sempre <b>alla fine</b>: <i>Het begint <b>te regenen</b></i>. Per lo scopo («per…») si usa <b>om … te</b>: <i><b>om</b> brood <b>te</b> kopen</i>. Con un verbo separabile <i>te</i> va in mezzo: <i>op <b>te</b> staan</i>.",
+   "items": [
+    {
+     "it": "Comincia a piovere.",
+     "a": [
+      "Het",
+      "begint",
+      "te",
+      "regenen"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      2,
+      3
+     ],
+     "e": "<b>te regenen</b> alla fine, dopo il verbo coniugato."
+    },
+    {
+     "it": "Provo a parlare olandese.",
+     "a": [
+      "Ik",
+      "probeer",
+      "Nederlands",
+      "te",
+      "spreken"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      3,
+      4
+     ],
+     "e": "L'oggetto prima, <b>te spreken</b> in fondo."
+    },
+    {
+     "it": "Non ho voglia di cucinare.",
+     "a": [
+      "Ik",
+      "heb",
+      "geen zin",
+      "om",
+      "te",
+      "koken"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      4,
+      5
+     ],
+     "e": "<b>geen zin om … te koken</b>: <b>om</b> apre, <b>te</b> + infinito chiude."
+    },
+    {
+     "it": "Sta seduto in giardino a leggere.",
+     "a": [
+      "Hij",
+      "zit",
+      "in de tuin",
+      "te",
+      "lezen"
+     ],
+     "alt": [
+      [
+       "In de tuin",
+       "zit",
+       "hij",
+       "te",
+       "lezen"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      3,
+      4
+     ],
+     "e": "<b>zitten … te lezen</b>: «sta leggendo»; <b>te lezen</b> alla fine."
+    },
+    {
+     "it": "Non dimenticare di chiamare tua madre.",
+     "a": [
+      "Vergeet",
+      "niet",
+      "je moeder",
+      "te",
+      "bellen"
+     ],
+     "alt": [
+      [
+       "Vergeet",
+       "je moeder",
+       "niet",
+       "te",
+       "bellen"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      0
+     ],
+     "end": [
+      3,
+      4
+     ],
+     "e": "Imperativo all'inizio, <b>te bellen</b> alla fine."
+    },
+    {
+     "it": "Domani non devo lavorare.",
+     "a": [
+      "Ik",
+      "hoef",
+      "morgen",
+      "niet",
+      "te",
+      "werken"
+     ],
+     "alt": [
+      [
+       "Morgen",
+       "hoef",
+       "ik",
+       "niet",
+       "te",
+       "werken"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      4,
+      5
+     ],
+     "e": "<b>niet hoeven te</b> = non dover: <b>te werken</b> in fondo."
+    },
+    {
+     "it": "Vado dal panettiere a comprare il pane.",
+     "a": [
+      "Ik",
+      "ga",
+      "naar de bakker",
+      "om",
+      "brood",
+      "te",
+      "kopen"
+     ],
+     "alt": [
+      [
+       "Om",
+       "brood",
+       "te",
+       "kopen",
+       "ga",
+       "ik",
+       "naar de bakker"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      5,
+      6
+     ],
+     "e": "Scopo: <b>om brood te kopen</b>; <b>om</b> all'inizio, <b>te kopen</b> alla fine."
+    },
+    {
+     "it": "Non abbiamo tempo di andare al cinema.",
+     "a": [
+      "We",
+      "hebben",
+      "geen tijd",
+      "om",
+      "naar de film",
+      "te",
+      "gaan"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      5,
+      6
+     ],
+     "e": "Tra <b>om</b> e <b>te gaan</b> c'è il resto: <b>naar de film</b>."
+    },
+    {
+     "it": "Risparmia soldi per comprare una macchina.",
+     "a": [
+      "Ze",
+      "spaart",
+      "geld",
+      "om",
+      "een auto",
+      "te",
+      "kopen"
+     ],
+     "alt": [
+      [
+       "Om",
+       "een auto",
+       "te",
+       "kopen",
+       "spaart",
+       "ze",
+       "geld"
+      ]
+     ],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      5,
+      6
+     ],
+     "e": "<b>om een auto te kopen</b>: scopo, con <b>te</b> + infinito alla fine."
+    },
+    {
+     "it": "È difficile alzarsi presto.",
+     "a": [
+      "Het",
+      "is",
+      "moeilijk",
+      "om",
+      "vroeg",
+      "op te staan"
+     ],
+     "alt": [],
+     "start": 0,
+     "v": [
+      1
+     ],
+     "end": [
+      5
+     ],
+     "e": "Verbo separabile: <b>op te staan</b>, con <b>te</b> in mezzo, alla fine."
+    }
+   ]
+  }
+ ]
+}

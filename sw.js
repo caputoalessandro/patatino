@@ -1,5 +1,5 @@
 // Patatino: funzionamento offline. Cambia VERSION a ogni aggiornamento dell'app.
-const VERSION = "patatino-v9";
+const VERSION = "patatino-v10";
 const FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./icon-180.png", "./icon-32.png", "./icon-maskable-192.png", "./icon-maskable-512.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(VERSION).then(c => c.addAll(FILES))); self.skipWaiting(); });
 self.addEventListener("activate", e => {
@@ -9,6 +9,8 @@ self.addEventListener("activate", e => {
 self.addEventListener("fetch", e => {
   if (e.request.method !== "GET") return;
   const url = new URL(e.request.url);
+  // licenza e moduli premium: sempre dalla rete, mai nella cache del service worker
+  if (url.origin === location.origin && /\/api\/|\/premium-src\//.test(url.pathname)) return;
   // pagina: prima la rete (per ricevere gli aggiornamenti), poi la copia salvata
   if (e.request.mode === "navigate") {
     e.respondWith(fetch(e.request).then(r => { caches.open(VERSION).then(c => c.put("./index.html", r.clone())); return r; })

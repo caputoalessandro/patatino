@@ -13,6 +13,8 @@ Funziona nel browser, si installa sulla schermata Home e funziona anche offline.
 | `icon-*.png` | Icone di Patatino (`icon-maskable-*` con margine per il ritaglio a cerchio di Android) |
 | `screenshots/` | Schermate per il prompt di installazione e gli store |
 | `tools/genera-asset.mjs` | Rigenera icone e schermate dalla mascotte (non serve all'app) |
+| `premium-src/` | Contenuti dei moduli premium: **da non pubblicare** (vedi `premium-src/README.md`) |
+| `_config.yml` | Esclude `premium-src/` e `tools/` dal sito di GitHub Pages |
 
 ## Pubblicare un aggiornamento
 
@@ -65,3 +67,26 @@ L'informativa è in Impostazioni → Privacy. Prima di pubblicarla completa i se
 npm i playwright && npx playwright install chromium
 node tools/genera-asset.mjs
 ```
+
+## Premium
+
+Il modulo 1 («Le basi», unità 1–5) è gratuito e sta tutto in `index.html`. I moduli 2–6 sono premium:
+in `index.html` restano solo i titoli (con il lucchetto); i contenuti si scaricano dopo lo sblocco e restano sul dispositivo (IndexedDB), quindi funzionano offline.
+
+Tutto si configura in `PREMIUM_CONFIG`, in cima allo script principale di `index.html` (moduli gratuiti, prezzo, link di acquisto, indirizzo del Worker, email di assistenza, pagina ordini).
+
+Il Worker (fase successiva) deve rispondere a:
+
+| Richiesta | Corpo | Risposta |
+|---|---|---|
+| `POST /api/license/activate` | `{ key, deviceName }` | `{ valid: true, instanceId }` oppure `{ valid: false, reason }` |
+| `POST /api/license/validate` | `{ key, instanceId }` | `{ valid: true }` oppure `{ valid: false, reason }` |
+| `POST /api/license/deactivate` | `{ key, instanceId }` | `{ ok: true }` |
+| `GET /api/modules/<n>` | header `X-License-Key`, `X-Instance-Id` | il JSON del modulo (come in `premium-src/`), 401/403 se la chiave non vale |
+
+Valori di `reason` riconosciuti: `not_found`, `wrong_product`, `limit_reached`, `refunded` / `disabled` / `expired` (licenza revocata).
+L'app considera revocata la licenza solo con una risposta esplicita `{ valid: false }`; se il server è irraggiungibile o risponde con un errore 5xx, lo sblocco resta.
+
+Lo stato della licenza (codice, instanceId, data dell'ultima verifica) è salvato in `goesting.license` ed entra nel backup.
+
+**Modalità sviluppo**: aprendo l'app da `localhost`/`127.0.0.1` senza Worker, l'unico codice accettato è `TEST-PREMIUM-0000` e i moduli si leggono da `premium-src/`. Va rimossa prima della pubblicazione: in `index.html` cerca `MODALITÀ SVILUPPO`.

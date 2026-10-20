@@ -1,0 +1,5 @@
+# GitHub Pages (Jekyll): queste cartelle restano nel repository ma non vengono pubblicate sul sito.
+exclude:
+  - premium-src
+  - tools
+  - README.md
