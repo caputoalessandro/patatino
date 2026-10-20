@@ -2443,5 +2443,276 @@
     }
    ]
   }
+ ],
+ "decks": [
+  {
+   "id": "opp",
+   "g": "Grammatica",
+   "t": "Aggettivi opposti",
+   "s": "Impara gli aggettivi a coppie",
+   "sayExtra": false,
+   "cards": [
+    [
+     "groot ↔ klein",
+     "grande ↔ piccolo"
+    ],
+    [
+     "lang ↔ kort",
+     "lungo ↔ corto"
+    ],
+    [
+     "oud ↔ nieuw",
+     "vecchio ↔ nuovo"
+    ],
+    [
+     "oud ↔ jong",
+     "vecchio ↔ giovane"
+    ],
+    [
+     "warm ↔ koud",
+     "caldo ↔ freddo"
+    ],
+    [
+     "duur ↔ goedkoop",
+     "caro ↔ economico"
+    ],
+    [
+     "snel ↔ traag",
+     "veloce ↔ lento"
+    ],
+    [
+     "goed ↔ slecht",
+     "buono ↔ cattivo"
+    ],
+    [
+     "mooi ↔ lelijk",
+     "bello ↔ brutto"
+    ],
+    [
+     "makkelijk ↔ moeilijk",
+     "facile ↔ difficile"
+    ],
+    [
+     "licht ↔ donker",
+     "chiaro ↔ scuro"
+    ],
+    [
+     "licht ↔ zwaar",
+     "leggero ↔ pesante"
+    ],
+    [
+     "vol ↔ leeg",
+     "pieno ↔ vuoto"
+    ],
+    [
+     "open ↔ dicht",
+     "aperto ↔ chiuso"
+    ],
+    [
+     "vroeg ↔ laat",
+     "presto ↔ tardi"
+    ],
+    [
+     "blij ↔ verdrietig",
+     "felice ↔ triste"
+    ],
+    [
+     "druk ↔ rustig",
+     "affollato ↔ tranquillo"
+    ],
+    [
+     "sterk ↔ zwak",
+     "forte ↔ debole"
+    ],
+    [
+     "rijk ↔ arm",
+     "ricco ↔ povero"
+    ],
+    [
+     "dik ↔ dun",
+     "grosso, grasso ↔ sottile, magro"
+    ]
+   ]
+  },
+  {
+   "id": "body",
+   "g": "Lessico",
+   "t": "Corpo e salute",
+   "s": "Dal medico e in farmacia",
+   "cards": [
+    [
+     "het hoofd",
+     "la testa"
+    ],
+    [
+     "het haar",
+     "i capelli"
+    ],
+    [
+     "het oog",
+     "l'occhio"
+    ],
+    [
+     "het oor",
+     "l'orecchio"
+    ],
+    [
+     "de neus",
+     "il naso"
+    ],
+    [
+     "de mond",
+     "la bocca"
+    ],
+    [
+     "de tand",
+     "il dente"
+    ],
+    [
+     "de keel",
+     "la gola"
+    ],
+    [
+     "de arm",
+     "il braccio"
+    ],
+    [
+     "de hand",
+     "la mano"
+    ],
+    [
+     "de vinger",
+     "il dito"
+    ],
+    [
+     "de buik",
+     "la pancia"
+    ],
+    [
+     "de rug",
+     "la schiena"
+    ],
+    [
+     "het been",
+     "la gamba"
+    ],
+    [
+     "de voet",
+     "il piede"
+    ],
+    [
+     "het hart",
+     "il cuore"
+    ],
+    [
+     "ziek",
+     "malato"
+    ],
+    [
+     "de huisarts",
+     "il medico di famiglia"
+    ],
+    [
+     "het medicijn",
+     "la medicina"
+    ],
+    [
+     "de koorts",
+     "la febbre"
+    ],
+    [
+     "de hoofdpijn",
+     "il mal di testa"
+    ],
+    [
+     "verkouden",
+     "raffreddato"
+    ],
+    [
+     "Ik voel me niet goed.",
+     "Non mi sento bene."
+    ]
+   ]
+  },
+  {
+   "id": "work",
+   "g": "Lessico",
+   "t": "Lavoro e ufficio",
+   "s": "Le parole per il lavoro in Belgio",
+   "cards": [
+    [
+     "het werk",
+     "il lavoro"
+    ],
+    [
+     "de job",
+     "il lavoro, l'impiego"
+    ],
+    [
+     "het kantoor",
+     "l'ufficio"
+    ],
+    [
+     "de collega",
+     "il collega"
+    ],
+    [
+     "de baas",
+     "il capo"
+    ],
+    [
+     "de vergadering",
+     "la riunione"
+    ],
+    [
+     "de afspraak",
+     "l'appuntamento"
+    ],
+    [
+     "de e-mail",
+     "l'e-mail"
+    ],
+    [
+     "het loon",
+     "lo stipendio"
+    ],
+    [
+     "het contract",
+     "il contratto"
+    ],
+    [
+     "de klant",
+     "il cliente"
+    ],
+    [
+     "het bedrijf",
+     "l'azienda"
+    ],
+    [
+     "de pauze",
+     "la pausa"
+    ],
+    [
+     "thuiswerken",
+     "lavorare da casa"
+    ],
+    [
+     "solliciteren",
+     "candidarsi"
+    ],
+    [
+     "het verlof",
+     "le ferie, il congedo"
+    ],
+    [
+     "ziek zijn",
+     "essere in malattia"
+    ],
+    [
+     "de computer",
+     "il computer"
+    ]
+   ]
+  }
  ]
 }

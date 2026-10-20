@@ -2973,5 +2973,267 @@
     }
    ]
   }
+ ],
+ "decks": [
+  {
+   "id": "city",
+   "g": "Lessico",
+   "t": "In città",
+   "s": "Trasporti, negozi e indicazioni",
+   "cards": [
+    [
+     "het station",
+     "la stazione"
+    ],
+    [
+     "de bus",
+     "l'autobus"
+    ],
+    [
+     "de tram",
+     "il tram"
+    ],
+    [
+     "de trein",
+     "il treno"
+    ],
+    [
+     "de metro",
+     "la metropolitana"
+    ],
+    [
+     "de halte",
+     "la fermata"
+    ],
+    [
+     "het perron",
+     "il binario"
+    ],
+    [
+     "het ticket",
+     "il biglietto"
+    ],
+    [
+     "de straat",
+     "la strada"
+    ],
+    [
+     "het plein",
+     "la piazza"
+    ],
+    [
+     "de kerk",
+     "la chiesa"
+    ],
+    [
+     "het stadhuis",
+     "il municipio"
+    ],
+    [
+     "het museum",
+     "il museo"
+    ],
+    [
+     "de winkel",
+     "il negozio"
+    ],
+    [
+     "de supermarkt",
+     "il supermercato"
+    ],
+    [
+     "de bakker",
+     "il fornaio"
+    ],
+    [
+     "de apotheek",
+     "la farmacia"
+    ],
+    [
+     "de bank",
+     "la banca"
+    ],
+    [
+     "het ziekenhuis",
+     "l'ospedale"
+    ],
+    [
+     "de brug",
+     "il ponte"
+    ],
+    [
+     "de hoek",
+     "l'angolo"
+    ],
+    [
+     "links",
+     "a sinistra"
+    ],
+    [
+     "rechts",
+     "a destra"
+    ],
+    [
+     "rechtdoor",
+     "dritto"
+    ]
+   ]
+  },
+  {
+   "id": "home",
+   "g": "Lessico",
+   "t": "In casa",
+   "s": "Stanze, mobili e oggetti",
+   "cards": [
+    [
+     "het huis",
+     "la casa"
+    ],
+    [
+     "het appartement",
+     "l'appartamento"
+    ],
+    [
+     "de slaapkamer",
+     "la camera da letto"
+    ],
+    [
+     "de badkamer",
+     "il bagno"
+    ],
+    [
+     "de keuken",
+     "la cucina"
+    ],
+    [
+     "de woonkamer",
+     "il soggiorno"
+    ],
+    [
+     "het toilet",
+     "il gabinetto"
+    ],
+    [
+     "de deur",
+     "la porta"
+    ],
+    [
+     "het raam",
+     "la finestra"
+    ],
+    [
+     "de trap",
+     "la scala"
+    ],
+    [
+     "de tuin",
+     "il giardino"
+    ],
+    [
+     "de tafel",
+     "il tavolo"
+    ],
+    [
+     "de stoel",
+     "la sedia"
+    ],
+    [
+     "het bed",
+     "il letto"
+    ],
+    [
+     "de kast",
+     "l'armadio"
+    ],
+    [
+     "de lamp",
+     "la lampada"
+    ],
+    [
+     "de koelkast",
+     "il frigorifero"
+    ],
+    [
+     "de wasmachine",
+     "la lavatrice"
+    ],
+    [
+     "de sleutel",
+     "la chiave"
+    ],
+    [
+     "de muur",
+     "il muro"
+    ]
+   ]
+  },
+  {
+   "id": "weather",
+   "g": "Lessico",
+   "t": "Il tempo che fa",
+   "s": "Indispensabile in Belgio",
+   "cards": [
+    [
+     "het weer",
+     "il tempo (meteo)"
+    ],
+    [
+     "de zon",
+     "il sole"
+    ],
+    [
+     "de regen",
+     "la pioggia"
+    ],
+    [
+     "Het regent.",
+     "Piove."
+    ],
+    [
+     "Het waait.",
+     "Tira vento."
+    ],
+    [
+     "Het sneeuwt.",
+     "Nevica."
+    ],
+    [
+     "Het vriest.",
+     "Gela."
+    ],
+    [
+     "de wind",
+     "il vento"
+    ],
+    [
+     "de wolk",
+     "la nuvola"
+    ],
+    [
+     "bewolkt",
+     "nuvoloso"
+    ],
+    [
+     "zonnig",
+     "soleggiato"
+    ],
+    [
+     "nat",
+     "bagnato"
+    ],
+    [
+     "de paraplu",
+     "l'ombrello"
+    ],
+    [
+     "het onweer",
+     "il temporale"
+    ],
+    [
+     "Wat voor weer is het?",
+     "Che tempo fa?"
+    ]
+   ]
+  }
  ]
 }

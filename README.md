@@ -13,7 +13,7 @@ Funziona nel browser, si installa sulla schermata Home e funziona anche offline.
 | `icon-*.png` | Icone di Patatino (`icon-maskable-*` con margine per il ritaglio a cerchio di Android) |
 | `screenshots/` | Schermate per il prompt di installazione e gli store |
 | `tools/genera-asset.mjs` | Rigenera icone e schermate dalla mascotte (non serve all'app) |
-| `premium-src/` | Contenuti dei moduli premium: **da non pubblicare** (vedi `premium-src/README.md`) |
+| `premium-src/` | Contenuti sbloccabili (moduli 2–6 e mazzi): **da non pubblicare** (vedi `premium-src/README.md`) |
 | `_config.yml` | Esclude `premium-src/` e `tools/` dal sito di GitHub Pages |
 
 ## Pubblicare un aggiornamento
@@ -68,12 +68,14 @@ npm i playwright && npx playwright install chromium
 node tools/genera-asset.mjs
 ```
 
-## Premium
+## Sostieni Patatino (contenuti sbloccabili)
 
-Il modulo 1 («Le basi», unità 1–5) è gratuito e sta tutto in `index.html`. I moduli 2–6 sono premium:
-in `index.html` restano solo i titoli (con il lucchetto); i contenuti si scaricano dopo lo sblocco e restano sul dispositivo (IndexedDB), quindi funzionano offline.
+Il modulo 1 («Le basi», unità 1–5) e 7 mazzi di flashcard (De of het?, Numeri, Calendario, Famiglia, Cibo, Colori, Espressioni utili) sono liberi e stanno in `index.html`.
+Chi fa una **donazione libera (da 1 €)** riceve per email un codice che sblocca i moduli 2–6, gli esercizi «Costruisci la frase» e gli altri 11 mazzi.
+In `index.html` restano solo i titoli (con il lucchetto); i contenuti si scaricano dopo lo sblocco e restano sul dispositivo (IndexedDB), quindi funzionano offline.
 
-Tutto si configura in `PREMIUM_CONFIG`, in cima allo script principale di `index.html` (moduli gratuiti, prezzo, link di acquisto, indirizzo del Worker, email di assistenza, pagina ordini).
+Tutto si configura in `PREMIUM_CONFIG`, in cima allo script principale di `index.html` (moduli liberi, testo della donazione, link di donazione, indirizzo del Worker, email di assistenza, pagina ordini).
+Sul provider il prodotto va creato a prezzo libero («paga quanto vuoi») con minimo 1 €.
 
 Il Worker (fase successiva) deve rispondere a:
 

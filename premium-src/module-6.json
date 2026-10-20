@@ -3549,5 +3549,146 @@
     }
    ]
   }
+ ],
+ "decks": [
+  {
+   "id": "vlaams",
+   "g": "Vlaams",
+   "t": "Parole fiamminghe",
+   "s": "Come si dice in Belgio, e cosa diresti nei Paesi Bassi",
+   "sayExtra": false,
+   "cards": [
+    [
+     "de gsm",
+     "il cellulare",
+     "Nei Paesi Bassi: de mobiel, het mobieltje"
+    ],
+    [
+     "de frieten",
+     "le patatine fritte",
+     "Nei Paesi Bassi: patat (al nord), friet (al sud)"
+    ],
+    [
+     "een pintje",
+     "una birra (alla spina)",
+     "Nei Paesi Bassi: een biertje, een pilsje"
+    ],
+    [
+     "goesting hebben",
+     "avere voglia",
+     "Nei Paesi Bassi: zin hebben"
+    ],
+    [
+     "plezant",
+     "piacevole, divertente",
+     "Nei Paesi Bassi: leuk"
+    ],
+    [
+     "Amai!",
+     "Accidenti! / Caspita!",
+     "Esclamazione di sorpresa"
+    ],
+    [
+     "Allez!",
+     "Dai! / Su!",
+     "Per incoraggiare o per dire «andiamo»"
+    ],
+    [
+     "seffens",
+     "tra poco",
+     "Nei Paesi Bassi: zo meteen"
+    ],
+    [
+     "efkes",
+     "un attimo",
+     "Nei Paesi Bassi: even"
+    ],
+    [
+     "de voormiddag",
+     "la mattina",
+     "Nei Paesi Bassi: de ochtend"
+    ],
+    [
+     "de namiddag",
+     "il pomeriggio",
+     "Nei Paesi Bassi: de middag"
+    ],
+    [
+     "de zetel",
+     "il divano",
+     "Nei Paesi Bassi: de bank"
+    ],
+    [
+     "de frigo",
+     "il frigorifero",
+     "Nei Paesi Bassi: de koelkast"
+    ],
+    [
+     "de lavabo",
+     "il lavandino",
+     "Nei Paesi Bassi: de wastafel"
+    ],
+    [
+     "de living",
+     "il soggiorno",
+     "Nei Paesi Bassi: de woonkamer"
+    ],
+    [
+     "de nonkel",
+     "lo zio",
+     "Nei Paesi Bassi: de oom"
+    ],
+    [
+     "de bompa",
+     "il nonno",
+     "Nei Paesi Bassi: de opa"
+    ],
+    [
+     "de bomma",
+     "la nonna",
+     "Nei Paesi Bassi: de oma"
+    ],
+    [
+     "schoon",
+     "bello",
+     "Nei Paesi Bassi schoon significa «pulito»"
+    ],
+    [
+     "content",
+     "contento",
+     "Usato anche nei Paesi Bassi; lì più spesso: tevreden, blij"
+    ],
+    [
+     "ambetant",
+     "fastidioso",
+     "Nei Paesi Bassi: vervelend"
+    ],
+    [
+     "kuisen",
+     "pulire",
+     "Nei Paesi Bassi: schoonmaken"
+    ],
+    [
+     "babbelen",
+     "chiacchierare",
+     "Usato anche nei Paesi Bassi; lì più spesso: kletsen"
+    ],
+    [
+     "het kot",
+     "la stanza da studente",
+     "Nei Paesi Bassi: de studentenkamer"
+    ],
+    [
+     "Wablieft?",
+     "Come, scusi?",
+     "Nei Paesi Bassi: Wat zegt u? / Pardon?"
+    ],
+    [
+     "Proficiat!",
+     "Congratulazioni!",
+     "Usato anche nei Paesi Bassi; lì più spesso: Gefeliciteerd!"
+    ]
+   ]
+  }
  ]
 }

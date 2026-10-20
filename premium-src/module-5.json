@@ -2608,5 +2608,116 @@
     }
    ]
   }
+ ],
+ "decks": [
+  {
+   "id": "prep",
+   "g": "Grammatica",
+   "t": "Verbi con preposizione",
+   "s": "La preposizione fissa e una frase d'esempio",
+   "sayExtra": true,
+   "cards": [
+    [
+     "wachten op",
+     "aspettare",
+     "Ik wacht op de bus."
+    ],
+    [
+     "denken aan",
+     "pensare a",
+     "Ik denk aan jou."
+    ],
+    [
+     "houden van",
+     "amare, voler bene a",
+     "Ik hou van muziek."
+    ],
+    [
+     "kijken naar",
+     "guardare",
+     "We kijken naar een film."
+    ],
+    [
+     "luisteren naar",
+     "ascoltare",
+     "Hij luistert naar de radio."
+    ],
+    [
+     "praten over",
+     "parlare di",
+     "We praten over het werk."
+    ],
+    [
+     "zorgen voor",
+     "occuparsi di",
+     "Zij zorgt voor de kinderen."
+    ],
+    [
+     "bang zijn voor",
+     "avere paura di",
+     "Ik ben bang voor honden."
+    ],
+    [
+     "trots zijn op",
+     "essere fiero di",
+     "Ze is trots op haar zoon."
+    ],
+    [
+     "boos zijn op",
+     "essere arrabbiato con",
+     "Hij is boos op mij."
+    ],
+    [
+     "verliefd zijn op",
+     "essere innamorato di",
+     "Ik ben verliefd op haar."
+    ],
+    [
+     "beginnen met",
+     "cominciare (a fare)",
+     "We beginnen met de les."
+    ],
+    [
+     "stoppen met",
+     "smettere di",
+     "Hij stopt met roken."
+    ],
+    [
+     "helpen met",
+     "aiutare con",
+     "Kun je me helpen met de koffers?"
+    ],
+    [
+     "genieten van",
+     "godersi",
+     "We genieten van het weer."
+    ],
+    [
+     "dromen van",
+     "sognare",
+     "Ik droom van een reis."
+    ],
+    [
+     "deelnemen aan",
+     "partecipare a",
+     "Ik neem deel aan de cursus."
+    ],
+    [
+     "vragen naar",
+     "chiedere di, informarsi su",
+     "Hij vraagt naar de weg."
+    ],
+    [
+     "geïnteresseerd zijn in",
+     "essere interessato a",
+     "Ik ben geïnteresseerd in kunst."
+    ],
+    [
+     "rekenen op",
+     "contare su",
+     "Je kunt op mij rekenen."
+    ]
+   ]
+  }
  ]
 }

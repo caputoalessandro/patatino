@@ -281,20 +281,7 @@ body{background:var(--bg)}
 .next h2{overflow-wrap:anywhere;hyphens:auto}
 .next-top{display:block}
 
-/* palette selezionabili (testo sempre nero su sfondi chiari, contrasto verificato) */
-:root[data-palette="mosselen"]{--bg:#BFE6DC;--bg-shade:#86BFB0;--deep:#1D3B5C;--deep-shade:#0F2238;--lion-soft:#E2F4EF;--muted:#2F4F4A;--lion-ink:#1D3B5C}
-:root[data-palette="praline"]{--bg:#F7D3D8;--bg-shade:#DFA3AD;--deep:#5A3324;--deep-shade:#381E14;--lion-soft:#FDE9EC;--muted:#5C4045;--lion-ink:#5A3324}
-:root[data-palette="atomium"]{--bg:#CFE4FA;--bg-shade:#94BBE5;--deep:#2343B8;--deep-shade:#152A7A;--lion-soft:#E7F1FD;--muted:#2F4563;--lion-ink:#2343B8}
 .next .label{color:rgba(255,255,255,.88)}
-.pals{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-bottom:26px}
-.pal{display:flex;flex-direction:column;gap:8px;text-align:left;background:var(--surface);border:2.5px solid var(--ink);border-radius:16px;padding:10px;box-shadow:0 4px 0 var(--bg-shade)}
-.pal.on{outline:3px solid var(--deep);outline-offset:2px}
-.sw{position:relative;height:62px;border-radius:10px;border:2.5px solid var(--ink);display:flex;align-items:center;padding:0 12px;overflow:hidden}
-.sw i{position:absolute;right:0;top:0;bottom:0;width:38%;border-left:2.5px solid var(--ink)}
-.sw b{font-family:var(--f-display);font-size:24px;color:#1A1A1A;position:relative}
-.pt2{display:flex;flex-direction:column;min-width:0}
-.pt2 b{font-family:var(--f-display);font-size:17px}
-.pt2 span{color:var(--muted);font-size:13px}
 .novoice{margin-top:-14px}
 /* Patatino nello sfondo dei quiz */
 .quiz-bg{position:fixed;right:-30px;bottom:calc(140px + env(safe-area-inset-bottom,0px));z-index:-1;opacity:.38;pointer-events:none;transform:rotate(-8deg)}
@@ -495,6 +482,8 @@ body{background:var(--bg)}
 .unlock-h{display:flex;align-items:flex-end;gap:12px;margin-bottom:8px}
 .unlock-h svg{flex:none}
 .unlock-h .lesson-h{flex:1;min-width:0;margin-bottom:10px}
+.perks-h{font-size:19px;margin:6px 0 10px}
+.price .note{display:block;margin-top:4px}
 .perks{list-style:none;padding:0;margin:0 0 14px;display:grid;gap:10px}
 .perks li{display:flex;gap:10px;align-items:flex-start;background:var(--surface);border:2.5px solid var(--ink);border-radius:14px;padding:10px 12px;box-shadow:0 3px 0 var(--bg-shade)}
 .perks li svg{flex:none;width:20px;height:20px;color:var(--good)}
@@ -996,78 +985,6 @@ if (typeof module !== "undefined") module.exports = CORE;
 // sayExtra: true se il dettaglio è in neerlandese e va letto ad alta voce
 const DECKS = [
 {
-  id:"irr1", g:"Grammatica", t:"Verbi irregolari · i più comuni", s:"Imperfetto e participio dei verbi forti di tutti i giorni", sayExtra:true,
-  cards:[
-    ["zijn","essere","was · waren · is geweest"],
-    ["hebben","avere","had · hadden · heeft gehad"],
-    ["gaan","andare","ging · gingen · is gegaan"],
-    ["komen","venire","kwam · kwamen · is gekomen"],
-    ["doen","fare","deed · deden · heeft gedaan"],
-    ["zien","vedere","zag · zagen · heeft gezien"],
-    ["eten","mangiare","at · aten · heeft gegeten"],
-    ["drinken","bere","dronk · dronken · heeft gedronken"],
-    ["lezen","leggere","las · lazen · heeft gelezen"],
-    ["schrijven","scrivere","schreef · schreven · heeft geschreven"],
-    ["spreken","parlare","sprak · spraken · heeft gesproken"],
-    ["nemen","prendere","nam · namen · heeft genomen"],
-    ["geven","dare","gaf · gaven · heeft gegeven"],
-    ["krijgen","ricevere","kreeg · kregen · heeft gekregen"],
-    ["vinden","trovare","vond · vonden · heeft gevonden"],
-    ["denken","pensare","dacht · dachten · heeft gedacht"],
-    ["brengen","portare","bracht · brachten · heeft gebracht"],
-    ["kopen","comprare","kocht · kochten · heeft gekocht"],
-    ["zoeken","cercare","zocht · zochten · heeft gezocht"],
-    ["weten","sapere","wist · wisten · heeft geweten"],
-    ["kunnen","potere, saper fare","kon · konden · heeft gekund"],
-    ["willen","volere","wilde (wou) · wilden · heeft gewild"],
-    ["mogen","avere il permesso","mocht · mochten · heeft gemogen"],
-    ["moeten","dovere","moest · moesten · heeft gemoeten"],
-    ["zeggen","dire","zei · zeiden · heeft gezegd"],
-    ["vragen","chiedere","vroeg · vroegen · heeft gevraagd"],
-    ["blijven","restare","bleef · bleven · is gebleven"],
-    ["worden","diventare","werd · werden · is geworden"],
-    ["staan","stare in piedi","stond · stonden · heeft gestaan"],
-    ["zitten","stare seduto","zat · zaten · heeft gezeten"],
-    ["liggen","essere sdraiato","lag · lagen · heeft gelegen"],
-    ["kijken","guardare","keek · keken · heeft gekeken"]
-  ]
-},
-{
-  id:"irr2", g:"Grammatica", t:"Verbi irregolari · secondo livello", s:"Altri verbi forti e misti da conoscere", sayExtra:true,
-  cards:[
-    ["beginnen","cominciare","begon · begonnen · is begonnen"],
-    ["vergeten","dimenticare","vergat · vergaten · heeft/is vergeten"],
-    ["begrijpen","capire","begreep · begrepen · heeft begrepen"],
-    ["slapen","dormire","sliep · sliepen · heeft geslapen"],
-    ["lopen","camminare (in Belgio spesso: correre)","liep · liepen · heeft/is gelopen"],
-    ["roepen","chiamare (a voce)","riep · riepen · heeft geroepen"],
-    ["vallen","cadere","viel · vielen · is gevallen"],
-    ["houden","tenere","hield · hielden · heeft gehouden"],
-    ["helpen","aiutare","hielp · hielpen · heeft geholpen"],
-    ["zingen","cantare","zong · zongen · heeft gezongen"],
-    ["zwemmen","nuotare","zwom · zwommen · heeft/is gezwommen"],
-    ["rijden","guidare, andare (in auto/bici)","reed · reden · heeft/is gereden"],
-    ["vliegen","volare","vloog · vlogen · heeft/is gevlogen"],
-    ["verliezen","perdere","verloor · verloren · heeft verloren"],
-    ["kiezen","scegliere","koos · kozen · heeft gekozen"],
-    ["liegen","mentire","loog · logen · heeft gelogen"],
-    ["winnen","vincere","won · wonnen · heeft gewonnen"],
-    ["sluiten","chiudere","sloot · sloten · heeft gesloten"],
-    ["trekken","tirare","trok · trokken · heeft getrokken"],
-    ["dragen","portare (addosso)","droeg · droegen · heeft gedragen"],
-    ["slaan","colpire","sloeg · sloegen · heeft geslagen"],
-    ["breken","rompere","brak · braken · heeft/is gebroken"],
-    ["sterven","morire","stierf · stierven · is gestorven"],
-    ["verdwijnen","sparire","verdween · verdwenen · is verdwenen"],
-    ["bieden","offrire","bood · boden · heeft geboden"],
-    ["hangen","essere appeso, appendere","hing · hingen · heeft gehangen"],
-    ["lachen","ridere","lachte · lachten · heeft gelachen"],
-    ["bakken","cuocere al forno","bakte · bakten · heeft gebakken"],
-    ["wassen","lavare","waste · wasten · heeft gewassen"],
-    ["zenden","spedire, trasmettere","zond · zonden · heeft gezonden"]
-  ]
-},
-{
   id:"dehet", g:"Grammatica", t:"De of het?", s:"Scegli l'articolo giusto di 50 nomi frequenti", kind:"dehet",
   cards:[
     ["huis","het","la casa"],["man","de","l'uomo"],["boek","het","il libro"],["vrouw","de","la donna"],["kind","het","il bambino"],
@@ -1080,66 +997,6 @@ const DECKS = [
     ["winkel","de","il negozio"],["ziekenhuis","het","l'ospedale"],["kamer","de","la stanza"],["restaurant","het","il ristorante"],["keuken","de","la cucina"],
     ["museum","het","il museo"],["krant","de","il giornale"],["probleem","het","il problema"],["koffie","de","il caffè"],["antwoord","het","la risposta"],
     ["taal","de","la lingua"],["woord","het","la parola"],["telefoon","de","il telefono"],["feest","het","la festa"],["sleutel","de","la chiave"]
-  ]
-},
-{
-  id:"sep", g:"Grammatica", t:"Verbi separabili", s:"Con la forma al presente e al passato prossimo", sayExtra:true,
-  cards:[
-    ["opstaan","alzarsi","ik sta op · ik ben opgestaan"],
-    ["opbellen","telefonare","ik bel op · ik heb opgebeld"],
-    ["meegaan","andare con, accompagnare","ik ga mee · ik ben meegegaan"],
-    ["meenemen","portare con sé","ik neem mee · ik heb meegenomen"],
-    ["aankomen","arrivare","ik kom aan · ik ben aangekomen"],
-    ["uitgaan","uscire (la sera)","ik ga uit · ik ben uitgegaan"],
-    ["binnenkomen","entrare","ik kom binnen · ik ben binnengekomen"],
-    ["terugkomen","tornare","ik kom terug · ik ben teruggekomen"],
-    ["weggaan","andare via","ik ga weg · ik ben weggegaan"],
-    ["afspreken","darsi appuntamento","ik spreek af · ik heb afgesproken"],
-    ["uitnodigen","invitare","ik nodig uit · ik heb uitgenodigd"],
-    ["opruimen","mettere in ordine","ik ruim op · ik heb opgeruimd"],
-    ["schoonmaken","pulire","ik maak schoon · ik heb schoongemaakt"],
-    ["afwassen","lavare i piatti","ik was af · ik heb afgewassen"],
-    ["ophalen","andare a prendere","ik haal op · ik heb opgehaald"],
-    ["invullen","compilare","ik vul in · ik heb ingevuld"],
-    ["zich aankleden","vestirsi","ik kleed me aan · ik heb me aangekleed"],
-    ["uitstappen","scendere (da un mezzo)","ik stap uit · ik ben uitgestapt"],
-    ["instappen","salire (su un mezzo)","ik stap in · ik ben ingestapt"],
-    ["thuiskomen","tornare a casa","ik kom thuis · ik ben thuisgekomen"]
-  ]
-},
-{
-  id:"prep", g:"Grammatica", t:"Verbi con preposizione", s:"La preposizione fissa e una frase d'esempio", sayExtra:true,
-  cards:[
-    ["wachten op","aspettare","Ik wacht op de bus."],
-    ["denken aan","pensare a","Ik denk aan jou."],
-    ["houden van","amare, voler bene a","Ik hou van muziek."],
-    ["kijken naar","guardare","We kijken naar een film."],
-    ["luisteren naar","ascoltare","Hij luistert naar de radio."],
-    ["praten over","parlare di","We praten over het werk."],
-    ["zorgen voor","occuparsi di","Zij zorgt voor de kinderen."],
-    ["bang zijn voor","avere paura di","Ik ben bang voor honden."],
-    ["trots zijn op","essere fiero di","Ze is trots op haar zoon."],
-    ["boos zijn op","essere arrabbiato con","Hij is boos op mij."],
-    ["verliefd zijn op","essere innamorato di","Ik ben verliefd op haar."],
-    ["beginnen met","cominciare (a fare)","We beginnen met de les."],
-    ["stoppen met","smettere di","Hij stopt met roken."],
-    ["helpen met","aiutare con","Kun je me helpen met de koffers?"],
-    ["genieten van","godersi","We genieten van het weer."],
-    ["dromen van","sognare","Ik droom van een reis."],
-    ["deelnemen aan","partecipare a","Ik neem deel aan de cursus."],
-    ["vragen naar","chiedere di, informarsi su","Hij vraagt naar de weg."],
-    ["geïnteresseerd zijn in","essere interessato a","Ik ben geïnteresseerd in kunst."],
-    ["rekenen op","contare su","Je kunt op mij rekenen."]
-  ]
-},
-{
-  id:"opp", g:"Grammatica", t:"Aggettivi opposti", s:"Impara gli aggettivi a coppie", sayExtra:false,
-  cards:[
-    ["groot ↔ klein","grande ↔ piccolo"],["lang ↔ kort","lungo ↔ corto"],["oud ↔ nieuw","vecchio ↔ nuovo"],["oud ↔ jong","vecchio ↔ giovane"],
-    ["warm ↔ koud","caldo ↔ freddo"],["duur ↔ goedkoop","caro ↔ economico"],["snel ↔ traag","veloce ↔ lento"],["goed ↔ slecht","buono ↔ cattivo"],
-    ["mooi ↔ lelijk","bello ↔ brutto"],["makkelijk ↔ moeilijk","facile ↔ difficile"],["licht ↔ donker","chiaro ↔ scuro"],["licht ↔ zwaar","leggero ↔ pesante"],
-    ["vol ↔ leeg","pieno ↔ vuoto"],["open ↔ dicht","aperto ↔ chiuso"],["vroeg ↔ laat","presto ↔ tardi"],["blij ↔ verdrietig","felice ↔ triste"],
-    ["druk ↔ rustig","affollato ↔ tranquillo"],["sterk ↔ zwak","forte ↔ debole"],["rijk ↔ arm","ricco ↔ povero"],["dik ↔ dun","grosso, grasso ↔ sottile, magro"]
   ]
 },
 {
@@ -1183,52 +1040,6 @@ const DECKS = [
   ]
 },
 {
-  id:"city", g:"Lessico", t:"In città", s:"Trasporti, negozi e indicazioni",
-  cards:[
-    ["het station","la stazione"],["de bus","l'autobus"],["de tram","il tram"],["de trein","il treno"],["de metro","la metropolitana"],
-    ["de halte","la fermata"],["het perron","il binario"],["het ticket","il biglietto"],["de straat","la strada"],["het plein","la piazza"],
-    ["de kerk","la chiesa"],["het stadhuis","il municipio"],["het museum","il museo"],["de winkel","il negozio"],["de supermarkt","il supermercato"],
-    ["de bakker","il fornaio"],["de apotheek","la farmacia"],["de bank","la banca"],["het ziekenhuis","l'ospedale"],["de brug","il ponte"],
-    ["de hoek","l'angolo"],["links","a sinistra"],["rechts","a destra"],["rechtdoor","dritto"]
-  ]
-},
-{
-  id:"home", g:"Lessico", t:"In casa", s:"Stanze, mobili e oggetti",
-  cards:[
-    ["het huis","la casa"],["het appartement","l'appartamento"],["de slaapkamer","la camera da letto"],["de badkamer","il bagno"],["de keuken","la cucina"],
-    ["de woonkamer","il soggiorno"],["het toilet","il gabinetto"],["de deur","la porta"],["het raam","la finestra"],["de trap","la scala"],
-    ["de tuin","il giardino"],["de tafel","il tavolo"],["de stoel","la sedia"],["het bed","il letto"],["de kast","l'armadio"],
-    ["de lamp","la lampada"],["de koelkast","il frigorifero"],["de wasmachine","la lavatrice"],["de sleutel","la chiave"],["de muur","il muro"]
-  ]
-},
-{
-  id:"body", g:"Lessico", t:"Corpo e salute", s:"Dal medico e in farmacia",
-  cards:[
-    ["het hoofd","la testa"],["het haar","i capelli"],["het oog","l'occhio"],["het oor","l'orecchio"],["de neus","il naso"],["de mond","la bocca"],
-    ["de tand","il dente"],["de keel","la gola"],["de arm","il braccio"],["de hand","la mano"],["de vinger","il dito"],["de buik","la pancia"],
-    ["de rug","la schiena"],["het been","la gamba"],["de voet","il piede"],["het hart","il cuore"],
-    ["ziek","malato"],["de huisarts","il medico di famiglia"],["het medicijn","la medicina"],["de koorts","la febbre"],
-    ["de hoofdpijn","il mal di testa"],["verkouden","raffreddato"],["Ik voel me niet goed.","Non mi sento bene."]
-  ]
-},
-{
-  id:"work", g:"Lessico", t:"Lavoro e ufficio", s:"Le parole per il lavoro in Belgio",
-  cards:[
-    ["het werk","il lavoro"],["de job","il lavoro, l'impiego"],["het kantoor","l'ufficio"],["de collega","il collega"],["de baas","il capo"],
-    ["de vergadering","la riunione"],["de afspraak","l'appuntamento"],["de e-mail","l'e-mail"],["het loon","lo stipendio"],["het contract","il contratto"],
-    ["de klant","il cliente"],["het bedrijf","l'azienda"],["de pauze","la pausa"],["thuiswerken","lavorare da casa"],["solliciteren","candidarsi"],
-    ["het verlof","le ferie, il congedo"],["ziek zijn","essere in malattia"],["de computer","il computer"]
-  ]
-},
-{
-  id:"weather", g:"Lessico", t:"Il tempo che fa", s:"Indispensabile in Belgio",
-  cards:[
-    ["het weer","il tempo (meteo)"],["de zon","il sole"],["de regen","la pioggia"],["Het regent.","Piove."],["Het waait.","Tira vento."],
-    ["Het sneeuwt.","Nevica."],["Het vriest.","Gela."],["de wind","il vento"],["de wolk","la nuvola"],["bewolkt","nuvoloso"],
-    ["zonnig","soleggiato"],["nat","bagnato"],["de paraplu","l'ombrello"],["het onweer","il temporale"],["Wat voor weer is het?","Che tempo fa?"]
-  ]
-},
-{
   id:"col", g:"Lessico", t:"Colori", s:"I colori di base",
   cards:[
     ["rood","rosso"],["oranje","arancione"],["geel","giallo"],["groen","verde"],["blauw","blu"],["paars","viola"],
@@ -1243,37 +1054,6 @@ const DECKS = [
     ["Hoe gaat het?","Come va?"],["Het gaat goed.","Va bene."],["Ik begrijp het niet.","Non capisco."],["Kunt u dat herhalen?","Può ripetere?"],
     ["Spreekt u Engels?","Parla inglese?"],["Hoeveel kost dat?","Quanto costa?"],["Waar is het toilet?","Dov'è il bagno?"],["Ik weet het niet.","Non lo so."],
     ["Geen probleem.","Nessun problema."],["Gezondheid!","Salute! (dopo uno starnuto)"],["Proficiat!","Congratulazioni!"]
-  ]
-},
-{
-  id:"vlaams", g:"Vlaams", t:"Parole fiamminghe", s:"Come si dice in Belgio, e cosa diresti nei Paesi Bassi", sayExtra:false,
-  cards:[
-    ["de gsm","il cellulare","Nei Paesi Bassi: de mobiel, het mobieltje"],
-    ["de frieten","le patatine fritte","Nei Paesi Bassi: patat (al nord), friet (al sud)"],
-    ["een pintje","una birra (alla spina)","Nei Paesi Bassi: een biertje, een pilsje"],
-    ["goesting hebben","avere voglia","Nei Paesi Bassi: zin hebben"],
-    ["plezant","piacevole, divertente","Nei Paesi Bassi: leuk"],
-    ["Amai!","Accidenti! / Caspita!","Esclamazione di sorpresa"],
-    ["Allez!","Dai! / Su!","Per incoraggiare o per dire «andiamo»"],
-    ["seffens","tra poco","Nei Paesi Bassi: zo meteen"],
-    ["efkes","un attimo","Nei Paesi Bassi: even"],
-    ["de voormiddag","la mattina","Nei Paesi Bassi: de ochtend"],
-    ["de namiddag","il pomeriggio","Nei Paesi Bassi: de middag"],
-    ["de zetel","il divano","Nei Paesi Bassi: de bank"],
-    ["de frigo","il frigorifero","Nei Paesi Bassi: de koelkast"],
-    ["de lavabo","il lavandino","Nei Paesi Bassi: de wastafel"],
-    ["de living","il soggiorno","Nei Paesi Bassi: de woonkamer"],
-    ["de nonkel","lo zio","Nei Paesi Bassi: de oom"],
-    ["de bompa","il nonno","Nei Paesi Bassi: de opa"],
-    ["de bomma","la nonna","Nei Paesi Bassi: de oma"],
-    ["schoon","bello","Nei Paesi Bassi schoon significa «pulito»"],
-    ["content","contento","Usato anche nei Paesi Bassi; lì più spesso: tevreden, blij"],
-    ["ambetant","fastidioso","Nei Paesi Bassi: vervelend"],
-    ["kuisen","pulire","Nei Paesi Bassi: schoonmaken"],
-    ["babbelen","chiacchierare","Usato anche nei Paesi Bassi; lì più spesso: kletsen"],
-    ["het kot","la stanza da studente","Nei Paesi Bassi: de studentenkamer"],
-    ["Wablieft?","Come, scusi?","Nei Paesi Bassi: Wat zegt u? / Pardon?"],
-    ["Proficiat!","Congratulazioni!","Usato anche nei Paesi Bassi; lì più spesso: Gefeliciteerd!"]
   ]
 }
 ];
@@ -1314,6 +1094,19 @@ const PREMIUM_UNITS = [
   {id:"u29", nl:"Ontkenning II", it:"La negazione II"},
   {id:"u30", nl:"Leestekens en spelling", it:"Punteggiatura e ortografia"}
 ];
+const PREMIUM_DECKS = [
+  {id:"irr1", pos:0, g:"Grammatica", t:"Verbi irregolari · i più comuni", s:"Imperfetto e participio dei verbi forti di tutti i giorni", n:32},
+  {id:"irr2", pos:1, g:"Grammatica", t:"Verbi irregolari · secondo livello", s:"Altri verbi forti e misti da conoscere", n:30},
+  {id:"sep", pos:3, g:"Grammatica", t:"Verbi separabili", s:"Con la forma al presente e al passato prossimo", n:20},
+  {id:"prep", pos:4, g:"Grammatica", t:"Verbi con preposizione", s:"La preposizione fissa e una frase d'esempio", n:20},
+  {id:"opp", pos:5, g:"Grammatica", t:"Aggettivi opposti", s:"Impara gli aggettivi a coppie", n:20},
+  {id:"city", pos:10, g:"Lessico", t:"In città", s:"Trasporti, negozi e indicazioni", n:24},
+  {id:"home", pos:11, g:"Lessico", t:"In casa", s:"Stanze, mobili e oggetti", n:20},
+  {id:"body", pos:12, g:"Lessico", t:"Corpo e salute", s:"Dal medico e in farmacia", n:23},
+  {id:"work", pos:13, g:"Lessico", t:"Lavoro e ufficio", s:"Le parole per il lavoro in Belgio", n:18},
+  {id:"weather", pos:14, g:"Lessico", t:"Il tempo che fa", s:"Indispensabile in Belgio", n:15},
+  {id:"vlaams", pos:17, g:"Vlaams", t:"Parole fiamminghe", s:"Come si dice in Belgio, e cosa diresti nei Paesi Bassi", n:26}
+];
 const PREMIUM_SETS = [
   {id:"v2", unit:"u10", t:"Il verbo al secondo posto", s:"Soggetto, verbo, resto", n:10},
   {id:"inv", unit:"u10", t:"Inversione", s:"Tempo o luogo all'inizio", n:10},
@@ -1346,12 +1139,12 @@ function REGISTER_UNIT(U){
 // I moduli gratuiti devono avere i contenuti dentro index.html; gli altri arrivano dal Worker (premium-src/ in sviluppo).
 const PREMIUM_CONFIG = {
   freeModules: [1],                            // moduli del percorso sempre gratuiti (1 = "Le basi")
-  priceLabel: "4,99 €",
-  checkoutUrl: "",                             // link di acquisto Lemon Squeezy / Paddle; vuoto = "Presto disponibile"
+  donationLabel: "da 1 €",                     // donazione libera: il minimo si imposta sul prodotto «paga quanto vuoi» del provider
+  checkoutUrl: "",                             // link della donazione Lemon Squeezy / Paddle; vuoto = "Presto disponibile"
   apiBase: "/api",                             // Cloudflare Worker sullo stesso dominio
   maxDevices: 3,                               // solo per i testi: il limite vero lo applica il provider
   supportEmail: "[EMAIL]",
-  ordersUrl: "[LINK PAGINA ORDINI CLIENTI]"    // pagina dove il cliente ritrova ordini e codici
+  ordersUrl: "[LINK PAGINA ORDINI CLIENTI]"    // pagina dove chi ha donato ritrova ricevute e codici
 };
 const KEY = "goesting.v1";
 const PER_SESSION = 10;     // esercizi di grammatica per sessione
@@ -1363,6 +1156,7 @@ const L = LOGIC;
 // unità e serie premium: solo titoli finché il modulo non viene scaricato
 PREMIUM_UNITS.forEach(p => { if(!UNITS.some(u => u.id === p.id)) UNITS.push({id:p.id, nl:p.nl, it:p.it, items:[], premium:true}); });
 UNITS.sort((a, b) => +a.id.slice(1) - +b.id.slice(1));
+PREMIUM_DECKS.forEach(p => { if(!DECKS.some(d => d.id === p.id)) DECKS.splice(p.pos, 0, {id:p.id, g:p.g, t:p.t, s:p.s, n:p.n, cards:[], premium:true}); });
 PREMIUM_SETS.forEach(p => { if(!ORDER_SETS.some(x => x.id === p.id)) ORDER_SETS.push({id:p.id, unit:p.unit, t:p.t, s:p.s, n:p.n, rule:"", items:[], premium:true}); });
 UNITS.forEach(u => { const n = NOTES[u.id]; if(n){ u.note = n.note; u.vlaams = n.vlaams; u.vocab = n.vocab; } const c = CORE[u.id]; u.core = c ? c.words : []; u.drills = c ? c.drills : []; });
 
@@ -1475,7 +1269,7 @@ function nlVoices(){
 }
 // Safari carica le voci in ritardo: aggiorna la schermata quando arrivano
 function voicesReady(){
-  if(document.querySelector(".pals")) settings();
+  if(document.querySelector(".settings-scr")) settings();
   else if(document.querySelector("#nov") && nlVoices().length) home();
 }
 if(TTS){
@@ -1508,14 +1302,12 @@ function play(text, opts){
   speakWith(text, v, slow);
 }
 
-/* ---------- palette di colori ---------- */
+/* ---------- colori ---------- */
 const PALETTES = [
-  {id:"frietkot", name:"Frietkot", sub:"Giallo patatina e lampone", bg:"#F5D130", deep:"#C2304C"},
-  {id:"mosselen", name:"Mosselen", sub:"Menta e blu notte, la più rilassante", bg:"#BFE6DC", deep:"#1D3B5C"},
-  {id:"praline",  name:"Praline",  sub:"Rosa confetto e cioccolato", bg:"#F7D3D8", deep:"#5A3324"},
-  {id:"atomium",  name:"Atomium",  sub:"Azzurro cielo e blu cobalto", bg:"#CFE4FA", deep:"#2343B8"}
+  {id:"frietkot", name:"Frietkot", sub:"Giallo patatina e lampone", bg:"#F5D130", deep:"#C2304C"}
 ];
-function applyPalette(){ try{ document.documentElement.setAttribute("data-palette", S.palette || "frietkot"); }catch(e){} }
+// un solo aspetto: il giallo patatina classico (le palette alternative sono state tolte)
+function applyPalette(){ try{ document.documentElement.setAttribute("data-palette", "frietkot"); }catch(e){} }
 
 /* ---------- navigazione: il gesto "indietro" del telefono segue le schermate ---------- */
 // profondità: percorso 0 · unità e impostazioni 1 · esercizi e risultati 2
@@ -1931,14 +1723,14 @@ function privacy(){
     <button class="back" id="bk">${ICON.back} Indietro</button>
     <div class="lesson-h"><span class="label">Privacy</span><h2>I tuoi dati restano tuoi</h2><p>Ultimo aggiornamento: ${esc(PRIVACY.updated)}</p></div>
     <h3>In breve</h3>
-    <p>Patatino non ha account, non ha pubblicità, non usa statistiche né cookie di profilazione. Quello che fai nell'app resta sul tuo dispositivo. Solo se attivi Premium, il codice di licenza viene verificato da un nostro server (vedi sotto).</p>
+    <p>Patatino non ha account, non ha pubblicità, non usa statistiche né cookie di profilazione. Quello che fai nell'app resta sul tuo dispositivo. Solo se attivi il codice ricevuto con una donazione, viene verificato da un nostro server (vedi sotto).</p>
     <h3>Cosa viene salvato e dove</h3>
     <p>Progressi, punteggi, flashcard, errori da ripassare e impostazioni (colori, voce, audio) sono salvati solo nella memoria del browser di questo dispositivo (<i>localStorage</i>). Nessuno di questi dati viene inviato a noi o ad altri.</p>
     <p>Se usi <b>Esporta i miei dati</b>, il file di backup viene creato sul tuo dispositivo e lo gestisci tu: noi non lo riceviamo.</p>
-    <h3>Licenza Premium</h3>
-    <p>Il modulo 1 non richiede nulla. Se attivi Premium, l'app invia al nostro server di verifica (${esc(PRIVACY.server)}, gestito su Cloudflare) il <b>codice di licenza</b>, un <b>nome descrittivo del dispositivo</b> (per esempio «iPhone – Safari») e un <b>identificativo dell'attivazione</b>. Il server li inoltra a ${esc(PRIVACY.provider)}, che gestisce pagamenti e licenze, solo per controllare che il codice sia valido e contare i dispositivi. Il codice viene inviato anche per scaricare i moduli premium.</p>
+    <h3>Codice per i sostenitori</h3>
+    <p>Il modulo 1 non richiede nulla. Se attivi il codice ricevuto dopo una donazione, l'app invia al nostro server di verifica (${esc(PRIVACY.server)}, gestito su Cloudflare) il <b>codice di licenza</b>, un <b>nome descrittivo del dispositivo</b> (per esempio «iPhone – Safari») e un <b>identificativo dell'attivazione</b>. Il server li inoltra a ${esc(PRIVACY.provider)}, che gestisce donazioni e codici, solo per controllare che il codice sia valido e contare i dispositivi. Il codice viene inviato anche per scaricare i contenuti sbloccati.</p>
     <p>La verifica si ripete al massimo una volta a settimana. I tuoi progressi non vengono mai inviati. Rimuovendo la licenza dalle impostazioni, l'attivazione viene cancellata anche sul server.</p>
-    <p>I dati dell'acquisto (email, pagamento, paese) li raccoglie e li tratta ${esc(PRIVACY.provider)} come rivenditore, secondo la sua informativa: ${esc(PRIVACY.providerPolicy)}. Noi riceviamo da loro i dati dell'ordine necessari per l'assistenza.</p>
+    <p>I dati della donazione (email, dati di pagamento, paese) li raccoglie e li tratta ${esc(PRIVACY.provider)}, secondo la sua informativa: ${esc(PRIVACY.providerPolicy)}. Noi riceviamo da loro solo i dati necessari per l'assistenza.</p>
     <h3>Servizi esterni usati dall'app</h3>
     <ul>
       <li><b>Hosting</b>: la pagina è servita da un servizio di hosting (oggi GitHub Pages), che come ogni sito web riceve l'indirizzo IP e il tipo di browser quando la scarichi e può conservarli nei registri tecnici per sicurezza.</li>
@@ -1949,7 +1741,7 @@ function privacy(){
     <p>Disinstalla l'app oppure cancella i dati del sito dalle impostazioni del browser. Ricorda che senza un backup i progressi non si possono recuperare.</p>
     <h3>Titolare e contatti</h3>
     <p>Titolare: ${esc(PRIVACY.owner)}<br>Contatto: ${esc(PRIVACY.contact)}</p>
-    <p>Puoi scriverci per qualsiasi domanda su questa informativa. Non conserviamo i tuoi progressi; per Premium esistono solo i dati dell'ordine e delle attivazioni presso il provider, che puoi chiederci di consultare o cancellare.</p>
+    <p>Puoi scriverci per qualsiasi domanda su questa informativa. Non conserviamo i tuoi progressi; per i sostenitori esistono solo i dati della donazione e delle attivazioni presso il provider, che puoi chiederci di consultare o cancellare.</p>
     <div class="dock"><div class="dock-in"><button class="btn btn-lion" id="bk2">${ICON.back} Indietro</button></div></div>
   </div>`);
   const back = () => { if(curDepth > 0 && history.state && history.state.s === "privacy") history.back(); else home(); };
@@ -1975,6 +1767,8 @@ const unitLocked = (uid) => !isFreeUnit(uid) && !isPremium();
 const unitReady = (uid) => isFreeUnit(uid) || (isPremium() && !!(unitById(uid) || {}).loaded);
 const setLocked = (st) => !isFreeUnit(st.unit) && !isPremium();
 const setReady = (st) => isFreeUnit(st.unit) || (isPremium() && !!st.loaded);
+const deckLocked = (d) => !!d.premium && !isPremium();
+const deckReady = (d) => !d.premium || (isPremium() && !!d.loaded);
 
 // codice ripulito: niente spazi, tutto maiuscolo (i trattini restano)
 const cleanKey = (k) => String(k || "").replace(/\s+/g, "").toUpperCase();
@@ -2024,11 +1818,11 @@ const reasonOf = (r) => Object.keys(REASONS).find(k => REASONS[k].includes(Strin
 function licenseMessage(reason){
   const mail = esc(PREMIUM_CONFIG.supportEmail);
   return {
-    empty: "Scrivi o incolla qui il codice che hai ricevuto per email dopo l'acquisto.",
-    not_found: "Mmh, questo codice non lo riconosco. Controlla di averlo copiato tutto, trattini compresi: lo trovi nell'email di acquisto.",
+    empty: "Scrivi o incolla qui il codice che hai ricevuto per email dopo la donazione.",
+    not_found: "Mmh, questo codice non lo riconosco. Controlla di averlo copiato tutto, trattini compresi: lo trovi nell'email della donazione.",
     wrong_product: "Questo codice esiste, ma è di un altro prodotto. Cerca nell'email il codice di Patatino.",
-    limit_reached: `Questo codice è già attivo su ${PREMIUM_CONFIG.maxDevices} dispositivi, il massimo. Rimuovi la licenza da un altro dispositivo (Impostazioni → Licenza) o scrivimi a ${mail}.`,
-    revoked: `Questa licenza non è più attiva (per esempio dopo un rimborso). Se pensi sia un errore, scrivimi a ${mail}.`,
+    limit_reached: `Questo codice è già attivo su ${PREMIUM_CONFIG.maxDevices} dispositivi, il massimo. Rimuovi la licenza da un altro dispositivo (Impostazioni → Sostieni Patatino) o scrivimi a ${mail}.`,
+    revoked: `Questo codice non è più attivo (per esempio dopo un rimborso della donazione). Se pensi sia un errore, scrivimi a ${mail}.`,
     offline: "Non riesco a collegarmi. Controlla la connessione e riprova: il codice non si perde.",
     rejected: `Il codice non è stato accettato. Riprova fra poco o scrivimi a ${mail}.`,
     dev: `Modalità sviluppo: il server non risponde, quindi accetto solo il codice di prova <b>${DEV_TEST_KEY}</b>.`
@@ -2113,6 +1907,7 @@ function applyModule(m){
     Object.keys(x.gloss || {}).forEach(i => { GLOSS[x.id + "-" + i] = x.gloss[i]; });
   });
   (m.orderSets || []).forEach(x => { const st = ORDER_SETS.find(s => s.id === x.id); if(st) Object.assign(st, x, {loaded:true}); });
+  (m.decks || []).forEach(x => { const d = DECKS.find(k => k.id === x.id); if(d && d.premium) Object.assign(d, x, {loaded:true}); });
   PROPER = null;
   loadedModules.add(m.module);
   migrate();
@@ -2120,6 +1915,7 @@ function applyModule(m){
 function unloadPremium(){
   UNITS.forEach(u => { if(PREMIUM_UNIT_IDS.has(u.id)){ Object.assign(u, {items:[], note:"", vlaams:"", vocab:[], core:[], drills:[], loaded:false}); Object.keys(GLOSS).forEach(k => { if(k.startsWith(u.id + "-")) delete GLOSS[k]; }); } });
   ORDER_SETS.forEach(st => { if(st.premium) Object.assign(st, {items:[], rule:"", loaded:false}); });
+  DECKS.forEach(d => { if(d.premium) Object.assign(d, {cards:[], loaded:false}); });
   PROPER = null;
   loadedModules.clear();
 }
@@ -2171,7 +1967,7 @@ function ensureModules(onStep){
 // ridisegna la schermata attuale (dopo sblocco, revoca o download in background)
 function refreshScreen(){
   const st = (history.state && history.state.s) || "home";
-  if(["home", "settings", "wo", "lesson", "unlock"].includes(st)){ fromPop = true; try{ showState(history.state); } finally { fromPop = false; } }
+  if(["home", "settings", "wo", "decks", "lesson", "unlock"].includes(st)){ fromPop = true; try{ showState(history.state); } finally { fromPop = false; } }
 }
 
 /* lucchetto in stile fumetto */
@@ -2189,18 +1985,19 @@ function unlockScreen(opts){
   const mods = GROUPS.filter((g, i) => !isFreeModule(i + 1));
   const v = $(`<div class="pop unlock">
     <button class="back" id="bk">${ICON.back} Indietro</button>
-    <div class="unlock-h">${patatino("wave", 104)}<div class="lesson-h"><span class="label">Patatino Premium</span><h2>Sblocca tutto</h2><p>Il modulo 1 è gratis. Con Premium continui con tutto il resto del corso.</p></div></div>
+    <div class="unlock-h">${patatino("wave", 104)}<div class="lesson-h"><span class="label">Sostieni il progetto</span><h2>Sostieni Patatino</h2><p>Patatino è un progetto indipendente. Il modulo 1 è libero per tutti: con una piccola donazione mi aiuti a farlo crescere e, per ringraziarti, sblocchi tutto il resto.</p></div></div>
+    <h3 class="perks-h">Il grazie di Patatino</h3>
     <ul class="perks">
       <li>${ICON.check}<span><b>${premiumUnitCount()} unità in ${mods.length} moduli</b>, con spiegazioni, lessico ed esercizi</span></li>
-      <li>${ICON.check}<span>Tutti gli esercizi <b>Costruisci la frase</b></span></li>
+      <li>${ICON.check}<span>Tutti gli esercizi <b>Costruisci la frase</b> e altri <b>${PREMIUM_DECKS.length} mazzi di flashcard</b></span></li>
       <li>${ICON.check}<span>Funziona <b>offline</b> dopo il primo download</span></li>
       <li>${ICON.check}<span>Un codice per <b>${C.maxDevices} dispositivi</b>: telefono, tablet, computer</span></li>
     </ul>
     <div class="mods">${mods.map(g => `<span class="mod-chip">${LOCK(16)}${esc(g.t)}</span>`).join("")}</div>
     <div class="buy">
-      <div class="price"><span class="label">Prezzo</span><b>${esc(C.priceLabel)}</b></div>
-      ${C.checkoutUrl ? `<a class="btn btn-deep" id="buy" href="${esc(C.checkoutUrl)}" target="_blank" rel="noopener">Acquista</a>` : `<button class="btn btn-deep" id="buy" disabled>Presto disponibile</button>`}
-      <span class="note">Dopo l'acquisto ricevi il codice per email.</span>
+      <div class="price"><span class="label">Donazione libera</span><b>${esc(C.donationLabel)}</b><span class="note">Scegli tu quanto: anche 1 € fa la differenza.</span></div>
+      ${C.checkoutUrl ? `<a class="btn btn-deep" id="buy" href="${esc(C.checkoutUrl)}" target="_blank" rel="noopener">Fai una donazione</a>` : `<button class="btn btn-deep" id="buy" disabled>Presto disponibile</button>`}
+      <span class="note">Dopo la donazione ricevi per email un codice per sbloccare tutto.</span>
     </div>
     <form class="code-box" id="cf" autocomplete="off">
       <label class="sec-h" for="lic"><h3>Hai già un codice?</h3></label>
@@ -2230,7 +2027,7 @@ function premiumScreen(){
   const v = $(`<div class="pop unlock">
     <button class="back" id="bk">${ICON.back} Indietro</button>
     <div class="party-box ${celebrate ? "party" : ""}">${celebrate ? `<div class="confetti" aria-hidden="true">${Array.from({length:18}, (x, i) => `<i style="--i:${i}"></i>`).join("")}</div>` : ""}${patatino("cheer", 130)}</div>
-    <div class="lesson-h" style="text-align:center"><span class="label">Patatino Premium</span><h2>${celebrate ? "Evviva, è tutto tuo!" : "Premium attivo"}</h2></div>
+    <div class="lesson-h" style="text-align:center"><span class="label">Grazie per il supporto</span><h2>${celebrate ? "Grazie di cuore! È tutto sbloccato" : "Sei un sostenitore"}</h2></div>
     <div class="dl" id="dl"></div>
     <div class="dock"><div class="dock-in"><button class="btn btn-lion" id="go">Vai al percorso</button></div></div>
   </div>`);
@@ -2310,7 +2107,7 @@ function home(){
         <span class="chip" title="Giorni di fila">${ICON.flame}${S.streak}</span>
         <span class="chip" title="Punti esperienza">${ICON.star}${S.xp}</span>
         <button class="chip" id="aud" aria-pressed="${S.audio}" title="Audio automatico dopo ogni risposta">${ICON.sound}${S.audio ? "On" : "Off"}</button>
-        <button class="chip" id="vox" title="Colori e voce" aria-label="Impostazioni"><svg class="gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg><span class="chip-l">Impostazioni</span></button>
+        <button class="chip" id="vox" title="Impostazioni" aria-label="Impostazioni"><svg class="gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg><span class="chip-l">Impostazioni</span></button>
         ${canInstall() ? `<button class="chip chip-inst" id="hinst" title="Metti Patatino sulla schermata Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg>Installa</button>` : ""}
       </div>
     </header>
@@ -2320,10 +2117,10 @@ function home(){
         <div class="next-txt">
       <span class="label">${started ? "Prossima lezione" : "Inizia da qui"} · Unità ${ni+1} · ${nlock || nwait ? "Modulo " + moduleOf(nu.id) : "Parte " + np + ": " + PARTS[np-1].title}</span>
       <h2>${esc(nu.nl)}</h2>
-      <p>${esc(nu.it)} · ${nlock ? "Hai finito il modulo gratuito: sblocca tutto per continuare." : nwait ? "Il modulo si sta scaricando…" : np === 1 && blocksOf(nu.id).length > 1 ? "blocco " + (nextBlock(nu.id) + 1) + " di " + blocksOf(nu.id).length + " · " + (blocksOf(nu.id)[nextBlock(nu.id)].to - blocksOf(nu.id)[nextBlock(nu.id)].from) + " parole" : partSub(nu, np)}</p>
+      <p>${esc(nu.it)} · ${nlock ? "Hai finito il modulo gratuito: sostieni Patatino per continuare." : nwait ? "Il modulo si sta scaricando…" : np === 1 && blocksOf(nu.id).length > 1 ? "blocco " + (nextBlock(nu.id) + 1) + " di " + blocksOf(nu.id).length + " · " + (blocksOf(nu.id)[nextBlock(nu.id)].to - blocksOf(nu.id)[nextBlock(nu.id)].from) + " parole" : partSub(nu, np)}</p>
         </div>
       </div>
-      <button class="btn btn-lion" id="go">${nlock ? LOCK(22) + " Sblocca tutto" : started ? "Continua" : "Inizia"}</button>
+      <button class="btn btn-lion" id="go">${nlock ? LOCK(22) + " Sostieni e sblocca" : started ? "Continua" : "Inizia"}</button>
     </section>
         ${S.wrong.length ? `<button class="review" id="rev"><div><b>Ripasso errori</b><br><span style="font-size:14px">Rifai solo quello che hai sbagliato</span></div><span class="count">${S.wrong.length}</span></button>` : `<div style="height:14px"></div>`}
     ${phoneVoice() ? "" : `<button class="review novoice" id="nov"><div><b>Nessuna voce olandese</b><br><span style="font-size:14px">Per sentire la pronuncia installa una voce olandese. Tocca qui per sapere come.</span></div></button>`}
@@ -2348,7 +2145,7 @@ function home(){
     const glock = !isFreeModule(gi + 1) && !isPremium();
     const box = $(`<section class="grp ${open ? "open" : ""} ${done === ids.length ? "gdone" : ""} ${glock ? "glock" : ""}">
       <button class="grp-h" aria-expanded="${open}">
-        <span class="grp-t"><b>${glock ? LOCK(20) : ""}${esc(g.t)}</b><span>${glock ? '<i class="prem">Premium</i> · ' : ""}${esc(g.s)}</span></span>
+        <span class="grp-t"><b>${glock ? LOCK(20) : ""}${esc(g.t)}</b><span>${glock ? '<i class="prem">Sostenitori</i> · ' : ""}${esc(g.s)}</span></span>
         <span class="grp-r"><span class="grp-n">${done}/${ids.length}</span><span class="meter"><i style="width:${Math.round(done / ids.length * 100)}%"></i></span></span>
         <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
       </button>
@@ -2361,7 +2158,7 @@ function home(){
       const full = unitDone(u.id);
       const lk = unitLocked(u.id);
       const cls = lk ? "locked" : full ? "done" : sc.some(x => x > 0) ? "prog" : "";
-      const row = $(`<button class="unit ${cls} ${u.id === nu.id && !full ? "cur" : ""}" aria-label="Unità ${i+1}: ${esc(u.it)}${lk ? " (bloccata, Premium)" : ""}">
+      const row = $(`<button class="unit ${cls} ${u.id === nu.id && !full ? "cur" : ""}" aria-label="Unità ${i+1}: ${esc(u.it)}${lk ? " (bloccata, per i sostenitori)" : ""}">
         <span class="num">${lk ? LOCK(20) : full ? ICON.check.replace('width="22" height="22"','width="18" height="18"') : String(i+1).padStart(2,"0")}</span>
         <span class="t"><span class="nl">${esc(u.nl)}</span><span class="it">${esc(u.it)}</span></span>
         <span class="parts" title="${PARTS.map((p,k) => "Parte " + p.n + " " + p.title + " " + sc[k] + "%").join(" · ")}">${sc.map(x => `<span class="meter"><i style="width:${x}%"></i></span>`).join("")}</span>
@@ -2389,14 +2186,14 @@ function home(){
 const SAMPLE = "Goedemorgen! Ik woon in Gent en ik leer Nederlands.";
 function licenseBox(){
   const l = getLicense(), C = PREMIUM_CONFIG, all = premiumModules().length;
-  const orders = /^https?:/.test(C.ordersUrl) ? `<a href="${esc(C.ordersUrl)}" target="_blank" rel="noopener">la pagina dei tuoi ordini</a>` : `la pagina dei tuoi ordini (${esc(C.ordersUrl)})`;
-  const lost = `<details class="lost"><summary>Hai perso il codice?</summary><p>Lo trovi nell'email di conferma dell'acquisto: cerca «Patatino», anche nello spam. Oppure apri ${orders}: lì ci sono tutti i tuoi acquisti con il codice. Se non lo trovi, scrivimi a ${esc(C.supportEmail)}.</p></details>`;
-  if(!l) return `<span class="note">Stai usando la versione gratuita: il modulo 1 è tuo, gli altri ${all} si sbloccano con Premium.</span>
-    <button class="btn btn-lion" id="lbuy">${LOCK(20)} Sblocca tutto · ${esc(C.priceLabel)}</button>
+  const orders = /^https?:/.test(C.ordersUrl) ? `<a href="${esc(C.ordersUrl)}" target="_blank" rel="noopener">la pagina con le tue donazioni</a>` : `la pagina con le tue donazioni (${esc(C.ordersUrl)})`;
+  const lost = `<details class="lost"><summary>Hai perso il codice?</summary><p>Lo trovi nell'email di conferma della donazione: cerca «Patatino», anche nello spam. Oppure apri ${orders}: lì ci sono le tue donazioni con il codice. Se non lo trovi, scrivimi a ${esc(C.supportEmail)}.</p></details>`;
+  if(!l) return `<span class="note">Il modulo 1 è libero per tutti. Con una donazione libera (${esc(C.donationLabel)}) sostieni il progetto e sblocchi gli altri ${all} moduli.</span>
+    <button class="btn btn-lion" id="lbuy">${LOCK(20)} Sostieni Patatino</button>
     <button class="btn btn-ghost" id="lcode">Hai già un codice? Inseriscilo</button>${lost}`;
   const have = all - missingModules().length;
   const when = (d) => d && !isNaN(new Date(d)) ? new Date(d).toLocaleDateString("it-IT") : "mai";
-  return `<div class="lic-state ${l.valid ? "ok" : "ko"}">${l.valid ? ICON.check + " Premium attivo" : LOCK(18) + " Licenza non più valida"}</div>
+  return `<div class="lic-state ${l.valid ? "ok" : "ko"}">${l.valid ? ICON.check + " Sei un sostenitore, grazie!" : LOCK(18) + " Codice non più valido"}</div>
     ${l.valid ? "" : `<span class="note">${licenseMessage("revoked")} I tuoi progressi restano salvati.</span>`}
     <dl class="lic-dl"><dt>Codice</dt><dd class="mono">${esc(maskKey(l.key))}</dd><dt>Dispositivo</dt><dd>${esc(l.device || deviceName())}</dd>
       <dt>Ultima verifica</dt><dd>${l.dev ? "modalità sviluppo" : when(l.lastCheck)}</dd>${l.valid ? `<dt>Moduli</dt><dd>${have} di ${all} sul dispositivo</dd>` : ""}</dl>
@@ -2412,11 +2209,11 @@ function licenseHandlers(v){
   on("#ldl", () => unlockScreen());
   on("#lrm", async () => {
     const n = PREMIUM_CONFIG.maxDevices;
-    if(!await ask("Rimuovere la licenza?", `Su questo dispositivo Patatino torna alla versione gratuita. I tuoi progressi restano. Potrai usare il codice su un altro dispositivo (vale per ${n}).`, "Rimuovi")) return;
+    if(!await ask("Rimuovere la licenza?", `Su questo dispositivo restano liberi solo i contenuti gratuiti. I tuoi progressi restano. Potrai usare il codice su un altro dispositivo (vale per ${n}).`, "Rimuovi")) return;
     const b = v.querySelector("#lrm"); if(b){ b.disabled = true; b.textContent = "Rimuovo…"; }
     let r = await deactivateLicense();
     if(!r.ok){
-      if(!await ask("Sei offline", `Posso rimuovere la licenza da questo dispositivo, ma sul server l'attivazione resterà <b>occupata</b> e conterà ancora come uno dei tuoi ${n} dispositivi. Potrai liberarla più tardi dalla pagina ordini o scrivendomi.`, "Rimuovi comunque")){ settings(); return; }
+      if(!await ask("Sei offline", `Posso rimuovere la licenza da questo dispositivo, ma sul server l'attivazione resterà <b>occupata</b> e conterà ancora come uno dei tuoi ${n} dispositivi. Potrai liberarla più tardi dalla pagina delle tue donazioni o scrivendomi.`, "Rimuovi comunque")){ settings(); return; }
       r = await deactivateLicense({force:true});
     }
     settings({where:"lic", msg: r.offline ? "Licenza rimossa da questo dispositivo. Sul server l'attivazione è ancora occupata." : "Licenza rimossa da questo dispositivo."});
@@ -2424,26 +2221,20 @@ function licenseHandlers(v){
 }
 let dataMsg = null;   // esito di export/import: resta se la schermata si ridisegna (voci, colori)
 function settings(msg){
-  if(msg && msg.msg) dataMsg = msg; else if(!document.querySelector(".pals")) dataMsg = null;
+  if(msg && msg.msg) dataMsg = msg; else if(!document.querySelector(".settings-scr")) dataMsg = null;
   msg = dataMsg;
   screen({s:"settings"});
   const vs = nlVoices();
   const cur = phoneVoice();
-  const pal = S.palette || "frietkot";
-  const v = $(`<div class="pop">
+  const v = $(`<div class="pop settings-scr">
     <button class="back" id="bk">${ICON.back} Percorso</button>
-    <div class="lesson-h"><span class="label">Impostazioni</span><h2>Colori e voce</h2></div>
-    <div class="sec-h"><h3>Colori</h3><span class="label">Tocca per provarli</span></div>
-    <div class="pals">${PALETTES.map(p => `<button class="pal ${p.id === pal ? "on" : ""}" data-id="${p.id}">
-        <span class="sw" style="background:${p.bg}"><i style="background:${p.deep}"></i><b>Aa</b></span>
-        <span class="pt2"><b>${esc(p.name)}</b><span>${esc(p.sub)}</span></span>
-      </button>`).join("")}</div>
+    <div class="lesson-h"><span class="label">Patatino</span><h2>Impostazioni</h2></div>
     ${canInstall() ? `<div class="sec-h"><h3>Installa l'app</h3></div>
     <div class="data-box inst-box">
       <span class="inst-row">${patatino("cheer", 64)}<span class="note">Metti Patatino sulla schermata Home: si apre come un'app e funziona anche offline.</span></span>
       <button class="btn btn-lion btn-install" id="inst"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg> Installa l'app</button>
     </div>` : ""}
-    <div class="sec-h"><h3>Licenza</h3></div>
+    <div class="sec-h"><h3>Sostieni Patatino</h3></div>
     <div class="data-box lic-box">${msg && msg.where === "lic" ? `<div class="data-msg ${msg.err ? "err" : ""}" role="status">${esc(msg.msg)}</div>` : ""}${licenseBox()}</div>
     <div class="sec-h"><h3>I tuoi dati</h3></div>
     <div class="data-box">
@@ -2462,7 +2253,6 @@ function settings(msg){
     <div class="dock"><div class="dock-in"><button class="btn btn-lion" id="bk2">${ICON.back} Torna al percorso</button></div></div>
     ${vs.length ? "" : `<div class="vl"><span class="label">Nessuna voce olandese trovata</span>Su Android apri <b>Impostazioni → Sistema → Lingue → Sintesi vocale</b>, scegli il motore di Google, poi <b>Installa dati vocali → Nederlands (België)</b>. Su iPhone: <b>Impostazioni → Accessibilità → Contenuto letto ad alta voce → Voci → Olandese</b>. Poi riapri l'app.</div>`}
   </div>`);
-  v.querySelectorAll(".pal").forEach(b => b.onclick = () => { S.palette = b.dataset.id; save(); applyPalette(); settings(); });
   v.querySelectorAll("input[name=voice]").forEach(r => r.onchange = () => { S.voice = r.value; save(); settings(); });
   v.querySelectorAll(".vtest").forEach(b => b.onclick = (e) => {
     e.preventDefault();
@@ -2921,6 +2711,13 @@ function decksScreen(){
     dl.appendChild($(`<div class="sec-h"><h3>${esc(g)}</h3><span class="label">${esc(gs)}</span></div>`));
     const box = $(`<div class="decks"></div>`);
     list.forEach(d => {
+      if(!deckReady(d)){
+        const b = $(`<button class="deck locked"><span class="dk-t"><b>${esc(d.t)}</b><span>${esc(d.s)}</span></span>
+          <span class="dk-r"><span class="fc-badge prem">${LOCK(14)} ${deckLocked(d) ? "Sostenitori" : "Da scaricare"}</span><span class="dk-n">${d.n} carte</span></span></button>`);
+        b.onclick = () => unlockScreen();
+        box.appendChild(b);
+        return;
+      }
       const st = fcStats(d), pct = Math.round(st.learned / st.total * 100);
       const badge = st.due ? `<span class="fc-badge due">${st.due} da ripassare</span>` : st.fresh === st.total ? `<span class="fc-badge">nuovo</span>` : st.fresh ? `<span class="fc-badge">${st.fresh} nuove</span>` : `<span class="fc-badge ok">al passo</span>`;
       const b = $(`<button class="deck"><span class="dk-t"><b>${esc(d.t)}</b><span>${esc(d.s)}</span></span>
@@ -2938,7 +2735,8 @@ function decksScreen(){
 
 let F = null;   // sessione di flashcard in corso
 function studyDeck(id, all){
-  const decks = id ? DECKS.filter(d => d.id === id) : DECKS;
+  if(id && !deckReady(DECKS.find(d => d.id === id) || {})) return unlockScreen();
+  const decks = (id ? DECKS.filter(d => d.id === id) : DECKS).filter(deckReady);
   const t = today();
   let due = [], fresh = [];
   decks.forEach(d => d.cards.forEach(c => { const r = fcRec(d, c); if(!r) fresh.push({d, c}); else if(r.d <= t) due.push({d, c}); }));
@@ -3130,7 +2928,7 @@ function woScreen(){
       const st = ORDER_SETS.find(x => x.id === id); if(!st) return;
       const best = (S.wob || {})[id] || 0, u = unitById(st.unit), n = unitIndex(st.unit) + 1;
       const lk = setLocked(st);
-      const badge = lk ? `<span class="fc-badge prem">${LOCK(14)} Premium</span>` : best >= 80 ? `<span class="fc-badge ok">✓ ${best}%</span>` : best ? `<span class="fc-badge">${best}%</span>` : `<span class="fc-badge">nuovo</span>`;
+      const badge = lk ? `<span class="fc-badge prem">${LOCK(14)} Sostenitori</span>` : best >= 80 ? `<span class="fc-badge ok">✓ ${best}%</span>` : best ? `<span class="fc-badge">${best}%</span>` : `<span class="fc-badge">nuovo</span>`;
       const b = $(`<button class="deck ${lk ? "locked" : ""}"><span class="dk-t"><b>${esc(st.t)}</b><span>${esc(st.s)}</span></span>
         <span class="dk-r">${badge}<span class="dk-n">${u ? "unità " + n : ""} · ${st.items.length || st.n || 0} frasi</span><span class="meter"><i style="width:${best}%"></i></span></span></button>`);
       b.onclick = () => startWo(id);

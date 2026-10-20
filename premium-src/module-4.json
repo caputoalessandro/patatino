@@ -2792,5 +2792,444 @@
     }
    ]
   }
+ ],
+ "decks": [
+  {
+   "id": "irr1",
+   "g": "Grammatica",
+   "t": "Verbi irregolari · i più comuni",
+   "s": "Imperfetto e participio dei verbi forti di tutti i giorni",
+   "sayExtra": true,
+   "cards": [
+    [
+     "zijn",
+     "essere",
+     "was · waren · is geweest"
+    ],
+    [
+     "hebben",
+     "avere",
+     "had · hadden · heeft gehad"
+    ],
+    [
+     "gaan",
+     "andare",
+     "ging · gingen · is gegaan"
+    ],
+    [
+     "komen",
+     "venire",
+     "kwam · kwamen · is gekomen"
+    ],
+    [
+     "doen",
+     "fare",
+     "deed · deden · heeft gedaan"
+    ],
+    [
+     "zien",
+     "vedere",
+     "zag · zagen · heeft gezien"
+    ],
+    [
+     "eten",
+     "mangiare",
+     "at · aten · heeft gegeten"
+    ],
+    [
+     "drinken",
+     "bere",
+     "dronk · dronken · heeft gedronken"
+    ],
+    [
+     "lezen",
+     "leggere",
+     "las · lazen · heeft gelezen"
+    ],
+    [
+     "schrijven",
+     "scrivere",
+     "schreef · schreven · heeft geschreven"
+    ],
+    [
+     "spreken",
+     "parlare",
+     "sprak · spraken · heeft gesproken"
+    ],
+    [
+     "nemen",
+     "prendere",
+     "nam · namen · heeft genomen"
+    ],
+    [
+     "geven",
+     "dare",
+     "gaf · gaven · heeft gegeven"
+    ],
+    [
+     "krijgen",
+     "ricevere",
+     "kreeg · kregen · heeft gekregen"
+    ],
+    [
+     "vinden",
+     "trovare",
+     "vond · vonden · heeft gevonden"
+    ],
+    [
+     "denken",
+     "pensare",
+     "dacht · dachten · heeft gedacht"
+    ],
+    [
+     "brengen",
+     "portare",
+     "bracht · brachten · heeft gebracht"
+    ],
+    [
+     "kopen",
+     "comprare",
+     "kocht · kochten · heeft gekocht"
+    ],
+    [
+     "zoeken",
+     "cercare",
+     "zocht · zochten · heeft gezocht"
+    ],
+    [
+     "weten",
+     "sapere",
+     "wist · wisten · heeft geweten"
+    ],
+    [
+     "kunnen",
+     "potere, saper fare",
+     "kon · konden · heeft gekund"
+    ],
+    [
+     "willen",
+     "volere",
+     "wilde (wou) · wilden · heeft gewild"
+    ],
+    [
+     "mogen",
+     "avere il permesso",
+     "mocht · mochten · heeft gemogen"
+    ],
+    [
+     "moeten",
+     "dovere",
+     "moest · moesten · heeft gemoeten"
+    ],
+    [
+     "zeggen",
+     "dire",
+     "zei · zeiden · heeft gezegd"
+    ],
+    [
+     "vragen",
+     "chiedere",
+     "vroeg · vroegen · heeft gevraagd"
+    ],
+    [
+     "blijven",
+     "restare",
+     "bleef · bleven · is gebleven"
+    ],
+    [
+     "worden",
+     "diventare",
+     "werd · werden · is geworden"
+    ],
+    [
+     "staan",
+     "stare in piedi",
+     "stond · stonden · heeft gestaan"
+    ],
+    [
+     "zitten",
+     "stare seduto",
+     "zat · zaten · heeft gezeten"
+    ],
+    [
+     "liggen",
+     "essere sdraiato",
+     "lag · lagen · heeft gelegen"
+    ],
+    [
+     "kijken",
+     "guardare",
+     "keek · keken · heeft gekeken"
+    ]
+   ]
+  },
+  {
+   "id": "irr2",
+   "g": "Grammatica",
+   "t": "Verbi irregolari · secondo livello",
+   "s": "Altri verbi forti e misti da conoscere",
+   "sayExtra": true,
+   "cards": [
+    [
+     "beginnen",
+     "cominciare",
+     "begon · begonnen · is begonnen"
+    ],
+    [
+     "vergeten",
+     "dimenticare",
+     "vergat · vergaten · heeft/is vergeten"
+    ],
+    [
+     "begrijpen",
+     "capire",
+     "begreep · begrepen · heeft begrepen"
+    ],
+    [
+     "slapen",
+     "dormire",
+     "sliep · sliepen · heeft geslapen"
+    ],
+    [
+     "lopen",
+     "camminare (in Belgio spesso: correre)",
+     "liep · liepen · heeft/is gelopen"
+    ],
+    [
+     "roepen",
+     "chiamare (a voce)",
+     "riep · riepen · heeft geroepen"
+    ],
+    [
+     "vallen",
+     "cadere",
+     "viel · vielen · is gevallen"
+    ],
+    [
+     "houden",
+     "tenere",
+     "hield · hielden · heeft gehouden"
+    ],
+    [
+     "helpen",
+     "aiutare",
+     "hielp · hielpen · heeft geholpen"
+    ],
+    [
+     "zingen",
+     "cantare",
+     "zong · zongen · heeft gezongen"
+    ],
+    [
+     "zwemmen",
+     "nuotare",
+     "zwom · zwommen · heeft/is gezwommen"
+    ],
+    [
+     "rijden",
+     "guidare, andare (in auto/bici)",
+     "reed · reden · heeft/is gereden"
+    ],
+    [
+     "vliegen",
+     "volare",
+     "vloog · vlogen · heeft/is gevlogen"
+    ],
+    [
+     "verliezen",
+     "perdere",
+     "verloor · verloren · heeft verloren"
+    ],
+    [
+     "kiezen",
+     "scegliere",
+     "koos · kozen · heeft gekozen"
+    ],
+    [
+     "liegen",
+     "mentire",
+     "loog · logen · heeft gelogen"
+    ],
+    [
+     "winnen",
+     "vincere",
+     "won · wonnen · heeft gewonnen"
+    ],
+    [
+     "sluiten",
+     "chiudere",
+     "sloot · sloten · heeft gesloten"
+    ],
+    [
+     "trekken",
+     "tirare",
+     "trok · trokken · heeft getrokken"
+    ],
+    [
+     "dragen",
+     "portare (addosso)",
+     "droeg · droegen · heeft gedragen"
+    ],
+    [
+     "slaan",
+     "colpire",
+     "sloeg · sloegen · heeft geslagen"
+    ],
+    [
+     "breken",
+     "rompere",
+     "brak · braken · heeft/is gebroken"
+    ],
+    [
+     "sterven",
+     "morire",
+     "stierf · stierven · is gestorven"
+    ],
+    [
+     "verdwijnen",
+     "sparire",
+     "verdween · verdwenen · is verdwenen"
+    ],
+    [
+     "bieden",
+     "offrire",
+     "bood · boden · heeft geboden"
+    ],
+    [
+     "hangen",
+     "essere appeso, appendere",
+     "hing · hingen · heeft gehangen"
+    ],
+    [
+     "lachen",
+     "ridere",
+     "lachte · lachten · heeft gelachen"
+    ],
+    [
+     "bakken",
+     "cuocere al forno",
+     "bakte · bakten · heeft gebakken"
+    ],
+    [
+     "wassen",
+     "lavare",
+     "waste · wasten · heeft gewassen"
+    ],
+    [
+     "zenden",
+     "spedire, trasmettere",
+     "zond · zonden · heeft gezonden"
+    ]
+   ]
+  },
+  {
+   "id": "sep",
+   "g": "Grammatica",
+   "t": "Verbi separabili",
+   "s": "Con la forma al presente e al passato prossimo",
+   "sayExtra": true,
+   "cards": [
+    [
+     "opstaan",
+     "alzarsi",
+     "ik sta op · ik ben opgestaan"
+    ],
+    [
+     "opbellen",
+     "telefonare",
+     "ik bel op · ik heb opgebeld"
+    ],
+    [
+     "meegaan",
+     "andare con, accompagnare",
+     "ik ga mee · ik ben meegegaan"
+    ],
+    [
+     "meenemen",
+     "portare con sé",
+     "ik neem mee · ik heb meegenomen"
+    ],
+    [
+     "aankomen",
+     "arrivare",
+     "ik kom aan · ik ben aangekomen"
+    ],
+    [
+     "uitgaan",
+     "uscire (la sera)",
+     "ik ga uit · ik ben uitgegaan"
+    ],
+    [
+     "binnenkomen",
+     "entrare",
+     "ik kom binnen · ik ben binnengekomen"
+    ],
+    [
+     "terugkomen",
+     "tornare",
+     "ik kom terug · ik ben teruggekomen"
+    ],
+    [
+     "weggaan",
+     "andare via",
+     "ik ga weg · ik ben weggegaan"
+    ],
+    [
+     "afspreken",
+     "darsi appuntamento",
+     "ik spreek af · ik heb afgesproken"
+    ],
+    [
+     "uitnodigen",
+     "invitare",
+     "ik nodig uit · ik heb uitgenodigd"
+    ],
+    [
+     "opruimen",
+     "mettere in ordine",
+     "ik ruim op · ik heb opgeruimd"
+    ],
+    [
+     "schoonmaken",
+     "pulire",
+     "ik maak schoon · ik heb schoongemaakt"
+    ],
+    [
+     "afwassen",
+     "lavare i piatti",
+     "ik was af · ik heb afgewassen"
+    ],
+    [
+     "ophalen",
+     "andare a prendere",
+     "ik haal op · ik heb opgehaald"
+    ],
+    [
+     "invullen",
+     "compilare",
+     "ik vul in · ik heb ingevuld"
+    ],
+    [
+     "zich aankleden",
+     "vestirsi",
+     "ik kleed me aan · ik heb me aangekleed"
+    ],
+    [
+     "uitstappen",
+     "scendere (da un mezzo)",
+     "ik stap uit · ik ben uitgestapt"
+    ],
+    [
+     "instappen",
+     "salire (su un mezzo)",
+     "ik stap in · ik ben ingestapt"
+    ],
+    [
+     "thuiskomen",
+     "tornare a casa",
+     "ik kom thuis · ik ben thuisgekomen"
+    ]
+   ]
+  }
  ]
 }
