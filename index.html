@@ -438,6 +438,45 @@ body{background:var(--bg)}
 .modal-box h3{margin:0 0 8px;font-size:20px}
 .modal-box p{margin:0 0 16px}
 .modal-row{display:grid;gap:10px}
+
+/* installazione: banner, guida passo passo, privacy */
+.nudge-box{position:relative}
+.nudge-x{position:absolute;top:6px;right:6px;width:34px;height:34px;display:grid;place-items:center;border:0;background:none;color:var(--ink);border-radius:10px}
+.inst-banner .nudge-box p{padding-right:30px}
+.moved .nudge-row a.btn{width:auto;flex:1 1 auto;padding:9px 12px;font-size:15px;text-decoration:none;color:var(--ink)}
+.res-inst{width:100%;text-align:left}
+.res-inst .nudge{margin:4px 0 0}
+.inst-row{display:flex;align-items:center;gap:12px}
+.inst-row svg{flex:none}
+.btn-install{font-size:19px}
+.inst-h{display:flex;align-items:flex-end;gap:12px;margin-bottom:6px}
+.inst-h svg{flex:none}
+.inst-h .lesson-h{flex:1;min-width:0}
+.inst-h .lesson-h h2{font-size:26px}
+.inst-h .lesson-h p{font-size:16px}
+.steps{list-style:none;margin:0 0 20px;padding:0;display:grid;gap:14px}
+.step{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:3px solid var(--ink);border-radius:18px;box-shadow:0 5px 0 var(--bg-shade);padding:14px}
+.step-alt{margin-top:-4px;border-style:dashed;box-shadow:none}
+.step-n{flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--deep);color:#fff;border:3px solid var(--ink);font-family:var(--f-display);font-weight:800;font-size:18px}
+.step-b{flex:1;min-width:0}
+.step-b p{margin:4px 0 10px}
+.ill{display:block;width:100%;height:auto;max-width:340px;font-family:-apple-system,system-ui,sans-serif}
+.bnc-y{animation:bncy .9s ease-in-out infinite}
+.bnc-x,.bnc-x2{animation:bncx .9s ease-in-out infinite}
+.pop-in{animation:popin 4.5s ease infinite}
+.arr-first{animation:arrfirst 4.5s ease infinite}
+@keyframes bncy{50%{transform:translateY(-7px)}}
+@keyframes bncx{50%{transform:translateX(7px)}}
+@keyframes popin{0%,38%{opacity:0}46%,96%{opacity:1}100%{opacity:0}}
+@keyframes arrfirst{0%,40%{opacity:1}46%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.arr-first{display:none}}
+.copy-row{display:grid;gap:8px;margin-top:10px}
+.linkbox{width:100%;border:2.5px solid var(--ink);border-radius:10px;padding:8px 10px;font-size:14px;background:#fff;color:var(--ink)}
+.privacy h3{font-size:20px;margin:22px 0 6px}
+.privacy p,.privacy li{line-height:1.5}
+.privacy ul{padding-left:20px;margin:0}
+.privacy li{margin-bottom:8px}
+#priv{margin:0 0 26px}
 </style>
 
 <div id="app"></div>
@@ -3730,7 +3769,7 @@ const L = LOGIC;
 UNITS.forEach(u => { const n = NOTES[u.id]; if(n){ u.note = n.note; u.vlaams = n.vlaams; u.vocab = n.vocab; } const c = CORE[u.id]; u.core = c ? c.words : []; u.drills = c ? c.drills : []; });
 
 /* ---------- stato salvato ---------- */
-function fresh(){ return {xp:0, streak:0, last:null, best:{}, vbest:{}, vblk:{}, fc:{}, wob:{}, fcDir:"nl", wrong:[], audio:true, voice:"auto", palette:"frietkot", lastExport:null, backupSnooze:null}; }
+function fresh(){ return {xp:0, streak:0, last:null, best:{}, vbest:{}, vblk:{}, fc:{}, wob:{}, fcDir:"nl", wrong:[], audio:true, voice:"auto", palette:"frietkot", lastExport:null, backupSnooze:null, installSnooze:null, installed:false}; }
 function load(){ try{ const r = localStorage.getItem(KEY); if(r) return Object.assign(fresh(), JSON.parse(r)); }catch(e){} return fresh(); }
 function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} }
 let S = load();
@@ -3882,7 +3921,7 @@ function applyPalette(){ try{ document.documentElement.setAttribute("data-palett
 
 /* ---------- navigazione: il gesto "indietro" del telefono segue le schermate ---------- */
 // profondità: percorso 0 · unità e impostazioni 1 · esercizi e risultati 2
-const DEPTH = {home:0, settings:1, lesson:1, quiz:2, res:2, decks:1, cards:2, wo:1};
+const DEPTH = {home:0, settings:1, lesson:1, quiz:2, res:2, decks:1, cards:2, wo:1, privacy:2, install:3};
 let curDepth = 0, fromPop = false, skipPop = null;
 function screen(st){
   if(fromPop) return;                       // la schermata arriva dal gesto: la cronologia è già giusta
@@ -3898,6 +3937,8 @@ function showState(st){
   st = st || {s:"home"};
   if(st.s === "lesson" && unitById(st.id)) lesson(st.id);
   else if(st.s === "settings") settings();
+  else if(st.s === "privacy") privacy();
+  else if(st.s === "install") installScreen();
   else if(st.s === "decks" || st.s === "cards") decksScreen();
   else if(st.s === "wo") woScreen();
   else if((st.s === "quiz" || st.s === "res") && st.unit && unitById(st.unit)) lesson(st.unit);
@@ -4043,6 +4084,278 @@ function backupNudge(){
   return n;
 }
 
+/* ---------- INSTALLAZIONE, TRASLOCO E PRIVACY ---------- */
+// Trasloco: se l'app viene aperta da OLD_HOST compare il banner "L'app si è trasferita!".
+// Lascia OLD_HOST vuoto finché non c'è un nuovo indirizzo. Esempio:
+//   const OLD_HOST = "caputoalessandro.github.io", NEW_URL = "https://patatino.example/";
+const OLD_HOST = "";
+const NEW_URL = "";
+const INSTALL_SNOOZE_DAYS = 14;
+
+// Dove gira l'app? Restituisce {k, ...}:
+//   installed · ios-safari · ios-other (b = browser) · inapp (app, os) · android (b) · desktop (b)
+function installContext(){
+  const ua = navigator.userAgent || "";
+  let standalone = false;
+  try{ standalone = ["standalone", "fullscreen", "minimal-ui"].some(m => matchMedia("(display-mode: " + m + ")").matches) || navigator.standalone === true; }catch(e){}
+  if(standalone) return {k:"installed"};
+  const ios = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/i.test(ua) && navigator.maxTouchPoints > 1);
+  const android = /Android/i.test(ua);
+  const os = ios ? "ios" : android ? "android" : "desktop";
+  // browser interni delle app (Messenger prima di Facebook: la sua firma contiene anche FBAN)
+  const APPS = [["Instagram", /Instagram/i], ["Messenger", /MessengerForiOS|MessengerLite|Orca-Android|FB_IAB\/MESSENGER/i],
+    ["Facebook", /FBAN|FBAV|FB_IAB|FBIOS|FB4A/i], ["WhatsApp", /WhatsApp/i], ["TikTok", /TikTok|musical_ly|Bytedance|ByteLocale/i],
+    ["Threads", /Barcelona/i], ["Snapchat", /Snapchat/i], ["LinkedIn", /LinkedInApp/i], ["Pinterest", /Pinterest/i]];
+  const hit = APPS.find(a => a[1].test(ua));
+  if(hit && os !== "desktop") return {k:"inapp", app:hit[0], os};
+  // su iPhone una vista web senza "Safari/" nella firma è il browser interno di un'app
+  if(ios && !/Safari\//.test(ua) && !/CriOS|FxiOS|EdgiOS|OPiOS|OPT\//.test(ua)) return {k:"inapp", app:null, os};
+  if(android && /; wv\)/.test(ua)) return {k:"inapp", app:null, os};
+  if(ios){
+    const b = /CriOS/.test(ua) ? "Chrome" : /FxiOS/.test(ua) ? "Firefox" : /EdgiOS/.test(ua) ? "Edge" : /OPiOS|OPT\//.test(ua) ? "Opera" : /DuckDuckGo|Ddg\//.test(ua) ? "DuckDuckGo" : null;
+    return b ? {k:"ios-other", b} : {k:"ios-safari"};
+  }
+  const b = /SamsungBrowser/.test(ua) ? "Samsung Internet" : /EdgA?\//.test(ua) ? "Edge" : /Firefox/.test(ua) ? "Firefox" : /OPR\//.test(ua) ? "Opera" : /Chrome/.test(ua) ? "Chrome" : /Safari/.test(ua) ? "Safari" : null;
+  return {k: android ? "android" : "desktop", b};
+}
+const CTX = installContext();
+
+// Android e Chrome/Edge desktop: il vero prompt di installazione, tenuto da parte finché serve
+let installPrompt = null;
+window.addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); installPrompt = e; });
+window.addEventListener("appinstalled", () => { installPrompt = null; S.installed = true; save(); document.querySelectorAll(".inst-banner").forEach(n => n.remove()); });
+
+const canInstall = () => CTX.k !== "installed";
+function startInstall(){
+  if(installPrompt){
+    const p = installPrompt; installPrompt = null;
+    p.prompt();
+    (p.userChoice || Promise.resolve({})).then(r => { if(r && r.outcome === "accepted"){ S.installed = true; save(); document.querySelectorAll(".inst-banner").forEach(n => n.remove()); } }).catch(() => {});
+    return;
+  }
+  installScreen();
+}
+
+const firstLessonDone = () => Object.values(S.best || {}).some(x => x >= 80) || Object.values(S.vblk || {}).some(x => x >= 80);
+function installBannerDue(){
+  if(!canInstall() || S.installed || !firstLessonDone()) return false;
+  return !(S.installSnooze && Date.now() < new Date(S.installSnooze).getTime());
+}
+function installBanner(){
+  if(!installBannerDue()) return null;
+  const n = $(`<aside class="nudge inst-banner" aria-label="Installa l'app">
+    <span class="nudge-art">${patatino("cheer", 64)}</span>
+    <div class="nudge-box"><button class="nudge-x" aria-label="Chiudi">${ICON.x}</button>
+      <p>Ti è piaciuto? Mettimi sulla schermata Home così mi ritrovi subito!</p>
+      <div class="nudge-row"><button class="btn btn-deep" id="ninst">Installa l'app</button></div>
+    </div></aside>`);
+  n.querySelector("#ninst").onclick = startInstall;
+  n.querySelector(".nudge-x").onclick = () => { S.installSnooze = new Date(Date.now() + INSTALL_SNOOZE_DAYS * DAY_MS).toISOString(); save(); n.remove(); };
+  return n;
+}
+
+function movedBanner(){
+  if(!OLD_HOST || location.hostname !== OLD_HOST) return null;
+  const n = $(`<aside class="nudge moved" aria-label="Nuovo indirizzo">
+    <span class="nudge-art">${patatino("wave", 64)}</span>
+    <div class="nudge-box"><p><b>L'app si è trasferita!</b> Patatino ora abita a un nuovo indirizzo. I progressi non traslocano da soli: esportali qui, poi aprili dal nuovo indirizzo con <i>Impostazioni → Importa backup</i>.</p>
+      <div class="nudge-row"><button class="btn btn-deep" id="mexp">Esporta i miei dati</button>${NEW_URL ? `<a class="btn btn-ghost" href="${esc(NEW_URL)}" rel="noopener">Vai al nuovo indirizzo</a>` : ""}</div>
+    </div></aside>`);
+  n.querySelector("#mexp").onclick = () => { exportData(); n.querySelector("#mexp").textContent = "Backup scaricato ✓"; };
+  return n;
+}
+
+function copyLink(btn){
+  const url = location.href.split("#")[0];
+  const ok = () => { btn.innerHTML = ICON.check + " Link copiato!"; };
+  const manual = () => { const f = btn.parentNode.querySelector(".linkbox"); if(f){ f.hidden = false; f.focus(); f.select(); } btn.textContent = "Copia il link qui sotto"; };
+  const legacy = () => {
+    try{
+      const t = document.createElement("textarea"); t.value = url; t.setAttribute("readonly", ""); t.style.cssText = "position:fixed;top:0;left:0;opacity:0";
+      document.body.appendChild(t); t.select(); t.setSelectionRange(0, url.length);
+      const done = document.execCommand("copy"); t.remove(); done ? ok() : manual();
+    }catch(e){ manual(); }
+  };
+  try{ if(navigator.clipboard && navigator.clipboard.writeText) return navigator.clipboard.writeText(url).then(ok, legacy); }catch(e){}
+  legacy();
+}
+
+/* illustrazioni animate dei passaggi (disegnate da codice, stile fumetto) */
+const IK = "#1A1A1A";
+const ARROW_DOWN = (x, y) => `<g class="bnc-y"><path d="M${x} ${y-34} V${y-8}" stroke="${IK}" stroke-width="9" stroke-linecap="round"/><path d="M${x} ${y-34} V${y-8}" stroke="var(--deep)" stroke-width="4" stroke-linecap="round"/><path d="M${x-11} ${y-16} L${x} ${y-2} L${x+11} ${y-16} Z" fill="var(--deep)" stroke="${IK}" stroke-width="3" stroke-linejoin="round"/></g>`;
+const ARROW_LEFT = (x, y) => `<g class="bnc-x"><path d="M${x+34} ${y} H${x+8}" stroke="${IK}" stroke-width="9" stroke-linecap="round"/><path d="M${x+34} ${y} H${x+8}" stroke="var(--deep)" stroke-width="4" stroke-linecap="round"/><path d="M${x+16} ${y-11} L${x+2} ${y} L${x+16} ${y+11} Z" fill="var(--deep)" stroke="${IK}" stroke-width="3" stroke-linejoin="round"/></g>`;
+const SHARE_IC = (x, y, s) => `<g transform="translate(${x} ${y}) scale(${s})" fill="none" stroke="#0A66E8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M-7 -3 H-9 V11 H9 V-3 H7"/><path d="M0 4 V-11 M-5 -6 L0 -11 L5 -6"/></g>`;
+const svgWrap = (h, body, label) => `<svg class="ill" viewBox="0 0 280 ${h}" role="img" aria-label="${esc(label)}">${body}</svg>`;
+const ILL = {
+  // passo 1, Safari con la barra in basso: il tasto Condividi è al centro
+  shareBar: () => svgWrap(150, `
+    <rect x="20" y="8" width="240" height="138" rx="18" fill="#fff" stroke="${IK}" stroke-width="3"/>
+    <rect x="36" y="22" width="208" height="16" rx="8" fill="#EDEDED"/><rect x="36" y="46" width="150" height="10" rx="5" fill="#EDEDED"/>
+    <path d="M22 100 H258 V128 a16 16 0 0 1 -16 16 H38 a16 16 0 0 1 -16 -16 Z" fill="#F4F4F4" stroke="${IK}" stroke-width="3"/>
+    <path d="M50 114 l-6 6 6 6" fill="none" stroke="#0A66E8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M90 114 l6 6 -6 6" fill="none" stroke="#B9B9B9" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="140" cy="121" r="17" fill="var(--bg)" stroke="${IK}" stroke-width="3"/>${SHARE_IC(140, 121, 1)}
+    <path d="M180 113 h14 v15 h-14 Z M187 113 v15" fill="none" stroke="#0A66E8" stroke-width="2.2" stroke-linejoin="round"/>
+    <rect x="222" y="113" width="14" height="14" rx="3" fill="none" stroke="#0A66E8" stroke-width="2.2"/>
+    ${ARROW_DOWN(140, 98)}`, "Barra di Safari in basso con il tasto Condividi evidenziato"),
+  // passo 1, Safari recente: barra compatta, Condividi è dentro il menu "···"
+  shareMenu: () => svgWrap(170, `
+    <rect x="20" y="8" width="240" height="158" rx="18" fill="#fff" stroke="${IK}" stroke-width="3"/>
+    <g class="pop-in"><rect x="120" y="22" width="126" height="92" rx="12" fill="#fff" stroke="${IK}" stroke-width="2.5"/>
+      <rect x="126" y="28" width="114" height="26" rx="8" fill="var(--bg)" stroke="${IK}" stroke-width="2.5"/>${SHARE_IC(140, 41, .75)}
+      <text x="152" y="46" font-size="13" font-weight="700" fill="${IK}">Condividi</text>
+      <text x="132" y="76" font-size="11" fill="#666">Aggiungi preferito</text><text x="132" y="102" font-size="11" fill="#666">Nuovo pannello</text>
+      <g class="bnc-x2">${ARROW_LEFT(242, 41).replace('class="bnc-x"', "")}</g></g>
+    <rect x="34" y="128" width="170" height="28" rx="14" fill="#F4F4F4" stroke="${IK}" stroke-width="2.5"/>
+    <text x="56" y="147" font-size="13" fill="#444">patatino…</text>
+    <circle cx="228" cy="142" r="17" fill="var(--bg)" stroke="${IK}" stroke-width="3"/>
+    <g fill="${IK}"><circle cx="220" cy="142" r="2.6"/><circle cx="228" cy="142" r="2.6"/><circle cx="236" cy="142" r="2.6"/></g>
+    <g class="arr-first">${ARROW_DOWN(228, 123)}</g>`, "Safari con la barra compatta: tocca ··· e poi Condividi"),
+  // passo 2: nel foglio di condivisione, "Aggiungi alla schermata Home"
+  addHome: () => svgWrap(168, `
+    <rect x="20" y="8" width="240" height="156" rx="18" fill="#F4F4F4" stroke="${IK}" stroke-width="3"/>
+    <rect x="118" y="16" width="44" height="5" rx="2.5" fill="#C9C9C9"/>
+    ${[["Copia", 34], ["Aggiungi a Elenco lettura", 64]].map(([t, y]) => `<rect x="34" y="${y}" width="212" height="24" rx="8" fill="#fff"/><text x="46" y="${y+16}" font-size="12.5" fill="#444">${t}</text>`).join("")}
+    <rect x="30" y="96" width="220" height="34" rx="10" fill="var(--bg)" stroke="${IK}" stroke-width="3"/>
+    <text x="40" y="117" font-size="11.5" font-weight="700" fill="${IK}">Aggiungi alla schermata Home</text>
+    <rect x="224" y="104" width="18" height="18" rx="4" fill="none" stroke="${IK}" stroke-width="2.2"/><path d="M233 108 v10 M228 113 h10" stroke="${IK}" stroke-width="2.2" stroke-linecap="round"/>
+    <rect x="34" y="138" width="212" height="20" rx="8" fill="#fff"/><text x="46" y="152" font-size="12.5" fill="#444">Stampa</text>
+    ${ARROW_LEFT(252, 113)}`, "Foglio di condivisione con la voce Aggiungi alla schermata Home"),
+  // passo 3: "Aggiungi" in alto a destra
+  confirm: () => svgWrap(150, `
+    <rect x="20" y="8" width="240" height="138" rx="18" fill="#F4F4F4" stroke="${IK}" stroke-width="3"/>
+    <text x="34" y="36" font-size="13" fill="#0A66E8">Annulla</text>
+    <text x="132" y="36" font-size="11" font-weight="700" fill="${IK}" text-anchor="middle">Schermata Home</text>
+    <rect x="182" y="18" width="70" height="28" rx="10" fill="var(--bg)" stroke="${IK}" stroke-width="3"/>
+    <text x="217" y="37" font-size="13" font-weight="700" fill="${IK}" text-anchor="middle">Aggiungi</text>
+    <rect x="34" y="60" width="212" height="54" rx="12" fill="#fff"/>
+    <g transform="translate(44 63)">${patatino("happy", 48)}</g>
+    <text x="100" y="92" font-size="15" font-weight="700" fill="${IK}">Patatino</text>
+    <rect x="34" y="120" width="212" height="20" rx="8" fill="#fff"/><text x="46" y="134" font-size="11.5" fill="#444">Apri come app web</text>
+    <rect x="214" y="123" width="26" height="14" rx="7" fill="#34C759"/><circle cx="233" cy="130" r="5.5" fill="#fff"/>
+    <g transform="translate(217 50)"><g class="bnc-y"><path d="M0 34 V12" stroke="${IK}" stroke-width="9" stroke-linecap="round"/><path d="M0 34 V12" stroke="var(--deep)" stroke-width="4" stroke-linecap="round"/><path d="M-11 16 L0 2 L11 16 Z" fill="var(--deep)" stroke="${IK}" stroke-width="3" stroke-linejoin="round"/></g></g>`, "Conferma con Aggiungi in alto a destra"),
+  // browser interno di un'app: menu ··· in alto a destra → apri nel browser
+  inapp: (os) => svgWrap(158, `
+    <rect x="20" y="8" width="240" height="146" rx="18" fill="#fff" stroke="${IK}" stroke-width="3"/>
+    <path d="M22 26 a16 16 0 0 1 16 -16 H242 a16 16 0 0 1 16 16 V44 H22 Z" fill="#F4F4F4" stroke="${IK}" stroke-width="3"/>
+    <path d="M38 22 l12 12 M50 22 l-12 12" stroke="${IK}" stroke-width="2.6" stroke-linecap="round"/>
+    <text x="140" y="32" font-size="12" fill="#444" text-anchor="middle">patatino…</text>
+    <circle cx="232" cy="28" r="14" fill="var(--bg)" stroke="${IK}" stroke-width="3"/>
+    <g fill="${IK}"><circle cx="225" cy="28" r="2.4"/><circle cx="232" cy="28" r="2.4"/><circle cx="239" cy="28" r="2.4"/></g>
+    <g class="pop-in"><rect x="96" y="56" width="152" height="84" rx="12" fill="#fff" stroke="${IK}" stroke-width="2.5"/>
+      <rect x="102" y="62" width="140" height="28" rx="8" fill="var(--bg)" stroke="${IK}" stroke-width="2.5"/>
+      <text x="112" y="81" font-size="12.5" font-weight="700" fill="${IK}">${os === "android" ? "Apri in Chrome" : "Apri in Safari"}</text>
+      <text x="112" y="110" font-size="12" fill="#666">Copia link</text><text x="112" y="130" font-size="12" fill="#666">Condividi…</text>
+      <g class="bnc-x2">${ARROW_LEFT(244, 76).replace('class="bnc-x"', "")}</g></g>
+    <g class="arr-first"><g transform="translate(232 44)"><g class="bnc-y"><path d="M0 34 V12" stroke="${IK}" stroke-width="9" stroke-linecap="round"/><path d="M0 34 V12" stroke="var(--deep)" stroke-width="4" stroke-linecap="round"/><path d="M-11 16 L0 2 L11 16 Z" fill="var(--deep)" stroke="${IK}" stroke-width="3" stroke-linejoin="round"/></g></g></g>`, "Menu ··· in alto a destra con la voce per aprire la pagina nel browser")
+};
+const step = (n, html, ill) => `<li class="step"><span class="step-n">${n}</span><div class="step-b"><p>${html}</p>${ill || ""}</div></li>`;
+
+// istruzioni manuali quando non c'è il prompt automatico
+const ANDROID_HOW = {
+  "Chrome": "Tocca il menu <b>⋮</b> in alto a destra, poi <b>Installa app</b> (o <b>Aggiungi a schermata Home</b>).",
+  "Edge": "Tocca il menu <b>···</b> in basso, poi <b>Aggiungi al telefono</b>.",
+  "Samsung Internet": "Tocca il menu <b>≡</b> in basso, poi <b>Aggiungi pagina a</b> → <b>Schermata Home</b>.",
+  "Firefox": "Tocca il menu <b>⋮</b>, poi <b>Installa</b> (o <b>Aggiungi a schermata Home</b>).",
+  "Opera": "Tocca il menu <b>⋮</b>, poi <b>Schermata Home</b>."
+};
+const IOS_HOW = {
+  "Chrome": "Tocca il tasto <b>Condividi</b> accanto alla barra dell'indirizzo (in alto a destra), poi <b>Aggiungi alla schermata Home</b>.",
+  "Edge": "Tocca il menu <b>···</b> in basso, poi <b>Condividi</b> e <b>Aggiungi alla schermata Home</b>.",
+  "Firefox": "Tocca il menu <b>≡</b> in basso a destra, poi <b>Condividi</b> e <b>Aggiungi alla schermata Home</b>."
+};
+
+function installScreen(){
+  screen({s:"install"});
+  const c = CTX;
+  let title = "Installa Patatino", intro = "", body = "", extra = "";
+  const linkTools = `<div class="copy-row"><button class="btn btn-ghost" id="copy">Copia link</button><input class="linkbox" readonly hidden value="${esc(location.href.split("#")[0])}" aria-label="Link della pagina"></div>`;
+  if(c.k === "installed"){
+    intro = "Patatino è già installata: la trovi sulla schermata Home.";
+  } else if(c.k === "ios-safari"){
+    intro = "Su iPhone l'installazione si fa da Safari, in tre tocchi:";
+    body = `<ol class="steps">
+      ${step(1, "Tocca il tasto <b>Condividi</b> nella barra in basso.", ILL.shareBar())}
+      <li class="step step-alt"><div class="step-b"><p><b>Non lo vedi?</b> Nelle versioni recenti di Safari la barra è compatta: tocca <b>···</b> accanto all'indirizzo, poi <b>Condividi</b>.</p>${ILL.shareMenu()}</div></li>
+      ${step(2, "Scorri le voci e tocca <b>Aggiungi alla schermata Home</b>.", ILL.addHome())}
+      ${step(3, "Tocca <b>Aggiungi</b> in alto a destra. Fatto: Patatino è sulla schermata Home!", ILL.confirm())}
+    </ol>`;
+    extra = `<div class="vl"><span class="label">Non trovi «Aggiungi alla schermata Home»?</span>Se hai aperto il link da WhatsApp, Mail o un'altra app, sei in un'anteprima di Safari: tocca l'icona della <b>bussola</b> (o «Apri in Safari») e ripeti i passaggi.</div>`;
+  } else if(c.k === "ios-other"){
+    intro = `Stai usando ${esc(c.b)}. ${IOS_HOW[c.b] ? "Puoi installare Patatino anche da qui:" : "Il modo più sicuro è aprire Patatino in Safari:"}`;
+    body = IOS_HOW[c.b] ? `<ol class="steps">
+      ${step(1, IOS_HOW[c.b])}
+      ${step(2, "Tocca <b>Aggiungi alla schermata Home</b>.", ILL.addHome())}
+      ${step(3, "Conferma con <b>Aggiungi</b>.", ILL.confirm())}
+    </ol>` : "";
+    extra = `<div class="vl"><span class="label">${IOS_HOW[c.b] ? "Non trovi la voce?" : "Come fare"}</span>Copia il link, apri <b>Safari</b>, incollalo nella barra dell'indirizzo e poi segui le istruzioni da lì.${linkTools}</div>`;
+  } else if(c.k === "inapp"){
+    const where = c.os === "android" ? "Chrome" : "Safari";
+    title = "Apri questa pagina in " + where + " per installarla";
+    intro = `${c.app ? "Sei nel browser interno di " + esc(c.app) : "Sei nel browser interno di un'app"}: da qui non si può installare Patatino.`;
+    body = `<ol class="steps">
+      ${step(1, `Tocca il menu <b>···</b> (di solito in alto a destra) e scegli <b>${c.os === "android" ? "Apri in Chrome" : "Apri in Safari"}</b> o <b>Apri nel browser</b>.`, ILL.inapp(c.os))}
+      ${step(2, `In ${where} tocca di nuovo <b>Installa l'app</b> nelle impostazioni di Patatino.`)}
+    </ol>`;
+    extra = `<div class="vl"><span class="label">Non c'è la voce nel menu?</span>Copia il link e incollalo nella barra dell'indirizzo di ${where}.${linkTools}</div>
+      ${hasProgress() ? `<div class="vl"><span class="label">I tuoi progressi</span>Quello che hai fatto qui resta nel browser di ${c.app ? esc(c.app) : "questa app"}. Per portarlo con te esporta i dati e poi importali in ${where} da <i>Impostazioni → Importa backup</i>.<button class="btn btn-ghost" id="iexp" style="margin-top:10px">Esporta i miei dati</button></div>` : ""}`;
+  } else if(c.k === "android"){
+    intro = "Il tuo browser non ha ancora proposto l'installazione automatica. Puoi farlo dal menu:";
+    body = `<ol class="steps">${step(1, ANDROID_HOW[c.b] || "Apri il menu del browser e cerca <b>Installa app</b> o <b>Aggiungi a schermata Home</b>.")}${step(2, "Conferma con <b>Installa</b>.")}</ol>`;
+    extra = c.b && ANDROID_HOW[c.b] ? "" : `<div class="vl"><span class="label">Consiglio</span>Con <b>Chrome</b> l'installazione è più semplice: copia il link e aprilo lì.${linkTools}</div>`;
+  } else {
+    intro = "Patatino è pensata per il telefono: apri questa pagina sul tuo smartphone e installala da lì.";
+    body = `<ol class="steps">${step(1, c.b === "Safari" ? "Su Mac: menu <b>File → Aggiungi al Dock</b>." : "Su computer con Chrome o Edge: tocca l'icona <b>Installa</b> nella barra dell'indirizzo.")}</ol>`;
+    extra = `<div class="vl"><span class="label">Sul telefono</span>Mandati il link e aprilo su iPhone (Safari) o Android (Chrome).${linkTools}</div>`;
+  }
+  const v = $(`<div class="pop inst">
+    <button class="back" id="bk">${ICON.back} Indietro</button>
+    <div class="inst-h">${patatino(c.k === "inapp" ? "wave" : "cheer", 96)}<div class="lesson-h"><span class="label">Installa l'app</span><h2>${esc(title)}</h2><p>${intro}</p></div></div>
+    ${body}${extra}
+    <div class="dock"><div class="dock-in"><button class="btn btn-lion" id="bk2">${ICON.back} Indietro</button></div></div>
+  </div>`);
+  const back = () => { if(curDepth > 0 && history.state && history.state.s === "install") history.back(); else home(); };
+  v.querySelector("#bk").onclick = back;
+  v.querySelector("#bk2").onclick = back;
+  const cp = v.querySelector("#copy"); if(cp) cp.onclick = () => copyLink(cp);
+  const ie = v.querySelector("#iexp"); if(ie) ie.onclick = () => { exportData(); ie.textContent = "Backup scaricato ✓"; };
+  mount(v);
+}
+
+/* ---------- PRIVACY ---------- */
+// Segnaposti da completare prima della pubblicazione sul nuovo dominio / negli store.
+const PRIVACY = {owner:"[NOME E COGNOME DEL TITOLARE]", contact:"[EMAIL DI CONTATTO]", updated:"20 ottobre 2026"};
+function privacy(){
+  screen({s:"privacy"});
+  const v = $(`<div class="pop privacy">
+    <button class="back" id="bk">${ICON.back} Indietro</button>
+    <div class="lesson-h"><span class="label">Privacy</span><h2>I tuoi dati restano tuoi</h2><p>Ultimo aggiornamento: ${esc(PRIVACY.updated)}</p></div>
+    <h3>In breve</h3>
+    <p>Patatino non ha account, non ha pubblicità, non usa statistiche né cookie di profilazione. Non raccogliamo dati personali: quello che fai nell'app resta sul tuo dispositivo.</p>
+    <h3>Cosa viene salvato e dove</h3>
+    <p>Progressi, punteggi, flashcard, errori da ripassare e impostazioni (colori, voce, audio) sono salvati solo nella memoria del browser di questo dispositivo (<i>localStorage</i>). Nessuno di questi dati viene inviato a noi o ad altri.</p>
+    <p>Se usi <b>Esporta i miei dati</b>, il file di backup viene creato sul tuo dispositivo e lo gestisci tu: noi non lo riceviamo.</p>
+    <h3>Licenza</h3>
+    <p>Al momento Patatino non usa licenze né codici di attivazione, quindi non invia alcun dato per verificarli.</p>
+    <h3>Servizi esterni usati dall'app</h3>
+    <ul>
+      <li><b>Hosting</b>: la pagina è servita da un servizio di hosting (oggi GitHub Pages), che come ogni sito web riceve l'indirizzo IP e il tipo di browser quando la scarichi e può conservarli nei registri tecnici per sicurezza.</li>
+      <li><b>Caratteri tipografici</b>: i font arrivano da Google Fonts; al primo caricamento il browser contatta i server di Google, che ricevono indirizzo IP e tipo di browser.</li>
+      <li><b>Pronuncia</b>: l'app usa la sintesi vocale del tuo dispositivo. Alcune voci, indicate come «richiede internet» nelle impostazioni, sono fornite online dal sistema operativo (Apple, Google o Microsoft): in quel caso la frase da pronunciare passa dal loro servizio.</li>
+    </ul>
+    <h3>Come cancellare i dati</h3>
+    <p>Disinstalla l'app oppure cancella i dati del sito dalle impostazioni del browser. Ricorda che senza un backup i progressi non si possono recuperare.</p>
+    <h3>Titolare e contatti</h3>
+    <p>Titolare: ${esc(PRIVACY.owner)}<br>Contatto: ${esc(PRIVACY.contact)}</p>
+    <p>Puoi scriverci per qualsiasi domanda su questa informativa. Poiché non conserviamo dati personali, di norma non abbiamo informazioni su di te da consultare, correggere o cancellare.</p>
+    <div class="dock"><div class="dock-in"><button class="btn btn-lion" id="bk2">${ICON.back} Indietro</button></div></div>
+  </div>`);
+  const back = () => { if(curDepth > 0 && history.state && history.state.s === "privacy") history.back(); else home(); };
+  v.querySelector("#bk").onclick = back;
+  v.querySelector("#bk2").onclick = back;
+  mount(v);
+}
+
 /* ---------- HOME ---------- */
 const GROUPS = [
   {t:"Le basi", s:"Pronomi, presente, articoli, numeri", u:["u1","u2","u3","u4","u5"]},
@@ -4123,7 +4436,11 @@ function home(){
       <span>Esercizi originali che seguono la sequenza di <i>Basic Dutch</i> (Routledge). Pronuncia: voce olandese del tuo dispositivo.</span>
     </footer>
   </div>`);
-  const nudge = backupNudge(); if(nudge) v.querySelector(".next").after(nudge);
+  // al massimo un avviso alla volta: trasloco, poi backup, poi installazione
+  const moved = movedBanner();
+  const nudge = moved ? null : backupNudge() || installBanner();
+  if(moved) v.querySelector(".top").after(moved);
+  if(nudge) v.querySelector(".next").after(nudge);
   const path = v.querySelector("#path");
   GROUPS.forEach((g, gi) => {
     const ids = g.u.filter(id => unitById(id));
@@ -4185,6 +4502,11 @@ function settings(msg){
         <span class="sw" style="background:${p.bg}"><i style="background:${p.deep}"></i><b>Aa</b></span>
         <span class="pt2"><b>${esc(p.name)}</b><span>${esc(p.sub)}</span></span>
       </button>`).join("")}</div>
+    ${canInstall() ? `<div class="sec-h"><h3>Installa l'app</h3></div>
+    <div class="data-box inst-box">
+      <span class="inst-row">${patatino("cheer", 64)}<span class="note">Metti Patatino sulla schermata Home: si apre come un'app e funziona anche offline.</span></span>
+      <button class="btn btn-lion btn-install" id="inst"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg> Installa l'app</button>
+    </div>` : ""}
     <div class="sec-h"><h3>I tuoi dati</h3></div>
     <div class="data-box">
       ${msg ? `<div class="data-msg ${msg.err ? "err" : ""}" role="status">${esc(msg.msg)}</div>` : ""}
@@ -4198,6 +4520,7 @@ function settings(msg){
         <span class="vt"><b>${esc(x.name)}</b><span>${/be/i.test(x.lang) ? "Neerlandese del Belgio" : "Neerlandese dei Paesi Bassi"} · ${esc(x.lang)}${x.localService ? " · funziona offline" : " · richiede internet"}</span></span>
         <button class="chip vtest" data-id="${esc(x.voiceURI)}" type="button">${ICON.sound} Prova</button>
       </label>`).join("")}</div>
+    <button class="btn btn-ghost" id="priv">Privacy</button>
     <div class="dock"><div class="dock-in"><button class="btn btn-lion" id="bk2">${ICON.back} Torna al percorso</button></div></div>
     ${vs.length ? "" : `<div class="vl"><span class="label">Nessuna voce olandese trovata</span>Su Android apri <b>Impostazioni → Sistema → Lingue → Sintesi vocale</b>, scegli il motore di Google, poi <b>Installa dati vocali → Nederlands (België)</b>. Su iPhone: <b>Impostazioni → Accessibilità → Contenuto letto ad alta voce → Voci → Olandese</b>. Poi riapri l'app.</div>`}
   </div>`);
@@ -4207,6 +4530,8 @@ function settings(msg){
     e.preventDefault();
     const x = nlVoices().find(x => x.voiceURI === b.dataset.id); if(x) speakWith(SAMPLE, x, false);
   });
+  const inst = v.querySelector("#inst"); if(inst) inst.onclick = startInstall;
+  v.querySelector("#priv").onclick = privacy;
   v.querySelector("#exp").onclick = () => { exportData(); settings({msg:"Backup scaricato: " + APP_NAME + "-backup-" + today() + ".json"}); };
   const imp = v.querySelector("#imp");
   imp.onchange = () => { const f = imp.files && imp.files[0]; imp.value = ""; importFile(f, (m) => { if(m) settings(m); }); };
@@ -4584,6 +4909,7 @@ function finish(){
     <div class="score">${R.first}<small>/${R.total}</small></div>
     <p>${msg}</p>
     <span class="xpgain">+${R.xp} XP · ${S.streak} ${S.streak === 1 ? "giorno" : "giorni"} di fila</span>
+    <div class="res-inst"></div>
     <div class="row">
       ${pn && pct >= 80 && unitDone(R.unit) && unitIndex(R.unit) < UNITS.length-1 ? `<button class="btn btn-lion" id="nextu">Prossima unità</button>` : ""}
       ${pn && pct >= 80 && !unitDone(R.unit) ? `<button class="btn btn-lion" id="nextp">${np === 1 ? "Vai al blocco " + (nextBlock(R.unit) + 1) : "Vai alla parte " + np + " · " + PARTS[np-1].title}</button>` : ""}
@@ -4600,6 +4926,8 @@ function finish(){
   on("#again", () => pn === 1 ? startVocab(unit, blk) : PARTS[pn-1].start(unit));
   on("#rv", startReview);
   on("#hm", home);
+  const ib = pct >= 80 && pn ? installBanner() : null;
+  if(ib) v.querySelector(".res-inst").appendChild(ib); else v.querySelector(".res-inst").remove();
   mount(v);
 }
 
@@ -4907,10 +5235,16 @@ function woFinish(){
 
 applyPalette();
 try{ history.replaceState({s:"home"}, ""); }catch(e){}
-window.__goesting = { get session(){ return R; }, readBackup };  // usato solo dai test
+window.__goesting = { get session(){ return R; }, readBackup, installContext };  // usato solo dai test
+window.APP = { mascot: patatino, PALETTES };   // usato dagli script che generano icone e screenshot
 let restored = false;
 try{ restored = sessionStorage.getItem("patatino.restored") === "1"; sessionStorage.removeItem("patatino.restored"); }catch(e){}
-if(restored) settings({msg:"Backup ripristinato. Bentornato!"}); else home();
+// indirizzi diretti: …/#privacy (utile per gli store) e …/#installa
+const hash = (location.hash || "").slice(1);
+if(restored) settings({msg:"Backup ripristinato. Bentornato!"});
+else if(hash === "privacy"){ home(); privacy(); }
+else if(hash === "installa"){ home(); installScreen(); }
+else home();
 })();
 </script>
 <script>if("serviceWorker" in navigator && location.protocol.indexOf("http") === 0){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){});});}</script></body></html>
