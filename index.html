@@ -421,6 +421,23 @@ body{background:var(--bg)}
 .tab-ic{position:relative;display:grid;place-items:center;height:26px}
 .tab-n{position:absolute;top:-6px;left:16px;min-width:20px;height:20px;padding:0 5px;border-radius:999px;background:var(--deep);color:#fff;border:2px solid var(--ink);font-family:var(--f-mono);font-size:11px;line-height:16px;text-align:center}
 .tab-h{padding-top:6px}
+
+/* i tuoi dati: backup, ripristino, promemoria */
+.data-box{display:grid;gap:10px;margin-bottom:26px}
+.data-box .note{font-size:14px;color:var(--muted)}
+.data-msg{border:2.5px solid var(--ink);border-radius:14px;background:var(--surface);padding:10px 14px;font-size:15px}
+.data-msg.err{border-color:var(--bad);color:var(--bad);font-weight:700}
+.nudge{display:flex;align-items:flex-end;gap:10px;margin:0 0 22px}
+.nudge-art{flex:none;line-height:0}
+.nudge-box{flex:1;min-width:0;background:var(--surface);border:2.5px solid var(--ink);border-radius:16px 16px 16px 4px;box-shadow:0 4px 0 var(--bg-shade);padding:12px 14px}
+.nudge-box p{margin:0 0 10px;font-size:15px}
+.nudge-row{display:flex;gap:8px;flex-wrap:wrap}
+.nudge-row .btn{width:auto;flex:1 1 auto;padding:9px 12px;font-size:15px}
+.modal{position:fixed;inset:0;z-index:50;background:rgba(26,26,26,.45);display:grid;place-items:center;padding:16px}
+.modal-box{width:100%;max-width:420px;background:var(--surface);border:3px solid var(--ink);border-radius:18px;box-shadow:0 6px 0 var(--ink);padding:18px}
+.modal-box h3{margin:0 0 8px;font-size:20px}
+.modal-box p{margin:0 0 16px}
+.modal-row{display:grid;gap:10px}
 </style>
 
 <div id="app"></div>
@@ -3713,10 +3730,17 @@ const L = LOGIC;
 UNITS.forEach(u => { const n = NOTES[u.id]; if(n){ u.note = n.note; u.vlaams = n.vlaams; u.vocab = n.vocab; } const c = CORE[u.id]; u.core = c ? c.words : []; u.drills = c ? c.drills : []; });
 
 /* ---------- stato salvato ---------- */
-function fresh(){ return {xp:0, streak:0, last:null, best:{}, vbest:{}, vblk:{}, fc:{}, wob:{}, fcDir:"nl", wrong:[], audio:true, voice:"auto", palette:"frietkot"}; }
+function fresh(){ return {xp:0, streak:0, last:null, best:{}, vbest:{}, vblk:{}, fc:{}, wob:{}, fcDir:"nl", wrong:[], audio:true, voice:"auto", palette:"frietkot", lastExport:null, backupSnooze:null}; }
 function load(){ try{ const r = localStorage.getItem(KEY); if(r) return Object.assign(fresh(), JSON.parse(r)); }catch(e){} return fresh(); }
 function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} }
 let S = load();
+
+// chiede al browser di non cancellare i dati in caso di poco spazio (silenzioso se non supportato)
+try{
+  if(navigator.storage && navigator.storage.persist)
+    Promise.resolve(navigator.storage.persisted ? navigator.storage.persisted() : false)
+      .then(p => p || navigator.storage.persist()).catch(() => {});
+}catch(e){}
 
 /* ---------- utilità ---------- */
 const $ = (h) => { const t = document.createElement("template"); t.innerHTML = h.trim(); return t.content.firstElementChild; };
@@ -3906,6 +3930,119 @@ function tabBar(active){
   return bar;
 }
 
+/* ---------- I TUOI DATI: backup, ripristino, promemoria ---------- */
+// Ogni chiave localStorage dell'app comincia con KEY_PREFIX: l'export le prende tutte,
+// così una chiave aggiunta in futuro (es. "goesting.licenza") finisce nel backup da sola.
+const APP_NAME = "patatino";
+const KEY_PREFIX = "goesting.";
+const SCHEMA_VERSION = 1;
+const REMIND_DAYS = 30, SNOOZE_DAYS = 7;
+function appKeys(){
+  const out = [];
+  try{ for(let i = 0; i < localStorage.length; i++){ const k = localStorage.key(i); if(k && k.indexOf(KEY_PREFIX) === 0) out.push(k); } }catch(e){}
+  return out.sort();
+}
+function exportData(){
+  S.lastExport = new Date().toISOString(); S.backupSnooze = null; save();
+  const data = {};
+  appKeys().forEach(k => { try{ data[k] = localStorage.getItem(k); }catch(e){} });
+  const file = {app:APP_NAME, schemaVersion:SCHEMA_VERSION, exportedAt:S.lastExport, data};
+  const blob = new Blob([JSON.stringify(file, null, 2)], {type:"application/json"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url; a.download = APP_NAME + "-backup-" + today() + ".json";
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 4000);
+}
+// migrazioni dei file di backup: MIGRATIONS[n] porta un file dalla versione n alla n+1
+const MIGRATIONS = {
+  // v0: il solo stato dell'app salvato così com'è, senza involucro
+  0: (f) => ({app:APP_NAME, schemaVersion:1, exportedAt:f.exportedAt || null, data:{[KEY]: JSON.stringify(f.state)}})
+};
+const BadBackup = (msg) => Object.assign(new Error(msg), {bad:true});
+function readBackup(text){
+  let f;
+  try{ f = JSON.parse(text); }catch(e){ throw BadBackup("Il file non è un JSON valido."); }
+  if(!f || typeof f !== "object" || Array.isArray(f)) throw BadBackup("Il file non contiene un backup.");
+  if(f.app === undefined && f.schemaVersion === undefined && "xp" in f && "best" in f) f = {schemaVersion:0, state:f};
+  else if(f.app !== APP_NAME) throw BadBackup("Questo file non è un backup di Patatino.");
+  let v = Number(f.schemaVersion);
+  if(!Number.isInteger(v) || v < 0) throw BadBackup("Il file non indica una versione valida.");
+  if(v > SCHEMA_VERSION) throw BadBackup("Il backup viene da una versione più recente di Patatino: aggiorna l'app e riprova.");
+  while(v < SCHEMA_VERSION){ f = MIGRATIONS[v](f); v = f.schemaVersion; }
+  const d = f.data;
+  if(!d || typeof d !== "object" || Array.isArray(d)) throw BadBackup("Nel file mancano i dati.");
+  const keys = Object.keys(d).filter(k => k.indexOf(KEY_PREFIX) === 0 && typeof d[k] === "string");
+  if(!keys.includes(KEY)) throw BadBackup("Nel file mancano i progressi.");
+  let st;
+  try{ st = JSON.parse(d[KEY]); }catch(e){ throw BadBackup("I progressi nel file sono danneggiati."); }
+  if(!st || typeof st !== "object" || Array.isArray(st)) throw BadBackup("I progressi nel file sono danneggiati.");
+  return {exportedAt:f.exportedAt, data:keys.reduce((o, k) => (o[k] = d[k], o), {})};
+}
+function restoreBackup(b){
+  appKeys().forEach(k => { try{ localStorage.removeItem(k); }catch(e){} });
+  Object.keys(b.data).forEach(k => localStorage.setItem(k, b.data[k]));
+}
+// finestra di conferma in stile app; risolve true/false
+function ask(title, text, okLabel){
+  return new Promise(res => {
+    const m = $(`<div class="modal" role="dialog" aria-modal="true" aria-labelledby="mt"><div class="modal-box">
+      <h3 id="mt">${esc(title)}</h3><p>${text}</p>
+      <div class="modal-row"><button class="btn btn-deep" id="mok">${esc(okLabel)}</button><button class="btn btn-ghost" id="mno">Annulla</button></div>
+    </div></div>`);
+    const close = (r) => { m.remove(); document.removeEventListener("keydown", key, true); res(r); };
+    const key = (e) => { if(e.key === "Escape"){ e.preventDefault(); close(false); } else if(e.key === "Enter"){ e.preventDefault(); e.stopPropagation(); close(true); } };
+    m.querySelector("#mok").onclick = () => close(true);
+    m.querySelector("#mno").onclick = () => close(false);
+    m.onclick = (e) => { if(e.target === m) close(false); };
+    document.addEventListener("keydown", key, true);
+    document.body.appendChild(m);
+    m.querySelector("#mno").focus();
+  });
+}
+function importFile(file, done){
+  if(!file) return;
+  file.text().then(readBackup).then(b => {
+    const when = b.exportedAt && !isNaN(new Date(b.exportedAt)) ? " del " + new Date(b.exportedAt).toLocaleDateString("it-IT") : "";
+    return ask("Ripristinare il backup?", `I progressi e le impostazioni di questo dispositivo verranno <b>sostituiti</b> con quelli del backup${esc(when)}. Non si può annullare.`, "Sì, ripristina")
+      .then(ok => {
+        if(!ok) return done(null);
+        try{ restoreBackup(b); }catch(e){ return done({err:true, msg:"Non sono riuscito a salvare i dati: forse lo spazio è pieno."}); }
+        try{ sessionStorage.setItem("patatino.restored", "1"); }catch(e){}
+        location.reload();
+      });
+  }).catch(e => done({err:true, msg:e && e.bad ? e.message : "Non riesco a leggere il file."}));
+}
+const DAY_MS = 864e5;
+const hasProgress = () => S.xp > 0 || Object.keys(S.best || {}).length + Object.keys(S.vbest || {}).length + Object.keys(S.fc || {}).length > 0;
+function backupDue(){
+  const now = Date.now();
+  if(S.backupSnooze && now < new Date(S.backupSnooze).getTime()) return false;
+  if(!S.lastExport) return hasProgress();
+  const t = new Date(S.lastExport).getTime();
+  return isNaN(t) || now - t > REMIND_DAYS * DAY_MS;
+}
+// al massimo una volta per sessione (anche dopo un ricaricamento nella stessa scheda)
+let nudged = false;
+try{ nudged = sessionStorage.getItem("patatino.nudged") === "1"; }catch(e){}
+function backupNudge(){
+  if(nudged || !backupDue()) return null;
+  nudged = true;
+  try{ sessionStorage.setItem("patatino.nudged", "1"); }catch(e){}
+  const days = S.lastExport ? Math.floor((Date.now() - new Date(S.lastExport).getTime()) / DAY_MS) : 0;
+  const txt = S.lastExport
+    ? `Ehi, sono passati ${days} giorni dal tuo ultimo backup! Salviamo i progressi in un file?`
+    : "Ehi, i tuoi progressi stanno solo in questo browser. Salviamoli in un file, per sicurezza?";
+  const n = $(`<aside class="nudge" aria-label="Promemoria backup">
+    <span class="nudge-art">${patatino("wave", 64)}</span>
+    <div class="nudge-box"><p>${txt}</p>
+      <div class="nudge-row"><button class="btn btn-deep" id="nexp">Esporta ora</button><button class="btn btn-ghost" id="nlat">Più tardi</button></div>
+    </div></aside>`);
+  n.querySelector("#nexp").onclick = () => { exportData(); n.querySelector(".nudge-box").innerHTML = "<p style=\"margin:0\">Fatto, backup scaricato! Tienilo in un posto sicuro.</p>"; };
+  n.querySelector("#nlat").onclick = () => { S.backupSnooze = new Date(Date.now() + SNOOZE_DAYS * DAY_MS).toISOString(); save(); n.remove(); };
+  return n;
+}
+
 /* ---------- HOME ---------- */
 const GROUPS = [
   {t:"Le basi", s:"Pronomi, presente, articoli, numeri", u:["u1","u2","u3","u4","u5"]},
@@ -3939,10 +4076,11 @@ const partScore = (id, n) => {
 const unitDone = (id) => PARTS.every(p => partDone(id, p.n));
 const nextPart = (id) => (PARTS.find(p => !partDone(id, p.n)) || PARTS[PARTS.length-1]).n;
 // progressi salvati prima dei blocchi: un lessico già superato vale per tutti i blocchi
-(function migrate(){
+function migrate(){
   S.vblk = S.vblk || {};
   Object.keys(S.vbest || {}).forEach(id => { if(unitById(id) && !blocksOf(id).some(x => (id + ":" + x.b) in S.vblk)) blocksOf(id).forEach(x => S.vblk[id + ":" + x.b] = S.vbest[id]); });
-})();
+}
+migrate();
 function nextUnit(){ return UNITS.find(u => !unitDone(u.id)) || UNITS[UNITS.length-1]; }
 function partSub(u, n){
   if(n === 1){ const k = blocksOf(u.id).length; return (u.vocab ? u.vocab.length : 0) + " parole nuove da memorizzare" + (k > 1 ? ", in " + k + " blocchi" : ""); }
@@ -3985,6 +4123,7 @@ function home(){
       <span>Esercizi originali che seguono la sequenza di <i>Basic Dutch</i> (Routledge). Pronuncia: voce olandese del tuo dispositivo.</span>
     </footer>
   </div>`);
+  const nudge = backupNudge(); if(nudge) v.querySelector(".next").after(nudge);
   const path = v.querySelector("#path");
   GROUPS.forEach((g, gi) => {
     const ids = g.u.filter(id => unitById(id));
@@ -4030,7 +4169,10 @@ function home(){
 
 /* ---------- IMPOSTAZIONI ---------- */
 const SAMPLE = "Goedemorgen! Ik woon in Gent en ik leer Nederlands.";
-function settings(){
+let dataMsg = null;   // esito di export/import: resta se la schermata si ridisegna (voci, colori)
+function settings(msg){
+  if(msg && msg.msg) dataMsg = msg; else if(!document.querySelector(".pals")) dataMsg = null;
+  msg = dataMsg;
   screen({s:"settings"});
   const vs = nlVoices();
   const cur = phoneVoice();
@@ -4043,6 +4185,13 @@ function settings(){
         <span class="sw" style="background:${p.bg}"><i style="background:${p.deep}"></i><b>Aa</b></span>
         <span class="pt2"><b>${esc(p.name)}</b><span>${esc(p.sub)}</span></span>
       </button>`).join("")}</div>
+    <div class="sec-h"><h3>I tuoi dati</h3></div>
+    <div class="data-box">
+      ${msg ? `<div class="data-msg ${msg.err ? "err" : ""}" role="status">${esc(msg.msg)}</div>` : ""}
+      <span class="note">I progressi sono salvati solo in questo browser. ${S.lastExport && !isNaN(new Date(S.lastExport)) ? "Ultimo backup: " + new Date(S.lastExport).toLocaleDateString("it-IT") + "." : "Non hai ancora fatto un backup."}</span>
+      <button class="btn btn-ghost" id="exp">Esporta i miei dati</button>
+      <label class="btn btn-ghost" for="imp" tabindex="0" role="button">Importa backup</label><input type="file" id="imp" accept="application/json,.json" hidden>
+    </div>
     <div class="sec-h"><h3>Voce</h3></div>
     <div class="vlist">${vs.map(x => `<label class="vopt ${cur && cur.voiceURI === x.voiceURI ? "on" : ""}">
         <input type="radio" name="voice" value="${esc(x.voiceURI)}" ${cur && cur.voiceURI === x.voiceURI ? "checked" : ""}>
@@ -4058,6 +4207,11 @@ function settings(){
     e.preventDefault();
     const x = nlVoices().find(x => x.voiceURI === b.dataset.id); if(x) speakWith(SAMPLE, x, false);
   });
+  v.querySelector("#exp").onclick = () => { exportData(); settings({msg:"Backup scaricato: " + APP_NAME + "-backup-" + today() + ".json"}); };
+  const imp = v.querySelector("#imp");
+  imp.onchange = () => { const f = imp.files && imp.files[0]; imp.value = ""; importFile(f, (m) => { if(m) settings(m); }); };
+  const lab = v.querySelector("label[for=imp]");
+  lab.onkeydown = (e) => { if(e.key === "Enter" || e.key === " "){ e.preventDefault(); imp.click(); } };
   v.querySelector("#bk").onclick = home;
   v.querySelector("#bk2").onclick = home;
   mount(v);
@@ -4753,8 +4907,10 @@ function woFinish(){
 
 applyPalette();
 try{ history.replaceState({s:"home"}, ""); }catch(e){}
-window.__goesting = { get session(){ return R; } };  // usato solo dai test
-home();
+window.__goesting = { get session(){ return R; }, readBackup };  // usato solo dai test
+let restored = false;
+try{ restored = sessionStorage.getItem("patatino.restored") === "1"; sessionStorage.removeItem("patatino.restored"); }catch(e){}
+if(restored) settings({msg:"Backup ripristinato. Bentornato!"}); else home();
 })();
 </script>
 <script>if("serviceWorker" in navigator && location.protocol.indexOf("http") === 0){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){});});}</script></body></html>

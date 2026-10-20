@@ -20,6 +20,15 @@ Funziona nel browser, si installa sulla schermata Home e funziona anche offline.
 
 I progressi restano salvati nel browser di ogni dispositivo e non vengono toccati dagli aggiornamenti.
 
+## Backup dei dati
+
+In **Impostazioni → I tuoi dati**:
+- **Esporta i miei dati** scarica `patatino-backup-AAAA-MM-GG.json` con tutte le chiavi `localStorage` dell'app (quelle che iniziano con `goesting.`).
+- **Importa backup** ripristina un file esportato, dopo una conferma. Accetta anche backup di versioni precedenti del formato (`schemaVersion`).
+
+Se l'ultimo backup ha più di 30 giorni (o non ne hai mai fatto uno, ma hai già dei progressi), Patatino te lo ricorda in home; "Più tardi" rimanda di 7 giorni.
+All'avvio l'app chiede al browser di conservare i dati in modo persistente.
+
 ## Pronuncia
 
 L'app usa la voce olandese del dispositivo.
