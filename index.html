@@ -346,6 +346,81 @@ body{background:var(--bg)}
 .grp.gdone .grp-h{background:var(--lion-soft)}
 .grp .unit:last-child{border-bottom:0}
 .unit.cur .num{background:var(--deep);border-color:var(--ink);color:#fff}
+
+/* flashcards */
+.fc-tile{margin-bottom:14px}
+.fc-tile + .review{margin-top:0}
+.fc-ic{position:relative;flex:none;width:38px;height:38px}
+.fc-ic i{position:absolute;width:26px;height:32px;border:2.5px solid var(--ink);border-radius:6px;background:var(--surface)}
+.fc-ic i:first-child{left:2px;top:4px;transform:rotate(-10deg);background:var(--lion-soft)}
+.fc-ic i:last-child{left:10px;top:2px;transform:rotate(8deg);background:var(--deep)}
+.fc-due{margin-bottom:20px}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:22px}
+.seg-b{background:var(--surface);border:2.5px solid var(--ink);border-radius:12px;padding:10px 6px;font-size:13px;font-weight:700;line-height:1.2;box-shadow:0 3px 0 var(--bg-shade)}
+.seg-b.on{background:var(--deep);color:#fff}
+.decks{display:grid;gap:10px;margin-bottom:24px}
+.deck{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;text-align:left;background:var(--surface);border:2.5px solid var(--ink);border-radius:16px;padding:14px;box-shadow:0 4px 0 var(--bg-shade)}
+.dk-t{min-width:0;display:flex;flex-direction:column;gap:2px}
+.dk-t b{font-family:var(--f-display);font-size:17px;font-weight:800;line-height:1.2}
+.dk-t span{color:var(--muted);font-size:13px}
+.dk-r{display:flex;flex-direction:column;align-items:flex-end;gap:5px}
+.dk-n{font-family:var(--f-mono);font-size:11px;color:var(--muted);white-space:nowrap}
+.fc-badge{font-family:var(--f-mono);font-size:11px;padding:3px 8px;border-radius:999px;border:2px solid var(--ink);background:var(--lion-soft);white-space:nowrap}
+.fc-badge.due{background:var(--deep);color:#fff}
+.fc-badge.ok{background:var(--good-bg)}
+.fc-wrap{position:relative;margin-top:14px;perspective:1200px;-webkit-perspective:1200px}
+.fc{display:block;width:100%;min-height:290px;padding:0;border:0;background:none;text-align:center;cursor:pointer}
+.fc-in{position:relative;display:block;width:100%;min-height:290px;transition:transform .45s cubic-bezier(.2,.7,.3,1);transform-style:preserve-3d;-webkit-transform-style:preserve-3d}
+.fc.flipped .fc-in{transform:rotateY(180deg)}
+.fc-face{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:28px 20px;background:var(--surface);border:3px solid var(--ink);border-radius:22px;box-shadow:0 7px 0 var(--bg-shade);backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.fc-b{transform:rotateY(180deg);background:var(--lion-soft)}
+.fc.good .fc-b{background:var(--good-bg)}
+.fc.bad .fc-b{background:var(--bad-bg)}
+.fc-txt{font-family:var(--f-display);font-size:34px;font-weight:800;line-height:1.15;overflow-wrap:anywhere;text-wrap:balance;max-width:100%}
+.fc-sub{font-family:var(--f-mono);font-size:15px;color:var(--ink);line-height:1.45;overflow-wrap:anywhere;max-width:100%}
+.fc-hint{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.fc-mark{font-weight:700;font-size:16px}
+.fc-mark:empty{display:none}
+.fc-say{position:absolute;right:12px;top:12px;width:46px;height:46px;z-index:2}
+.fc-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.fc-art{font-family:var(--f-display);font-size:22px;font-weight:800}
+.fc-art.right{background:var(--good-bg)}
+.fc-art:disabled{opacity:1}
+.fc-done-h{font-size:28px;font-weight:800}
+@media (prefers-reduced-motion:reduce){.fc-in{transition:none}}
+
+/* ordine delle parole */
+.wo-ic{position:relative;flex:none;width:38px;height:38px;display:flex;flex-direction:column;justify-content:center;gap:4px}
+.wo-ic i{display:block;height:8px;border:2.5px solid var(--ink);border-radius:4px;background:var(--surface)}
+.wo-ic i:nth-child(1){width:22px}
+.wo-ic i:nth-child(2){width:34px;background:var(--deep)}
+.wo-ic i:nth-child(3){width:28px;margin-left:6px;background:var(--lion-soft)}
+.rulebtn{display:inline-flex;align-items:center;gap:6px;background:var(--surface);border:2px solid var(--ink);border-radius:999px;padding:5px 12px;font-size:13px;font-weight:700;margin:2px 0 6px}
+.rulebtn::before{content:"?";display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--deep);color:#fff;font-size:12px}
+.rulebox{background:var(--surface);border:2.5px solid var(--ink);border-radius:14px;padding:12px 14px;font-size:15px;line-height:1.5;margin-bottom:8px}
+.slot.chunks,.bank.chunks{gap:8px}
+.tok.lock{background:var(--lion-soft);border-style:dashed;cursor:default}
+.wdiag{background:#fff;border:2px solid var(--ink);border-radius:12px;padding:10px;color:var(--ink);display:grid;gap:8px}
+.wpills{display:flex;flex-wrap:wrap;gap:6px}
+.wp{border:2px solid var(--ink);border-radius:8px;padding:3px 9px;font-size:15px;font-weight:700;background:var(--surface)}
+.wp.pv{background:var(--deep);color:#fff}
+.wp.pe{background:var(--lion-soft);box-shadow:inset 0 -4px 0 var(--deep)}
+.wleg{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--muted)}
+.wl{display:inline-flex;align-items:center;gap:5px}
+.wl i{width:14px;height:14px;border:2px solid var(--ink);border-radius:4px;display:inline-block}
+.wl i.pv{background:var(--deep)}
+.wl i.pe{background:var(--lion-soft);box-shadow:inset 0 -3px 0 var(--deep)}
+
+.btn:disabled{opacity:1;background:var(--surface);color:var(--muted);box-shadow:0 3px 0 var(--bg-shade)}
+
+/* barra delle sezioni */
+.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:7;display:grid;grid-template-columns:repeat(3,1fr);gap:6px;background:var(--surface);border-top:3px solid var(--ink);
+  padding:8px max(12px,env(safe-area-inset-right,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px))}
+.tab{display:flex;flex-direction:column;align-items:center;gap:2px;background:none;border:2.5px solid transparent;border-radius:14px;padding:6px 4px 5px;font-size:12px;font-weight:700;color:var(--muted);max-width:180px;width:100%;justify-self:center}
+.tab.on{color:var(--ink);background:var(--bg);border-color:var(--ink);box-shadow:0 3px 0 var(--ink)}
+.tab-ic{position:relative;display:grid;place-items:center;height:26px}
+.tab-n{position:absolute;top:-6px;left:16px;min-width:20px;height:20px;padding:0 5px;border-radius:999px;background:var(--deep);color:#fff;border:2px solid var(--ink);font-family:var(--f-mono);font-size:11px;line-height:16px;text-align:center}
+.tab-h{padding-top:6px}
 </style>
 
 <div id="app"></div>
@@ -883,7 +958,7 @@ const LOGIC = (function(){
   function dutchOf(it){
     if(it.say) return it.say;
     if(it.t === "tr") return it.a[0];
-    if(it.t === "order") return it.a;
+    if(it.t === "order") return Array.isArray(it.a) ? it.a.join(" ") : it.a;
     const val = it.t === "mc" ? it.o[it.a] : it.a[0];
     if(it.q.includes("___")) return fillSentence(it, val);
     return null;
@@ -1158,6 +1233,692 @@ u10: {
 }
 };
 if (typeof module !== "undefined") module.exports = CORE;
+
+// Mazzi di flashcard. Ogni carta: [neerlandese, italiano, dettaglio facoltativo]
+// kind "card": carta da girare · kind "dehet": si sceglie l'articolo (carta: [nome, articolo, italiano])
+// sayExtra: true se il dettaglio è in neerlandese e va letto ad alta voce
+const DECKS = [
+{
+  id:"irr1", g:"Grammatica", t:"Verbi irregolari · i più comuni", s:"Imperfetto e participio dei verbi forti di tutti i giorni", sayExtra:true,
+  cards:[
+    ["zijn","essere","was · waren · is geweest"],
+    ["hebben","avere","had · hadden · heeft gehad"],
+    ["gaan","andare","ging · gingen · is gegaan"],
+    ["komen","venire","kwam · kwamen · is gekomen"],
+    ["doen","fare","deed · deden · heeft gedaan"],
+    ["zien","vedere","zag · zagen · heeft gezien"],
+    ["eten","mangiare","at · aten · heeft gegeten"],
+    ["drinken","bere","dronk · dronken · heeft gedronken"],
+    ["lezen","leggere","las · lazen · heeft gelezen"],
+    ["schrijven","scrivere","schreef · schreven · heeft geschreven"],
+    ["spreken","parlare","sprak · spraken · heeft gesproken"],
+    ["nemen","prendere","nam · namen · heeft genomen"],
+    ["geven","dare","gaf · gaven · heeft gegeven"],
+    ["krijgen","ricevere","kreeg · kregen · heeft gekregen"],
+    ["vinden","trovare","vond · vonden · heeft gevonden"],
+    ["denken","pensare","dacht · dachten · heeft gedacht"],
+    ["brengen","portare","bracht · brachten · heeft gebracht"],
+    ["kopen","comprare","kocht · kochten · heeft gekocht"],
+    ["zoeken","cercare","zocht · zochten · heeft gezocht"],
+    ["weten","sapere","wist · wisten · heeft geweten"],
+    ["kunnen","potere, saper fare","kon · konden · heeft gekund"],
+    ["willen","volere","wilde (wou) · wilden · heeft gewild"],
+    ["mogen","avere il permesso","mocht · mochten · heeft gemogen"],
+    ["moeten","dovere","moest · moesten · heeft gemoeten"],
+    ["zeggen","dire","zei · zeiden · heeft gezegd"],
+    ["vragen","chiedere","vroeg · vroegen · heeft gevraagd"],
+    ["blijven","restare","bleef · bleven · is gebleven"],
+    ["worden","diventare","werd · werden · is geworden"],
+    ["staan","stare in piedi","stond · stonden · heeft gestaan"],
+    ["zitten","stare seduto","zat · zaten · heeft gezeten"],
+    ["liggen","essere sdraiato","lag · lagen · heeft gelegen"],
+    ["kijken","guardare","keek · keken · heeft gekeken"]
+  ]
+},
+{
+  id:"irr2", g:"Grammatica", t:"Verbi irregolari · secondo livello", s:"Altri verbi forti e misti da conoscere", sayExtra:true,
+  cards:[
+    ["beginnen","cominciare","begon · begonnen · is begonnen"],
+    ["vergeten","dimenticare","vergat · vergaten · heeft/is vergeten"],
+    ["begrijpen","capire","begreep · begrepen · heeft begrepen"],
+    ["slapen","dormire","sliep · sliepen · heeft geslapen"],
+    ["lopen","camminare (in Belgio spesso: correre)","liep · liepen · heeft/is gelopen"],
+    ["roepen","chiamare (a voce)","riep · riepen · heeft geroepen"],
+    ["vallen","cadere","viel · vielen · is gevallen"],
+    ["houden","tenere","hield · hielden · heeft gehouden"],
+    ["helpen","aiutare","hielp · hielpen · heeft geholpen"],
+    ["zingen","cantare","zong · zongen · heeft gezongen"],
+    ["zwemmen","nuotare","zwom · zwommen · heeft/is gezwommen"],
+    ["rijden","guidare, andare (in auto/bici)","reed · reden · heeft/is gereden"],
+    ["vliegen","volare","vloog · vlogen · heeft/is gevlogen"],
+    ["verliezen","perdere","verloor · verloren · heeft verloren"],
+    ["kiezen","scegliere","koos · kozen · heeft gekozen"],
+    ["liegen","mentire","loog · logen · heeft gelogen"],
+    ["winnen","vincere","won · wonnen · heeft gewonnen"],
+    ["sluiten","chiudere","sloot · sloten · heeft gesloten"],
+    ["trekken","tirare","trok · trokken · heeft getrokken"],
+    ["dragen","portare (addosso)","droeg · droegen · heeft gedragen"],
+    ["slaan","colpire","sloeg · sloegen · heeft geslagen"],
+    ["breken","rompere","brak · braken · heeft/is gebroken"],
+    ["sterven","morire","stierf · stierven · is gestorven"],
+    ["verdwijnen","sparire","verdween · verdwenen · is verdwenen"],
+    ["bieden","offrire","bood · boden · heeft geboden"],
+    ["hangen","essere appeso, appendere","hing · hingen · heeft gehangen"],
+    ["lachen","ridere","lachte · lachten · heeft gelachen"],
+    ["bakken","cuocere al forno","bakte · bakten · heeft gebakken"],
+    ["wassen","lavare","waste · wasten · heeft gewassen"],
+    ["zenden","spedire, trasmettere","zond · zonden · heeft gezonden"]
+  ]
+},
+{
+  id:"dehet", g:"Grammatica", t:"De of het?", s:"Scegli l'articolo giusto di 50 nomi frequenti", kind:"dehet",
+  cards:[
+    ["huis","het","la casa"],["man","de","l'uomo"],["boek","het","il libro"],["vrouw","de","la donna"],["kind","het","il bambino"],
+    ["tafel","de","il tavolo"],["meisje","het","la ragazza"],["stoel","de","la sedia"],["water","het","l'acqua"],["deur","de","la porta"],
+    ["brood","het","il pane"],["auto","de","l'auto"],["jaar","het","l'anno"],["fiets","de","la bici"],["uur","het","l'ora"],
+    ["stad","de","la città"],["raam","het","la finestra"],["straat","de","la strada"],["bed","het","il letto"],["dag","de","il giorno"],
+    ["land","het","il paese (nazione)"],["week","de","la settimana"],["dorp","het","il paese (villaggio)"],["tijd","de","il tempo"],["werk","het","il lavoro"],
+    ["vraag","de","la domanda"],["weer","het","il tempo (meteo)"],["school","de","la scuola"],["geld","het","i soldi"],["kat","de","il gatto"],
+    ["glas","het","il bicchiere"],["hond","de","il cane"],["kantoor","het","l'ufficio"],["trein","de","il treno"],["station","het","la stazione"],
+    ["winkel","de","il negozio"],["ziekenhuis","het","l'ospedale"],["kamer","de","la stanza"],["restaurant","het","il ristorante"],["keuken","de","la cucina"],
+    ["museum","het","il museo"],["krant","de","il giornale"],["probleem","het","il problema"],["koffie","de","il caffè"],["antwoord","het","la risposta"],
+    ["taal","de","la lingua"],["woord","het","la parola"],["telefoon","de","il telefono"],["feest","het","la festa"],["sleutel","de","la chiave"]
+  ]
+},
+{
+  id:"sep", g:"Grammatica", t:"Verbi separabili", s:"Con la forma al presente e al passato prossimo", sayExtra:true,
+  cards:[
+    ["opstaan","alzarsi","ik sta op · ik ben opgestaan"],
+    ["opbellen","telefonare","ik bel op · ik heb opgebeld"],
+    ["meegaan","andare con, accompagnare","ik ga mee · ik ben meegegaan"],
+    ["meenemen","portare con sé","ik neem mee · ik heb meegenomen"],
+    ["aankomen","arrivare","ik kom aan · ik ben aangekomen"],
+    ["uitgaan","uscire (la sera)","ik ga uit · ik ben uitgegaan"],
+    ["binnenkomen","entrare","ik kom binnen · ik ben binnengekomen"],
+    ["terugkomen","tornare","ik kom terug · ik ben teruggekomen"],
+    ["weggaan","andare via","ik ga weg · ik ben weggegaan"],
+    ["afspreken","darsi appuntamento","ik spreek af · ik heb afgesproken"],
+    ["uitnodigen","invitare","ik nodig uit · ik heb uitgenodigd"],
+    ["opruimen","mettere in ordine","ik ruim op · ik heb opgeruimd"],
+    ["schoonmaken","pulire","ik maak schoon · ik heb schoongemaakt"],
+    ["afwassen","lavare i piatti","ik was af · ik heb afgewassen"],
+    ["ophalen","andare a prendere","ik haal op · ik heb opgehaald"],
+    ["invullen","compilare","ik vul in · ik heb ingevuld"],
+    ["zich aankleden","vestirsi","ik kleed me aan · ik heb me aangekleed"],
+    ["uitstappen","scendere (da un mezzo)","ik stap uit · ik ben uitgestapt"],
+    ["instappen","salire (su un mezzo)","ik stap in · ik ben ingestapt"],
+    ["thuiskomen","tornare a casa","ik kom thuis · ik ben thuisgekomen"]
+  ]
+},
+{
+  id:"prep", g:"Grammatica", t:"Verbi con preposizione", s:"La preposizione fissa e una frase d'esempio", sayExtra:true,
+  cards:[
+    ["wachten op","aspettare","Ik wacht op de bus."],
+    ["denken aan","pensare a","Ik denk aan jou."],
+    ["houden van","amare, voler bene a","Ik hou van muziek."],
+    ["kijken naar","guardare","We kijken naar een film."],
+    ["luisteren naar","ascoltare","Hij luistert naar de radio."],
+    ["praten over","parlare di","We praten over het werk."],
+    ["zorgen voor","occuparsi di","Zij zorgt voor de kinderen."],
+    ["bang zijn voor","avere paura di","Ik ben bang voor honden."],
+    ["trots zijn op","essere fiero di","Ze is trots op haar zoon."],
+    ["boos zijn op","essere arrabbiato con","Hij is boos op mij."],
+    ["verliefd zijn op","essere innamorato di","Ik ben verliefd op haar."],
+    ["beginnen met","cominciare (a fare)","We beginnen met de les."],
+    ["stoppen met","smettere di","Hij stopt met roken."],
+    ["helpen met","aiutare con","Kun je me helpen met de koffers?"],
+    ["genieten van","godersi","We genieten van het weer."],
+    ["dromen van","sognare","Ik droom van een reis."],
+    ["deelnemen aan","partecipare a","Ik neem deel aan de cursus."],
+    ["vragen naar","chiedere di, informarsi su","Hij vraagt naar de weg."],
+    ["geïnteresseerd zijn in","essere interessato a","Ik ben geïnteresseerd in kunst."],
+    ["rekenen op","contare su","Je kunt op mij rekenen."]
+  ]
+},
+{
+  id:"opp", g:"Grammatica", t:"Aggettivi opposti", s:"Impara gli aggettivi a coppie", sayExtra:false,
+  cards:[
+    ["groot ↔ klein","grande ↔ piccolo"],["lang ↔ kort","lungo ↔ corto"],["oud ↔ nieuw","vecchio ↔ nuovo"],["oud ↔ jong","vecchio ↔ giovane"],
+    ["warm ↔ koud","caldo ↔ freddo"],["duur ↔ goedkoop","caro ↔ economico"],["snel ↔ traag","veloce ↔ lento"],["goed ↔ slecht","buono ↔ cattivo"],
+    ["mooi ↔ lelijk","bello ↔ brutto"],["makkelijk ↔ moeilijk","facile ↔ difficile"],["licht ↔ donker","chiaro ↔ scuro"],["licht ↔ zwaar","leggero ↔ pesante"],
+    ["vol ↔ leeg","pieno ↔ vuoto"],["open ↔ dicht","aperto ↔ chiuso"],["vroeg ↔ laat","presto ↔ tardi"],["blij ↔ verdrietig","felice ↔ triste"],
+    ["druk ↔ rustig","affollato ↔ tranquillo"],["sterk ↔ zwak","forte ↔ debole"],["rijk ↔ arm","ricco ↔ povero"],["dik ↔ dun","grosso, grasso ↔ sottile, magro"]
+  ]
+},
+{
+  id:"num", g:"Lessico", t:"Numeri", s:"Da 0 a 1000 e i primi ordinali",
+  cards:[
+    ["nul","0"],["één","1"],["twee","2"],["drie","3"],["vier","4"],["vijf","5"],["zes","6"],["zeven","7"],["acht","8"],["negen","9"],
+    ["tien","10"],["elf","11"],["twaalf","12"],["dertien","13"],["veertien","14"],["vijftien","15"],["zestien","16"],["zeventien","17"],["achttien","18"],["negentien","19"],
+    ["twintig","20"],["eenentwintig","21"],["dertig","30"],["veertig","40"],["vijftig","50"],["zestig","60"],["zeventig","70"],["tachtig","80"],["negentig","90"],
+    ["honderd","100"],["duizend","1000"],["eerste","primo"],["tweede","secondo"],["derde","terzo"],["achtste","ottavo"]
+  ]
+},
+{
+  id:"cal", g:"Lessico", t:"Giorni, mesi e stagioni", s:"Il calendario e le parole del tempo",
+  cards:[
+    ["maandag","lunedì"],["dinsdag","martedì"],["woensdag","mercoledì"],["donderdag","giovedì"],["vrijdag","venerdì"],["zaterdag","sabato"],["zondag","domenica"],
+    ["januari","gennaio"],["februari","febbraio"],["maart","marzo"],["april","aprile"],["mei","maggio"],["juni","giugno"],["juli","luglio"],["augustus","agosto"],
+    ["september","settembre"],["oktober","ottobre"],["november","novembre"],["december","dicembre"],
+    ["de lente","la primavera"],["de zomer","l'estate"],["de herfst","l'autunno"],["de winter","l'inverno"],
+    ["vandaag","oggi"],["morgen","domani"],["gisteren","ieri"],["overmorgen","dopodomani"],["eergisteren","l'altro ieri"],["het weekend","il fine settimana"]
+  ]
+},
+{
+  id:"fam", g:"Lessico", t:"Famiglia e persone", s:"Parenti, amici e relazioni",
+  cards:[
+    ["de vader","il padre"],["de moeder","la madre"],["de ouders","i genitori"],["de zoon","il figlio"],["de dochter","la figlia"],
+    ["de broer","il fratello"],["de zus","la sorella"],["de opa","il nonno"],["de oma","la nonna"],["de oom","lo zio"],["de tante","la zia"],
+    ["de neef","il cugino, il nipote"],["de nicht","la cugina, la nipote"],["de man","il marito"],["de vrouw","la moglie"],
+    ["de kinderen","i figli, i bambini"],["de baby","il neonato"],["de schoonmoeder","la suocera"],["de vriend","l'amico, il ragazzo"],["de vriendin","l'amica, la ragazza"],
+    ["de buurman","il vicino di casa"],["de collega","il collega"]
+  ]
+},
+{
+  id:"food", g:"Lessico", t:"Cibo e bevande", s:"Al bar, al ristorante, al frietkot",
+  cards:[
+    ["het brood","il pane"],["het broodje","il panino"],["de boterham","la fetta di pane"],["de pistolet","il panino tondo (tipico belga)"],
+    ["de kaas","il formaggio"],["de ham","il prosciutto"],["het ei","l'uovo"],["de boter","il burro"],["de melk","il latte"],
+    ["de koffie","il caffè"],["de thee","il tè"],["het water","l'acqua"],["het bier","la birra"],["de wijn","il vino"],
+    ["de frieten","le patatine fritte"],["de mayonaise","la maionese"],["de mosselen","le cozze"],["de wafel","la cialda, il waffle"],["de chocolade","il cioccolato"],
+    ["de soep","la zuppa"],["het vlees","la carne"],["de vis","il pesce"],["de kip","il pollo"],["de groenten","la verdura"],["het fruit","la frutta"],
+    ["de aardappel","la patata"],["de rijst","il riso"],["de suiker","lo zucchero"],["het zout","il sale"],["Smakelijk!","Buon appetito!"]
+  ]
+},
+{
+  id:"city", g:"Lessico", t:"In città", s:"Trasporti, negozi e indicazioni",
+  cards:[
+    ["het station","la stazione"],["de bus","l'autobus"],["de tram","il tram"],["de trein","il treno"],["de metro","la metropolitana"],
+    ["de halte","la fermata"],["het perron","il binario"],["het ticket","il biglietto"],["de straat","la strada"],["het plein","la piazza"],
+    ["de kerk","la chiesa"],["het stadhuis","il municipio"],["het museum","il museo"],["de winkel","il negozio"],["de supermarkt","il supermercato"],
+    ["de bakker","il fornaio"],["de apotheek","la farmacia"],["de bank","la banca"],["het ziekenhuis","l'ospedale"],["de brug","il ponte"],
+    ["de hoek","l'angolo"],["links","a sinistra"],["rechts","a destra"],["rechtdoor","dritto"]
+  ]
+},
+{
+  id:"home", g:"Lessico", t:"In casa", s:"Stanze, mobili e oggetti",
+  cards:[
+    ["het huis","la casa"],["het appartement","l'appartamento"],["de slaapkamer","la camera da letto"],["de badkamer","il bagno"],["de keuken","la cucina"],
+    ["de woonkamer","il soggiorno"],["het toilet","il gabinetto"],["de deur","la porta"],["het raam","la finestra"],["de trap","la scala"],
+    ["de tuin","il giardino"],["de tafel","il tavolo"],["de stoel","la sedia"],["het bed","il letto"],["de kast","l'armadio"],
+    ["de lamp","la lampada"],["de koelkast","il frigorifero"],["de wasmachine","la lavatrice"],["de sleutel","la chiave"],["de muur","il muro"]
+  ]
+},
+{
+  id:"body", g:"Lessico", t:"Corpo e salute", s:"Dal medico e in farmacia",
+  cards:[
+    ["het hoofd","la testa"],["het haar","i capelli"],["het oog","l'occhio"],["het oor","l'orecchio"],["de neus","il naso"],["de mond","la bocca"],
+    ["de tand","il dente"],["de keel","la gola"],["de arm","il braccio"],["de hand","la mano"],["de vinger","il dito"],["de buik","la pancia"],
+    ["de rug","la schiena"],["het been","la gamba"],["de voet","il piede"],["het hart","il cuore"],
+    ["ziek","malato"],["de huisarts","il medico di famiglia"],["het medicijn","la medicina"],["de koorts","la febbre"],
+    ["de hoofdpijn","il mal di testa"],["verkouden","raffreddato"],["Ik voel me niet goed.","Non mi sento bene."]
+  ]
+},
+{
+  id:"work", g:"Lessico", t:"Lavoro e ufficio", s:"Le parole per il lavoro in Belgio",
+  cards:[
+    ["het werk","il lavoro"],["de job","il lavoro, l'impiego"],["het kantoor","l'ufficio"],["de collega","il collega"],["de baas","il capo"],
+    ["de vergadering","la riunione"],["de afspraak","l'appuntamento"],["de e-mail","l'e-mail"],["het loon","lo stipendio"],["het contract","il contratto"],
+    ["de klant","il cliente"],["het bedrijf","l'azienda"],["de pauze","la pausa"],["thuiswerken","lavorare da casa"],["solliciteren","candidarsi"],
+    ["het verlof","le ferie, il congedo"],["ziek zijn","essere in malattia"],["de computer","il computer"]
+  ]
+},
+{
+  id:"weather", g:"Lessico", t:"Il tempo che fa", s:"Indispensabile in Belgio",
+  cards:[
+    ["het weer","il tempo (meteo)"],["de zon","il sole"],["de regen","la pioggia"],["Het regent.","Piove."],["Het waait.","Tira vento."],
+    ["Het sneeuwt.","Nevica."],["Het vriest.","Gela."],["de wind","il vento"],["de wolk","la nuvola"],["bewolkt","nuvoloso"],
+    ["zonnig","soleggiato"],["nat","bagnato"],["de paraplu","l'ombrello"],["het onweer","il temporale"],["Wat voor weer is het?","Che tempo fa?"]
+  ]
+},
+{
+  id:"col", g:"Lessico", t:"Colori", s:"I colori di base",
+  cards:[
+    ["rood","rosso"],["oranje","arancione"],["geel","giallo"],["groen","verde"],["blauw","blu"],["paars","viola"],
+    ["roze","rosa"],["bruin","marrone"],["zwart","nero"],["wit","bianco"],["grijs","grigio"],["lichtblauw","azzurro"]
+  ]
+},
+{
+  id:"expr", g:"Lessico", t:"Espressioni utili", s:"Frasi pronte per la vita di tutti i giorni",
+  cards:[
+    ["Goeiedag!","Buongiorno!"],["Dag!","Ciao! (arrivando o andando via)"],["Tot ziens!","Arrivederci!"],["Tot straks!","A dopo!"],["Tot morgen!","A domani!"],
+    ["Dank u wel.","Grazie. (cortese)"],["Alstublieft.","Prego, ecco a Lei. / Per favore."],["Graag gedaan.","Di niente."],["Sorry.","Scusa."],
+    ["Hoe gaat het?","Come va?"],["Het gaat goed.","Va bene."],["Ik begrijp het niet.","Non capisco."],["Kunt u dat herhalen?","Può ripetere?"],
+    ["Spreekt u Engels?","Parla inglese?"],["Hoeveel kost dat?","Quanto costa?"],["Waar is het toilet?","Dov'è il bagno?"],["Ik weet het niet.","Non lo so."],
+    ["Geen probleem.","Nessun problema."],["Gezondheid!","Salute! (dopo uno starnuto)"],["Proficiat!","Congratulazioni!"]
+  ]
+},
+{
+  id:"vlaams", g:"Vlaams", t:"Parole fiamminghe", s:"Come si dice in Belgio, e cosa diresti nei Paesi Bassi", sayExtra:false,
+  cards:[
+    ["de gsm","il cellulare","Nei Paesi Bassi: de mobiel, het mobieltje"],
+    ["de frieten","le patatine fritte","Nei Paesi Bassi: patat (al nord), friet (al sud)"],
+    ["een pintje","una birra (alla spina)","Nei Paesi Bassi: een biertje, een pilsje"],
+    ["goesting hebben","avere voglia","Nei Paesi Bassi: zin hebben"],
+    ["plezant","piacevole, divertente","Nei Paesi Bassi: leuk"],
+    ["Amai!","Accidenti! / Caspita!","Esclamazione di sorpresa"],
+    ["Allez!","Dai! / Su!","Per incoraggiare o per dire «andiamo»"],
+    ["seffens","tra poco","Nei Paesi Bassi: zo meteen"],
+    ["efkes","un attimo","Nei Paesi Bassi: even"],
+    ["de voormiddag","la mattina","Nei Paesi Bassi: de ochtend"],
+    ["de namiddag","il pomeriggio","Nei Paesi Bassi: de middag"],
+    ["de zetel","il divano","Nei Paesi Bassi: de bank"],
+    ["de frigo","il frigorifero","Nei Paesi Bassi: de koelkast"],
+    ["de lavabo","il lavandino","Nei Paesi Bassi: de wastafel"],
+    ["de living","il soggiorno","Nei Paesi Bassi: de woonkamer"],
+    ["de nonkel","lo zio","Nei Paesi Bassi: de oom"],
+    ["de bompa","il nonno","Nei Paesi Bassi: de opa"],
+    ["de bomma","la nonna","Nei Paesi Bassi: de oma"],
+    ["schoon","bello","Nei Paesi Bassi schoon significa «pulito»"],
+    ["content","contento","Usato anche nei Paesi Bassi; lì più spesso: tevreden, blij"],
+    ["ambetant","fastidioso","Nei Paesi Bassi: vervelend"],
+    ["kuisen","pulire","Nei Paesi Bassi: schoonmaken"],
+    ["babbelen","chiacchierare","Usato anche nei Paesi Bassi; lì più spesso: kletsen"],
+    ["het kot","la stanza da studente","Nei Paesi Bassi: de studentenkamer"],
+    ["Wablieft?","Come, scusi?","Nei Paesi Bassi: Wat zegt u? / Pardon?"],
+    ["Proficiat!","Congratulazioni!","Usato anche nei Paesi Bassi; lì più spesso: Gefeliciteerd!"]
+  ]
+}
+];
+if (typeof module !== "undefined") module.exports = DECKS;
+
+// Esercizi "Ordine delle parole" (contenuti originali)
+
+const ORDER_SETS = [
+  {
+    id: "v2", unit: "u10",
+    t: "Il verbo al secondo posto",
+    s: "Soggetto, verbo, resto",
+    rule: `Nella frase principale il verbo coniugato sta sempre al <b>secondo posto</b>. In queste frasi al primo posto c'è il soggetto: <b>soggetto – verbo – resto</b>. Se metti un luogo o un tempo all'inizio, il soggetto passa dopo il verbo.`,
+    items: [
+      { it: "Lavoro a Bruxelles.", a: ["Ik","werk","in Brussel"], alt: [["In Brussel","werk","ik"]], start: 0, v: [1], end: [],
+        e: "Soggetto <b>ik</b>, poi il verbo <b>werk</b> al 2° posto, poi il luogo." },
+      { it: "Mia sorella abita a Gand.", a: ["Mijn zus","woont","in Gent"], alt: [["In Gent","woont","mijn zus"]], start: 0, v: [1], end: [],
+        e: "<b>Mijn zus</b> è un solo blocco (il soggetto), quindi <b>woont</b> è comunque al 2° posto." },
+      { it: "Bevo un caffè.", a: ["Ik","drink","een koffie"], alt: [], start: 0, v: [1], end: [],
+        e: "Soggetto – verbo – oggetto, come in italiano, ma il soggetto non si omette mai." },
+      { it: "Mio padre legge il giornale.", a: ["Mijn vader","leest","de krant"], alt: [], start: 0, v: [1], end: [],
+        e: "Il verbo <b>leest</b> viene subito dopo il soggetto, l'oggetto dopo il verbo." },
+      { it: "Parliamo olandese.", a: ["Wij","spreken","Nederlands"], alt: [["Nederlands","spreken","wij"]], start: 0, v: [1], end: [],
+        e: "<b>Wij</b> è obbligatorio; il verbo è al 2° posto." },
+      { it: "I bambini giocano in giardino.", a: ["De kinderen","spelen","in de tuin"], alt: [["In de tuin","spelen","de kinderen"]], start: 0, v: [1], end: [],
+        e: "Soggetto (due parole, un blocco) – verbo – luogo." },
+      { it: "Il nostro appartamento è molto bello.", a: ["Ons appartement","is","heel mooi"], alt: [], start: 0, v: [1], end: [],
+        e: "Anche <b>is</b> è un verbo coniugato: 2° posto." },
+      { it: "Il treno è in ritardo.", a: ["De trein","is","te laat"], alt: [], start: 0, v: [1], end: [],
+        e: "Soggetto – verbo – resto: <b>te laat</b> chiude la frase." },
+      { it: "Il negozio chiude alle sei.", a: ["De winkel","sluit","om zes uur"], alt: [["Om zes uur","sluit","de winkel"]], start: 0, v: [1], end: [],
+        e: "Il verbo <b>sluit</b> al 2° posto; se metti l'ora all'inizio, il soggetto va dopo il verbo." },
+      { it: "Marc regala dei fiori a sua madre.", a: ["Marc","geeft","zijn moeder","bloemen"], alt: [], start: 0, v: [1], end: [],
+        e: "Verbo al 2° posto; senza <i>aan</i>, la persona (<b>zijn moeder</b>) viene prima della cosa (<b>bloemen</b>)." }
+    ]
+  },
+  {
+    id: "inv", unit: "u10",
+    t: "Inversione",
+    s: "Tempo o luogo all'inizio",
+    rule: `Se la frase comincia con un tempo o un luogo, il verbo resta al <b>2° posto</b> e il soggetto va <b>dopo</b> il verbo: <b>tempo/luogo – verbo – soggetto – resto</b>. Il primo blocco è già al suo posto.`,
+    items: [
+      { it: "Domani vado a Gand.", a: ["Morgen","ga","ik","naar Gent"], alt: [], start: 1, v: [1], end: [],
+        e: "<b>Morgen</b> occupa il 1° posto, quindi <b>ga</b> e poi <b>ik</b>." },
+      { it: "A Gand abita mia zia.", a: ["In Gent","woont","mijn tante"], alt: [], start: 1, v: [1], end: [],
+        e: "Luogo all'inizio → verbo → soggetto." },
+      { it: "Oggi lavoro a casa.", a: ["Vandaag","werk","ik","thuis"], alt: [], start: 1, v: [1], end: [],
+        e: "Dopo <b>vandaag</b> viene subito il verbo, poi il soggetto <b>ik</b>." },
+      { it: "Stasera cuciniamo la pasta.", a: ["Vanavond","koken","we","pasta"], alt: [], start: 1, v: [1], end: [],
+        e: "Inversione: <b>koken we</b>, non <s>we koken</s>." },
+      { it: "Il sabato andiamo al mercato.", a: ["Op zaterdag","gaan","we","naar de markt"], alt: [], start: 1, v: [1], end: [],
+        e: "Tempo al 1° posto, verbo al 2°, soggetto al 3°." },
+      { it: "Dopo il lavoro bevo una birra.", a: ["Na het werk","drink","ik","een pintje"], alt: [], start: 1, v: [1], end: [],
+        e: "<b>Na het werk</b> è un solo elemento: dopo viene il verbo. (<i>Een pintje</i> = una birra, in Belgio.)" },
+      { it: "Alle otto comincia la lezione.", a: ["Om acht uur","begint","de les"], alt: [], start: 1, v: [1], end: [],
+        e: "Ora all'inizio → <b>begint</b> → soggetto." },
+      { it: "D'estate andiamo spesso al mare.", a: ["In de zomer","gaan","we","vaak","naar zee"], alt: [], start: 1, v: [1], end: [],
+        e: "Verbo, soggetto, e poi l'avverbio <b>vaak</b> prima del luogo." },
+      { it: "Ogni giorno mio figlio va a scuola in bici.", a: ["Elke dag","gaat","mijn zoon","met de fiets","naar school"], alt: [], start: 1, v: [1], end: [],
+        e: "Verbo, soggetto, poi modo (<b>met de fiets</b>) prima del luogo (<b>naar school</b>)." },
+      { it: "Domattina mia madre chiama il medico.", a: ["Morgenvroeg","belt","mijn moeder","de dokter"], alt: [], start: 1, v: [1], end: [],
+        e: "Dopo il tempo: verbo <b>belt</b>, soggetto, oggetto." }
+    ]
+  },
+  {
+    id: "tmp", unit: "u10",
+    t: "Tempo – modo – luogo",
+    s: "Quando, come, dove",
+    rule: `Dopo il verbo le informazioni seguono di solito l'ordine <b>tempo – modo – luogo</b>: <i>Ik ga <b>morgen</b> <b>met de trein</b> <b>naar Gent</b></i>. Il soggetto è già al suo posto.`,
+    items: [
+      { it: "Domani vado a Gand.", a: ["Ik","ga","morgen","naar Gent"], alt: [], start: 1, v: [1], end: [],
+        e: "Prima il tempo (<b>morgen</b>), poi il luogo (<b>naar Gent</b>)." },
+      { it: "Stasera mangiamo a casa.", a: ["We","eten","vanavond","thuis"], alt: [], start: 1, v: [1], end: [],
+        e: "Tempo prima del luogo: <b>vanavond thuis</b>." },
+      { it: "Mio fratello va al lavoro in bici.", a: ["Mijn broer","gaat","met de fiets","naar het werk"], alt: [], start: 1, v: [1], end: [],
+        e: "Modo (<b>met de fiets</b>) prima del luogo." },
+      { it: "Domani vado a Gand in treno.", a: ["Ik","ga","morgen","met de trein","naar Gent"], alt: [], start: 1, v: [1], end: [],
+        e: "Tempo – modo – luogo: <b>morgen – met de trein – naar Gent</b>." },
+      { it: "Lavora ogni giorno a Bruxelles.", a: ["Ze","werkt","elke dag","in Brussel"], alt: [], start: 1, v: [1], end: [],
+        e: "Il tempo (<b>elke dag</b>) viene prima del luogo." },
+      { it: "Viene in ufficio alle nove con l'autobus.", a: ["Hij","komt","om negen uur","met de bus","naar kantoor"], alt: [], start: 1, v: [1], end: [],
+        e: "Tempo – modo – luogo, anche se in italiano l'ordine è diverso." },
+      { it: "Sabato andiamo al mare con gli amici.", a: ["We","gaan","zaterdag","met vrienden","naar zee"], alt: [], start: 1, v: [1], end: [],
+        e: "Quando (<b>zaterdag</b>), con chi/come (<b>met vrienden</b>), dove (<b>naar zee</b>)." },
+      { it: "Oggi i miei genitori vanno ad Anversa in macchina.", a: ["Mijn ouders","gaan","vandaag","met de auto","naar Antwerpen"], alt: [], start: 1, v: [1], end: [],
+        e: "Tempo – modo – luogo: <b>vandaag – met de auto – naar Antwerpen</b>." },
+      { it: "Mia sorella pedala ogni mattina nel parco.", a: ["Mijn zus","fietst","elke ochtend","in het park"], alt: [], start: 1, v: [1], end: [],
+        e: "Il tempo prima del luogo." },
+      { it: "Domani alle otto i bambini vanno a scuola con l'autobus.", a: ["De kinderen","gaan","morgen","om acht uur","met de bus","naar school"], alt: [], start: 1, v: [1], end: [],
+        e: "Tempo generico prima di quello preciso (<b>morgen om acht uur</b>), poi modo e luogo." }
+    ]
+  },
+  {
+    id: "q", unit: "u7",
+    t: "Le domande",
+    s: "Verbo all'inizio o dopo la parola interrogativa",
+    rule: `Domanda sì/no: il <b>verbo</b> va al <b>1° posto</b>: <i>Woon je in Gent?</i> Con una parola interrogativa: <b>parola interrogativa – verbo – soggetto – resto</b>: <i>Waar woon je?</i> Con <i>je/jij</i> dopo il verbo cade la <b>-t</b>.`,
+    items: [
+      { it: "Abiti a Gand?", a: ["Woon","je","in Gent"], alt: [], start: 0, v: [0], end: [],
+        e: "Domanda sì/no: verbo al 1° posto. <b>Woon je</b>, senza -t." },
+      { it: "Parli francese?", a: ["Spreek","je","Frans"], alt: [], start: 0, v: [0], end: [],
+        e: "Verbo, soggetto, resto." },
+      { it: "Hai un giardino?", a: ["Heb","je","een tuin"], alt: [], start: 0, v: [0], end: [],
+        e: "Il verbo <b>heb</b> apre la domanda." },
+      { it: "Dove abiti?", a: ["Waar","woon","je"], alt: [], start: 0, v: [1], end: [],
+        e: "Parola interrogativa, poi subito il verbo, poi il soggetto." },
+      { it: "Cosa bevi?", a: ["Wat","drink","jij"], alt: [], start: 0, v: [1], end: [],
+        e: "<b>Wat</b> al 1° posto, verbo al 2°." },
+      { it: "Come si chiama tuo fratello?", a: ["Hoe","heet","je broer"], alt: [], start: 0, v: [1], end: [],
+        e: "Parola interrogativa – verbo – soggetto." },
+      { it: "Quanto costa il formaggio?", a: ["Hoeveel","kost","de kaas"], alt: [], start: 0, v: [1], end: [],
+        e: "<b>Hoeveel</b>, poi il verbo, poi il soggetto." },
+      { it: "Domani lavori a casa?", a: ["Werk","je","morgen","thuis"], alt: [], start: 0, v: [0], end: [],
+        e: "Verbo al 1° posto; dopo il soggetto, tempo prima del luogo." },
+      { it: "Quando andate a Bruges?", a: ["Wanneer","gaan","jullie","naar Brugge"], alt: [], start: 0, v: [1], end: [],
+        e: "Parola interrogativa – verbo – soggetto – resto." },
+      { it: "Perché studi l'olandese?", a: ["Waarom","leer","je","Nederlands"], alt: [], start: 0, v: [1], end: [],
+        e: "<b>Waarom leer je</b>: verbo al 2° posto, soggetto subito dopo." }
+    ]
+  },
+  {
+    id: "mod", unit: "u9",
+    t: "Verbi modali",
+    s: "L'infinito va alla fine",
+    rule: `Il verbo modale (<i>willen, kunnen, moeten, mogen</i>) è coniugato e sta al <b>2° posto</b>; l'<b>infinito</b> va <b>alla fine</b>: <i>Ik <b>wil</b> koffie <b>drinken</b></i>. Tutto il resto sta in mezzo.`,
+    items: [
+      { it: "Voglio bere un caffè.", a: ["Ik","wil","koffie","drinken"], alt: [], start: 0, v: [1], end: [3],
+        e: "<b>wil</b> al 2° posto, <b>drinken</b> in fondo." },
+      { it: "Qui puoi parcheggiare.", a: ["Je","mag","hier","parkeren"], alt: [["Hier","mag","je","parkeren"]], start: 0, v: [1], end: [3],
+        e: "Modale al 2° posto, infinito alla fine; <b>hier</b> sta in mezzo (o all'inizio, con inversione)." },
+      { it: "Domani dobbiamo lavorare.", a: ["We","moeten","morgen","werken"], alt: [["Morgen","moeten","we","werken"]], start: 0, v: [1], end: [3],
+        e: "<b>werken</b> va in fondo, dopo <b>morgen</b>." },
+      { it: "Mi puoi aiutare?", a: ["Kun","je","me","helpen"], alt: [], start: 0, v: [0], end: [3],
+        e: "Domanda: modale al 1° posto, infinito sempre alla fine." },
+      { it: "Sa cucinare bene.", a: ["Hij","kan","goed","koken"], alt: [], start: 0, v: [1], end: [3],
+        e: "<b>kan</b> al 2° posto, <b>koken</b> alla fine, l'avverbio in mezzo." },
+      { it: "Mia sorella vuole abitare ad Anversa.", a: ["Mijn zus","wil","in Antwerpen","wonen"], alt: [["In Antwerpen","wil","mijn zus","wonen"]], start: 0, v: [1], end: [3],
+        e: "Il luogo sta in mezzo, <b>wonen</b> chiude la frase." },
+      { it: "Vogliamo comprare una bici nuova.", a: ["Wij","willen","een nieuwe fiets","kopen"], alt: [], start: 0, v: [1], end: [3],
+        e: "L'oggetto in mezzo, l'infinito <b>kopen</b> in fondo." },
+      { it: "Qui non puoi fumare.", a: ["Je","mag","hier","niet","roken"], alt: [["Hier","mag","je","niet","roken"]], start: 0, v: [1], end: [4],
+        e: "<b>niet</b> sta subito prima dell'infinito finale." },
+      { it: "Stasera devo pulire la cucina.", a: ["Ik","moet","vanavond","de keuken","poetsen"], alt: [["Vanavond","moet","ik","de keuken","poetsen"],["Ik","moet","de keuken","vanavond","poetsen"],["De keuken","moet","ik","vanavond","poetsen"]], start: 0, v: [1], end: [4],
+        e: "<b>poetsen</b> (pulire, in Belgio) va in fondo; tutto il resto sta tra modale e infinito." },
+      { it: "Quando possiamo andare a Gand?", a: ["Wanneer","kunnen","we","naar Gent","gaan"], alt: [], start: 0, v: [1], end: [4],
+        e: "Parola interrogativa, modale, soggetto… e <b>gaan</b> alla fine." }
+    ]
+  },
+  {
+    id: "sep", unit: "u17",
+    t: "Verbi separabili",
+    s: "La particella va alla fine",
+    rule: `Nei verbi separabili (<i>opstaan, opbellen, meenemen</i>) la parte coniugata sta al <b>2° posto</b> e la <b>particella</b> va <b>alla fine</b>: <i>Ik <b>sta</b> om zeven uur <b>op</b></i>. Con un modale il verbo resta <b>intero</b> alla fine: <i>Ik moet vroeg <b>opstaan</b></i>.`,
+    items: [
+      { it: "Mi alzo alle sette.", a: ["Ik","sta","om zeven uur","op"], alt: [["Om zeven uur","sta","ik","op"]], start: 0, v: [1], end: [3],
+        e: "<b>opstaan</b>: <b>sta</b> al 2° posto, <b>op</b> alla fine." },
+      { it: "Il treno arriva alle dieci.", a: ["De trein","komt","om tien uur","aan"], alt: [["Om tien uur","komt","de trein","aan"]], start: 0, v: [1], end: [3],
+        e: "<b>aankomen</b>: la particella <b>aan</b> chiude la frase." },
+      { it: "Telefono a mia madre.", a: ["Ik","bel","mijn moeder","op"], alt: [], start: 0, v: [1], end: [3],
+        e: "<b>opbellen</b>: l'oggetto sta tra <b>bel</b> e <b>op</b>." },
+      { it: "Si porta dietro un ombrello.", a: ["Hij","neemt","een paraplu","mee"], alt: [], start: 0, v: [1], end: [3],
+        e: "<b>meenemen</b>: <b>neemt … mee</b>." },
+      { it: "Stasera usciamo.", a: ["We","gaan","vanavond","uit"], alt: [["Vanavond","gaan","we","uit"]], start: 0, v: [1], end: [3],
+        e: "<b>uitgaan</b>: <b>uit</b> alla fine, anche dopo il tempo." },
+      { it: "Quando torni?", a: ["Wanneer","kom","je","terug"], alt: [], start: 0, v: [1], end: [3],
+        e: "<b>terugkomen</b>: anche nella domanda la particella va in fondo." },
+      { it: "Il negozio apre alle nove.", a: ["De winkel","gaat","om negen uur","open"], alt: [["Om negen uur","gaat","de winkel","open"]], start: 0, v: [1], end: [3],
+        e: "<b>opengaan</b>: <b>gaat … open</b>." },
+      { it: "Domani devo alzarmi presto.", a: ["Ik","moet","morgen","vroeg","opstaan"], alt: [["Morgen","moet","ik","vroeg","opstaan"]], start: 0, v: [1], end: [4],
+        e: "Con il modale <b>moet</b> il verbo separabile resta intero alla fine: <b>opstaan</b>." },
+      { it: "Domani mi puoi chiamare?", a: ["Kun","je","me","morgen","opbellen"], alt: [], start: 0, v: [0], end: [4],
+        e: "Modale all'inizio (domanda), <b>opbellen</b> intero alla fine; il pronome <b>me</b> subito dopo il soggetto." },
+      { it: "Stasera non voglio uscire.", a: ["Ik","wil","vanavond","niet","uitgaan"], alt: [["Vanavond","wil","ik","niet","uitgaan"]], start: 0, v: [1], end: [4],
+        e: "<b>niet</b> prima dell'infinito, che resta intero: <b>uitgaan</b>." }
+    ]
+  },
+  {
+    id: "perf", unit: "u19",
+    t: "Passato prossimo",
+    s: "Il participio va alla fine",
+    rule: `L'ausiliare (<i>hebben</i> o <i>zijn</i>) è coniugato e sta al <b>2° posto</b>; il <b>participio</b> va <b>alla fine</b>: <i>Ik <b>heb</b> koffie <b>gedronken</b></i>. Tutto il resto sta in mezzo.`,
+    items: [
+      { it: "Ho bevuto un caffè.", a: ["Ik","heb","koffie","gedronken"], alt: [], start: 0, v: [1], end: [3],
+        e: "<b>heb</b> al 2° posto, <b>gedronken</b> alla fine." },
+      { it: "Siamo andati a Bruges.", a: ["We","zijn","naar Brugge","gegaan"], alt: [], start: 0, v: [1], end: [3],
+        e: "Con <b>gaan</b> l'ausiliare è <b>zijn</b>; il participio chiude la frase." },
+      { it: "Ieri ha lavorato.", a: ["Hij","heeft","gisteren","gewerkt"], alt: [["Gisteren","heeft","hij","gewerkt"]], start: 0, v: [1], end: [3],
+        e: "<b>gisteren</b> sta in mezzo (o all'inizio con inversione), <b>gewerkt</b> in fondo." },
+      { it: "Cosa hai mangiato?", a: ["Wat","heb","je","gegeten"], alt: [], start: 0, v: [1], end: [3],
+        e: "Parola interrogativa, ausiliare, soggetto, participio." },
+      { it: "I miei genitori hanno comprato una casa nuova.", a: ["Mijn ouders","hebben","een nieuw huis","gekocht"], alt: [], start: 0, v: [1], end: [3],
+        e: "L'oggetto sta tra <b>hebben</b> e <b>gekocht</b>." },
+      { it: "È partita alle otto.", a: ["Ze","is","om acht uur","vertrokken"], alt: [["Om acht uur","is","ze","vertrokken"]], start: 0, v: [1], end: [3],
+        e: "<b>vertrekken</b> vuole <b>zijn</b>; il participio va in fondo." },
+      { it: "Hai letto il giornale?", a: ["Heb","je","de krant","gelezen"], alt: [], start: 0, v: [0], end: [3],
+        e: "Domanda: ausiliare al 1° posto, participio sempre alla fine." },
+      { it: "Ieri sono rimasto a casa.", a: ["Ik","ben","gisteren","thuis","gebleven"], alt: [["Gisteren","ben","ik","thuis","gebleven"]], start: 0, v: [1], end: [4],
+        e: "Tempo prima del luogo, e <b>gebleven</b> alla fine." },
+      { it: "A Gand abbiamo mangiato le patatine fritte.", a: ["We","hebben","in Gent","frieten","gegeten"], alt: [["In Gent","hebben","we","frieten","gegeten"]], start: 0, v: [1], end: [4],
+        e: "Il participio <b>gegeten</b> in fondo; <b>frieten</b> resta vicino al verbo." },
+      { it: "L'anno scorso sono andato in Italia in treno.", a: ["Ik","ben","vorig jaar","met de trein","naar Italië","gereisd"], alt: [["Vorig jaar","ben","ik","met de trein","naar Italië","gereisd"]], start: 0, v: [1], end: [5],
+        e: "Tempo – modo – luogo in mezzo, il participio <b>gereisd</b> alla fine." }
+    ]
+  },
+  {
+    id: "niet", unit: "u12",
+    t: "Dove va «niet»?",
+    s: "Dopo l'oggetto, prima del resto",
+    rule: `<b>niet</b> va <b>dopo</b> il verbo coniugato e l'oggetto definito (<i>Ik ken hem <b>niet</b></i>), ma <b>prima</b> di un aggettivo, una preposizione, un infinito o un participio: <i>Ik ben <b>niet</b> moe</i>, <i>Hij woont <b>niet</b> in Gent</i>.`,
+    items: [
+      { it: "Non sono stanco.", a: ["Ik","ben","niet","moe"], alt: [], start: 0, v: [1], end: [],
+        e: "<b>niet</b> prima dell'aggettivo." },
+      { it: "Mia sorella non fuma.", a: ["Mijn zus","rookt","niet"], alt: [], start: 0, v: [1], end: [],
+        e: "Senza altro dopo, <b>niet</b> sta alla fine, dopo il verbo." },
+      { it: "Non lo conosco.", a: ["Ik","ken","hem","niet"], alt: [], start: 0, v: [1], end: [],
+        e: "<b>niet</b> dopo l'oggetto definito <b>hem</b>." },
+      { it: "Non lo capisco.", a: ["Ik","begrijp","het","niet"], alt: [], start: 0, v: [1], end: [],
+        e: "Il pronome <b>het</b> viene prima di <b>niet</b>." },
+      { it: "La zuppa non è calda.", a: ["De soep","is","niet","warm"], alt: [], start: 0, v: [1], end: [],
+        e: "<b>niet</b> prima dell'aggettivo <b>warm</b>." },
+      { it: "Non abita a Gand.", a: ["Hij","woont","niet","in Gent"], alt: [["In Gent","woont","hij","niet"]], start: 0, v: [1], end: [],
+        e: "<b>niet</b> prima della preposizione <b>in</b>." },
+      { it: "Non prendiamo la macchina.", a: ["We","nemen","de auto","niet"], alt: [["De auto","nemen","we","niet"]], start: 0, v: [1], end: [],
+        e: "<b>niet</b> dopo l'oggetto definito <b>de auto</b>." },
+      { it: "Oggi non posso venire.", a: ["Ik","kan","vandaag","niet","komen"], alt: [["Vandaag","kan","ik","niet","komen"]], start: 0, v: [1], end: [4],
+        e: "<b>niet</b> prima dell'infinito, dopo il tempo." },
+      { it: "Domani non andiamo a scuola.", a: ["We","gaan","morgen","niet","naar school"], alt: [["Morgen","gaan","we","niet","naar school"]], start: 0, v: [1], end: [],
+        e: "<b>niet</b> dopo il tempo e prima di <b>naar school</b>." },
+      { it: "Non l'ho trovato.", a: ["Ik","heb","het","niet","gevonden"], alt: [], start: 0, v: [1], end: [4],
+        e: "Oggetto <b>het</b>, poi <b>niet</b>, poi il participio alla fine." }
+    ]
+  },
+  {
+    id: "sub", unit: "u26",
+    t: "Subordinate",
+    s: "Il verbo va alla fine",
+    rule: `Dopo <i>omdat, dat, als, of, wanneer</i> (e <i>waar</i> nelle domande indirette) comincia una subordinata: il verbo coniugato va <b>alla fine</b>: <i>…omdat het <b>regent</b></i>, <i>…dat hij ziek <b>is</b></i>. La principale resta normale: verbo al 2° posto.`,
+    items: [
+      { it: "Resto a casa perché piove.", a: ["Ik","blijf","thuis","omdat","het","regent"], alt: [["Omdat","het","regent","blijf","ik","thuis"]], start: 0, v: [1], end: [5],
+        e: "Dopo <b>omdat</b> il verbo <b>regent</b> va alla fine della subordinata." },
+      { it: "Penso che sia malato.", a: ["Ik","denk","dat","hij","ziek","is"], alt: [], start: 0, v: [1], end: [5],
+        e: "<b>dat hij ziek is</b>: il verbo in fondo, non <s>dat hij is ziek</s>." },
+      { it: "Dice che la zuppa è fredda.", a: ["Ze","zegt","dat","de soep","koud","is"], alt: [], start: 0, v: [1], end: [5],
+        e: "Nella subordinata con <b>dat</b> il verbo <b>is</b> va in fondo." },
+      { it: "Sai se il negozio è aperto?", a: ["Weet","je","of","de winkel","open","is"], alt: [], start: 0, v: [0], end: [5],
+        e: "<b>of</b> = se: anche qui il verbo va alla fine." },
+      { it: "Andiamo al parco se fa bel tempo.", a: ["We","gaan","naar het park","als","het","mooi weer","is"], alt: [["Als","het","mooi weer","is","gaan","we","naar het park"]], start: 0, v: [1], end: [6],
+        e: "<b>als het mooi weer is</b>: verbo in fondo alla subordinata." },
+      { it: "Marc non viene perché è stanco.", a: ["Marc","komt","niet","omdat","hij","moe","is"], alt: [["Omdat","hij","moe","is","komt","Marc","niet"]], start: 0, v: [1], end: [6],
+        e: "Principale normale (<b>komt</b> al 2° posto), subordinata con il verbo alla fine." },
+      { it: "Non so dove abita.", a: ["Ik","weet","niet","waar","hij","woont"], alt: [], start: 0, v: [1], end: [5],
+        e: "Domanda indiretta con <b>waar</b>: <b>woont</b> va alla fine." },
+      { it: "Chiamami quando sei a casa.", a: ["Bel","me","wanneer","je","thuis","bent"], alt: [["Wanneer","je","thuis","bent","bel","me"]], start: 0, v: [0], end: [5],
+        e: "Imperativo all'inizio; dopo <b>wanneer</b> il verbo <b>bent</b> va in fondo." },
+      { it: "Chiede se domani veniamo.", a: ["Ze","vraagt","of","we","morgen","komen"], alt: [], start: 0, v: [1], end: [5],
+        e: "<b>of we morgen komen</b>: soggetto, tempo, verbo." },
+      { it: "Spero che domani non piova.", a: ["Ik","hoop","dat","het","morgen","niet","regent"], alt: [], start: 0, v: [1], end: [6],
+        e: "Nella subordinata <b>niet</b> sta subito prima del verbo finale." }
+    ]
+  },
+  {
+    id: "want", unit: "u26",
+    t: "«want» o «omdat»?",
+    s: "Stesso significato, ordine diverso",
+    rule: `<b>want</b> e <b>omdat</b> significano entrambi «perché». Dopo <b>want</b> l'ordine è <b>normale</b> (verbo al 2° posto): <i>want het <b>is</b> koud</i>. Dopo <b>omdat</b> il verbo va <b>alla fine</b>: <i>omdat het koud <b>is</b></i>. Solo la frase con <i>omdat</i> può andare all'inizio.`,
+    items: [
+      { it: "Restiamo a casa, perché piove.", a: ["We","blijven","thuis","want","het","regent"], alt: [], start: 0, v: [1,5], end: [],
+        e: "Dopo <b>want</b>: soggetto – verbo, come in una frase normale." },
+      { it: "Restiamo a casa perché piove.", a: ["We","blijven","thuis","omdat","het","regent"], alt: [["Omdat","het","regent","blijven","we","thuis"]], start: 0, v: [1], end: [5],
+        e: "Dopo <b>omdat</b> il verbo va alla fine (qui coincide con l'ordine di <i>want</i>, perché c'è solo il verbo)." },
+      { it: "Prendo una giacca, perché fa freddo.", a: ["Ik","neem","een jas","want","het","is","koud"], alt: [], start: 0, v: [1,5], end: [],
+        e: "<b>want het is koud</b>: verbo al 2° posto." },
+      { it: "Prendo una giacca perché fa freddo.", a: ["Ik","neem","een jas","omdat","het","koud","is"], alt: [["Omdat","het","koud","is","neem","ik","een jas"]], start: 0, v: [1], end: [6],
+        e: "<b>omdat het koud is</b>: verbo alla fine." },
+      { it: "Anna non mangia niente, perché non ha fame.", a: ["Anna","eet","niets","want","ze","heeft","geen honger"], alt: [], start: 0, v: [1,5], end: [],
+        e: "Dopo <b>want</b>: <b>ze heeft</b>, ordine normale." },
+      { it: "Anna non mangia niente perché non ha fame.", a: ["Anna","eet","niets","omdat","ze","geen honger","heeft"], alt: [["Omdat","ze","geen honger","heeft","eet","Anna","niets"]], start: 0, v: [1], end: [6],
+        e: "Dopo <b>omdat</b>: <b>heeft</b> in fondo." },
+      { it: "Studio l'olandese, perché il mio ragazzo è belga.", a: ["Ik","leer","Nederlands","want","mijn vriend","is","Belg"], alt: [], start: 0, v: [1,5], end: [],
+        e: "<b>want mijn vriend is Belg</b>: verbo al 2° posto nella seconda frase." },
+      { it: "Marco studia l'olandese perché lavora a Gand.", a: ["Marco","leert","Nederlands","omdat","hij","in Gent","werkt"], alt: [["Omdat","hij","in Gent","werkt","leert","Marco","Nederlands"]], start: 0, v: [1], end: [6],
+        e: "<b>omdat hij in Gent werkt</b>: il verbo chiude la subordinata." },
+      { it: "Andiamo in treno, perché la macchina è rotta.", a: ["We","gaan","met de trein","want","de auto","is","kapot"], alt: [], start: 0, v: [1,5], end: [],
+        e: "<b>want</b> + ordine normale: <b>de auto is kapot</b>." },
+      { it: "I bambini sono contenti perché sono in vacanza.", a: ["De kinderen","zijn","blij","omdat","het","vakantie","is"], alt: [["Omdat","het","vakantie","is","zijn","de kinderen","blij"]], start: 0, v: [1], end: [6],
+        e: "<b>omdat het vakantie is</b>: verbo alla fine." }
+    ]
+  },
+  {
+    id: "subfirst", unit: "u26",
+    t: "La subordinata all'inizio",
+    s: "Verbo, virgola, verbo",
+    rule: `Se la frase comincia con una subordinata, questa conta come <b>1° posto</b>: subito dopo viene il <b>verbo</b> della principale, poi il soggetto: <i>Als het regent, <b>blijf ik</b> thuis</i>. Verbo – virgola – verbo. La subordinata è già al suo posto.`,
+    items: [
+      { it: "Se piove, resto a casa.", a: ["Als het regent","blijf","ik","thuis"], alt: [], start: 1, v: [1], end: [],
+        e: "Dopo la subordinata: <b>blijf ik</b>, non <s>ik blijf</s>." },
+      { it: "Siccome sono malato, non vado al lavoro.", a: ["Omdat ik ziek ben","ga","ik","niet","naar het werk"], alt: [], start: 1, v: [1], end: [],
+        e: "Verbo <b>ga</b> subito dopo la virgola, poi il soggetto." },
+      { it: "Se hai tempo, possiamo bere un caffè.", a: ["Als je tijd hebt","kunnen","we","koffie","drinken"], alt: [], start: 1, v: [1], end: [4],
+        e: "<b>kunnen we</b> dopo la subordinata, l'infinito <b>drinken</b> in fondo." },
+      { it: "Quando fa bel tempo, andiamo al mare in bici.", a: ["Wanneer het mooi weer is","fietsen","we","naar zee"], alt: [], start: 1, v: [1], end: [],
+        e: "Verbo – virgola – verbo: <b>is, fietsen</b>." },
+      { it: "Quando sono stanco, vado a letto presto.", a: ["Als ik moe ben","ga","ik","vroeg","slapen"], alt: [], start: 1, v: [1], end: [4],
+        e: "<b>ga ik</b>, poi l'infinito <b>slapen</b> alla fine." },
+      { it: "Siccome il treno è in ritardo, arrivo più tardi.", a: ["Omdat de trein te laat is","kom","ik","later"], alt: [], start: 1, v: [1], end: [],
+        e: "Dopo la subordinata, inversione: <b>kom ik</b>." },
+      { it: "Se vuole, può aspettare qui.", a: ["Als u wilt","kunt","u","hier","wachten"], alt: [], start: 1, v: [1], end: [4],
+        e: "<b>kunt u</b> dopo la virgola, <b>wachten</b> alla fine." },
+      { it: "Quando torna a casa, mangiamo insieme.", a: ["Wanneer hij thuiskomt","eten","we","samen"], alt: [], start: 1, v: [1], end: [],
+        e: "Nella subordinata <b>thuiskomt</b> resta intero in fondo; poi <b>eten we</b>." },
+      { it: "Siccome fa freddo, mi metto la giacca.", a: ["Omdat het koud is","doe","ik","mijn jas","aan"], alt: [], start: 1, v: [1], end: [4],
+        e: "<b>doe ik</b> dopo la subordinata, la particella <b>aan</b> alla fine." },
+      { it: "Quando sono a Bruges, mangio sempre le patatine fritte.", a: ["Als ik in Brugge ben","eet","ik","altijd","frieten"], alt: [], start: 1, v: [1], end: [],
+        e: "<b>eet ik</b>, poi <b>altijd</b> prima dell'oggetto." }
+    ]
+  },
+  {
+    id: "rel", unit: "u27",
+    t: "Frasi relative",
+    s: "die/dat e il verbo alla fine",
+    rule: `La frase relativa comincia con <b>die</b> (parole con <i>de</i> e plurali) o <b>dat</b> (parole con <i>het</i>) e ha il verbo <b>alla fine</b>: <i>de man <b>die</b> daar <b>woont</b></i>. Sta subito dopo la parola a cui si riferisce.`,
+    items: [
+      { it: "Ho un amico che abita a Gand.", a: ["Ik","heb","een vriend","die","in Gent","woont"], alt: [], start: 0, v: [1], end: [5],
+        e: "<b>een vriend</b> è <i>de</i> → <b>die</b>; il verbo <b>woont</b> in fondo." },
+      { it: "Conosci la ragazza che sta là?", a: ["Ken","je","het meisje","dat","daar","staat"], alt: [], start: 0, v: [0], end: [5],
+        e: "<b>het meisje</b> → <b>dat</b>; <b>staat</b> alla fine." },
+      { it: "La donna che lavora là parla italiano.", a: ["De vrouw","die","daar","werkt","spreekt","Italiaans"], alt: [], start: 0, v: [4], end: [3],
+        e: "La relativa sta dentro il soggetto: <b>werkt</b> in fondo alla relativa, poi il verbo principale <b>spreekt</b>." },
+      { it: "Conosco una friggitoria che fa patatine buonissime.", a: ["Ik","ken","een frituur","die","heel lekkere frieten","maakt"], alt: [], start: 0, v: [1], end: [5],
+        e: "<b>de frituur</b> → <b>die</b>; il verbo <b>maakt</b> chiude la relativa." },
+      { it: "La ragazza che abita accanto a me si chiama Lotte.", a: ["Het meisje","dat","naast me","woont","heet","Lotte"], alt: [], start: 0, v: [4], end: [3],
+        e: "<b>dat … woont</b>, poi il verbo principale <b>heet</b>." },
+      { it: "Il treno che va a Bruxelles parte alle dieci.", a: ["De trein","die","naar Brussel","gaat","vertrekt","om tien uur"], alt: [["Om tien uur","vertrekt","de trein","die","naar Brussel","gaat"]], start: 0, v: [4], end: [3],
+        e: "Soggetto + relativa (verbo <b>gaat</b> in fondo), poi <b>vertrekt</b> al 2° posto." },
+      { it: "È quello l'uomo che cerchi?", a: ["Is","dat","de man","die","je","zoekt"], alt: [], start: 0, v: [0], end: [5],
+        e: "<b>de man</b> → <b>die</b>; nella relativa <b>zoekt</b> va alla fine." },
+      { it: "Il libro che leggo è molto avvincente.", a: ["Het boek","dat","ik","lees","is","heel spannend"], alt: [], start: 0, v: [4], end: [3],
+        e: "<b>het boek</b> → <b>dat</b>; <b>lees</b> in fondo alla relativa, poi <b>is</b>." },
+      { it: "Le persone che abitano qui sono molto gentili.", a: ["De mensen","die","hier","wonen","zijn","heel vriendelijk"], alt: [], start: 0, v: [4], end: [3],
+        e: "Plurale → <b>die</b>; verbo <b>wonen</b> alla fine della relativa." },
+      { it: "Il mio collega che viene da Lovanio parla tre lingue.", a: ["Mijn collega","die","uit Leuven","komt","spreekt","drie talen"], alt: [], start: 0, v: [4], end: [3],
+        e: "<b>die uit Leuven komt</b>, poi il verbo principale <b>spreekt</b>." }
+    ]
+  },
+  {
+    id: "te", unit: "u25",
+    t: "te + infinito",
+    s: "e om … te",
+    rule: `Dopo molti verbi ed espressioni si usa <b>te + infinito</b>, sempre <b>alla fine</b>: <i>Het begint <b>te regenen</b></i>. Per lo scopo («per…») si usa <b>om … te</b>: <i><b>om</b> brood <b>te</b> kopen</i>. Con un verbo separabile <i>te</i> va in mezzo: <i>op <b>te</b> staan</i>.`,
+    items: [
+      { it: "Comincia a piovere.", a: ["Het","begint","te","regenen"], alt: [], start: 0, v: [1], end: [2,3],
+        e: "<b>te regenen</b> alla fine, dopo il verbo coniugato." },
+      { it: "Provo a parlare olandese.", a: ["Ik","probeer","Nederlands","te","spreken"], alt: [], start: 0, v: [1], end: [3,4],
+        e: "L'oggetto prima, <b>te spreken</b> in fondo." },
+      { it: "Non ho voglia di cucinare.", a: ["Ik","heb","geen zin","om","te","koken"], alt: [], start: 0, v: [1], end: [4,5],
+        e: "<b>geen zin om … te koken</b>: <b>om</b> apre, <b>te</b> + infinito chiude." },
+      { it: "Sta seduto in giardino a leggere.", a: ["Hij","zit","in de tuin","te","lezen"], alt: [["In de tuin","zit","hij","te","lezen"]], start: 0, v: [1], end: [3,4],
+        e: "<b>zitten … te lezen</b>: «sta leggendo»; <b>te lezen</b> alla fine." },
+      { it: "Non dimenticare di chiamare tua madre.", a: ["Vergeet","niet","je moeder","te","bellen"], alt: [["Vergeet","je moeder","niet","te","bellen"]], start: 0, v: [0], end: [3,4],
+        e: "Imperativo all'inizio, <b>te bellen</b> alla fine." },
+      { it: "Domani non devo lavorare.", a: ["Ik","hoef","morgen","niet","te","werken"], alt: [["Morgen","hoef","ik","niet","te","werken"]], start: 0, v: [1], end: [4,5],
+        e: "<b>niet hoeven te</b> = non dover: <b>te werken</b> in fondo." },
+      { it: "Vado dal panettiere a comprare il pane.", a: ["Ik","ga","naar de bakker","om","brood","te","kopen"], alt: [["Om","brood","te","kopen","ga","ik","naar de bakker"]], start: 0, v: [1], end: [5,6],
+        e: "Scopo: <b>om brood te kopen</b>; <b>om</b> all'inizio, <b>te kopen</b> alla fine." },
+      { it: "Non abbiamo tempo di andare al cinema.", a: ["We","hebben","geen tijd","om","naar de film","te","gaan"], alt: [], start: 0, v: [1], end: [5,6],
+        e: "Tra <b>om</b> e <b>te gaan</b> c'è il resto: <b>naar de film</b>." },
+      { it: "Risparmia soldi per comprare una macchina.", a: ["Ze","spaart","geld","om","een auto","te","kopen"], alt: [["Om","een auto","te","kopen","spaart","ze","geld"]], start: 0, v: [1], end: [5,6],
+        e: "<b>om een auto te kopen</b>: scopo, con <b>te</b> + infinito alla fine." },
+      { it: "È difficile alzarsi presto.", a: ["Het","is","moeilijk","om","vroeg","op te staan"], alt: [], start: 0, v: [1], end: [5],
+        e: "Verbo separabile: <b>op te staan</b>, con <b>te</b> in mezzo, alla fine." }
+    ]
+  },
+  {
+    id: "cluster", unit: "u26",
+    t: "Due verbi in fondo",
+    s: "moet werken o werken moet",
+    rule: `In una subordinata con due verbi, <b>entrambi</b> vanno alla fine: <i>…omdat ik morgen <b>moet werken</b></i>, <i>…dat hij <b>is gekomen</b></i>. L'ordine dei due verbi è libero: <i>werken moet</i> e <i>gekomen is</i> sono ugualmente corretti.`,
+    items: [
+      { it: "Penso che sia venuto.", a: ["Ik","denk","dat","hij","is","gekomen"], alt: [["Ik","denk","dat","hij","gekomen","is"]], start: 0, v: [1], end: [4,5],
+        e: "<b>is gekomen</b> o <b>gekomen is</b>: tutti e due in fondo." },
+      { it: "Spero che tu possa venire.", a: ["Ik","hoop","dat","je","kunt","komen"], alt: [["Ik","hoop","dat","je","komen","kunt"]], start: 0, v: [1], end: [4,5],
+        e: "Modale e infinito insieme alla fine della subordinata." },
+      { it: "Sa che domani devo lavorare.", a: ["Ze","weet","dat","ik","morgen","moet","werken"], alt: [["Ze","weet","dat","ik","morgen","werken","moet"]], start: 0, v: [1], end: [5,6],
+        e: "<b>morgen</b> resta prima dei due verbi: <b>moet werken</b> / <b>werken moet</b>." },
+      { it: "Non so se vuole venire.", a: ["Ik","weet","niet","of","hij","wil","komen"], alt: [["Ik","weet","niet","of","hij","komen","wil"]], start: 0, v: [1], end: [5,6],
+        e: "Dopo <b>of</b> i due verbi vanno alla fine." },
+      { it: "Marc dice che è stato malato.", a: ["Marc","zegt","dat","hij","ziek","is","geweest"], alt: [["Marc","zegt","dat","hij","ziek","geweest","is"]], start: 0, v: [1], end: [5,6],
+        e: "<b>ziek</b> prima, poi <b>is geweest</b> / <b>geweest is</b>." },
+      { it: "Sono contento che tu sia venuto.", a: ["Ik","ben","blij","dat","je","bent","gekomen"], alt: [["Ik","ben","blij","dat","je","gekomen","bent"]], start: 0, v: [1], end: [5,6],
+        e: "Ausiliare e participio insieme in fondo, in uno dei due ordini." },
+      { it: "Sai se il treno è già partito?", a: ["Weet","je","of","de trein","al","is","vertrokken"], alt: [["Weet","je","of","de trein","al","vertrokken","is"]], start: 0, v: [0], end: [5,6],
+        e: "<b>al</b> prima del gruppo verbale finale." },
+      { it: "Mia madre racconta che si è trasferita a Lovanio.", a: ["Mijn moeder","vertelt","dat","ze","naar Leuven","is","verhuisd"], alt: [["Mijn moeder","vertelt","dat","ze","naar Leuven","verhuisd","is"]], start: 0, v: [1], end: [5,6],
+        e: "Il luogo prima, i due verbi alla fine." },
+      { it: "Penso che abbiamo perso l'autobus.", a: ["Ik","denk","dat","we","de bus","hebben","gemist"], alt: [["Ik","denk","dat","we","de bus","gemist","hebben"]], start: 0, v: [1], end: [5,6],
+        e: "Oggetto prima, poi <b>hebben gemist</b> / <b>gemist hebben</b>." },
+      { it: "I bambini sono contenti perché possono nuotare.", a: ["De kinderen","zijn","blij","omdat","ze","mogen","zwemmen"], alt: [["De kinderen","zijn","blij","omdat","ze","zwemmen","mogen"],["Omdat","ze","mogen","zwemmen","zijn","de kinderen","blij"],["Omdat","ze","zwemmen","mogen","zijn","de kinderen","blij"]], start: 0, v: [1], end: [5,6],
+        e: "Dopo <b>omdat</b>: <b>mogen zwemmen</b> o <b>zwemmen mogen</b>, sempre alla fine." }
+    ]
+  }
+];
+if (typeof module !== "undefined") module.exports = ORDER_SETS;
 
 // Aggiunge un'unità scritta nel formato di units/uNN.js alle strutture dell'app
 function REGISTER_UNIT(U){
@@ -2952,7 +3713,7 @@ const L = LOGIC;
 UNITS.forEach(u => { const n = NOTES[u.id]; if(n){ u.note = n.note; u.vlaams = n.vlaams; u.vocab = n.vocab; } const c = CORE[u.id]; u.core = c ? c.words : []; u.drills = c ? c.drills : []; });
 
 /* ---------- stato salvato ---------- */
-function fresh(){ return {xp:0, streak:0, last:null, best:{}, vbest:{}, vblk:{}, wrong:[], audio:true, voice:"auto", palette:"frietkot"}; }
+function fresh(){ return {xp:0, streak:0, last:null, best:{}, vbest:{}, vblk:{}, fc:{}, wob:{}, fcDir:"nl", wrong:[], audio:true, voice:"auto", palette:"frietkot"}; }
 function load(){ try{ const r = localStorage.getItem(KEY); if(r) return Object.assign(fresh(), JSON.parse(r)); }catch(e){} return fresh(); }
 function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} }
 let S = load();
@@ -3097,7 +3858,7 @@ function applyPalette(){ try{ document.documentElement.setAttribute("data-palett
 
 /* ---------- navigazione: il gesto "indietro" del telefono segue le schermate ---------- */
 // profondità: percorso 0 · unità e impostazioni 1 · esercizi e risultati 2
-const DEPTH = {home:0, settings:1, lesson:1, quiz:2, res:2};
+const DEPTH = {home:0, settings:1, lesson:1, quiz:2, res:2, decks:1, cards:2, wo:1};
 let curDepth = 0, fromPop = false, skipPop = null;
 function screen(st){
   if(fromPop) return;                       // la schermata arriva dal gesto: la cronologia è già giusta
@@ -3113,6 +3874,8 @@ function showState(st){
   st = st || {s:"home"};
   if(st.s === "lesson" && unitById(st.id)) lesson(st.id);
   else if(st.s === "settings") settings();
+  else if(st.s === "decks" || st.s === "cards") decksScreen();
+  else if(st.s === "wo") woScreen();
   else if((st.s === "quiz" || st.s === "res") && st.unit && unitById(st.unit)) lesson(st.unit);
   else home();
 }
@@ -3120,12 +3883,28 @@ window.addEventListener("popstate", (e) => {
   if(skipPop){ const st = skipPop; skipPop = null; try{ history.replaceState(st, ""); }catch(err){} return; }
   try{ if(TTS) TTS.cancel(); }catch(err){}
   let st = e.state || {s:"home"};
-  if(st.s === "quiz" || st.s === "res") st = {s:"lesson", id:st.unit};   // un esercizio lasciato non si riprende a metà
+  if(st.s === "quiz" || st.s === "res") st = st.set ? {s:"wo"} : {s:"lesson", id:st.unit};
+  if(st.s === "cards") st = {s:"decks"};   // un esercizio lasciato non si riprende a metà
   fromPop = true;
   try{ showState(st); } finally { fromPop = false; }
   curDepth = DEPTH[st.s] || 0;
   if(st !== e.state){ try{ history.replaceState(st, ""); }catch(err){} }
 });
+
+/* ---------- barra delle sezioni in basso ---------- */
+const TAB_IC = {
+  path:'<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3.5 3.5 0 0 0 0-7H9a3.5 3.5 0 0 1 0-7h6.5"/></svg>',
+  cards:'<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="12" height="15" rx="2.5" transform="rotate(-8 9 13.5)"/><rect x="9" y="3" width="12" height="15" rx="2.5"/></svg>',
+  words:'<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4" width="8" height="6" rx="2"/><rect x="12.5" y="4" width="9" height="6" rx="2"/><rect x="5.5" y="14" width="13" height="6" rx="2"/></svg>'
+};
+function tabBar(active){
+  const due = fcDueAll();
+  const tabs = [["path","Percorso",home],["cards","Flashcards",decksScreen],["words","Frasi",woScreen]];
+  const bar = $(`<nav class="tabbar" aria-label="Sezioni">${tabs.map(([id, l]) => `<button class="tab ${id === active ? "on" : ""}" data-t="${id}" ${id === active ? 'aria-current="page"' : ""}>
+    <span class="tab-ic">${TAB_IC[id]}${id === "cards" && due ? `<span class="tab-n">${due > 99 ? "99+" : due}</span>` : ""}</span><span>${l}</span></button>`).join("")}</nav>`);
+  bar.querySelectorAll(".tab").forEach(b => b.onclick = () => { if(b.dataset.t !== active) tabs.find(t => t[0] === b.dataset.t)[2](); else window.scrollTo({top:0, behavior:"smooth"}); });
+  return bar;
+}
 
 /* ---------- HOME ---------- */
 const GROUPS = [
@@ -3197,7 +3976,7 @@ function home(){
       </div>
       <button class="btn btn-lion" id="go">${started ? "Continua" : "Inizia"}</button>
     </section>
-    ${S.wrong.length ? `<button class="review" id="rev"><div><b>Ripasso errori</b><br><span style="font-size:14px">Rifai solo quello che hai sbagliato</span></div><span class="count">${S.wrong.length}</span></button>` : `<div style="height:14px"></div>`}
+        ${S.wrong.length ? `<button class="review" id="rev"><div><b>Ripasso errori</b><br><span style="font-size:14px">Rifai solo quello che hai sbagliato</span></div><span class="count">${S.wrong.length}</span></button>` : `<div style="height:14px"></div>`}
     ${phoneVoice() ? "" : `<button class="review novoice" id="nov"><div><b>Nessuna voce olandese</b><br><span style="font-size:14px">Per sentire la pronuncia installa una voce olandese. Tocca qui per sapere come.</span></div></button>`}
     <span class="label">Percorso</span>
     <nav class="path" id="path"></nav>
@@ -3245,6 +4024,7 @@ function home(){
   v.querySelector("#vox").onclick = settings;
   const nov = v.querySelector("#nov"); if(nov) nov.onclick = settings;
   const rev = v.querySelector("#rev"); if(rev) rev.onclick = startReview;
+  v.appendChild(tabBar("path"));
   mount(v);
 }
 
@@ -3371,11 +4151,14 @@ function grammarPicks(uid){
   const intro = (u.core || []).map((w,i) => ({u:uid, i, v:true, src:"core", intro:true, it:vocabItem(uid, i, "vintro", "core")}));
   const drills = shuffle(u.drills.map((it,i) => ({u:uid, i, c:true, it}))).slice(0, DRILLS).sort((a,b) => RANK[a.it.t] - RANK[b.it.t]);
   const mixed = shuffle(u.items.map((it,i) => ({u:uid, i, it}))).slice(0, MIXED).sort((a,b) => RANK[a.it.t] - RANK[b.it.t]);
-  return intro.concat(drills, mixed);   // prima la regola, poi le frasi che uniscono tutto
+  // 2 esercizi sull'ordine delle parole collegati a questa unità
+  const wo = shuffle([].concat(...ORDER_SETS.filter(st => st.unit === uid).map(st => st.items.map((x, i) => ({set:st.id, i}))))).slice(0, 2)
+    .map(r => ({set:r.set, i:r.i, w:true, it:woItem(r.set, r.i)}));
+  return intro.concat(drills, wo, mixed);   // prima la regola, poi le frasi che uniscono tutto
 }
-function begin(mode, unit, list, block){
-  screen({s:"quiz", unit});
-  R = {mode, unit, block, queue:list, pos:0, total:list.filter(c => !c.intro).length, first:0, xp:0};
+function begin(mode, unit, list, block, set){
+  screen({s:"quiz", unit, set: set || null});
+  R = {mode, unit, block, set, queue:list, pos:0, total:list.filter(c => !c.intro).length, first:0, xp:0};
   renderItem();
 }
 function startUnit(id){ begin("unit", id, grammarPicks(id)); }
@@ -3388,22 +4171,23 @@ function startReview(){
   const list = shuffle(S.wrong).slice(0, 12).map(k => {
     const p = k.split(":");
     if(p[0] === "v" || p[0] === "k"){ const src = p[0] === "k" ? "core" : "vocab"; return listOf(p[1], src)[+p[2]] ? {u:p[1], i:+p[2], v:true, src, it:vocabItem(p[1], +p[2], null, src)} : null; }
+    if(p[0] === "w"){ const st = ORDER_SETS.find(x => x.id === p[1]); return st && st.items[+p[2]] ? {set:p[1], i:+p[2], w:true, it:woItem(p[1], +p[2])} : null; }
     if(p[0] === "c"){ const un = unitById(p[1]); return un && un.drills[+p[2]] ? {u:p[1], i:+p[2], c:true, it:un.drills[+p[2]]} : null; }
     const un = unitById(p[0]); return un && un.items[+p[1]] ? {u:p[0], i:+p[1], it:un.items[+p[1]]} : null;
   }).filter(Boolean);
   if(!list.length){ S.wrong = []; save(); return home(); }
   begin("review", null, list);
 }
-const keyOf = (cur) => (cur.v ? (cur.src === "core" ? "k:" : "v:") : cur.c ? "c:" : "") + cur.u + ":" + cur.i;
+const keyOf = (cur) => cur.w ? "w:" + cur.set + ":" + cur.i : (cur.v ? (cur.src === "core" ? "k:" : "v:") : cur.c ? "c:" : "") + cur.u + ":" + cur.i;
 
-const KIND = {vintro:"Parola nuova", mc:"Scegli la risposta", fill:"Completa la frase", order:"Componi la frase", tr:"Traduci con le tessere",
+const KIND = {wo:"Metti in ordine", vintro:"Parola nuova", mc:"Scegli la risposta", fill:"Completa la frase", order:"Componi la frase", tr:"Traduci con le tessere",
   vnl:"Cosa significa?", vit:"Come si dice in olandese?", vlisten:"Ascolta e scegli"};
 
 function renderItem(){
   const cur = R.queue[R.pos];
   const it = cur.it;
   if(it.t === "vintro") return renderIntro(cur);
-  const kind = it.t === "vmc" ? it.kind : it.t;
+  const kind = it.t === "vmc" ? it.kind : it.wo ? "wo" : it.t;
   let qHtml;
   if(it.t === "vmc"){
     if(it.kind === "vnl") qHtml = `<div class="bigword"><span class="wd">${esc(it.word)}</span><button class="qsay" id="qs" aria-label="Ascolta">${ICON.sound}</button></div>`;
@@ -3418,6 +4202,7 @@ function renderItem(){
       <span class="label">${cur.retry ? "Riprova · " : ""}${KIND[kind]}</span>
       ${qHtml}
       ${it.h ? `<span class="hint">${esc(it.h)}</span>` : ""}
+      ${it.wo ? `<button class="rulebtn" id="rb" aria-expanded="false">Regola · ${esc(it.setTitle)}</button><div class="rulebox" id="rbox" hidden>${it.rule}</div>` : ""}
       <div id="area"></div>
     </div>
     <div class="dock"><div class="dock-in" id="dock"><button class="btn btn-deep" id="chk" disabled>Controlla</button></div></div>
@@ -3452,16 +4237,20 @@ function renderItem(){
     getAnswer = () => f.value;
   } else {
     // order e tr: tessere da comporre
-    let words, extra;
-    if(it.t === "order"){ words = it.a.split(" "); extra = it.x || []; }
+    let words, extra, lockN = 0;
+    if(it.t === "order" && Array.isArray(it.a)){ words = it.a.slice(0, it.start || 0).concat((it.tiles || it.a).slice(it.start || 0)); extra = []; lockN = it.start || 0; }
+    else if(it.t === "order"){ words = it.a.split(" "); extra = it.x || []; }
     else {
       words = L.tokens(it.a[0]);
       const have = new Set(words.map(w => w.toLowerCase()));
       const pool = L.vocabWords(unitById(cur.u).vocab).filter(w => !have.has(w.toLowerCase()));
       extra = it.x || shuffle(pool).slice(0, Math.min(3, pool.length));
     }
-    const toks = shuffle(words.concat(extra));
-    const slot = $(`<div class="slot" aria-label="La tua frase"></div>`);
+    const locked = words.slice(0, lockN), free = words.slice(lockN);
+    let toks = shuffle(free.concat(extra));
+    for(let t = 0; t < 6 && toks.length > 2 && toks.join("|") === free.join("|"); t++) toks = shuffle(toks);   // mai già in ordine
+    const slot = $(`<div class="slot ${Array.isArray(it.a) ? "chunks" : ""}" aria-label="La tua frase"></div>`);
+    locked.forEach(w => slot.appendChild($(`<span class="tok lock" title="Già al suo posto">${esc(w)}</span>`)));
     const bank = $(`<div class="bank"></div>`);
     const picked = [];
     toks.forEach(w => {
@@ -3477,10 +4266,13 @@ function renderItem(){
       };
       bank.appendChild(b);
     });
+    if(Array.isArray(it.a)) bank.classList.add("chunks");
     area.append(slot, bank);
-    getAnswer = () => picked.map(p => p.w).join(" ");
+    getAnswer = () => locked.concat(picked.map(p => p.w)).join(" ");
   }
 
+  const rb = v.querySelector("#rb");
+  if(rb) rb.onclick = () => { const bx = v.querySelector("#rbox"); bx.hidden = !bx.hidden; rb.setAttribute("aria-expanded", !bx.hidden); };
   R.locked = false;
   chk.onclick = () => check(it, getAnswer(), v);
   v.querySelector("#quit").onclick = home;
@@ -3545,7 +4337,7 @@ function compareHtml(cur, it, ans, ok, right){
     if(!ok){ out += row("bad", "La tua risposta", ans || "(vuota)", ""); out += row("good", "Giusta", right, ""); }
     trans = G.t;
   } else {   // order, tr: la domanda è già la frase italiana
-    if(!ok){ out += row("bad", "La tua frase", ans || "(vuota)", ""); out += row("good", "Giusta", right, ""); }
+    if(!ok){ out += row("bad", "La tua frase", ans || "(vuota)", ""); if(!it.wo) out += row("good", "Giusta", right, ""); }
     trans = it.q;
   }
   if(trans) out += `<div class="tr-it"><span class="cl">Traduzione</span> ${esc(trans)}</div>`;
@@ -3556,7 +4348,7 @@ function isCorrect(it, ans){
   if(ans == null) return false;
   if(it.t === "vmc") return ans === it.right;
   if(it.t === "mc") return ans === it.o[it.a];
-  if(it.t === "order") return [it.a].concat(it.alt || []).some(x => norm(x) === norm(ans));
+  if(it.t === "order") return [it.a].concat(it.alt || []).some(x => norm(Array.isArray(x) ? x.join(" ") : x) === norm(ans));
   // se la risposta attesa contiene accenti, apostrofi o trattini, vanno scritti anche da chi risponde
   const strict = (x) => String(x).toLowerCase().replace(/[’‘`´]/g,"'").replace(/[.,!?;:"“”]/g," ").replace(/\s+/g," ").trim();
   return it.a.some(a => /[^\x00-\x7F]|['’-]/.test(a) ? strict(a) === strict(ans) : norm(a) === norm(ans));   // fill e tr
@@ -3586,7 +4378,7 @@ function check(it, ans, v){
   }
   save();
 
-  const right = it.t === "vmc" ? it.right : it.t === "mc" ? it.o[it.a] : it.t === "order" ? it.a : it.a[0];
+  const right = it.t === "vmc" ? it.right : it.t === "mc" ? it.o[it.a] : it.t === "order" ? (Array.isArray(it.a) ? it.a.join(" ") : it.a) : it.a[0];
   const dutch = it.t === "vmc" ? it.say : L.dutchOf(it);
   const canPlay = hasAudio(dutch);
   const qbg = v.querySelector(".quiz-bg");
@@ -3597,6 +4389,7 @@ function check(it, ans, v){
   const fb = $(`<div class="fb ${ok ? "ok" : "no"} pop" role="status">
     <h3><span class="fbm">${patatino(ok ? "happy" : "sad", 40)}</span>${ok ? "Goed zo!" : "Niet helemaal"}${canPlay ? `<button class="say" aria-label="Ascolta (tocca di nuovo per la versione lenta)">${ICON.sound}</button>` : ""}</h3>
     ${cmp}
+    ${it.wo ? woDiagram(it) : ""}
     ${it.t === "vmc" && !ok ? "" : `<div class="ex">${it.e || ""}</div>`}
   </div>`);
   const next = $(`<button class="btn ${ok ? "btn-ok" : "btn-no"}" id="nx">Continua</button>`);
@@ -3615,7 +4408,8 @@ function advance(){
 }
 
 function finish(){
-  screen({s:"res", unit:R.unit});
+  screen({s:"res", unit:R.unit, set:R.set || null});
+  if(R.mode === "wo") return woFinish();
   const pct = Math.round(R.first / R.total * 100);
   if(R.mode === "unit") S.best[R.unit] = Math.max(S.best[R.unit] || 0, pct);
   if(R.mode === "vocab"){
@@ -3624,12 +4418,7 @@ function finish(){
     S.vbest[R.unit] = partScore(R.unit, 1);
   }
   S.xp += R.xp;
-  const t = today();
-  if(S.last !== t){
-    const y = new Date(); y.setDate(y.getDate()-1);
-    S.streak = (S.last === today(y)) ? S.streak + 1 : 1;
-    S.last = t;
-  }
+  bumpDay();
   save();
   const msg = pct >= 80 && R.mode === "vocab" ? "Parole memorizzate. Ora passa alla grammatica." : pct === 100 ? "Perfetto." : pct >= 80 ? "Ottimo lavoro." : pct >= 50 ? "Ci sei quasi. Un altro giro e la chiudi." : "Rileggi la spiegazione e riprova.";
   const pn = {vocab:1, unit:2}[R.mode];
@@ -3661,13 +4450,306 @@ function finish(){
 }
 
 /* ---------- montaggio e tastiera ---------- */
-function mount(v){ app.innerHTML = ""; app.appendChild(v); window.scrollTo(0,0); }
+function mount(v){
+  app.innerHTML = ""; app.appendChild(v);
+  // barre fisse fuori dai contenitori animati, così non si spostano durante l'animazione di apertura
+  v.querySelectorAll(".pop .dock, .pop .tabbar").forEach(el => app.appendChild(el));
+  window.scrollTo(0,0);
+}
 document.addEventListener("keydown", e => {
   if(e.key !== "Enter") return;
   const nx = document.getElementById("nx"), chk = document.getElementById("chk");
   if(nx){ e.preventDefault(); nx.click(); }
   else if(chk && !chk.disabled){ e.preventDefault(); chk.click(); }
 });
+
+/* ---------- FLASHCARDS: mazzi tematici con ripasso a intervalli (sistema Leitner) ---------- */
+const FC_INT = [0, 1, 3, 7, 14, 30];        // giorni di attesa per ogni livello
+const FC_NEW = 10, FC_MAX = 20;            // carte nuove e carte totali per sessione
+const FC_GROUPS = [["Grammatica","Forme da memorizzare"],["Lessico","Parole per tema"],["Vlaams","Il neerlandese del Belgio"]];
+function addDays(n){ const d = new Date(); d.setDate(d.getDate() + n); return today(d); }
+const fcKey = (deck, card) => deck.id + ":" + card[0];
+const fcRec = (deck, card) => (S.fc || {})[fcKey(deck, card)];
+function fcStats(deck){
+  const t = today(); let due = 0, fresh = 0, learned = 0;
+  deck.cards.forEach(c => { const r = fcRec(deck, c); if(!r) fresh++; else { if(r.d <= t) due++; if(r.b >= 3) learned++; } });
+  return {due, fresh, learned, total: deck.cards.length};
+}
+function fcDueAll(){ return DECKS.reduce((n, d) => n + fcStats(d).due, 0); }
+function bumpDay(){
+  const t = today();
+  if(S.last !== t){ const y = new Date(); y.setDate(y.getDate()-1); S.streak = (S.last === today(y)) ? S.streak + 1 : 1; S.last = t; }
+}
+const FC_DIRS = [["nl","Neerlandese → italiano"],["it","Italiano → neerlandese"],["mix","Misto"]];
+
+function decksScreen(){
+  screen({s:"decks"});
+  const due = fcDueAll();
+  const v = $(`<div class="pop">
+    <div class="lesson-h tab-h"><span class="label">Ripasso</span><h2>Flashcards</h2><p>Gira la carta, poi dimmi se la sapevi. Le carte che non sai tornano prima.</p></div>
+    ${due ? `<button class="review fc-due" id="alldue"><div><b>Ripassa tutto</b><br><span style="font-size:14px">Le carte di tutti i mazzi in scadenza oggi</span></div><span class="count">${due}</span></button>` : ""}
+    <div class="sec-h"><h3>Direzione</h3></div>
+    <div class="seg" role="group" aria-label="Direzione delle carte">${FC_DIRS.map(([id, l]) => `<button class="seg-b ${(S.fcDir || "nl") === id ? "on" : ""}" data-dir="${id}" aria-pressed="${(S.fcDir || "nl") === id}">${l}</button>`).join("")}</div>
+    <div id="dl"></div>
+  </div>`);
+  const dl = v.querySelector("#dl");
+  FC_GROUPS.forEach(([g, gs]) => {
+    const list = DECKS.filter(d => d.g === g);
+    if(!list.length) return;
+    dl.appendChild($(`<div class="sec-h"><h3>${esc(g)}</h3><span class="label">${esc(gs)}</span></div>`));
+    const box = $(`<div class="decks"></div>`);
+    list.forEach(d => {
+      const st = fcStats(d), pct = Math.round(st.learned / st.total * 100);
+      const badge = st.due ? `<span class="fc-badge due">${st.due} da ripassare</span>` : st.fresh === st.total ? `<span class="fc-badge">nuovo</span>` : st.fresh ? `<span class="fc-badge">${st.fresh} nuove</span>` : `<span class="fc-badge ok">al passo</span>`;
+      const b = $(`<button class="deck"><span class="dk-t"><b>${esc(d.t)}</b><span>${esc(d.s)}</span></span>
+        <span class="dk-r">${badge}<span class="dk-n">${st.learned}/${st.total} imparate</span><span class="meter"><i style="width:${pct}%"></i></span></span></button>`);
+      b.onclick = () => studyDeck(d.id);
+      box.appendChild(b);
+    });
+    dl.appendChild(box);
+  });
+  v.querySelectorAll(".seg-b").forEach(b => b.onclick = () => { S.fcDir = b.dataset.dir; save(); decksScreen(); });
+  const ad = v.querySelector("#alldue"); if(ad) ad.onclick = () => studyDeck(null);
+  v.appendChild(tabBar("cards"));
+  mount(v);
+}
+
+let F = null;   // sessione di flashcard in corso
+function studyDeck(id, all){
+  const decks = id ? DECKS.filter(d => d.id === id) : DECKS;
+  const t = today();
+  let due = [], fresh = [];
+  decks.forEach(d => d.cards.forEach(c => { const r = fcRec(d, c); if(!r) fresh.push({d, c}); else if(r.d <= t) due.push({d, c}); }));
+  let list = shuffle(due).slice(0, FC_MAX);
+  if(id) list = list.concat(fresh.slice(0, Math.min(FC_NEW, FC_MAX - list.length)));
+  if(!list.length && all && id) list = shuffle(decks[0].cards.map(c => ({d:decks[0], c}))).slice(0, FC_MAX);
+  if(!list.length) return fcNothing(id);
+  F = {id, queue: list.map(x => Object.assign({}, x, {dir: fcDir(x.d)})), pos:0, known:0, seen:0, flipped:false, xp:0};
+  screen({s:"cards", deck:id});
+  fcRender();
+}
+function fcDir(deck){
+  if(deck.kind === "dehet") return "nl";
+  const d = S.fcDir || "nl";
+  return d === "mix" ? (Math.random() < .5 ? "nl" : "it") : d;
+}
+function fcNothing(id){
+  screen({s:"cards", deck:id});
+  const v = $(`<div class="res pop">
+    ${patatino("happy", 130)}
+    <span class="label">${id ? esc(DECKS.find(d => d.id === id).t) : "Tutti i mazzi"}</span>
+    <h2 class="fc-done-h">Tutto ripassato per oggi</h2>
+    <p>Le prossime carte tornano nei prossimi giorni. Se vuoi, puoi ripassare lo stesso.</p>
+    <div class="row">
+      ${id ? `<button class="btn btn-lion" id="anyway">Ripassa comunque</button>` : ""}
+      <button class="btn btn-ghost" id="dk">Torna ai mazzi</button>
+    </div>
+  </div>`);
+  const a = v.querySelector("#anyway"); if(a) a.onclick = () => studyDeck(id, true);
+  v.querySelector("#dk").onclick = decksScreen;
+  mount(v);
+}
+function fcFaces(x){
+  const [nl, it, ex] = x.c, d = x.d;
+  if(d.kind === "dehet") return {front: nl, frontSay: null, back: x.c[1] + " " + nl, backSub: x.c[2], backSay: x.c[1] + " " + nl, frontIsNl:true};
+  const nlSay = nl.replace(/↔/g, ",");
+  const exSay = d.sayExtra && ex ? ex.replace(/[·]/g, ",").replace(/\(|\)/g, "") : null;
+  if(x.dir === "it") return {front: it, back: nl, backSub: ex, backSay: exSay ? nlSay + ". " + exSay : nlSay, frontSay:null};
+  return {front: nl, frontSay: nlSay, back: it, backSub: ex, backSay: exSay, frontIsNl:true};
+}
+function fcRender(){
+  const x = F.queue[F.pos], d = x.d, fc = fcFaces(x);
+  F.flipped = false;
+  const p = F.pos / F.queue.length * 100;
+  const isChoice = d.kind === "dehet";
+  const v = $(`<div>
+    <div class="ex-top">
+      <button class="x" id="quit" aria-label="Esci dalle flashcard">${ICON.x}</button>
+      <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.round(p)}"><i style="width:${p}%"></i></div>
+      <span class="ex-count">${F.pos+1}/${F.queue.length}</span>
+    </div>
+    <div class="pop">
+      <span class="label">${esc(d.t)}${x.again ? " · di nuovo" : ""}</span>
+      <div class="fc-wrap">
+        <button class="fc" id="card" aria-label="${isChoice ? "Carta" : "Tocca per girare la carta"}">
+          <span class="fc-in">
+            <span class="fc-face fc-f"><span class="fc-txt">${esc(fc.front)}</span>${isChoice ? `<span class="fc-hint">de o het?</span>` : `<span class="fc-hint">Tocca per girare</span>`}</span>
+            <span class="fc-face fc-b"><span class="fc-txt">${esc(fc.back)}</span>${fc.backSub ? `<span class="fc-sub">${esc(fc.backSub)}</span>` : ""}<span class="fc-mark" id="mark"></span></span>
+          </span>
+        </button>
+        ${fc.frontSay || fc.backSay ? `<button class="qsay fc-say" id="say" aria-label="Ascolta">${ICON.sound}</button>` : ""}
+      </div>
+    </div>
+    <div class="dock"><div class="dock-in" id="dock">
+      ${isChoice ? `<div class="fc-row"><button class="btn btn-ghost fc-art" data-a="de">de</button><button class="btn btn-ghost fc-art" data-a="het">het</button></div>`
+                 : `<button class="btn btn-deep" id="flip">Gira la carta</button>`}
+    </div></div>
+    <div class="quiz-bg" aria-hidden="true">${patatino("wave", 240)}</div>
+  </div>`);
+  const card = v.querySelector("#card");
+  const say = v.querySelector("#say");
+  const speakSide = () => { const t = F.flipped ? (fc.backSay || fc.frontSay) : (fc.frontSay || null); if(t) play(t, {fresh:true}); else if(fc.backSay && F.flipped) play(fc.backSay, {fresh:true}); };
+  if(say){ say.onclick = () => { const t = F.flipped ? (fc.backSay || fc.frontSay) : fc.frontSay; if(t) play(t); }; if(!fc.frontSay) say.hidden = true; }
+  const flip = () => {
+    if(F.flipped || isChoice) return;
+    F.flipped = true; card.classList.add("flipped"); card.setAttribute("aria-label", "Carta girata");
+    if(say) say.hidden = !(fc.backSay || fc.frontSay);
+    if(fc.backSay && S.audio) play(fc.backSay, {fresh:true});
+    const dock = v.querySelector("#dock");
+    dock.innerHTML = `<div class="fc-row"><button class="btn btn-no" id="again">Non ancora</button><button class="btn btn-ok" id="know">Lo so</button></div>`;
+    dock.querySelector("#again").onclick = () => fcAnswer(false);
+    dock.querySelector("#know").onclick = () => fcAnswer(true);
+  };
+  card.onclick = flip;
+  const fl = v.querySelector("#flip"); if(fl) fl.onclick = flip;
+  v.querySelectorAll(".fc-art").forEach(b => b.onclick = () => {
+    if(F.flipped) return;
+    const ok = b.dataset.a === x.c[1];
+    F.flipped = true; card.classList.add("flipped", ok ? "good" : "bad");
+    v.querySelector("#mark").textContent = ok ? "Giusto!" : "Era «" + x.c[1] + "»";
+    v.querySelectorAll(".fc-art").forEach(o => { o.disabled = true; if(o.dataset.a === x.c[1]) o.classList.add("right"); });
+    if(fc.backSay && S.audio) play(fc.backSay, {fresh:true});
+    if(say) say.hidden = false;
+    const dock = v.querySelector("#dock");
+    const next = $(`<button class="btn ${ok ? "btn-ok" : "btn-no"}" id="nx">Continua</button>`);
+    next.onclick = () => fcAnswer(ok);
+    dock.appendChild(next);
+  });
+  v.querySelector("#quit").onclick = decksScreen;
+  mount(v);
+  if(fc.frontSay && S.audio) play(fc.frontSay, {fresh:true});
+}
+function fcAnswer(ok){
+  const x = F.queue[F.pos];
+  S.fc = S.fc || {};
+  const k = fcKey(x.d, x.c), r = S.fc[k];
+  if(!x.again){ F.seen++; if(ok){ F.known++; F.xp += 2; } }
+  let b;
+  if(ok) b = x.again ? 1 : Math.min((r ? r.b : 0) + 1, FC_INT.length - 1);
+  else b = 0;
+  S.fc[k] = {b, d: addDays(FC_INT[b])};
+  if(!ok && (x.tries || 0) < 2){
+    const copy = Object.assign({}, x, {again:true, tries:(x.tries || 0) + 1});
+    F.queue.splice(Math.min(F.pos + 4, F.queue.length), 0, copy);   // torna tra qualche carta
+  }
+  save();
+  F.pos++;
+  if(F.pos >= F.queue.length) return fcFinish();
+  fcRender();
+}
+function fcFinish(){
+  S.xp += F.xp; bumpDay(); save();
+  const pct = F.seen ? Math.round(F.known / F.seen * 100) : 100;
+  const id = F.id, deck = id ? DECKS.find(d => d.id === id) : null;
+  const st = deck ? fcStats(deck) : {due: fcDueAll(), fresh: 0};
+  const more = st.due + (deck ? st.fresh : 0);
+  const v = $(`<div class="res pop">
+    ${patatino(pct >= 80 ? "cheer" : pct >= 50 ? "happy" : "sad", 130)}
+    <span class="label">${deck ? esc(deck.t) : "Ripasso di tutti i mazzi"}</span>
+    <div class="score">${F.known}<small>/${F.seen}</small></div>
+    <p>${pct >= 80 ? "Ottima memoria." : pct >= 50 ? "Bene, le carte difficili tornano presto." : "Le rivedrai presto: è così che si memorizza."}</p>
+    <span class="xpgain">+${F.xp} XP · ${S.streak} ${S.streak === 1 ? "giorno" : "giorni"} di fila</span>
+    <div class="row">
+      ${more ? `<button class="btn btn-lion" id="more">Altre carte (${more})</button>` : ""}
+      <button class="btn ${more ? "btn-ghost" : "btn-lion"}" id="dk">Torna ai mazzi</button>
+    </div>
+  </div>`);
+  const m = v.querySelector("#more"); if(m) m.onclick = () => studyDeck(id);
+  v.querySelector("#dk").onclick = decksScreen;
+  mount(v);
+}
+
+/* ---------- ORDINE DELLE PAROLE: serie di esercizi con tessere a blocchi ---------- */
+const WO_GROUPS = [
+  ["La frase principale", ["v2","inv","tmp","q","niet"]],
+  ["Più verbi nella frase", ["mod","sep","perf","te"]],
+  ["Frasi complesse", ["sub","want","subfirst","rel","cluster"]]
+];
+// parole che restano maiuscole anche a metà frase (nomi propri, lingue, paesi): ricavate dai dati
+let PROPER = null;
+function properWords(){
+  if(PROPER) return PROPER;
+  PROPER = new Set();
+  ORDER_SETS.forEach(st => st.items.forEach(x => [x.a].concat(x.alt || []).forEach(seq => seq.forEach((c, k) => {
+    c.split(" ").forEach((w, j) => { if((k > 0 || j > 0) && /^[A-ZÀ-Ý]/.test(w)) PROPER.add(w); });
+  }))));
+  return PROPER;
+}
+// le tessere non devono rivelare quale blocco va all'inizio: niente maiuscola iniziale, salvo i nomi propri
+function tileCase(c){
+  const w = c.split(" ")[0];
+  return properWords().has(w) ? c : c.charAt(0).toLowerCase() + c.slice(1);
+}
+function woItem(setId, i){
+  const st = ORDER_SETS.find(x => x.id === setId), x = st.items[i];
+  return {t:"order", wo:true, q:x.it, a:x.a, tiles:x.a.map(tileCase), alt:x.alt || [], start:x.start || 0, v:x.v || [], end:x.end || [], e:x.e, rule:st.rule, setTitle:st.t};
+}
+// schema della frase: il verbo coniugato e le parti che vanno in fondo
+function woDiagram(it){
+  const pills = it.a.map((c, k) => {
+    const cls = it.v.includes(k) ? "pv" : it.end.includes(k) ? "pe" : "";
+    return `<span class="wp ${cls}">${esc(c)}</span>`;
+  }).join("");
+  const leg = [it.v.length ? `<span class="wl"><i class="pv"></i>verbo coniugato</span>` : "", it.end.length ? `<span class="wl"><i class="pe"></i>in fondo</span>` : ""].join("");
+  return `<div class="wdiag"><span class="cl">Frase giusta</span><div class="wpills">${pills}</div><div class="wleg">${leg}</div></div>`;
+}
+const woDone = () => ORDER_SETS.filter(s => ((S.wob || {})[s.id] || 0) >= 80).length;
+function woScreen(){
+  screen({s:"wo"});
+  const v = $(`<div class="pop">
+    <div class="lesson-h tab-h"><span class="label">Ordine delle parole</span><h2>Costruisci la frase</h2><p>In neerlandese ogni pezzo della frase ha il suo posto. Metti i blocchi nell'ordine giusto: dopo ogni risposta vedi dove va il verbo.</p></div>
+    <div id="wl"></div>
+  </div>`);
+  const wl = v.querySelector("#wl");
+  WO_GROUPS.forEach(([g, ids]) => {
+    wl.appendChild($(`<div class="sec-h"><h3>${esc(g)}</h3></div>`));
+    const box = $(`<div class="decks"></div>`);
+    ids.forEach(id => {
+      const st = ORDER_SETS.find(x => x.id === id); if(!st) return;
+      const best = (S.wob || {})[id] || 0, u = unitById(st.unit), n = unitIndex(st.unit) + 1;
+      const badge = best >= 80 ? `<span class="fc-badge ok">✓ ${best}%</span>` : best ? `<span class="fc-badge">${best}%</span>` : `<span class="fc-badge">nuovo</span>`;
+      const b = $(`<button class="deck"><span class="dk-t"><b>${esc(st.t)}</b><span>${esc(st.s)}</span></span>
+        <span class="dk-r">${badge}<span class="dk-n">${u ? "unità " + n : ""} · ${st.items.length} frasi</span><span class="meter"><i style="width:${best}%"></i></span></span></button>`);
+      b.onclick = () => startWo(id);
+      box.appendChild(b);
+    });
+    wl.appendChild(box);
+  });
+  v.appendChild(tabBar("words"));
+  mount(v);
+}
+function startWo(id){
+  const st = ORDER_SETS.find(x => x.id === id);
+  const list = st.items.map((x, i) => ({set:id, i, w:true, it:woItem(id, i)}));
+  begin("wo", null, list, null, id);
+}
+function woFinish(){
+  const pct = Math.round(R.first / R.total * 100), id = R.set;
+  S.wob = S.wob || {}; S.wob[id] = Math.max(S.wob[id] || 0, pct);
+  S.xp += R.xp; bumpDay(); save();
+  const order = [].concat(...WO_GROUPS.map(g => g[1]));
+  const nextId = order[order.indexOf(id) + 1];
+  const st = ORDER_SETS.find(x => x.id === id), nx = nextId && ORDER_SETS.find(x => x.id === nextId);
+  const v = $(`<div class="res pop">
+    ${patatino(pct >= 80 ? "cheer" : pct >= 50 ? "happy" : "sad", 130)}
+    <span class="label">Costruisci la frase · ${esc(st.t)}</span>
+    <div class="score">${R.first}<small>/${R.total}</small></div>
+    <p>${pct === 100 ? "Ordine perfetto." : pct >= 80 ? "Ottimo: la regola è tua." : pct >= 50 ? "Ci sei quasi. Riguarda lo schema dei verbi e riprova." : "Apri «Regola» durante l'esercizio e riprova."}</p>
+    <span class="xpgain">+${R.xp} XP · ${S.streak} ${S.streak === 1 ? "giorno" : "giorni"} di fila</span>
+    <div class="row">
+      ${pct >= 80 && nx ? `<button class="btn btn-lion" id="nextw">Prossima serie · ${esc(nx.t)}</button>` : ""}
+      <button class="btn ${pct >= 80 ? "btn-ghost" : "btn-lion"}" id="againw">Rifai la serie</button>
+      ${S.wrong.length ? `<button class="btn btn-ghost" id="rv">Ripassa gli errori (${S.wrong.length})</button>` : ""}
+      <button class="btn btn-ghost" id="wl">Tutte le serie</button>
+    </div>
+  </div>`);
+  const on = (s, fn) => { const b = v.querySelector(s); if(b) b.onclick = fn; };
+  on("#nextw", () => startWo(nextId));
+  on("#againw", () => startWo(id));
+  on("#rv", startReview);
+  on("#wl", woScreen);
+  mount(v);
+}
 
 applyPalette();
 try{ history.replaceState({s:"home"}, ""); }catch(e){}
