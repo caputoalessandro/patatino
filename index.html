@@ -477,6 +477,10 @@ body{background:var(--bg)}
 .privacy ul{padding-left:20px;margin:0}
 .privacy li{margin-bottom:8px}
 #priv{margin:0 0 26px}
+.chip-inst{background:var(--deep);color:#fff;font-weight:700}
+.chip .gear{display:none}
+/* con il bottone Installa, sugli schermi stretti Impostazioni diventa solo l'ingranaggio così stanno sulla stessa riga */
+@media (max-width:440px){.stats:has(.chip-inst){gap:5px}.stats:has(.chip-inst) .chip{padding-inline:7px}.stats:has(.chip-inst) .gear{display:block;width:17px;height:17px}.stats:has(.chip-inst) .chip-l{display:none}}
 </style>
 
 <div id="app"></div>
@@ -4413,7 +4417,8 @@ function home(){
         <span class="chip" title="Giorni di fila">${ICON.flame}${S.streak}</span>
         <span class="chip" title="Punti esperienza">${ICON.star}${S.xp}</span>
         <button class="chip" id="aud" aria-pressed="${S.audio}" title="Audio automatico dopo ogni risposta">${ICON.sound}${S.audio ? "On" : "Off"}</button>
-        <button class="chip" id="vox" title="Colori e voce">Impostazioni</button>
+        <button class="chip" id="vox" title="Colori e voce" aria-label="Impostazioni"><svg class="gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg><span class="chip-l">Impostazioni</span></button>
+        ${canInstall() ? `<button class="chip chip-inst" id="hinst" title="Metti Patatino sulla schermata Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg>Installa</button>` : ""}
       </div>
     </header>
     <section class="next">
@@ -4478,6 +4483,7 @@ function home(){
   v.querySelector("#go").onclick = () => lesson(nu.id);
   v.querySelector("#aud").onclick = () => { S.audio = !S.audio; save(); home(); };
   v.querySelector("#vox").onclick = settings;
+  const hinst = v.querySelector("#hinst"); if(hinst) hinst.onclick = startInstall;
   const nov = v.querySelector("#nov"); if(nov) nov.onclick = settings;
   const rev = v.querySelector("#rev"); if(rev) rev.onclick = startReview;
   v.appendChild(tabBar("path"));
