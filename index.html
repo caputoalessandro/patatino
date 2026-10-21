@@ -281,20 +281,7 @@ body{background:var(--bg)}
 .next h2{overflow-wrap:anywhere;hyphens:auto}
 .next-top{display:block}
 
-/* palette selezionabili (testo sempre nero su sfondi chiari, contrasto verificato) */
-:root[data-palette="mosselen"]{--bg:#BFE6DC;--bg-shade:#86BFB0;--deep:#1D3B5C;--deep-shade:#0F2238;--lion-soft:#E2F4EF;--muted:#2F4F4A;--lion-ink:#1D3B5C}
-:root[data-palette="praline"]{--bg:#F7D3D8;--bg-shade:#DFA3AD;--deep:#5A3324;--deep-shade:#381E14;--lion-soft:#FDE9EC;--muted:#5C4045;--lion-ink:#5A3324}
-:root[data-palette="atomium"]{--bg:#CFE4FA;--bg-shade:#94BBE5;--deep:#2343B8;--deep-shade:#152A7A;--lion-soft:#E7F1FD;--muted:#2F4563;--lion-ink:#2343B8}
 .next .label{color:rgba(255,255,255,.88)}
-.pals{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-bottom:26px}
-.pal{display:flex;flex-direction:column;gap:8px;text-align:left;background:var(--surface);border:2.5px solid var(--ink);border-radius:16px;padding:10px;box-shadow:0 4px 0 var(--bg-shade)}
-.pal.on{outline:3px solid var(--deep);outline-offset:2px}
-.sw{position:relative;height:62px;border-radius:10px;border:2.5px solid var(--ink);display:flex;align-items:center;padding:0 12px;overflow:hidden}
-.sw i{position:absolute;right:0;top:0;bottom:0;width:38%;border-left:2.5px solid var(--ink)}
-.sw b{font-family:var(--f-display);font-size:24px;color:#1A1A1A;position:relative}
-.pt2{display:flex;flex-direction:column;min-width:0}
-.pt2 b{font-family:var(--f-display);font-size:17px}
-.pt2 span{color:var(--muted);font-size:13px}
 .novoice{margin-top:-14px}
 /* Patatino nello sfondo dei quiz */
 .quiz-bg{position:fixed;right:-30px;bottom:calc(140px + env(safe-area-inset-bottom,0px));z-index:-1;opacity:.38;pointer-events:none;transform:rotate(-8deg)}
@@ -3881,7 +3868,7 @@ function nlVoices(){
 }
 // Safari carica le voci in ritardo: aggiorna la schermata quando arrivano
 function voicesReady(){
-  if(document.querySelector(".pals")) settings();
+  if(document.querySelector(".settings-scr")) settings();
   else if(document.querySelector("#nov") && nlVoices().length) home();
 }
 if(TTS){
@@ -3914,14 +3901,12 @@ function play(text, opts){
   speakWith(text, v, slow);
 }
 
-/* ---------- palette di colori ---------- */
+/* ---------- colori ---------- */
 const PALETTES = [
-  {id:"frietkot", name:"Frietkot", sub:"Giallo patatina e lampone", bg:"#F5D130", deep:"#C2304C"},
-  {id:"mosselen", name:"Mosselen", sub:"Menta e blu notte, la più rilassante", bg:"#BFE6DC", deep:"#1D3B5C"},
-  {id:"praline",  name:"Praline",  sub:"Rosa confetto e cioccolato", bg:"#F7D3D8", deep:"#5A3324"},
-  {id:"atomium",  name:"Atomium",  sub:"Azzurro cielo e blu cobalto", bg:"#CFE4FA", deep:"#2343B8"}
+  {id:"frietkot", name:"Frietkot", sub:"Giallo patatina e lampone", bg:"#F5D130", deep:"#C2304C"}
 ];
-function applyPalette(){ try{ document.documentElement.setAttribute("data-palette", S.palette || "frietkot"); }catch(e){} }
+// un solo aspetto: il giallo patatina classico (le palette alternative sono state tolte)
+function applyPalette(){ try{ document.documentElement.setAttribute("data-palette", "frietkot"); }catch(e){} }
 
 /* ---------- navigazione: il gesto "indietro" del telefono segue le schermate ---------- */
 // profondità: percorso 0 · unità e impostazioni 1 · esercizi e risultati 2
@@ -4417,7 +4402,7 @@ function home(){
         <span class="chip" title="Giorni di fila">${ICON.flame}${S.streak}</span>
         <span class="chip" title="Punti esperienza">${ICON.star}${S.xp}</span>
         <button class="chip" id="aud" aria-pressed="${S.audio}" title="Audio automatico dopo ogni risposta">${ICON.sound}${S.audio ? "On" : "Off"}</button>
-        <button class="chip" id="vox" title="Colori e voce" aria-label="Impostazioni"><svg class="gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg><span class="chip-l">Impostazioni</span></button>
+        <button class="chip" id="vox" title="Impostazioni" aria-label="Impostazioni"><svg class="gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg><span class="chip-l">Impostazioni</span></button>
         ${canInstall() ? `<button class="chip chip-inst" id="hinst" title="Metti Patatino sulla schermata Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg>Installa</button>` : ""}
       </div>
     </header>
@@ -4494,20 +4479,14 @@ function home(){
 const SAMPLE = "Goedemorgen! Ik woon in Gent en ik leer Nederlands.";
 let dataMsg = null;   // esito di export/import: resta se la schermata si ridisegna (voci, colori)
 function settings(msg){
-  if(msg && msg.msg) dataMsg = msg; else if(!document.querySelector(".pals")) dataMsg = null;
+  if(msg && msg.msg) dataMsg = msg; else if(!document.querySelector(".settings-scr")) dataMsg = null;
   msg = dataMsg;
   screen({s:"settings"});
   const vs = nlVoices();
   const cur = phoneVoice();
-  const pal = S.palette || "frietkot";
-  const v = $(`<div class="pop">
+  const v = $(`<div class="pop settings-scr">
     <button class="back" id="bk">${ICON.back} Percorso</button>
-    <div class="lesson-h"><span class="label">Impostazioni</span><h2>Colori e voce</h2></div>
-    <div class="sec-h"><h3>Colori</h3><span class="label">Tocca per provarli</span></div>
-    <div class="pals">${PALETTES.map(p => `<button class="pal ${p.id === pal ? "on" : ""}" data-id="${p.id}">
-        <span class="sw" style="background:${p.bg}"><i style="background:${p.deep}"></i><b>Aa</b></span>
-        <span class="pt2"><b>${esc(p.name)}</b><span>${esc(p.sub)}</span></span>
-      </button>`).join("")}</div>
+    <div class="lesson-h"><span class="label">Patatino</span><h2>Impostazioni</h2></div>
     ${canInstall() ? `<div class="sec-h"><h3>Installa l'app</h3></div>
     <div class="data-box inst-box">
       <span class="inst-row">${patatino("cheer", 64)}<span class="note">Metti Patatino sulla schermata Home: si apre come un'app e funziona anche offline.</span></span>
@@ -4530,7 +4509,6 @@ function settings(msg){
     <div class="dock"><div class="dock-in"><button class="btn btn-lion" id="bk2">${ICON.back} Torna al percorso</button></div></div>
     ${vs.length ? "" : `<div class="vl"><span class="label">Nessuna voce olandese trovata</span>Su Android apri <b>Impostazioni → Sistema → Lingue → Sintesi vocale</b>, scegli il motore di Google, poi <b>Installa dati vocali → Nederlands (België)</b>. Su iPhone: <b>Impostazioni → Accessibilità → Contenuto letto ad alta voce → Voci → Olandese</b>. Poi riapri l'app.</div>`}
   </div>`);
-  v.querySelectorAll(".pal").forEach(b => b.onclick = () => { S.palette = b.dataset.id; save(); applyPalette(); settings(); });
   v.querySelectorAll("input[name=voice]").forEach(r => r.onchange = () => { S.voice = r.value; save(); settings(); });
   v.querySelectorAll(".vtest").forEach(b => b.onclick = (e) => {
     e.preventDefault();
