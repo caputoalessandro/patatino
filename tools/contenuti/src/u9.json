@@ -1,0 +1,389 @@
+{
+ "id": "u9",
+ "n": 9,
+ "module": 2,
+ "nl": "Modale werkwoorden",
+ "it": "Verbi modali",
+ "note": "\n<h3>L'idea</h3>\n<p>I verbi modali sono quelli che in italiano sono potere, dovere, volere: si usano insieme a un altro verbo all'infinito. La regola più importante riguarda la <b>posizione</b>: il modale coniugato sta al secondo posto, l'<b>infinito va alla fine della frase</b>. Le due parti formano una specie di \"cornice\".</p>\n<p><i>Ik <b>wil</b> morgen met de trein naar Gent <b>gaan</b>.</i> (Voglio andare a Gand domani in treno.)</p>\n<h3>Il significato di ciascuno</h3>\n<ul>\n<li><b>kunnen</b>: essere capace o essere possibile. <i>Ik kan zwemmen</i> (so nuotare). <i>Kun je morgen komen?</i> (puoi venire domani?)</li>\n<li><b>mogen</b>: avere il permesso. <i>Mag ik hier parkeren?</i> (posso parcheggiare qui?). <b>niet mogen</b> = è vietato: <i>Je mag hier niet roken</i>.</li>\n<li><b>moeten</b>: dovere. <i>Ik moet werken</i>. Attenzione: \"non devo\" nel senso di \"non è necessario\" si dice con un altro verbo, <i>hoeven</i>, che vedrai più avanti.</li>\n<li><b>willen</b>: volere. <i>Ik wil koffie</i>. Per chiedere in modo cortese si usa <i>graag</i>: <i>Ik wil graag koffie</i>.</li>\n<li><b>zullen</b>: futuro, promessa o proposta. <i>Ik zal je helpen</i> (ti aiuterò). <i>Zal ik je helpen?</i> (vuoi che ti aiuti?)</li>\n</ul>\n<h3>La coniugazione</h3>\n<p>I modali sono irregolari al singolare: con ik, hij e zij non hanno la -t.</p>\n<table><tr><th></th><th>kunnen</th><th>moeten</th><th>willen</th><th>mogen</th><th>zullen</th></tr>\n<tr><td>ik</td><td>kan</td><td>moet</td><td>wil</td><td>mag</td><td>zal</td></tr>\n<tr><td>jij / u</td><td>kunt / kan</td><td>moet</td><td>wilt / wil</td><td>mag</td><td>zult / zal</td></tr>\n<tr><td>hij / zij</td><td>kan</td><td>moet</td><td>wil</td><td>mag</td><td>zal</td></tr>\n<tr><td>wij / jullie / zij</td><td>kunnen</td><td>moeten</td><td>willen</td><td>mogen</td><td>zullen</td></tr></table>\n<h3>Senza l'infinito</h3>\n<p>Con un movimento l'infinito spesso si omette, perché è chiaro: <i>Ik moet naar huis</i> (devo andare a casa), <i>Ik wil naar Brugge</i>.</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Mettere l'infinito subito dopo il modale: <s>Ik wil gaan morgen naar Gent</s> → <b>Ik wil morgen naar Gent gaan</b>.</li>\n<li>Aggiungere la -t con hij: <s>hij kant</s> → <b>hij kan</b>.</li>\n<li>Confondere kunnen e mogen: per chiedere il permesso si usa di solito <b>mogen</b>.</li>\n</ul>",
+ "vlaams": "Per il futuro nel parlato si usa molto <b>gaan</b> + infinito: \"Ik ga dat morgen doen\" (lo farò domani). \"<b>Ge moogt</b>\" (= je mag, puoi) è tipicamente fiammingo.",
+ "vocab": [
+  [
+   "zwemmen",
+   "nuotare"
+  ],
+  [
+   "koken",
+   "cucinare"
+  ],
+  [
+   "parkeren",
+   "parcheggiare"
+  ],
+  [
+   "roken",
+   "fumare"
+  ],
+  [
+   "vertrekken",
+   "partire"
+  ],
+  [
+   "hier",
+   "qui"
+  ],
+  [
+   "vanavond",
+   "stasera"
+  ],
+  [
+   "graag",
+   "volentieri"
+  ]
+ ],
+ "core": [
+  [
+   "kunnen",
+   "potere, saper fare"
+  ],
+  [
+   "moeten",
+   "dovere"
+  ],
+  [
+   "willen",
+   "volere"
+  ],
+  [
+   "mogen",
+   "avere il permesso"
+  ],
+  [
+   "zullen",
+   "futuro, proposta"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "ik + kunnen",
+   "o": [
+    "kan",
+    "kun",
+    "kunt",
+    "kunnen"
+   ],
+   "a": 0,
+   "e": "ik <b>kan</b>.",
+   "g": {
+    "kan": "posso / so (io)",
+    "kun": "puoi (solo davanti a je)",
+    "kunt": "puoi (tu, u)",
+    "kunnen": "possiamo / potere"
+   },
+   "tt": "io posso"
+  },
+  {
+   "t": "mc",
+   "q": "hij + willen",
+   "o": [
+    "wil",
+    "wilt",
+    "willen",
+    "wille"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Con ik e hij senza -t: hij <b>wil</b> (ma jij <b>wilt</b>).",
+   "g": {
+    "wil": "vuole",
+    "wilt": "vuoi (tu)",
+    "willen": "vogliamo / volere",
+    "wille": "forma che non esiste"
+   },
+   "tt": "lui vuole"
+  },
+  {
+   "t": "mc",
+   "q": "wij + moeten",
+   "o": [
+    "moeten",
+    "moet",
+    "moest",
+    "moetten"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Plurale = infinito: <b>moeten</b>.",
+   "g": {
+    "moeten": "dobbiamo",
+    "moet": "devo / devi / deve",
+    "moest": "dovevo / doveva (passato)",
+    "moetten": "forma che non esiste"
+   },
+   "tt": "noi dobbiamo"
+  },
+  {
+   "t": "mc",
+   "q": "ik + mogen",
+   "o": [
+    "mag",
+    "mogt",
+    "moog",
+    "mogen"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Irregolare: ik <b>mag</b>.",
+   "g": {
+    "mag": "posso (ho il permesso)",
+    "mogt": "forma che non esiste",
+    "moog": "forma che non esiste",
+    "mogen": "possiamo / potere"
+   },
+   "tt": "io posso (ho il permesso)"
+  },
+  {
+   "t": "mc",
+   "q": "Ik wil morgen ___.",
+   "o": [
+    "komen",
+    "kom",
+    "komt",
+    "gekomen"
+   ],
+   "a": 0,
+   "e": "Dopo un modale: infinito alla fine, <b>komen</b>.",
+   "g": {
+    "komen": "venire (infinito)",
+    "kom": "vengo (io)",
+    "komt": "viene",
+    "gekomen": "venuto (participio)"
+   },
+   "tt": "Voglio venire domani."
+  },
+  {
+   "t": "mc",
+   "q": "Chiedi il permesso: ___ ik binnenkomen?",
+   "o": [
+    "Mag",
+    "Moet",
+    "Wil",
+    "Zal"
+   ],
+   "a": 0,
+   "e": "Permesso → <b>mogen</b>: Mag ik binnenkomen?",
+   "g": {
+    "Mag": "posso (permesso)",
+    "Moet": "devo",
+    "Wil": "voglio",
+    "Zal": "vuoi che… (proposta)"
+   },
+   "tt": "Posso entrare?"
+  },
+  {
+   "t": "mc",
+   "q": "Vuoi che ti aiuti? → ___ ik je helpen?",
+   "o": [
+    "Zal",
+    "Mag",
+    "Moet",
+    "Wil"
+   ],
+   "a": 0,
+   "e": "Proposta → <b>zullen</b>: Zal ik je helpen?",
+   "g": {
+    "Zal": "vuoi che… (proposta)",
+    "Mag": "posso (permesso)",
+    "Moet": "devo",
+    "Wil": "voglio"
+   },
+   "tt": "Vuoi che ti aiuti?"
+  },
+  {
+   "t": "order",
+   "q": "Devo lavorare.",
+   "a": "Ik moet werken",
+   "x": [
+    "werk",
+    "moeten"
+   ],
+   "e": "Modale al secondo posto, infinito alla fine."
+  },
+  {
+   "t": "order",
+   "q": "Voglio un caffè.",
+   "a": "Ik wil een koffie",
+   "x": [
+    "wilt",
+    "willen"
+   ],
+   "e": "ik <b>wil</b>, senza -t."
+  },
+  {
+   "t": "fill",
+   "q": "Hij ___ goed koken.",
+   "h": "kunnen",
+   "a": [
+    "kan"
+   ],
+   "e": "hij <b>kan</b>.",
+   "tt": "Lui sa cucinare bene."
+  }
+ ],
+ "items": [
+  {
+   "t": "fill",
+   "q": "Ik ___ goed zwemmen.",
+   "h": "kunnen",
+   "a": [
+    "kan"
+   ],
+   "e": "ik <b>kan</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Hij ___ vandaag werken.",
+   "h": "moeten",
+   "a": [
+    "moet"
+   ],
+   "e": "hij <b>moet</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Jij ___ koffie.",
+   "h": "willen",
+   "oit": true,
+   "o": [
+    "wilt",
+    "willen",
+    "wille",
+    "willt"
+   ],
+   "a": 0,
+   "e": "jij <b>wilt</b> (anche: wil)."
+  },
+  {
+   "t": "order",
+   "q": "Voglio imparare l'olandese.",
+   "a": "Ik wil Nederlands leren",
+   "x": [
+    "leer",
+    "wilt"
+   ],
+   "e": "Infinito alla fine: ... <b>leren</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Mag ik hier ___?",
+   "o": [
+    "parkeren",
+    "parkeer",
+    "parkeert",
+    "geparkeerd"
+   ],
+   "a": 0,
+   "e": "Dopo un modale: <b>infinito</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Wij ___ morgen komen.",
+   "h": "zullen",
+   "a": [
+    "zullen"
+   ],
+   "e": "wij <b>zullen</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Posso aiutarti?",
+   "a": [
+    "Kan ik je helpen",
+    "Kan ik jou helpen",
+    "Mag ik je helpen",
+    "Mag ik jou helpen",
+    "Kan ik u helpen",
+    "Mag ik u helpen"
+   ],
+   "e": "<b>Kan ik je helpen?</b>"
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "Con un verbo modale, l'infinito va:",
+   "o": [
+    "alla fine della frase",
+    "subito dopo il modale",
+    "all'inizio",
+    "prima del soggetto"
+   ],
+   "a": 0,
+   "e": "Sempre <b>alla fine</b>."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "'mogen' significa soprattutto:",
+   "o": [
+    "avere il permesso",
+    "dovere",
+    "volere",
+    "sapere"
+   ],
+   "a": 0,
+   "e": "<b>mogen</b> = potere nel senso di permesso."
+  },
+  {
+   "t": "fill",
+   "q": "___ je mij helpen?",
+   "h": "kunnen, domanda",
+   "a": [
+    "kun",
+    "kan"
+   ],
+   "e": "<b>Kun</b> je (o Kan je) mij helpen?"
+  },
+  {
+   "t": "tr",
+   "q": "Devo andare.",
+   "a": [
+    "Ik moet gaan",
+    "Ik moet weg",
+    "Ik moet vertrekken"
+   ],
+   "e": "<b>Ik moet gaan</b>, nel parlato anche: ik moet weg."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "t": "So nuotare bene."
+  },
+  "1": {
+   "t": "Oggi lui deve lavorare."
+  },
+  "2": {
+   "g": {
+    "wilt": "vuoi (tu)",
+    "willen": "vogliamo / volete / vogliono",
+    "wille": "forma che non esiste",
+    "willt": "forma che non esiste"
+   },
+   "t": "Vuoi un caffè."
+  },
+  "4": {
+   "g": {
+    "parkeren": "parcheggiare (infinito)",
+    "parkeer": "parcheggio (io)",
+    "parkeert": "parcheggia (lui)",
+    "geparkeerd": "parcheggiato (participio)"
+   },
+   "t": "Posso parcheggiare qui?"
+  },
+  "5": {
+   "t": "Verremo domani."
+  },
+  "9": {
+   "t": "Puoi aiutarmi?"
+  }
+ }
+}

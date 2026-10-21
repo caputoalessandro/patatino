@@ -1,0 +1,437 @@
+{
+ "id": "u3",
+ "n": 3,
+ "module": 1,
+ "nl": "Lidwoorden en zelfstandige naamwoorden",
+ "it": "Articoli e nomi",
+ "note": "\n<h3>L'idea</h3>\n<p>L'italiano ha molti articoli (il, lo, la, i, gli, le). L'olandese ne ha solo <b>due</b> determinativi: <b>de</b> e <b>het</b>. Non indicano maschile o femminile come da noi: <b>de</b> si usa per i nomi maschili e femminili, <b>het</b> per i nomi neutri. Nei Paesi Bassi maschile e femminile oggi sono un unico gruppo; in Belgio molti parlanti li distinguono ancora (de tafel → hij, de deur → ze). Circa due nomi su tre prendono <b>de</b>.</p>\n<p>L'articolo indeterminativo è uno solo: <b>een</b> (un, uno, una), per tutti i nomi. Al plurale indeterminato non c'è articolo: <i>boeken</i> = libri, dei libri.</p>\n<h3>Regole utili</h3>\n<ul>\n<li>Il <b>plurale</b> prende sempre <b>de</b>: het boek → de boeken.</li>\n<li>I <b>diminutivi</b> in -je sono sempre <b>het</b>: het meisje, het huisje.</li>\n<li>Le <b>lingue</b> sono het: het Nederlands, het Italiaans.</li>\n<li>Un <b>infinito</b> usato come nome è het: het eten (il mangiare, il cibo).</li>\n<li>Le parole che iniziano con <b>ge-, be-, ver-</b> sono spesso het, se non finiscono in -ing, -te o -er: het gesprek, het verhaal (ma de vergadering).</li>\n<li>Molte parole in <b>-ment</b> sono het: het appartement, het moment.</li>\n<li><b>Persone e professioni</b> sono quasi sempre de: de man, de vrouw, de dokter. Eccezioni da ricordare: <b>het kind</b> e <b>het meisje</b>.</li>\n</ul>\n<h3>Perché è importante</h3>\n<p>Non esiste una regola che copra tutti i nomi, quindi il consiglio pratico è uno: <b>impara ogni nome insieme al suo articolo</b>, come trovi nella lista delle parole. L'articolo decide anche altre cose che vedrai più avanti: il pronome (hij o het, unità 1), la forma degli aggettivi e dei dimostrativi.</p>\n<table><tr><th></th><th>de-parola</th><th>het-parola</th></tr>\n<tr><td>determinativo</td><td>de stad</td><td>het huis</td></tr>\n<tr><td>indeterminativo</td><td>een stad</td><td>een huis</td></tr>\n<tr><td>plurale</td><td>de steden</td><td>de huizen</td></tr></table>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Pensare che \"la ragazza\" sia femminile anche in olandese: è <b>het meisje</b>, perché è un diminutivo.</li>\n<li>Mettere l'articolo davanti alle lingue: \"parlo olandese\" è <b>Ik spreek Nederlands</b>, senza articolo.</li>\n<li>Usare <i>het</i> al plurale: è sempre <b>de</b>.</li>\n</ul>",
+ "vlaams": "Nel parlato fiammingo davanti ai nomi maschili si sente spesso <b>ne</b> al posto di een: \"ne goeie vriend\" (un buon amico). Nello scritto resta sempre <b>een</b>.",
+ "vocab": [
+  [
+   "het huis",
+   "la casa"
+  ],
+  [
+   "de stad",
+   "la città"
+  ],
+  [
+   "het meisje",
+   "la ragazza"
+  ],
+  [
+   "het kind",
+   "il bambino"
+  ],
+  [
+   "de man",
+   "l'uomo"
+  ],
+  [
+   "de vrouw",
+   "la donna"
+  ],
+  [
+   "het water",
+   "l'acqua"
+  ],
+  [
+   "het gesprek",
+   "la conversazione"
+  ],
+  [
+   "het appartement",
+   "l'appartamento"
+  ],
+  [
+   "de dokter",
+   "il medico"
+  ],
+  [
+   "de fiets",
+   "la bici"
+  ],
+  [
+   "de appel",
+   "la mela"
+  ],
+  [
+   "eten",
+   "mangiare"
+  ],
+  [
+   "mooi",
+   "bello"
+  ],
+  [
+   "het Nederlands",
+   "l'olandese (lingua)"
+  ]
+ ],
+ "core": [
+  [
+   "de",
+   "il, la (de-parole e tutti i plurali)"
+  ],
+  [
+   "het",
+   "il, la (het-parole)"
+  ],
+  [
+   "een",
+   "un, uno, una"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "Al plurale l'articolo è sempre:",
+   "o": [
+    "de",
+    "het",
+    "een"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Plurale = sempre <b>de</b>.",
+   "g": {
+    "de": "articolo di tutti i plurali",
+    "het": "mai al plurale",
+    "een": "solo al singolare"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "I diminutivi in -je prendono:",
+   "o": [
+    "het",
+    "de"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Diminutivi = sempre <b>het</b>.",
+   "g": {
+    "het": "articolo di tutti i diminutivi",
+    "de": "no: i diminutivi sono sempre het"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "Le lingue (Nederlands, Italiaans) prendono:",
+   "o": [
+    "het",
+    "de"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<b>het</b> Nederlands.",
+   "g": {
+    "het": "articolo delle lingue",
+    "de": "no: le lingue sono het"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "Persone e professioni di solito prendono:",
+   "o": [
+    "de",
+    "het"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<b>de</b> man, <b>de</b> dokter.",
+   "g": {
+    "de": "articolo di persone e professioni",
+    "het": "solo eccezioni come het kind, het meisje"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "Le parole che iniziano con ge- (gesprek) prendono:",
+   "o": [
+    "het",
+    "de"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<b>het</b> gesprek.",
+   "g": {
+    "het": "articolo delle parole con ge-",
+    "de": "no, di solito sono het"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "'een' si usa con:",
+   "o": [
+    "de- e het-parole",
+    "solo de-parole",
+    "solo het-parole",
+    "il plurale"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<b>een</b> va bene per tutti i nomi singolari."
+  },
+  {
+   "t": "mc",
+   "q": "___ huisje (la casetta)",
+   "o": [
+    "het",
+    "de"
+   ],
+   "a": 0,
+   "e": "Diminutivo → <b>het</b> huisje.",
+   "g": {
+    "het": "articolo delle het-parole",
+    "de": "articolo delle de-parole"
+   },
+   "tt": "la casetta"
+  },
+  {
+   "t": "mc",
+   "q": "___ boeken",
+   "o": [
+    "de",
+    "het"
+   ],
+   "a": 0,
+   "e": "Plurale → <b>de</b>.",
+   "g": {
+    "de": "articolo di tutti i plurali",
+    "het": "mai al plurale"
+   },
+   "tt": "i libri"
+  },
+  {
+   "t": "mc",
+   "q": "het kind → ___ kinderen",
+   "o": [
+    "de",
+    "het"
+   ],
+   "a": 0,
+   "e": "Anche le het-parole al plurale prendono <b>de</b>.",
+   "g": {
+    "de": "articolo di tutti i plurali",
+    "het": "mai al plurale"
+   },
+   "tt": "il bambino → i bambini"
+  },
+  {
+   "t": "fill",
+   "q": "Ik heb ___ appel.",
+   "h": "una",
+   "a": [
+    "een"
+   ],
+   "e": "<b>een</b> = un, uno, una.",
+   "tt": "Ho una mela."
+  }
+ ],
+ "items": [
+  {
+   "t": "mc",
+   "q": "___ huis",
+   "o": [
+    "de",
+    "het"
+   ],
+   "a": 1,
+   "e": "<b>het</b> huis."
+  },
+  {
+   "t": "mc",
+   "q": "___ stad",
+   "o": [
+    "de",
+    "het"
+   ],
+   "a": 0,
+   "e": "<b>de</b> stad."
+  },
+  {
+   "t": "mc",
+   "q": "___ meisje",
+   "o": [
+    "de",
+    "het"
+   ],
+   "a": 1,
+   "e": "Diminutivo (-je) → sempre <b>het</b>."
+  },
+  {
+   "t": "mc",
+   "q": "___ boeken",
+   "o": [
+    "de",
+    "het"
+   ],
+   "a": 0,
+   "e": "Il plurale prende sempre <b>de</b>."
+  },
+  {
+   "t": "mc",
+   "q": "___ water",
+   "o": [
+    "de",
+    "het"
+   ],
+   "a": 1,
+   "e": "<b>het</b> water."
+  },
+  {
+   "t": "mc",
+   "q": "___ tafel",
+   "o": [
+    "de",
+    "het"
+   ],
+   "a": 0,
+   "e": "<b>de</b> tafel."
+  },
+  {
+   "t": "mc",
+   "say": "het Nederlands",
+   "q": "___ Nederlands (la lingua)",
+   "o": [
+    "de",
+    "het"
+   ],
+   "a": 1,
+   "e": "Le lingue sono <b>het</b>."
+  },
+  {
+   "t": "mc",
+   "q": "___ gesprek",
+   "o": [
+    "de",
+    "het"
+   ],
+   "a": 1,
+   "e": "Parole con <i>ge-</i> → di solito <b>het</b>."
+  },
+  {
+   "t": "mc",
+   "q": "___ appartement",
+   "o": [
+    "de",
+    "het"
+   ],
+   "a": 1,
+   "e": "Molte parole in <i>-ment</i> sono <b>het</b>."
+  },
+  {
+   "t": "mc",
+   "q": "___ dokter",
+   "o": [
+    "de",
+    "het"
+   ],
+   "a": 0,
+   "e": "Persone e professioni: <b>de</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Ik heb ___ fiets.",
+   "h": "una",
+   "a": [
+    "een"
+   ],
+   "e": "<b>een</b> vale per de e het."
+  },
+  {
+   "t": "tr",
+   "q": "La casa è grande.",
+   "a": [
+    "Het huis is groot"
+   ],
+   "e": "<b>het</b> huis, groot = grande."
+  },
+  {
+   "t": "order",
+   "q": "Il bambino mangia una mela.",
+   "a": "Het kind eet een appel",
+   "x": [
+    "de",
+    "eten"
+   ],
+   "e": "<b>het</b> kind, <b>de</b> appel."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "g": {
+    "de": "articolo delle de-parole",
+    "het": "articolo delle het-parole"
+   },
+   "t": "la casa"
+  },
+  "1": {
+   "g": {
+    "de": "articolo delle de-parole",
+    "het": "articolo delle het-parole"
+   },
+   "t": "la città"
+  },
+  "2": {
+   "g": {
+    "de": "articolo delle de-parole",
+    "het": "articolo delle het-parole (tutti i diminutivi)"
+   },
+   "t": "la ragazza"
+  },
+  "3": {
+   "g": {
+    "de": "articolo di tutti i plurali",
+    "het": "mai al plurale"
+   },
+   "t": "i libri"
+  },
+  "4": {
+   "g": {
+    "de": "articolo delle de-parole",
+    "het": "articolo delle het-parole"
+   },
+   "t": "l'acqua"
+  },
+  "5": {
+   "g": {
+    "de": "articolo delle de-parole",
+    "het": "articolo delle het-parole"
+   },
+   "t": "il tavolo"
+  },
+  "6": {
+   "g": {
+    "de": "articolo delle de-parole",
+    "het": "articolo delle lingue"
+   },
+   "t": "l'olandese"
+  },
+  "7": {
+   "g": {
+    "de": "articolo delle de-parole",
+    "het": "articolo delle parole con ge-"
+   },
+   "t": "la conversazione"
+  },
+  "8": {
+   "g": {
+    "de": "articolo delle de-parole",
+    "het": "articolo di molte parole in -ment"
+   },
+   "t": "l'appartamento"
+  },
+  "9": {
+   "g": {
+    "de": "articolo di persone e professioni",
+    "het": "articolo delle het-parole"
+   },
+   "t": "il medico"
+  },
+  "10": {
+   "t": "Ho una bici."
+  }
+ }
+}

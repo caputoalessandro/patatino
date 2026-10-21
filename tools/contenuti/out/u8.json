@@ -1,0 +1,620 @@
+{
+ "id": "u8",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "Wij hebben twee kinderen: ___ kinderen wonen nu in Brussel.",
+   "o": [
+    "ons",
+    "onze",
+    "hun",
+    "wij"
+   ],
+   "a": 1,
+   "e": "<i>het kind</i> è una het-parola, ma al <b>plurale</b> si usa sempre <b>onze</b>. <i>ons</i> solo con una het-parola al singolare (<i>ons kind</i>).",
+   "g": {
+    "ons": "nostro (solo het-parola singolare)",
+    "onze": "nostri (plurale)",
+    "hun": "loro",
+    "wij": "noi (soggetto)"
+   },
+   "tt": "Abbiamo due figli: i nostri figli adesso abitano a Bruxelles."
+  },
+  {
+   "t": "mc",
+   "q": "Van wie zijn de sleutels? Van Sofie? — Ja, ze zijn van ___.",
+   "o": [
+    "haar",
+    "zij",
+    "hun",
+    "zijn"
+   ],
+   "a": 0,
+   "e": "Dopo <b>van</b> serve la forma oggetto: <b>van haar</b> (di lei). <i>zij</i> è soggetto, <i>hun</i> è \"loro\".",
+   "g": {
+    "haar": "lei / suo (di lei)",
+    "zij": "lei (soggetto)",
+    "hun": "loro",
+    "zijn": "suo (di lui); anche: sono"
+   },
+   "tt": "Di chi sono le chiavi? Di Sofie? — Sì, sono sue."
+  },
+  {
+   "t": "fill",
+   "q": "Tom en Lies, is dat ___ auto daar?",
+   "h": "vostra",
+   "a": [
+    "jullie",
+    "je",
+    "uw"
+   ],
+   "e": "\"Vostro\" si dice <b>jullie</b> (non accentato anche <i>je</i>; in Fiandra, con gij/ge, anche <i>uw</i>): <i>jullie auto</i>, senza articolo.",
+   "tt": "Tom e Lies, è vostra quella macchina là?"
+  },
+  {
+   "t": "fill",
+   "q": "Mijn broer en zijn vrouw komen morgen met ___ kinderen.",
+   "h": "loro",
+   "a": [
+    "hun"
+   ],
+   "e": "Il possessore è plurale (mio fratello e sua moglie): <b>hun</b> kinderen. Non <i>hen</i>, che è un pronome oggetto.",
+   "tt": "Mio fratello e sua moglie vengono domani con i loro figli."
+  },
+  {
+   "t": "tr",
+   "q": "Come si chiama suo fratello (di lei)?",
+   "a": [
+    "Hoe heet haar broer",
+    "Hoe noemt haar broer"
+   ],
+   "e": "<b>Hoe heet</b> (non <i>wat</i>) + <b>haar</b> broer: il possessore è lei. In Fiandre si sente anche <i>Hoe noemt…?</i>"
+  },
+  {
+   "t": "tr",
+   "q": "I nostri figli hanno le loro bici.",
+   "a": [
+    "Onze kinderen hebben hun fietsen",
+    "Onze kinderen hebben hun fiets"
+   ],
+   "e": "<b>onze</b> (plurale) e <b>hun</b> (di loro). Niente articolo davanti al possessivo."
+  },
+  {
+   "t": "order",
+   "q": "Questo è il nostro appartamento a Gand.",
+   "a": "Dit is ons appartement in Gent",
+   "x": [
+    "onze",
+    "het"
+   ],
+   "e": "<i>het appartement</i> è una het-parola al singolare: <b>ons</b>. E nessun articolo prima del possessivo.",
+   "tt": "Questo è il nostro appartamento a Gand."
+  },
+  {
+   "t": "order",
+   "q": "Prendi la tua giacca e la sua borsa (di lei)?",
+   "a": "Neem je je jas en haar tas",
+   "x": [
+    "zijn",
+    "neemt"
+   ],
+   "e": "Domanda: <b>Neem je</b> (verbo + soggetto), poi il possessivo <b>je</b> jas: due <i>je</i> di fila, uno soggetto e uno possessivo.",
+   "tt": "Prendi la tua giacca e la sua borsa?"
+  }
+ ],
+ "en": {
+  "it": "Possessives",
+  "note": "\n<h3>The idea</h3>\n<p>Possessives tell you <b>whose</b> something is. Good news: they work much like in English.</p>\n<ul>\n<li><b>No article</b> in front of a possessive, just as in English: \"my book\" is <i>mijn boek</i>, not <s>het mijn boek</s>.</li>\n<li>The possessive depends on the <b>owner</b>, as in English: <i>zijn moeder</i> is his mother, <i>haar moeder</i> is her mother.</li>\n</ul>\n<h3>The table</h3>\n<table><tr><th>person</th><th>possessive</th><th>example</th></tr>\n<tr><td>ik</td><td>mijn</td><td>mijn naam</td></tr>\n<tr><td>jij</td><td>jouw / je</td><td>jouw fiets</td></tr>\n<tr><td>u</td><td>uw</td><td>uw jas</td></tr>\n<tr><td>hij</td><td>zijn</td><td>zijn moeder</td></tr>\n<tr><td>zij (she)</td><td>haar</td><td>haar vader</td></tr>\n<tr><td>wij</td><td>ons / onze</td><td>ons huis, onze stad</td></tr>\n<tr><td>jullie</td><td>jullie / je</td><td>jullie kinderen</td></tr>\n<tr><td>zij (they)</td><td>hun</td><td>hun boeken</td></tr></table>\n<h3>Ons or onze?</h3>\n<p>This is the only possessive that changes. <b>ons</b> in front of a <b>singular het-word</b> (ons huis), <b>onze</b> everywhere else: de-words (onze stad) and plurals (onze kinderen).</p>\n<h3>Jouw or je?</h3>\n<p>As with the pronouns, <b>je</b> is the unstressed, more common form: <i>Is dat je fiets?</i>. <b>jouw</b> is for emphasis: <i>Is dat jouw fiets of mijn fiets?</i></p>\n<h3>\"It's mine\": van mij</h3>\n<p>Where English uses <i>mine, yours, hers</i>, Dutch uses <b>van</b> + object pronoun: <i>Van wie is dat? — Het is van mij</i> (Whose is that? — It's mine). Where English uses 's, Dutch uses <b>van</b> too: <i>de fiets van Tom</i> (Tom's bike).</p>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Using <i>ons</i> with a de-word: <s>ons stad</s> → <b>onze stad</b>.</li>\n<li>Copying English \"mine\": <s>Het is mijn.</s> → <b>Het is van mij.</b></li>\n<li>Mixing up <b>hun</b> (their) and <b>hen</b> (them): <s>hen boeken</s> → <b>hun boeken</b>.</li>\n<li>Remember that <b>zijn</b> is also the verb \"to be\", and <b>haar</b> also means \"her\" as an object (and \"hair\"!): context tells you which.</li>\n</ul>",
+  "vlaams": "In spoken Flemish, together with gij/ge, people use <b>uw</b> among friends too: \"Is dat uw fiets?\" can be completely informal.",
+  "vocab": [
+   [
+    "de moeder",
+    "the mother"
+   ],
+   [
+    "de vader",
+    "the father"
+   ],
+   [
+    "de jas",
+    "the jacket, the coat"
+   ],
+   [
+    "de tas",
+    "the bag"
+   ],
+   [
+    "de naam",
+    "the name"
+   ],
+   [
+    "meneer",
+    "sir, Mr."
+   ],
+   [
+    "dit",
+    "this"
+   ],
+   [
+    "dat",
+    "that"
+   ],
+   [
+    "daar",
+    "there"
+   ]
+  ],
+  "core": [
+   [
+    "mijn",
+    "my"
+   ],
+   [
+    "jouw / je",
+    "your (informal)"
+   ],
+   [
+    "uw",
+    "your (formal)"
+   ],
+   [
+    "zijn",
+    "his"
+   ],
+   [
+    "haar",
+    "her"
+   ],
+   [
+    "ons / onze",
+    "our"
+   ],
+   [
+    "hun",
+    "their"
+   ]
+  ],
+  "items": [
+   {
+    "t": "mc",
+    "q": "___ huis",
+    "h": "our house",
+    "o": [
+     "ons",
+     "onze"
+    ],
+    "a": 0,
+    "e": "het huis → <b>ons</b>."
+   },
+   {
+    "t": "mc",
+    "q": "___ auto",
+    "h": "our car",
+    "o": [
+     "ons",
+     "onze"
+    ],
+    "a": 1,
+    "e": "de auto → <b>onze</b>."
+   },
+   {
+    "t": "mc",
+    "q": "___ kinderen",
+    "h": "our children",
+    "o": [
+     "ons",
+     "onze"
+    ],
+    "a": 1,
+    "e": "Plural → <b>onze</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Dit is ___ moeder.",
+    "h": "his",
+    "a": [
+     "zijn"
+    ],
+    "e": "Male owner: <b>zijn</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Dat is ___ fiets.",
+    "h": "her",
+    "a": [
+     "haar"
+    ],
+    "e": "Female owner: <b>haar</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Is dit ___ jas, meneer?",
+    "o": [
+     "u",
+     "uw",
+     "jouw",
+     "zijn"
+    ],
+    "a": 1,
+    "e": "Formal: <b>uw</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Dat zijn ___ boeken.",
+    "h": "their",
+    "a": [
+     "hun"
+    ],
+    "e": "<b>hun</b> = their."
+   },
+   {
+    "t": "tr",
+    "q": "My name is Luca.",
+    "a": [
+     "Mijn naam is Luca"
+    ],
+    "e": "<b>mijn</b> naam."
+   },
+   {
+    "t": "mc",
+    "q": "___ tas staat daar.",
+    "h": "your, with emphasis",
+    "o": [
+     "Jouw",
+     "Jou",
+     "Jij",
+     "Jullie"
+    ],
+    "a": 0,
+    "e": "<b>jouw</b> (unstressed: je)."
+   },
+   {
+    "t": "order",
+    "q": "This is our city.",
+    "a": "Dit is onze stad",
+    "x": [
+     "ons",
+     "deze"
+    ],
+    "e": "de stad → <b>onze</b>."
+   },
+   {
+    "t": "mc",
+    "say": "Van wie is dat? Het is van mij.",
+    "q": "Van wie is dat? — Het is ___.",
+    "h": "mine",
+    "o": [
+     "van mij",
+     "mijn",
+     "van ik",
+     "mij"
+    ],
+    "a": 0,
+    "e": "<b>van mij</b> = mine."
+   }
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "my",
+    "o": [
+     "mijn",
+     "mij",
+     "jouw",
+     "ons"
+    ],
+    "a": 0,
+    "e": "<b>mijn</b> = my.",
+    "g": {
+     "mijn": "my",
+     "mij": "me",
+     "jouw": "your",
+     "ons": "our"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "her (possessive)",
+    "o": [
+     "haar",
+     "zijn",
+     "hun",
+     "uw"
+    ],
+    "a": 0,
+    "e": "Female owner: <b>haar</b>.",
+    "g": {
+     "haar": "her",
+     "zijn": "his",
+     "hun": "their",
+     "uw": "your (formal)"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "his",
+    "o": [
+     "zijn",
+     "haar",
+     "hun",
+     "hem"
+    ],
+    "a": 0,
+    "e": "Male owner: <b>zijn</b>.",
+    "g": {
+     "zijn": "his",
+     "haar": "her",
+     "hun": "their",
+     "hem": "him (object)"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "their",
+    "o": [
+     "hun",
+     "hen",
+     "zij",
+     "jullie"
+    ],
+    "a": 0,
+    "e": "<b>hun</b> boeken = their books.",
+    "g": {
+     "hun": "their",
+     "hen": "them (object)",
+     "zij": "they (subject)",
+     "jullie": "you / your (plural)"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "___ huis (our)",
+    "o": [
+     "ons",
+     "onze"
+    ],
+    "a": 0,
+    "e": "Singular het-word → <b>ons</b>.",
+    "g": {
+     "ons": "our (singular het-word)",
+     "onze": "our (de-word or plural)"
+    },
+    "tt": "our house"
+   },
+   {
+    "t": "mc",
+    "q": "___ stad (our)",
+    "o": [
+     "onze",
+     "ons"
+    ],
+    "a": 0,
+    "e": "de-word → <b>onze</b>.",
+    "g": {
+     "onze": "our (de-word or plural)",
+     "ons": "only singular het-words"
+    },
+    "tt": "our city"
+   },
+   {
+    "t": "mc",
+    "q": "Anna en ___ vader",
+    "o": [
+     "haar",
+     "zijn",
+     "hun",
+     "jouw"
+    ],
+    "a": 0,
+    "e": "The owner is Anna: <b>haar</b> vader.",
+    "g": {
+     "haar": "her",
+     "zijn": "his",
+     "hun": "their",
+     "jouw": "your"
+    },
+    "tt": "Anna and her father"
+   },
+   {
+    "t": "mc",
+    "q": "Het is ___ (it's mine)",
+    "o": [
+     "van mij",
+     "mijn",
+     "mij",
+     "van ik"
+    ],
+    "a": 0,
+    "e": "On its own after the verb: <b>van mij</b>.",
+    "g": {
+     "van mij": "mine",
+     "mijn": "my (in front of a noun)",
+     "mij": "me",
+     "van ik": "after van you need mij"
+    },
+    "tt": "It's mine."
+   },
+   {
+    "t": "fill",
+    "q": "___ naam is Luca.",
+    "h": "my",
+    "a": [
+     "mijn"
+    ],
+    "e": "<b>mijn</b> naam.",
+    "tt": "My name is Luca."
+   },
+   {
+    "t": "fill",
+    "q": "Is dit ___ jas, meneer?",
+    "h": "your, formal",
+    "a": [
+     "uw"
+    ],
+    "e": "Formal: <b>uw</b>.",
+    "tt": "Is this your jacket, sir?"
+   }
+  ],
+  "gloss": {
+   "0": {
+    "g": {
+     "ons": "our (singular het-word)",
+     "onze": "our (de-word or plural)"
+    },
+    "t": "our house"
+   },
+   "1": {
+    "g": {
+     "ons": "our (singular het-word)",
+     "onze": "our (de-word or plural)"
+    },
+    "t": "our car"
+   },
+   "2": {
+    "g": {
+     "ons": "our (singular het-word)",
+     "onze": "our (de-word or plural)"
+    },
+    "t": "our children"
+   },
+   "3": {
+    "t": "This is his mother."
+   },
+   "4": {
+    "t": "That is her bike."
+   },
+   "5": {
+    "g": {
+     "u": "you (pronoun, not possessive)",
+     "uw": "your (formal)",
+     "jouw": "your (informal)",
+     "zijn": "his"
+    },
+    "t": "Is this your jacket, sir?"
+   },
+   "6": {
+    "t": "Those are their books."
+   },
+   "8": {
+    "g": {
+     "Jouw": "your (possessive)",
+     "Jou": "you (object)",
+     "Jij": "you (subject)",
+     "Jullie": "you / your (plural)"
+    },
+    "t": "Your bag is over there."
+   },
+   "10": {
+    "g": {
+     "van mij": "mine (on its own, after the verb)",
+     "mijn": "my (only in front of a noun)",
+     "van ik": "ik is a subject: after van you need mij",
+     "mij": "me"
+    },
+    "t": "Whose is that? It's mine."
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "Wij hebben twee kinderen: ___ kinderen wonen nu in Brussel.",
+    "o": [
+     "ons",
+     "onze",
+     "hun",
+     "wij"
+    ],
+    "a": 1,
+    "e": "<i>het kind</i> is a het-word, but in the <b>plural</b> it's always <b>onze</b>. <i>ons</i> only goes with a singular het-word (<i>ons kind</i>).",
+    "g": {
+     "ons": "our (singular het-words only)",
+     "onze": "our (plural)",
+     "hun": "their",
+     "wij": "we (subject)"
+    },
+    "tt": "We have two children: our children live in Brussels now."
+   },
+   {
+    "t": "mc",
+    "q": "Van wie zijn de sleutels? Van Sofie? — Ja, ze zijn van ___.",
+    "o": [
+     "haar",
+     "zij",
+     "hun",
+     "zijn"
+    ],
+    "a": 0,
+    "e": "After <b>van</b> you need the object form: <b>van haar</b> (hers). <i>zij</i> is a subject (she), <i>hun</i> means \"their\".",
+    "g": {
+     "haar": "her / hers (with van)",
+     "zij": "she (subject)",
+     "hun": "their",
+     "zijn": "his; also: are"
+    },
+    "tt": "Whose keys are these? Sofie's? — Yes, they're hers."
+   },
+   {
+    "t": "fill",
+    "q": "Tom en Lies, is dat ___ auto daar?",
+    "h": "your (plural)",
+    "a": [
+     "jullie",
+     "je",
+     "uw"
+    ],
+    "e": "\"Your\" for more than one person is <b>jullie</b> (unstressed also <i>je</i>; in Flanders, with gij/ge, also <i>uw</i>): <i>jullie auto</i>, with no article.",
+    "tt": "Tom and Lies, is that your car over there?"
+   },
+   {
+    "t": "fill",
+    "q": "Mijn broer en zijn vrouw komen morgen met ___ kinderen.",
+    "h": "their",
+    "a": [
+     "hun"
+    ],
+    "e": "The owners are plural (my brother and his wife): <b>hun</b> kinderen. Not <i>hen</i>, which is an object pronoun (them).",
+    "tt": "My brother and his wife are coming tomorrow with their children."
+   },
+   {
+    "t": "tr",
+    "q": "What is her brother called?",
+    "a": [
+     "Hoe heet haar broer",
+     "Hoe noemt haar broer"
+    ],
+    "e": "<b>Hoe heet</b> (literally \"how is called\") + <b>haar</b> broer: the owner is her. In Flanders you'll also hear <i>Hoe noemt…?</i>"
+   },
+   {
+    "t": "tr",
+    "q": "Our children have their bikes.",
+    "a": [
+     "Onze kinderen hebben hun fietsen",
+     "Onze kinderen hebben hun fiets"
+    ],
+    "e": "<b>onze</b> (plural) and <b>hun</b> (their). No article in front of the possessive."
+   },
+   {
+    "t": "order",
+    "q": "This is our apartment in Ghent.",
+    "a": "Dit is ons appartement in Gent",
+    "x": [
+     "onze",
+     "het"
+    ],
+    "e": "<i>het appartement</i> is a singular het-word: <b>ons</b>. And no article before the possessive.",
+    "tt": "This is our apartment in Ghent."
+   },
+   {
+    "t": "order",
+    "q": "Are you taking your jacket and her bag?",
+    "a": "Neem je je jas en haar tas",
+    "x": [
+     "zijn",
+     "neemt"
+    ],
+    "e": "Question: <b>Neem je</b> (verb + subject), then the possessive <b>je</b> jas: two <i>je</i>'s in a row, one is \"you\" and one is \"your\".",
+    "tt": "Are you taking your jacket and her bag?"
+   }
+  ]
+ }
+}

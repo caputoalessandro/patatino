@@ -1,0 +1,618 @@
+{
+ "id": "u10",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "In Gent ___ onze kinderen elke dag met de fiets naar school.",
+   "o": [
+    "gaan",
+    "gaat",
+    "ga",
+    "gaan ze"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Dopo <i>In Gent</i> c'è l'inversione: verbo + soggetto. Il soggetto è <i>onze kinderen</i> (plurale): <b>gaan</b>. Non serve ripetere il soggetto con <i>ze</i>.",
+   "g": {
+    "gaan": "vanno (plurale)",
+    "gaat": "va: il soggetto è plurale",
+    "ga": "vado: forma di ik",
+    "gaan ze": "il soggetto c'è già: onze kinderen"
+   },
+   "tt": "A Gand i nostri figli vanno a scuola in bici ogni giorno."
+  },
+  {
+   "t": "mc",
+   "q": "Scegli l'ordine corretto:",
+   "o": [
+    "Morgen moet ik met de trein naar Antwerpen gaan.",
+    "Morgen ik moet met de trein naar Antwerpen gaan.",
+    "Morgen moeten ik met de trein naar Antwerpen gaan.",
+    "Morgen moet ik met de trein naar Antwerpen gaat."
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<i>Morgen</i> al primo posto → inversione <b>moet ik</b>; poi modo (<i>met de trein</i>) e luogo (<i>naar Antwerpen</i>), infinito <b>gaan</b> alla fine.",
+   "g": {
+    "Morgen moet ik met de trein naar Antwerpen gaan.": "Domani devo andare ad Anversa in treno. (corretta)",
+    "Morgen ik moet met de trein naar Antwerpen gaan.": "manca l'inversione dopo Morgen",
+    "Morgen moeten ik met de trein naar Antwerpen gaan.": "con ik: moet",
+    "Morgen moet ik met de trein naar Antwerpen gaat.": "alla fine serve l'infinito gaan"
+   },
+   "tt": "Domani devo andare ad Anversa in treno."
+  },
+  {
+   "t": "fill",
+   "q": "Mijn zus is moe, dus vanavond ___ ze thuis.",
+   "h": "blijven",
+   "a": [
+    "blijft"
+   ],
+   "e": "<i>vanavond</i> è al primo posto della frase dopo <i>dus</i>: inversione, <b>blijft ze</b>. Con <i>ze</i> (lei) la -t resta.",
+   "tt": "Mia sorella è stanca, quindi stasera resta a casa."
+  },
+  {
+   "t": "fill",
+   "q": "Hoe vaak ___ je zus naar Brussel?",
+   "h": "gaan",
+   "a": [
+    "gaat"
+   ],
+   "e": "Trabocchetto: qui <i>je</i> è un possessivo (tua sorella), il soggetto è <i>je zus</i> = zij. Quindi la -t resta: <b>gaat</b>.",
+   "tt": "Quanto spesso va tua sorella a Bruxelles?"
+  },
+  {
+   "t": "tr",
+   "q": "Ogni giorno mia sorella prende il treno per Bruxelles.",
+   "a": [
+    "Elke dag neemt mijn zus de trein naar Brussel",
+    "Mijn zus neemt elke dag de trein naar Brussel",
+    "Elke dag pakt mijn zus de trein naar Brussel",
+    "Mijn zus pakt elke dag de trein naar Brussel"
+   ],
+   "e": "Con <i>Elke dag</i> all'inizio: <b>neemt mijn zus</b> (verbo al secondo posto, poi il soggetto)."
+  },
+  {
+   "t": "tr",
+   "q": "Sono stanco, quindi stasera resto a casa.",
+   "a": [
+    "Ik ben moe, dus ik blijf vanavond thuis",
+    "Ik ben moe, dus blijf ik vanavond thuis",
+    "Ik ben moe, dus vanavond blijf ik thuis"
+   ],
+   "e": "Dopo <b>dus</b> vanno bene sia l'ordine normale (<i>dus ik blijf</i>) sia l'inversione (<i>dus blijf ik</i>). Il tempo (<i>vanavond</i>) prima del luogo (<i>thuis</i>)."
+  },
+  {
+   "t": "order",
+   "q": "Stasera mio padre vuole cucinare per noi.",
+   "a": "Vanavond wil mijn vader voor ons koken",
+   "alt": [
+    "Mijn vader wil vanavond voor ons koken",
+    "Mijn vader wil vanavond koken voor ons",
+    "Vanavond wil mijn vader koken voor ons"
+   ],
+   "x": [
+    "wilt",
+    "wij"
+   ],
+   "e": "<i>Vanavond</i> all'inizio → <b>wil mijn vader</b>; l'infinito <b>koken</b> va verso la fine. Dopo <i>voor</i> serve <b>ons</b>, non <i>wij</i>.",
+   "tt": "Stasera mio padre vuole cucinare per noi."
+  },
+  {
+   "t": "order",
+   "q": "Resto a casa perché stasera viene mia sorella.",
+   "a": "Ik blijf thuis want mijn zus komt vanavond",
+   "alt": [
+    "Ik blijf thuis want vanavond komt mijn zus"
+   ],
+   "x": [
+    "kom",
+    "blijft"
+   ],
+   "e": "Dopo <b>want</b> l'ordine resta normale: <i>want mijn zus komt</i>. (Se metti <i>vanavond</i> subito dopo want, allora sì che serve l'inversione.)",
+   "tt": "Resto a casa perché stasera viene mia sorella."
+  }
+ ],
+ "en": {
+  "it": "Word order",
+  "note": "\n<h3>The idea: the verb in second place</h3>\n<p>English word order is fixed around the subject: subject, then verb. Dutch has a different fixed rule for main clauses: the <b>conjugated verb is always in second place</b>. The subject can come first, but so can another part of the sentence.</p>\n<table><tr><th>1st place</th><th>2nd (verb)</th><th>rest</th></tr>\n<tr><td>Ik</td><td>werk</td><td>vandaag thuis.</td></tr>\n<tr><td>Vandaag</td><td>werk</td><td>ik thuis.</td></tr>\n<tr><td>Thuis</td><td>werk</td><td>ik vandaag.</td></tr></table>\n<h3>Inversion</h3>\n<p>If you put something other than the subject first (a time, a place, an object), the subject moves <b>after the verb</b>. This is called inversion: <i>Morgen <b>ga ik</b> naar Brugge</i>, never <s>Morgen ik ga</s>. English says \"Tomorrow I go\", so this is the most common mistake for English speakers.</p>\n<h3>Time – manner – place</h3>\n<p>When a sentence has several of these, the usual order is: <b>when</b>, then <b>how</b>, then <b>where</b>. English usually does the opposite (\"I'm going to Ghent by train tomorrow\").</p>\n<p><i>Ik ga <b>morgen</b> <b>met de trein</b> <b>naar Gent</b>.</i> (I'm going to Ghent by train tomorrow.)</p>\n<h3>The frame with two verbs</h3>\n<p>With a modal verb (unit 9) the conjugated verb stays in second place and the infinitive goes to the end: <i>Vanavond <b>willen</b> we in Gent <b>eten</b></i>.</p>\n<h3>Conjunctions</h3>\n<p><b>en</b> (and), <b>maar</b> (but), <b>of</b> (or) and <b>want</b> (because, since) don't count as a position: after them the order stays normal. <i>Ik blijf thuis, want ik <b>ben</b> moe.</i> Careful: <i>want</i> is a false friend, it means \"because\", not \"want\".</p>\n<p><b>dus</b> (so) is more flexible: it can take first place (<i>Ik ben moe, dus <b>blijf ik</b> thuis</i>) or behave like want (<i>dus <b>ik blijf</b> thuis</i>). Both are correct.</p>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Forgetting inversion, English-style: <s>Vandaag ik werk</s> → <b>Vandaag werk ik</b>.</li>\n<li>Putting place before time, as in English: <s>Ik ga naar Gent morgen</s> → <b>Ik ga morgen naar Gent</b>.</li>\n<li>Inverting after <i>want</i>: <s>want ben ik moe</s> → <b>want ik ben moe</b>.</li>\n</ul>",
+  "vlaams": "The rules are the same everywhere; the vocabulary is what changes. In Flanders you say <b>een broodje smos</b> (a sandwich with ham, cheese and salad), <b>de gsm</b> (the cell phone) and <b>'s voormiddags</b> (in the morning).",
+  "vocab": [
+   [
+    "vandaag",
+    "today"
+   ],
+   [
+    "morgen",
+    "tomorrow"
+   ],
+   [
+    "vanavond",
+    "tonight, this evening"
+   ],
+   [
+    "thuis",
+    "at home"
+   ],
+   [
+    "blijven",
+    "to stay"
+   ],
+   [
+    "de trein",
+    "the train"
+   ],
+   [
+    "de zus",
+    "the sister"
+   ],
+   [
+    "vaak",
+    "often"
+   ],
+   [
+    "elke dag",
+    "every day"
+   ]
+  ],
+  "core": [
+   [
+    "en",
+    "and"
+   ],
+   [
+    "maar",
+    "but"
+   ],
+   [
+    "of",
+    "or"
+   ],
+   [
+    "want",
+    "because (since)"
+   ],
+   [
+    "dus",
+    "so, therefore"
+   ]
+  ],
+  "items": [
+   {
+    "t": "order",
+    "q": "Today I'm working at home.",
+    "a": "Vandaag werk ik thuis",
+    "alt": [
+     "Ik werk vandaag thuis"
+    ],
+    "x": [
+     "werkt",
+     "mij"
+    ],
+    "e": "Verb in second place: Vandaag <b>werk</b> ik."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "Morgen ___ naar Brugge.",
+    "o": [
+     "ga ik",
+     "ik ga",
+     "gaan ik",
+     "ik gaan"
+    ],
+    "a": 0,
+    "e": "Inversion: Morgen <b>ga ik</b>."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "say": "Ik ga morgen met de trein naar Gent.",
+    "q": "Which sentence is correct?",
+    "o": [
+     "Ik ga morgen met de trein naar Gent.",
+     "Ik ga naar Gent morgen met de trein.",
+     "Morgen ik ga met de trein naar Gent.",
+     "Ik morgen ga naar Gent."
+    ],
+    "a": 0,
+    "e": "Time – manner – place."
+   },
+   {
+    "t": "order",
+    "q": "Tonight we want to eat in Ghent.",
+    "a": "Vanavond willen we in Gent eten",
+    "alt": [
+     "We willen vanavond in Gent eten"
+    ],
+    "x": [
+     "eet",
+     "wil"
+    ],
+    "e": "Conjugated verb in second place, infinitive at the end."
+   },
+   {
+    "t": "mc",
+    "q": "In Antwerpen ___ mijn zus.",
+    "o": [
+     "woont",
+     "woon",
+     "wonen",
+     "is wonen"
+    ],
+    "a": 0,
+    "e": "In Antwerpen <b>woont</b> mijn zus."
+   },
+   {
+    "t": "tr",
+    "q": "Tomorrow I'm going to Brussels.",
+    "a": [
+     "Morgen ga ik naar Brussel",
+     "Ik ga morgen naar Brussel"
+    ],
+    "e": "<b>Morgen ga ik</b> naar Brussel. Dutch uses the simple present for this."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "In a main clause the conjugated verb is in position:",
+    "o": [
+     "first",
+     "second",
+     "last",
+     "after the object"
+    ],
+    "a": 1,
+    "e": "<b>Second</b> position."
+   },
+   {
+    "t": "order",
+    "q": "I often eat fries.",
+    "a": "Ik eet vaak frieten",
+    "x": [
+     "eten",
+     "frietje"
+    ],
+    "e": "In Belgium: <b>frieten</b>. Note that <i>vaak</i> comes after the verb, not before it as in English."
+   },
+   {
+    "t": "fill",
+    "q": "Elke dag ___ hij koffie.",
+    "h": "drinken",
+    "a": [
+     "drinkt"
+    ],
+    "e": "Inversion: Elke dag <b>drinkt</b> hij."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "After 'want' (because):",
+    "o": [
+     "the order stays normal",
+     "the verb goes to the end",
+     "the verb goes first",
+     "you use the infinitive"
+    ],
+    "a": 0,
+    "e": "en, maar, of, want: <b>normal</b> order."
+   },
+   {
+    "t": "tr",
+    "q": "Tonight I'm working.",
+    "a": [
+     "Vanavond werk ik",
+     "Ik werk vanavond"
+    ],
+    "e": "<b>Vanavond werk ik.</b>"
+   }
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "Vandaag ___ thuis.",
+    "o": [
+     "werk ik",
+     "ik werk",
+     "werken ik",
+     "ik werken"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Verb in second place, subject after it: <b>werk ik</b>.",
+    "g": {
+     "werk ik": "I work (with inversion)",
+     "ik werk": "I work: after vandaag you need inversion",
+     "werken ik": "werken is plural",
+     "ik werken": "wrong verb form and no inversion"
+    },
+    "tt": "Today I'm working at home."
+   },
+   {
+    "t": "mc",
+    "q": "Morgen ___ naar Gent.",
+    "o": [
+     "gaan we",
+     "we gaan",
+     "gaat we",
+     "we gaat"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Inversion: Morgen <b>gaan we</b>.",
+    "g": {
+     "gaan we": "we go (with inversion)",
+     "we gaan": "we go: inversion needed here",
+     "gaat we": "gaat is singular",
+     "we gaat": "wrong verb form and no inversion"
+    },
+    "tt": "Tomorrow we're going to Ghent."
+   },
+   {
+    "t": "mc",
+    "q": "In second place in a main clause there is always:",
+    "o": [
+     "the conjugated verb",
+     "the subject",
+     "the infinitive",
+     "the object"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Fixed rule: the <b>conjugated verb</b> is in second place."
+   },
+   {
+    "t": "mc",
+    "q": "Ik blijf thuis, want ___ moe.",
+    "o": [
+     "ik ben",
+     "ben ik"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "After <b>want</b> the order stays normal.",
+    "g": {
+     "ik ben": "I am (normal order)",
+     "ben ik": "no inversion after want"
+    },
+    "tt": "I'm staying home because I'm tired."
+   },
+   {
+    "t": "mc",
+    "q": "Ik ben moe, ___ ik blijf thuis.",
+    "o": [
+     "dus",
+     "want",
+     "maar",
+     "of"
+    ],
+    "a": 0,
+    "e": "<b>dus</b> = so. After dus both <i>dus ik blijf</i> and <i>dus blijf ik</i> are fine.",
+    "g": {
+     "dus": "so",
+     "want": "because: doesn't make sense here",
+     "maar": "but",
+     "of": "or"
+    },
+    "tt": "I'm tired, so I'm staying home."
+   },
+   {
+    "t": "mc",
+    "q": "and",
+    "o": [
+     "en",
+     "maar",
+     "of",
+     "want"
+    ],
+    "a": 0,
+    "e": "<b>en</b> = and.",
+    "g": {
+     "en": "and",
+     "maar": "but",
+     "of": "or",
+     "want": "because (since)"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "but",
+    "o": [
+     "maar",
+     "dus",
+     "en",
+     "of"
+    ],
+    "a": 0,
+    "e": "<b>maar</b> = but.",
+    "g": {
+     "maar": "but",
+     "dus": "so",
+     "en": "and",
+     "of": "or"
+    }
+   },
+   {
+    "t": "order",
+    "q": "Today I'm working.",
+    "a": "Vandaag werk ik",
+    "alt": [
+     "Ik werk vandaag"
+    ],
+    "x": [
+     "werkt",
+     "mij"
+    ],
+    "e": "If you start with vandaag, the verb comes right after: <b>Vandaag werk ik</b>."
+   },
+   {
+    "t": "order",
+    "q": "Tomorrow we're going to Bruges.",
+    "a": "Morgen gaan we naar Brugge",
+    "alt": [
+     "We gaan morgen naar Brugge"
+    ],
+    "x": [
+     "gaat",
+     "ons"
+    ],
+    "e": "Morgen + <b>gaan</b> + we."
+   },
+   {
+    "t": "fill",
+    "q": "Elke dag ___ ik koffie.",
+    "h": "drinken",
+    "a": [
+     "drink"
+    ],
+    "e": "Inversion: Elke dag <b>drink</b> ik.",
+    "tt": "Every day I drink coffee."
+   }
+  ],
+  "gloss": {
+   "1": {
+    "g": {
+     "ga ik": "I go (verb + subject after Morgen)",
+     "ik ga": "I go: inversion needed here",
+     "gaan ik": "gaan is plural",
+     "ik gaan": "wrong verb form and no inversion"
+    },
+    "t": "Tomorrow I'm going to Bruges."
+   },
+   "2": {
+    "g": {
+     "Ik ga morgen met de trein naar Gent.": "Tomorrow I'm going to Ghent by train (time, manner, place)",
+     "Ik ga naar Gent morgen met de trein.": "place goes after time and manner",
+     "Morgen ik ga met de trein naar Gent.": "after Morgen you need inversion: ga ik",
+     "Ik morgen ga naar Gent.": "the verb must be in second place"
+    },
+    "t": "Tomorrow I'm going to Ghent by train."
+   },
+   "4": {
+    "g": {
+     "woont": "(he/she) lives",
+     "woon": "(I) live",
+     "wonen": "(we/they) live",
+     "is wonen": "not a real form"
+    },
+    "t": "My sister lives in Antwerp."
+   },
+   "8": {
+    "t": "Every day he drinks coffee."
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "In Gent ___ onze kinderen elke dag met de fiets naar school.",
+    "o": [
+     "gaan",
+     "gaat",
+     "ga",
+     "gaan ze"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "After <i>In Gent</i> comes inversion: verb + subject. The subject is <i>onze kinderen</i> (plural): <b>gaan</b>. Don't repeat the subject with <i>ze</i>.",
+    "g": {
+     "gaan": "(they) go (plural)",
+     "gaat": "goes: the subject is plural",
+     "ga": "go: the ik form",
+     "gaan ze": "there's already a subject: onze kinderen"
+    },
+    "tt": "In Ghent our children bike to school every day."
+   },
+   {
+    "t": "mc",
+    "q": "Choose the correct word order:",
+    "o": [
+     "Morgen moet ik met de trein naar Antwerpen gaan.",
+     "Morgen ik moet met de trein naar Antwerpen gaan.",
+     "Morgen moeten ik met de trein naar Antwerpen gaan.",
+     "Morgen moet ik met de trein naar Antwerpen gaat."
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<i>Morgen</i> in first place → inversion <b>moet ik</b>; then manner (<i>met de trein</i>) and place (<i>naar Antwerpen</i>), infinitive <b>gaan</b> at the end.",
+    "g": {
+     "Morgen moet ik met de trein naar Antwerpen gaan.": "Tomorrow I have to go to Antwerp by train. (correct)",
+     "Morgen ik moet met de trein naar Antwerpen gaan.": "missing inversion after Morgen",
+     "Morgen moeten ik met de trein naar Antwerpen gaan.": "with ik: moet",
+     "Morgen moet ik met de trein naar Antwerpen gaat.": "you need the infinitive gaan at the end"
+    },
+    "tt": "Tomorrow I have to go to Antwerp by train."
+   },
+   {
+    "t": "fill",
+    "q": "Mijn zus is moe, dus vanavond ___ ze thuis.",
+    "h": "blijven",
+    "a": [
+     "blijft"
+    ],
+    "e": "<i>vanavond</i> takes first place in the clause after <i>dus</i>: inversion, <b>blijft ze</b>. With <i>ze</i> (she) the -t stays.",
+    "tt": "My sister is tired, so tonight she's staying home."
+   },
+   {
+    "t": "fill",
+    "q": "Hoe vaak ___ je zus naar Brussel?",
+    "h": "gaan",
+    "a": [
+     "gaat"
+    ],
+    "e": "Trap: here <i>je</i> is a possessive (your sister), and the subject is <i>je zus</i> = she. So the -t stays: <b>gaat</b>.",
+    "tt": "How often does your sister go to Brussels?"
+   },
+   {
+    "t": "tr",
+    "q": "Every day my sister takes the train to Brussels.",
+    "a": [
+     "Elke dag neemt mijn zus de trein naar Brussel",
+     "Mijn zus neemt elke dag de trein naar Brussel",
+     "Elke dag pakt mijn zus de trein naar Brussel",
+     "Mijn zus pakt elke dag de trein naar Brussel"
+    ],
+    "e": "With <i>Elke dag</i> first: <b>neemt mijn zus</b> (verb in second place, then the subject), not \"Elke dag mijn zus neemt\"."
+   },
+   {
+    "t": "tr",
+    "q": "I'm tired, so tonight I'm staying home.",
+    "a": [
+     "Ik ben moe, dus ik blijf vanavond thuis",
+     "Ik ben moe, dus blijf ik vanavond thuis",
+     "Ik ben moe, dus vanavond blijf ik thuis"
+    ],
+    "e": "After <b>dus</b> both normal order (<i>dus ik blijf</i>) and inversion (<i>dus blijf ik</i>) are fine. Time (<i>vanavond</i>) before place (<i>thuis</i>)."
+   },
+   {
+    "t": "order",
+    "q": "Tonight my father wants to cook for us.",
+    "a": "Vanavond wil mijn vader voor ons koken",
+    "alt": [
+     "Mijn vader wil vanavond voor ons koken",
+     "Mijn vader wil vanavond koken voor ons",
+     "Vanavond wil mijn vader koken voor ons"
+    ],
+    "x": [
+     "wilt",
+     "wij"
+    ],
+    "e": "<i>Vanavond</i> first → <b>wil mijn vader</b>; the infinitive <b>koken</b> goes toward the end. After <i>voor</i> you need <b>ons</b>, not <i>wij</i>.",
+    "tt": "Tonight my father wants to cook for us."
+   },
+   {
+    "t": "order",
+    "q": "I'm staying home because my sister is coming tonight.",
+    "a": "Ik blijf thuis want mijn zus komt vanavond",
+    "alt": [
+     "Ik blijf thuis want vanavond komt mijn zus"
+    ],
+    "x": [
+     "kom",
+     "blijft"
+    ],
+    "e": "After <b>want</b> the order stays normal: <i>want mijn zus komt</i>. (If you put <i>vanavond</i> right after want, then you do need inversion.)",
+    "tt": "I'm staying home because my sister is coming tonight."
+   }
+  ]
+ }
+}

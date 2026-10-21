@@ -1,0 +1,474 @@
+{
+ "id": "u16",
+ "n": 16,
+ "module": 4,
+ "nl": "Bijwoorden",
+ "it": "Gli avverbi",
+ "note": "\n<h3>L'idea</h3>\n<p>In italiano un avverbio si forma spesso aggiungendo <i>-mente</i> all'aggettivo: lento → lentamente. In olandese è molto più semplice: si usa <b>l'aggettivo così com'è</b>, senza nessuna desinenza. <i>Hij rijdt langzaam</i> = lui guida lentamente. <i>Ze zingt goed</i> = lei canta bene. Lo stesso <b>goed</b> vale quindi per \"buono\" e per \"bene\".</p>\n<h3>Aggettivo o avverbio?</h3>\n<p>Nell'unità sugli aggettivi hai visto che davanti a un nome l'aggettivo prende spesso una <b>-e</b>: <i>een goede kok</i>. Quando invece descrive <b>come si fa</b> un'azione, l'aggettivo non prende mai la -e:</p>\n<table><tr><th>aggettivo (davanti al nome)</th><th>avverbio (con il verbo)</th></tr>\n<tr><td>een snelle fiets</td><td>Ze fietst snel.</td></tr>\n<tr><td>een langzame bus</td><td>De bus rijdt langzaam.</td></tr>\n<tr><td>een goede kok</td><td>Hij kookt goed.</td></tr></table>\n<h3>Gli avverbi più comuni</h3>\n<table><tr><th>frequenza</th><th>tempo</th><th>altri</th></tr>\n<tr><td><b>altijd</b> sempre</td><td><b>nu</b> ora</td><td><b>ook</b> anche</td></tr>\n<tr><td><b>vaak</b> spesso</td><td><b>al</b> già</td><td><b>graag</b> volentieri</td></tr>\n<tr><td><b>soms</b> a volte</td><td><b>nog</b> ancora</td><td><b>hier</b> qui</td></tr>\n<tr><td><b>nooit</b> mai</td><td><b>vroeg / laat</b> presto / tardi</td><td><b>daar</b> lì, là</td></tr></table>\n<h3>Dove si mettono</h3>\n<p>Di solito l'avverbio va <b>subito dopo il verbo coniugato</b> (e dopo il soggetto, se c'è inversione): <i>Ik drink <b>altijd</b> thee</i>. <i>Morgen werk ik <b>ook</b></i>. Un pronome oggetto viene prima dell'avverbio: <i>Ik zie hem vaak</i>.</p>\n<p>Con un modale l'avverbio resta nel mezzo e l'infinito va in fondo: <i>Ik moet <b>vaak</b> laat werken</i>.</p>\n<p>Puoi anche mettere l'avverbio al <b>primo posto</b>: allora scatta l'inversione (unità 10). <i><b>Soms</b> werk ik thuis</i>, mai <s>Soms ik werk</s>.</p>\n<h3>Graag: \"mi piace\"</h3>\n<p>Per dire che ti piace <b>fare</b> qualcosa, l'olandese non usa un verbo come \"piacere\": aggiunge <b>graag</b> al verbo. <i>Ik zwem graag</i> = mi piace nuotare (alla lettera: nuoto volentieri). <i>Ik eet graag frieten</i> = mi piace mangiare le patatine. Il contrario è <b>niet graag</b>: <i>Ik kook niet graag</i>.</p>\n<h3>Al e nog</h3>\n<p><b>al</b> = già: <i>Ben je al klaar?</i> (hai già finito?). Con un periodo di tempo traduce il nostro \"da\": <i>Ik woon al drie jaar in Gent</i> = abito a Gand da tre anni. <b>nog</b> = ancora: <i>Ben je nog moe?</i>. Attenzione all'ordine: \"non ancora\" è <b>nog niet</b>.</p>\n<h3>Ook</h3>\n<p><b>ook</b> = anche. Va dopo il verbo: <i>Ik spreek ook Frans</i>. Per rispondere \"anch'io\" si dice <b>Ik ook</b>.</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Aggiungere la -e all'avverbio: <s>Hij kookt goede</s> → <b>Hij kookt goed</b>.</li>\n<li>Mettere l'avverbio prima del verbo: <s>Ik altijd drink thee</s> → <b>Ik drink altijd thee</b>.</li>\n<li>Dimenticare l'inversione: <s>Soms ik werk thuis</s> → <b>Soms werk ik thuis</b>.</li>\n<li>Invertire \"non ancora\": <s>niet nog</s> → <b>nog niet</b>.</li>\n</ul>",
+ "vlaams": "Nel parlato fiammingo senti spesso <b>seffens</b> (subito, tra poco): \"Tot seffens!\" = a dopo! Nello standard si dice <i>straks</i> o <i>zo meteen</i>. Un'altra parola tipica è <b>efkes</b> (un attimo): \"Wacht efkes\".",
+ "vocab": [
+  [
+   "langzaam",
+   "lento, lentamente"
+  ],
+  [
+   "snel",
+   "veloce, velocemente"
+  ],
+  [
+   "goed",
+   "buono, bene"
+  ],
+  [
+   "slecht",
+   "cattivo, male"
+  ],
+  [
+   "vroeg",
+   "presto"
+  ],
+  [
+   "laat",
+   "tardi"
+  ],
+  [
+   "nu",
+   "ora, adesso"
+  ],
+  [
+   "klaar",
+   "pronto, finito"
+  ],
+  [
+   "zingen",
+   "cantare"
+  ],
+  [
+   "rijden",
+   "guidare, andare (con un veicolo)"
+  ],
+  [
+   "fietsen",
+   "andare in bici"
+  ],
+  [
+   "de thee",
+   "il tè"
+  ],
+  [
+   "het ontbijt",
+   "la colazione"
+  ],
+  [
+   "de bus",
+   "l'autobus"
+  ],
+  [
+   "de kok",
+   "il cuoco"
+  ]
+ ],
+ "core": [
+  [
+   "altijd",
+   "sempre"
+  ],
+  [
+   "vaak",
+   "spesso"
+  ],
+  [
+   "soms",
+   "a volte"
+  ],
+  [
+   "nooit",
+   "mai"
+  ],
+  [
+   "al",
+   "già"
+  ],
+  [
+   "nog",
+   "ancora"
+  ],
+  [
+   "ook",
+   "anche"
+  ],
+  [
+   "graag",
+   "volentieri (mi piace)"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "Hij zingt ___. (bene)",
+   "o": [
+    "goed",
+    "goede",
+    "goeds",
+    "goedmente"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "L'avverbio è l'aggettivo senza desinenza: <b>goed</b>.",
+   "g": {
+    "goed": "bene (avverbio)",
+    "goede": "buono/a: la -e solo davanti a un nome",
+    "goeds": "forma sbagliata qui",
+    "goedmente": "forma che non esiste: niente -mente in olandese"
+   },
+   "tt": "Lui canta bene."
+  },
+  {
+   "t": "mc",
+   "q": "lentamente",
+   "o": [
+    "langzaam",
+    "langzame",
+    "langzaamlijk",
+    "langzamer"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Aggettivo senza -e: <b>langzaam</b>.",
+   "g": {
+    "langzaam": "lentamente",
+    "langzame": "lento/a, solo davanti a un nome",
+    "langzaamlijk": "forma che non esiste",
+    "langzamer": "più lentamente (comparativo)"
+   },
+   "tt": "lentamente"
+  },
+  {
+   "t": "mc",
+   "q": "mai",
+   "o": [
+    "nooit",
+    "altijd",
+    "soms",
+    "vaak"
+   ],
+   "a": 0,
+   "e": "<b>nooit</b> = mai.",
+   "g": {
+    "nooit": "mai",
+    "altijd": "sempre",
+    "soms": "a volte",
+    "vaak": "spesso"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "a volte",
+   "o": [
+    "soms",
+    "ook",
+    "nog",
+    "al"
+   ],
+   "a": 0,
+   "e": "<b>soms</b> = a volte.",
+   "g": {
+    "soms": "a volte",
+    "ook": "anche",
+    "nog": "ancora",
+    "al": "già"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "Quale frase è corretta?",
+   "o": [
+    "Ik drink altijd thee.",
+    "Ik altijd drink thee.",
+    "Altijd ik drink thee.",
+    "Ik drinken altijd thee."
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "L'avverbio va dopo il verbo coniugato: <b>Ik drink altijd thee</b>.",
+   "g": {
+    "Ik drink altijd thee.": "Bevo sempre tè (corretta)",
+    "Ik altijd drink thee.": "l'avverbio non va prima del verbo",
+    "Altijd ik drink thee.": "dopo Altijd serve l'inversione: drink ik",
+    "Ik drinken altijd thee.": "con ik il verbo è drink"
+   },
+   "tt": "Bevo sempre tè."
+  },
+  {
+   "t": "mc",
+   "q": "Soms ___ thuis.",
+   "o": [
+    "werk ik",
+    "ik werk"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Avverbio al primo posto → inversione: <b>Soms werk ik</b>.",
+   "g": {
+    "werk ik": "lavoro (con inversione)",
+    "ik werk": "io lavoro: dopo soms serve l'inversione"
+   },
+   "tt": "A volte lavoro a casa."
+  },
+  {
+   "t": "mc",
+   "q": "già",
+   "o": [
+    "al",
+    "nog",
+    "ook",
+    "nooit"
+   ],
+   "a": 0,
+   "e": "<b>al</b> = già.",
+   "g": {
+    "al": "già",
+    "nog": "ancora",
+    "ook": "anche",
+    "nooit": "mai"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "Sei ancora stanco? → Ben je ___ moe?",
+   "o": [
+    "nog",
+    "al",
+    "ook",
+    "soms"
+   ],
+   "a": 0,
+   "e": "ancora = <b>nog</b>.",
+   "g": {
+    "nog": "ancora",
+    "al": "già",
+    "ook": "anche",
+    "soms": "a volte"
+   },
+   "tt": "Sei ancora stanco?"
+  },
+  {
+   "t": "fill",
+   "q": "Ik zwem ___.",
+   "h": "mi piace",
+   "a": [
+    "graag"
+   ],
+   "e": "<b>graag</b> dopo il verbo = mi piace farlo.",
+   "tt": "Mi piace nuotare."
+  },
+  {
+   "t": "order",
+   "q": "Lui parla anche francese.",
+   "a": "Hij spreekt ook Frans",
+   "alt": [
+    "Frans spreekt hij ook"
+   ],
+   "x": [
+    "spreken",
+    "hem"
+   ],
+   "e": "<b>ook</b> va dopo il verbo coniugato."
+  }
+ ],
+ "items": [
+  {
+   "t": "mc",
+   "q": "Mijn vader rijdt ___.",
+   "h": "lentamente",
+   "o": [
+    "langzaam",
+    "langzame",
+    "langzaams"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Con il verbo l'aggettivo non prende desinenze: <b>langzaam</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Anna fietst ___ naar het station.",
+   "h": "velocemente",
+   "a": [
+    "snel",
+    "vlug"
+   ],
+   "e": "<b>snel</b> (o <i>vlug</i>), senza -e perché descrive l'azione."
+  },
+  {
+   "t": "mc",
+   "q": "Hij komt ___ vroeg.",
+   "h": "sempre",
+   "o": [
+    "altijd",
+    "nooit",
+    "soms",
+    "nog"
+   ],
+   "a": 0,
+   "e": "sempre = <b>altijd</b>."
+  },
+  {
+   "t": "order",
+   "q": "A volte lavoro a casa.",
+   "a": "Soms werk ik thuis",
+   "alt": [
+    "Ik werk soms thuis",
+    "Thuis werk ik soms"
+   ],
+   "x": [
+    "werkt",
+    "mij"
+   ],
+   "e": "Se cominci con <b>soms</b>, il verbo viene subito dopo: Soms <b>werk</b> ik."
+  },
+  {
+   "t": "tr",
+   "q": "Mi piace cantare.",
+   "a": [
+    "Ik zing graag"
+   ],
+   "e": "verbo + <b>graag</b>: Ik zing graag."
+  },
+  {
+   "t": "fill",
+   "q": "Ben je ___ klaar? — Nee, nog niet.",
+   "h": "già",
+   "a": [
+    "al"
+   ],
+   "e": "<b>al</b> = già. La risposta <i>nog niet</i> = non ancora."
+  },
+  {
+   "t": "mc",
+   "q": "Quale frase è corretta?",
+   "o": [
+    "Ik moet vaak laat werken.",
+    "Ik moet werken vaak laat.",
+    "Ik vaak moet laat werken.",
+    "Vaak ik moet laat werken."
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Modale al secondo posto, avverbi nel mezzo, infinito alla fine."
+  },
+  {
+   "t": "tr",
+   "q": "Lui guida bene.",
+   "a": [
+    "Hij rijdt goed"
+   ],
+   "e": "<b>goed</b> = bene, senza desinenza."
+  },
+  {
+   "t": "fill",
+   "q": "Woon je ___ in Brussel? — Nee, nu woon ik in Gent.",
+   "h": "ancora",
+   "a": [
+    "nog"
+   ],
+   "e": "ancora = <b>nog</b>."
+  },
+  {
+   "t": "order",
+   "q": "Il bambino mangia lentamente.",
+   "a": "Het kind eet langzaam",
+   "alt": [
+    "Langzaam eet het kind"
+   ],
+   "x": [
+    "langzame",
+    "eten"
+   ],
+   "e": "L'avverbio non prende la -e: <b>langzaam</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Ik drink graag thee. — Ik ___!",
+   "h": "anch'io",
+   "o": [
+    "ook",
+    "al",
+    "nog",
+    "soms"
+   ],
+   "a": 0,
+   "e": "anch'io = <b>Ik ook</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Bevo spesso tè.",
+   "a": [
+    "Ik drink vaak thee",
+    "Vaak drink ik thee"
+   ],
+   "e": "<b>vaak</b> dopo il verbo coniugato."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "g": {
+    "langzaam": "lentamente",
+    "langzame": "lento/a, solo davanti a un nome",
+    "langzaams": "forma che non esiste"
+   },
+   "t": "Mio padre guida lentamente."
+  },
+  "1": {
+   "t": "Anna va in bici velocemente alla stazione."
+  },
+  "2": {
+   "g": {
+    "altijd": "sempre",
+    "nooit": "mai",
+    "soms": "a volte",
+    "nog": "ancora"
+   },
+   "t": "Arriva sempre presto."
+  },
+  "3": {
+   "t": "A volte lavoro a casa."
+  },
+  "4": {
+   "t": "Mi piace cantare."
+  },
+  "5": {
+   "t": "Hai già finito? — No, non ancora."
+  },
+  "6": {
+   "g": {
+    "Ik moet vaak laat werken.": "Devo spesso lavorare fino a tardi (corretta)",
+    "Ik moet werken vaak laat.": "l'infinito va alla fine",
+    "Ik vaak moet laat werken.": "l'avverbio non va prima del verbo coniugato",
+    "Vaak ik moet laat werken.": "dopo Vaak serve l'inversione: moet ik"
+   },
+   "t": "Devo spesso lavorare fino a tardi."
+  },
+  "7": {
+   "t": "Lui guida bene."
+  },
+  "8": {
+   "t": "Abiti ancora a Bruxelles? — No, ora abito a Gand."
+  },
+  "9": {
+   "t": "Il bambino mangia lentamente."
+  },
+  "10": {
+   "g": {
+    "ook": "anche (Ik ook = anch'io)",
+    "al": "già",
+    "nog": "ancora",
+    "soms": "a volte"
+   },
+   "t": "Mi piace bere il tè. — Anche a me!"
+  },
+  "11": {
+   "t": "Bevo spesso tè."
+  }
+ }
+}

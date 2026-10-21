@@ -1,0 +1,240 @@
+{
+  "v2": {
+    "t": "The verb in second place",
+    "s": "Subject, verb, rest",
+    "rule": "In a main clause the conjugated verb is always in <b>second place</b>. In these sentences the subject comes first: <b>subject – verb – rest</b>. If you put a place or a time at the start, the subject moves after the verb.",
+    "items": [
+      {"it": "I work in Brussels.", "e": "Subject <b>ik</b>, then the verb <b>werk</b> in 2nd place, then the place."},
+      {"it": "My sister lives in Ghent.", "e": "<b>Mijn zus</b> is a single block (the subject), so <b>woont</b> is still in 2nd place."},
+      {"it": "I'm having a coffee.", "e": "Subject – verb – object, just like in English."},
+      {"it": "My father reads the newspaper.", "e": "The verb <b>leest</b> comes right after the subject, the object after the verb."},
+      {"it": "We speak Dutch.", "e": "<b>Wij</b> is the subject; the verb is in 2nd place."},
+      {"it": "The children are playing in the garden.", "e": "Subject (two words, one block) – verb – place. Dutch has no <i>-ing</i> form: <b>spelen</b> covers both “play” and “are playing”."},
+      {"it": "Our apartment is very nice.", "e": "<b>is</b> is a conjugated verb too: 2nd place."},
+      {"it": "The train is late.", "e": "Subject – verb – rest: <b>te laat</b> closes the sentence."},
+      {"it": "The store closes at six.", "e": "The verb <b>sluit</b> in 2nd place; if you put the time first, the subject goes after the verb."},
+      {"it": "Marc gives his mother flowers.", "e": "Verb in 2nd place; without <i>aan</i>, the person (<b>zijn moeder</b>) comes before the thing (<b>bloemen</b>), as in English."}
+    ]
+  },
+  "inv": {
+    "t": "Inversion",
+    "s": "Time or place first",
+    "rule": "If the sentence starts with a time or a place, the verb stays in <b>2nd place</b> and the subject goes <b>after</b> the verb: <b>time/place – verb – subject – rest</b>. The first block is already in place.",
+    "items": [
+      {"it": "Tomorrow I'm going to Ghent.", "e": "<b>Morgen</b> takes 1st place, so <b>ga</b> comes next and then <b>ik</b>. Unlike English, not <s>Morgen ik ga</s>."},
+      {"it": "My aunt lives in Ghent.", "e": "Place at the start → verb → subject."},
+      {"it": "Today I'm working from home.", "e": "After <b>vandaag</b> the verb comes right away, then the subject <b>ik</b>."},
+      {"it": "Tonight we're cooking pasta.", "e": "Inversion: <b>koken we</b>, not <s>we koken</s>."},
+      {"it": "On Saturdays we go to the market.", "e": "Time in 1st place, verb in 2nd, subject in 3rd."},
+      {"it": "After work I have a beer.", "e": "<b>Na het werk</b> is one element, so the verb follows it. (<i>Een pintje</i> = a beer, in Belgium.)"},
+      {"it": "At eight o'clock the class starts.", "e": "Time at the start → <b>begint</b> → subject."},
+      {"it": "In the summer we often go to the seaside.", "e": "Verb, subject, then the adverb <b>vaak</b> before the place."},
+      {"it": "Every day my son bikes to school.", "e": "Verb, subject, then manner (<b>met de fiets</b>) before place (<b>naar school</b>)."},
+      {"it": "Tomorrow morning my mother is calling the doctor.", "e": "After the time: the verb <b>belt</b>, the subject, the object."}
+    ]
+  },
+  "tmp": {
+    "t": "Time – manner – place",
+    "s": "When, how, where",
+    "rule": "After the verb, information usually follows the order <b>time – manner – place</b>: <i>Ik ga <b>morgen</b> <b>met de trein</b> <b>naar Gent</b></i>. English often does the opposite (“to Ghent by train tomorrow”). The subject is already in place.",
+    "items": [
+      {"it": "I'm going to Ghent tomorrow.", "e": "First the time (<b>morgen</b>), then the place (<b>naar Gent</b>)."},
+      {"it": "We're eating at home tonight.", "e": "Time before place: <b>vanavond thuis</b>."},
+      {"it": "My brother bikes to work.", "e": "Manner (<b>met de fiets</b>) before place."},
+      {"it": "I'm going to Ghent by train tomorrow.", "e": "Time – manner – place: <b>morgen – met de trein – naar Gent</b>."},
+      {"it": "She works in Brussels every day.", "e": "The time (<b>elke dag</b>) comes before the place."},
+      {"it": "He comes to the office by bus at nine.", "e": "Time – manner – place, the reverse of the usual English order."},
+      {"it": "On Saturday we're going to the seaside with friends.", "e": "When (<b>zaterdag</b>), with whom/how (<b>met vrienden</b>), where (<b>naar zee</b>)."},
+      {"it": "Today my parents are driving to Antwerp.", "e": "Time – manner – place: <b>vandaag – met de auto – naar Antwerpen</b>."},
+      {"it": "My sister cycles in the park every morning.", "e": "Time before place."},
+      {"it": "Tomorrow at eight the children are taking the bus to school.", "e": "General time before precise time (<b>morgen om acht uur</b>), then manner and place."}
+    ]
+  },
+  "q": {
+    "t": "Questions",
+    "s": "Verb first, or after the question word",
+    "rule": "Yes/no question: the <b>verb</b> goes in <b>1st place</b>: <i>Woon je in Gent?</i> With a question word: <b>question word – verb – subject – rest</b>: <i>Waar woon je?</i> Dutch never uses a helper like English <i>do</i>. With <i>je/jij</i> after the verb, the <b>-t</b> drops.",
+    "items": [
+      {"it": "Do you live in Ghent?", "e": "Yes/no question: verb in 1st place, no <i>do</i>. <b>Woon je</b>, without -t."},
+      {"it": "Do you speak French?", "e": "Verb, subject, rest."},
+      {"it": "Do you have a garden?", "e": "The verb <b>heb</b> opens the question."},
+      {"it": "Where do you live?", "e": "Question word, then the verb right away, then the subject."},
+      {"it": "What are you drinking?", "e": "<b>Wat</b> in 1st place, verb in 2nd."},
+      {"it": "What's your brother's name?", "e": "Question word – verb – subject: literally “How is your brother called?”."},
+      {"it": "How much does the cheese cost?", "e": "<b>Hoeveel</b>, then the verb, then the subject."},
+      {"it": "Are you working from home tomorrow?", "e": "Verb in 1st place; after the subject, time before place."},
+      {"it": "When are you (all) going to Bruges?", "e": "Question word – verb – subject – rest. <b>jullie</b> = you (plural)."},
+      {"it": "Why are you learning Dutch?", "e": "<b>Waarom leer je</b>: verb in 2nd place, subject right after."}
+    ]
+  },
+  "mod": {
+    "t": "Modal verbs",
+    "s": "The infinitive goes at the end",
+    "rule": "The modal verb (<i>willen, kunnen, moeten, mogen</i>) is conjugated and sits in <b>2nd place</b>; the <b>infinitive</b> goes <b>to the end</b>: <i>Ik <b>wil</b> koffie <b>drinken</b></i>. Everything else goes in between — unlike English, where the two verbs stay together.",
+    "items": [
+      {"it": "I want to drink coffee.", "e": "<b>wil</b> in 2nd place, <b>drinken</b> at the end. No “to” in Dutch after a modal."},
+      {"it": "You're allowed to park here.", "e": "Modal in 2nd place, infinitive at the end; <b>hier</b> goes in between (or at the start, with inversion)."},
+      {"it": "We have to work tomorrow.", "e": "<b>werken</b> goes to the end, after <b>morgen</b>."},
+      {"it": "Can you help me?", "e": "Question: modal in 1st place, infinitive always at the end."},
+      {"it": "He can cook well.", "e": "<b>kan</b> in 2nd place, <b>koken</b> at the end, the adverb in between."},
+      {"it": "My sister wants to live in Antwerp.", "e": "The place goes in between, <b>wonen</b> closes the sentence."},
+      {"it": "We want to buy a new bike.", "e": "The object in between, the infinitive <b>kopen</b> at the end."},
+      {"it": "You're not allowed to smoke here.", "e": "<b>niet</b> goes right before the final infinitive."},
+      {"it": "Tonight I have to clean the kitchen.", "e": "<b>poetsen</b> (to clean, in Belgium) goes to the end; everything else sits between the modal and the infinitive."},
+      {"it": "When can we go to Ghent?", "e": "Question word, modal, subject… and <b>gaan</b> at the end."}
+    ]
+  },
+  "sep": {
+    "t": "Separable verbs",
+    "s": "The particle goes at the end",
+    "rule": "With separable verbs (<i>opstaan, opbellen, meenemen</i>) the conjugated part is in <b>2nd place</b> and the <b>particle</b> goes <b>to the end</b>: <i>Ik <b>sta</b> om zeven uur <b>op</b></i> — a bit like English “I get <b>up</b>”, but the particle goes all the way to the end. With a modal the verb stays <b>whole</b> at the end: <i>Ik moet vroeg <b>opstaan</b></i>.",
+    "items": [
+      {"it": "I get up at seven.", "e": "<b>opstaan</b>: <b>sta</b> in 2nd place, <b>op</b> at the end."},
+      {"it": "The train arrives at ten.", "e": "<b>aankomen</b>: the particle <b>aan</b> closes the sentence."},
+      {"it": "I'm calling my mother.", "e": "<b>opbellen</b>: the object sits between <b>bel</b> and <b>op</b>, like “call my mother up”."},
+      {"it": "He's taking an umbrella with him.", "e": "<b>meenemen</b>: <b>neemt … mee</b>."},
+      {"it": "We're going out tonight.", "e": "<b>uitgaan</b>: <b>uit</b> at the end, even after the time."},
+      {"it": "When are you coming back?", "e": "<b>terugkomen</b>: in questions too, the particle goes to the end."},
+      {"it": "The store opens at nine.", "e": "<b>opengaan</b>: <b>gaat … open</b>."},
+      {"it": "I have to get up early tomorrow.", "e": "With the modal <b>moet</b>, the separable verb stays whole at the end: <b>opstaan</b>."},
+      {"it": "Can you call me tomorrow?", "e": "Modal first (question), <b>opbellen</b> whole at the end; the pronoun <b>me</b> right after the subject."},
+      {"it": "I don't want to go out tonight.", "e": "<b>niet</b> before the infinitive, which stays whole: <b>uitgaan</b>."}
+    ]
+  },
+  "perf": {
+    "t": "Present perfect",
+    "s": "The participle goes at the end",
+    "rule": "The auxiliary (<i>hebben</i> or <i>zijn</i>) is conjugated and sits in <b>2nd place</b>; the <b>past participle</b> goes <b>to the end</b>: <i>Ik <b>heb</b> koffie <b>gedronken</b></i>. Everything else goes in between. Dutch uses this tense where English often uses the simple past (“I drank”).",
+    "items": [
+      {"it": "I drank a coffee.", "e": "<b>heb</b> in 2nd place, <b>gedronken</b> at the end."},
+      {"it": "We went to Bruges.", "e": "With <b>gaan</b> the auxiliary is <b>zijn</b>; the participle closes the sentence."},
+      {"it": "He worked yesterday.", "e": "<b>gisteren</b> goes in between (or at the start, with inversion), <b>gewerkt</b> at the end."},
+      {"it": "What did you eat?", "e": "Question word, auxiliary, subject, participle."},
+      {"it": "My parents bought a new house.", "e": "The object sits between <b>hebben</b> and <b>gekocht</b>."},
+      {"it": "She left at eight.", "e": "<b>vertrekken</b> takes <b>zijn</b>; the participle goes to the end."},
+      {"it": "Have you read the newspaper?", "e": "Question: auxiliary in 1st place, participle always at the end."},
+      {"it": "Yesterday I stayed home.", "e": "Time before place, and <b>gebleven</b> at the end."},
+      {"it": "We ate fries in Ghent.", "e": "The participle <b>gegeten</b> at the end; <b>frieten</b> stays close to the verb."},
+      {"it": "Last year I traveled to Italy by train.", "e": "Time – manner – place in between, the participle <b>gereisd</b> at the end."}
+    ]
+  },
+  "niet": {
+    "t": "Where does «niet» go?",
+    "s": "After the object, before the rest",
+    "rule": "<b>niet</b> goes <b>after</b> the conjugated verb and a definite object (<i>Ik ken hem <b>niet</b></i>), but <b>before</b> an adjective, a preposition, an infinitive or a participle: <i>Ik ben <b>niet</b> moe</i>, <i>Hij woont <b>niet</b> in Gent</i>. There is no helper verb like English <i>don't</i>.",
+    "items": [
+      {"it": "I'm not tired.", "e": "<b>niet</b> before the adjective."},
+      {"it": "My sister doesn't smoke.", "e": "With nothing after it, <b>niet</b> goes at the end, after the verb. No “does” in Dutch."},
+      {"it": "I don't know him.", "e": "<b>niet</b> after the definite object <b>hem</b>."},
+      {"it": "I don't understand it.", "e": "The pronoun <b>het</b> comes before <b>niet</b>."},
+      {"it": "The soup isn't hot.", "e": "<b>niet</b> before the adjective <b>warm</b>."},
+      {"it": "He doesn't live in Ghent.", "e": "<b>niet</b> before the preposition <b>in</b>."},
+      {"it": "We're not taking the car.", "e": "<b>niet</b> after the definite object <b>de auto</b>."},
+      {"it": "I can't come today.", "e": "<b>niet</b> before the infinitive, after the time."},
+      {"it": "We're not going to school tomorrow.", "e": "<b>niet</b> after the time and before <b>naar school</b>."},
+      {"it": "I didn't find it.", "e": "Object <b>het</b>, then <b>niet</b>, then the participle at the end."}
+    ]
+  },
+  "sub": {
+    "t": "Subordinate clauses",
+    "s": "The verb goes at the end",
+    "rule": "After <i>omdat, dat, als, of, wanneer</i> (and <i>waar</i> in indirect questions) a subordinate clause begins: the conjugated verb goes <b>to the end</b>: <i>…omdat het <b>regent</b></i>, <i>…dat hij ziek <b>is</b></i>. The main clause stays normal: verb in 2nd place. English keeps the same order in both, so this takes practice.",
+    "items": [
+      {"it": "I'm staying home because it's raining.", "e": "After <b>omdat</b> the verb <b>regent</b> goes to the end of the clause."},
+      {"it": "I think he's sick.", "e": "<b>dat hij ziek is</b>: verb at the end, not <s>dat hij is ziek</s>. Unlike English “that”, <b>dat</b> can't be left out."},
+      {"it": "She says the soup is cold.", "e": "In the <b>dat</b> clause the verb <b>is</b> goes to the end."},
+      {"it": "Do you know if the store is open?", "e": "<b>of</b> = if/whether: here too the verb goes to the end."},
+      {"it": "We're going to the park if the weather is nice.", "e": "<b>als het mooi weer is</b>: verb at the end of the clause."},
+      {"it": "Marc isn't coming because he's tired.", "e": "Normal main clause (<b>komt</b> in 2nd place), subordinate clause with the verb at the end."},
+      {"it": "I don't know where he lives.", "e": "Indirect question with <b>waar</b>: <b>woont</b> goes to the end."},
+      {"it": "Call me when you're home.", "e": "Imperative first; after <b>wanneer</b> the verb <b>bent</b> goes to the end."},
+      {"it": "She's asking whether we're coming tomorrow.", "e": "<b>of we morgen komen</b>: subject, time, verb."},
+      {"it": "I hope it doesn't rain tomorrow.", "e": "In the subordinate clause <b>niet</b> goes right before the final verb."}
+    ]
+  },
+  "want": {
+    "t": "«want» or «omdat»?",
+    "s": "Same meaning, different order",
+    "rule": "<b>want</b> and <b>omdat</b> both mean “because”. After <b>want</b> the order is <b>normal</b> (verb in 2nd place): <i>want het <b>is</b> koud</i>. After <b>omdat</b> the verb goes <b>to the end</b>: <i>omdat het koud <b>is</b></i>. Only the <i>omdat</i> clause can go at the start of the sentence.",
+    "items": [
+      {"it": "We're staying home, because it's raining.", "e": "After <b>want</b>: subject – verb, like a normal sentence."},
+      {"it": "We're staying home because it's raining.", "e": "After <b>omdat</b> the verb goes to the end (here it matches the <i>want</i> order, since there's only the verb)."},
+      {"it": "I'm taking a jacket, because it's cold.", "e": "<b>want het is koud</b>: verb in 2nd place."},
+      {"it": "I'm taking a jacket because it's cold.", "e": "<b>omdat het koud is</b>: verb at the end."},
+      {"it": "Anna isn't eating anything, because she isn't hungry.", "e": "After <b>want</b>: <b>ze heeft</b>, normal order."},
+      {"it": "Anna isn't eating anything because she isn't hungry.", "e": "After <b>omdat</b>: <b>heeft</b> at the end."},
+      {"it": "I'm learning Dutch, because my boyfriend is Belgian.", "e": "<b>want mijn vriend is Belg</b>: verb in 2nd place in the second clause."},
+      {"it": "Marco is learning Dutch because he works in Ghent.", "e": "<b>omdat hij in Gent werkt</b>: the verb closes the subordinate clause."},
+      {"it": "We're taking the train, because the car is broken.", "e": "<b>want</b> + normal order: <b>de auto is kapot</b>."},
+      {"it": "The children are happy because it's vacation.", "e": "<b>omdat het vakantie is</b>: verb at the end."}
+    ]
+  },
+  "subfirst": {
+    "t": "Subordinate clause first",
+    "s": "Verb, comma, verb",
+    "rule": "If the sentence starts with a subordinate clause, that clause counts as <b>1st place</b>: right after it comes the <b>verb</b> of the main clause, then the subject: <i>Als het regent, <b>blijf ik</b> thuis</i>. Verb – comma – verb. The subordinate clause is already in place.",
+    "items": [
+      {"it": "If it rains, I'll stay home.", "e": "After the subordinate clause: <b>blijf ik</b>, not <s>ik blijf</s> as in English."},
+      {"it": "Since I'm sick, I'm not going to work.", "e": "The verb <b>ga</b> right after the comma, then the subject."},
+      {"it": "If you have time, we can have a coffee.", "e": "<b>kunnen we</b> after the subordinate clause, the infinitive <b>drinken</b> at the end."},
+      {"it": "When the weather is nice, we bike to the seaside.", "e": "Verb – comma – verb: <b>is, fietsen</b>."},
+      {"it": "When I'm tired, I go to bed early.", "e": "<b>ga ik</b>, then the infinitive <b>slapen</b> at the end."},
+      {"it": "Since the train is late, I'll arrive later.", "e": "After the subordinate clause, inversion: <b>kom ik</b>."},
+      {"it": "If you like, you can wait here. (formal)", "e": "<b>kunt u</b> after the comma, <b>wachten</b> at the end."},
+      {"it": "When he gets home, we'll eat together.", "e": "In the subordinate clause <b>thuiskomt</b> stays whole at the end; then <b>eten we</b>."},
+      {"it": "Since it's cold, I'm putting on my coat.", "e": "<b>doe ik</b> after the subordinate clause, the particle <b>aan</b> at the end."},
+      {"it": "When I'm in Bruges, I always eat fries.", "e": "<b>eet ik</b>, then <b>altijd</b> before the object."}
+    ]
+  },
+  "rel": {
+    "t": "Relative clauses",
+    "s": "die/dat and the verb at the end",
+    "rule": "A relative clause starts with <b>die</b> (<i>de</i> words and plurals) or <b>dat</b> (<i>het</i> words) and has the verb <b>at the end</b>: <i>de man <b>die</b> daar <b>woont</b></i>. It comes right after the word it refers to, and unlike English “who/that”, the relative pronoun can never be left out.",
+    "items": [
+      {"it": "I have a friend who lives in Ghent.", "e": "<b>een vriend</b> is a <i>de</i> word → <b>die</b>; the verb <b>woont</b> at the end."},
+      {"it": "Do you know the girl who's standing over there?", "e": "<b>het meisje</b> → <b>dat</b>; <b>staat</b> at the end."},
+      {"it": "The woman who works there speaks Italian.", "e": "The relative clause sits inside the subject: <b>werkt</b> at the end of the relative clause, then the main verb <b>spreekt</b>."},
+      {"it": "I know a fry shop that makes really tasty fries.", "e": "<b>de frituur</b> → <b>die</b>; the verb <b>maakt</b> closes the relative clause."},
+      {"it": "The girl who lives next door to me is called Lotte.", "e": "<b>dat … woont</b>, then the main verb <b>heet</b>."},
+      {"it": "The train that goes to Brussels leaves at ten.", "e": "Subject + relative clause (verb <b>gaat</b> at the end), then <b>vertrekt</b> in 2nd place."},
+      {"it": "Is that the man you're looking for?", "e": "<b>de man</b> → <b>die</b> (required, even where English drops it); in the relative clause <b>zoekt</b> goes to the end."},
+      {"it": "The book I'm reading is really exciting.", "e": "<b>het boek</b> → <b>dat</b>; <b>lees</b> at the end of the relative clause, then <b>is</b>."},
+      {"it": "The people who live here are very friendly.", "e": "Plural → <b>die</b>; the verb <b>wonen</b> at the end of the relative clause."},
+      {"it": "My colleague who comes from Leuven speaks three languages.", "e": "<b>die uit Leuven komt</b>, then the main verb <b>spreekt</b>."}
+    ]
+  },
+  "te": {
+    "t": "te + infinitive",
+    "s": "and om … te",
+    "rule": "After many verbs and expressions you use <b>te + infinitive</b> (like English “to”), always <b>at the end</b>: <i>Het begint <b>te regenen</b></i>. For purpose (“in order to…”) use <b>om … te</b>: <i><b>om</b> brood <b>te</b> kopen</i>. With a separable verb, <i>te</i> goes in the middle: <i>op <b>te</b> staan</i>.",
+    "items": [
+      {"it": "It's starting to rain.", "e": "<b>te regenen</b> at the end, after the conjugated verb."},
+      {"it": "I'm trying to speak Dutch.", "e": "The object first, <b>te spreken</b> at the end."},
+      {"it": "I don't feel like cooking.", "e": "<b>geen zin om … te koken</b>: <b>om</b> opens, <b>te</b> + infinitive closes."},
+      {"it": "He's sitting in the garden reading.", "e": "<b>zitten … te lezen</b>: “to be (sitting) reading”; <b>te lezen</b> at the end."},
+      {"it": "Don't forget to call your mother.", "e": "Imperative first, <b>te bellen</b> at the end."},
+      {"it": "I don't have to work tomorrow.", "e": "<b>niet hoeven te</b> = not have to: <b>te werken</b> at the end."},
+      {"it": "I'm going to the bakery to buy bread.", "e": "Purpose: <b>om brood te kopen</b>; <b>om</b> at the start, <b>te kopen</b> at the end."},
+      {"it": "We don't have time to go to the movies.", "e": "Between <b>om</b> and <b>te gaan</b> comes the rest: <b>naar de film</b>."},
+      {"it": "She's saving money to buy a car.", "e": "<b>om een auto te kopen</b>: purpose, with <b>te</b> + infinitive at the end."},
+      {"it": "It's hard to get up early.", "e": "Separable verb: <b>op te staan</b>, with <b>te</b> in the middle, at the end."}
+    ]
+  },
+  "cluster": {
+    "t": "Two verbs at the end",
+    "s": "moet werken or werken moet",
+    "rule": "In a subordinate clause with two verbs, <b>both</b> go to the end: <i>…omdat ik morgen <b>moet werken</b></i>, <i>…dat hij <b>is gekomen</b></i>. The order of the two verbs is free: <i>werken moet</i> and <i>gekomen is</i> are just as correct.",
+    "items": [
+      {"it": "I think he came.", "e": "<b>is gekomen</b> or <b>gekomen is</b>: both at the end."},
+      {"it": "I hope you can come.", "e": "Modal and infinitive together at the end of the subordinate clause."},
+      {"it": "She knows I have to work tomorrow.", "e": "<b>morgen</b> stays before the two verbs: <b>moet werken</b> / <b>werken moet</b>."},
+      {"it": "I don't know if he wants to come.", "e": "After <b>of</b> the two verbs go to the end."},
+      {"it": "Marc says he's been sick.", "e": "<b>ziek</b> first, then <b>is geweest</b> / <b>geweest is</b>."},
+      {"it": "I'm glad you came.", "e": "Auxiliary and participle together at the end, in either order."},
+      {"it": "Do you know if the train has already left?", "e": "<b>al</b> before the final verb group."},
+      {"it": "My mother says she has moved to Leuven.", "e": "The place first, the two verbs at the end."},
+      {"it": "I think we've missed the bus.", "e": "Object first, then <b>hebben gemist</b> / <b>gemist hebben</b>."},
+      {"it": "The children are happy because they're allowed to swim.", "e": "After <b>omdat</b>: <b>mogen zwemmen</b> or <b>zwemmen mogen</b>, always at the end."}
+    ]
+  }
+}

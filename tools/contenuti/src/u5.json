@@ -1,0 +1,503 @@
+{
+ "id": "u5",
+ "n": 5,
+ "module": 1,
+ "nl": "Getallen",
+ "it": "Numeri e misure",
+ "note": "\n<h3>Da 0 a 20</h3>\n<p>0 nul · 1 een · 2 twee · 3 drie · 4 vier · 5 vijf · 6 zes · 7 zeven · 8 acht · 9 negen · 10 tien · 11 elf · 12 twaalf</p>\n<p>Da 13 a 19 si unisce l'unità a <b>tien</b>, con qualche piccolo cambio: 13 <b>dertien</b> (non drietien), 14 <b>veertien</b> (non viertien), 15 vijftien, 16 zestien, 17 zeventien, 18 achttien, 19 negentien. 20 è <b>twintig</b>.</p>\n<h3>Le decine</h3>\n<p>20 <b>twintig</b> · 30 <b>dertig</b> · 40 <b>veertig</b> · 50 vijftig · 60 zestig · 70 zeventig · 80 <b>tachtig</b> · 90 negentig. Le forme in grassetto sono quelle irregolari da memorizzare.</p>\n<h3>Da 21 a 99: prima le unità</h3>\n<p>Qui c'è la grande differenza con l'italiano: si dice prima l'<b>unità</b>, poi <b>en</b> (e), poi la decina, tutto attaccato. È come dire \"uno-e-venti\" invece di \"ventuno\".</p>\n<table><tr><th>numero</th><th>olandese</th><th>letteralmente</th></tr>\n<tr><td>21</td><td>eenentwintig</td><td>uno e venti</td></tr>\n<tr><td>35</td><td>vijfendertig</td><td>cinque e trenta</td></tr>\n<tr><td>47</td><td>zevenenveertig</td><td>sette e quaranta</td></tr>\n<tr><td>88</td><td>achtentachtig</td><td>otto e ottanta</td></tr></table>\n<p>Quando due e si incontrano si mette la dieresi: 22 <b>tweeëntwintig</b>, 23 <b>drieëntwintig</b>.</p>\n<h3>Centinaia, migliaia e anni</h3>\n<p>100 è <b>honderd</b> (senza \"een\" davanti), 200 tweehonderd, 1000 <b>duizend</b>. 2026 = <b>tweeduizend zesentwintig</b>. Gli anni prima del 2000 si dicono a centinaia: 1990 = <b>negentienhonderdnegentig</b> (diciannove-cento-novanta).</p>\n<h3>Prezzi, decimali e misure</h3>\n<ul>\n<li>La virgola decimale si legge <b>komma</b>: 2,5 = twee komma vijf.</li>\n<li>Nei prezzi la virgola non si legge: €3,50 = <b>drie euro vijftig</b>.</li>\n<li>Le unità di misura restano al <b>singolare</b>: twee kilo, honderd gram, drie liter.</li>\n</ul>\n<h3>Gli ordinali (primo, secondo…)</h3>\n<p>Fino a 19 si aggiunge <b>-de</b>: tweede, vierde, vijfde. Tre eccezioni: <b>eerste</b> (primo), <b>derde</b> (terzo), <b>achtste</b> (ottavo). Da 20 in su si aggiunge <b>-ste</b>: twintigste, honderdste.</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Invertire l'ordine: 21 non è <s>twintigeen</s> ma <b>eenentwintig</b>.</li>\n<li>Usare \"avere\" per l'età: <s>Ik heb dertig jaar</s> → <b>Ik ben dertig jaar</b>.</li>\n<li>Mettere le misure al plurale: <s>twee kilos</s> → <b>twee kilo</b>.</li>\n</ul>",
+ "vlaams": "I belgi francofoni dicono \"septante\" e \"nonante\", ma in olandese si dice sempre <b>zeventig</b> e <b>negentig</b>. Quando paghi ti chiederanno \"Met Bancontact?\", e sentirai \"<b>alstublieft</b>\" anche come risposta a \"dank u\": in Belgio significa pure \"prego\".",
+ "vocab": [
+  [
+   "de kaas",
+   "il formaggio"
+  ],
+  [
+   "het jaar",
+   "l'anno"
+  ],
+  [
+   "de prijs",
+   "il prezzo"
+  ],
+  [
+   "kosten",
+   "costare"
+  ],
+  [
+   "het nummer",
+   "il numero"
+  ],
+  [
+   "de kilo",
+   "il chilo"
+  ],
+  [
+   "de euro",
+   "l'euro"
+  ],
+  [
+   "alstublieft",
+   "per favore, ecco a Lei"
+  ],
+  [
+   "de appel",
+   "la mela"
+  ]
+ ],
+ "core": [
+  [
+   "een",
+   "uno"
+  ],
+  [
+   "twee",
+   "due"
+  ],
+  [
+   "drie",
+   "tre"
+  ],
+  [
+   "vier",
+   "quattro"
+  ],
+  [
+   "vijf",
+   "cinque"
+  ],
+  [
+   "zes",
+   "sei"
+  ],
+  [
+   "zeven",
+   "sette"
+  ],
+  [
+   "acht",
+   "otto"
+  ],
+  [
+   "negen",
+   "nove"
+  ],
+  [
+   "tien",
+   "dieci"
+  ],
+  [
+   "twaalf",
+   "dodici"
+  ],
+  [
+   "dertien",
+   "tredici"
+  ],
+  [
+   "twintig",
+   "venti"
+  ],
+  [
+   "dertig",
+   "trenta"
+  ],
+  [
+   "honderd",
+   "cento"
+  ],
+  [
+   "duizend",
+   "mille"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "7 + 3 = ?",
+   "o": [
+    "tien",
+    "negen",
+    "elf",
+    "twaalf"
+   ],
+   "a": 0,
+   "e": "10 = <b>tien</b>.",
+   "g": {
+    "tien": "10",
+    "negen": "9",
+    "elf": "11",
+    "twaalf": "12"
+   },
+   "tt": "sette più tre fa dieci"
+  },
+  {
+   "t": "mc",
+   "q": "15",
+   "o": [
+    "vijftien",
+    "vijfentien",
+    "vijftig",
+    "vijfenvijftig"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Da 13 a 19: unità + tien → <b>vijftien</b>.",
+   "g": {
+    "vijftien": "15",
+    "vijfentien": "forma che non esiste",
+    "vijftig": "50",
+    "vijfenvijftig": "55"
+   },
+   "tt": "quindici"
+  },
+  {
+   "t": "mc",
+   "q": "30",
+   "o": [
+    "dertig",
+    "drieëntig",
+    "drietig",
+    "dertien"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Irregolare: <b>dertig</b>.",
+   "g": {
+    "dertig": "30",
+    "drieëntig": "forma che non esiste",
+    "drietig": "forma che non esiste",
+    "dertien": "13"
+   },
+   "tt": "trenta"
+  },
+  {
+   "t": "mc",
+   "q": "24",
+   "o": [
+    "vierentwintig",
+    "twintigvier",
+    "vierentwintigste",
+    "viertwintig"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Unità + en + decina: <b>vierentwintig</b>.",
+   "g": {
+    "vierentwintig": "24",
+    "twintigvier": "forma che non esiste: l'unità va prima",
+    "vierentwintigste": "ventiquattresimo",
+    "viertwintig": "forma che non esiste: manca en"
+   },
+   "tt": "ventiquattro"
+  },
+  {
+   "t": "mc",
+   "q": "100",
+   "o": [
+    "honderd",
+    "een honderd",
+    "hondert",
+    "duizend"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<b>honderd</b>, senza een davanti.",
+   "g": {
+    "honderd": "100",
+    "een honderd": "davanti a honderd non si dice een",
+    "hondert": "errore di ortografia",
+    "duizend": "1000"
+   },
+   "tt": "cento"
+  },
+  {
+   "t": "mc",
+   "q": "de vierde",
+   "o": [
+    "il quarto",
+    "quattro",
+    "quaranta",
+    "il quattordicesimo"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<b>vierde</b> = quarto."
+  },
+  {
+   "t": "fill",
+   "q": "3 = ___",
+   "a": [
+    "drie"
+   ],
+   "e": "<b>drie</b>.",
+   "tt": "tre"
+  },
+  {
+   "t": "fill",
+   "q": "50 = ___",
+   "a": [
+    "vijftig"
+   ],
+   "e": "<b>vijftig</b>.",
+   "tt": "cinquanta"
+  },
+  {
+   "t": "fill",
+   "q": "2 → de ___",
+   "h": "ordinale",
+   "a": [
+    "tweede"
+   ],
+   "e": "Fino a 19 si aggiunge -de: <b>tweede</b>.",
+   "tt": "il secondo"
+  },
+  {
+   "t": "mc",
+   "q": "€2,20",
+   "o": [
+    "twee euro twintig",
+    "twintig twee euro",
+    "twee komma twintig euro",
+    "twee euro en twintig"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Nei prezzi la virgola non si legge: <b>twee euro twintig</b>.",
+   "g": {
+    "twee euro twintig": "due euro e venti",
+    "twintig twee euro": "ordine sbagliato",
+    "twee komma twintig euro": "nei prezzi la virgola non si legge",
+    "twee euro en twintig": "en qui non si usa"
+   },
+   "tt": "due euro e venti"
+  }
+ ],
+ "items": [
+  {
+   "t": "mc",
+   "oit": true,
+   "say": "eenentwintig",
+   "q": "21",
+   "o": [
+    "eenentwintig",
+    "twintigeen",
+    "tweeëntwintig",
+    "eentwintig"
+   ],
+   "a": 0,
+   "e": "Unità + en + decine: <b>eenentwintig</b>."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "say": "zevenenveertig",
+   "q": "47",
+   "o": [
+    "veertigzeven",
+    "zevenenveertig",
+    "zevenveertig",
+    "zeventig"
+   ],
+   "a": 1,
+   "e": "<b>zevenenveertig</b>."
+  },
+  {
+   "t": "fill",
+   "say": "Acht plus vijf is dertien.",
+   "q": "8 + 5 = ___",
+   "h": "in lettere",
+   "a": [
+    "dertien"
+   ],
+   "e": "13 = <b>dertien</b>."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "say": "drie euro vijftig",
+   "q": "€3,50",
+   "o": [
+    "drie euro vijftig",
+    "drie komma vijftig euro",
+    "vijftig drie euro",
+    "drie euro en een half"
+   ],
+   "a": 0,
+   "e": "Si dice <b>drie euro vijftig</b>."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "say": "negentienhonderdnegentig",
+   "q": "1990 (anno)",
+   "o": [
+    "duizend negenhonderd negentig",
+    "negentienhonderdnegentig",
+    "negentig negentien",
+    "een negen negen nul"
+   ],
+   "a": 1,
+   "e": "Anni a centinaia: <b>negentienhonderdnegentig</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Ho trent'anni.",
+   "a": [
+    "Ik ben dertig jaar",
+    "Ik ben dertig jaar oud",
+    "Ik ben 30 jaar",
+    "Ik ben 30 jaar oud"
+   ],
+   "e": "In olandese l'età si esprime con <b>zijn</b>: ik ben dertig jaar."
+  },
+  {
+   "t": "fill",
+   "say": "twaalf",
+   "q": "12 = ___",
+   "a": [
+    "twaalf"
+   ],
+   "e": "<b>twaalf</b>."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "say": "twee komma vijf",
+   "q": "2,5",
+   "o": [
+    "twee punt vijf",
+    "twee komma vijf",
+    "twee en vijf",
+    "vijf twee"
+   ],
+   "a": 1,
+   "e": "La virgola decimale si legge <b>komma</b>."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "say": "de derde",
+   "q": "de derde",
+   "o": [
+    "il terzo",
+    "tre",
+    "il trenta",
+    "la terza volta"
+   ],
+   "a": 0,
+   "e": "<b>derde</b> = terzo."
+  },
+  {
+   "t": "fill",
+   "say": "de eerste",
+   "q": "1 → de ___",
+   "h": "ordinale",
+   "a": [
+    "eerste"
+   ],
+   "e": "<b>eerste</b> = primo."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "say": "honderd gram kaas",
+   "q": "100 grammi di formaggio",
+   "o": [
+    "honderd gram kaas",
+    "honderd grammen kaas",
+    "een honderd gram kaas",
+    "honderd van gram kaas"
+   ],
+   "a": 0,
+   "e": "Le misure restano al singolare: <b>honderd gram</b>."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "say": "achtentachtig",
+   "q": "88",
+   "o": [
+    "achtentachtig",
+    "tachtigacht",
+    "achtachtig",
+    "achtenachttig"
+   ],
+   "a": 0,
+   "e": "<b>achtentachtig</b>."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "g": {
+    "eenentwintig": "21",
+    "twintigeen": "forma che non esiste: l'unità va prima",
+    "tweeëntwintig": "22",
+    "eentwintig": "forma che non esiste: manca en"
+   },
+   "t": "ventuno"
+  },
+  "1": {
+   "g": {
+    "veertigzeven": "forma che non esiste: l'unità va prima",
+    "zevenenveertig": "47",
+    "zevenveertig": "forma che non esiste: manca en",
+    "zeventig": "70"
+   },
+   "t": "quarantasette"
+  },
+  "2": {
+   "t": "Otto più cinque fa tredici."
+  },
+  "3": {
+   "g": {
+    "drie euro vijftig": "tre euro e cinquanta",
+    "drie komma vijftig euro": "nei prezzi la virgola non si legge",
+    "vijftig drie euro": "ordine sbagliato",
+    "drie euro en een half": "tre euro e mezzo: non si usa"
+   },
+   "t": "tre euro e cinquanta"
+  },
+  "4": {
+   "g": {
+    "duizend negenhonderd negentig": "millenovecentonovanta, ma gli anni si dicono a centinaia",
+    "negentienhonderdnegentig": "1990 detto a centinaia",
+    "negentig negentien": "ordine sbagliato",
+    "een negen negen nul": "cifre lette una per una"
+   },
+   "t": "millenovecentonovanta"
+  },
+  "6": {
+   "t": "dodici"
+  },
+  "7": {
+   "g": {
+    "twee punt vijf": "il punto decimale è inglese",
+    "twee komma vijf": "due virgola cinque",
+    "twee en vijf": "due e cinque",
+    "vijf twee": "cinque due"
+   },
+   "t": "due virgola cinque"
+  },
+  "9": {
+   "t": "il primo"
+  },
+  "10": {
+   "g": {
+    "honderd gram kaas": "cento grammi di formaggio",
+    "honderd grammen kaas": "le misure restano al singolare",
+    "een honderd gram kaas": "davanti a honderd non si dice een",
+    "honderd van gram kaas": "van qui non serve"
+   },
+   "t": "cento grammi di formaggio"
+  },
+  "11": {
+   "g": {
+    "achtentachtig": "88",
+    "tachtigacht": "forma che non esiste: l'unità va prima",
+    "achtachtig": "forma che non esiste: manca en",
+    "achtenachttig": "errore di ortografia: è tachtig"
+   },
+   "t": "ottantotto"
+  }
+ }
+}

@@ -1,0 +1,426 @@
+{
+ "id": "u7",
+ "n": 7,
+ "module": 2,
+ "nl": "Vragen",
+ "it": "Domande",
+ "note": "\n<h3>Domande sì/no: il verbo va all'inizio</h3>\n<p>In italiano una domanda si riconosce spesso solo dall'intonazione (\"Parli olandese?\"). In olandese bisogna <b>cambiare l'ordine</b>: il verbo va in prima posizione, prima del soggetto.</p>\n<table><tr><th>affermazione</th><th>domanda</th></tr>\n<tr><td>Hij spreekt Frans.</td><td>Spreekt hij Frans?</td></tr>\n<tr><td>Jij woont in Gent.</td><td>Woon je in Gent?</td></tr>\n<tr><td>U komt morgen.</td><td>Komt u morgen?</td></tr></table>\n<p>Ricorda la regola dell'unità 2: davanti a <b>je/jij</b> la -t del verbo cade.</p>\n<h3>Domande con parola interrogativa</h3>\n<p>L'ordine è: <b>parola interrogativa + verbo + soggetto</b> + resto.</p>\n<table><tr><th>olandese</th><th>italiano</th><th>esempio</th></tr>\n<tr><td>wie</td><td>chi</td><td>Wie is dat?</td></tr>\n<tr><td>wat</td><td>che cosa</td><td>Wat doe je?</td></tr>\n<tr><td>waar</td><td>dove</td><td>Waar woon je?</td></tr>\n<tr><td>wanneer</td><td>quando</td><td>Wanneer kom je?</td></tr>\n<tr><td>waarom</td><td>perché</td><td>Waarom leer je Nederlands?</td></tr>\n<tr><td>hoe</td><td>come</td><td>Hoe heet je?</td></tr>\n<tr><td>hoeveel</td><td>quanto</td><td>Hoeveel kost dat?</td></tr></table>\n<h3>Welke o welk?</h3>\n<p>\"Quale\" si dice <b>welke</b>, tranne davanti a una <b>het-parola al singolare</b>, dove si dice <b>welk</b>: <i>welk huis?</i> ma <i>welke fiets?</i> e <i>welke huizen?</i></p>\n<h3>Da dove: waar … vandaan</h3>\n<p>\"Da dove vieni?\" si dice <b>Waar kom je vandaan?</b> La parola <i>waar</i> va all'inizio e <i>vandaan</i> alla fine della frase.</p>\n<h3>Hoe heet je?</h3>\n<p>Per chiedere il nome si usa <b>hoe</b> (come), non wat: <i>Hoe heet je?</i> Alla lettera \"come ti chiami\", esattamente come in italiano.</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Fare la domanda solo con l'intonazione: <s>Je woont in Gent?</s> → <b>Woon je in Gent?</b></li>\n<li>Mettere il soggetto prima del verbo dopo la parola interrogativa: <s>Waar je woont?</s> → <b>Waar woon je?</b></li>\n<li>Usare <i>wat</i> per il nome: <s>Wat heet je?</s> → <b>Hoe heet je?</b></li>\n</ul>",
+ "vlaams": "Senti spesso \"<b>Hoe gaat het met u?</b>\" anche in contesti informali. Una risposta tipica è \"Goed, merci!\": i fiamminghi usano spesso <b>merci</b> per dire grazie, accanto a \"dank u\".",
+ "vocab": [
+  [
+   "heten",
+   "chiamarsi"
+  ],
+  [
+   "kosten",
+   "costare"
+  ],
+  [
+   "vandaag",
+   "oggi"
+  ],
+  [
+   "de broer",
+   "il fratello"
+  ],
+  [
+   "Frans",
+   "francese"
+  ],
+  [
+   "de trein",
+   "il treno"
+  ],
+  [
+   "het station",
+   "la stazione"
+  ]
+ ],
+ "core": [
+  [
+   "wie",
+   "chi"
+  ],
+  [
+   "wat",
+   "che cosa"
+  ],
+  [
+   "waar",
+   "dove"
+  ],
+  [
+   "wanneer",
+   "quando"
+  ],
+  [
+   "waarom",
+   "perché"
+  ],
+  [
+   "hoe",
+   "come"
+  ],
+  [
+   "hoeveel",
+   "quanto"
+  ],
+  [
+   "welke / welk",
+   "quale"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "dove",
+   "o": [
+    "waar",
+    "wie",
+    "wat",
+    "wanneer"
+   ],
+   "a": 0,
+   "e": "<b>waar</b> = dove.",
+   "g": {
+    "waar": "dove",
+    "wie": "chi",
+    "wat": "che cosa",
+    "wanneer": "quando"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "quando",
+   "o": [
+    "wanneer",
+    "waarom",
+    "waar",
+    "hoe"
+   ],
+   "a": 0,
+   "e": "<b>wanneer</b> = quando.",
+   "g": {
+    "wanneer": "quando",
+    "waarom": "perché",
+    "waar": "dove",
+    "hoe": "come"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "perché",
+   "o": [
+    "waarom",
+    "wanneer",
+    "wat",
+    "welke"
+   ],
+   "a": 0,
+   "e": "<b>waarom</b> = perché.",
+   "g": {
+    "waarom": "perché",
+    "wanneer": "quando",
+    "wat": "che cosa",
+    "welke": "quale"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "come",
+   "o": [
+    "hoe",
+    "wie",
+    "hoeveel",
+    "waar"
+   ],
+   "a": 0,
+   "e": "<b>hoe</b> = come.",
+   "g": {
+    "hoe": "come",
+    "wie": "chi",
+    "hoeveel": "quanto",
+    "waar": "dove"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "Quale domanda è corretta?",
+   "o": [
+    "Woon je in Gent?",
+    "Je woont in Gent?",
+    "Woont je in Gent?",
+    "In Gent je woont?"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Verbo all'inizio e niente t davanti a je.",
+   "g": {
+    "Woon je in Gent?": "Abiti a Gand? (corretta)",
+    "Je woont in Gent?": "solo intonazione: serve l'inversione",
+    "Woont je in Gent?": "davanti a je la t cade",
+    "In Gent je woont?": "il verbo deve venire prima del soggetto"
+   },
+   "tt": "Abiti a Gand?"
+  },
+  {
+   "t": "mc",
+   "q": "___ boek? (quale)",
+   "o": [
+    "Welk",
+    "Welke"
+   ],
+   "a": 0,
+   "e": "het boek → <b>welk</b>.",
+   "g": {
+    "Welk": "quale (het-parola singolare)",
+    "Welke": "quale (de-parola o plurale)"
+   },
+   "tt": "Quale libro?"
+  },
+  {
+   "t": "mc",
+   "q": "___ boeken? (quali)",
+   "o": [
+    "Welke",
+    "Welk"
+   ],
+   "a": 0,
+   "e": "Plurale → <b>welke</b>.",
+   "g": {
+    "Welke": "quale / quali (de-parole e plurali)",
+    "Welk": "solo het-parole al singolare"
+   },
+   "tt": "Quali libri?"
+  },
+  {
+   "t": "order",
+   "q": "Dove lavori?",
+   "a": "Waar werk je",
+   "x": [
+    "werkt",
+    "wie"
+   ],
+   "e": "Parola interrogativa + verbo + soggetto."
+  },
+  {
+   "t": "order",
+   "q": "Quanto costa?",
+   "a": "Hoeveel kost dat",
+   "x": [
+    "kosten",
+    "wie"
+   ],
+   "e": "<b>Hoeveel</b> kost dat?"
+  },
+  {
+   "t": "fill",
+   "q": "___ is dat?",
+   "h": "chi",
+   "a": [
+    "wie"
+   ],
+   "e": "Persona → <b>wie</b>.",
+   "tt": "Chi è?"
+  }
+ ],
+ "items": [
+  {
+   "t": "mc",
+   "q": "___ woon je? — In Gent.",
+   "o": [
+    "Wie",
+    "Waar",
+    "Wat",
+    "Hoe"
+   ],
+   "a": 1,
+   "e": "<b>Waar</b> = dove."
+  },
+  {
+   "t": "mc",
+   "q": "___ heet je? — Sofie.",
+   "o": [
+    "Hoe",
+    "Wat",
+    "Wie",
+    "Welk"
+   ],
+   "a": 0,
+   "e": "Si dice <b>Hoe</b> heet je? (letteralmente: come ti chiami)."
+  },
+  {
+   "t": "mc",
+   "q": "___ kom je? — Morgen.",
+   "o": [
+    "Waarom",
+    "Wanneer",
+    "Waar",
+    "Hoeveel"
+   ],
+   "a": 1,
+   "e": "<b>Wanneer</b> = quando."
+  },
+  {
+   "t": "mc",
+   "q": "___ huis is van jou?",
+   "o": [
+    "Welk",
+    "Welke"
+   ],
+   "a": 0,
+   "e": "het huis → <b>welk</b>."
+  },
+  {
+   "t": "mc",
+   "q": "___ fiets is van jou?",
+   "o": [
+    "Welk",
+    "Welke"
+   ],
+   "a": 1,
+   "e": "de fiets → <b>welke</b>."
+  },
+  {
+   "t": "fill",
+   "q": "___ kost dat? — Vijf euro.",
+   "a": [
+    "hoeveel",
+    "wat"
+   ],
+   "e": "<b>Hoeveel</b> (o Wat) kost dat?"
+  },
+  {
+   "t": "order",
+   "q": "Lavori oggi?",
+   "a": "Werk je vandaag",
+   "x": [
+    "werkt",
+    "wat"
+   ],
+   "e": "Verbo all'inizio, la -t cade davanti a je."
+  },
+  {
+   "t": "tr",
+   "q": "Dove abiti?",
+   "a": [
+    "Waar woon je",
+    "Waar woon jij",
+    "Waar woont u",
+    "Waar woont ge"
+   ],
+   "e": "<b>Waar woon je?</b>"
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "say": "Spreekt hij Frans?",
+   "q": "Hij spreekt Frans. → domanda:",
+   "o": [
+    "Spreekt hij Frans?",
+    "Hij spreekt Frans?",
+    "Spreek hij Frans?",
+    "Frans spreekt hij?"
+   ],
+   "a": 0,
+   "e": "Verbo all'inizio: <b>Spreekt hij</b> Frans?"
+  },
+  {
+   "t": "tr",
+   "q": "Perché impari l'olandese?",
+   "a": [
+    "Waarom leer je Nederlands",
+    "Waarom leer jij Nederlands",
+    "Waarom leert u Nederlands"
+   ],
+   "e": "<b>Waarom leer je</b> Nederlands?"
+  },
+  {
+   "t": "mc",
+   "q": "___ is dat? — Mijn broer.",
+   "o": [
+    "Wat",
+    "Wie",
+    "Welke",
+    "Hoe"
+   ],
+   "a": 1,
+   "e": "Persona → <b>Wie</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Waar kom je ___? — Uit Italië.",
+   "a": [
+    "vandaan"
+   ],
+   "e": "<b>waar … vandaan</b> = da dove."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "g": {
+    "Wie": "chi",
+    "Waar": "dove",
+    "Wat": "che cosa",
+    "Hoe": "come"
+   },
+   "t": "Dove abiti? A Gand."
+  },
+  "1": {
+   "g": {
+    "Hoe": "come",
+    "Wat": "che cosa",
+    "Wie": "chi",
+    "Welk": "quale"
+   },
+   "t": "Come ti chiami? Sofie."
+  },
+  "2": {
+   "g": {
+    "Waarom": "perché",
+    "Wanneer": "quando",
+    "Waar": "dove",
+    "Hoeveel": "quanto"
+   },
+   "t": "Quando vieni? Domani."
+  },
+  "3": {
+   "g": {
+    "Welk": "quale (het-parola singolare)",
+    "Welke": "quale (de-parola o plurale)"
+   },
+   "t": "Quale casa è tua?"
+  },
+  "4": {
+   "g": {
+    "Welk": "quale (het-parola singolare)",
+    "Welke": "quale (de-parola o plurale)"
+   },
+   "t": "Quale bici è tua?"
+  },
+  "5": {
+   "t": "Quanto costa? Cinque euro."
+  },
+  "8": {
+   "g": {
+    "Spreekt hij Frans?": "Parla francese? (verbo all'inizio)",
+    "Hij spreekt Frans?": "solo intonazione: in olandese serve l'inversione",
+    "Spreek hij Frans?": "con hij la -t resta",
+    "Frans spreekt hij?": "ordine da affermazione, non da domanda"
+   },
+   "t": "Parla francese?"
+  },
+  "10": {
+   "g": {
+    "Wat": "che cosa",
+    "Wie": "chi",
+    "Welke": "quale",
+    "Hoe": "come"
+   },
+   "t": "Chi è? Mio fratello."
+  },
+  "11": {
+   "t": "Da dove vieni? Dall'Italia."
+  }
+ }
+}

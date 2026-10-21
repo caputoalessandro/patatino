@@ -1,0 +1,449 @@
+{
+ "id": "u2",
+ "n": 2,
+ "module": 1,
+ "nl": "De tegenwoordige tijd",
+ "it": "Il presente",
+ "note": "\n<h3>L'idea</h3>\n<p>In italiano il presente ha sei desinenze diverse (lavoro, lavori, lavora…). In olandese ce ne sono solo <b>tre forme</b>, quindi è molto più semplice. Il presente olandese copre anche \"sto lavorando\" e spesso il futuro vicino: <i>Ik werk morgen</i> = lavoro domani.</p>\n<h3>Come si coniuga in tre passi</h3>\n<p><b>1.</b> Trova la <b>radice</b>: togli <i>-en</i> dall'infinito. werk<s>en</s> → <b>werk</b>.<br>\n<b>2.</b> Con <b>ik</b> usi la radice da sola.<br>\n<b>3.</b> Con <b>jij, u, hij, zij (lei), het</b> aggiungi <b>-t</b>. Al <b>plurale</b> (wij, jullie, zij) usi l'infinito intero.</p>\n<table><tr><th></th><th>werken (lavorare)</th><th>wonen (abitare)</th></tr>\n<tr><td>ik</td><td>werk</td><td>woon</td></tr>\n<tr><td>jij / u</td><td>werkt</td><td>woont</td></tr>\n<tr><td>hij / zij / het</td><td>werkt</td><td>woont</td></tr>\n<tr><td>wij / jullie / zij</td><td>werken</td><td>wonen</td></tr></table>\n<h3>Le regole di ortografia</h3>\n<p>Il suono non cambia mai: cambia solo il modo di scriverlo, per conservare lo stesso suono quando la parola si accorcia.</p>\n<ul>\n<li><b>Vocale lunga</b>: in <i>wo-nen</i> la o è lunga ma si scrive singola, perché la sillaba finisce in vocale. Togliendo <i>-en</i> la sillaba si chiude, e per mantenere il suono lungo devi raddoppiare la vocale: <b>woon</b>. Allo stesso modo maken → <b>maak</b>, lopen → <b>loop</b>.</li>\n<li><b>Consonante doppia</b>: zitten → <b>zit</b>, liggen → <b>lig</b>. A fine parola l'olandese non scrive mai due consonanti uguali.</li>\n<li><b>v → f e z → s</b> a fine parola: leven → <b>leef</b>, lezen → <b>lees</b>.</li>\n<li>Se la radice finisce già in <b>-t</b> non aggiungi un'altra t: zitten → hij <b>zit</b>. Se finisce in <b>-d</b> aggiungi la t lo stesso, anche se non si sente: vinden → hij <b>vindt</b>.</li>\n</ul>\n<h3>Le domande con jij/je</h3>\n<p>Nelle domande il verbo va all'inizio (unità 7). Quando <b>jij/je</b> segue il verbo, la <b>-t cade</b>: <i>Jij werkt</i> ma <i>Werk je?</i> Questo vale <b>solo</b> per jij/je: <i>Werkt hij? Werkt u?</i> mantengono la t.</p>\n<h3>I verbi irregolari più comuni</h3>\n<table><tr><th></th><th>zijn (essere)</th><th>hebben (avere)</th><th>gaan (andare)</th><th>doen (fare)</th></tr>\n<tr><td>ik</td><td>ben</td><td>heb</td><td>ga</td><td>doe</td></tr>\n<tr><td>jij / u</td><td>bent</td><td>hebt</td><td>gaat</td><td>doet</td></tr>\n<tr><td>hij / zij</td><td>is</td><td>heeft</td><td>gaat</td><td>doet</td></tr>\n<tr><td>wij / jullie / zij</td><td>zijn</td><td>hebben</td><td>gaan</td><td>doen</td></tr></table>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Lasciare la t nella domanda: <s>Werkt je?</s> → <b>Werk je?</b></li>\n<li>Scrivere la vocale singola: <s>ik wom</s>, <s>ik mak</s> → <b>ik woon</b>, <b>ik maak</b>.</li>\n<li>Tradurre \"sto lavorando\" parola per parola: basta <b>ik werk</b>.</li>\n</ul>",
+ "vlaams": "Con <b>gij/ge</b> il verbo mantiene la -t anche nella domanda: \"Werkt ge vandaag?\". Il verbo zijn diventa \"ge zijt\". Lo sentirai ovunque nelle Fiandre, ma non serve che lo usi tu.",
+ "vocab": [
+  [
+   "werken",
+   "lavorare"
+  ],
+  [
+   "wonen",
+   "abitare"
+  ],
+  [
+   "leren",
+   "imparare, studiare"
+  ],
+  [
+   "lezen",
+   "leggere"
+  ],
+  [
+   "drinken",
+   "bere"
+  ],
+  [
+   "spreken",
+   "parlare"
+  ],
+  [
+   "maken",
+   "fare"
+  ],
+  [
+   "hebben",
+   "avere"
+  ],
+  [
+   "zitten",
+   "stare seduto"
+  ],
+  [
+   "gaan",
+   "andare"
+  ],
+  [
+   "komen",
+   "venire"
+  ],
+  [
+   "de koffie",
+   "il caffè"
+  ],
+  [
+   "de bank",
+   "la banca"
+  ],
+  [
+   "de tuin",
+   "il giardino"
+  ],
+  [
+   "naar huis",
+   "a casa (moto)"
+  ],
+  [
+   "oud",
+   "vecchio"
+  ],
+  [
+   "de auto",
+   "l'auto"
+  ]
+ ],
+ "core": [],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "ik + werken",
+   "o": [
+    "werk",
+    "werkt",
+    "werken",
+    "werke"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Con ik solo la radice: <b>werk</b>.",
+   "g": {
+    "werk": "lavoro (io)",
+    "werkt": "lavori / lavora",
+    "werken": "lavoriamo / lavorate / lavorano",
+    "werke": "forma che non esiste"
+   },
+   "tt": "io lavoro"
+  },
+  {
+   "t": "mc",
+   "q": "hij + wonen",
+   "o": [
+    "woont",
+    "woon",
+    "wonen",
+    "wont"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Radice + t, con la vocale lunga doppia: <b>woont</b>.",
+   "g": {
+    "woont": "abita",
+    "woon": "abito (io)",
+    "wonen": "abitiamo / abitano",
+    "wont": "forma che non esiste: la o lunga va scritta doppia"
+   },
+   "tt": "lui abita"
+  },
+  {
+   "t": "mc",
+   "q": "wij + spreken",
+   "o": [
+    "spreken",
+    "spreekt",
+    "spreek",
+    "sprekt"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Plurale = infinito: <b>spreken</b>.",
+   "g": {
+    "spreken": "parliamo",
+    "spreekt": "parli / parla",
+    "spreek": "parlo (io)",
+    "sprekt": "forma che non esiste"
+   },
+   "tt": "noi parliamo"
+  },
+  {
+   "t": "mc",
+   "q": "jij + lezen",
+   "o": [
+    "leest",
+    "leez",
+    "lezt",
+    "lezen"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "z diventa s a fine parola: <b>leest</b>.",
+   "g": {
+    "leest": "leggi",
+    "leez": "forma che non esiste: z → s",
+    "lezt": "forma che non esiste",
+    "lezen": "leggere / leggiamo"
+   },
+   "tt": "tu leggi"
+  },
+  {
+   "t": "mc",
+   "q": "___ je Nederlands? (spreken)",
+   "o": [
+    "Spreek",
+    "Spreekt",
+    "Spreken",
+    "Spreeken"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Davanti a je la -t cade: <b>Spreek je</b>?",
+   "g": {
+    "Spreek": "parli (davanti a je)",
+    "Spreekt": "parla: davanti a je la t cade",
+    "Spreken": "parliamo / parlare",
+    "Spreeken": "forma che non esiste"
+   },
+   "tt": "Parli olandese?"
+  },
+  {
+   "t": "mc",
+   "q": "zij (lei) + hebben",
+   "o": [
+    "heeft",
+    "hebt",
+    "heb",
+    "hebben"
+   ],
+   "a": 0,
+   "e": "Irregolare: zij <b>heeft</b>.",
+   "g": {
+    "heeft": "ha",
+    "hebt": "hai (tu)",
+    "heb": "ho (io)",
+    "hebben": "abbiamo / hanno"
+   },
+   "tt": "lei ha"
+  },
+  {
+   "t": "mc",
+   "q": "jullie + zijn",
+   "o": [
+    "zijn",
+    "zijt",
+    "bent",
+    "is"
+   ],
+   "a": 0,
+   "e": "Plurale: jullie <b>zijn</b>.",
+   "g": {
+    "zijn": "siete",
+    "zijt": "sei (con gij, fiammingo parlato)",
+    "bent": "sei (tu)",
+    "is": "è"
+   },
+   "tt": "voi siete"
+  },
+  {
+   "t": "fill",
+   "q": "Ik ___ naar huis.",
+   "h": "gaan",
+   "a": [
+    "ga"
+   ],
+   "e": "Irregolare: ik <b>ga</b>.",
+   "tt": "Vado a casa."
+  },
+  {
+   "t": "fill",
+   "q": "Hij ___ hier.",
+   "h": "zitten",
+   "a": [
+    "zit"
+   ],
+   "e": "La radice finisce in -t: hij <b>zit</b>.",
+   "tt": "Lui è seduto qui."
+  },
+  {
+   "t": "order",
+   "q": "Lui lavora oggi.",
+   "a": "Hij werkt vandaag",
+   "alt": [
+    "Vandaag werkt hij"
+   ],
+   "x": [
+    "werk",
+    "werken"
+   ],
+   "e": "hij + radice + t: <b>werkt</b>."
+  }
+ ],
+ "items": [
+  {
+   "t": "fill",
+   "q": "Ik ___ in een bank.",
+   "h": "werken",
+   "a": [
+    "werk"
+   ],
+   "e": "ik = radice: <b>werk</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Hij ___ in Leuven.",
+   "h": "wonen",
+   "a": [
+    "woont"
+   ],
+   "e": "woon + t = <b>woont</b> (la vocale lunga si scrive doppia)."
+  },
+  {
+   "t": "fill",
+   "q": "Wij ___ Nederlands.",
+   "h": "leren",
+   "a": [
+    "leren"
+   ],
+   "e": "Plurale = infinito: <b>leren</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Jij ___ een boek.",
+   "h": "lezen",
+   "a": [
+    "leest"
+   ],
+   "e": "lezen → lees (z→s) + t = <b>leest</b>."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "___ je koffie?",
+   "h": "drinken",
+   "o": [
+    "Drinkt",
+    "Drink",
+    "Drinken",
+    "Drinkte"
+   ],
+   "a": 1,
+   "e": "Con <i>je</i> dopo il verbo la -t cade: <b>Drink je</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Zij ___ een auto.",
+   "h": "hebben, lei",
+   "a": [
+    "heeft"
+   ],
+   "e": "hebben è irregolare: zij <b>heeft</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Ik ___ moe.",
+   "h": "zijn",
+   "a": [
+    "ben"
+   ],
+   "e": "ik <b>ben</b>, jij bent, hij is."
+  },
+  {
+   "t": "fill",
+   "q": "Hij ___ in de tuin.",
+   "h": "zitten",
+   "a": [
+    "zit"
+   ],
+   "e": "La radice finisce in -t: niente seconda t, <b>zit</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Hoe oud ___ u?",
+   "o": [
+    "ben",
+    "bent",
+    "is",
+    "zijn"
+   ],
+   "a": 1,
+   "e": "Con <b>u</b> si usa la forma di jij: u <b>bent</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Lui va a casa.",
+   "a": [
+    "Hij gaat naar huis"
+   ],
+   "e": "gaan: hij <b>gaat</b>. naar huis = a casa (moto)."
+  },
+  {
+   "t": "order",
+   "q": "Lavoriamo a Bruxelles.",
+   "a": "We werken in Brussel",
+   "alt": [
+    "In Brussel werken we"
+   ],
+   "x": [
+    "werkt",
+    "wonen"
+   ],
+   "e": "we + <b>werken</b>. Brussel = Bruxelles."
+  },
+  {
+   "t": "fill",
+   "q": "Ik ___ uit Italië.",
+   "h": "komen",
+   "a": [
+    "kom"
+   ],
+   "e": "ik <b>kom</b>."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "Infinito di 'ik maak':",
+   "o": [
+    "maken",
+    "maaken",
+    "makken",
+    "maakt"
+   ],
+   "a": 0,
+   "e": "Nell'infinito la vocale lunga si scrive singola: <b>maken</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Parli olandese?",
+   "a": [
+    "Spreek jij Nederlands",
+    "Spreek je Nederlands",
+    "Spreekt u Nederlands"
+   ],
+   "e": "Inversione + caduta della -t: <b>Spreek je</b> Nederlands?"
+  }
+ ],
+ "gloss": {
+  "0": {
+   "t": "Lavoro in una banca."
+  },
+  "1": {
+   "t": "Lui abita a Lovanio."
+  },
+  "2": {
+   "t": "Impariamo l'olandese."
+  },
+  "3": {
+   "t": "Tu leggi un libro."
+  },
+  "4": {
+   "g": {
+    "Drinkt": "beve / bevi, ma davanti a je la -t cade",
+    "Drink": "bevi (forma giusta davanti a je)",
+    "Drinken": "bere / beviamo (plurale)",
+    "Drinkte": "forma che non esiste: il passato è dronk"
+   },
+   "t": "Bevi caffè?"
+  },
+  "5": {
+   "t": "Lei ha un'auto."
+  },
+  "6": {
+   "t": "Sono stanco."
+  },
+  "7": {
+   "t": "Lui è seduto in giardino."
+  },
+  "8": {
+   "g": {
+    "ben": "sono (io)",
+    "bent": "sei / è (tu, Lei)",
+    "is": "è (lui, lei)",
+    "zijn": "siamo / siete / sono (plurale)"
+   },
+   "t": "Quanti anni ha?"
+  },
+  "11": {
+   "t": "Vengo dall'Italia."
+  },
+  "12": {
+   "g": {
+    "maken": "fare (infinito)",
+    "maaken": "forma che non esiste: nell'infinito la vocale lunga è singola",
+    "makken": "forma che non esiste: la a è lunga, non breve",
+    "maakt": "fa (lui/lei)"
+   }
+  }
+ }
+}

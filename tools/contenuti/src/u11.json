@@ -1,0 +1,460 @@
+{
+ "id": "u11",
+ "n": 11,
+ "module": 3,
+ "nl": "Hoe laat is het?",
+ "it": "L'ora",
+ "note": "\n<h3>L'idea</h3>\n<p>Per chiedere l'ora si dice <i>Hoe laat is het?</i> (letteralmente: \"quanto tardi è?\"). La risposta comincia sempre con <i>Het is…</i>, al singolare: in italiano \"<b>sono</b> le tre\", in olandese \"<b>è</b> tre ore\": <i>Het is drie uur</i>. Nel parlato si usa quasi sempre l'orologio di 12 ore. La vera sorpresa per un italiano è la parola <b>half</b>, che guarda all'ora <b>successiva</b>.</p>\n<h3>Le ore piene</h3>\n<p>Numero + <b>uur</b>, sempre al singolare: <i>Het is tien uur</i> (sono le dieci), mai <s>tien uren</s>. Per l'una si scrive <i>één uur</i>, con gli accenti, per non confonderlo con l'articolo.</p>\n<h3>Over e voor</h3>\n<p><b>over</b> = \"e\" (minuti dopo l'ora), <b>voor</b> = \"meno\" (minuti prima dell'ora). <b>kwart</b> = un quarto. Con i minuti la parola <i>uur</i> sparisce.</p>\n<table><tr><th>ora</th><th>olandese</th></tr>\n<tr><td>3:05</td><td>vijf over drie</td></tr>\n<tr><td>3:15</td><td>kwart over drie</td></tr>\n<tr><td>3:45</td><td>kwart voor vier</td></tr>\n<tr><td>3:55</td><td>vijf voor vier</td></tr></table>\n<h3>Half: la mezz'ora che guarda avanti</h3>\n<p><i>half vier</i> non è \"le quattro e mezza\", ma <b>le tre e mezza</b>: \"a metà strada verso le quattro\". Pensa sempre all'ora che <b>sta arrivando</b>.</p>\n<p>Attorno alla mezz'ora i minuti si contano a partire da <i>half</i>:</p>\n<table><tr><th>ora</th><th>olandese</th><th>letteralmente</th></tr>\n<tr><td>3:20</td><td>tien voor half vier</td><td>dieci prima della mezza</td></tr>\n<tr><td>3:25</td><td>vijf voor half vier</td><td>cinque prima della mezza</td></tr>\n<tr><td>3:30</td><td>half vier</td><td>mezza (verso le quattro)</td></tr>\n<tr><td>3:35</td><td>vijf over half vier</td><td>cinque dopo la mezza</td></tr>\n<tr><td>3:40</td><td>tien over half vier</td><td>dieci dopo la mezza</td></tr></table>\n<h3>A che ora? Om … uur</h3>\n<p>Per dire <b>a che ora</b> succede qualcosa: <i>Hoe laat…?</i> e nella risposta <b>om</b>: <i>Hoe laat begint de les? — Om negen uur.</i> (A che ora comincia la lezione? — Alle nove.) Ricorda il verbo al secondo posto: <i>Om acht uur <b>eten</b> we.</i></p>\n<h3>Le parti del giorno</h3>\n<p>Per distinguere le 8 di mattina dalle 8 di sera: <b>'s morgens</b> (di mattina), <b>'s middags</b> (di pomeriggio), <b>'s avonds</b> (di sera), <b>'s nachts</b> (di notte). <i>Om tien uur 's avonds</i> = alle 22. L'apostrofo resta anche a inizio frase: <i>'s Avonds lees ik.</i></p>\n<h3>Orari ufficiali</h3>\n<p>Treni, negozi e programmi usano le 24 ore: <i>14.30 uur</i> si legge <i>veertien uur dertig</i>.</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Tradurre \"le tre e mezza\" con quattro: <s>half drie</s> → <b>half vier</b> (3:30).</li>\n<li>Usare il plurale: <s>Het zijn drie uren</s> → <b>Het is drie uur</b>.</li>\n<li>Dimenticare <i>om</i>: <s>De les begint negen uur</s> → <b>De les begint om negen uur</b>.</li>\n<li>Usare <i>en</i> come in italiano: <s>drie en kwart</s> → <b>kwart over drie</b>.</li>\n</ul>",
+ "vlaams": "In Belgio senti molto spesso <b>na</b> al posto di over: <i>kwart na drie</i>, <i>vijf na tien</i>. Per le parti del giorno i fiamminghi dicono volentieri <b>'s voormiddags</b> (in mattinata) e <b>'s namiddags</b> (di pomeriggio); <b>'s middags</b> indica allora soprattutto l'ora di pranzo, verso mezzogiorno.",
+ "vocab": [
+  [
+   "de klok",
+   "l'orologio (da muro)"
+  ],
+  [
+   "de minuut",
+   "il minuto"
+  ],
+  [
+   "'s morgens",
+   "di mattina"
+  ],
+  [
+   "'s middags",
+   "di pomeriggio (in Belgio spesso: verso mezzogiorno)"
+  ],
+  [
+   "'s avonds",
+   "di sera"
+  ],
+  [
+   "'s nachts",
+   "di notte"
+  ],
+  [
+   "beginnen",
+   "cominciare"
+  ],
+  [
+   "sluiten",
+   "chiudere"
+  ],
+  [
+   "slapen",
+   "dormire"
+  ],
+  [
+   "de les",
+   "la lezione"
+  ],
+  [
+   "de film",
+   "il film"
+  ],
+  [
+   "de winkel",
+   "il negozio"
+  ],
+  [
+   "de afspraak",
+   "l'appuntamento"
+  ],
+  [
+   "laat",
+   "tardi"
+  ],
+  [
+   "vroeg",
+   "presto"
+  ]
+ ],
+ "core": [
+  [
+   "hoe laat",
+   "che ore / a che ora"
+  ],
+  [
+   "uur",
+   "ora (dopo un numero: drie uur)"
+  ],
+  [
+   "om",
+   "alle (+ ora)"
+  ],
+  [
+   "half",
+   "mezza (verso l'ora successiva)"
+  ],
+  [
+   "kwart",
+   "quarto"
+  ],
+  [
+   "over",
+   "e (minuti dopo)"
+  ],
+  [
+   "voor",
+   "meno (minuti prima)"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "say": "half vier",
+   "q": "3:30",
+   "o": [
+    "half vier",
+    "half drie",
+    "drie en half",
+    "dertig over drie"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<b>half vier</b>: la mezza verso le quattro.",
+   "g": {
+    "half vier": "3:30",
+    "half drie": "2:30: half guarda all'ora successiva",
+    "drie en half": "non si dice così per l'ora",
+    "dertig over drie": "non si usa: si dice half vier"
+   },
+   "tt": "Sono le tre e mezza."
+  },
+  {
+   "t": "mc",
+   "say": "kwart over twee",
+   "q": "2:15",
+   "o": [
+    "kwart over twee",
+    "kwart voor twee",
+    "kwart over drie",
+    "twee en kwart"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Un quarto dopo le due: <b>kwart over twee</b>.",
+   "g": {
+    "kwart over twee": "2:15",
+    "kwart voor twee": "1:45",
+    "kwart over drie": "3:15",
+    "twee en kwart": "non si dice: serve over"
+   },
+   "tt": "Sono le due e un quarto."
+  },
+  {
+   "t": "mc",
+   "say": "kwart voor zeven",
+   "q": "6:45",
+   "o": [
+    "kwart voor zeven",
+    "kwart over zes",
+    "kwart voor zes",
+    "zes en drie kwart"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Un quarto prima delle sette: <b>kwart voor zeven</b>.",
+   "g": {
+    "kwart voor zeven": "6:45",
+    "kwart over zes": "6:15",
+    "kwart voor zes": "5:45",
+    "zes en drie kwart": "non si dice così per l'ora"
+   },
+   "tt": "Sono le sette meno un quarto."
+  },
+  {
+   "t": "mc",
+   "say": "tien voor half negen",
+   "q": "8:20",
+   "o": [
+    "tien voor half negen",
+    "tien over half negen",
+    "tien voor half acht",
+    "twintig voor negen"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Dieci minuti prima della mezza (8:30 = half negen): <b>tien voor half negen</b>. Si sente anche, soprattutto in Belgio, <i>twintig over acht</i> (o <i>twintig na acht</i>).",
+   "g": {
+    "tien voor half negen": "8:20",
+    "tien over half negen": "8:40",
+    "tien voor half acht": "7:20",
+    "twintig voor negen": "8:40"
+   },
+   "tt": "Sono le otto e venti."
+  },
+  {
+   "t": "mc",
+   "say": "vijf over half vijf",
+   "q": "4:35",
+   "o": [
+    "vijf over half vijf",
+    "vijf over half vier",
+    "vijf voor half vijf",
+    "vijf over vier"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Cinque minuti dopo la mezza (4:30 = half vijf): <b>vijf over half vijf</b>.",
+   "g": {
+    "vijf over half vijf": "4:35",
+    "vijf over half vier": "3:35",
+    "vijf voor half vijf": "4:25",
+    "vijf over vier": "4:05"
+   },
+   "tt": "Sono le quattro e trentacinque."
+  },
+  {
+   "t": "mc",
+   "q": "Hoe laat begint de les? — ___ negen uur.",
+   "o": [
+    "Om",
+    "Op",
+    "In",
+    "Aan"
+   ],
+   "a": 0,
+   "e": "A che ora? → <b>om</b> + ora.",
+   "g": {
+    "Om": "alle (con l'ora)",
+    "Op": "su: non si usa con l'ora",
+    "In": "in: non si usa con l'ora",
+    "Aan": "a, presso: non si usa con l'ora"
+   },
+   "tt": "A che ora comincia la lezione? — Alle nove."
+  },
+  {
+   "t": "mc",
+   "q": "Het is tien ___.",
+   "h": "10:00",
+   "o": [
+    "uur",
+    "uren"
+   ],
+   "a": 0,
+   "e": "Dopo un numero, nell'ora: <b>uur</b> al singolare.",
+   "g": {
+    "uur": "ora (singolare, giusto dopo un numero)",
+    "uren": "ore: il plurale non si usa per dire l'ora"
+   },
+   "tt": "Sono le dieci."
+  },
+  {
+   "t": "fill",
+   "say": "Het is half acht.",
+   "q": "7:30 → Het is half ___.",
+   "h": "in lettere",
+   "a": [
+    "acht"
+   ],
+   "e": "La mezza verso le otto: <b>half acht</b>.",
+   "tt": "Sono le sette e mezza."
+  },
+  {
+   "t": "fill",
+   "say": "Het is tien voor tien.",
+   "q": "9:50 → Het is tien ___ tien.",
+   "a": [
+    "voor"
+   ],
+   "e": "Dieci minuti prima delle dieci: tien <b>voor</b> tien.",
+   "tt": "Sono le dieci meno dieci."
+  },
+  {
+   "t": "order",
+   "q": "Sono le tre e un quarto.",
+   "a": "Het is kwart over drie",
+   "x": [
+    "uren",
+    "halve"
+   ],
+   "e": "<b>kwart over drie</b>: un quarto dopo le tre."
+  }
+ ],
+ "items": [
+  {
+   "t": "mc",
+   "say": "Het is half drie.",
+   "q": "Hoe laat is het? (14:30) — Het is ___.",
+   "o": [
+    "half drie",
+    "half twee",
+    "half vier",
+    "twee en half"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "14:30 = le due e mezza = <b>half drie</b>."
+  },
+  {
+   "t": "fill",
+   "q": "De winkel sluit ___ zes uur.",
+   "h": "alle",
+   "a": [
+    "om"
+   ],
+   "e": "A che ora → <b>om</b>."
+  },
+  {
+   "t": "tr",
+   "q": "La lezione comincia alle nove.",
+   "a": [
+    "De les begint om negen uur",
+    "Om negen uur begint de les"
+   ],
+   "e": "<b>om negen uur</b>; con <i>Om negen uur</i> all'inizio c'è l'inversione: begint de les."
+  },
+  {
+   "t": "order",
+   "q": "Di sera leggo un libro.",
+   "a": "Ik lees 's avonds een boek",
+   "alt": [
+    "'s Avonds lees ik een boek",
+    "Een boek lees ik 's avonds"
+   ],
+   "x": [
+    "leest",
+    "om"
+   ],
+   "e": "<b>'s avonds</b> = di sera. Se lo metti all'inizio: <i>'s Avonds lees ik</i>."
+  },
+  {
+   "t": "mc",
+   "say": "Het is kwart voor twaalf.",
+   "q": "11:45 → Het is ___.",
+   "o": [
+    "kwart voor twaalf",
+    "kwart over elf",
+    "kwart voor elf",
+    "kwart over twaalf"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Un quarto prima delle dodici: <b>kwart voor twaalf</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Ik heb een afspraak om ___ elf.",
+   "h": "10:30",
+   "a": [
+    "half"
+   ],
+   "e": "10:30 = la mezza verso le undici: <b>half elf</b>."
+  },
+  {
+   "t": "mc",
+   "say": "tien uur 's avonds",
+   "q": "22:00 → tien uur ___",
+   "o": [
+    "'s avonds",
+    "'s morgens",
+    "'s middags",
+    "'s nachts"
+   ],
+   "a": 0,
+   "e": "Le 22 sono le dieci <b>di sera</b>: 's avonds."
+  },
+  {
+   "t": "tr",
+   "q": "Che ore sono?",
+   "a": [
+    "Hoe laat is het",
+    "Wat is het uur"
+   ],
+   "e": "<b>Hoe laat is het?</b> In Belgio si sente spesso anche <i>Wat is het uur?</i>"
+  },
+  {
+   "t": "order",
+   "q": "Alle otto mangiamo.",
+   "a": "Om acht uur eten we",
+   "alt": [
+    "We eten om acht uur"
+   ],
+   "x": [
+    "eet",
+    "op"
+   ],
+   "e": "Se inizi con <i>Om acht uur</i>, il verbo viene subito dopo: <b>eten we</b>."
+  },
+  {
+   "t": "mc",
+   "say": "Om vijf voor acht.",
+   "q": "Hoe laat vertrekt de trein? — Om vijf ___ acht. (7:55)",
+   "o": [
+    "voor",
+    "over",
+    "half",
+    "na"
+   ],
+   "a": 0,
+   "e": "Cinque minuti prima delle otto: vijf <b>voor</b> acht."
+  },
+  {
+   "t": "fill",
+   "q": "De film begint om tien ___ half negen.",
+   "h": "8:20",
+   "a": [
+    "voor"
+   ],
+   "e": "8:20 = dieci minuti prima della mezza: tien <b>voor</b> half negen."
+  },
+  {
+   "t": "tr",
+   "q": "Il film comincia alle otto e un quarto.",
+   "a": [
+    "De film begint om kwart over acht",
+    "Om kwart over acht begint de film",
+    "De film begint om kwart na acht",
+    "Om kwart na acht begint de film"
+   ],
+   "e": "<b>om kwart over acht</b> (in Belgio anche: kwart na acht)."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "g": {
+    "half drie": "2:30 (14:30)",
+    "half twee": "1:30",
+    "half vier": "3:30",
+    "twee en half": "non si dice così per l'ora"
+   },
+   "t": "Che ore sono? — Sono le due e mezza."
+  },
+  "1": {
+   "t": "Il negozio chiude alle sei."
+  },
+  "4": {
+   "g": {
+    "kwart voor twaalf": "11:45",
+    "kwart over elf": "11:15",
+    "kwart voor elf": "10:45",
+    "kwart over twaalf": "12:15"
+   },
+   "t": "Sono le dodici meno un quarto."
+  },
+  "5": {
+   "t": "Ho un appuntamento alle dieci e mezza."
+  },
+  "6": {
+   "g": {
+    "'s avonds": "di sera",
+    "'s morgens": "di mattina",
+    "'s middags": "di pomeriggio",
+    "'s nachts": "di notte (non per le 22)"
+   },
+   "t": "le dieci di sera"
+  },
+  "9": {
+   "g": {
+    "voor": "meno (minuti prima)",
+    "over": "e (minuti dopo): 8:05",
+    "half": "mezza: vijf half acht non esiste",
+    "na": "e (in Belgio, come over): 8:05"
+   },
+   "t": "A che ora parte il treno? — Alle otto meno cinque."
+  },
+  "10": {
+   "t": "Il film comincia alle otto e venti."
+  }
+ }
+}

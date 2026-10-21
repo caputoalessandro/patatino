@@ -1,0 +1,662 @@
+{
+ "id": "u1",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "«Mevrouw Peeters, ___ bent nieuw in Gent, toch?»",
+   "o": [
+    "u",
+    "jij",
+    "zij",
+    "jullie"
+   ],
+   "a": 0,
+   "e": "Con <i>mevrouw</i> (una signora che non conosci bene) si usa la forma di cortesia <b>u</b>, con il verbo di jij: u <b>bent</b>. <i>jij</i> avrebbe il verbo giusto ma è troppo confidenziale.",
+   "g": {
+    "u": "Lei (cortesia)",
+    "jij": "tu (informale: non va con 'mevrouw')",
+    "zij": "lei (ma vorrebbe 'is')",
+    "jullie": "voi (ma vorrebbe 'zijn')"
+   },
+   "tt": "Signora Peeters, Lei è nuova a Gand, vero?"
+  },
+  {
+   "t": "mc",
+   "q": "Het boek en de tafel zijn nieuw. → ___ zijn nieuw.",
+   "o": [
+    "ze",
+    "het",
+    "hij",
+    "jullie"
+   ],
+   "a": 0,
+   "e": "Per più cose si usa sempre <b>ze</b>, qualunque sia l'articolo: una het-parola più una de-parola fanno comunque <b>ze</b>.",
+   "g": {
+    "ze": "loro / essi (anche per le cose al plurale)",
+    "het": "esso (solo una het-parola al singolare)",
+    "hij": "lui / esso (solo una de-parola al singolare)",
+    "jullie": "voi (persone a cui parli)"
+   },
+   "tt": "Il libro e il tavolo sono nuovi. → Sono nuovi."
+  },
+  {
+   "t": "fill",
+   "q": "Anna en ik komen uit Italië, maar ___ wonen nu in Antwerpen.",
+   "h": "Anna e io",
+   "a": [
+    "we",
+    "wij"
+   ],
+   "e": "Anna + io = noi: <b>we</b> o <b>wij</b>, con il verbo al plurale (<i>wonen</i>). Non lasciarti ingannare da <i>Anna en ik</i>: il pronome giusto non è <i>ik</i> né <i>ze</i>.",
+   "tt": "Anna e io veniamo dall'Italia, ma ora abitiamo ad Anversa."
+  },
+  {
+   "t": "fill",
+   "q": "Meneer Claes, ___ u ook uit Brussel?",
+   "h": "essere",
+   "a": [
+    "bent"
+   ],
+   "e": "Con <b>u</b> il verbo zijn è come con jij: u <b>bent</b>, mai <s>u is</s>.",
+   "tt": "Signor Claes, anche Lei è di Bruxelles?"
+  },
+  {
+   "t": "tr",
+   "q": "Voi abitate a Bruges, ma noi abitiamo a Gand.",
+   "a": [
+    "Jullie wonen in Brugge, maar wij wonen in Gent",
+    "Jullie wonen in Brugge, maar we wonen in Gent",
+    "Jullie wonen in Brugge maar wij wonen in Gent",
+    "Jullie wonen in Brugge maar we wonen in Gent"
+   ],
+   "e": "<b>jullie</b> e <b>wij</b> vogliono il verbo al plurale: <b>wonen</b>. Con il contrasto suona meglio la forma accentata <b>wij</b>. Brugge = Bruges."
+  },
+  {
+   "t": "tr",
+   "q": "Lei (Anna) è la mia amica e abita a Gand.",
+   "a": [
+    "Zij is mijn vriendin en ze woont in Gent",
+    "Zij is mijn vriendin en zij woont in Gent",
+    "Ze is mijn vriendin en ze woont in Gent",
+    "Ze is mijn vriendin en zij woont in Gent",
+    "Zij is mijn vriendin en woont in Gent",
+    "Ze is mijn vriendin en woont in Gent"
+   ],
+   "e": "<b>zij/ze</b> + <b>is</b> (singolare) = lei. Dopo <i>en</i> puoi ripetere il pronome oppure ometterlo, perché il soggetto è lo stesso: è uno dei pochi casi in cui il soggetto può mancare."
+  },
+  {
+   "t": "order",
+   "q": "Lui abita a Bruges, ma lei viene da Anversa.",
+   "a": "Hij woont in Brugge maar ze komt uit Antwerpen",
+   "x": [
+    "wonen",
+    "komen"
+   ],
+   "e": "Due frasi, ognuna con il suo soggetto: <b>hij woont</b> … <b>ze komt uit</b>. Il verbo resta al singolare.",
+   "tt": "Lui abita a Bruges, ma lei viene da Anversa."
+  },
+  {
+   "t": "order",
+   "q": "Voi siete stanchi, ma noi no.",
+   "a": "Jullie zijn moe maar wij niet",
+   "x": [
+    "bent",
+    "we"
+   ],
+   "e": "<b>jullie zijn</b> (plurale). Nel contrasto <i>maar wij niet</i> la persona è accentata, quindi serve la forma forte <b>wij</b>: <s>maar we niet</s> non si dice.",
+   "tt": "Voi siete stanchi, ma noi no."
+  }
+ ],
+ "en": {
+  "it": "Subject pronouns",
+  "note": "\n<h3>The idea</h3>\n<p>Subject pronouns are the words that tell you <b>who</b> does the action: I, you, he… Good news: just like in English, the subject is <b>always required</b> in Dutch. You say <i>Ik woon in Gent</i> (I live in Ghent), never just <i>Woon in Gent</i>. The tricky part for English speakers is elsewhere: Dutch has <b>three words for \"you\"</b>, and \"it\" is not always <i>het</i>.</p>\n<h3>The table</h3>\n<table><tr><th>English</th><th>stressed</th><th>unstressed</th></tr>\n<tr><td>I</td><td>ik</td><td>('k)</td></tr>\n<tr><td>you (informal)</td><td>jij</td><td>je</td></tr>\n<tr><td>you (formal)</td><td>u</td><td>u</td></tr>\n<tr><td>he</td><td>hij</td><td>(ie)</td></tr>\n<tr><td>she</td><td>zij</td><td>ze</td></tr>\n<tr><td>it (thing)</td><td>het</td><td>('t)</td></tr>\n<tr><td>we</td><td>wij</td><td>we</td></tr>\n<tr><td>you (plural)</td><td>jullie</td><td>jullie</td></tr>\n<tr><td>they</td><td>zij</td><td>ze</td></tr></table>\n<p>The forms in brackets are heard in fast speech, but you don't need to use them yourself.</p>\n<h3>Stressed or unstressed?</h3>\n<p>Many pronouns have two forms. The <b>unstressed</b> one (je, ze, we) is the normal one: it's what you hear most. The <b>stressed</b> form (jij, zij, wij) is used when you want to highlight the person, usually for a contrast: <i>Jij bent moe, ik niet</i> (YOU are tired, I'm not). In English you'd just say the word louder; Dutch changes the word. If in doubt, both are correct.</p>\n<h3>Three kinds of \"you\"</h3>\n<p><b>jij/je</b> is for friends, family and people your age. <b>u</b> is the polite form, for people you don't know well, and it works for one person or several. Watch out: with <b>u</b> the verb takes the same form as with <i>jij</i> (u bent, u woont). <b>jullie</b> is the informal plural \"you\" (like \"you guys\" or \"y'all\") and takes a plural verb (jullie zijn).</p>\n<h3>Zij: she or they?</h3>\n<p><b>zij/ze</b> means both \"she\" and \"they\". The verb tells you which: <i>zij is</i> = she is, <i>zij zijn</i> = they are.</p>\n<h3>For things: hij or het</h3>\n<p>English uses \"it\" for every thing. In Dutch, when you refer to a thing already mentioned, the pronoun depends on the noun's article (more on this in unit 3). With a noun that takes <b>de</b> you use <b>hij</b>: <i>de tafel → hij</i>. With a noun that takes <b>het</b> you use <b>het</b>: <i>het boek → het</i>. In the plural it's always <b>ze</b>. So to a Dutch speaker, a table is a \"he\".</p>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Capitalizing <i>ik</i> like English \"I\": in the middle of a sentence it's <b>ik</b>, lowercase.</li>\n<li>Using <i>het</i> for every \"it\": <s>De tafel? Het is groot</s> → <b>Hij is groot</b>.</li>\n<li>Using the \"he/she\" verb with <i>u</i>: <s>u is</s> → <b>u bent</b>.</li>\n</ul>",
+  "vlaams": "In informal Flemish speech you'll often hear <b>gij/ge</b> instead of <b>jij/je</b>: \"Waar woont ge?\". In writing and with people you don't know, use <b>u</b>, which is more widespread in Belgium than in the Netherlands: many children even use it with their grandparents.",
+  "vocab": [
+   [
+    "zijn",
+    "to be"
+   ],
+   [
+    "wonen",
+    "to live (reside)"
+   ],
+   [
+    "komen uit",
+    "to come from"
+   ],
+   [
+    "waar",
+    "where"
+   ],
+   [
+    "de vriend",
+    "the friend"
+   ],
+   [
+    "het boek",
+    "the book"
+   ],
+   [
+    "de tafel",
+    "the table"
+   ],
+   [
+    "nieuw",
+    "new"
+   ],
+   [
+    "groot",
+    "big"
+   ],
+   [
+    "moe",
+    "tired"
+   ]
+  ],
+  "core": [
+   [
+    "ik",
+    "I"
+   ],
+   [
+    "jij / je",
+    "you (informal)"
+   ],
+   [
+    "u",
+    "you (formal)"
+   ],
+   [
+    "hij",
+    "he"
+   ],
+   [
+    "zij / ze",
+    "she, they"
+   ],
+   [
+    "het",
+    "it (het-word)"
+   ],
+   [
+    "wij / we",
+    "we"
+   ],
+   [
+    "jullie",
+    "you (plural)"
+   ]
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "I",
+    "o": [
+     "ik",
+     "jij",
+     "hij",
+     "wij"
+    ],
+    "a": 0,
+    "e": "<b>ik</b> = I.",
+    "g": {
+     "ik": "I",
+     "jij": "you",
+     "hij": "he",
+     "wij": "we"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "you (plural, informal)",
+    "o": [
+     "jullie",
+     "wij",
+     "zij",
+     "u"
+    ],
+    "a": 0,
+    "e": "<b>jullie</b> = you (plural).",
+    "g": {
+     "jullie": "you (plural)",
+     "wij": "we",
+     "zij": "she / they",
+     "u": "you (formal)"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "we (unstressed form)",
+    "o": [
+     "we",
+     "je",
+     "ze",
+     "het"
+    ],
+    "a": 0,
+    "e": "<b>wij</b> is stressed, <b>we</b> is unstressed.",
+    "g": {
+     "we": "we",
+     "je": "you",
+     "ze": "she / they",
+     "het": "it (thing)"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "Marco → ___",
+    "o": [
+     "hij",
+     "zij",
+     "het",
+     "ze"
+    ],
+    "a": 0,
+    "e": "A man → <b>hij</b>.",
+    "g": {
+     "hij": "he",
+     "zij": "she / they",
+     "het": "it (thing)",
+     "ze": "she / they"
+    },
+    "tt": "Marco → he"
+   },
+   {
+    "t": "mc",
+    "q": "Anna en Tom → ___",
+    "o": [
+     "ze",
+     "hij",
+     "jullie",
+     "we"
+    ],
+    "a": 0,
+    "e": "Several people you're talking about → <b>ze</b> (they).",
+    "g": {
+     "ze": "they",
+     "hij": "he",
+     "jullie": "you (plural)",
+     "we": "we"
+    },
+    "tt": "Anna and Tom → they"
+   },
+   {
+    "t": "mc",
+    "q": "het huis → ___",
+    "o": [
+     "het",
+     "hij",
+     "zij",
+     "ze"
+    ],
+    "a": 0,
+    "e": "A het-word becomes <b>het</b>.",
+    "g": {
+     "het": "it (het-words)",
+     "hij": "he (also de-words)",
+     "zij": "she",
+     "ze": "they"
+    },
+    "tt": "the house → it"
+   },
+   {
+    "t": "mc",
+    "q": "de tafel → ___",
+    "o": [
+     "hij",
+     "het",
+     "ze",
+     "u"
+    ],
+    "a": 0,
+    "e": "Things with <i>de</i> become <b>hij</b> (in Belgium, feminine nouns like <i>de stad</i> become <b>ze</b> instead).",
+    "g": {
+     "hij": "he (also things with de)",
+     "het": "it (things with het)",
+     "ze": "they, or she for feminine nouns",
+     "u": "you (formal)"
+    },
+    "tt": "the table → it"
+   },
+   {
+    "t": "mc",
+    "q": "u ___ (to be)",
+    "o": [
+     "bent",
+     "is",
+     "ben",
+     "zijn"
+    ],
+    "a": 0,
+    "e": "With <b>u</b> the verb is the same as with jij: u <b>bent</b>.",
+    "g": {
+     "bent": "are (you, also with u)",
+     "is": "is (he, she)",
+     "ben": "am (I)",
+     "zijn": "are (plural)"
+    },
+    "tt": "you are (formal)"
+   },
+   {
+    "t": "fill",
+    "q": "___ zijn moe.",
+    "h": "we",
+    "a": [
+     "wij",
+     "we"
+    ],
+    "e": "<b>Wij</b> (or we) zijn moe.",
+    "tt": "We are tired."
+   },
+   {
+    "t": "fill",
+    "q": "___ is mijn vriendin.",
+    "h": "she",
+    "a": [
+     "zij",
+     "ze"
+    ],
+    "e": "<b>Zij</b> (or ze) is mijn vriendin.",
+    "tt": "She is my friend."
+   }
+  ],
+  "items": [
+   {
+    "t": "mc",
+    "q": "You're talking to your new boss in Brussels. Which pronoun do you use?",
+    "o": [
+     "jij",
+     "u",
+     "jullie",
+     "hij"
+    ],
+    "a": 1,
+    "e": "<b>u</b> is the polite form, singular and plural."
+   },
+   {
+    "t": "mc",
+    "q": "'they' (people), unstressed form:",
+    "o": [
+     "ze",
+     "jullie",
+     "het",
+     "we"
+    ],
+    "a": 0,
+    "e": "<b>zij</b> is stressed, <b>ze</b> is unstressed."
+   },
+   {
+    "t": "fill",
+    "q": "___ ben Marco.",
+    "h": "I",
+    "a": [
+     "ik"
+    ],
+    "e": "<b>ik</b> = I. Unlike English 'I', it's written lowercase (except at the start of a sentence)."
+   },
+   {
+    "t": "fill",
+    "q": "Waar wonen ___?",
+    "h": "you (plural)",
+    "a": [
+     "jullie"
+    ],
+    "e": "<b>jullie</b> = you (informal plural)."
+   },
+   {
+    "t": "mc",
+    "q": "Het boek is nieuw. → ___ is nieuw.",
+    "o": [
+     "hij",
+     "zij",
+     "het",
+     "ze"
+    ],
+    "a": 2,
+    "e": "<i>boek</i> is a het-word → <b>het</b>."
+   },
+   {
+    "t": "mc",
+    "q": "De tafel is groot. → ___ is groot.",
+    "o": [
+     "het",
+     "hij",
+     "ze",
+     "u"
+    ],
+    "a": 1,
+    "e": "Things with <i>de</i> become <b>hij</b>."
+   },
+   {
+    "t": "tr",
+    "q": "She (Anna) comes from Antwerp.",
+    "a": [
+     "Zij komt uit Antwerpen",
+     "Ze komt uit Antwerpen",
+     "Zij is uit Antwerpen",
+     "Ze is uit Antwerpen"
+    ],
+    "e": "<b>komen uit</b> = to come from. Antwerpen = Antwerp."
+   },
+   {
+    "t": "order",
+    "q": "We are in Ghent.",
+    "a": "We zijn in Gent",
+    "x": [
+     "is",
+     "jullie"
+    ],
+    "e": "<b>we</b> + <b>zijn</b>. Gent = Ghent."
+   },
+   {
+    "t": "mc",
+    "q": "In informal spoken Flemish, instead of 'jij' you often hear:",
+    "o": [
+     "gij / ge",
+     "du",
+     "hun",
+     "men"
+    ],
+    "a": 0,
+    "e": "<b>gij/ge</b> is typical of spoken Flemish."
+   },
+   {
+    "t": "fill",
+    "q": "___ bent mijn vriend, niet hij!",
+    "h": "you, stressed",
+    "a": [
+     "jij"
+    ],
+    "e": "For a contrast you use the stressed form <b>jij</b>."
+   },
+   {
+    "t": "tr",
+    "q": "You (plural) are tired.",
+    "a": [
+     "Jullie zijn moe"
+    ],
+    "e": "<b>moe</b> = tired. jullie + <b>zijn</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Which pronoun is both singular and plural?",
+    "o": [
+     "jij",
+     "u",
+     "hij",
+     "wij"
+    ],
+    "a": 1,
+    "e": "<b>u</b> works for one person or several."
+   }
+  ],
+  "gloss": {
+   "0": {
+    "g": {
+     "jij": "you (informal)",
+     "u": "you (formal)",
+     "jullie": "you (plural)",
+     "hij": "he"
+    }
+   },
+   "1": {
+    "g": {
+     "ze": "they / she (unstressed)",
+     "jullie": "you (plural)",
+     "het": "it (thing)",
+     "we": "we"
+    }
+   },
+   "2": {
+    "t": "I'm Marco."
+   },
+   "3": {
+    "t": "Where do you (plural) live?"
+   },
+   "4": {
+    "g": {
+     "hij": "he / it (for de-words)",
+     "zij": "she / they",
+     "het": "it (for het-words)",
+     "ze": "they / she"
+    },
+    "t": "The book is new. → It's new."
+   },
+   "5": {
+    "g": {
+     "het": "it (for het-words)",
+     "hij": "he / it (also for things with de)",
+     "ze": "they / she",
+     "u": "you (formal)"
+    },
+    "t": "The table is big. → It's big."
+   },
+   "8": {
+    "g": {
+     "gij / ge": "you (spoken Flemish)",
+     "du": "you in German, not in Dutch",
+     "hun": "them (to them)",
+     "men": "one (impersonal)"
+    }
+   },
+   "9": {
+    "t": "YOU are my friend, not him!"
+   },
+   "11": {
+    "g": {
+     "jij": "you (singular only)",
+     "u": "you (formal, singular or plural)",
+     "hij": "he (singular only)",
+     "wij": "we (plural only)"
+    }
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "«Mevrouw Peeters, ___ bent nieuw in Gent, toch?»",
+    "o": [
+     "u",
+     "jij",
+     "zij",
+     "jullie"
+    ],
+    "a": 0,
+    "e": "With <i>mevrouw</i> (a lady you don't know well) you use the polite <b>u</b>, with the jij form of the verb: u <b>bent</b>. <i>jij</i> has the right verb form but is too familiar.",
+    "g": {
+     "u": "you (formal)",
+     "jij": "you (informal: doesn't go with 'mevrouw')",
+     "zij": "she (but that needs 'is')",
+     "jullie": "you, plural (but that needs 'zijn')"
+    },
+    "tt": "Mrs. Peeters, you're new in Ghent, aren't you?"
+   },
+   {
+    "t": "mc",
+    "q": "Het boek en de tafel zijn nieuw. → ___ zijn nieuw.",
+    "o": [
+     "ze",
+     "het",
+     "hij",
+     "jullie"
+    ],
+    "a": 0,
+    "e": "For several things it's always <b>ze</b>, whatever the article: a het-word plus a de-word still gives <b>ze</b>.",
+    "g": {
+     "ze": "they (also for things in the plural)",
+     "het": "it (only one het-word)",
+     "hij": "he / it (only one de-word)",
+     "jullie": "you, plural (people you talk to)"
+    },
+    "tt": "The book and the table are new. → They're new."
+   },
+   {
+    "t": "fill",
+    "q": "Anna en ik komen uit Italië, maar ___ wonen nu in Antwerpen.",
+    "h": "Anna and I",
+    "a": [
+     "we",
+     "wij"
+    ],
+    "e": "Anna + I = we: <b>we</b> or <b>wij</b>, with a plural verb (<i>wonen</i>). Don't be fooled by <i>Anna en ik</i>: the right pronoun is neither <i>ik</i> nor <i>ze</i>.",
+    "tt": "Anna and I come from Italy, but now we live in Antwerp."
+   },
+   {
+    "t": "fill",
+    "q": "Meneer Claes, ___ u ook uit Brussel?",
+    "h": "to be",
+    "a": [
+     "bent"
+    ],
+    "e": "With <b>u</b>, zijn works like with jij: u <b>bent</b>, never <s>u is</s>.",
+    "tt": "Mr. Claes, are you from Brussels too?"
+   },
+   {
+    "t": "tr",
+    "q": "You guys live in Bruges, but we live in Ghent.",
+    "a": [
+     "Jullie wonen in Brugge, maar wij wonen in Gent",
+     "Jullie wonen in Brugge, maar we wonen in Gent",
+     "Jullie wonen in Brugge maar wij wonen in Gent",
+     "Jullie wonen in Brugge maar we wonen in Gent"
+    ],
+    "e": "<b>jullie</b> and <b>wij</b> take the plural verb: <b>wonen</b>. With a contrast the stressed <b>wij</b> sounds best. Brugge = Bruges."
+   },
+   {
+    "t": "tr",
+    "q": "She (Anna) is my friend and lives in Ghent.",
+    "a": [
+     "Zij is mijn vriendin en ze woont in Gent",
+     "Zij is mijn vriendin en zij woont in Gent",
+     "Ze is mijn vriendin en ze woont in Gent",
+     "Ze is mijn vriendin en zij woont in Gent",
+     "Zij is mijn vriendin en woont in Gent",
+     "Ze is mijn vriendin en woont in Gent"
+    ],
+    "e": "<b>zij/ze</b> + <b>is</b> (singular) = she. After <i>en</i> you can repeat the pronoun or leave it out, as in English, because the subject is the same."
+   },
+   {
+    "t": "order",
+    "q": "He lives in Bruges, but she comes from Antwerp.",
+    "a": "Hij woont in Brugge maar ze komt uit Antwerpen",
+    "x": [
+     "wonen",
+     "komen"
+    ],
+    "e": "Two clauses, each with its own subject: <b>hij woont</b> … <b>ze komt uit</b>. Both verbs stay singular.",
+    "tt": "He lives in Bruges, but she comes from Antwerp."
+   },
+   {
+    "t": "order",
+    "q": "You guys are tired, but we aren't.",
+    "a": "Jullie zijn moe maar wij niet",
+    "x": [
+     "bent",
+     "we"
+    ],
+    "e": "<b>jullie zijn</b> (plural). In the contrast <i>maar wij niet</i> the person is stressed, so you need the strong form <b>wij</b>: <s>maar we niet</s> is wrong.",
+    "tt": "You guys are tired, but we aren't."
+   }
+  ]
+ }
+}

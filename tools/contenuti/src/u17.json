@@ -1,0 +1,461 @@
+{
+ "id": "u17",
+ "n": 17,
+ "module": 4,
+ "nl": "Scheidbare werkwoorden",
+ "it": "I verbi separabili",
+ "note": "\n<h3>L'idea</h3>\n<p>Molti verbi olandesi sono formati da una <b>particella</b> + un verbo: <i>op</i> + <i>staan</i> = <b>opstaan</b> (alzarsi), <i>mee</i> + <i>gaan</i> = <b>meegaan</b> (andare con qualcuno). Somigliano a espressioni italiane come \"andare via\" o \"tirare su\", dove una piccola parola cambia il senso del verbo. La particolarità è che in olandese queste due parti, nella frase principale, <b>si separano</b>.</p>\n<h3>La regola: la particella va in fondo</h3>\n<p>Al presente il verbo coniugato sta come sempre al <b>secondo posto</b>, mentre la particella va alla <b>fine della frase</b>. Si crea la stessa \"cornice\" che hai visto con i modali.</p>\n<table><tr><th>infinito</th><th>frase</th><th>italiano</th></tr>\n<tr><td>opstaan</td><td>Ik <b>sta</b> om zeven uur <b>op</b>.</td><td>Mi alzo alle sette.</td></tr>\n<tr><td>opbellen</td><td>Hij <b>belt</b> zijn moeder <b>op</b>.</td><td>Telefona a sua madre.</td></tr>\n<tr><td>aankomen</td><td>De trein <b>komt</b> om tien uur <b>aan</b>.</td><td>Il treno arriva alle dieci.</td></tr>\n<tr><td>uitgaan</td><td>We <b>gaan</b> vanavond <b>uit</b>.</td><td>Stasera usciamo.</td></tr>\n<tr><td>meegaan</td><td><b>Ga</b> je <b>mee</b>?</td><td>Vieni con noi?</td></tr></table>\n<p>Anche con l'inversione e nelle domande la particella resta in fondo: <i>Morgen <b>kom</b> ik <b>terug</b></i>. <i>Hoe laat <b>kom</b> je <b>aan</b>?</i></p>\n<h3>Con un modale: il verbo resta intero</h3>\n<p>Quando c'è un modale (unità 9), il verbo separabile è all'infinito in fondo alla frase e quindi resta <b>unito</b>: <i>Ik moet morgen vroeg <b>opstaan</b></i>. <i>Wil je vanavond <b>uitgaan</b>?</i></p>\n<h3>Le particelle più comuni</h3>\n<p><b>op</b> (su), <b>mee</b> (con), <b>aan</b> (a, su), <b>uit</b> (fuori), <b>terug</b> (indietro), <b>binnen</b> (dentro). Le riconosci anche dalla pronuncia: nei verbi separabili l'accento cade sulla particella: <i>ÓPstaan, MÉEgaan, teRUGkomen</i>.</p>\n<h3>I prefissi che non si separano mai</h3>\n<p>I verbi che cominciano con <b>be-, ver-, ont-, her-</b> (e anche ge-, er-) sono <b>inseparabili</b>: il prefisso resta sempre attaccato e l'accento cade sul verbo, non sul prefisso.</p>\n<table><tr><th>infinito</th><th>frase</th></tr>\n<tr><td>betalen (pagare)</td><td>Ik betaal de koffie.</td></tr>\n<tr><td>vertellen (raccontare)</td><td>Hij vertelt het aan zijn zus.</td></tr>\n<tr><td>ontmoeten (incontrare)</td><td>Ik ontmoet Sofie vanavond.</td></tr>\n<tr><td>herhalen (ripetere)</td><td>Kunt u dat herhalen?</td></tr>\n<tr><td>begrijpen (capire)</td><td>Ik begrijp het niet.</td></tr></table>\n<p>Nell'unità 19 vedrai che i separabili si comportano in modo speciale anche nel participio passato.</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Lasciare il verbo intero al presente: <s>Ik opsta om zeven uur</s> → <b>Ik sta om zeven uur op</b>.</li>\n<li>Mettere la particella subito dopo il verbo: <s>Hij belt op zijn moeder</s> → <b>Hij belt zijn moeder op</b>.</li>\n<li>Separare il verbo dopo un modale: <s>Ik moet sta op</s> → <b>Ik moet opstaan</b>.</li>\n<li>Separare un verbo inseparabile: <s>Ik taal de koffie be</s> → <b>Ik betaal de koffie</b>.</li>\n</ul>",
+ "vlaams": "In Belgio senti spesso <b>buitengaan</b> per \"uscire, andare fuori\": \"Ik ga buiten\" (vado fuori). Nei Paesi Bassi si dice piuttosto <i>naar buiten gaan</i>. <b>uitgaan</b> invece significa ovunque \"uscire la sera, andare a divertirsi\".",
+ "vocab": [
+  [
+   "opbellen",
+   "telefonare a"
+  ],
+  [
+   "opstaan",
+   "alzarsi"
+  ],
+  [
+   "meegaan",
+   "andare con, venire con"
+  ],
+  [
+   "aankomen",
+   "arrivare"
+  ],
+  [
+   "uitgaan",
+   "uscire (la sera)"
+  ],
+  [
+   "meenemen",
+   "portare con sé"
+  ],
+  [
+   "terugkomen",
+   "tornare"
+  ],
+  [
+   "betalen",
+   "pagare"
+  ],
+  [
+   "vertellen",
+   "raccontare"
+  ],
+  [
+   "ontmoeten",
+   "incontrare"
+  ],
+  [
+   "herhalen",
+   "ripetere"
+  ],
+  [
+   "begrijpen",
+   "capire"
+  ],
+  [
+   "vergeten",
+   "dimenticare"
+  ],
+  [
+   "de paraplu",
+   "l'ombrello"
+  ],
+  [
+   "het feest",
+   "la festa"
+  ]
+ ],
+ "core": [
+  [
+   "op",
+   "su (op-staan)"
+  ],
+  [
+   "mee",
+   "con (mee-gaan)"
+  ],
+  [
+   "aan",
+   "a, su (aan-komen)"
+  ],
+  [
+   "uit",
+   "fuori (uit-gaan)"
+  ],
+  [
+   "terug",
+   "indietro (terug-komen)"
+  ],
+  [
+   "be-, ver-, ont-, her-",
+   "prefissi che non si separano"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "opstaan: Ik ___ om zeven uur op.",
+   "o": [
+    "sta",
+    "opsta",
+    "staan",
+    "staat"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Al presente la particella va in fondo; al secondo posto resta <b>sta</b>.",
+   "g": {
+    "sta": "mi alzo (con op in fondo)",
+    "opsta": "forma sbagliata: op va alla fine",
+    "staan": "forma del plurale / infinito",
+    "staat": "si alza (lui/lei)"
+   },
+   "tt": "Mi alzo alle sette."
+  },
+  {
+   "t": "mc",
+   "q": "Quale frase è corretta?",
+   "o": [
+    "Hij belt zijn moeder op.",
+    "Hij opbelt zijn moeder.",
+    "Hij belt op zijn moeder.",
+    "Hij op belt zijn moeder."
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "La particella <b>op</b> va alla fine della frase.",
+   "g": {
+    "Hij belt zijn moeder op.": "Telefona a sua madre (corretta)",
+    "Hij opbelt zijn moeder.": "al presente il verbo si separa",
+    "Hij belt op zijn moeder.": "la particella va in fondo, dopo l'oggetto",
+    "Hij op belt zijn moeder.": "ordine sbagliato"
+   },
+   "tt": "Telefona a sua madre."
+  },
+  {
+   "t": "mc",
+   "q": "Ik moet morgen vroeg ___.",
+   "o": [
+    "opstaan",
+    "sta op",
+    "op staan",
+    "opstaat"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Con un modale l'infinito resta intero in fondo: <b>opstaan</b>.",
+   "g": {
+    "opstaan": "alzarsi (infinito intero)",
+    "sta op": "dopo un modale serve l'infinito",
+    "op staan": "l'infinito si scrive attaccato",
+    "opstaat": "forma che non esiste"
+   },
+   "tt": "Domani devo alzarmi presto."
+  },
+  {
+   "t": "mc",
+   "q": "Quale verbo è inseparabile?",
+   "o": [
+    "betalen",
+    "opbellen",
+    "meegaan",
+    "uitgaan"
+   ],
+   "a": 0,
+   "e": "<b>be-</b> non si separa mai: ik betaal.",
+   "g": {
+    "betalen": "pagare (be- inseparabile)",
+    "opbellen": "telefonare (separabile: ik bel … op)",
+    "meegaan": "andare con (separabile: ik ga … mee)",
+    "uitgaan": "uscire (separabile: ik ga … uit)"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "begrijpen: Ik ___ het niet.",
+   "o": [
+    "begrijp",
+    "grijp",
+    "grijp be",
+    "begrijpen"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<b>be-</b> resta attaccato: ik <b>begrijp</b>.",
+   "g": {
+    "begrijp": "capisco",
+    "grijp": "afferro (verbo diverso, manca be-)",
+    "grijp be": "be- non si separa mai",
+    "begrijpen": "capire (infinito / plurale)"
+   },
+   "tt": "Non lo capisco."
+  },
+  {
+   "t": "mc",
+   "q": "aankomen: De trein ___ om tien uur aan.",
+   "o": [
+    "komt",
+    "aankomt",
+    "komen",
+    "kom"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Verbo coniugato al secondo posto, <b>aan</b> in fondo: de trein <b>komt</b> … aan.",
+   "g": {
+    "komt": "arriva (con aan in fondo)",
+    "aankomt": "al presente il verbo si separa",
+    "komen": "forma del plurale",
+    "kom": "forma di ik"
+   },
+   "tt": "Il treno arriva alle dieci."
+  },
+  {
+   "t": "mc",
+   "q": "Nella frase principale al presente, la particella (op, mee, uit…) va:",
+   "o": [
+    "alla fine della frase",
+    "subito dopo il verbo",
+    "prima del soggetto",
+    "prima del verbo"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Sempre <b>alla fine</b>, come l'infinito con i modali."
+  },
+  {
+   "t": "fill",
+   "q": "Ga je vanavond ___?",
+   "h": "meegaan",
+   "a": [
+    "mee"
+   ],
+   "e": "<b>meegaan</b>: Ga je … <b>mee</b>?",
+   "tt": "Vieni con noi stasera?"
+  },
+  {
+   "t": "fill",
+   "q": "Wanneer kom je ___?",
+   "h": "terugkomen",
+   "a": [
+    "terug"
+   ],
+   "e": "<b>terugkomen</b>: Wanneer kom je <b>terug</b>?",
+   "tt": "Quando torni?"
+  },
+  {
+   "t": "order",
+   "q": "Esco stasera.",
+   "a": "Ik ga vanavond uit",
+   "alt": [
+    "Vanavond ga ik uit"
+   ],
+   "x": [
+    "uitga",
+    "gaat"
+   ],
+   "e": "<b>uitgaan</b>: ga al secondo posto, <b>uit</b> in fondo."
+  }
+ ],
+ "items": [
+  {
+   "t": "fill",
+   "q": "Ik ___ je morgen op.",
+   "h": "opbellen",
+   "a": [
+    "bel"
+   ],
+   "e": "Al secondo posto <b>bel</b>, la particella <i>op</i> in fondo."
+  },
+  {
+   "t": "mc",
+   "q": "Hoe laat komt de trein in Brussel ___?",
+   "o": [
+    "aan",
+    "op",
+    "uit",
+    "mee"
+   ],
+   "a": 0,
+   "e": "arrivare = <b>aankomen</b>: komt … <b>aan</b>."
+  },
+  {
+   "t": "order",
+   "q": "Ci alziamo alle sette.",
+   "a": "We staan om zeven uur op",
+   "alt": [
+    "Om zeven uur staan we op"
+   ],
+   "x": [
+    "opstaan",
+    "staat"
+   ],
+   "e": "<b>opstaan</b>: staan al secondo posto, <b>op</b> alla fine."
+  },
+  {
+   "t": "tr",
+   "q": "Venite con noi?",
+   "a": [
+    "Gaan jullie met ons mee",
+    "Gaan jullie mee",
+    "Komen jullie met ons mee",
+    "Komen jullie mee"
+   ],
+   "e": "<b>meegaan</b>: Gaan jullie (met ons) <b>mee</b>?"
+  },
+  {
+   "t": "mc",
+   "q": "Quale frase è corretta?",
+   "o": [
+    "Ik betaal de koffie.",
+    "Ik taal de koffie be.",
+    "Ik betaal de koffie be.",
+    "Ik be de koffie taal."
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<b>be-</b> non si separa mai: Ik <b>betaal</b> de koffie."
+  },
+  {
+   "t": "fill",
+   "q": "Ik ___ altijd mijn sleutel.",
+   "h": "vergeten",
+   "a": [
+    "vergeet"
+   ],
+   "e": "<b>ver-</b> resta attaccato: ik <b>vergeet</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Ik wil vanavond ___.",
+   "o": [
+    "uitgaan",
+    "uit gaan",
+    "ga uit",
+    "uitgaat"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Dopo il modale l'infinito resta intero: <b>uitgaan</b>."
+  },
+  {
+   "t": "order",
+   "q": "Lei porta con sé l'ombrello.",
+   "a": "Ze neemt haar paraplu mee",
+   "alt": [
+    "Haar paraplu neemt ze mee"
+   ],
+   "x": [
+    "meeneemt",
+    "nemen"
+   ],
+   "e": "<b>meenemen</b>: neemt al secondo posto, <b>mee</b> in fondo."
+  },
+  {
+   "t": "tr",
+   "q": "Torno domani.",
+   "a": [
+    "Ik kom morgen terug",
+    "Morgen kom ik terug"
+   ],
+   "e": "<b>terugkomen</b>: Ik kom morgen <b>terug</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Ik ___ Sofie vanavond.",
+   "h": "ontmoeten",
+   "a": [
+    "ontmoet"
+   ],
+   "e": "<b>ont-</b> non si separa: ik <b>ontmoet</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Kunt u dat ___, alstublieft?",
+   "h": "ripetere",
+   "o": [
+    "herhalen",
+    "herhaal",
+    "herhaalt",
+    "halen"
+   ],
+   "a": 0,
+   "e": "Dopo il modale: infinito intero, <b>herhalen</b>."
+  },
+  {
+   "t": "order",
+   "q": "A che ora arrivi?",
+   "a": "Hoe laat kom je aan",
+   "x": [
+    "aankom",
+    "komt"
+   ],
+   "e": "Anche nella domanda la particella <b>aan</b> va in fondo."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "t": "Ti chiamo domani."
+  },
+  "1": {
+   "g": {
+    "aan": "aankomen = arrivare",
+    "op": "opkomen = sorgere (il sole): non adatto",
+    "uit": "uitkomen = uscire, risultare: non adatto",
+    "mee": "meekomen = venire con: non adatto"
+   },
+   "t": "A che ora arriva il treno a Bruxelles?"
+  },
+  "2": {
+   "t": "Ci alziamo alle sette."
+  },
+  "3": {
+   "t": "Venite con noi?"
+  },
+  "4": {
+   "g": {
+    "Ik betaal de koffie.": "Pago io il caffè (corretta)",
+    "Ik taal de koffie be.": "be- non si separa mai",
+    "Ik betaal de koffie be.": "be- compare due volte",
+    "Ik be de koffie taal.": "ordine impossibile"
+   },
+   "t": "Pago io il caffè."
+  },
+  "5": {
+   "t": "Dimentico sempre la chiave."
+  },
+  "6": {
+   "g": {
+    "uitgaan": "uscire (infinito intero)",
+    "uit gaan": "l'infinito si scrive attaccato",
+    "ga uit": "dopo un modale serve l'infinito",
+    "uitgaat": "forma che non esiste"
+   },
+   "t": "Stasera voglio uscire."
+  },
+  "7": {
+   "t": "Lei porta con sé l'ombrello."
+  },
+  "8": {
+   "t": "Torno domani."
+  },
+  "9": {
+   "t": "Stasera incontro Sofie."
+  },
+  "10": {
+   "g": {
+    "herhalen": "ripetere (infinito)",
+    "herhaal": "ripeto (io)",
+    "herhaalt": "ripete (lui/lei)",
+    "halen": "andare a prendere (un altro verbo)"
+   },
+   "t": "Può ripeterlo, per favore?"
+  },
+  "11": {
+   "t": "A che ora arrivi?"
+  }
+ }
+}

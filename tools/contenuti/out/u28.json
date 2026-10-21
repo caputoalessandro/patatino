@@ -1,0 +1,406 @@
+{
+ "id": "u28",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "Lotte: \"Hoe laat vertrekt de trein naar Brussel?\" → Lotte vraagt ___.",
+   "o": ["hoe laat de trein naar Brussel vertrekt", "hoe laat vertrekt de trein naar Brussel", "of de trein hoe laat naar Brussel vertrekt", "hoe laat de trein naar Brussel vertrekken"],
+   "a": 0,
+   "oit": true,
+   "e": "La parola interrogativa (<i>hoe laat</i>) resta all'inizio, poi soggetto e verbo in fondo: <i>... naar Brussel <b>vertrekt</b></i>.",
+   "g": {
+    "hoe laat de trein naar Brussel vertrekt": "a che ora parte il treno per Bruxelles (corretta)",
+    "hoe laat vertrekt de trein naar Brussel": "ordine da domanda diretta: il verbo va in fondo",
+    "of de trein hoe laat naar Brussel vertrekt": "con una parola interrogativa non serve of",
+    "hoe laat de trein naar Brussel vertrekken": "de trein è singolare: vertrekt"
+   },
+   "tt": "Lotte: \"A che ora parte il treno per Bruxelles?\" → Lotte chiede a che ora parte il treno per Bruxelles."
+  },
+  {
+   "t": "mc",
+   "q": "Mijn zus zei gisteren: \"Ik kan niet komen.\" → Mijn zus zei dat ___.",
+   "o": ["ze niet kon komen", "ze kon niet komen", "ik niet kon komen", "ze niet konden komen"],
+   "a": 0,
+   "oit": true,
+   "e": "Tre cose insieme: il pronome cambia (<i>ik</i> → <b>ze</b>), il verbo introduttivo è al passato (<i>zei</i>) quindi <b>kon</b>, e i due verbi vanno in fondo.",
+   "g": {
+    "ze niet kon komen": "non poteva venire (corretta)",
+    "ze kon niet komen": "ordine da frase principale: dopo dat il verbo va in fondo",
+    "ik niet kon komen": "chi parla è mia sorella: ik diventa ze",
+    "ze niet konden komen": "ze qui è singolare (mia sorella): kon"
+   },
+   "tt": "Mia sorella ieri ha detto: \"Non posso venire.\" → Mia sorella ha detto che non poteva venire."
+  },
+  {
+   "t": "fill",
+   "q": "De toeristen vroegen of deze tram naar de Grote Markt ___.",
+   "h": "rijden",
+   "a": ["reed"],
+   "e": "Verbo introduttivo al passato (<i>vroegen</i>) → passato anche nella subordinata. Il soggetto è <i>deze tram</i> (singolare): <b>reed</b>, in fondo.",
+   "tt": "I turisti chiedevano se questo tram andava alla Grote Markt."
+  },
+  {
+   "t": "fill",
+   "q": "Jan en Els (tegen ons): \"We bellen jullie morgen.\" → Jan en Els zeggen dat ze ___ morgen bellen.",
+   "h": "ci",
+   "a": ["ons"],
+   "e": "Jan ed Els parlano a noi: <i>jullie</i> diventa <b>ons</b>. E <i>we</i> diventa <i>ze</i>.",
+   "tt": "Jan ed Els (a noi): \"Vi chiamiamo domani.\" → Jan ed Els dicono che ci chiamano domani."
+  },
+  {
+   "t": "tr",
+   "q": "Lei dice che vuole abitare a Gand.",
+   "a": ["Ze zegt dat ze in Gent wil wonen", "Zij zegt dat ze in Gent wil wonen", "Ze zegt dat zij in Gent wil wonen", "Ze zegt dat ze in Gent wonen wil", "Zij zegt dat ze in Gent wonen wil"],
+   "e": "<b>dat</b> + soggetto + luogo + i due verbi in fondo: <i>in Gent <b>wil wonen</b></i>."
+  },
+  {
+   "t": "tr",
+   "q": "Il capo mi ha chiesto se il lavoro era pronto.",
+   "a": ["De baas heeft me gevraagd of het werk klaar was", "De baas heeft mij gevraagd of het werk klaar was", "De baas vroeg me of het werk klaar was", "De baas vroeg mij of het werk klaar was", "De baas heeft gevraagd of het werk klaar was", "De baas vroeg of het werk klaar was", "Mijn baas heeft me gevraagd of het werk klaar was", "Mijn baas heeft mij gevraagd of het werk klaar was", "Mijn baas vroeg me of het werk klaar was", "Mijn baas vroeg mij of het werk klaar was", "Mijn baas heeft gevraagd of het werk klaar was", "Mijn baas vroeg of het werk klaar was"],
+   "e": "Domanda sì/no → <b>of</b>. Il verbo che introduce è al passato, quindi anche quello riferito: <i>klaar <b>was</b></i>."
+  },
+  {
+   "t": "order",
+   "q": "Mio padre chiede a che ora torno a casa.",
+   "a": "Mijn vader vraagt hoe laat ik thuiskom",
+   "x": ["kom", "of"],
+   "e": "<i>hoe laat</i> resta, il verbo separabile <i>thuiskomen</i> si riunisce in fondo: <b>thuiskom</b>.",
+   "tt": "Mio padre chiede a che ora torno a casa."
+  },
+  {
+   "t": "order",
+   "q": "Lei ha detto che non aveva tempo per la riunione.",
+   "a": "Ze zei dat ze geen tijd had voor de vergadering",
+   "alt": ["Ze zei dat ze voor de vergadering geen tijd had"],
+   "x": ["heeft", "niet"],
+   "e": "Verbo introduttivo al passato → <b>had</b>. Davanti a un nome senza articolo la negazione è <b>geen</b>.",
+   "tt": "Lei ha detto che non aveva tempo per la riunione."
+  }
+ ],
+ "en": {
+  "it": "Reported speech",
+  "note": "\n<h3>The idea</h3>\n<p>With reported speech you pass on what someone else said or asked: \"Anna says <u>that she's tired</u>\", \"Tom asks <u>if I'm coming</u>\". As in English, the pronouns change (I → she) and sometimes the tense. The big difference from English is word order: the reported part is a subordinate clause, so <b>the verb goes to the end</b>.</p>\n<h3>A statement: zeggen dat</h3>\n<p>To report a statement you use <b>dat</b> (that). Unlike English, you can't leave it out:</p>\n<p>Anna: \"Ik <b>ben</b> moe.\" → <i>Anna zegt dat ze moe <b>is</b>.</i></p>\n<p>The same goes for <i>denken dat</i>, <i>vertellen dat</i>, <i>antwoorden dat</i>, <i>beloven dat</i>.</p>\n<h3>A yes/no question: vragen of</h3>\n<p>If the original question is answered with yes or no, you use <b>of</b> (if, whether):</p>\n<p>Tom: \"<b>Kom</b> je morgen?\" → <i>Tom vraagt of ik morgen <b>kom</b>.</i></p>\n<h3>A question with a question word</h3>\n<p>If the question starts with <i>wie, wat, waar, wanneer, waarom, hoe, hoeveel…</i>, the question word stays and takes the place of <i>of</i>:</p>\n<p>\"Waar <b>woon</b> je?\" → <i>Hij vraagt waar ik <b>woon</b>.</i></p>\n<h3>What changes</h3>\n<table><tr><th>direct speech</th><th>reported speech</th></tr>\n<tr><td>Lisa: \"Ik werk vandaag.\"</td><td>Lisa zegt dat <b>ze</b> vandaag <b>werkt</b>.</td></tr>\n<tr><td>Marco (to you): \"Ik help je.\"</td><td>Marco zegt dat <b>hij</b> <b>je</b> helpt.</td></tr>\n<tr><td>Anna (to you): \"Waar is je fiets?\"</td><td>Anna vraagt waar <b>mijn</b> fiets is.</td></tr>\n<tr><td>De baas: \"Kom morgen!\"</td><td>De baas zegt dat ik morgen <b>moet komen</b>.</td></tr></table>\n<p>Pronouns and possessives change depending on who is speaking and who is listening, just like in English. The verb agrees with the new subject (<i>ik werk → ze werkt</i>). An order is reported with <b>moeten</b> (English would often say \"tells me to come\").</p>\n<h3>Tense</h3>\n<p>If the reporting verb is in the present (<i>zegt, vraagt</i>), the tense doesn't change. If it's in the past (<i>zei, vroeg</i>), the reported verb usually goes into the past too, as in English: <i>Hij zei: \"Ik ben ziek.\" → Hij zei dat hij ziek <b>was</b>.</i> In speech you also hear the present if the fact is still true.</p>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Keeping the English middle position of the verb: <s>Hij zegt dat hij komt morgen</s> → <b>Hij zegt dat hij morgen komt</b>.</li>\n<li>Dropping dat, as you can drop \"that\" in English: <s>Hij zegt hij komt morgen</s> → <b>Hij zegt dat hij morgen komt</b>.</li>\n<li>Keeping question order: <s>Ze vraagt of ben je moe</s> → <b>Ze vraagt of je moe bent</b>.</li>\n<li>Using als for \"if/whether\": <s>Ik vraag als hij thuis is</s> → <b>Ik vraag of hij thuis is</b>.</li>\n<li>Using dat for a question: <s>Hij vraagt dat ik kom</s> → <b>Hij vraagt of ik kom</b>.</li>\n<li>Forgetting to change the pronoun: Anna: \"Ik ben moe.\" → <s>Anna zegt dat ik moe ben</s> → <b>Anna zegt dat ze moe is</b>.</li>\n</ul>",
+  "vlaams": "In Belgium you often hear <b>iets zeggen aan iemand</b> (\"Ik heb het aan mijn baas gezegd\"); standard Dutch prefers <b>zeggen tegen</b>. Here too, the double <b>of dat</b> shows up in speech: \"Ze vraagt <b>of dat</b> ik kom\". In writing use just <b>of</b>.",
+  "vocab": [["zeggen", "to say"], ["vragen", "to ask"], ["vertellen", "to tell"], ["antwoorden", "to answer"], ["beloven", "to promise"], ["het bericht", "the message"], ["de baas", "the boss"], ["klaar", "ready, done"], ["het feest", "the party"], ["de vergadering", "the meeting"], ["ziek", "sick, ill"], ["moe", "tired"]],
+  "core": [["zeggen dat", "to say that"], ["vragen of", "to ask if / whether"], ["vragen waar / wanneer / …", "to ask where / when / …"]],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "Anna: \"Ik ben moe.\" → Anna zegt dat ___ moe is.",
+    "o": ["ze", "ik", "je", "hij"],
+    "a": 0,
+    "e": "Anna is the speaker: <i>ik</i> becomes <b>ze</b>.",
+    "g": {
+     "ze": "she (Anna)",
+     "ik": "I: but Anna is the one speaking",
+     "je": "you",
+     "hij": "he"
+    },
+    "tt": "Anna: \"I'm tired.\" → Anna says she's tired."
+   },
+   {
+    "t": "mc",
+    "q": "Tom (tegen mij): \"Kom je morgen?\" → Tom vraagt ___ ik morgen kom.",
+    "o": ["of", "dat", "als", "wat"],
+    "a": 0,
+    "e": "Yes/no question → <b>of</b>.",
+    "g": {
+     "of": "if, whether (yes/no question)",
+     "dat": "that: for statements",
+     "als": "if (condition): you hear it in speech, but it's wrong here",
+     "wat": "what"
+    },
+    "tt": "Tom: \"Are you coming tomorrow?\" → Tom asks if I'm coming tomorrow."
+   },
+   {
+    "t": "mc",
+    "q": "\"Waar woon je?\" → Hij vraagt ___ ik woon.",
+    "o": ["waar", "of", "dat", "wie"],
+    "a": 0,
+    "e": "The question word stays: <b>waar</b>.",
+    "g": {
+     "waar": "where",
+     "of": "if/whether: only for yes/no questions",
+     "dat": "that: for statements",
+     "wie": "who"
+    },
+    "tt": "\"Where do you live?\" → He asks where I live."
+   },
+   {
+    "t": "mc",
+    "q": "Hij zegt dat hij morgen ___.",
+    "h": "komen",
+    "o": ["komt", "kom", "komen", "kwam"],
+    "a": 0,
+    "e": "hij + <b>komt</b>, at the end.",
+    "g": {
+     "komt": "comes, is coming",
+     "kom": "come (ik)",
+     "komen": "come (plural)",
+     "kwam": "came: doesn't go with morgen"
+    },
+    "tt": "He says he's coming tomorrow."
+   },
+   {
+    "t": "mc",
+    "q": "Which sentence is correct?",
+    "o": ["Ze vraagt of je moe bent.", "Ze vraagt of ben je moe.", "Ze vraagt ben je moe.", "Ze vraagt of je bent moe."],
+    "a": 0,
+    "oit": true,
+    "e": "<b>of</b> + subject + ... + verb at the end.",
+    "g": {
+     "Ze vraagt of je moe bent.": "She asks if you're tired (correct)",
+     "Ze vraagt of ben je moe.": "no question order after of",
+     "Ze vraagt ben je moe.": "of is missing",
+     "Ze vraagt of je bent moe.": "the verb goes to the end"
+    },
+    "tt": "She asks if you're tired."
+   },
+   {
+    "t": "fill",
+    "q": "Lisa: \"Ik werk vandaag.\" → Lisa zegt dat ze vandaag ___.",
+    "h": "werken",
+    "a": ["werkt"],
+    "e": "New subject <i>ze</i> → <b>werkt</b>, at the end.",
+    "tt": "Lisa: \"I'm working today.\" → Lisa says she's working today."
+   },
+   {
+    "t": "fill",
+    "q": "\"Is hij ziek?\" → Ik vraag ___ hij ziek is.",
+    "h": "if / whether",
+    "a": ["of"],
+    "e": "Yes/no question → <b>of</b>.",
+    "tt": "\"Is he sick?\" → I ask if he's sick."
+   },
+   {
+    "t": "fill",
+    "q": "Marco (a te): \"Ik help je.\" → Marco zegt dat hij ___ helpt.",
+    "h": "you",
+    "a": ["je", "jou"],
+    "e": "Marco is talking to you: the pronoun stays <b>je</b>.",
+    "tt": "Marco: \"I'll help you.\" → Marco says he'll help you."
+   },
+   {
+    "t": "order",
+    "q": "She says (that) she's tired.",
+    "a": "Ze zegt dat ze moe is",
+    "x": ["wat", "bent"],
+    "e": "<b>dat</b> + subject + ... + verb at the end."
+   },
+   {
+    "t": "order",
+    "q": "He asks where I live.",
+    "a": "Hij vraagt waar ik woon",
+    "x": ["woont", "dat"],
+    "e": "The question word stays, the verb goes to the end."
+   }
+  ],
+  "items": [
+   {
+    "t": "mc",
+    "q": "Sara en Tom: \"We gaan naar het feest.\" → Ze zeggen dat ___ naar het feest gaan.",
+    "o": ["ze", "jullie", "hij", "ik"],
+    "a": 0,
+    "e": "Sara and Tom are speaking: <i>we</i> becomes <b>ze</b> (they)."
+   },
+   {
+    "t": "fill",
+    "q": "De baas vraagt: \"Is het werk klaar?\" → De baas vraagt of het werk klaar ___.",
+    "h": "zijn",
+    "a": ["is"],
+    "e": "After <b>of</b> the verb goes to the end: <i>klaar <b>is</b></i>."
+   },
+   {
+    "t": "order",
+    "q": "She asks if I'm coming to the party.",
+    "a": "Ze vraagt of ik naar het feest kom",
+    "x": ["wat", "komt"],
+    "e": "Yes/no question → <b>of</b>, verb at the end."
+   },
+   {
+    "t": "tr",
+    "q": "He says (that) he's working tomorrow.",
+    "a": ["Hij zegt dat hij morgen werkt", "Hij zegt dat hij morgen moet werken", "Hij zegt dat hij morgen werken moet"],
+    "e": "<b>dat</b> + hij + morgen + <b>werkt</b>. Dutch uses the simple present here, not a form like \"is working\"."
+   },
+   {
+    "t": "mc",
+    "q": "Which sentence is correct?",
+    "o": ["Ik weet niet waar hij woont.", "Ik weet niet waar woont hij.", "Ik weet niet of waar hij woont.", "Ik weet niet waar hij wonen."],
+    "a": 0,
+    "oit": true,
+    "e": "Question word + subject + verb at the end."
+   },
+   {
+    "t": "fill",
+    "q": "Mijn moeder vraagt: \"Wanneer kom je naar huis?\" → Ze vraagt wanneer ik naar huis ___.",
+    "h": "komen",
+    "a": ["kom"],
+    "e": "The new subject is <i>ik</i> → <b>kom</b>, at the end."
+   },
+   {
+    "t": "mc",
+    "q": "Hij zei: \"Ik ben ziek.\" → Hij zei dat hij ziek ___.",
+    "o": ["was", "ben", "zijn", "waren"],
+    "a": 0,
+    "e": "Reporting verb in the past (<i>zei</i>) → usually past, as in English: <b>was</b>."
+   },
+   {
+    "t": "order",
+    "q": "He promises (that) he'll come tomorrow.",
+    "a": "Hij belooft dat hij morgen komt",
+    "x": ["of", "kom"],
+    "e": "<b>beloven dat</b> + verb at the end. Dutch uses the present for the future here: <i>komt</i>."
+   },
+   {
+    "t": "tr",
+    "q": "She asks why I'm tired.",
+    "a": ["Ze vraagt waarom ik moe ben", "Zij vraagt waarom ik moe ben"],
+    "e": "<b>waarom</b> stays, the verb goes to the end: <i>moe <b>ben</b></i>."
+   },
+   {
+    "t": "mc",
+    "q": "De baas: \"Kom morgen om negen uur!\" → De baas zegt dat ik morgen om negen uur ___.",
+    "o": ["moet komen", "moeten komen", "moet komt", "komt moet"],
+    "a": 0,
+    "e": "An order is reported with <b>moeten</b>: <i>dat ik ... moet komen</i>."
+   },
+   {
+    "t": "fill",
+    "q": "Anna (tegen mij): \"Waar is je fiets?\" → Anna vraagt waar ___ fiets is.",
+    "h": "my",
+    "a": ["mijn"],
+    "e": "It's my bike: <i>je</i> becomes <b>mijn</b>."
+   },
+   {
+    "t": "tr",
+    "q": "I ask her if she's sick.",
+    "a": ["Ik vraag haar of ze ziek is", "Ik vraag haar of zij ziek is", "Ik vraag of ze ziek is"],
+    "e": "<b>vragen of</b> + verb at the end."
+   }
+  ],
+  "gloss": {
+   "0": {
+    "g": {
+     "ze": "they (Sara and Tom)",
+     "jullie": "you (plural)",
+     "hij": "he",
+     "ik": "I"
+    },
+    "t": "Sara and Tom: \"We're going to the party.\" → They say they're going to the party."
+   },
+   "1": {"t": "The boss asks: \"Is the work done?\" → The boss asks whether the work is done."},
+   "2": {"t": "She asks if I'm coming to the party."},
+   "3": {"t": "He says he's working tomorrow."},
+   "4": {
+    "g": {
+     "Ik weet niet waar hij woont.": "I don't know where he lives (correct)",
+     "Ik weet niet waar woont hij.": "question order: the verb goes to the end",
+     "Ik weet niet of waar hij woont.": "of and waar don't go together",
+     "Ik weet niet waar hij wonen.": "you need the conjugated verb: woont"
+    },
+    "t": "I don't know where he lives."
+   },
+   "5": {"t": "My mother asks: \"When are you coming home?\" → She asks when I'm coming home."},
+   "6": {
+    "g": {
+     "was": "was",
+     "ben": "am (ik): but the subject is hij",
+     "zijn": "are (plural)",
+     "waren": "were (plural)"
+    },
+    "t": "He said: \"I'm sick.\" → He said he was sick."
+   },
+   "7": {"t": "He promises he'll come tomorrow."},
+   "8": {"t": "She asks why I'm tired."},
+   "9": {
+    "g": {
+     "moet komen": "have to come",
+     "moeten komen": "have to come (plural): the subject is ik",
+     "moet komt": "after moet you need the infinitive",
+     "komt moet": "wrong form"
+    },
+    "t": "The boss: \"Come tomorrow at nine!\" → The boss says I have to come tomorrow at nine."
+   },
+   "10": {"t": "Anna: \"Where's your bike?\" → Anna asks where my bike is."},
+   "11": {"t": "I ask her if she's sick."}
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "Lotte: \"Hoe laat vertrekt de trein naar Brussel?\" → Lotte vraagt ___.",
+    "o": ["hoe laat de trein naar Brussel vertrekt", "hoe laat vertrekt de trein naar Brussel", "of de trein hoe laat naar Brussel vertrekt", "hoe laat de trein naar Brussel vertrekken"],
+    "a": 0,
+    "oit": true,
+    "e": "The question word (<i>hoe laat</i>) stays in front, then the subject and the verb at the end: <i>... naar Brussel <b>vertrekt</b></i>.",
+    "g": {
+     "hoe laat de trein naar Brussel vertrekt": "what time the train to Brussels leaves (correct)",
+     "hoe laat vertrekt de trein naar Brussel": "direct-question order: the verb goes to the end",
+     "of de trein hoe laat naar Brussel vertrekt": "with a question word you don't need of",
+     "hoe laat de trein naar Brussel vertrekken": "de trein is singular: vertrekt"
+    },
+    "tt": "Lotte: \"What time does the train to Brussels leave?\" → Lotte asks what time the train to Brussels leaves."
+   },
+   {
+    "t": "mc",
+    "q": "Mijn zus zei gisteren: \"Ik kan niet komen.\" → Mijn zus zei dat ___.",
+    "o": ["ze niet kon komen", "ze kon niet komen", "ik niet kon komen", "ze niet konden komen"],
+    "a": 0,
+    "oit": true,
+    "e": "Three things at once: the pronoun changes (<i>ik</i> → <b>ze</b>), the reporting verb is past (<i>zei</i>) so <b>kon</b>, and both verbs go to the end.",
+    "g": {
+     "ze niet kon komen": "she couldn't come (correct)",
+     "ze kon niet komen": "main-clause order: after dat the verb goes to the end",
+     "ik niet kon komen": "my sister is the speaker: ik becomes ze",
+     "ze niet konden komen": "ze is singular here (my sister): kon"
+    },
+    "tt": "Yesterday my sister said: \"I can't come.\" → My sister said she couldn't come."
+   },
+   {
+    "t": "fill",
+    "q": "De toeristen vroegen of deze tram naar de Grote Markt ___.",
+    "h": "rijden",
+    "a": ["reed"],
+    "e": "Reporting verb in the past (<i>vroegen</i>) → past in the subordinate clause too. The subject is <i>deze tram</i> (singular): <b>reed</b>, at the end.",
+    "tt": "The tourists asked whether this tram went to the Grote Markt."
+   },
+   {
+    "t": "fill",
+    "q": "Jan en Els (tegen ons): \"We bellen jullie morgen.\" → Jan en Els zeggen dat ze ___ morgen bellen.",
+    "h": "us",
+    "a": ["ons"],
+    "e": "Jan and Els are talking to us: <i>jullie</i> becomes <b>ons</b>. And <i>we</i> becomes <i>ze</i>.",
+    "tt": "Jan and Els (to us): \"We'll call you tomorrow.\" → Jan and Els say they'll call us tomorrow."
+   },
+   {
+    "t": "tr",
+    "q": "She says (that) she wants to live in Ghent.",
+    "a": ["Ze zegt dat ze in Gent wil wonen", "Zij zegt dat ze in Gent wil wonen", "Ze zegt dat zij in Gent wil wonen", "Ze zegt dat ze in Gent wonen wil", "Zij zegt dat ze in Gent wonen wil"],
+    "e": "<b>dat</b> + subject + place + both verbs at the end: <i>in Gent <b>wil wonen</b></i>."
+   },
+   {
+    "t": "tr",
+    "q": "The boss asked me whether the work was ready.",
+    "a": ["De baas heeft me gevraagd of het werk klaar was", "De baas heeft mij gevraagd of het werk klaar was", "De baas vroeg me of het werk klaar was", "De baas vroeg mij of het werk klaar was", "De baas heeft gevraagd of het werk klaar was", "De baas vroeg of het werk klaar was", "Mijn baas heeft me gevraagd of het werk klaar was", "Mijn baas heeft mij gevraagd of het werk klaar was", "Mijn baas vroeg me of het werk klaar was", "Mijn baas vroeg mij of het werk klaar was", "Mijn baas heeft gevraagd of het werk klaar was", "Mijn baas vroeg of het werk klaar was"],
+    "e": "Yes/no question → <b>of</b> (not <i>als</i>). The reporting verb is in the past, so the reported one is too: <i>klaar <b>was</b></i>."
+   },
+   {
+    "t": "order",
+    "q": "My father asks what time I'm coming home.",
+    "a": "Mijn vader vraagt hoe laat ik thuiskom",
+    "x": ["kom", "of"],
+    "e": "<i>hoe laat</i> stays, and the separable verb <i>thuiskomen</i> rejoins at the end: <b>thuiskom</b>.",
+    "tt": "My father asks what time I'm coming home."
+   },
+   {
+    "t": "order",
+    "q": "She said (that) she had no time for the meeting.",
+    "a": "Ze zei dat ze geen tijd had voor de vergadering",
+    "alt": ["Ze zei dat ze voor de vergadering geen tijd had"],
+    "x": ["heeft", "niet"],
+    "e": "Reporting verb in the past → <b>had</b>. Before a noun without an article the negation is <b>geen</b>.",
+    "tt": "She said she had no time for the meeting."
+   }
+  ]
+ }
+}

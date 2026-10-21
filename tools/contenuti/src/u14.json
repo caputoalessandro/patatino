@@ -1,0 +1,421 @@
+{
+ "id": "u14",
+ "n": 14,
+ "module": 3,
+ "nl": "Bijvoeglijke naamwoorden",
+ "it": "Gli aggettivi",
+ "note": "\n<h3>L'idea</h3>\n<p>In italiano l'aggettivo cambia in base al genere e al numero: rosso, rossa, rossi, rosse. In olandese è più semplice: ci sono solo due forme, <b>senza -e</b> (<i>groot</i>) e <b>con -e</b> (<i>grote</i>). E l'aggettivo davanti al nome va <b>prima</b> del nome, mai dopo: <i>een rode auto</i> (un'auto rossa).</p>\n<h3>Dopo il verbo: nessuna -e</h3>\n<p>Quando l'aggettivo sta dopo <i>zijn</i> (o verbi simili), non cambia mai:</p>\n<p><i>Het huis is <b>groot</b>. De kamers zijn <b>groot</b>. Het bier is <b>koud</b>.</i></p>\n<h3>Davanti al nome: quasi sempre -e</h3>\n<p>Davanti al nome l'aggettivo prende <b>-e</b> in tutti i casi tranne uno:</p>\n<table><tr><th></th><th>de-parola</th><th>het-parola</th><th>plurale</th></tr>\n<tr><td>con de / het</td><td>de grot<b>e</b> kamer</td><td>het grot<b>e</b> huis</td><td>de grot<b>e</b> huizen</td></tr>\n<tr><td>con een / geen / senza articolo</td><td>een grot<b>e</b> kamer</td><td>een <b>groot</b> huis</td><td>grot<b>e</b> huizen</td></tr></table>\n<p>L'unica casella senza -e: <b>het-parola al singolare senza de/het</b>, cioè dopo <i>een</i>, <i>geen</i> o senza articolo: <i>een groot huis</i>, <i>geen groot huis</i>, <i>koud water</i>, <i>lekker brood</i>. Con <i>dit, dat, mijn, ons</i>… si comporta come con <i>het</i>: <i>dit grote huis</i>, <i>mijn grote huis</i>.</p>\n<h3>Cambiamenti di ortografia</h3>\n<p>Quando aggiungi -e, valgono le stesse regole che hai visto per il plurale (unità 6):</p>\n<ul>\n<li>Vocale lunga doppia → singola: <i>groot → grote</i>, <i>rood → rode</i>, <i>duur → dure</i>.</li>\n<li>Vocale breve → consonante doppia: <i>wit → witte</i>, <i>dik → dikke</i>, <i>snel → snelle</i>.</li>\n<li>f → v e s → z: <i>lief → lieve</i>, <i>grijs → grijze</i>.</li>\n<li>Gli aggettivi in <b>-en</b> non cambiano mai: <i>een open winkel</i>, <i>de open winkel</i>.</li>\n</ul>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Mettere l'aggettivo dopo il nome: <s>een auto rode</s> → <b>een rode auto</b>.</li>\n<li>Aggiungere -e dopo il verbo: <s>Het huis is grote</s> → <b>Het huis is groot</b>.</li>\n<li>Aggiungere -e con een + het-parola: <s>een grote huis</s> → <b>een groot huis</b>.</li>\n<li>Dimenticare la -e con <i>het</i>: <s>het groot huis</s> → <b>het grote huis</b>.</li>\n<li>Sbagliare l'ortografia: <s>groote, wite</s> → <b>grote, witte</b>.</li>\n</ul>",
+ "vlaams": "In Fiandra <b>schoon</b> significa spesso \"bello\": <i>een schoon huis</i>, <i>schoon weer</i> (nei Paesi Bassi schoon vuol dire solo \"pulito\"). Nel parlato, in Belgio come in Olanda, <i>goede</i> diventa spesso <b>goeie</b>: <i>een goeie fiets</i>.",
+ "vocab": [
+  [
+   "rood",
+   "rosso"
+  ],
+  [
+   "wit",
+   "bianco"
+  ],
+  [
+   "zwart",
+   "nero"
+  ],
+  [
+   "grijs",
+   "grigio"
+  ],
+  [
+   "lief",
+   "dolce, affettuoso"
+  ],
+  [
+   "dik",
+   "grosso, spesso"
+  ],
+  [
+   "snel",
+   "veloce"
+  ],
+  [
+   "de hond",
+   "il cane"
+  ],
+  [
+   "de kat",
+   "il gatto"
+  ],
+  [
+   "de kamer",
+   "la camera, la stanza"
+  ],
+  [
+   "het bed",
+   "il letto"
+  ],
+  [
+   "de wijn",
+   "il vino"
+  ],
+  [
+   "het bier",
+   "la birra"
+  ],
+  [
+   "de straat",
+   "la strada"
+  ],
+  [
+   "het dorp",
+   "il paese, il villaggio"
+  ]
+ ],
+ "core": [],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "een ___ huis",
+   "h": "grande",
+   "o": [
+    "groot",
+    "grote",
+    "groote",
+    "grot"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<b>een</b> + het-parola al singolare: nessuna -e, <b>een groot huis</b>.",
+   "g": {
+    "groot": "grande (senza -e: een + het-parola)",
+    "grote": "grande con -e: qui non serve",
+    "groote": "forma che non esiste: oo diventa o",
+    "grot": "la grotta: è un nome, non l'aggettivo"
+   },
+   "tt": "una casa grande"
+  },
+  {
+   "t": "mc",
+   "q": "het ___ huis",
+   "h": "grande",
+   "o": [
+    "grote",
+    "groot",
+    "groote",
+    "grotte"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Con <b>het</b> davanti: sempre -e, <b>het grote huis</b>.",
+   "g": {
+    "grote": "grande (con -e)",
+    "groot": "senza -e solo con een + het-parola",
+    "groote": "forma che non esiste: oo diventa o",
+    "grotte": "forma che non esiste: la o è lunga"
+   },
+   "tt": "la casa grande"
+  },
+  {
+   "t": "mc",
+   "q": "de ___ hond",
+   "h": "nero",
+   "o": [
+    "zwarte",
+    "zwart"
+   ],
+   "a": 0,
+   "e": "Con <b>de</b>: sempre -e.",
+   "g": {
+    "zwarte": "nero (con -e)",
+    "zwart": "senza -e: con de serve la -e"
+   },
+   "tt": "il cane nero"
+  },
+  {
+   "t": "mc",
+   "q": "een ___ kat",
+   "h": "nero",
+   "o": [
+    "zwarte",
+    "zwart"
+   ],
+   "a": 0,
+   "e": "<i>de kat</i> è una de-parola: anche con een → <b>zwarte</b>.",
+   "g": {
+    "zwarte": "nero (con -e)",
+    "zwart": "senza -e solo con een + het-parola"
+   },
+   "tt": "un gatto nero"
+  },
+  {
+   "t": "mc",
+   "q": "twee ___ bedden",
+   "h": "piccolo",
+   "o": [
+    "kleine",
+    "klein",
+    "kleinen",
+    "klijne"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Plurale: sempre -e, <b>kleine</b>.",
+   "g": {
+    "kleine": "piccoli (con -e)",
+    "klein": "senza -e: al plurale serve la -e",
+    "kleinen": "forma che non esiste",
+    "klijne": "forma che non esiste"
+   },
+   "tt": "due letti piccoli"
+  },
+  {
+   "t": "mc",
+   "q": "Het bier is ___.",
+   "h": "freddo",
+   "o": [
+    "koud",
+    "koude"
+   ],
+   "a": 0,
+   "e": "Dopo il verbo: nessuna -e, <b>koud</b>.",
+   "g": {
+    "koud": "freddo (dopo il verbo)",
+    "koude": "con -e solo davanti al nome"
+   },
+   "tt": "La birra è fredda."
+  },
+  {
+   "t": "mc",
+   "q": "een ___ fiets",
+   "h": "bianco",
+   "o": [
+    "witte",
+    "wite",
+    "wit"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "de-parola → -e; vocale breve → doppia t: <b>witte</b>.",
+   "g": {
+    "witte": "bianca (con -e)",
+    "wite": "manca la doppia t: la i è breve",
+    "wit": "senza -e solo con een + het-parola"
+   },
+   "tt": "una bici bianca"
+  },
+  {
+   "t": "mc",
+   "q": "de ___ kat",
+   "h": "affettuoso",
+   "o": [
+    "lieve",
+    "liefe",
+    "lief"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "-e e f → v: <b>lieve</b>.",
+   "g": {
+    "lieve": "dolce, affettuoso (con -e)",
+    "liefe": "forma che non esiste: f → v",
+    "lief": "senza -e: con de serve la -e"
+   },
+   "tt": "il gatto affettuoso"
+  },
+  {
+   "t": "fill",
+   "q": "de ___ wijn",
+   "h": "rood",
+   "a": [
+    "rode"
+   ],
+   "e": "Con <i>de</i>: -e, e oo → o: <b>rode</b>.",
+   "tt": "il vino rosso"
+  },
+  {
+   "t": "fill",
+   "q": "Dat zijn ___ straten.",
+   "h": "mooi",
+   "a": [
+    "mooie"
+   ],
+   "e": "Plurale: sempre -e, <b>mooie</b>.",
+   "tt": "Quelle sono belle strade."
+  }
+ ],
+ "items": [
+  {
+   "t": "mc",
+   "q": "Ik drink een glas ___ wijn.",
+   "h": "rosso",
+   "o": [
+    "rode",
+    "rood",
+    "roode",
+    "rodde"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<i>de wijn</i> è una de-parola: <b>rode wijn</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Wij wonen in een ___ dorp.",
+   "h": "piccolo",
+   "o": [
+    "klein",
+    "kleine"
+   ],
+   "a": 0,
+   "e": "<b>een</b> + het-parola (het dorp): nessuna -e."
+  },
+  {
+   "t": "fill",
+   "q": "Het is een ___ hond.",
+   "h": "lief",
+   "a": [
+    "lieve"
+   ],
+   "e": "<i>de hond</i>: -e e f → v, <b>lieve</b>."
+  },
+  {
+   "t": "order",
+   "q": "La camera grande è cara.",
+   "a": "De grote kamer is duur",
+   "x": [
+    "groote",
+    "dure"
+   ],
+   "e": "Davanti al nome <b>grote</b>, dopo il verbo <b>duur</b> senza -e."
+  },
+  {
+   "t": "tr",
+   "q": "Ho una bici nuova.",
+   "a": [
+    "Ik heb een nieuwe fiets"
+   ],
+   "e": "<i>de fiets</i> → <b>nieuwe</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Quale è corretto?",
+   "o": [
+    "een wit bed",
+    "een witte bed",
+    "een wite bed",
+    "een wit bedde"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<i>het bed</i>, con een: <b>een wit bed</b>."
+  },
+  {
+   "t": "fill",
+   "q": "De ___ kat slaapt.",
+   "h": "grijs",
+   "a": [
+    "grijze"
+   ],
+   "e": "Con <i>de</i>: -e e s → z, <b>grijze</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Dit bier is ___.",
+   "h": "buono",
+   "o": [
+    "lekker",
+    "lekkere"
+   ],
+   "a": 0,
+   "e": "Dopo il verbo: nessuna -e."
+  },
+  {
+   "t": "order",
+   "q": "Abitano in una grande città.",
+   "a": "Ze wonen in een grote stad",
+   "alt": [
+    "In een grote stad wonen ze"
+   ],
+   "x": [
+    "groot",
+    "het"
+   ],
+   "e": "<i>de stad</i> → <b>een grote stad</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Il cane nero è piccolo.",
+   "a": [
+    "De zwarte hond is klein"
+   ],
+   "e": "Davanti al nome <b>zwarte</b>, dopo il verbo <b>klein</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Hij heeft een ___ auto.",
+   "h": "snel",
+   "a": [
+    "snelle"
+   ],
+   "e": "<i>de auto</i>: -e e vocale breve → <b>snelle</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Ik drink ___ water.",
+   "h": "freddo",
+   "o": [
+    "koud",
+    "koude"
+   ],
+   "a": 0,
+   "e": "<i>het water</i>, senza articolo: nessuna -e, <b>koud water</b>."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "g": {
+    "rode": "rosso (con -e)",
+    "rood": "senza -e: wijn è una de-parola",
+    "roode": "forma che non esiste: oo diventa o",
+    "rodde": "forma che non esiste"
+   },
+   "t": "Bevo un bicchiere di vino rosso."
+  },
+  "1": {
+   "g": {
+    "klein": "piccolo (een + het-parola)",
+    "kleine": "con -e: qui non serve, het dorp"
+   },
+   "t": "Abitiamo in un piccolo paese."
+  },
+  "2": {
+   "t": "È un cane affettuoso."
+  },
+  "5": {
+   "g": {
+    "een wit bed": "un letto bianco (giusto)",
+    "een witte bed": "bed è una het-parola: con een niente -e",
+    "een wite bed": "bed è una het-parola: niente -e (e con -e si scriverebbe witte)",
+    "een wit bedde": "forma che non esiste"
+   },
+   "t": "un letto bianco"
+  },
+  "6": {
+   "t": "Il gatto grigio dorme."
+  },
+  "7": {
+   "g": {
+    "lekker": "buono (dopo il verbo)",
+    "lekkere": "con -e solo davanti al nome"
+   },
+   "t": "Questa birra è buona."
+  },
+  "10": {
+   "t": "Ha un'auto veloce."
+  },
+  "11": {
+   "g": {
+    "koud": "freddo (het-parola senza articolo)",
+    "koude": "con -e: qui non serve, het water"
+   },
+   "t": "Bevo acqua fredda."
+  }
+ }
+}

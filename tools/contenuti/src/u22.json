@@ -1,0 +1,474 @@
+{
+ "id": "u22",
+ "n": 22,
+ "module": 5,
+ "nl": "Verkleinwoorden",
+ "it": "I diminutivi",
+ "note": "\n<h3>L'idea</h3>\n<p>In italiano formi i diminutivi con -ino, -etto, -ello: casetta, gattino. In olandese c'è una sola famiglia di desinenze, tutte basate su <b>-je</b>: <i>huis → huisje</i> (casetta), <i>kat → katje</i> (gattino). Gli olandesi e i fiamminghi usano i diminutivi molto più di noi: non solo per le cose piccole, ma anche per affetto, per rendere una frase più leggera e informale, o con un significato tutto nuovo.</p>\n<h3>Due regole fisse</h3>\n<ul>\n<li>Il diminutivo è <b>sempre het</b>, anche se il nome base è una de-parola: <i>de hond → het hondje</i>.</li>\n<li>Il plurale si fa sempre con <b>-s</b>: <i>het hondje → de hondjes</i>.</li>\n</ul>\n<h3>Quale desinenza?</h3>\n<p>La forma dipende dal suono finale della parola. Non devi impararla a memoria: è quella che si pronuncia più facilmente.</p>\n<table><tr><th>desinenza</th><th>quando</th><th>esempi</th></tr>\n<tr><td>-je</td><td>dopo la maggior parte delle consonanti (p, t, k, d, f, s...)</td><td>boek → boekje, hond → hondje, huis → huisje</td></tr>\n<tr><td>-tje</td><td>dopo una vocale; dopo l, n, r con vocale lunga prima; dopo -el, -en, -er finali</td><td>auto → autootje, stoel → stoeltje, deur → deurtje, tafel → tafeltje</td></tr>\n<tr><td>-pje</td><td>dopo m con vocale lunga prima, e dopo -lm, -rm</td><td>boom → boompje, film → filmpje</td></tr>\n<tr><td>-etje</td><td>dopo vocale breve accentata + l, m, n, r, ng (la consonante raddoppia)</td><td>bal → balletje, man → mannetje, ring → ringetje</td></tr>\n<tr><td>-kje</td><td>dopo -ing non accentato: ng diventa nk</td><td>koning → koninkje</td></tr></table>\n<p>Nelle parole che finiscono in <b>a, o, u</b> la vocale si raddoppia per restare lunga: <i>auto → autootje</i>, <i>menu → menuutje</i>.</p>\n<h3>Diminutivi con un significato proprio</h3>\n<p>Alcuni diminutivi sono diventati parole a sé, da imparare come tali:</p>\n<ul>\n<li><b>het broodje</b>: il panino (non \"il pane piccolo\"). <i>Een broodje kaas</i> = un panino al formaggio.</li>\n<li><b>het koekje</b>: il biscotto.</li>\n<li><b>het kopje</b>: la tazzina. <i>Een kopje koffie</i>.</li>\n<li><b>het ijsje</b>: un gelato (la porzione, il cono).</li>\n<li><b>het biertje</b>: una birra, detto in modo informale e simpatico.</li>\n<li><b>het meisje</b>: la ragazza (unità 3).</li>\n<li><b>een beetje</b>: un po'. <i>Ik spreek een beetje Nederlands.</i></li>\n</ul>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Tenere l'articolo della parola base: <s>de hondje</s> → <b>het hondje</b>.</li>\n<li>Fare il plurale con -en: <s>twee huisjen</s> → <b>twee huisjes</b>.</li>\n<li>Aggiungere sempre -je: <s>autoje</s>, <s>balje</s> → <b>autootje</b>, <b>balletje</b>.</li>\n<li>Tradurre \"un panino\" con <s>een klein brood</s> → <b>een broodje</b>.</li>\n</ul>",
+ "vlaams": "Nel parlato fiammingo il diminutivo finisce spesso in <b>-ke</b> invece di -je: \"een manneke\" (un ometto), da cui il nome del <b>Manneken Pis</b> di Bruxelles. Al bar in Belgio si chiede volentieri \"<b>een pintje</b>\", cioè una birra chiara alla spina.",
+ "vocab": [
+  [
+   "het brood",
+   "il pane"
+  ],
+  [
+   "het broodje",
+   "il panino"
+  ],
+  [
+   "het bier",
+   "la birra"
+  ],
+  [
+   "het koekje",
+   "il biscotto"
+  ],
+  [
+   "de kop",
+   "la tazza"
+  ],
+  [
+   "het kopje",
+   "la tazzina"
+  ],
+  [
+   "het ijs",
+   "il gelato"
+  ],
+  [
+   "de stoel",
+   "la sedia"
+  ],
+  [
+   "de kamer",
+   "la stanza"
+  ],
+  [
+   "de bal",
+   "la palla"
+  ],
+  [
+   "de film",
+   "il film"
+  ],
+  [
+   "de deur",
+   "la porta"
+  ],
+  [
+   "de hond",
+   "il cane"
+  ],
+  [
+   "de kat",
+   "il gatto"
+  ],
+  [
+   "de koning",
+   "il re"
+  ],
+  [
+   "klein",
+   "piccolo"
+  ],
+  [
+   "lekker",
+   "buono (di sapore)"
+  ]
+ ],
+ "core": [
+  [
+   "-je",
+   "diminutivo (regola generale)"
+  ],
+  [
+   "-tje",
+   "dopo vocale, o dopo l, n, r con vocale lunga"
+  ],
+  [
+   "-pje",
+   "dopo m con vocale lunga"
+  ],
+  [
+   "-etje",
+   "dopo vocale breve + l, m, n, r, ng"
+  ],
+  [
+   "-kje",
+   "-ing diventa -inkje"
+  ],
+  [
+   "een beetje",
+   "un po'"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "de hond → ___ hondje",
+   "o": [
+    "het",
+    "de"
+   ],
+   "a": 0,
+   "e": "I diminutivi sono sempre <b>het</b>.",
+   "g": {
+    "het": "articolo di tutti i diminutivi",
+    "de": "no: il diminutivo è sempre het"
+   },
+   "tt": "il cane → il cagnolino"
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "het boek → het ___",
+   "o": [
+    "boekje",
+    "boektje",
+    "boekpje",
+    "boekjen"
+   ],
+   "a": 0,
+   "e": "Dopo k: <b>-je</b>.",
+   "g": {
+    "boekje": "il libretto",
+    "boektje": "forma che non esiste: dopo k basta -je",
+    "boekpje": "forma che non esiste",
+    "boekjen": "forma che non esiste"
+   },
+   "tt": "il libro → il libretto"
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "de stoel → het ___",
+   "o": [
+    "stoeltje",
+    "stoelje",
+    "stoelletje",
+    "stoelpje"
+   ],
+   "a": 0,
+   "e": "Vocale lunga (oe) + l: <b>-tje</b>.",
+   "g": {
+    "stoeltje": "la seggiolina",
+    "stoelje": "forma che non esiste: dopo vocale lunga + l serve -tje",
+    "stoelletje": "forma che non esiste: -etje solo dopo vocale breve",
+    "stoelpje": "forma che non esiste"
+   },
+   "tt": "la sedia → la seggiolina"
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "de boom → het ___",
+   "o": [
+    "boompje",
+    "boomje",
+    "boomtje",
+    "boometje"
+   ],
+   "a": 0,
+   "e": "Vocale lunga + m: <b>-pje</b>.",
+   "g": {
+    "boompje": "l'alberello",
+    "boomje": "forma che non esiste",
+    "boomtje": "forma che non esiste: dopo m serve -pje",
+    "boometje": "forma che non esiste: la vocale è lunga"
+   },
+   "tt": "l'albero → l'alberello"
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "de bal → het ___",
+   "o": [
+    "balletje",
+    "baltje",
+    "balje",
+    "balpje"
+   ],
+   "a": 0,
+   "e": "Vocale breve + l: la l raddoppia e si aggiunge <b>-etje</b>.",
+   "g": {
+    "balletje": "la pallina",
+    "baltje": "forma che non esiste: la a è breve",
+    "balje": "forma che non esiste",
+    "balpje": "forma che non esiste"
+   },
+   "tt": "la palla → la pallina"
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "de auto → het ___",
+   "o": [
+    "autootje",
+    "autotje",
+    "autoje",
+    "auto'tje"
+   ],
+   "a": 0,
+   "e": "Dopo -o la vocale raddoppia: <b>autootje</b>.",
+   "g": {
+    "autootje": "la macchinina",
+    "autotje": "ortografia sbagliata: la o va raddoppiata",
+    "autoje": "forma che non esiste: dopo vocale serve -tje",
+    "auto'tje": "forma che non esiste: niente apostrofo"
+   },
+   "tt": "l'auto → la macchinina"
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "de koning → het ___",
+   "o": [
+    "koninkje",
+    "koningje",
+    "koningetje",
+    "koningtje"
+   ],
+   "a": 0,
+   "e": "-ing non accentato: ng → nk + <b>-je</b>.",
+   "g": {
+    "koninkje": "il piccolo re, il reuccio",
+    "koningje": "forma che non esiste: ng diventa nk",
+    "koningetje": "forma che non esiste: -ing non è accentato",
+    "koningtje": "forma che non esiste"
+   },
+   "tt": "il re → il reuccio"
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "de tafel → het ___",
+   "o": [
+    "tafeltje",
+    "tafelje",
+    "tafelletje",
+    "tafelpje"
+   ],
+   "a": 0,
+   "e": "Dopo -el finale: <b>-tje</b>.",
+   "g": {
+    "tafeltje": "il tavolino",
+    "tafelje": "forma che non esiste: dopo -el serve -tje",
+    "tafelletje": "forma che non esiste: -el non è accentato",
+    "tafelpje": "forma che non esiste"
+   },
+   "tt": "il tavolo → il tavolino"
+  },
+  {
+   "t": "fill",
+   "q": "één huisje → twee ___",
+   "a": [
+    "huisjes"
+   ],
+   "e": "Plurale dei diminutivi: sempre <b>-s</b>.",
+   "tt": "una casetta → due casette"
+  },
+  {
+   "t": "fill",
+   "q": "de kat → het ___",
+   "h": "diminutivo",
+   "a": [
+    "katje"
+   ],
+   "e": "Dopo t: <b>-je</b>, katje.",
+   "tt": "il gatto → il gattino"
+  }
+ ],
+ "items": [
+  {
+   "t": "fill",
+   "q": "Een ___ kaas, alstublieft.",
+   "h": "panino",
+   "a": [
+    "broodje"
+   ],
+   "e": "<b>het broodje</b> = il panino."
+  },
+  {
+   "t": "mc",
+   "q": "'een koekje' è:",
+   "o": [
+    "un biscotto",
+    "una piccola torta",
+    "un cuoco",
+    "un panino"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<b>het koekje</b> = il biscotto."
+  },
+  {
+   "t": "mc",
+   "q": "Het meisje zit met ___ katje in de tuin.",
+   "o": [
+    "het",
+    "de"
+   ],
+   "a": 0,
+   "e": "Diminutivo → <b>het</b> katje."
+  },
+  {
+   "t": "fill",
+   "q": "We hebben twee ___.",
+   "h": "de hond, diminutivo plurale",
+   "a": [
+    "hondjes"
+   ],
+   "e": "hond → hondje → <b>hondjes</b>."
+  },
+  {
+   "t": "order",
+   "q": "Il bambino mangia un biscotto.",
+   "a": "Het kind eet een koekje",
+   "x": [
+    "de",
+    "koektje"
+   ],
+   "e": "<b>het</b> kind, een <b>koekje</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Una birra, per favore.",
+   "a": [
+    "Een biertje alstublieft",
+    "Een bier alstublieft",
+    "Een pintje alstublieft",
+    "Een biertje graag",
+    "Een bier graag",
+    "Een pintje graag",
+    "Een biertje alsjeblieft",
+    "Een bier alsjeblieft",
+    "Een pintje alsjeblieft"
+   ],
+   "e": "Al bar si dice volentieri <b>een biertje</b> (in Belgio anche: een pintje)."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "de deur → het ___",
+   "o": [
+    "deurtje",
+    "deurje",
+    "deurretje",
+    "deurpje"
+   ],
+   "a": 0,
+   "e": "Vocale lunga (eu) + r: <b>-tje</b>."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "de film → het ___",
+   "o": [
+    "filmpje",
+    "filmje",
+    "filmetje",
+    "filmtje"
+   ],
+   "a": 0,
+   "e": "Dopo -lm: <b>-pje</b>, filmpje."
+  },
+  {
+   "t": "fill",
+   "q": "Mijn zus woont in een klein ___.",
+   "h": "huis, diminutivo",
+   "a": [
+    "huisje"
+   ],
+   "e": "huis → <b>huisje</b>."
+  },
+  {
+   "t": "tr",
+   "q": "I bambini mangiano un gelato.",
+   "a": [
+    "De kinderen eten een ijsje",
+    "De kinderen eten een ijs"
+   ],
+   "e": "<b>een ijsje</b> = un gelato (porzione)."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "Spreek je Nederlands? — Ja, een ___.",
+   "o": [
+    "beetje",
+    "beet",
+    "bietje",
+    "beetjes"
+   ],
+   "a": 0,
+   "e": "<b>een beetje</b> = un po'."
+  },
+  {
+   "t": "order",
+   "q": "I gattini sono nella stanza.",
+   "a": "De katjes zijn in de kamer",
+   "alt": [
+    "In de kamer zijn de katjes"
+   ],
+   "x": [
+    "het",
+    "is"
+   ],
+   "e": "Al plurale anche i diminutivi prendono <b>de</b>: de katjes."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "t": "Un panino al formaggio, per favore."
+  },
+  "1": {
+   "t": "un biscotto"
+  },
+  "2": {
+   "g": {
+    "het": "articolo di tutti i diminutivi",
+    "de": "no: il diminutivo è sempre het"
+   },
+   "t": "La ragazza è seduta in giardino con il gattino."
+  },
+  "3": {
+   "t": "Abbiamo due cagnolini."
+  },
+  "5": {
+   "t": "Una birra, per favore."
+  },
+  "6": {
+   "g": {
+    "deurtje": "la porticina",
+    "deurje": "forma che non esiste: dopo vocale lunga + r serve -tje",
+    "deurretje": "forma che non esiste: la eu è lunga",
+    "deurpje": "forma che non esiste"
+   },
+   "t": "la porta → la porticina"
+  },
+  "7": {
+   "g": {
+    "filmpje": "il filmato, il video breve",
+    "filmje": "forma che non esiste",
+    "filmetje": "forma che non esiste",
+    "filmtje": "forma che non esiste: dopo -lm serve -pje"
+   },
+   "t": "il film → il filmato"
+  },
+  "8": {
+   "t": "Mia sorella abita in una casetta."
+  },
+  "9": {
+   "t": "I bambini mangiano un gelato."
+  },
+  "10": {
+   "g": {
+    "beetje": "un po'",
+    "beet": "morso: parola diversa",
+    "bietje": "forma che non esiste",
+    "beetjes": "plurale: qui non si usa"
+   },
+   "t": "Parli olandese? — Sì, un po'."
+  }
+ }
+}

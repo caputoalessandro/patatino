@@ -1,0 +1,3130 @@
+[
+ {
+  "id": "v2",
+  "unit": "u10",
+  "t": "Il verbo al secondo posto",
+  "s": "Soggetto, verbo, resto",
+  "rule": "Nella frase principale il verbo coniugato sta sempre al <b>secondo posto</b>. In queste frasi al primo posto c'è il soggetto: <b>soggetto – verbo – resto</b>. Se metti un luogo o un tempo all'inizio, il soggetto passa dopo il verbo.",
+  "items": [
+   {
+    "it": "Lavoro a Bruxelles.",
+    "a": [
+     "Ik",
+     "werk",
+     "in Brussel"
+    ],
+    "alt": [
+     [
+      "In Brussel",
+      "werk",
+      "ik"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Soggetto <b>ik</b>, poi il verbo <b>werk</b> al 2° posto, poi il luogo."
+   },
+   {
+    "it": "Mia sorella abita a Gand.",
+    "a": [
+     "Mijn zus",
+     "woont",
+     "in Gent"
+    ],
+    "alt": [
+     [
+      "In Gent",
+      "woont",
+      "mijn zus"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "<b>Mijn zus</b> è un solo blocco (il soggetto), quindi <b>woont</b> è comunque al 2° posto."
+   },
+   {
+    "it": "Bevo un caffè.",
+    "a": [
+     "Ik",
+     "drink",
+     "een koffie"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Soggetto – verbo – oggetto, come in italiano, ma il soggetto non si omette mai."
+   },
+   {
+    "it": "Mio padre legge il giornale.",
+    "a": [
+     "Mijn vader",
+     "leest",
+     "de krant"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Il verbo <b>leest</b> viene subito dopo il soggetto, l'oggetto dopo il verbo."
+   },
+   {
+    "it": "Parliamo olandese.",
+    "a": [
+     "Wij",
+     "spreken",
+     "Nederlands"
+    ],
+    "alt": [
+     [
+      "Nederlands",
+      "spreken",
+      "wij"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "<b>Wij</b> è obbligatorio; il verbo è al 2° posto."
+   },
+   {
+    "it": "I bambini giocano in giardino.",
+    "a": [
+     "De kinderen",
+     "spelen",
+     "in de tuin"
+    ],
+    "alt": [
+     [
+      "In de tuin",
+      "spelen",
+      "de kinderen"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Soggetto (due parole, un blocco) – verbo – luogo."
+   },
+   {
+    "it": "Il nostro appartamento è molto bello.",
+    "a": [
+     "Ons appartement",
+     "is",
+     "heel mooi"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Anche <b>is</b> è un verbo coniugato: 2° posto."
+   },
+   {
+    "it": "Il treno è in ritardo.",
+    "a": [
+     "De trein",
+     "is",
+     "te laat"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Soggetto – verbo – resto: <b>te laat</b> chiude la frase."
+   },
+   {
+    "it": "Il negozio chiude alle sei.",
+    "a": [
+     "De winkel",
+     "sluit",
+     "om zes uur"
+    ],
+    "alt": [
+     [
+      "Om zes uur",
+      "sluit",
+      "de winkel"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Il verbo <b>sluit</b> al 2° posto; se metti l'ora all'inizio, il soggetto va dopo il verbo."
+   },
+   {
+    "it": "Marc regala dei fiori a sua madre.",
+    "a": [
+     "Marc",
+     "geeft",
+     "zijn moeder",
+     "bloemen"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Verbo al 2° posto; senza <i>aan</i>, la persona (<b>zijn moeder</b>) viene prima della cosa (<b>bloemen</b>)."
+   }
+  ]
+ },
+ {
+  "id": "inv",
+  "unit": "u10",
+  "t": "Inversione",
+  "s": "Tempo o luogo all'inizio",
+  "rule": "Se la frase comincia con un tempo o un luogo, il verbo resta al <b>2° posto</b> e il soggetto va <b>dopo</b> il verbo: <b>tempo/luogo – verbo – soggetto – resto</b>. Il primo blocco è già al suo posto.",
+  "items": [
+   {
+    "it": "Domani vado a Gand.",
+    "a": [
+     "Morgen",
+     "ga",
+     "ik",
+     "naar Gent"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "<b>Morgen</b> occupa il 1° posto, quindi <b>ga</b> e poi <b>ik</b>."
+   },
+   {
+    "it": "A Gand abita mia zia.",
+    "a": [
+     "In Gent",
+     "woont",
+     "mijn tante"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Luogo all'inizio → verbo → soggetto."
+   },
+   {
+    "it": "Oggi lavoro a casa.",
+    "a": [
+     "Vandaag",
+     "werk",
+     "ik",
+     "thuis"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Dopo <b>vandaag</b> viene subito il verbo, poi il soggetto <b>ik</b>."
+   },
+   {
+    "it": "Stasera cuciniamo la pasta.",
+    "a": [
+     "Vanavond",
+     "koken",
+     "we",
+     "pasta"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Inversione: <b>koken we</b>, non <s>we koken</s>."
+   },
+   {
+    "it": "Il sabato andiamo al mercato.",
+    "a": [
+     "Op zaterdag",
+     "gaan",
+     "we",
+     "naar de markt"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Tempo al 1° posto, verbo al 2°, soggetto al 3°."
+   },
+   {
+    "it": "Dopo il lavoro bevo una birra.",
+    "a": [
+     "Na het werk",
+     "drink",
+     "ik",
+     "een pintje"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "<b>Na het werk</b> è un solo elemento: dopo viene il verbo. (<i>Een pintje</i> = una birra, in Belgio.)"
+   },
+   {
+    "it": "Alle otto comincia la lezione.",
+    "a": [
+     "Om acht uur",
+     "begint",
+     "de les"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Ora all'inizio → <b>begint</b> → soggetto."
+   },
+   {
+    "it": "D'estate andiamo spesso al mare.",
+    "a": [
+     "In de zomer",
+     "gaan",
+     "we",
+     "vaak",
+     "naar zee"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Verbo, soggetto, e poi l'avverbio <b>vaak</b> prima del luogo."
+   },
+   {
+    "it": "Ogni giorno mio figlio va a scuola in bici.",
+    "a": [
+     "Elke dag",
+     "gaat",
+     "mijn zoon",
+     "met de fiets",
+     "naar school"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Verbo, soggetto, poi modo (<b>met de fiets</b>) prima del luogo (<b>naar school</b>)."
+   },
+   {
+    "it": "Domattina mia madre chiama il medico.",
+    "a": [
+     "Morgenvroeg",
+     "belt",
+     "mijn moeder",
+     "de dokter"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Dopo il tempo: verbo <b>belt</b>, soggetto, oggetto."
+   }
+  ]
+ },
+ {
+  "id": "tmp",
+  "unit": "u10",
+  "t": "Tempo – modo – luogo",
+  "s": "Quando, come, dove",
+  "rule": "Dopo il verbo le informazioni seguono di solito l'ordine <b>tempo – modo – luogo</b>: <i>Ik ga <b>morgen</b> <b>met de trein</b> <b>naar Gent</b></i>. Il soggetto è già al suo posto.",
+  "items": [
+   {
+    "it": "Domani vado a Gand.",
+    "a": [
+     "Ik",
+     "ga",
+     "morgen",
+     "naar Gent"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Prima il tempo (<b>morgen</b>), poi il luogo (<b>naar Gent</b>)."
+   },
+   {
+    "it": "Stasera mangiamo a casa.",
+    "a": [
+     "We",
+     "eten",
+     "vanavond",
+     "thuis"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Tempo prima del luogo: <b>vanavond thuis</b>."
+   },
+   {
+    "it": "Mio fratello va al lavoro in bici.",
+    "a": [
+     "Mijn broer",
+     "gaat",
+     "met de fiets",
+     "naar het werk"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Modo (<b>met de fiets</b>) prima del luogo."
+   },
+   {
+    "it": "Domani vado a Gand in treno.",
+    "a": [
+     "Ik",
+     "ga",
+     "morgen",
+     "met de trein",
+     "naar Gent"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Tempo – modo – luogo: <b>morgen – met de trein – naar Gent</b>."
+   },
+   {
+    "it": "Lavora ogni giorno a Bruxelles.",
+    "a": [
+     "Ze",
+     "werkt",
+     "elke dag",
+     "in Brussel"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Il tempo (<b>elke dag</b>) viene prima del luogo."
+   },
+   {
+    "it": "Viene in ufficio alle nove con l'autobus.",
+    "a": [
+     "Hij",
+     "komt",
+     "om negen uur",
+     "met de bus",
+     "naar kantoor"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Tempo – modo – luogo, anche se in italiano l'ordine è diverso."
+   },
+   {
+    "it": "Sabato andiamo al mare con gli amici.",
+    "a": [
+     "We",
+     "gaan",
+     "zaterdag",
+     "met vrienden",
+     "naar zee"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Quando (<b>zaterdag</b>), con chi/come (<b>met vrienden</b>), dove (<b>naar zee</b>)."
+   },
+   {
+    "it": "Oggi i miei genitori vanno ad Anversa in macchina.",
+    "a": [
+     "Mijn ouders",
+     "gaan",
+     "vandaag",
+     "met de auto",
+     "naar Antwerpen"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Tempo – modo – luogo: <b>vandaag – met de auto – naar Antwerpen</b>."
+   },
+   {
+    "it": "Mia sorella pedala ogni mattina nel parco.",
+    "a": [
+     "Mijn zus",
+     "fietst",
+     "elke ochtend",
+     "in het park"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Il tempo prima del luogo."
+   },
+   {
+    "it": "Domani alle otto i bambini vanno a scuola con l'autobus.",
+    "a": [
+     "De kinderen",
+     "gaan",
+     "morgen",
+     "om acht uur",
+     "met de bus",
+     "naar school"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Tempo generico prima di quello preciso (<b>morgen om acht uur</b>), poi modo e luogo."
+   }
+  ]
+ },
+ {
+  "id": "q",
+  "unit": "u7",
+  "t": "Le domande",
+  "s": "Verbo all'inizio o dopo la parola interrogativa",
+  "rule": "Domanda sì/no: il <b>verbo</b> va al <b>1° posto</b>: <i>Woon je in Gent?</i> Con una parola interrogativa: <b>parola interrogativa – verbo – soggetto – resto</b>: <i>Waar woon je?</i> Con <i>je/jij</i> dopo il verbo cade la <b>-t</b>.",
+  "items": [
+   {
+    "it": "Abiti a Gand?",
+    "a": [
+     "Woon",
+     "je",
+     "in Gent"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     0
+    ],
+    "end": [],
+    "e": "Domanda sì/no: verbo al 1° posto. <b>Woon je</b>, senza -t."
+   },
+   {
+    "it": "Parli francese?",
+    "a": [
+     "Spreek",
+     "je",
+     "Frans"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     0
+    ],
+    "end": [],
+    "e": "Verbo, soggetto, resto."
+   },
+   {
+    "it": "Hai un giardino?",
+    "a": [
+     "Heb",
+     "je",
+     "een tuin"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     0
+    ],
+    "end": [],
+    "e": "Il verbo <b>heb</b> apre la domanda."
+   },
+   {
+    "it": "Dove abiti?",
+    "a": [
+     "Waar",
+     "woon",
+     "je"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Parola interrogativa, poi subito il verbo, poi il soggetto."
+   },
+   {
+    "it": "Cosa bevi?",
+    "a": [
+     "Wat",
+     "drink",
+     "jij"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "<b>Wat</b> al 1° posto, verbo al 2°."
+   },
+   {
+    "it": "Come si chiama tuo fratello?",
+    "a": [
+     "Hoe",
+     "heet",
+     "je broer"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Parola interrogativa – verbo – soggetto."
+   },
+   {
+    "it": "Quanto costa il formaggio?",
+    "a": [
+     "Hoeveel",
+     "kost",
+     "de kaas"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "<b>Hoeveel</b>, poi il verbo, poi il soggetto."
+   },
+   {
+    "it": "Domani lavori a casa?",
+    "a": [
+     "Werk",
+     "je",
+     "morgen",
+     "thuis"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     0
+    ],
+    "end": [],
+    "e": "Verbo al 1° posto; dopo il soggetto, tempo prima del luogo."
+   },
+   {
+    "it": "Quando andate a Bruges?",
+    "a": [
+     "Wanneer",
+     "gaan",
+     "jullie",
+     "naar Brugge"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Parola interrogativa – verbo – soggetto – resto."
+   },
+   {
+    "it": "Perché studi l'olandese?",
+    "a": [
+     "Waarom",
+     "leer",
+     "je",
+     "Nederlands"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "<b>Waarom leer je</b>: verbo al 2° posto, soggetto subito dopo."
+   }
+  ]
+ },
+ {
+  "id": "mod",
+  "unit": "u9",
+  "t": "Verbi modali",
+  "s": "L'infinito va alla fine",
+  "rule": "Il verbo modale (<i>willen, kunnen, moeten, mogen</i>) è coniugato e sta al <b>2° posto</b>; l'<b>infinito</b> va <b>alla fine</b>: <i>Ik <b>wil</b> koffie <b>drinken</b></i>. Tutto il resto sta in mezzo.",
+  "items": [
+   {
+    "it": "Voglio bere un caffè.",
+    "a": [
+     "Ik",
+     "wil",
+     "koffie",
+     "drinken"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     3
+    ],
+    "e": "<b>wil</b> al 2° posto, <b>drinken</b> in fondo."
+   },
+   {
+    "it": "Qui puoi parcheggiare.",
+    "a": [
+     "Je",
+     "mag",
+     "hier",
+     "parkeren"
+    ],
+    "alt": [
+     [
+      "Hier",
+      "mag",
+      "je",
+      "parkeren"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     3
+    ],
+    "e": "Modale al 2° posto, infinito alla fine; <b>hier</b> sta in mezzo (o all'inizio, con inversione)."
+   },
+   {
+    "it": "Domani dobbiamo lavorare.",
+    "a": [
+     "We",
+     "moeten",
+     "morgen",
+     "werken"
+    ],
+    "alt": [
+     [
+      "Morgen",
+      "moeten",
+      "we",
+      "werken"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     3
+    ],
+    "e": "<b>werken</b> va in fondo, dopo <b>morgen</b>."
+   },
+   {
+    "it": "Mi puoi aiutare?",
+    "a": [
+     "Kun",
+     "je",
+     "me",
+     "helpen"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     0
+    ],
+    "end": [
+     3
+    ],
+    "e": "Domanda: modale al 1° posto, infinito sempre alla fine."
+   },
+   {
+    "it": "Sa cucinare bene.",
+    "a": [
+     "Hij",
+     "kan",
+     "goed",
+     "koken"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     3
+    ],
+    "e": "<b>kan</b> al 2° posto, <b>koken</b> alla fine, l'avverbio in mezzo."
+   },
+   {
+    "it": "Mia sorella vuole abitare ad Anversa.",
+    "a": [
+     "Mijn zus",
+     "wil",
+     "in Antwerpen",
+     "wonen"
+    ],
+    "alt": [
+     [
+      "In Antwerpen",
+      "wil",
+      "mijn zus",
+      "wonen"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     3
+    ],
+    "e": "Il luogo sta in mezzo, <b>wonen</b> chiude la frase."
+   },
+   {
+    "it": "Vogliamo comprare una bici nuova.",
+    "a": [
+     "Wij",
+     "willen",
+     "een nieuwe fiets",
+     "kopen"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     3
+    ],
+    "e": "L'oggetto in mezzo, l'infinito <b>kopen</b> in fondo."
+   },
+   {
+    "it": "Qui non puoi fumare.",
+    "a": [
+     "Je",
+     "mag",
+     "hier",
+     "niet",
+     "roken"
+    ],
+    "alt": [
+     [
+      "Hier",
+      "mag",
+      "je",
+      "niet",
+      "roken"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     4
+    ],
+    "e": "<b>niet</b> sta subito prima dell'infinito finale."
+   },
+   {
+    "it": "Stasera devo pulire la cucina.",
+    "a": [
+     "Ik",
+     "moet",
+     "vanavond",
+     "de keuken",
+     "poetsen"
+    ],
+    "alt": [
+     [
+      "Vanavond",
+      "moet",
+      "ik",
+      "de keuken",
+      "poetsen"
+     ],
+     [
+      "Ik",
+      "moet",
+      "de keuken",
+      "vanavond",
+      "poetsen"
+     ],
+     [
+      "De keuken",
+      "moet",
+      "ik",
+      "vanavond",
+      "poetsen"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     4
+    ],
+    "e": "<b>poetsen</b> (pulire, in Belgio) va in fondo; tutto il resto sta tra modale e infinito."
+   },
+   {
+    "it": "Quando possiamo andare a Gand?",
+    "a": [
+     "Wanneer",
+     "kunnen",
+     "we",
+     "naar Gent",
+     "gaan"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     4
+    ],
+    "e": "Parola interrogativa, modale, soggetto… e <b>gaan</b> alla fine."
+   }
+  ]
+ },
+ {
+  "id": "sep",
+  "unit": "u17",
+  "t": "Verbi separabili",
+  "s": "La particella va alla fine",
+  "rule": "Nei verbi separabili (<i>opstaan, opbellen, meenemen</i>) la parte coniugata sta al <b>2° posto</b> e la <b>particella</b> va <b>alla fine</b>: <i>Ik <b>sta</b> om zeven uur <b>op</b></i>. Con un modale il verbo resta <b>intero</b> alla fine: <i>Ik moet vroeg <b>opstaan</b></i>.",
+  "items": [
+   {
+    "it": "Mi alzo alle sette.",
+    "a": [
+     "Ik",
+     "sta",
+     "om zeven uur",
+     "op"
+    ],
+    "alt": [
+     [
+      "Om zeven uur",
+      "sta",
+      "ik",
+      "op"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     3
+    ],
+    "e": "<b>opstaan</b>: <b>sta</b> al 2° posto, <b>op</b> alla fine."
+   },
+   {
+    "it": "Il treno arriva alle dieci.",
+    "a": [
+     "De trein",
+     "komt",
+     "om tien uur",
+     "aan"
+    ],
+    "alt": [
+     [
+      "Om tien uur",
+      "komt",
+      "de trein",
+      "aan"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     3
+    ],
+    "e": "<b>aankomen</b>: la particella <b>aan</b> chiude la frase."
+   },
+   {
+    "it": "Telefono a mia madre.",
+    "a": [
+     "Ik",
+     "bel",
+     "mijn moeder",
+     "op"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     3
+    ],
+    "e": "<b>opbellen</b>: l'oggetto sta tra <b>bel</b> e <b>op</b>."
+   },
+   {
+    "it": "Si porta dietro un ombrello.",
+    "a": [
+     "Hij",
+     "neemt",
+     "een paraplu",
+     "mee"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     3
+    ],
+    "e": "<b>meenemen</b>: <b>neemt … mee</b>."
+   },
+   {
+    "it": "Stasera usciamo.",
+    "a": [
+     "We",
+     "gaan",
+     "vanavond",
+     "uit"
+    ],
+    "alt": [
+     [
+      "Vanavond",
+      "gaan",
+      "we",
+      "uit"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     3
+    ],
+    "e": "<b>uitgaan</b>: <b>uit</b> alla fine, anche dopo il tempo."
+   },
+   {
+    "it": "Quando torni?",
+    "a": [
+     "Wanneer",
+     "kom",
+     "je",
+     "terug"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     3
+    ],
+    "e": "<b>terugkomen</b>: anche nella domanda la particella va in fondo."
+   },
+   {
+    "it": "Il negozio apre alle nove.",
+    "a": [
+     "De winkel",
+     "gaat",
+     "om negen uur",
+     "open"
+    ],
+    "alt": [
+     [
+      "Om negen uur",
+      "gaat",
+      "de winkel",
+      "open"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     3
+    ],
+    "e": "<b>opengaan</b>: <b>gaat … open</b>."
+   },
+   {
+    "it": "Domani devo alzarmi presto.",
+    "a": [
+     "Ik",
+     "moet",
+     "morgen",
+     "vroeg",
+     "opstaan"
+    ],
+    "alt": [
+     [
+      "Morgen",
+      "moet",
+      "ik",
+      "vroeg",
+      "opstaan"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     4
+    ],
+    "e": "Con il modale <b>moet</b> il verbo separabile resta intero alla fine: <b>opstaan</b>."
+   },
+   {
+    "it": "Domani mi puoi chiamare?",
+    "a": [
+     "Kun",
+     "je",
+     "me",
+     "morgen",
+     "opbellen"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     0
+    ],
+    "end": [
+     4
+    ],
+    "e": "Modale all'inizio (domanda), <b>opbellen</b> intero alla fine; il pronome <b>me</b> subito dopo il soggetto."
+   },
+   {
+    "it": "Stasera non voglio uscire.",
+    "a": [
+     "Ik",
+     "wil",
+     "vanavond",
+     "niet",
+     "uitgaan"
+    ],
+    "alt": [
+     [
+      "Vanavond",
+      "wil",
+      "ik",
+      "niet",
+      "uitgaan"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     4
+    ],
+    "e": "<b>niet</b> prima dell'infinito, che resta intero: <b>uitgaan</b>."
+   }
+  ]
+ },
+ {
+  "id": "perf",
+  "unit": "u19",
+  "t": "Passato prossimo",
+  "s": "Il participio va alla fine",
+  "rule": "L'ausiliare (<i>hebben</i> o <i>zijn</i>) è coniugato e sta al <b>2° posto</b>; il <b>participio</b> va <b>alla fine</b>: <i>Ik <b>heb</b> koffie <b>gedronken</b></i>. Tutto il resto sta in mezzo.",
+  "items": [
+   {
+    "it": "Ho bevuto un caffè.",
+    "a": [
+     "Ik",
+     "heb",
+     "koffie",
+     "gedronken"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     3
+    ],
+    "e": "<b>heb</b> al 2° posto, <b>gedronken</b> alla fine."
+   },
+   {
+    "it": "Siamo andati a Bruges.",
+    "a": [
+     "We",
+     "zijn",
+     "naar Brugge",
+     "gegaan"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     3
+    ],
+    "e": "Con <b>gaan</b> l'ausiliare è <b>zijn</b>; il participio chiude la frase."
+   },
+   {
+    "it": "Ieri ha lavorato.",
+    "a": [
+     "Hij",
+     "heeft",
+     "gisteren",
+     "gewerkt"
+    ],
+    "alt": [
+     [
+      "Gisteren",
+      "heeft",
+      "hij",
+      "gewerkt"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     3
+    ],
+    "e": "<b>gisteren</b> sta in mezzo (o all'inizio con inversione), <b>gewerkt</b> in fondo."
+   },
+   {
+    "it": "Cosa hai mangiato?",
+    "a": [
+     "Wat",
+     "heb",
+     "je",
+     "gegeten"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     3
+    ],
+    "e": "Parola interrogativa, ausiliare, soggetto, participio."
+   },
+   {
+    "it": "I miei genitori hanno comprato una casa nuova.",
+    "a": [
+     "Mijn ouders",
+     "hebben",
+     "een nieuw huis",
+     "gekocht"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     3
+    ],
+    "e": "L'oggetto sta tra <b>hebben</b> e <b>gekocht</b>."
+   },
+   {
+    "it": "È partita alle otto.",
+    "a": [
+     "Ze",
+     "is",
+     "om acht uur",
+     "vertrokken"
+    ],
+    "alt": [
+     [
+      "Om acht uur",
+      "is",
+      "ze",
+      "vertrokken"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     3
+    ],
+    "e": "<b>vertrekken</b> vuole <b>zijn</b>; il participio va in fondo."
+   },
+   {
+    "it": "Hai letto il giornale?",
+    "a": [
+     "Heb",
+     "je",
+     "de krant",
+     "gelezen"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     0
+    ],
+    "end": [
+     3
+    ],
+    "e": "Domanda: ausiliare al 1° posto, participio sempre alla fine."
+   },
+   {
+    "it": "Ieri sono rimasto a casa.",
+    "a": [
+     "Ik",
+     "ben",
+     "gisteren",
+     "thuis",
+     "gebleven"
+    ],
+    "alt": [
+     [
+      "Gisteren",
+      "ben",
+      "ik",
+      "thuis",
+      "gebleven"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     4
+    ],
+    "e": "Tempo prima del luogo, e <b>gebleven</b> alla fine."
+   },
+   {
+    "it": "A Gand abbiamo mangiato le patatine fritte.",
+    "a": [
+     "We",
+     "hebben",
+     "in Gent",
+     "frieten",
+     "gegeten"
+    ],
+    "alt": [
+     [
+      "In Gent",
+      "hebben",
+      "we",
+      "frieten",
+      "gegeten"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     4
+    ],
+    "e": "Il participio <b>gegeten</b> in fondo; <b>frieten</b> resta vicino al verbo."
+   },
+   {
+    "it": "L'anno scorso sono andato in Italia in treno.",
+    "a": [
+     "Ik",
+     "ben",
+     "vorig jaar",
+     "met de trein",
+     "naar Italië",
+     "gereisd"
+    ],
+    "alt": [
+     [
+      "Vorig jaar",
+      "ben",
+      "ik",
+      "met de trein",
+      "naar Italië",
+      "gereisd"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     5
+    ],
+    "e": "Tempo – modo – luogo in mezzo, il participio <b>gereisd</b> alla fine."
+   }
+  ]
+ },
+ {
+  "id": "niet",
+  "unit": "u12",
+  "t": "Dove va «niet»?",
+  "s": "Dopo l'oggetto, prima del resto",
+  "rule": "<b>niet</b> va <b>dopo</b> il verbo coniugato e l'oggetto definito (<i>Ik ken hem <b>niet</b></i>), ma <b>prima</b> di un aggettivo, una preposizione, un infinito o un participio: <i>Ik ben <b>niet</b> moe</i>, <i>Hij woont <b>niet</b> in Gent</i>.",
+  "items": [
+   {
+    "it": "Non sono stanco.",
+    "a": [
+     "Ik",
+     "ben",
+     "niet",
+     "moe"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "<b>niet</b> prima dell'aggettivo."
+   },
+   {
+    "it": "Mia sorella non fuma.",
+    "a": [
+     "Mijn zus",
+     "rookt",
+     "niet"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Senza altro dopo, <b>niet</b> sta alla fine, dopo il verbo."
+   },
+   {
+    "it": "Non lo conosco.",
+    "a": [
+     "Ik",
+     "ken",
+     "hem",
+     "niet"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "<b>niet</b> dopo l'oggetto definito <b>hem</b>."
+   },
+   {
+    "it": "Non lo capisco.",
+    "a": [
+     "Ik",
+     "begrijp",
+     "het",
+     "niet"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Il pronome <b>het</b> viene prima di <b>niet</b>."
+   },
+   {
+    "it": "La zuppa non è calda.",
+    "a": [
+     "De soep",
+     "is",
+     "niet",
+     "warm"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "<b>niet</b> prima dell'aggettivo <b>warm</b>."
+   },
+   {
+    "it": "Non abita a Gand.",
+    "a": [
+     "Hij",
+     "woont",
+     "niet",
+     "in Gent"
+    ],
+    "alt": [
+     [
+      "In Gent",
+      "woont",
+      "hij",
+      "niet"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "<b>niet</b> prima della preposizione <b>in</b>."
+   },
+   {
+    "it": "Non prendiamo la macchina.",
+    "a": [
+     "We",
+     "nemen",
+     "de auto",
+     "niet"
+    ],
+    "alt": [
+     [
+      "De auto",
+      "nemen",
+      "we",
+      "niet"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "<b>niet</b> dopo l'oggetto definito <b>de auto</b>."
+   },
+   {
+    "it": "Oggi non posso venire.",
+    "a": [
+     "Ik",
+     "kan",
+     "vandaag",
+     "niet",
+     "komen"
+    ],
+    "alt": [
+     [
+      "Vandaag",
+      "kan",
+      "ik",
+      "niet",
+      "komen"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     4
+    ],
+    "e": "<b>niet</b> prima dell'infinito, dopo il tempo."
+   },
+   {
+    "it": "Domani non andiamo a scuola.",
+    "a": [
+     "We",
+     "gaan",
+     "morgen",
+     "niet",
+     "naar school"
+    ],
+    "alt": [
+     [
+      "Morgen",
+      "gaan",
+      "we",
+      "niet",
+      "naar school"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "<b>niet</b> dopo il tempo e prima di <b>naar school</b>."
+   },
+   {
+    "it": "Non l'ho trovato.",
+    "a": [
+     "Ik",
+     "heb",
+     "het",
+     "niet",
+     "gevonden"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     4
+    ],
+    "e": "Oggetto <b>het</b>, poi <b>niet</b>, poi il participio alla fine."
+   }
+  ]
+ },
+ {
+  "id": "sub",
+  "unit": "u26",
+  "t": "Subordinate",
+  "s": "Il verbo va alla fine",
+  "rule": "Dopo <i>omdat, dat, als, of, wanneer</i> (e <i>waar</i> nelle domande indirette) comincia una subordinata: il verbo coniugato va <b>alla fine</b>: <i>…omdat het <b>regent</b></i>, <i>…dat hij ziek <b>is</b></i>. La principale resta normale: verbo al 2° posto.",
+  "items": [
+   {
+    "it": "Resto a casa perché piove.",
+    "a": [
+     "Ik",
+     "blijf",
+     "thuis",
+     "omdat",
+     "het",
+     "regent"
+    ],
+    "alt": [
+     [
+      "Omdat",
+      "het",
+      "regent",
+      "blijf",
+      "ik",
+      "thuis"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     5
+    ],
+    "e": "Dopo <b>omdat</b> il verbo <b>regent</b> va alla fine della subordinata."
+   },
+   {
+    "it": "Penso che sia malato.",
+    "a": [
+     "Ik",
+     "denk",
+     "dat",
+     "hij",
+     "ziek",
+     "is"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     5
+    ],
+    "e": "<b>dat hij ziek is</b>: il verbo in fondo, non <s>dat hij is ziek</s>."
+   },
+   {
+    "it": "Dice che la zuppa è fredda.",
+    "a": [
+     "Ze",
+     "zegt",
+     "dat",
+     "de soep",
+     "koud",
+     "is"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     5
+    ],
+    "e": "Nella subordinata con <b>dat</b> il verbo <b>is</b> va in fondo."
+   },
+   {
+    "it": "Sai se il negozio è aperto?",
+    "a": [
+     "Weet",
+     "je",
+     "of",
+     "de winkel",
+     "open",
+     "is"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     0
+    ],
+    "end": [
+     5
+    ],
+    "e": "<b>of</b> = se: anche qui il verbo va alla fine."
+   },
+   {
+    "it": "Andiamo al parco se fa bel tempo.",
+    "a": [
+     "We",
+     "gaan",
+     "naar het park",
+     "als",
+     "het",
+     "mooi weer",
+     "is"
+    ],
+    "alt": [
+     [
+      "Als",
+      "het",
+      "mooi weer",
+      "is",
+      "gaan",
+      "we",
+      "naar het park"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     6
+    ],
+    "e": "<b>als het mooi weer is</b>: verbo in fondo alla subordinata."
+   },
+   {
+    "it": "Marc non viene perché è stanco.",
+    "a": [
+     "Marc",
+     "komt",
+     "niet",
+     "omdat",
+     "hij",
+     "moe",
+     "is"
+    ],
+    "alt": [
+     [
+      "Omdat",
+      "hij",
+      "moe",
+      "is",
+      "komt",
+      "Marc",
+      "niet"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     6
+    ],
+    "e": "Principale normale (<b>komt</b> al 2° posto), subordinata con il verbo alla fine."
+   },
+   {
+    "it": "Non so dove abita.",
+    "a": [
+     "Ik",
+     "weet",
+     "niet",
+     "waar",
+     "hij",
+     "woont"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     5
+    ],
+    "e": "Domanda indiretta con <b>waar</b>: <b>woont</b> va alla fine."
+   },
+   {
+    "it": "Chiamami quando sei a casa.",
+    "a": [
+     "Bel",
+     "me",
+     "wanneer",
+     "je",
+     "thuis",
+     "bent"
+    ],
+    "alt": [
+     [
+      "Wanneer",
+      "je",
+      "thuis",
+      "bent",
+      "bel",
+      "me"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     0
+    ],
+    "end": [
+     5
+    ],
+    "e": "Imperativo all'inizio; dopo <b>wanneer</b> il verbo <b>bent</b> va in fondo."
+   },
+   {
+    "it": "Chiede se domani veniamo.",
+    "a": [
+     "Ze",
+     "vraagt",
+     "of",
+     "we",
+     "morgen",
+     "komen"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     5
+    ],
+    "e": "<b>of we morgen komen</b>: soggetto, tempo, verbo."
+   },
+   {
+    "it": "Spero che domani non piova.",
+    "a": [
+     "Ik",
+     "hoop",
+     "dat",
+     "het",
+     "morgen",
+     "niet",
+     "regent"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     6
+    ],
+    "e": "Nella subordinata <b>niet</b> sta subito prima del verbo finale."
+   }
+  ]
+ },
+ {
+  "id": "want",
+  "unit": "u26",
+  "t": "«want» o «omdat»?",
+  "s": "Stesso significato, ordine diverso",
+  "rule": "<b>want</b> e <b>omdat</b> significano entrambi «perché». Dopo <b>want</b> l'ordine è <b>normale</b> (verbo al 2° posto): <i>want het <b>is</b> koud</i>. Dopo <b>omdat</b> il verbo va <b>alla fine</b>: <i>omdat het koud <b>is</b></i>. Solo la frase con <i>omdat</i> può andare all'inizio.",
+  "items": [
+   {
+    "it": "Restiamo a casa, perché piove.",
+    "a": [
+     "We",
+     "blijven",
+     "thuis",
+     "want",
+     "het",
+     "regent"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1,
+     5
+    ],
+    "end": [],
+    "e": "Dopo <b>want</b>: soggetto – verbo, come in una frase normale."
+   },
+   {
+    "it": "Restiamo a casa perché piove.",
+    "a": [
+     "We",
+     "blijven",
+     "thuis",
+     "omdat",
+     "het",
+     "regent"
+    ],
+    "alt": [
+     [
+      "Omdat",
+      "het",
+      "regent",
+      "blijven",
+      "we",
+      "thuis"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     5
+    ],
+    "e": "Dopo <b>omdat</b> il verbo va alla fine (qui coincide con l'ordine di <i>want</i>, perché c'è solo il verbo)."
+   },
+   {
+    "it": "Prendo una giacca, perché fa freddo.",
+    "a": [
+     "Ik",
+     "neem",
+     "een jas",
+     "want",
+     "het",
+     "is",
+     "koud"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1,
+     5
+    ],
+    "end": [],
+    "e": "<b>want het is koud</b>: verbo al 2° posto."
+   },
+   {
+    "it": "Prendo una giacca perché fa freddo.",
+    "a": [
+     "Ik",
+     "neem",
+     "een jas",
+     "omdat",
+     "het",
+     "koud",
+     "is"
+    ],
+    "alt": [
+     [
+      "Omdat",
+      "het",
+      "koud",
+      "is",
+      "neem",
+      "ik",
+      "een jas"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     6
+    ],
+    "e": "<b>omdat het koud is</b>: verbo alla fine."
+   },
+   {
+    "it": "Anna non mangia niente, perché non ha fame.",
+    "a": [
+     "Anna",
+     "eet",
+     "niets",
+     "want",
+     "ze",
+     "heeft",
+     "geen honger"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1,
+     5
+    ],
+    "end": [],
+    "e": "Dopo <b>want</b>: <b>ze heeft</b>, ordine normale."
+   },
+   {
+    "it": "Anna non mangia niente perché non ha fame.",
+    "a": [
+     "Anna",
+     "eet",
+     "niets",
+     "omdat",
+     "ze",
+     "geen honger",
+     "heeft"
+    ],
+    "alt": [
+     [
+      "Omdat",
+      "ze",
+      "geen honger",
+      "heeft",
+      "eet",
+      "Anna",
+      "niets"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     6
+    ],
+    "e": "Dopo <b>omdat</b>: <b>heeft</b> in fondo."
+   },
+   {
+    "it": "Studio l'olandese, perché il mio ragazzo è belga.",
+    "a": [
+     "Ik",
+     "leer",
+     "Nederlands",
+     "want",
+     "mijn vriend",
+     "is",
+     "Belg"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1,
+     5
+    ],
+    "end": [],
+    "e": "<b>want mijn vriend is Belg</b>: verbo al 2° posto nella seconda frase."
+   },
+   {
+    "it": "Marco studia l'olandese perché lavora a Gand.",
+    "a": [
+     "Marco",
+     "leert",
+     "Nederlands",
+     "omdat",
+     "hij",
+     "in Gent",
+     "werkt"
+    ],
+    "alt": [
+     [
+      "Omdat",
+      "hij",
+      "in Gent",
+      "werkt",
+      "leert",
+      "Marco",
+      "Nederlands"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     6
+    ],
+    "e": "<b>omdat hij in Gent werkt</b>: il verbo chiude la subordinata."
+   },
+   {
+    "it": "Andiamo in treno, perché la macchina è rotta.",
+    "a": [
+     "We",
+     "gaan",
+     "met de trein",
+     "want",
+     "de auto",
+     "is",
+     "kapot"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1,
+     5
+    ],
+    "end": [],
+    "e": "<b>want</b> + ordine normale: <b>de auto is kapot</b>."
+   },
+   {
+    "it": "I bambini sono contenti perché sono in vacanza.",
+    "a": [
+     "De kinderen",
+     "zijn",
+     "blij",
+     "omdat",
+     "het",
+     "vakantie",
+     "is"
+    ],
+    "alt": [
+     [
+      "Omdat",
+      "het",
+      "vakantie",
+      "is",
+      "zijn",
+      "de kinderen",
+      "blij"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     6
+    ],
+    "e": "<b>omdat het vakantie is</b>: verbo alla fine."
+   }
+  ]
+ },
+ {
+  "id": "subfirst",
+  "unit": "u26",
+  "t": "La subordinata all'inizio",
+  "s": "Verbo, virgola, verbo",
+  "rule": "Se la frase comincia con una subordinata, questa conta come <b>1° posto</b>: subito dopo viene il <b>verbo</b> della principale, poi il soggetto: <i>Als het regent, <b>blijf ik</b> thuis</i>. Verbo – virgola – verbo. La subordinata è già al suo posto.",
+  "items": [
+   {
+    "it": "Se piove, resto a casa.",
+    "a": [
+     "Als het regent",
+     "blijf",
+     "ik",
+     "thuis"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Dopo la subordinata: <b>blijf ik</b>, non <s>ik blijf</s>."
+   },
+   {
+    "it": "Siccome sono malato, non vado al lavoro.",
+    "a": [
+     "Omdat ik ziek ben",
+     "ga",
+     "ik",
+     "niet",
+     "naar het werk"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Verbo <b>ga</b> subito dopo la virgola, poi il soggetto."
+   },
+   {
+    "it": "Se hai tempo, possiamo bere un caffè.",
+    "a": [
+     "Als je tijd hebt",
+     "kunnen",
+     "we",
+     "koffie",
+     "drinken"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [
+     4
+    ],
+    "e": "<b>kunnen we</b> dopo la subordinata, l'infinito <b>drinken</b> in fondo."
+   },
+   {
+    "it": "Quando fa bel tempo, andiamo al mare in bici.",
+    "a": [
+     "Wanneer het mooi weer is",
+     "fietsen",
+     "we",
+     "naar zee"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Verbo – virgola – verbo: <b>is, fietsen</b>."
+   },
+   {
+    "it": "Quando sono stanco, vado a letto presto.",
+    "a": [
+     "Als ik moe ben",
+     "ga",
+     "ik",
+     "vroeg",
+     "slapen"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [
+     4
+    ],
+    "e": "<b>ga ik</b>, poi l'infinito <b>slapen</b> alla fine."
+   },
+   {
+    "it": "Siccome il treno è in ritardo, arrivo più tardi.",
+    "a": [
+     "Omdat de trein te laat is",
+     "kom",
+     "ik",
+     "later"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Dopo la subordinata, inversione: <b>kom ik</b>."
+   },
+   {
+    "it": "Se vuole, può aspettare qui.",
+    "a": [
+     "Als u wilt",
+     "kunt",
+     "u",
+     "hier",
+     "wachten"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [
+     4
+    ],
+    "e": "<b>kunt u</b> dopo la virgola, <b>wachten</b> alla fine."
+   },
+   {
+    "it": "Quando torna a casa, mangiamo insieme.",
+    "a": [
+     "Wanneer hij thuiskomt",
+     "eten",
+     "we",
+     "samen"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "Nella subordinata <b>thuiskomt</b> resta intero in fondo; poi <b>eten we</b>."
+   },
+   {
+    "it": "Siccome fa freddo, mi metto la giacca.",
+    "a": [
+     "Omdat het koud is",
+     "doe",
+     "ik",
+     "mijn jas",
+     "aan"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [
+     4
+    ],
+    "e": "<b>doe ik</b> dopo la subordinata, la particella <b>aan</b> alla fine."
+   },
+   {
+    "it": "Quando sono a Bruges, mangio sempre le patatine fritte.",
+    "a": [
+     "Als ik in Brugge ben",
+     "eet",
+     "ik",
+     "altijd",
+     "frieten"
+    ],
+    "alt": [],
+    "start": 1,
+    "v": [
+     1
+    ],
+    "end": [],
+    "e": "<b>eet ik</b>, poi <b>altijd</b> prima dell'oggetto."
+   }
+  ]
+ },
+ {
+  "id": "rel",
+  "unit": "u27",
+  "t": "Frasi relative",
+  "s": "die/dat e il verbo alla fine",
+  "rule": "La frase relativa comincia con <b>die</b> (parole con <i>de</i> e plurali) o <b>dat</b> (parole con <i>het</i>) e ha il verbo <b>alla fine</b>: <i>de man <b>die</b> daar <b>woont</b></i>. Sta subito dopo la parola a cui si riferisce.",
+  "items": [
+   {
+    "it": "Ho un amico che abita a Gand.",
+    "a": [
+     "Ik",
+     "heb",
+     "een vriend",
+     "die",
+     "in Gent",
+     "woont"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     5
+    ],
+    "e": "<b>een vriend</b> è <i>de</i> → <b>die</b>; il verbo <b>woont</b> in fondo."
+   },
+   {
+    "it": "Conosci la ragazza che sta là?",
+    "a": [
+     "Ken",
+     "je",
+     "het meisje",
+     "dat",
+     "daar",
+     "staat"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     0
+    ],
+    "end": [
+     5
+    ],
+    "e": "<b>het meisje</b> → <b>dat</b>; <b>staat</b> alla fine."
+   },
+   {
+    "it": "La donna che lavora là parla italiano.",
+    "a": [
+     "De vrouw",
+     "die",
+     "daar",
+     "werkt",
+     "spreekt",
+     "Italiaans"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     4
+    ],
+    "end": [
+     3
+    ],
+    "e": "La relativa sta dentro il soggetto: <b>werkt</b> in fondo alla relativa, poi il verbo principale <b>spreekt</b>."
+   },
+   {
+    "it": "Conosco una friggitoria che fa patatine buonissime.",
+    "a": [
+     "Ik",
+     "ken",
+     "een frituur",
+     "die",
+     "heel lekkere frieten",
+     "maakt"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     5
+    ],
+    "e": "<b>de frituur</b> → <b>die</b>; il verbo <b>maakt</b> chiude la relativa."
+   },
+   {
+    "it": "La ragazza che abita accanto a me si chiama Lotte.",
+    "a": [
+     "Het meisje",
+     "dat",
+     "naast me",
+     "woont",
+     "heet",
+     "Lotte"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     4
+    ],
+    "end": [
+     3
+    ],
+    "e": "<b>dat … woont</b>, poi il verbo principale <b>heet</b>."
+   },
+   {
+    "it": "Il treno che va a Bruxelles parte alle dieci.",
+    "a": [
+     "De trein",
+     "die",
+     "naar Brussel",
+     "gaat",
+     "vertrekt",
+     "om tien uur"
+    ],
+    "alt": [
+     [
+      "Om tien uur",
+      "vertrekt",
+      "de trein",
+      "die",
+      "naar Brussel",
+      "gaat"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     4
+    ],
+    "end": [
+     3
+    ],
+    "e": "Soggetto + relativa (verbo <b>gaat</b> in fondo), poi <b>vertrekt</b> al 2° posto."
+   },
+   {
+    "it": "È quello l'uomo che cerchi?",
+    "a": [
+     "Is",
+     "dat",
+     "de man",
+     "die",
+     "je",
+     "zoekt"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     0
+    ],
+    "end": [
+     5
+    ],
+    "e": "<b>de man</b> → <b>die</b>; nella relativa <b>zoekt</b> va alla fine."
+   },
+   {
+    "it": "Il libro che leggo è molto avvincente.",
+    "a": [
+     "Het boek",
+     "dat",
+     "ik",
+     "lees",
+     "is",
+     "heel spannend"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     4
+    ],
+    "end": [
+     3
+    ],
+    "e": "<b>het boek</b> → <b>dat</b>; <b>lees</b> in fondo alla relativa, poi <b>is</b>."
+   },
+   {
+    "it": "Le persone che abitano qui sono molto gentili.",
+    "a": [
+     "De mensen",
+     "die",
+     "hier",
+     "wonen",
+     "zijn",
+     "heel vriendelijk"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     4
+    ],
+    "end": [
+     3
+    ],
+    "e": "Plurale → <b>die</b>; verbo <b>wonen</b> alla fine della relativa."
+   },
+   {
+    "it": "Il mio collega che viene da Lovanio parla tre lingue.",
+    "a": [
+     "Mijn collega",
+     "die",
+     "uit Leuven",
+     "komt",
+     "spreekt",
+     "drie talen"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     4
+    ],
+    "end": [
+     3
+    ],
+    "e": "<b>die uit Leuven komt</b>, poi il verbo principale <b>spreekt</b>."
+   }
+  ]
+ },
+ {
+  "id": "te",
+  "unit": "u25",
+  "t": "te + infinito",
+  "s": "e om … te",
+  "rule": "Dopo molti verbi ed espressioni si usa <b>te + infinito</b>, sempre <b>alla fine</b>: <i>Het begint <b>te regenen</b></i>. Per lo scopo («per…») si usa <b>om … te</b>: <i><b>om</b> brood <b>te</b> kopen</i>. Con un verbo separabile <i>te</i> va in mezzo: <i>op <b>te</b> staan</i>.",
+  "items": [
+   {
+    "it": "Comincia a piovere.",
+    "a": [
+     "Het",
+     "begint",
+     "te",
+     "regenen"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     2,
+     3
+    ],
+    "e": "<b>te regenen</b> alla fine, dopo il verbo coniugato."
+   },
+   {
+    "it": "Provo a parlare olandese.",
+    "a": [
+     "Ik",
+     "probeer",
+     "Nederlands",
+     "te",
+     "spreken"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     3,
+     4
+    ],
+    "e": "L'oggetto prima, <b>te spreken</b> in fondo."
+   },
+   {
+    "it": "Non ho voglia di cucinare.",
+    "a": [
+     "Ik",
+     "heb",
+     "geen zin",
+     "om",
+     "te",
+     "koken"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     4,
+     5
+    ],
+    "e": "<b>geen zin om … te koken</b>: <b>om</b> apre, <b>te</b> + infinito chiude."
+   },
+   {
+    "it": "Sta seduto in giardino a leggere.",
+    "a": [
+     "Hij",
+     "zit",
+     "in de tuin",
+     "te",
+     "lezen"
+    ],
+    "alt": [
+     [
+      "In de tuin",
+      "zit",
+      "hij",
+      "te",
+      "lezen"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     3,
+     4
+    ],
+    "e": "<b>zitten … te lezen</b>: «sta leggendo»; <b>te lezen</b> alla fine."
+   },
+   {
+    "it": "Non dimenticare di chiamare tua madre.",
+    "a": [
+     "Vergeet",
+     "niet",
+     "je moeder",
+     "te",
+     "bellen"
+    ],
+    "alt": [
+     [
+      "Vergeet",
+      "je moeder",
+      "niet",
+      "te",
+      "bellen"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     0
+    ],
+    "end": [
+     3,
+     4
+    ],
+    "e": "Imperativo all'inizio, <b>te bellen</b> alla fine."
+   },
+   {
+    "it": "Domani non devo lavorare.",
+    "a": [
+     "Ik",
+     "hoef",
+     "morgen",
+     "niet",
+     "te",
+     "werken"
+    ],
+    "alt": [
+     [
+      "Morgen",
+      "hoef",
+      "ik",
+      "niet",
+      "te",
+      "werken"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     4,
+     5
+    ],
+    "e": "<b>niet hoeven te</b> = non dover: <b>te werken</b> in fondo."
+   },
+   {
+    "it": "Vado dal panettiere a comprare il pane.",
+    "a": [
+     "Ik",
+     "ga",
+     "naar de bakker",
+     "om",
+     "brood",
+     "te",
+     "kopen"
+    ],
+    "alt": [
+     [
+      "Om",
+      "brood",
+      "te",
+      "kopen",
+      "ga",
+      "ik",
+      "naar de bakker"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     5,
+     6
+    ],
+    "e": "Scopo: <b>om brood te kopen</b>; <b>om</b> all'inizio, <b>te kopen</b> alla fine."
+   },
+   {
+    "it": "Non abbiamo tempo di andare al cinema.",
+    "a": [
+     "We",
+     "hebben",
+     "geen tijd",
+     "om",
+     "naar de film",
+     "te",
+     "gaan"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     5,
+     6
+    ],
+    "e": "Tra <b>om</b> e <b>te gaan</b> c'è il resto: <b>naar de film</b>."
+   },
+   {
+    "it": "Risparmia soldi per comprare una macchina.",
+    "a": [
+     "Ze",
+     "spaart",
+     "geld",
+     "om",
+     "een auto",
+     "te",
+     "kopen"
+    ],
+    "alt": [
+     [
+      "Om",
+      "een auto",
+      "te",
+      "kopen",
+      "spaart",
+      "ze",
+      "geld"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     5,
+     6
+    ],
+    "e": "<b>om een auto te kopen</b>: scopo, con <b>te</b> + infinito alla fine."
+   },
+   {
+    "it": "È difficile alzarsi presto.",
+    "a": [
+     "Het",
+     "is",
+     "moeilijk",
+     "om",
+     "vroeg",
+     "op te staan"
+    ],
+    "alt": [],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     5
+    ],
+    "e": "Verbo separabile: <b>op te staan</b>, con <b>te</b> in mezzo, alla fine."
+   }
+  ]
+ },
+ {
+  "id": "cluster",
+  "unit": "u26",
+  "t": "Due verbi in fondo",
+  "s": "moet werken o werken moet",
+  "rule": "In una subordinata con due verbi, <b>entrambi</b> vanno alla fine: <i>…omdat ik morgen <b>moet werken</b></i>, <i>…dat hij <b>is gekomen</b></i>. L'ordine dei due verbi è libero: <i>werken moet</i> e <i>gekomen is</i> sono ugualmente corretti.",
+  "items": [
+   {
+    "it": "Penso che sia venuto.",
+    "a": [
+     "Ik",
+     "denk",
+     "dat",
+     "hij",
+     "is",
+     "gekomen"
+    ],
+    "alt": [
+     [
+      "Ik",
+      "denk",
+      "dat",
+      "hij",
+      "gekomen",
+      "is"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     4,
+     5
+    ],
+    "e": "<b>is gekomen</b> o <b>gekomen is</b>: tutti e due in fondo."
+   },
+   {
+    "it": "Spero che tu possa venire.",
+    "a": [
+     "Ik",
+     "hoop",
+     "dat",
+     "je",
+     "kunt",
+     "komen"
+    ],
+    "alt": [
+     [
+      "Ik",
+      "hoop",
+      "dat",
+      "je",
+      "komen",
+      "kunt"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     4,
+     5
+    ],
+    "e": "Modale e infinito insieme alla fine della subordinata."
+   },
+   {
+    "it": "Sa che domani devo lavorare.",
+    "a": [
+     "Ze",
+     "weet",
+     "dat",
+     "ik",
+     "morgen",
+     "moet",
+     "werken"
+    ],
+    "alt": [
+     [
+      "Ze",
+      "weet",
+      "dat",
+      "ik",
+      "morgen",
+      "werken",
+      "moet"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     5,
+     6
+    ],
+    "e": "<b>morgen</b> resta prima dei due verbi: <b>moet werken</b> / <b>werken moet</b>."
+   },
+   {
+    "it": "Non so se vuole venire.",
+    "a": [
+     "Ik",
+     "weet",
+     "niet",
+     "of",
+     "hij",
+     "wil",
+     "komen"
+    ],
+    "alt": [
+     [
+      "Ik",
+      "weet",
+      "niet",
+      "of",
+      "hij",
+      "komen",
+      "wil"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     5,
+     6
+    ],
+    "e": "Dopo <b>of</b> i due verbi vanno alla fine."
+   },
+   {
+    "it": "Marc dice che è stato malato.",
+    "a": [
+     "Marc",
+     "zegt",
+     "dat",
+     "hij",
+     "ziek",
+     "is",
+     "geweest"
+    ],
+    "alt": [
+     [
+      "Marc",
+      "zegt",
+      "dat",
+      "hij",
+      "ziek",
+      "geweest",
+      "is"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     5,
+     6
+    ],
+    "e": "<b>ziek</b> prima, poi <b>is geweest</b> / <b>geweest is</b>."
+   },
+   {
+    "it": "Sono contento che tu sia venuto.",
+    "a": [
+     "Ik",
+     "ben",
+     "blij",
+     "dat",
+     "je",
+     "bent",
+     "gekomen"
+    ],
+    "alt": [
+     [
+      "Ik",
+      "ben",
+      "blij",
+      "dat",
+      "je",
+      "gekomen",
+      "bent"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     5,
+     6
+    ],
+    "e": "Ausiliare e participio insieme in fondo, in uno dei due ordini."
+   },
+   {
+    "it": "Sai se il treno è già partito?",
+    "a": [
+     "Weet",
+     "je",
+     "of",
+     "de trein",
+     "al",
+     "is",
+     "vertrokken"
+    ],
+    "alt": [
+     [
+      "Weet",
+      "je",
+      "of",
+      "de trein",
+      "al",
+      "vertrokken",
+      "is"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     0
+    ],
+    "end": [
+     5,
+     6
+    ],
+    "e": "<b>al</b> prima del gruppo verbale finale."
+   },
+   {
+    "it": "Mia madre racconta che si è trasferita a Lovanio.",
+    "a": [
+     "Mijn moeder",
+     "vertelt",
+     "dat",
+     "ze",
+     "naar Leuven",
+     "is",
+     "verhuisd"
+    ],
+    "alt": [
+     [
+      "Mijn moeder",
+      "vertelt",
+      "dat",
+      "ze",
+      "naar Leuven",
+      "verhuisd",
+      "is"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     5,
+     6
+    ],
+    "e": "Il luogo prima, i due verbi alla fine."
+   },
+   {
+    "it": "Penso che abbiamo perso l'autobus.",
+    "a": [
+     "Ik",
+     "denk",
+     "dat",
+     "we",
+     "de bus",
+     "hebben",
+     "gemist"
+    ],
+    "alt": [
+     [
+      "Ik",
+      "denk",
+      "dat",
+      "we",
+      "de bus",
+      "gemist",
+      "hebben"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     5,
+     6
+    ],
+    "e": "Oggetto prima, poi <b>hebben gemist</b> / <b>gemist hebben</b>."
+   },
+   {
+    "it": "I bambini sono contenti perché possono nuotare.",
+    "a": [
+     "De kinderen",
+     "zijn",
+     "blij",
+     "omdat",
+     "ze",
+     "mogen",
+     "zwemmen"
+    ],
+    "alt": [
+     [
+      "De kinderen",
+      "zijn",
+      "blij",
+      "omdat",
+      "ze",
+      "zwemmen",
+      "mogen"
+     ],
+     [
+      "Omdat",
+      "ze",
+      "mogen",
+      "zwemmen",
+      "zijn",
+      "de kinderen",
+      "blij"
+     ],
+     [
+      "Omdat",
+      "ze",
+      "zwemmen",
+      "mogen",
+      "zijn",
+      "de kinderen",
+      "blij"
+     ]
+    ],
+    "start": 0,
+    "v": [
+     1
+    ],
+    "end": [
+     5,
+     6
+    ],
+    "e": "Dopo <b>omdat</b>: <b>mogen zwemmen</b> o <b>zwemmen mogen</b>, sempre alla fine."
+   }
+  ]
+ }
+]

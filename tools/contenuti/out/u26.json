@@ -1,0 +1,422 @@
+{
+ "id": "u26",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "Mijn moeder vraagt of ik morgen om zes uur ___.",
+   "h": "opstaan",
+   "o": ["opsta", "sta op", "opstaat", "op sta"],
+   "a": 0,
+   "oit": true,
+   "e": "Dopo <b>of</b> il verbo va in fondo e i verbi separabili si riuniscono: <i>of ik ... <b>opsta</b></i>. Con <i>ik</i> la forma è <i>opsta</i>, senza -t.",
+   "g": {
+    "opsta": "mi alzo (verbo riunito in fondo, corretta)",
+    "sta op": "ordine da frase principale: nella subordinata il verbo separabile si riunisce",
+    "opstaat": "forma di hij/zij: con ik niente -t",
+    "op sta": "nella subordinata particella e verbo si scrivono attaccati"
+   },
+   "tt": "Mia madre chiede se domani mi alzo alle sei."
+  },
+  {
+   "t": "mc",
+   "q": "Toen we gisteren in Antwerpen aankwamen, ___ hard.",
+   "o": ["regende het", "het regende", "regent het", "regenden het"],
+   "a": 0,
+   "oit": true,
+   "e": "<b>toen</b> + passato per un fatto unico. La subordinata occupa il primo posto, quindi nella principale c'è l'inversione: <b>regende het</b>.",
+   "g": {
+    "regende het": "pioveva (passato con inversione, corretta)",
+    "het regende": "manca l'inversione dopo la subordinata",
+    "regent het": "presente: la frase parla di ieri",
+    "regenden het": "het è singolare: regende"
+   },
+   "tt": "Quando ieri siamo arrivati ad Anversa, pioveva forte."
+  },
+  {
+   "t": "fill",
+   "q": "Ik weet niet of hij de krant van vandaag al ___ heeft.",
+   "h": "lezen",
+   "a": ["gelezen"],
+   "e": "Nella subordinata il participio e l'ausiliare vanno entrambi in fondo: <i>al <b>gelezen</b> heeft</i> (anche <i>al heeft gelezen</i>).",
+   "tt": "Non so se ha già letto il giornale di oggi."
+  },
+  {
+   "t": "fill",
+   "q": "Ik blijf vandaag thuis, omdat ik me niet zo goed ___.",
+   "h": "voelen",
+   "a": ["voel"],
+   "e": "Verbo riflessivo nella subordinata: il pronome <i>me</i> resta vicino al soggetto, il verbo <b>voel</b> va in fondo.",
+   "tt": "Oggi resto a casa perché non mi sento tanto bene."
+  },
+  {
+   "t": "tr",
+   "q": "Penso che lei domani debba lavorare.",
+   "a": ["Ik denk dat ze morgen moet werken", "Ik denk dat zij morgen moet werken", "Ik denk dat ze morgen werken moet", "Ik denk dat zij morgen werken moet"],
+   "e": "Due verbi nella subordinata: tutti e due in fondo, <i>dat ze morgen <b>moet werken</b></i>. Niente congiuntivo: <i>moet</i> è un normale presente."
+  },
+  {
+   "t": "tr",
+   "q": "Se domani piove, prendiamo il tram.",
+   "a": ["Als het morgen regent, nemen we de tram", "Als het morgen regent, nemen wij de tram", "Als het morgen regent nemen we de tram", "Als het morgen regent nemen wij de tram", "We nemen de tram als het morgen regent", "Wij nemen de tram als het morgen regent", "Wanneer het morgen regent, nemen we de tram", "Wanneer het morgen regent nemen we de tram"],
+   "e": "Condizione: <b>als</b>, verbo in fondo (<i>morgen <b>regent</b></i>). Poi inversione nella principale: <b>nemen we</b>."
+  },
+  {
+   "t": "order",
+   "q": "Mio fratello dice che arriva ad Anversa alle otto.",
+   "a": "Mijn broer zegt dat hij om acht uur in Antwerpen aankomt",
+   "alt": ["Mijn broer zegt dat hij in Antwerpen om acht uur aankomt"],
+   "x": ["komt", "aan"],
+   "e": "Dopo <b>dat</b>: soggetto, tempo, luogo e il verbo separabile riunito in fondo: <b>aankomt</b>.",
+   "tt": "Mio fratello dice che arriva ad Anversa alle otto."
+  },
+  {
+   "t": "order",
+   "q": "Dopo che abbiamo mangiato, facciamo una passeggiata in città.",
+   "a": "Nadat we gegeten hebben wandelen we door de stad",
+   "alt": ["Nadat we hebben gegeten wandelen we door de stad", "We wandelen door de stad nadat we gegeten hebben", "We wandelen door de stad nadat we hebben gegeten"],
+   "x": ["eten", "wandel"],
+   "e": "<b>nadat</b> + passato prossimo con i due verbi in fondo (<i>gegeten hebben</i>), poi inversione nella principale: <b>wandelen we</b>.",
+   "tt": "Dopo che abbiamo mangiato, facciamo una passeggiata in città."
+  }
+ ],
+ "en": {
+  "it": "Subordinate clauses",
+  "note": "\n<h3>The idea</h3>\n<p>A subordinate clause depends on another clause: in English it starts with words like \"because\", \"that\", \"if\", \"when\", \"while\". In Dutch these clauses follow a very clear word-order rule that English does not have: <b>the conjugated verb goes to the end</b>. In English you say \"because I am sick\", in Dutch <i>omdat ik ziek <b>ben</b></i>, literally \"because I sick am\".</p>\n<h3>Subordinating conjunctions</h3>\n<table><tr><th>Dutch</th><th>English</th><th>example</th></tr>\n<tr><td>omdat</td><td>because, since</td><td><i>omdat het regent</i></td></tr>\n<tr><td>dat</td><td>that</td><td><i>Ik denk dat hij ziek is.</i></td></tr>\n<tr><td>of</td><td>if, whether (indirect question)</td><td><i>Ik weet niet of ze komt.</i></td></tr>\n<tr><td>als</td><td>if / when (present, habit)</td><td><i>als het koud is</i></td></tr>\n<tr><td>wanneer</td><td>when</td><td><i>wanneer ik tijd heb</i></td></tr>\n<tr><td>toen</td><td>when (a single event in the past)</td><td><i>toen ik jong was</i></td></tr>\n<tr><td>terwijl</td><td>while</td><td><i>terwijl ik kook</i></td></tr>\n<tr><td>voordat</td><td>before</td><td><i>voordat hij komt</i></td></tr>\n<tr><td>nadat</td><td>after</td><td><i>nadat we gegeten hebben</i></td></tr></table>\n<h3>The verb at the end</h3>\n<p>After one of these words, put the subject right after the conjunction and the conjugated verb at the very end: <i>dat hij morgen naar Gent <b>gaat</b></i>. If there are two verbs, both go to the end: <i>omdat ik vandaag <b>moet werken</b></i> (also <i>werken moet</i>), <i>nadat ik de krant <b>gelezen heb</b></i> (also <i>heb gelezen</i>). Separable verbs join back together: <i>als hij <b>thuiskomt</b></i>.</p>\n<h3>Want or omdat?</h3>\n<p>Both mean \"because\", but the word order is different. After <b>want</b> the clause keeps normal order (unit 10); after <b>omdat</b> the verb goes to the end.</p>\n<p><i>Ik blijf thuis, want ik <b>ben</b> ziek.</i> / <i>Ik blijf thuis, omdat ik ziek <b>ben</b>.</i></p>\n<p>Only <b>omdat</b> can stand at the start of the sentence.</p>\n<h3>Als, wanneer, toen</h3>\n<p>For the present and the future you use <b>als</b> (very common) or <b>wanneer</b>. For a single event or period in the past you use <b>toen</b> with the past tense: <i>Toen ik jong was, woonde ik in Italië.</i> <b>Als</b> also means \"if\" (a condition): <i>Als het regent, blijf ik thuis.</i> But the \"if\" or \"whether\" of an indirect question is <b>of</b>: <i>Ik weet niet of hij komt</i> (I don't know if he's coming).</p>\n<h3>Subordinate clause first</h3>\n<p>If the sentence starts with the subordinate clause, that clause takes the first position. So in the main clause the verb comes right away, before the subject: two verbs side by side, usually separated by a comma.</p>\n<p><i>Omdat het regent, <b>blijf ik</b> thuis.</i> (never <s>Omdat het regent, ik blijf thuis</s>)</p>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Leaving the verb in the middle, as in English: <s>omdat ik ben ziek</s> → <b>omdat ik ziek ben</b>.</li>\n<li>Putting the verb at the end after want: <s>want ik ziek ben</s> → <b>want ik ben ziek</b>.</li>\n<li>Forgetting the inversion after the subordinate clause: <s>Als het koud is, ik blijf thuis</s> → <b>Als het koud is, blijf ik thuis</b>.</li>\n<li>Dropping <b>dat</b> as you can drop \"that\" in English: <s>Ik denk hij is ziek</s> → <b>Ik denk dat hij ziek is</b>.</li>\n<li>Using als for a single past event (English \"when\"): <s>Als ik jong was</s> → <b>Toen ik jong was</b>.</li>\n<li>Translating \"if/whether\" with als in indirect questions: <s>Ik weet niet als hij komt</s> → <b>Ik weet niet of hij komt</b>.</li>\n</ul>",
+  "vlaams": "In spoken Flemish you often hear an extra <b>dat</b> after the conjunction: \"Ik weet niet <b>of dat</b> hij komt\", \"<b>wanneer dat</b> hij komt\". It is typical of the spoken language: in writing use just <b>of</b> and <b>wanneer</b>. In Belgium, with two verbs at the end, people tend to put the participle first: <i>omdat ik het gezien heb</i>.",
+  "vocab": [["ziek", "sick, ill"], ["regenen", "to rain"], ["denken", "to think"], ["weten", "to know"], ["hopen", "to hope"], ["slapen", "to sleep"], ["het werk", "work, the job"], ["de krant", "the newspaper"], ["de muziek", "music"], ["luisteren naar", "to listen to"], ["koud", "cold"], ["jong", "young"]],
+  "core": [["omdat", "because, since"], ["dat", "that"], ["of", "if, whether (indirect question)"], ["als", "if, when (present)"], ["toen", "when (past)"], ["terwijl", "while"], ["voordat", "before"], ["nadat", "after"]],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "Ik blijf thuis, omdat ___.",
+    "o": ["ik ziek ben", "ik ben ziek", "ben ik ziek", "ziek ik ben"],
+    "a": 0,
+    "oit": true,
+    "e": "After <b>omdat</b> the verb goes to the end: <i>omdat ik ziek <b>ben</b></i>.",
+    "g": {
+     "ik ziek ben": "I am sick (verb at the end, correct)",
+     "ik ben ziek": "main-clause order: after omdat the verb goes to the end",
+     "ben ik ziek": "question order",
+     "ziek ik ben": "the subject comes right after omdat"
+    },
+    "tt": "I'm staying home because I'm sick."
+   },
+   {
+    "t": "mc",
+    "q": "Ik blijf thuis, want ___.",
+    "o": ["ik ben ziek", "ik ziek ben", "ben ik ziek"],
+    "a": 0,
+    "oit": true,
+    "e": "After <b>want</b> the order stays normal: <i>want ik <b>ben</b> ziek</i>.",
+    "g": {
+     "ik ben ziek": "I am sick (normal order, correct after want)",
+     "ik ziek ben": "verb at the end: fine after omdat, not after want",
+     "ben ik ziek": "no inversion after want"
+    },
+    "tt": "I'm staying home because I'm sick."
+   },
+   {
+    "t": "mc",
+    "q": "Omdat het regent, ___ thuis.",
+    "o": ["blijf ik", "ik blijf", "blijven ik"],
+    "a": 0,
+    "oit": true,
+    "e": "The subordinate clause takes the first position, so the verb follows right away: <b>blijf ik</b>.",
+    "g": {
+     "blijf ik": "I stay (with inversion, correct)",
+     "ik blijf": "missing inversion after the subordinate clause",
+     "blijven ik": "blijven is plural"
+    },
+    "tt": "Since it's raining, I'm staying home."
+   },
+   {
+    "t": "mc",
+    "q": "Ik weet niet ___ hij vandaag komt.",
+    "h": "if / whether",
+    "o": ["of", "dat", "als", "want"],
+    "a": 0,
+    "e": "The \"if/whether\" of an indirect question is <b>of</b>.",
+    "g": {
+     "of": "if, whether (indirect question)",
+     "dat": "that",
+     "als": "if (condition), not for indirect questions",
+     "want": "because, and it takes normal order"
+    },
+    "tt": "I don't know if he's coming today."
+   },
+   {
+    "t": "mc",
+    "q": "___ ik jong was, woonde ik in Italië.",
+    "o": ["Toen", "Als", "Wanneer", "Want"],
+    "a": 0,
+    "e": "A single period in the past: <b>toen</b>.",
+    "g": {
+     "Toen": "when (single event or period in the past)",
+     "Als": "if / when: in the past it means \"whenever\"",
+     "Wanneer": "when: in the past it means \"whenever\"",
+     "Want": "because (since)"
+    },
+    "tt": "When I was young, I lived in Italy."
+   },
+   {
+    "t": "mc",
+    "q": "___ het regent, lees ik de krant.",
+    "o": ["Als", "Toen", "Of", "Dat"],
+    "a": 0,
+    "e": "A condition or habit in the present: <b>als</b>.",
+    "g": {
+     "Als": "if / when (present)",
+     "Toen": "when, but only in the past",
+     "Of": "if, but only in indirect questions",
+     "Dat": "that"
+    },
+    "tt": "When it rains, I read the newspaper."
+   },
+   {
+    "t": "fill",
+    "q": "Ik denk ___ hij ziek is.",
+    "h": "that",
+    "a": ["dat"],
+    "e": "\"that\" = <b>dat</b> (it can't be left out as in English), then the verb at the end: <i>ziek <b>is</b></i>.",
+    "tt": "I think he's sick."
+   },
+   {
+    "t": "fill",
+    "q": "Ik luister naar muziek ___ ik kook.",
+    "h": "while",
+    "a": ["terwijl"],
+    "e": "<b>terwijl</b> = while.",
+    "tt": "I listen to music while I cook."
+   },
+   {
+    "t": "order",
+    "q": "I know (that) she is tired.",
+    "a": "Ik weet dat ze moe is",
+    "alt": ["Dat ze moe is weet ik"],
+    "x": ["want", "bent"],
+    "e": "After <b>dat</b>: subject right after it, verb at the end."
+   },
+   {
+    "t": "order",
+    "q": "I drink a coffee before he comes.",
+    "a": "Ik drink een koffie voordat hij komt",
+    "alt": ["Voordat hij komt drink ik een koffie"],
+    "x": ["kom", "toen"],
+    "e": "<b>voordat</b> + subject + ... + verb. If the subordinate clause comes first: <i>Voordat hij komt, <b>drink ik</b></i>."
+   }
+  ],
+  "items": [
+   {
+    "t": "mc",
+    "q": "Ik leer Nederlands ___ ik in Gent woon.",
+    "o": ["omdat", "want", "of", "toen"],
+    "a": 0,
+    "e": "The verb <i>woon</i> is at the end, so you need <b>omdat</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Ik hoop dat het morgen niet ___.",
+    "h": "regenen",
+    "a": ["regent"],
+    "e": "After <b>dat</b> the verb goes to the end: <i>niet <b>regent</b></i>."
+   },
+   {
+    "t": "order",
+    "q": "She sleeps while I work.",
+    "a": "Zij slaapt terwijl ik werk",
+    "alt": ["Terwijl ik werk slaapt zij"],
+    "x": ["toen", "bent"],
+    "e": "<b>terwijl</b> + subject + verb at the end."
+   },
+   {
+    "t": "tr",
+    "q": "I think (that) he is sick.",
+    "a": ["Ik denk dat hij ziek is"],
+    "e": "In Dutch you can't drop <b>dat</b> the way English drops \"that\", and the verb goes to the end: <i>dat hij ziek <b>is</b></i>."
+   },
+   {
+    "t": "mc",
+    "q": "Which sentence is correct?",
+    "o": ["Als het koud is, blijf ik thuis.", "Als het koud is, ik blijf thuis.", "Als het is koud, blijf ik thuis.", "Als het koud is, blijven ik thuis."],
+    "a": 0,
+    "oit": true,
+    "e": "Verb at the end in the subordinate clause, then inversion: <i>koud <b>is</b>, <b>blijf ik</b></i>."
+   },
+   {
+    "t": "fill",
+    "q": "Ze luistert naar muziek terwijl ze ___.",
+    "h": "koken",
+    "a": ["kookt"],
+    "e": "zij + <b>kookt</b>, at the end of the subordinate clause."
+   },
+   {
+    "t": "order",
+    "q": "I don't know if he's coming tonight.",
+    "a": "Ik weet niet of hij vanavond komt",
+    "x": ["toen", "kom"],
+    "e": "\"if/whether\" = <b>of</b>, and the verb goes to the end: <i>vanavond <b>komt</b></i>."
+   },
+   {
+    "t": "tr",
+    "q": "When I was young, I lived in Italy.",
+    "a": ["Toen ik jong was, woonde ik in Italië", "Ik woonde in Italië toen ik jong was"],
+    "e": "A single period in the past: <b>toen</b>. After the subordinate clause, inversion: <i>woonde ik</i>."
+   },
+   {
+    "t": "mc",
+    "q": "Ik drink een koffie ___ ik naar het werk ga.",
+    "h": "before",
+    "o": ["voordat", "nadat", "terwijl", "omdat"],
+    "a": 0,
+    "e": "<b>voordat</b> = before."
+   },
+   {
+    "t": "fill",
+    "q": "Omdat ik ziek ben, ___ ik thuis.",
+    "h": "blijven",
+    "a": ["blijf"],
+    "e": "After the subordinate clause the verb comes right away: <b>blijf</b> ik."
+   },
+   {
+    "t": "order",
+    "q": "Since it's raining, I'm reading the newspaper.",
+    "a": "Omdat het regent lees ik de krant",
+    "alt": ["Ik lees de krant omdat het regent"],
+    "x": ["regen", "leest"],
+    "e": "Subordinate clause in first position, then verb + subject: <i>lees ik</i>."
+   },
+   {
+    "t": "mc",
+    "q": "Ik weet dat je moe ___.",
+    "o": ["bent", "ben", "zijn", "is"],
+    "a": 0,
+    "e": "With <i>je</i>: <b>bent</b>, at the end of the subordinate clause."
+   }
+  ],
+  "gloss": {
+   "0": {
+    "g": {
+     "omdat": "because (verb at the end)",
+     "want": "because, but it takes normal order: want ik woon",
+     "of": "if, whether (indirect question)",
+     "toen": "when, only in the past"
+    },
+    "t": "I'm learning Dutch because I live in Ghent."
+   },
+   "1": {"t": "I hope it doesn't rain tomorrow."},
+   "2": {"t": "She sleeps while I work."},
+   "3": {"t": "I think he's sick."},
+   "4": {
+    "g": {
+     "Als het koud is, blijf ik thuis.": "If it's cold, I stay home (correct)",
+     "Als het koud is, ik blijf thuis.": "missing inversion in the main clause",
+     "Als het is koud, blijf ik thuis.": "in the subordinate clause the verb goes to the end",
+     "Als het koud is, blijven ik thuis.": "blijven is plural"
+    },
+    "t": "If it's cold, I stay home."
+   },
+   "5": {"t": "She listens to music while she cooks."},
+   "6": {"t": "I don't know if he's coming tonight."},
+   "7": {"t": "When I was young, I lived in Italy."},
+   "8": {
+    "g": {
+     "voordat": "before",
+     "nadat": "after",
+     "terwijl": "while",
+     "omdat": "because"
+    },
+    "t": "I drink a coffee before I go to work."
+   },
+   "9": {"t": "Since I'm sick, I'm staying home."},
+   "10": {"t": "Since it's raining, I'm reading the newspaper."},
+   "11": {
+    "g": {
+     "bent": "are (with je)",
+     "ben": "am (ik)",
+     "zijn": "are (plural)",
+     "is": "is (he, she)"
+    },
+    "t": "I know you're tired."
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "Mijn moeder vraagt of ik morgen om zes uur ___.",
+    "h": "opstaan",
+    "o": ["opsta", "sta op", "opstaat", "op sta"],
+    "a": 0,
+    "oit": true,
+    "e": "After <b>of</b> the verb goes to the end and separable verbs join back together: <i>of ik ... <b>opsta</b></i>. With <i>ik</i> the form is <i>opsta</i>, no -t.",
+    "g": {
+     "opsta": "I get up (verb rejoined at the end, correct)",
+     "sta op": "main-clause order: in a subordinate clause the separable verb rejoins",
+     "opstaat": "the hij/zij form: no -t with ik",
+     "op sta": "in a subordinate clause particle and verb are written as one word"
+    },
+    "tt": "My mother is asking whether I'm getting up at six tomorrow."
+   },
+   {
+    "t": "mc",
+    "q": "Toen we gisteren in Antwerpen aankwamen, ___ hard.",
+    "o": ["regende het", "het regende", "regent het", "regenden het"],
+    "a": 0,
+    "oit": true,
+    "e": "<b>toen</b> + past tense for a single event. The subordinate clause takes first position, so the main clause has inversion: <b>regende het</b>.",
+    "g": {
+     "regende het": "it was raining (past with inversion, correct)",
+     "het regende": "missing inversion after the subordinate clause",
+     "regent het": "present: the sentence is about yesterday",
+     "regenden het": "het is singular: regende"
+    },
+    "tt": "When we arrived in Antwerp yesterday, it was raining hard."
+   },
+   {
+    "t": "fill",
+    "q": "Ik weet niet of hij de krant van vandaag al ___ heeft.",
+    "h": "lezen",
+    "a": ["gelezen"],
+    "e": "In a subordinate clause the participle and the auxiliary both go to the end: <i>al <b>gelezen</b> heeft</i> (also <i>al heeft gelezen</i>).",
+    "tt": "I don't know whether he has already read today's paper."
+   },
+   {
+    "t": "fill",
+    "q": "Ik blijf vandaag thuis, omdat ik me niet zo goed ___.",
+    "h": "voelen",
+    "a": ["voel"],
+    "e": "A reflexive verb in a subordinate clause: the pronoun <i>me</i> stays near the subject, the verb <b>voel</b> goes to the end.",
+    "tt": "I'm staying home today because I don't feel very well."
+   },
+   {
+    "t": "tr",
+    "q": "I think (that) she has to work tomorrow.",
+    "a": ["Ik denk dat ze morgen moet werken", "Ik denk dat zij morgen moet werken", "Ik denk dat ze morgen werken moet", "Ik denk dat zij morgen werken moet"],
+    "e": "Two verbs in the subordinate clause: both go to the end, <i>dat ze morgen <b>moet werken</b></i>. And <b>dat</b> can't be dropped as in English."
+   },
+   {
+    "t": "tr",
+    "q": "If it rains tomorrow, we'll take the tram.",
+    "a": ["Als het morgen regent, nemen we de tram", "Als het morgen regent, nemen wij de tram", "Als het morgen regent nemen we de tram", "Als het morgen regent nemen wij de tram", "We nemen de tram als het morgen regent", "Wij nemen de tram als het morgen regent", "Wanneer het morgen regent, nemen we de tram", "Wanneer het morgen regent nemen we de tram"],
+    "e": "A condition: <b>als</b>, verb at the end (<i>morgen <b>regent</b></i>). Then inversion in the main clause: <b>nemen we</b>. Dutch uses the present here, just like English \"if it rains\"."
+   },
+   {
+    "t": "order",
+    "q": "My brother says (that) he's arriving in Antwerp at eight.",
+    "a": "Mijn broer zegt dat hij om acht uur in Antwerpen aankomt",
+    "alt": ["Mijn broer zegt dat hij in Antwerpen om acht uur aankomt"],
+    "x": ["komt", "aan"],
+    "e": "After <b>dat</b>: subject, time, place and the separable verb rejoined at the end: <b>aankomt</b>.",
+    "tt": "My brother says he's arriving in Antwerp at eight."
+   },
+   {
+    "t": "order",
+    "q": "After we've eaten, we take a walk through the city.",
+    "a": "Nadat we gegeten hebben wandelen we door de stad",
+    "alt": ["Nadat we hebben gegeten wandelen we door de stad", "We wandelen door de stad nadat we gegeten hebben", "We wandelen door de stad nadat we hebben gegeten"],
+    "x": ["eten", "wandel"],
+    "e": "<b>nadat</b> + present perfect with both verbs at the end (<i>gegeten hebben</i>), then inversion in the main clause: <b>wandelen we</b>.",
+    "tt": "After we've eaten, we take a walk through the city."
+   }
+  ]
+ }
+}

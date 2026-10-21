@@ -1,0 +1,2115 @@
+[
+ {
+  "id": "irr1",
+  "g": "Grammatica",
+  "t": "Verbi irregolari · i più comuni",
+  "s": "Imperfetto e participio dei verbi forti di tutti i giorni",
+  "sayExtra": true,
+  "cards": [
+   [
+    "zijn",
+    "essere",
+    "was · waren · is geweest"
+   ],
+   [
+    "hebben",
+    "avere",
+    "had · hadden · heeft gehad"
+   ],
+   [
+    "gaan",
+    "andare",
+    "ging · gingen · is gegaan"
+   ],
+   [
+    "komen",
+    "venire",
+    "kwam · kwamen · is gekomen"
+   ],
+   [
+    "doen",
+    "fare",
+    "deed · deden · heeft gedaan"
+   ],
+   [
+    "zien",
+    "vedere",
+    "zag · zagen · heeft gezien"
+   ],
+   [
+    "eten",
+    "mangiare",
+    "at · aten · heeft gegeten"
+   ],
+   [
+    "drinken",
+    "bere",
+    "dronk · dronken · heeft gedronken"
+   ],
+   [
+    "lezen",
+    "leggere",
+    "las · lazen · heeft gelezen"
+   ],
+   [
+    "schrijven",
+    "scrivere",
+    "schreef · schreven · heeft geschreven"
+   ],
+   [
+    "spreken",
+    "parlare",
+    "sprak · spraken · heeft gesproken"
+   ],
+   [
+    "nemen",
+    "prendere",
+    "nam · namen · heeft genomen"
+   ],
+   [
+    "geven",
+    "dare",
+    "gaf · gaven · heeft gegeven"
+   ],
+   [
+    "krijgen",
+    "ricevere",
+    "kreeg · kregen · heeft gekregen"
+   ],
+   [
+    "vinden",
+    "trovare",
+    "vond · vonden · heeft gevonden"
+   ],
+   [
+    "denken",
+    "pensare",
+    "dacht · dachten · heeft gedacht"
+   ],
+   [
+    "brengen",
+    "portare",
+    "bracht · brachten · heeft gebracht"
+   ],
+   [
+    "kopen",
+    "comprare",
+    "kocht · kochten · heeft gekocht"
+   ],
+   [
+    "zoeken",
+    "cercare",
+    "zocht · zochten · heeft gezocht"
+   ],
+   [
+    "weten",
+    "sapere",
+    "wist · wisten · heeft geweten"
+   ],
+   [
+    "kunnen",
+    "potere, saper fare",
+    "kon · konden · heeft gekund"
+   ],
+   [
+    "willen",
+    "volere",
+    "wilde (wou) · wilden · heeft gewild"
+   ],
+   [
+    "mogen",
+    "avere il permesso",
+    "mocht · mochten · heeft gemogen"
+   ],
+   [
+    "moeten",
+    "dovere",
+    "moest · moesten · heeft gemoeten"
+   ],
+   [
+    "zeggen",
+    "dire",
+    "zei · zeiden · heeft gezegd"
+   ],
+   [
+    "vragen",
+    "chiedere",
+    "vroeg · vroegen · heeft gevraagd"
+   ],
+   [
+    "blijven",
+    "restare",
+    "bleef · bleven · is gebleven"
+   ],
+   [
+    "worden",
+    "diventare",
+    "werd · werden · is geworden"
+   ],
+   [
+    "staan",
+    "stare in piedi",
+    "stond · stonden · heeft gestaan"
+   ],
+   [
+    "zitten",
+    "stare seduto",
+    "zat · zaten · heeft gezeten"
+   ],
+   [
+    "liggen",
+    "essere sdraiato",
+    "lag · lagen · heeft gelegen"
+   ],
+   [
+    "kijken",
+    "guardare",
+    "keek · keken · heeft gekeken"
+   ]
+  ]
+ },
+ {
+  "id": "irr2",
+  "g": "Grammatica",
+  "t": "Verbi irregolari · secondo livello",
+  "s": "Altri verbi forti e misti da conoscere",
+  "sayExtra": true,
+  "cards": [
+   [
+    "beginnen",
+    "cominciare",
+    "begon · begonnen · is begonnen"
+   ],
+   [
+    "vergeten",
+    "dimenticare",
+    "vergat · vergaten · heeft/is vergeten"
+   ],
+   [
+    "begrijpen",
+    "capire",
+    "begreep · begrepen · heeft begrepen"
+   ],
+   [
+    "slapen",
+    "dormire",
+    "sliep · sliepen · heeft geslapen"
+   ],
+   [
+    "lopen",
+    "camminare (in Belgio spesso: correre)",
+    "liep · liepen · heeft/is gelopen"
+   ],
+   [
+    "roepen",
+    "chiamare (a voce)",
+    "riep · riepen · heeft geroepen"
+   ],
+   [
+    "vallen",
+    "cadere",
+    "viel · vielen · is gevallen"
+   ],
+   [
+    "houden",
+    "tenere",
+    "hield · hielden · heeft gehouden"
+   ],
+   [
+    "helpen",
+    "aiutare",
+    "hielp · hielpen · heeft geholpen"
+   ],
+   [
+    "zingen",
+    "cantare",
+    "zong · zongen · heeft gezongen"
+   ],
+   [
+    "zwemmen",
+    "nuotare",
+    "zwom · zwommen · heeft/is gezwommen"
+   ],
+   [
+    "rijden",
+    "guidare, andare (in auto/bici)",
+    "reed · reden · heeft/is gereden"
+   ],
+   [
+    "vliegen",
+    "volare",
+    "vloog · vlogen · heeft/is gevlogen"
+   ],
+   [
+    "verliezen",
+    "perdere",
+    "verloor · verloren · heeft verloren"
+   ],
+   [
+    "kiezen",
+    "scegliere",
+    "koos · kozen · heeft gekozen"
+   ],
+   [
+    "liegen",
+    "mentire",
+    "loog · logen · heeft gelogen"
+   ],
+   [
+    "winnen",
+    "vincere",
+    "won · wonnen · heeft gewonnen"
+   ],
+   [
+    "sluiten",
+    "chiudere",
+    "sloot · sloten · heeft gesloten"
+   ],
+   [
+    "trekken",
+    "tirare",
+    "trok · trokken · heeft getrokken"
+   ],
+   [
+    "dragen",
+    "portare (addosso)",
+    "droeg · droegen · heeft gedragen"
+   ],
+   [
+    "slaan",
+    "colpire",
+    "sloeg · sloegen · heeft geslagen"
+   ],
+   [
+    "breken",
+    "rompere",
+    "brak · braken · heeft/is gebroken"
+   ],
+   [
+    "sterven",
+    "morire",
+    "stierf · stierven · is gestorven"
+   ],
+   [
+    "verdwijnen",
+    "sparire",
+    "verdween · verdwenen · is verdwenen"
+   ],
+   [
+    "bieden",
+    "offrire",
+    "bood · boden · heeft geboden"
+   ],
+   [
+    "hangen",
+    "essere appeso, appendere",
+    "hing · hingen · heeft gehangen"
+   ],
+   [
+    "lachen",
+    "ridere",
+    "lachte · lachten · heeft gelachen"
+   ],
+   [
+    "bakken",
+    "cuocere al forno",
+    "bakte · bakten · heeft gebakken"
+   ],
+   [
+    "wassen",
+    "lavare",
+    "waste · wasten · heeft gewassen"
+   ],
+   [
+    "zenden",
+    "spedire, trasmettere",
+    "zond · zonden · heeft gezonden"
+   ]
+  ]
+ },
+ {
+  "id": "dehet",
+  "g": "Grammatica",
+  "t": "De of het?",
+  "s": "Scegli l'articolo giusto di 50 nomi frequenti",
+  "kind": "dehet",
+  "cards": [
+   [
+    "huis",
+    "het",
+    "la casa"
+   ],
+   [
+    "man",
+    "de",
+    "l'uomo"
+   ],
+   [
+    "boek",
+    "het",
+    "il libro"
+   ],
+   [
+    "vrouw",
+    "de",
+    "la donna"
+   ],
+   [
+    "kind",
+    "het",
+    "il bambino"
+   ],
+   [
+    "tafel",
+    "de",
+    "il tavolo"
+   ],
+   [
+    "meisje",
+    "het",
+    "la ragazza"
+   ],
+   [
+    "stoel",
+    "de",
+    "la sedia"
+   ],
+   [
+    "water",
+    "het",
+    "l'acqua"
+   ],
+   [
+    "deur",
+    "de",
+    "la porta"
+   ],
+   [
+    "brood",
+    "het",
+    "il pane"
+   ],
+   [
+    "auto",
+    "de",
+    "l'auto"
+   ],
+   [
+    "jaar",
+    "het",
+    "l'anno"
+   ],
+   [
+    "fiets",
+    "de",
+    "la bici"
+   ],
+   [
+    "uur",
+    "het",
+    "l'ora"
+   ],
+   [
+    "stad",
+    "de",
+    "la città"
+   ],
+   [
+    "raam",
+    "het",
+    "la finestra"
+   ],
+   [
+    "straat",
+    "de",
+    "la strada"
+   ],
+   [
+    "bed",
+    "het",
+    "il letto"
+   ],
+   [
+    "dag",
+    "de",
+    "il giorno"
+   ],
+   [
+    "land",
+    "het",
+    "il paese (nazione)"
+   ],
+   [
+    "week",
+    "de",
+    "la settimana"
+   ],
+   [
+    "dorp",
+    "het",
+    "il paese (villaggio)"
+   ],
+   [
+    "tijd",
+    "de",
+    "il tempo"
+   ],
+   [
+    "werk",
+    "het",
+    "il lavoro"
+   ],
+   [
+    "vraag",
+    "de",
+    "la domanda"
+   ],
+   [
+    "weer",
+    "het",
+    "il tempo (meteo)"
+   ],
+   [
+    "school",
+    "de",
+    "la scuola"
+   ],
+   [
+    "geld",
+    "het",
+    "i soldi"
+   ],
+   [
+    "kat",
+    "de",
+    "il gatto"
+   ],
+   [
+    "glas",
+    "het",
+    "il bicchiere"
+   ],
+   [
+    "hond",
+    "de",
+    "il cane"
+   ],
+   [
+    "kantoor",
+    "het",
+    "l'ufficio"
+   ],
+   [
+    "trein",
+    "de",
+    "il treno"
+   ],
+   [
+    "station",
+    "het",
+    "la stazione"
+   ],
+   [
+    "winkel",
+    "de",
+    "il negozio"
+   ],
+   [
+    "ziekenhuis",
+    "het",
+    "l'ospedale"
+   ],
+   [
+    "kamer",
+    "de",
+    "la stanza"
+   ],
+   [
+    "restaurant",
+    "het",
+    "il ristorante"
+   ],
+   [
+    "keuken",
+    "de",
+    "la cucina"
+   ],
+   [
+    "museum",
+    "het",
+    "il museo"
+   ],
+   [
+    "krant",
+    "de",
+    "il giornale"
+   ],
+   [
+    "probleem",
+    "het",
+    "il problema"
+   ],
+   [
+    "koffie",
+    "de",
+    "il caffè"
+   ],
+   [
+    "antwoord",
+    "het",
+    "la risposta"
+   ],
+   [
+    "taal",
+    "de",
+    "la lingua"
+   ],
+   [
+    "woord",
+    "het",
+    "la parola"
+   ],
+   [
+    "telefoon",
+    "de",
+    "il telefono"
+   ],
+   [
+    "feest",
+    "het",
+    "la festa"
+   ],
+   [
+    "sleutel",
+    "de",
+    "la chiave"
+   ]
+  ]
+ },
+ {
+  "id": "sep",
+  "g": "Grammatica",
+  "t": "Verbi separabili",
+  "s": "Con la forma al presente e al passato prossimo",
+  "sayExtra": true,
+  "cards": [
+   [
+    "opstaan",
+    "alzarsi",
+    "ik sta op · ik ben opgestaan"
+   ],
+   [
+    "opbellen",
+    "telefonare",
+    "ik bel op · ik heb opgebeld"
+   ],
+   [
+    "meegaan",
+    "andare con, accompagnare",
+    "ik ga mee · ik ben meegegaan"
+   ],
+   [
+    "meenemen",
+    "portare con sé",
+    "ik neem mee · ik heb meegenomen"
+   ],
+   [
+    "aankomen",
+    "arrivare",
+    "ik kom aan · ik ben aangekomen"
+   ],
+   [
+    "uitgaan",
+    "uscire (la sera)",
+    "ik ga uit · ik ben uitgegaan"
+   ],
+   [
+    "binnenkomen",
+    "entrare",
+    "ik kom binnen · ik ben binnengekomen"
+   ],
+   [
+    "terugkomen",
+    "tornare",
+    "ik kom terug · ik ben teruggekomen"
+   ],
+   [
+    "weggaan",
+    "andare via",
+    "ik ga weg · ik ben weggegaan"
+   ],
+   [
+    "afspreken",
+    "darsi appuntamento",
+    "ik spreek af · ik heb afgesproken"
+   ],
+   [
+    "uitnodigen",
+    "invitare",
+    "ik nodig uit · ik heb uitgenodigd"
+   ],
+   [
+    "opruimen",
+    "mettere in ordine",
+    "ik ruim op · ik heb opgeruimd"
+   ],
+   [
+    "schoonmaken",
+    "pulire",
+    "ik maak schoon · ik heb schoongemaakt"
+   ],
+   [
+    "afwassen",
+    "lavare i piatti",
+    "ik was af · ik heb afgewassen"
+   ],
+   [
+    "ophalen",
+    "andare a prendere",
+    "ik haal op · ik heb opgehaald"
+   ],
+   [
+    "invullen",
+    "compilare",
+    "ik vul in · ik heb ingevuld"
+   ],
+   [
+    "zich aankleden",
+    "vestirsi",
+    "ik kleed me aan · ik heb me aangekleed"
+   ],
+   [
+    "uitstappen",
+    "scendere (da un mezzo)",
+    "ik stap uit · ik ben uitgestapt"
+   ],
+   [
+    "instappen",
+    "salire (su un mezzo)",
+    "ik stap in · ik ben ingestapt"
+   ],
+   [
+    "thuiskomen",
+    "tornare a casa",
+    "ik kom thuis · ik ben thuisgekomen"
+   ]
+  ]
+ },
+ {
+  "id": "prep",
+  "g": "Grammatica",
+  "t": "Verbi con preposizione",
+  "s": "La preposizione fissa e una frase d'esempio",
+  "sayExtra": true,
+  "cards": [
+   [
+    "wachten op",
+    "aspettare",
+    "Ik wacht op de bus."
+   ],
+   [
+    "denken aan",
+    "pensare a",
+    "Ik denk aan jou."
+   ],
+   [
+    "houden van",
+    "amare, voler bene a",
+    "Ik hou van muziek."
+   ],
+   [
+    "kijken naar",
+    "guardare",
+    "We kijken naar een film."
+   ],
+   [
+    "luisteren naar",
+    "ascoltare",
+    "Hij luistert naar de radio."
+   ],
+   [
+    "praten over",
+    "parlare di",
+    "We praten over het werk."
+   ],
+   [
+    "zorgen voor",
+    "occuparsi di",
+    "Zij zorgt voor de kinderen."
+   ],
+   [
+    "bang zijn voor",
+    "avere paura di",
+    "Ik ben bang voor honden."
+   ],
+   [
+    "trots zijn op",
+    "essere fiero di",
+    "Ze is trots op haar zoon."
+   ],
+   [
+    "boos zijn op",
+    "essere arrabbiato con",
+    "Hij is boos op mij."
+   ],
+   [
+    "verliefd zijn op",
+    "essere innamorato di",
+    "Ik ben verliefd op haar."
+   ],
+   [
+    "beginnen met",
+    "cominciare (a fare)",
+    "We beginnen met de les."
+   ],
+   [
+    "stoppen met",
+    "smettere di",
+    "Hij stopt met roken."
+   ],
+   [
+    "helpen met",
+    "aiutare con",
+    "Kun je me helpen met de koffers?"
+   ],
+   [
+    "genieten van",
+    "godersi",
+    "We genieten van het weer."
+   ],
+   [
+    "dromen van",
+    "sognare",
+    "Ik droom van een reis."
+   ],
+   [
+    "deelnemen aan",
+    "partecipare a",
+    "Ik neem deel aan de cursus."
+   ],
+   [
+    "vragen naar",
+    "chiedere di, informarsi su",
+    "Hij vraagt naar de weg."
+   ],
+   [
+    "geïnteresseerd zijn in",
+    "essere interessato a",
+    "Ik ben geïnteresseerd in kunst."
+   ],
+   [
+    "rekenen op",
+    "contare su",
+    "Je kunt op mij rekenen."
+   ]
+  ]
+ },
+ {
+  "id": "opp",
+  "g": "Grammatica",
+  "t": "Aggettivi opposti",
+  "s": "Impara gli aggettivi a coppie",
+  "sayExtra": false,
+  "cards": [
+   [
+    "groot ↔ klein",
+    "grande ↔ piccolo"
+   ],
+   [
+    "lang ↔ kort",
+    "lungo ↔ corto"
+   ],
+   [
+    "oud ↔ nieuw",
+    "vecchio ↔ nuovo"
+   ],
+   [
+    "oud ↔ jong",
+    "vecchio ↔ giovane"
+   ],
+   [
+    "warm ↔ koud",
+    "caldo ↔ freddo"
+   ],
+   [
+    "duur ↔ goedkoop",
+    "caro ↔ economico"
+   ],
+   [
+    "snel ↔ traag",
+    "veloce ↔ lento"
+   ],
+   [
+    "goed ↔ slecht",
+    "buono ↔ cattivo"
+   ],
+   [
+    "mooi ↔ lelijk",
+    "bello ↔ brutto"
+   ],
+   [
+    "makkelijk ↔ moeilijk",
+    "facile ↔ difficile"
+   ],
+   [
+    "licht ↔ donker",
+    "chiaro ↔ scuro"
+   ],
+   [
+    "licht ↔ zwaar",
+    "leggero ↔ pesante"
+   ],
+   [
+    "vol ↔ leeg",
+    "pieno ↔ vuoto"
+   ],
+   [
+    "open ↔ dicht",
+    "aperto ↔ chiuso"
+   ],
+   [
+    "vroeg ↔ laat",
+    "presto ↔ tardi"
+   ],
+   [
+    "blij ↔ verdrietig",
+    "felice ↔ triste"
+   ],
+   [
+    "druk ↔ rustig",
+    "affollato ↔ tranquillo"
+   ],
+   [
+    "sterk ↔ zwak",
+    "forte ↔ debole"
+   ],
+   [
+    "rijk ↔ arm",
+    "ricco ↔ povero"
+   ],
+   [
+    "dik ↔ dun",
+    "grosso, grasso ↔ sottile, magro"
+   ]
+  ]
+ },
+ {
+  "id": "num",
+  "g": "Lessico",
+  "t": "Numeri",
+  "s": "Da 0 a 1000 e i primi ordinali",
+  "cards": [
+   [
+    "nul",
+    "0"
+   ],
+   [
+    "één",
+    "1"
+   ],
+   [
+    "twee",
+    "2"
+   ],
+   [
+    "drie",
+    "3"
+   ],
+   [
+    "vier",
+    "4"
+   ],
+   [
+    "vijf",
+    "5"
+   ],
+   [
+    "zes",
+    "6"
+   ],
+   [
+    "zeven",
+    "7"
+   ],
+   [
+    "acht",
+    "8"
+   ],
+   [
+    "negen",
+    "9"
+   ],
+   [
+    "tien",
+    "10"
+   ],
+   [
+    "elf",
+    "11"
+   ],
+   [
+    "twaalf",
+    "12"
+   ],
+   [
+    "dertien",
+    "13"
+   ],
+   [
+    "veertien",
+    "14"
+   ],
+   [
+    "vijftien",
+    "15"
+   ],
+   [
+    "zestien",
+    "16"
+   ],
+   [
+    "zeventien",
+    "17"
+   ],
+   [
+    "achttien",
+    "18"
+   ],
+   [
+    "negentien",
+    "19"
+   ],
+   [
+    "twintig",
+    "20"
+   ],
+   [
+    "eenentwintig",
+    "21"
+   ],
+   [
+    "dertig",
+    "30"
+   ],
+   [
+    "veertig",
+    "40"
+   ],
+   [
+    "vijftig",
+    "50"
+   ],
+   [
+    "zestig",
+    "60"
+   ],
+   [
+    "zeventig",
+    "70"
+   ],
+   [
+    "tachtig",
+    "80"
+   ],
+   [
+    "negentig",
+    "90"
+   ],
+   [
+    "honderd",
+    "100"
+   ],
+   [
+    "duizend",
+    "1000"
+   ],
+   [
+    "eerste",
+    "primo"
+   ],
+   [
+    "tweede",
+    "secondo"
+   ],
+   [
+    "derde",
+    "terzo"
+   ],
+   [
+    "achtste",
+    "ottavo"
+   ]
+  ]
+ },
+ {
+  "id": "cal",
+  "g": "Lessico",
+  "t": "Giorni, mesi e stagioni",
+  "s": "Il calendario e le parole del tempo",
+  "cards": [
+   [
+    "maandag",
+    "lunedì"
+   ],
+   [
+    "dinsdag",
+    "martedì"
+   ],
+   [
+    "woensdag",
+    "mercoledì"
+   ],
+   [
+    "donderdag",
+    "giovedì"
+   ],
+   [
+    "vrijdag",
+    "venerdì"
+   ],
+   [
+    "zaterdag",
+    "sabato"
+   ],
+   [
+    "zondag",
+    "domenica"
+   ],
+   [
+    "januari",
+    "gennaio"
+   ],
+   [
+    "februari",
+    "febbraio"
+   ],
+   [
+    "maart",
+    "marzo"
+   ],
+   [
+    "april",
+    "aprile"
+   ],
+   [
+    "mei",
+    "maggio"
+   ],
+   [
+    "juni",
+    "giugno"
+   ],
+   [
+    "juli",
+    "luglio"
+   ],
+   [
+    "augustus",
+    "agosto"
+   ],
+   [
+    "september",
+    "settembre"
+   ],
+   [
+    "oktober",
+    "ottobre"
+   ],
+   [
+    "november",
+    "novembre"
+   ],
+   [
+    "december",
+    "dicembre"
+   ],
+   [
+    "de lente",
+    "la primavera"
+   ],
+   [
+    "de zomer",
+    "l'estate"
+   ],
+   [
+    "de herfst",
+    "l'autunno"
+   ],
+   [
+    "de winter",
+    "l'inverno"
+   ],
+   [
+    "vandaag",
+    "oggi"
+   ],
+   [
+    "morgen",
+    "domani"
+   ],
+   [
+    "gisteren",
+    "ieri"
+   ],
+   [
+    "overmorgen",
+    "dopodomani"
+   ],
+   [
+    "eergisteren",
+    "l'altro ieri"
+   ],
+   [
+    "het weekend",
+    "il fine settimana"
+   ]
+  ]
+ },
+ {
+  "id": "fam",
+  "g": "Lessico",
+  "t": "Famiglia e persone",
+  "s": "Parenti, amici e relazioni",
+  "cards": [
+   [
+    "de vader",
+    "il padre"
+   ],
+   [
+    "de moeder",
+    "la madre"
+   ],
+   [
+    "de ouders",
+    "i genitori"
+   ],
+   [
+    "de zoon",
+    "il figlio"
+   ],
+   [
+    "de dochter",
+    "la figlia"
+   ],
+   [
+    "de broer",
+    "il fratello"
+   ],
+   [
+    "de zus",
+    "la sorella"
+   ],
+   [
+    "de opa",
+    "il nonno"
+   ],
+   [
+    "de oma",
+    "la nonna"
+   ],
+   [
+    "de oom",
+    "lo zio"
+   ],
+   [
+    "de tante",
+    "la zia"
+   ],
+   [
+    "de neef",
+    "il cugino, il nipote"
+   ],
+   [
+    "de nicht",
+    "la cugina, la nipote"
+   ],
+   [
+    "de man",
+    "il marito"
+   ],
+   [
+    "de vrouw",
+    "la moglie"
+   ],
+   [
+    "de kinderen",
+    "i figli, i bambini"
+   ],
+   [
+    "de baby",
+    "il neonato"
+   ],
+   [
+    "de schoonmoeder",
+    "la suocera"
+   ],
+   [
+    "de vriend",
+    "l'amico, il ragazzo"
+   ],
+   [
+    "de vriendin",
+    "l'amica, la ragazza"
+   ],
+   [
+    "de buurman",
+    "il vicino di casa"
+   ],
+   [
+    "de collega",
+    "il collega"
+   ]
+  ]
+ },
+ {
+  "id": "food",
+  "g": "Lessico",
+  "t": "Cibo e bevande",
+  "s": "Al bar, al ristorante, al frietkot",
+  "cards": [
+   [
+    "het brood",
+    "il pane"
+   ],
+   [
+    "het broodje",
+    "il panino"
+   ],
+   [
+    "de boterham",
+    "la fetta di pane"
+   ],
+   [
+    "de pistolet",
+    "il panino tondo (tipico belga)"
+   ],
+   [
+    "de kaas",
+    "il formaggio"
+   ],
+   [
+    "de ham",
+    "il prosciutto"
+   ],
+   [
+    "het ei",
+    "l'uovo"
+   ],
+   [
+    "de boter",
+    "il burro"
+   ],
+   [
+    "de melk",
+    "il latte"
+   ],
+   [
+    "de koffie",
+    "il caffè"
+   ],
+   [
+    "de thee",
+    "il tè"
+   ],
+   [
+    "het water",
+    "l'acqua"
+   ],
+   [
+    "het bier",
+    "la birra"
+   ],
+   [
+    "de wijn",
+    "il vino"
+   ],
+   [
+    "de frieten",
+    "le patatine fritte"
+   ],
+   [
+    "de mayonaise",
+    "la maionese"
+   ],
+   [
+    "de mosselen",
+    "le cozze"
+   ],
+   [
+    "de wafel",
+    "la cialda, il waffle"
+   ],
+   [
+    "de chocolade",
+    "il cioccolato"
+   ],
+   [
+    "de soep",
+    "la zuppa"
+   ],
+   [
+    "het vlees",
+    "la carne"
+   ],
+   [
+    "de vis",
+    "il pesce"
+   ],
+   [
+    "de kip",
+    "il pollo"
+   ],
+   [
+    "de groenten",
+    "la verdura"
+   ],
+   [
+    "het fruit",
+    "la frutta"
+   ],
+   [
+    "de aardappel",
+    "la patata"
+   ],
+   [
+    "de rijst",
+    "il riso"
+   ],
+   [
+    "de suiker",
+    "lo zucchero"
+   ],
+   [
+    "het zout",
+    "il sale"
+   ],
+   [
+    "Smakelijk!",
+    "Buon appetito!"
+   ]
+  ]
+ },
+ {
+  "id": "city",
+  "g": "Lessico",
+  "t": "In città",
+  "s": "Trasporti, negozi e indicazioni",
+  "cards": [
+   [
+    "het station",
+    "la stazione"
+   ],
+   [
+    "de bus",
+    "l'autobus"
+   ],
+   [
+    "de tram",
+    "il tram"
+   ],
+   [
+    "de trein",
+    "il treno"
+   ],
+   [
+    "de metro",
+    "la metropolitana"
+   ],
+   [
+    "de halte",
+    "la fermata"
+   ],
+   [
+    "het perron",
+    "il binario"
+   ],
+   [
+    "het ticket",
+    "il biglietto"
+   ],
+   [
+    "de straat",
+    "la strada"
+   ],
+   [
+    "het plein",
+    "la piazza"
+   ],
+   [
+    "de kerk",
+    "la chiesa"
+   ],
+   [
+    "het stadhuis",
+    "il municipio"
+   ],
+   [
+    "het museum",
+    "il museo"
+   ],
+   [
+    "de winkel",
+    "il negozio"
+   ],
+   [
+    "de supermarkt",
+    "il supermercato"
+   ],
+   [
+    "de bakker",
+    "il fornaio"
+   ],
+   [
+    "de apotheek",
+    "la farmacia"
+   ],
+   [
+    "de bank",
+    "la banca"
+   ],
+   [
+    "het ziekenhuis",
+    "l'ospedale"
+   ],
+   [
+    "de brug",
+    "il ponte"
+   ],
+   [
+    "de hoek",
+    "l'angolo"
+   ],
+   [
+    "links",
+    "a sinistra"
+   ],
+   [
+    "rechts",
+    "a destra"
+   ],
+   [
+    "rechtdoor",
+    "dritto"
+   ]
+  ]
+ },
+ {
+  "id": "home",
+  "g": "Lessico",
+  "t": "In casa",
+  "s": "Stanze, mobili e oggetti",
+  "cards": [
+   [
+    "het huis",
+    "la casa"
+   ],
+   [
+    "het appartement",
+    "l'appartamento"
+   ],
+   [
+    "de slaapkamer",
+    "la camera da letto"
+   ],
+   [
+    "de badkamer",
+    "il bagno"
+   ],
+   [
+    "de keuken",
+    "la cucina"
+   ],
+   [
+    "de woonkamer",
+    "il soggiorno"
+   ],
+   [
+    "het toilet",
+    "il gabinetto"
+   ],
+   [
+    "de deur",
+    "la porta"
+   ],
+   [
+    "het raam",
+    "la finestra"
+   ],
+   [
+    "de trap",
+    "la scala"
+   ],
+   [
+    "de tuin",
+    "il giardino"
+   ],
+   [
+    "de tafel",
+    "il tavolo"
+   ],
+   [
+    "de stoel",
+    "la sedia"
+   ],
+   [
+    "het bed",
+    "il letto"
+   ],
+   [
+    "de kast",
+    "l'armadio"
+   ],
+   [
+    "de lamp",
+    "la lampada"
+   ],
+   [
+    "de koelkast",
+    "il frigorifero"
+   ],
+   [
+    "de wasmachine",
+    "la lavatrice"
+   ],
+   [
+    "de sleutel",
+    "la chiave"
+   ],
+   [
+    "de muur",
+    "il muro"
+   ]
+  ]
+ },
+ {
+  "id": "body",
+  "g": "Lessico",
+  "t": "Corpo e salute",
+  "s": "Dal medico e in farmacia",
+  "cards": [
+   [
+    "het hoofd",
+    "la testa"
+   ],
+   [
+    "het haar",
+    "i capelli"
+   ],
+   [
+    "het oog",
+    "l'occhio"
+   ],
+   [
+    "het oor",
+    "l'orecchio"
+   ],
+   [
+    "de neus",
+    "il naso"
+   ],
+   [
+    "de mond",
+    "la bocca"
+   ],
+   [
+    "de tand",
+    "il dente"
+   ],
+   [
+    "de keel",
+    "la gola"
+   ],
+   [
+    "de arm",
+    "il braccio"
+   ],
+   [
+    "de hand",
+    "la mano"
+   ],
+   [
+    "de vinger",
+    "il dito"
+   ],
+   [
+    "de buik",
+    "la pancia"
+   ],
+   [
+    "de rug",
+    "la schiena"
+   ],
+   [
+    "het been",
+    "la gamba"
+   ],
+   [
+    "de voet",
+    "il piede"
+   ],
+   [
+    "het hart",
+    "il cuore"
+   ],
+   [
+    "ziek",
+    "malato"
+   ],
+   [
+    "de huisarts",
+    "il medico di famiglia"
+   ],
+   [
+    "het medicijn",
+    "la medicina"
+   ],
+   [
+    "de koorts",
+    "la febbre"
+   ],
+   [
+    "de hoofdpijn",
+    "il mal di testa"
+   ],
+   [
+    "verkouden",
+    "raffreddato"
+   ],
+   [
+    "Ik voel me niet goed.",
+    "Non mi sento bene."
+   ]
+  ]
+ },
+ {
+  "id": "work",
+  "g": "Lessico",
+  "t": "Lavoro e ufficio",
+  "s": "Le parole per il lavoro in Belgio",
+  "cards": [
+   [
+    "het werk",
+    "il lavoro"
+   ],
+   [
+    "de job",
+    "il lavoro, l'impiego"
+   ],
+   [
+    "het kantoor",
+    "l'ufficio"
+   ],
+   [
+    "de collega",
+    "il collega"
+   ],
+   [
+    "de baas",
+    "il capo"
+   ],
+   [
+    "de vergadering",
+    "la riunione"
+   ],
+   [
+    "de afspraak",
+    "l'appuntamento"
+   ],
+   [
+    "de e-mail",
+    "l'e-mail"
+   ],
+   [
+    "het loon",
+    "lo stipendio"
+   ],
+   [
+    "het contract",
+    "il contratto"
+   ],
+   [
+    "de klant",
+    "il cliente"
+   ],
+   [
+    "het bedrijf",
+    "l'azienda"
+   ],
+   [
+    "de pauze",
+    "la pausa"
+   ],
+   [
+    "thuiswerken",
+    "lavorare da casa"
+   ],
+   [
+    "solliciteren",
+    "candidarsi"
+   ],
+   [
+    "het verlof",
+    "le ferie, il congedo"
+   ],
+   [
+    "ziek zijn",
+    "essere in malattia"
+   ],
+   [
+    "de computer",
+    "il computer"
+   ]
+  ]
+ },
+ {
+  "id": "weather",
+  "g": "Lessico",
+  "t": "Il tempo che fa",
+  "s": "Indispensabile in Belgio",
+  "cards": [
+   [
+    "het weer",
+    "il tempo (meteo)"
+   ],
+   [
+    "de zon",
+    "il sole"
+   ],
+   [
+    "de regen",
+    "la pioggia"
+   ],
+   [
+    "Het regent.",
+    "Piove."
+   ],
+   [
+    "Het waait.",
+    "Tira vento."
+   ],
+   [
+    "Het sneeuwt.",
+    "Nevica."
+   ],
+   [
+    "Het vriest.",
+    "Gela."
+   ],
+   [
+    "de wind",
+    "il vento"
+   ],
+   [
+    "de wolk",
+    "la nuvola"
+   ],
+   [
+    "bewolkt",
+    "nuvoloso"
+   ],
+   [
+    "zonnig",
+    "soleggiato"
+   ],
+   [
+    "nat",
+    "bagnato"
+   ],
+   [
+    "de paraplu",
+    "l'ombrello"
+   ],
+   [
+    "het onweer",
+    "il temporale"
+   ],
+   [
+    "Wat voor weer is het?",
+    "Che tempo fa?"
+   ]
+  ]
+ },
+ {
+  "id": "col",
+  "g": "Lessico",
+  "t": "Colori",
+  "s": "I colori di base",
+  "cards": [
+   [
+    "rood",
+    "rosso"
+   ],
+   [
+    "oranje",
+    "arancione"
+   ],
+   [
+    "geel",
+    "giallo"
+   ],
+   [
+    "groen",
+    "verde"
+   ],
+   [
+    "blauw",
+    "blu"
+   ],
+   [
+    "paars",
+    "viola"
+   ],
+   [
+    "roze",
+    "rosa"
+   ],
+   [
+    "bruin",
+    "marrone"
+   ],
+   [
+    "zwart",
+    "nero"
+   ],
+   [
+    "wit",
+    "bianco"
+   ],
+   [
+    "grijs",
+    "grigio"
+   ],
+   [
+    "lichtblauw",
+    "azzurro"
+   ]
+  ]
+ },
+ {
+  "id": "expr",
+  "g": "Lessico",
+  "t": "Espressioni utili",
+  "s": "Frasi pronte per la vita di tutti i giorni",
+  "cards": [
+   [
+    "Goeiedag!",
+    "Buongiorno!"
+   ],
+   [
+    "Dag!",
+    "Ciao! (arrivando o andando via)"
+   ],
+   [
+    "Tot ziens!",
+    "Arrivederci!"
+   ],
+   [
+    "Tot straks!",
+    "A dopo!"
+   ],
+   [
+    "Tot morgen!",
+    "A domani!"
+   ],
+   [
+    "Dank u wel.",
+    "Grazie. (cortese)"
+   ],
+   [
+    "Alstublieft.",
+    "Prego, ecco a Lei. / Per favore."
+   ],
+   [
+    "Graag gedaan.",
+    "Di niente."
+   ],
+   [
+    "Sorry.",
+    "Scusa."
+   ],
+   [
+    "Hoe gaat het?",
+    "Come va?"
+   ],
+   [
+    "Het gaat goed.",
+    "Va bene."
+   ],
+   [
+    "Ik begrijp het niet.",
+    "Non capisco."
+   ],
+   [
+    "Kunt u dat herhalen?",
+    "Può ripetere?"
+   ],
+   [
+    "Spreekt u Engels?",
+    "Parla inglese?"
+   ],
+   [
+    "Hoeveel kost dat?",
+    "Quanto costa?"
+   ],
+   [
+    "Waar is het toilet?",
+    "Dov'è il bagno?"
+   ],
+   [
+    "Ik weet het niet.",
+    "Non lo so."
+   ],
+   [
+    "Geen probleem.",
+    "Nessun problema."
+   ],
+   [
+    "Gezondheid!",
+    "Salute! (dopo uno starnuto)"
+   ],
+   [
+    "Proficiat!",
+    "Congratulazioni!"
+   ]
+  ]
+ },
+ {
+  "id": "vlaams",
+  "g": "Vlaams",
+  "t": "Parole fiamminghe",
+  "s": "Come si dice in Belgio, e cosa diresti nei Paesi Bassi",
+  "sayExtra": false,
+  "cards": [
+   [
+    "de gsm",
+    "il cellulare",
+    "Nei Paesi Bassi: de mobiel, het mobieltje"
+   ],
+   [
+    "de frieten",
+    "le patatine fritte",
+    "Nei Paesi Bassi: patat (al nord), friet (al sud)"
+   ],
+   [
+    "een pintje",
+    "una birra (alla spina)",
+    "Nei Paesi Bassi: een biertje, een pilsje"
+   ],
+   [
+    "goesting hebben",
+    "avere voglia",
+    "Nei Paesi Bassi: zin hebben"
+   ],
+   [
+    "plezant",
+    "piacevole, divertente",
+    "Nei Paesi Bassi: leuk"
+   ],
+   [
+    "Amai!",
+    "Accidenti! / Caspita!",
+    "Esclamazione di sorpresa"
+   ],
+   [
+    "Allez!",
+    "Dai! / Su!",
+    "Per incoraggiare o per dire «andiamo»"
+   ],
+   [
+    "seffens",
+    "tra poco",
+    "Nei Paesi Bassi: zo meteen"
+   ],
+   [
+    "efkes",
+    "un attimo",
+    "Nei Paesi Bassi: even"
+   ],
+   [
+    "de voormiddag",
+    "la mattina",
+    "Nei Paesi Bassi: de ochtend"
+   ],
+   [
+    "de namiddag",
+    "il pomeriggio",
+    "Nei Paesi Bassi: de middag"
+   ],
+   [
+    "de zetel",
+    "il divano",
+    "Nei Paesi Bassi: de bank"
+   ],
+   [
+    "de frigo",
+    "il frigorifero",
+    "Nei Paesi Bassi: de koelkast"
+   ],
+   [
+    "de lavabo",
+    "il lavandino",
+    "Nei Paesi Bassi: de wastafel"
+   ],
+   [
+    "de living",
+    "il soggiorno",
+    "Nei Paesi Bassi: de woonkamer"
+   ],
+   [
+    "de nonkel",
+    "lo zio",
+    "Nei Paesi Bassi: de oom"
+   ],
+   [
+    "de bompa",
+    "il nonno",
+    "Nei Paesi Bassi: de opa"
+   ],
+   [
+    "de bomma",
+    "la nonna",
+    "Nei Paesi Bassi: de oma"
+   ],
+   [
+    "schoon",
+    "bello",
+    "Nei Paesi Bassi schoon significa «pulito»"
+   ],
+   [
+    "content",
+    "contento",
+    "Usato anche nei Paesi Bassi; lì più spesso: tevreden, blij"
+   ],
+   [
+    "ambetant",
+    "fastidioso",
+    "Nei Paesi Bassi: vervelend"
+   ],
+   [
+    "kuisen",
+    "pulire",
+    "Nei Paesi Bassi: schoonmaken"
+   ],
+   [
+    "babbelen",
+    "chiacchierare",
+    "Usato anche nei Paesi Bassi; lì più spesso: kletsen"
+   ],
+   [
+    "het kot",
+    "la stanza da studente",
+    "Nei Paesi Bassi: de studentenkamer"
+   ],
+   [
+    "Wablieft?",
+    "Come, scusi?",
+    "Nei Paesi Bassi: Wat zegt u? / Pardon?"
+   ],
+   [
+    "Proficiat!",
+    "Congratulazioni!",
+    "Usato anche nei Paesi Bassi; lì più spesso: Gefeliciteerd!"
+   ]
+  ]
+ }
+]

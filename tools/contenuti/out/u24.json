@@ -1,0 +1,718 @@
+{
+ "id": "u24",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "Vanavond eten we ___ mijn ouders in Mechelen.",
+   "o": [
+    "bij",
+    "naar",
+    "aan",
+    "van"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "\"Dai miei genitori\" senza movimento (ci mangiamo) = <b>bij</b>. <i>naar</i> solo con un verbo di moto: <i>we gaan naar mijn ouders</i>.",
+   "g": {
+    "bij": "da, presso (stato, corretta)",
+    "naar": "da, verso: solo con il movimento",
+    "aan": "attaccato a, al bordo di",
+    "van": "da (provenienza), di"
+   },
+   "tt": "Stasera mangiamo dai miei genitori a Malines."
+  },
+  {
+   "t": "mc",
+   "q": "Sofie komt ___ Spanje, maar ze woont al tien jaar in Antwerpen.",
+   "o": [
+    "uit",
+    "van",
+    "naar",
+    "op"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Paese d'origine: <b>uit</b>. <s>van Spanje</s> è l'errore tipico (\"da/di\" in italiano).",
+   "g": {
+    "uit": "da (paese d'origine, corretta)",
+    "van": "da, di: per il paese d'origine si usa uit",
+    "naar": "verso (moto)",
+    "op": "su"
+   },
+   "tt": "Sofie viene dalla Spagna, ma abita ad Anversa da dieci anni."
+  },
+  {
+   "t": "fill",
+   "q": "Ik heb een half uur ___ de bus gewacht, maar hij is niet gekomen.",
+   "h": "aspettare: wachten + ?",
+   "a": [
+    "op"
+   ],
+   "e": "Combinazione fissa <b>wachten op</b>, anche al passato prossimo: <i>ik heb <b>op</b> de bus gewacht</i>.",
+   "tt": "Ho aspettato l'autobus per mezz'ora, ma non è arrivato."
+  },
+  {
+   "t": "fill",
+   "q": "In Oostende hebben we een appartement vlak ___ zee.",
+   "h": "al mare (stato)",
+   "a": [
+    "aan",
+    "bij"
+   ],
+   "e": "Al mare, senza movimento: <b>aan zee</b> (anche <i>vlak bij zee</i> = vicinissimo al mare). Con il movimento: <i>naar zee</i>.",
+   "tt": "A Ostenda abbiamo un appartamento proprio sul mare."
+  },
+  {
+   "t": "tr",
+   "q": "Domani vado in treno da mia nonna a Bruges.",
+   "a": [
+    "Morgen ga ik met de trein naar mijn oma in Brugge",
+    "Ik ga morgen met de trein naar mijn oma in Brugge",
+    "Morgen ga ik met de trein naar Brugge naar mijn oma",
+    "Ik ga morgen met de trein naar Brugge naar mijn oma",
+    "Morgen ga ik met de trein naar mijn grootmoeder in Brugge",
+    "Ik ga morgen met de trein naar mijn grootmoeder in Brugge",
+    "Morgen ga ik met de trein naar Brugge naar mijn grootmoeder",
+    "Ik ga morgen met de trein naar Brugge naar mijn grootmoeder",
+    "Morgen ga ik met de trein naar mijn bomma in Brugge",
+    "Ik ga morgen met de trein naar mijn bomma in Brugge",
+    "Morgen ga ik met de trein naar Brugge naar mijn bomma",
+    "Ik ga morgen met de trein naar Brugge naar mijn bomma"
+   ],
+   "e": "In treno = <b>met de trein</b>; \"da\" + persona con movimento = <b>naar</b>; \"a Bruges\" (stato) = <b>in Brugge</b>. Con <i>morgen</i> davanti: inversione, <i>Morgen <b>ga ik</b></i>."
+  },
+  {
+   "t": "tr",
+   "q": "Abbiamo parlato di musica tutta la sera.",
+   "a": [
+    "We hebben de hele avond over muziek gepraat",
+    "Wij hebben de hele avond over muziek gepraat",
+    "De hele avond hebben we over muziek gepraat",
+    "De hele avond hebben wij over muziek gepraat",
+    "We hebben de hele avond over muziek gesproken",
+    "Wij hebben de hele avond over muziek gesproken",
+    "De hele avond hebben we over muziek gesproken",
+    "De hele avond hebben wij over muziek gesproken"
+   ],
+   "e": "\"Parlare di\" = <b>praten over</b>, mai <s>praten van</s>. Il participio (<i>gepraat</i> o <i>gesproken</i>) va in fondo."
+  },
+  {
+   "t": "order",
+   "q": "Il libro di Tom è nell'armadio dietro la porta.",
+   "a": "Het boek van Tom ligt in de kast achter de deur",
+   "x": [
+    "op",
+    "naar"
+   ],
+   "e": "<b>van</b> per l'appartenenza, <b>in</b> = dentro, <b>achter</b> = dietro. Un libro disteso: <i>ligt</i>.",
+   "tt": "Il libro di Tom è nell'armadio dietro la porta."
+  },
+  {
+   "t": "order",
+   "q": "In macchina mi piace ascoltare la radio.",
+   "a": "In de auto luister ik graag naar de radio",
+   "alt": [
+    "Ik luister graag naar de radio in de auto",
+    "Ik luister in de auto graag naar de radio"
+   ],
+   "x": [
+    "aan",
+    "op"
+   ],
+   "e": "<b>luisteren naar</b>: in olandese la preposizione serve anche se in italiano non c'è. Con <i>In de auto</i> all'inizio: inversione.",
+   "tt": "In macchina mi piace ascoltare la radio."
+  }
+ ],
+ "en": {
+  "it": "Prepositions",
+  "note": "\n<h3>The idea</h3>\n<p>Prepositions almost never translate word for word. English \"to\", \"at\" and \"from\" do lots of different jobs; in Dutch each of these jobs has its own preposition. To choose the right one, always ask yourself: <b>position or movement?</b> <b>Inside, on top or attached?</b> <b>A person or a place?</b></p>\n<h3>Where something is</h3>\n<table><tr><th>Dutch</th><th>meaning</th><th>example</th></tr>\n<tr><td>in</td><td>in, inside</td><td>in de kast (in the closet)</td></tr>\n<tr><td>op</td><td>on, touching</td><td>op de tafel (on the table)</td></tr>\n<tr><td>boven</td><td>above, not touching</td><td>boven de tafel (above the table, hanging)</td></tr>\n<tr><td>onder</td><td>under</td><td>onder het bed</td></tr>\n<tr><td>voor</td><td>in front of</td><td>voor het huis</td></tr>\n<tr><td>achter</td><td>behind</td><td>achter het huis</td></tr>\n<tr><td>naast</td><td>next to</td><td>naast de deur</td></tr>\n<tr><td>tussen</td><td>between</td><td>tussen de stoel en de tafel</td></tr>\n<tr><td>aan</td><td>attached to, at the edge of</td><td>aan de muur, aan zee</td></tr>\n<tr><td>bij</td><td>at, by, at someone's place</td><td>bij de bakker (at the baker's)</td></tr></table>\n<h3>Movement and origin</h3>\n<ul>\n<li><b>naar</b>: to, toward (with movement). <i>Ik ga naar Gent, naar de bakker.</i></li>\n<li><b>van</b>: from (starting point), of (belonging). <i>van Gent naar Brugge</i>, <i>het boek van Tom</i> (Tom's book).</li>\n<li><b>uit</b>: out of, from (origin). <i>Ik kom uit Italië</i>, <i>Ik kijk uit het raam</i>.</li>\n<li><b>over</b>: over, across, and \"about\" (topic). <i>over de straat</i>, <i>praten over muziek</i>.</li>\n<li><b>met</b>: with, also for means of transportation. <i>met de trein</i> (by train).</li>\n</ul>\n<h3>\"To\", \"at\" and \"from\" in Dutch</h3>\n<table><tr><th>English</th><th>Dutch</th></tr>\n<tr><td>I'm in Ghent / I'm going to Ghent</td><td>in Gent / naar Gent</td></tr>\n<tr><td>I'm at the doctor's / I'm going to the doctor's</td><td>bij de dokter / naar de dokter</td></tr>\n<tr><td>I'm from Italy</td><td>uit Italië</td></tr>\n<tr><td>I'm at work</td><td>op het werk</td></tr>\n<tr><td>we're at the seaside / we're going to the seaside</td><td>aan zee / naar zee</td></tr>\n<tr><td>I'm going by train</td><td>met de trein</td></tr></table>\n<h3>Verbs with a fixed preposition</h3>\n<p>Many verbs always take the same preposition, often a different one from English (or none in English). Learn them as one block: <b>wachten op</b> (wait for), <b>kijken naar</b> (look at, watch), <b>luisteren naar</b> (listen to), <b>denken aan</b> (think of/about), <b>houden van</b> (love), <b>praten over</b> (talk about), <b>bang zijn voor</b> (be afraid of).</p>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Translating \"for\" in wait for: <s>Ik wacht voor de trein</s> → <b>Ik wacht op de trein</b>.</li>\n<li>Translating \"to\" with tot or te: <s>Ik ga tot Gent</s> → <b>Ik ga naar Gent</b>; <s>Ik luister tot muziek</s> → <b>Ik luister naar muziek</b>.</li>\n<li>Using van for your country of origin, as in \"from\": <s>Ik kom van Italië</s> → <b>Ik kom uit Italië</b>.</li>\n<li>Translating \"by train\" literally: <s>bij de trein</s> → <b>met de trein</b> (in de trein = inside the train).</li>\n<li>Using op for something that isn't touching: a hanging lamp is <b>boven</b> de tafel.</li>\n</ul>",
+  "vlaams": "In Belgium you'll often hear \"<b>bang zijn van</b>\" alongside bang zijn voor: both are accepted. In spoken Flemish \"<b>Ik ben van Gent</b>\" means \"I'm from Ghent\", i.e. you were born or grew up there.",
+  "vocab": [
+   [
+    "de muur",
+    "the wall"
+   ],
+   [
+    "de bakker",
+    "the baker"
+   ],
+   [
+    "de kast",
+    "the closet, the cupboard"
+   ],
+   [
+    "het bed",
+    "the bed"
+   ],
+   [
+    "de lamp",
+    "the lamp"
+   ],
+   [
+    "de zee",
+    "the sea"
+   ],
+   [
+    "het raam",
+    "the window"
+   ],
+   [
+    "de straat",
+    "the street"
+   ],
+   [
+    "het werk",
+    "work"
+   ],
+   [
+    "de muziek",
+    "music"
+   ],
+   [
+    "de kat",
+    "the cat"
+   ],
+   [
+    "kijken naar",
+    "to look at, to watch"
+   ],
+   [
+    "luisteren naar",
+    "to listen to"
+   ],
+   [
+    "bang zijn voor",
+    "to be afraid of"
+   ],
+   [
+    "liggen",
+    "to lie (flat), to be (lying)"
+   ],
+   [
+    "hangen",
+    "to hang"
+   ]
+  ],
+  "core": [
+   [
+    "in",
+    "in, inside"
+   ],
+   [
+    "op",
+    "on (touching)"
+   ],
+   [
+    "aan",
+    "at, on, attached to"
+   ],
+   [
+    "bij",
+    "at, by (no movement)"
+   ],
+   [
+    "naar",
+    "to, toward (movement)"
+   ],
+   [
+    "van / uit",
+    "from, of / out of (origin)"
+   ],
+   [
+    "voor / achter / naast / tussen",
+    "in front of / behind / next to / between"
+   ],
+   [
+    "onder / boven / over",
+    "under / above / over, about (topic)"
+   ]
+  ],
+  "items": [
+   {
+    "t": "mc",
+    "q": "The cat is sleeping under the bed. → De kat ligt ___ het bed.",
+    "o": [
+     "onder",
+     "op",
+     "in",
+     "naast"
+    ],
+    "a": 0,
+    "e": "under = <b>onder</b>."
+   },
+   {
+    "t": "fill",
+    "q": "De lamp hangt ___ de muur.",
+    "h": "on (attached to)",
+    "a": [
+     "aan"
+    ],
+    "e": "Attached to a wall: <b>aan</b> de muur."
+   },
+   {
+    "t": "mc",
+    "q": "Tomorrow I'm going to the baker's. → Morgen ga ik ___ de bakker.",
+    "o": [
+     "naar",
+     "bij",
+     "van",
+     "uit"
+    ],
+    "a": 0,
+    "e": "Movement toward a person or a store: <b>naar</b>."
+   },
+   {
+    "t": "tr",
+    "q": "I'm at work.",
+    "a": [
+     "Ik ben op het werk",
+     "Ik ben op mijn werk"
+    ],
+    "e": "at work = <b>op het werk</b>."
+   },
+   {
+    "t": "order",
+    "q": "Tomorrow we're going to the seaside.",
+    "a": "Morgen gaan we naar zee",
+    "alt": [
+     "We gaan morgen naar zee"
+    ],
+    "x": [
+     "bij",
+     "gaat"
+    ],
+    "e": "Movement: <b>naar zee</b> (position: aan zee)."
+   },
+   {
+    "t": "mc",
+    "q": "We're at the seaside. → We zijn ___ zee.",
+    "o": [
+     "aan",
+     "naar",
+     "uit",
+     "bij"
+    ],
+    "a": 0,
+    "e": "At the seaside, no movement: <b>aan zee</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Ik kijk graag ___ films.",
+    "h": "watch: kijken + ?",
+    "a": [
+     "naar"
+    ],
+    "e": "Fixed combination: <b>kijken naar</b>."
+   },
+   {
+    "t": "mc",
+    "q": "I'm afraid of dogs. → Ik ben bang ___ honden.",
+    "o": [
+     "voor",
+     "op",
+     "aan",
+     "naar"
+    ],
+    "a": 0,
+    "e": "<b>bang zijn voor</b> = to be afraid of."
+   },
+   {
+    "t": "tr",
+    "q": "The book is next to the lamp.",
+    "a": [
+     "Het boek ligt naast de lamp",
+     "Het boek is naast de lamp",
+     "Het boek staat naast de lamp"
+    ],
+    "e": "next to = <b>naast</b>."
+   },
+   {
+    "t": "order",
+    "q": "I'm looking out of the window.",
+    "a": "Ik kijk uit het raam",
+    "x": [
+     "van",
+     "op"
+    ],
+    "e": "out of = <b>uit</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Het raam is ___ de deur.",
+    "h": "above",
+    "a": [
+     "boven"
+    ],
+    "e": "Above, not touching: <b>boven</b>."
+   },
+   {
+    "t": "mc",
+    "q": "The train goes from Ghent to Bruges. → De trein gaat ___ Gent naar Brugge.",
+    "o": [
+     "van",
+     "op",
+     "bij",
+     "aan"
+    ],
+    "a": 0,
+    "e": "Starting point: <b>van</b> ... naar."
+   }
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "The book is on the table. → Het boek ligt ___ de tafel.",
+    "o": [
+     "op",
+     "in",
+     "aan",
+     "boven"
+    ],
+    "a": 0,
+    "e": "On top and touching: <b>op</b>.",
+    "g": {
+     "op": "on (touching)",
+     "in": "in, inside",
+     "aan": "attached to, at the edge of",
+     "boven": "above, but not touching"
+    },
+    "tt": "The book is on the table."
+   },
+   {
+    "t": "mc",
+    "q": "I'm going to Brussels. → Ik ga ___ Brussel.",
+    "o": [
+     "naar",
+     "in",
+     "op",
+     "bij"
+    ],
+    "a": 0,
+    "e": "Movement toward a place: <b>naar</b>.",
+    "g": {
+     "naar": "to, toward (movement)",
+     "in": "in (position): not for movement",
+     "op": "on",
+     "bij": "at (position)"
+    },
+    "tt": "I'm going to Brussels."
+   },
+   {
+    "t": "mc",
+    "q": "I live in Brussels. → Ik woon ___ Brussel.",
+    "o": [
+     "in",
+     "naar",
+     "op",
+     "aan"
+    ],
+    "a": 0,
+    "e": "Being in a city: <b>in</b>.",
+    "g": {
+     "in": "in (position)",
+     "naar": "to (movement)",
+     "op": "on",
+     "aan": "attached to, at the edge of"
+    },
+    "tt": "I live in Brussels."
+   },
+   {
+    "t": "mc",
+    "q": "I'm from Italy. → Ik kom ___ Italië.",
+    "o": [
+     "uit",
+     "naar",
+     "bij",
+     "op"
+    ],
+    "a": 0,
+    "e": "Country of origin: <b>uit</b>.",
+    "g": {
+     "uit": "from (origin)",
+     "naar": "to (movement)",
+     "bij": "at, by",
+     "op": "on"
+    },
+    "tt": "I'm from Italy."
+   },
+   {
+    "t": "mc",
+    "q": "I'm at the doctor's. → Ik ben ___ de dokter.",
+    "o": [
+     "bij",
+     "naar",
+     "van",
+     "op"
+    ],
+    "a": 0,
+    "e": "At a person's place, no movement: <b>bij</b>.",
+    "g": {
+     "bij": "at (someone's place, no movement)",
+     "naar": "to (movement): there's no movement here",
+     "van": "from, of",
+     "op": "on"
+    },
+    "tt": "I'm at the doctor's."
+   },
+   {
+    "t": "mc",
+    "q": "The lamp hangs above the table. → De lamp hangt ___ de tafel.",
+    "o": [
+     "boven",
+     "op",
+     "onder",
+     "naast"
+    ],
+    "a": 0,
+    "e": "Above, not touching: <b>boven</b>.",
+    "g": {
+     "boven": "above (not touching)",
+     "op": "on, touching: it isn't hanging",
+     "onder": "under",
+     "naast": "next to"
+    },
+    "tt": "The lamp hangs above the table."
+   },
+   {
+    "t": "mc",
+    "q": "I'm waiting for the train. → Ik wacht ___ de trein.",
+    "o": [
+     "op",
+     "naar",
+     "aan",
+     "van"
+    ],
+    "a": 0,
+    "e": "Fixed combination: <b>wachten op</b>.",
+    "g": {
+     "op": "wachten op = to wait for",
+     "naar": "wachten naar doesn't exist",
+     "aan": "wachten aan doesn't exist",
+     "van": "wachten van doesn't exist"
+    },
+    "tt": "I'm waiting for the train."
+   },
+   {
+    "t": "fill",
+    "q": "Ik luister ___ muziek.",
+    "h": "listen to: luisteren + ?",
+    "a": [
+     "naar"
+    ],
+    "e": "Fixed combination: <b>luisteren naar</b>.",
+    "tt": "I'm listening to music."
+   },
+   {
+    "t": "fill",
+    "q": "De kat zit ___ de stoel en de tafel.",
+    "h": "between",
+    "a": [
+     "tussen"
+    ],
+    "e": "between = <b>tussen</b>.",
+    "tt": "The cat is between the chair and the table."
+   },
+   {
+    "t": "order",
+    "q": "The bike is behind the house.",
+    "a": "De fiets is achter het huis",
+    "x": [
+     "naar",
+     "hem"
+    ],
+    "e": "behind = <b>achter</b>."
+   }
+  ],
+  "gloss": {
+   "0": {
+    "g": {
+     "onder": "under",
+     "op": "on",
+     "in": "in, inside",
+     "naast": "next to"
+    },
+    "t": "The cat is sleeping under the bed."
+   },
+   "1": {
+    "t": "The lamp is hanging on the wall."
+   },
+   "2": {
+    "g": {
+     "naar": "to (movement)",
+     "bij": "at (no movement): here there is movement",
+     "van": "from",
+     "uit": "out of"
+    },
+    "t": "Tomorrow I'm going to the baker's."
+   },
+   "3": {
+    "t": "I'm at work."
+   },
+   "4": {
+    "t": "Tomorrow we're going to the seaside."
+   },
+   "5": {
+    "g": {
+     "aan": "at, by (the sea), at the edge of",
+     "naar": "to (movement): there's no movement here",
+     "uit": "out of",
+     "bij": "at, by: for the sea you say aan zee"
+    },
+    "t": "We're at the seaside."
+   },
+   "6": {
+    "t": "I like watching movies."
+   },
+   "7": {
+    "g": {
+     "voor": "bang zijn voor = to be afraid of",
+     "op": "bang op doesn't exist",
+     "aan": "bang aan doesn't exist",
+     "naar": "bang naar doesn't exist"
+    },
+    "t": "I'm afraid of dogs."
+   },
+   "8": {
+    "t": "The book is next to the lamp."
+   },
+   "9": {
+    "t": "I'm looking out of the window."
+   },
+   "10": {
+    "t": "The window is above the door."
+   },
+   "11": {
+    "g": {
+     "van": "from (starting point)",
+     "op": "on",
+     "bij": "at, by",
+     "aan": "attached to"
+    },
+    "t": "The train goes from Ghent to Bruges."
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "Vanavond eten we ___ mijn ouders in Mechelen.",
+    "o": [
+     "bij",
+     "naar",
+     "aan",
+     "van"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "\"At my parents' (place)\", no movement = <b>bij</b>. <i>naar</i> only with a verb of motion: <i>we gaan naar mijn ouders</i> (we're going to my parents').",
+    "g": {
+     "bij": "at (someone's place), no movement (correct)",
+     "naar": "to: only with movement",
+     "aan": "on, at the edge of",
+     "van": "from, of"
+    },
+    "tt": "Tonight we're having dinner at my parents' in Mechelen."
+   },
+   {
+    "t": "mc",
+    "q": "Sofie komt ___ Spanje, maar ze woont al tien jaar in Antwerpen.",
+    "o": [
+     "uit",
+     "van",
+     "naar",
+     "op"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Country of origin: <b>uit</b>. <s>van Spanje</s> is the typical mistake, because English says \"from\".",
+    "g": {
+     "uit": "from (country of origin, correct)",
+     "van": "from, of: for your country of origin use uit",
+     "naar": "to (movement)",
+     "op": "on"
+    },
+    "tt": "Sofie is from Spain, but she's been living in Antwerp for ten years."
+   },
+   {
+    "t": "fill",
+    "q": "Ik heb een half uur ___ de bus gewacht, maar hij is niet gekomen.",
+    "h": "wait for: wachten + ?",
+    "a": [
+     "op"
+    ],
+    "e": "Fixed combination <b>wachten op</b> (not <s>voor</s>, as English \"for\" suggests), also in the perfect: <i>ik heb <b>op</b> de bus gewacht</i>.",
+    "tt": "I waited half an hour for the bus, but it didn't come."
+   },
+   {
+    "t": "fill",
+    "q": "In Oostende hebben we een appartement vlak ___ zee.",
+    "h": "by the sea (no movement)",
+    "a": [
+     "aan",
+     "bij"
+    ],
+    "e": "By the sea, no movement: <b>aan zee</b> (also <i>vlak bij zee</i> = very close to the sea). With movement: <i>naar zee</i>.",
+    "tt": "In Ostend we have an apartment right by the sea."
+   },
+   {
+    "t": "tr",
+    "q": "Tomorrow I'm taking the train to my grandma's in Bruges.",
+    "a": [
+     "Morgen ga ik met de trein naar mijn oma in Brugge",
+     "Ik ga morgen met de trein naar mijn oma in Brugge",
+     "Morgen ga ik met de trein naar Brugge naar mijn oma",
+     "Ik ga morgen met de trein naar Brugge naar mijn oma",
+     "Morgen ga ik met de trein naar mijn grootmoeder in Brugge",
+     "Ik ga morgen met de trein naar mijn grootmoeder in Brugge",
+     "Morgen ga ik met de trein naar Brugge naar mijn grootmoeder",
+     "Ik ga morgen met de trein naar Brugge naar mijn grootmoeder",
+     "Morgen ga ik met de trein naar mijn bomma in Brugge",
+     "Ik ga morgen met de trein naar mijn bomma in Brugge",
+     "Morgen ga ik met de trein naar Brugge naar mijn bomma",
+     "Ik ga morgen met de trein naar Brugge naar mijn bomma"
+    ],
+    "e": "By train = <b>met de trein</b>; to a person's place = <b>naar</b>; in Bruges = <b>in Brugge</b>. With <i>morgen</i> first: inversion, <i>Morgen <b>ga ik</b></i>."
+   },
+   {
+    "t": "tr",
+    "q": "We talked about music all evening.",
+    "a": [
+     "We hebben de hele avond over muziek gepraat",
+     "Wij hebben de hele avond over muziek gepraat",
+     "De hele avond hebben we over muziek gepraat",
+     "De hele avond hebben wij over muziek gepraat",
+     "We hebben de hele avond over muziek gesproken",
+     "Wij hebben de hele avond over muziek gesproken",
+     "De hele avond hebben we over muziek gesproken",
+     "De hele avond hebben wij over muziek gesproken"
+    ],
+    "e": "\"Talk about\" = <b>praten over</b>. The participle (<i>gepraat</i> or <i>gesproken</i>) goes at the end, after <i>over muziek</i>."
+   },
+   {
+    "t": "order",
+    "q": "Tom's book is in the closet behind the door.",
+    "a": "Het boek van Tom ligt in de kast achter de deur",
+    "x": [
+     "op",
+     "naar"
+    ],
+    "e": "Dutch has no 's for most nouns: \"Tom's book\" = <i>het boek <b>van</b> Tom</i>. <b>in</b> = inside, <b>achter</b> = behind. A book lying flat: <i>ligt</i>.",
+    "tt": "Tom's book is in the closet behind the door."
+   },
+   {
+    "t": "order",
+    "q": "In the car I like listening to the radio.",
+    "a": "In de auto luister ik graag naar de radio",
+    "alt": [
+     "Ik luister graag naar de radio in de auto",
+     "Ik luister in de auto graag naar de radio"
+    ],
+    "x": [
+     "aan",
+     "op"
+    ],
+    "e": "Listen to = <b>luisteren naar</b> (not <s>aan</s> or <s>tot</s>). \"Like doing\" = <i>graag</i>. With <i>In de auto</i> first: inversion.",
+    "tt": "In the car I like listening to the radio."
+   }
+  ]
+ }
+}

@@ -1,0 +1,715 @@
+{
+ "id": "u25",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "Gisteren ben ik vergeten mijn moeder ___.",
+   "h": "opbellen",
+   "o": [
+    "op te bellen",
+    "te opbellen",
+    "opbellen",
+    "opgebeld"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<i>vergeten</i> vuole <b>te</b>, e con un separabile te va in mezzo: <b>op te bellen</b>, alla fine della frase.",
+   "g": {
+    "op te bellen": "di chiamare (corretta: te in mezzo)",
+    "te opbellen": "con i separabili te va tra particella e verbo",
+    "opbellen": "manca te: vergeten lo vuole",
+    "opgebeld": "chiamato (participio): qui serve l'infinito"
+   },
+   "tt": "Ieri mi sono dimenticato di chiamare mia madre."
+  },
+  {
+   "t": "mc",
+   "q": "Na de les blijven we nog een uurtje in het café ___.",
+   "o": [
+    "praten",
+    "te praten",
+    "om te praten",
+    "gepraat"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Trabocchetto: <b>blijven</b> + infinito <b>senza te</b>, come i modali e gaan: <i>we blijven … <b>praten</b></i>.",
+   "g": {
+    "praten": "a chiacchierare (infinito senza te, corretta)",
+    "te praten": "dopo blijven non si usa te",
+    "om te praten": "non è uno scopo: dopo blijven niente om te",
+    "gepraat": "parlato (participio)"
+   },
+   "tt": "Dopo la lezione restiamo ancora un'oretta al bar a chiacchierare."
+  },
+  {
+   "t": "fill",
+   "q": "Ik neem de tram ___ naar het station te gaan, want het regent.",
+   "h": "per (scopo)",
+   "a": [
+    "om"
+   ],
+   "e": "Scopo = <b>om … te</b>: <i>om</i> apre il gruppo, <i>te gaan</i> lo chiude. Nello standard non si usa <s>voor … te</s>.",
+   "tt": "Prendo il tram per andare alla stazione, perché piove."
+  },
+  {
+   "t": "fill",
+   "q": "Je ___ morgen niet vroeg op te staan: de winkel gaat pas om tien uur open.",
+   "h": "non è necessario",
+   "a": [
+    "hoeft"
+   ],
+   "e": "<b>niet hoeven te</b> = non c'è bisogno: <i>je <b>hoeft</b> niet … op te staan</i>. Con <i>moeten</i> non ci sarebbe <i>te</i>.",
+   "tt": "Domani non c'è bisogno che ti alzi presto: il negozio apre solo alle dieci."
+  },
+  {
+   "t": "tr",
+   "q": "Mio fratello è andato a Bruxelles senza dire niente.",
+   "a": [
+    "Mijn broer is naar Brussel gegaan zonder iets te zeggen",
+    "Mijn broer is zonder iets te zeggen naar Brussel gegaan",
+    "Mijn broer ging naar Brussel zonder iets te zeggen",
+    "Mijn broer ging zonder iets te zeggen naar Brussel"
+   ],
+   "e": "\"Senza dire niente\" = <b>zonder iets te zeggen</b> (non <s>zonder niets</s>: <i>zonder</i> è già negativo). <i>gaan</i> con una meta vuole <b>zijn</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Non c'è bisogno che tu porti niente.",
+   "a": [
+    "Je hoeft niets mee te brengen",
+    "Je hoeft niets mee te nemen",
+    "Je hoeft niks mee te brengen",
+    "Je hoeft niks mee te nemen",
+    "Jij hoeft niets mee te brengen",
+    "Jij hoeft niets mee te nemen",
+    "Jij hoeft niks mee te brengen",
+    "Jij hoeft niks mee te nemen",
+    "U hoeft niets mee te brengen",
+    "U hoeft niets mee te nemen",
+    "U hoeft niks mee te brengen",
+    "U hoeft niks mee te nemen",
+    "Je moet niets meebrengen",
+    "Je moet niks meebrengen",
+    "U moet niets meebrengen"
+   ],
+   "e": "<b>niet hoeven te</b> + separabile: <i>Je hoeft niets <b>mee te brengen</b></i>. In Belgio si sente anche <i>Je moet niets meebrengen</i>."
+  },
+  {
+   "t": "order",
+   "q": "Mi alzo presto per prendere il primo treno per Gand.",
+   "a": "Ik sta vroeg op om de eerste trein naar Gent te nemen",
+   "alt": [
+    "Om de eerste trein naar Gent te nemen sta ik vroeg op"
+   ],
+   "x": [
+    "voor",
+    "genomen"
+   ],
+   "e": "Separabile: <i>ik sta vroeg <b>op</b></i>; poi lo scopo: <b>om</b> … <b>te nemen</b>, con te + infinito in fondo.",
+   "tt": "Mi alzo presto per prendere il primo treno per Gand."
+  },
+  {
+   "t": "order",
+   "q": "Ieri sera ho provato a chiamarti.",
+   "a": "Ik heb gisteravond geprobeerd je op te bellen",
+   "alt": [
+    "Gisteravond heb ik geprobeerd je op te bellen",
+    "Ik heb geprobeerd je gisteravond op te bellen"
+   ],
+   "x": [
+    "opgebeld",
+    "bel"
+   ],
+   "e": "<i>proberen</i> al passato prossimo (<b>heb … geprobeerd</b>) + gruppo con te dopo il participio: <i>je <b>op te bellen</b></i>.",
+   "tt": "Ieri sera ho provato a chiamarti."
+  }
+ ],
+ "en": {
+  "it": "The infinitive with te",
+  "note": "\n<h3>The idea</h3>\n<p>Many verbs connect to an infinitive with <b>to</b> in English: I try to speak, I begin to understand, I forgot to call. In Dutch the little word <b>te</b> does the same job. The big difference: like every infinitive, <b>te + infinitive</b> goes to the <b>end of the sentence</b>.</p>\n<p><i>Ik probeer elke dag Nederlands <b>te spreken</b>.</i> (I try to speak Dutch every day.)</p>\n<h3>Verbs that take te</h3>\n<table><tr><th>Dutch</th><th>English</th><th>example</th></tr>\n<tr><td>proberen te</td><td>to try to</td><td>Ik probeer te koken.</td></tr>\n<tr><td>beginnen te</td><td>to begin to</td><td>Het begint te regenen.</td></tr>\n<tr><td>vergeten te</td><td>to forget to</td><td>Ik vergeet brood te kopen.</td></tr>\n<tr><td>hopen te</td><td>to hope to</td><td>Ik hoop je morgen te zien.</td></tr>\n<tr><td>niet hoeven te</td><td>not to need to, not to have to</td><td>Je hoeft niet te komen.</td></tr></table>\n<p><b>niet hoeven te</b> is the opposite of moeten: <i>Je moet komen</i> (you have to come) → <i>Je hoeft niet te komen</i> (you don't have to come). Note that English \"have to\" is <b>moeten</b>, with no te.</p>\n<p>With separable verbs, <b>te</b> goes in the middle: <i>opstaan → op te staan</i>. <i>Ik probeer vroeg op te staan.</i></p>\n<h3>Om … te = (in order) to</h3>\n<p>To express <b>purpose</b>, English simply uses \"to\" (or \"in order to\"); Dutch uses <b>om … te</b>: <i>Ik ga naar de stad <b>om</b> brood <b>te</b> kopen</i> (I'm going into town to buy bread). Om comes at the start of the group, te + infinitive at the end. You also find it after adjectives like moeilijk and makkelijk: <i>Het is moeilijk om Nederlands te leren</i> (here om can be left out).</p>\n<h3>Zonder … te = without -ing</h3>\n<p>\"Without + -ing\" works the same way, but with an infinitive: <i>Ze vertrekt <b>zonder</b> iets <b>te</b> zeggen</i> (she leaves without saying anything).</p>\n<h3>Verbs WITHOUT te</h3>\n<p>Some common verbs link to the infinitive directly, without te, often where English has no \"to\" either:</p>\n<ul>\n<li>modal verbs: <i>Ik wil koken, ik kan zwemmen</i> (unit 9)</li>\n<li><b>gaan</b>: <i>We gaan zwemmen</i> (we're going swimming / going to swim)</li>\n<li><b>laten</b>: <i>Ik laat de kinderen spelen</i> (I let the children play)</li>\n<li><b>blijven</b>: <i>We blijven thuis eten</i> (we're staying home to eat)</li>\n<li><b>zien</b> and <b>horen</b>: <i>Ik zie hem komen</i> (I see him come), <i>Ik hoor haar zingen</i> (I hear her sing)</li>\n</ul>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Putting te + infinitive right after the verb, as in English: <s>Ik probeer te spreken Nederlands</s> → <b>Ik probeer Nederlands te spreken</b>.</li>\n<li>Adding te after a modal or gaan, as in \"want to\", \"going to\", \"have to\": <s>Ik wil te komen</s> → <b>Ik wil komen</b>; <s>Ik ga te koken</s> → <b>Ik ga koken</b>.</li>\n<li>Translating purpose \"to\" or \"for\" without om: <s>Ik ga naar de stad te kopen brood</s>, <s>voor brood te kopen</s> → <b>om brood te kopen</b>.</li>\n<li>Splitting separable verbs wrongly: <s>te opstaan</s> → <b>op te staan</b>.</li>\n</ul>",
+  "vlaams": "In spoken Belgian Dutch you'll often hear <b>voor … te</b> instead of om … te: \"Ik kom voor te helpen\" (I'm coming to help). It's very widespread, but in standard and written Dutch always use <b>om te helpen</b>.",
+  "vocab": [
+   [
+    "proberen",
+    "to try"
+   ],
+   [
+    "beginnen",
+    "to begin, to start"
+   ],
+   [
+    "vergeten",
+    "to forget"
+   ],
+   [
+    "hopen",
+    "to hope"
+   ],
+   [
+    "regenen",
+    "to rain"
+   ],
+   [
+    "kopen",
+    "to buy"
+   ],
+   [
+    "zeggen",
+    "to say"
+   ],
+   [
+    "spelen",
+    "to play"
+   ],
+   [
+    "zingen",
+    "to sing"
+   ],
+   [
+    "laten",
+    "to let, to have (something done)"
+   ],
+   [
+    "horen",
+    "to hear"
+   ],
+   [
+    "moeilijk",
+    "difficult"
+   ],
+   [
+    "makkelijk",
+    "easy"
+   ],
+   [
+    "de deur",
+    "the door"
+   ],
+   [
+    "sluiten",
+    "to close"
+   ],
+   [
+    "iets",
+    "something, anything"
+   ],
+   [
+    "het brood",
+    "the bread"
+   ]
+  ],
+  "core": [
+   [
+    "te",
+    "to (before an infinitive)"
+   ],
+   [
+    "om … te",
+    "(in order) to (purpose)"
+   ],
+   [
+    "zonder … te",
+    "without (+ -ing)"
+   ],
+   [
+    "niet hoeven te",
+    "not to need to, not to have to"
+   ]
+  ],
+  "items": [
+   {
+    "t": "fill",
+    "q": "Ze begint ___ zingen.",
+    "h": "she starts to sing",
+    "a": [
+     "te"
+    ],
+    "e": "beginnen + <b>te</b> + infinitive."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "We hopen u morgen ___.",
+    "o": [
+     "te zien",
+     "zien",
+     "om zien",
+     "te ziet"
+    ],
+    "a": 0,
+    "e": "hopen + <b>te</b> + infinitive."
+   },
+   {
+    "t": "order",
+    "q": "I'm going into town to buy bread.",
+    "a": "Ik ga naar de stad om brood te kopen",
+    "alt": [
+     "Om brood te kopen ga ik naar de stad"
+    ],
+    "x": [
+     "met",
+     "gekocht"
+    ],
+    "e": "Purpose: <b>om</b> brood <b>te kopen</b>."
+   },
+   {
+    "t": "tr",
+    "q": "It's difficult to learn Dutch.",
+    "a": [
+     "Het is moeilijk om Nederlands te leren",
+     "Het is moeilijk Nederlands te leren",
+     "Nederlands leren is moeilijk"
+    ],
+    "e": "After moeilijk: (<b>om</b>) Nederlands <b>te leren</b>."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "De kinderen spelen in de tuin. Ik laat ze ___.",
+    "h": "play",
+    "o": [
+     "spelen",
+     "te spelen",
+     "om te spelen",
+     "speelt"
+    ],
+    "a": 0,
+    "e": "After <b>laten</b> no te, as with English \"let\"."
+   },
+   {
+    "t": "fill",
+    "q": "Ze vertrekt zonder iets ___ zeggen.",
+    "h": "without saying anything",
+    "a": [
+     "te"
+    ],
+    "e": "<b>zonder</b> iets <b>te</b> zeggen."
+   },
+   {
+    "t": "mc",
+    "q": "Je ___ niet te komen.",
+    "h": "don't need to",
+    "o": [
+     "hoeft",
+     "moet",
+     "wil",
+     "kan"
+    ],
+    "a": 0,
+    "e": "<b>niet hoeven te</b> = don't need to, don't have to."
+   },
+   {
+    "t": "tr",
+    "q": "I'm trying to cook.",
+    "a": [
+     "Ik probeer te koken"
+    ],
+    "e": "proberen + <b>te</b> + infinitive."
+   },
+   {
+    "t": "order",
+    "q": "It's starting to rain.",
+    "a": "Het begint te regenen",
+    "x": [
+     "geregend",
+     "om"
+    ],
+    "e": "beginnen + <b>te</b> + infinitive."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "Which sentence is correct?",
+    "o": [
+     "Ik ga morgen koken.",
+     "Ik ga morgen te koken.",
+     "Ik ga te morgen koken.",
+     "Ik ga morgen om koken."
+    ],
+    "a": 0,
+    "e": "After <b>gaan</b> the infinitive has no te and goes at the end."
+   },
+   {
+    "t": "fill",
+    "q": "Vergeet niet brood te ___!",
+    "h": "buy",
+    "a": [
+     "kopen"
+    ],
+    "e": "te + infinitive: <b>te kopen</b>."
+   },
+   {
+    "t": "tr",
+    "q": "I hear him singing.",
+    "a": [
+     "Ik hoor hem zingen"
+    ],
+    "e": "After <b>horen</b> no te: ik hoor hem <b>zingen</b>."
+   }
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "Ik probeer Nederlands ___.",
+    "o": [
+     "te spreken",
+     "spreken",
+     "te spreek",
+     "spreek te"
+    ],
+    "a": 0,
+    "e": "proberen + <b>te</b> + infinitive, at the end.",
+    "g": {
+     "te spreken": "to speak (te + infinitive)",
+     "spreken": "te is missing: proberen needs it",
+     "te spreek": "after te you need the infinitive",
+     "spreek te": "te goes before the infinitive"
+    },
+    "tt": "I'm trying to speak Dutch."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "Ik probeer morgen vroeg ___.",
+    "h": "opstaan",
+    "o": [
+     "op te staan",
+     "te opstaan",
+     "opstaan te",
+     "op staan te"
+    ],
+    "a": 0,
+    "e": "Separable verb: te goes between the particle and the verb, <b>op te staan</b>.",
+    "g": {
+     "op te staan": "to get up (te in the middle)",
+     "te opstaan": "with separable verbs te goes in the middle",
+     "opstaan te": "te goes before the verb",
+     "op staan te": "wrong order"
+    },
+    "tt": "Tomorrow I'll try to get up early."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "Het begint ___.",
+    "h": "to rain",
+    "o": [
+     "te regenen",
+     "regenen",
+     "regent",
+     "om regenen"
+    ],
+    "a": 0,
+    "e": "beginnen + <b>te</b> + infinitive.",
+    "g": {
+     "te regenen": "to rain",
+     "regenen": "te is missing",
+     "regent": "rains (conjugated form)",
+     "om regenen": "om isn't used here, and te is missing"
+    },
+    "tt": "It's starting to rain."
+   },
+   {
+    "t": "mc",
+    "q": "Ik ga naar de stad ___ brood te kopen.",
+    "o": [
+     "om",
+     "te",
+     "met",
+     "van"
+    ],
+    "a": 0,
+    "e": "Purpose (in order to): <b>om … te</b>.",
+    "g": {
+     "om": "(in order) to (om … te)",
+     "te": "te is already there before kopen",
+     "met": "with",
+     "van": "of, from"
+    },
+    "tt": "I'm going into town to buy bread."
+   },
+   {
+    "t": "mc",
+    "q": "Ze vertrekt ___ iets te zeggen.",
+    "h": "without",
+    "o": [
+     "zonder",
+     "om",
+     "met",
+     "niet"
+    ],
+    "a": 0,
+    "e": "without + -ing = <b>zonder … te</b>.",
+    "g": {
+     "zonder": "without",
+     "om": "(in order) to (purpose): doesn't mean without",
+     "met": "with",
+     "niet": "not"
+    },
+    "tt": "She leaves without saying anything."
+   },
+   {
+    "t": "mc",
+    "q": "Which verb does NOT take te before the infinitive?",
+    "o": [
+     "kunnen",
+     "proberen",
+     "beginnen",
+     "vergeten"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Modals like <b>kunnen</b> take the infinitive without te, just like English \"can\".",
+    "g": {
+     "kunnen": "can, to be able to: modal, no te",
+     "proberen": "to try: takes te",
+     "beginnen": "to begin: takes te",
+     "vergeten": "to forget: takes te"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "We gaan vanavond ___.",
+    "h": "zwemmen",
+    "o": [
+     "zwemmen",
+     "te zwemmen",
+     "om te zwemmen",
+     "zwemt"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "After <b>gaan</b> no te (unlike English \"going to\"): we gaan <b>zwemmen</b>.",
+    "g": {
+     "zwemmen": "swim (infinitive without te)",
+     "te zwemmen": "no te after gaan",
+     "om te zwemmen": "no om te after gaan",
+     "zwemt": "swims (conjugated form)"
+    },
+    "tt": "We're going swimming tonight."
+   },
+   {
+    "t": "fill",
+    "q": "Vergeet niet de deur ___ sluiten.",
+    "h": "forget to close",
+    "a": [
+     "te"
+    ],
+    "e": "vergeten + <b>te</b> + infinitive.",
+    "tt": "Don't forget to close the door."
+   },
+   {
+    "t": "fill",
+    "q": "Ik hoor de kinderen ___.",
+    "h": "sing",
+    "a": [
+     "zingen"
+    ],
+    "e": "After <b>horen</b> no te, as in English: ik hoor ze <b>zingen</b>.",
+    "tt": "I hear the children singing."
+   },
+   {
+    "t": "order",
+    "q": "I hope to see you tomorrow.",
+    "a": "Ik hoop je morgen te zien",
+    "alt": [
+     "Morgen hoop ik je te zien"
+    ],
+    "x": [
+     "om",
+     "gezien"
+    ],
+    "e": "hopen + <b>te</b> + infinitive at the end."
+   }
+  ],
+  "gloss": {
+   "0": {
+    "t": "She starts to sing."
+   },
+   "1": {
+    "g": {
+     "te zien": "to see (te + infinitive)",
+     "zien": "te is missing: hopen needs it",
+     "om zien": "om isn't needed here, and te is missing",
+     "te ziet": "after te you need the infinitive"
+    },
+    "t": "We hope to see you (formal) tomorrow."
+   },
+   "2": {
+    "t": "I'm going into town to buy bread."
+   },
+   "3": {
+    "t": "It's difficult to learn Dutch."
+   },
+   "4": {
+    "g": {
+     "spelen": "play (infinitive without te)",
+     "te spelen": "no te after laten",
+     "om te spelen": "no om te after laten",
+     "speelt": "plays (conjugated form)"
+    },
+    "t": "The children are playing in the garden. I let them play."
+   },
+   "5": {
+    "t": "She leaves without saying anything."
+   },
+   "6": {
+    "g": {
+     "hoeft": "need (niet hoeven te = don't need to)",
+     "moet": "must, have to: moeten doesn't take te",
+     "wil": "want: willen doesn't take te",
+     "kan": "can: kunnen doesn't take te"
+    },
+    "t": "You don't need to come."
+   },
+   "7": {
+    "t": "I'm trying to cook."
+   },
+   "8": {
+    "t": "It's starting to rain."
+   },
+   "9": {
+    "g": {
+     "Ik ga morgen koken.": "I'm going to cook tomorrow (correct)",
+     "Ik ga morgen te koken.": "no te after gaan",
+     "Ik ga te morgen koken.": "te doesn't go before morgen",
+     "Ik ga morgen om koken.": "om isn't needed, and te is missing"
+    },
+    "t": "I'm going to cook tomorrow."
+   },
+   "10": {
+    "t": "Don't forget to buy bread!"
+   },
+   "11": {
+    "t": "I hear him singing."
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "Gisteren ben ik vergeten mijn moeder ___.",
+    "h": "opbellen",
+    "o": [
+     "op te bellen",
+     "te opbellen",
+     "opbellen",
+     "opgebeld"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<i>vergeten</i> (forget to) takes <b>te</b>, and with a separable verb te goes in the middle: <b>op te bellen</b>, at the end of the sentence.",
+    "g": {
+     "op te bellen": "to call (correct: te in the middle)",
+     "te opbellen": "with separable verbs te goes between particle and verb",
+     "opbellen": "te is missing: vergeten needs it",
+     "opgebeld": "called (participle): you need the infinitive here"
+    },
+    "tt": "Yesterday I forgot to call my mother."
+   },
+   {
+    "t": "mc",
+    "q": "Na de les blijven we nog een uurtje in het café ___.",
+    "o": [
+     "praten",
+     "te praten",
+     "om te praten",
+     "gepraat"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Trap: <b>blijven</b> + infinitive <b>without te</b>, like modals and gaan: <i>we blijven … <b>praten</b></i> (we stay and chat).",
+    "g": {
+     "praten": "chatting (infinitive without te, correct)",
+     "te praten": "no te after blijven",
+     "om te praten": "it's not a purpose: no om te after blijven",
+     "gepraat": "talked (participle)"
+    },
+    "tt": "After class we stay at the café for another hour, chatting."
+   },
+   {
+    "t": "fill",
+    "q": "Ik neem de tram ___ naar het station te gaan, want het regent.",
+    "h": "(in order) to",
+    "a": [
+     "om"
+    ],
+    "e": "Purpose (\"in order to\") = <b>om … te</b>: <i>om</i> opens the group, <i>te gaan</i> closes it. English just says \"to\", but Dutch needs <i>om</i> here; standard Dutch doesn't use <s>voor … te</s>.",
+    "tt": "I'm taking the tram to go to the station, because it's raining."
+   },
+   {
+    "t": "fill",
+    "q": "Je ___ morgen niet vroeg op te staan: de winkel gaat pas om tien uur open.",
+    "h": "don't need to",
+    "a": [
+     "hoeft"
+    ],
+    "e": "<b>niet hoeven te</b> = don't need to, don't have to: <i>je <b>hoeft</b> niet … op te staan</i>. With <i>moeten</i> there'd be no <i>te</i>.",
+    "tt": "You don't need to get up early tomorrow: the store doesn't open until ten."
+   },
+   {
+    "t": "tr",
+    "q": "My brother went to Brussels without saying anything.",
+    "a": [
+     "Mijn broer is naar Brussel gegaan zonder iets te zeggen",
+     "Mijn broer is zonder iets te zeggen naar Brussel gegaan",
+     "Mijn broer ging naar Brussel zonder iets te zeggen",
+     "Mijn broer ging zonder iets te zeggen naar Brussel"
+    ],
+    "e": "\"Without saying anything\" = <b>zonder iets te zeggen</b>: Dutch uses <i>te</i> + infinitive, not an -ing form. <i>gaan</i> with a destination takes <b>zijn</b>."
+   },
+   {
+    "t": "tr",
+    "q": "You don't need to bring anything.",
+    "a": [
+     "Je hoeft niets mee te brengen",
+     "Je hoeft niets mee te nemen",
+     "Je hoeft niks mee te brengen",
+     "Je hoeft niks mee te nemen",
+     "Jij hoeft niets mee te brengen",
+     "Jij hoeft niets mee te nemen",
+     "Jij hoeft niks mee te brengen",
+     "Jij hoeft niks mee te nemen",
+     "U hoeft niets mee te brengen",
+     "U hoeft niets mee te nemen",
+     "U hoeft niks mee te brengen",
+     "U hoeft niks mee te nemen",
+     "Je moet niets meebrengen",
+     "Je moet niks meebrengen",
+     "U moet niets meebrengen"
+    ],
+    "e": "<b>niet hoeven te</b> + separable verb: <i>Je hoeft niets <b>mee te brengen</b></i>. In Belgium you'll also hear <i>Je moet niets meebrengen</i>."
+   },
+   {
+    "t": "order",
+    "q": "I get up early to catch the first train to Ghent.",
+    "a": "Ik sta vroeg op om de eerste trein naar Gent te nemen",
+    "alt": [
+     "Om de eerste trein naar Gent te nemen sta ik vroeg op"
+    ],
+    "x": [
+     "voor",
+     "genomen"
+    ],
+    "e": "Separable: <i>ik sta vroeg <b>op</b></i>; then the purpose: <b>om</b> … <b>te nemen</b>, with te + infinitive at the end (not right after om, as in English).",
+    "tt": "I get up early to catch the first train to Ghent."
+   },
+   {
+    "t": "order",
+    "q": "Last night I tried to call you.",
+    "a": "Ik heb gisteravond geprobeerd je op te bellen",
+    "alt": [
+     "Gisteravond heb ik geprobeerd je op te bellen",
+     "Ik heb geprobeerd je gisteravond op te bellen"
+    ],
+    "x": [
+     "opgebeld",
+     "bel"
+    ],
+    "e": "<i>proberen</i> in the perfect (<b>heb … geprobeerd</b>) + the te-group after the participle: <i>je <b>op te bellen</b></i>.",
+    "tt": "Last night I tried to call you."
+   }
+  ]
+ }
+}

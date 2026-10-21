@@ -1,0 +1,461 @@
+{
+ "id": "u19",
+ "n": 19,
+ "module": 4,
+ "nl": "De voltooide tijd",
+ "it": "Il passato prossimo",
+ "note": "\n<h3>L'idea</h3>\n<p>La <b>voltooide tijd</b> funziona quasi come il nostro passato prossimo: un ausiliare (<b>hebben</b> o <b>zijn</b>) + il <b>participio passato</b>. <i>Ik heb gewerkt</i> = ho lavorato. <i>Ik ben gegaan</i> = sono andato. È il passato più usato nella conversazione per dire che cosa hai fatto.</p>\n<h3>La posizione: il participio va in fondo</h3>\n<p>L'ausiliare coniugato sta al <b>secondo posto</b>, il participio va alla <b>fine della frase</b>: la stessa cornice dei modali.</p>\n<p><i>Ik <b>heb</b> gisteren een boek <b>gelezen</b>.</i> — <i>Gisteren <b>heb</b> ik een boek <b>gelezen</b>.</i></p>\n<h3>Verbi deboli: ge- + radice + -t o -d</h3>\n<p>La maggior parte dei verbi forma il participio così: <b>ge</b> + radice + <b>t</b> oppure <b>d</b>. Per scegliere fra t e d c'è un trucco: la parola <b>'t kofschip</b>. Se la radice finisce con una delle consonanti di <b>t, k, f, s, ch, p</b>, aggiungi <b>-t</b>; in tutti gli altri casi <b>-d</b>.</p>\n<table><tr><th>infinito</th><th>radice</th><th>participio</th></tr>\n<tr><td>werken</td><td>werk (k)</td><td>gewerkt</td></tr>\n<tr><td>fietsen</td><td>fiets (s)</td><td>gefietst</td></tr>\n<tr><td>spelen</td><td>speel (l)</td><td>gespeeld</td></tr>\n<tr><td>wonen</td><td>woon (n)</td><td>gewoond</td></tr></table>\n<p>Attenzione ai verbi con <b>v</b> o <b>z</b> nell'infinito: guarda l'infinito, non la forma di ik. <i>reizen</i> → ik reis, ma z non è nel kofschip: <b>gereisd</b>. Se la radice finisce già in t o d, non aggiungi niente: <i>wachten</i> → <b>gewacht</b>.</p>\n<h3>Verbi forti: participio in -en</h3>\n<p>Molti verbi frequenti hanno un participio in <b>-en</b>, spesso con un cambio di vocale. Vanno imparati a memoria (<i>zijn</i> e <i>hebben</i> sono del tutto irregolari):</p>\n<table><tr><th>infinito</th><th>participio</th><th>infinito</th><th>participio</th></tr>\n<tr><td>eten</td><td>gegeten</td><td>drinken</td><td>gedronken</td></tr>\n<tr><td>lezen</td><td>gelezen</td><td>spreken</td><td>gesproken</td></tr>\n<tr><td>zien</td><td>gezien</td><td>nemen</td><td>genomen</td></tr>\n<tr><td>gaan</td><td>gegaan</td><td>komen</td><td>gekomen</td></tr>\n<tr><td>doen</td><td>gedaan</td><td>blijven</td><td>gebleven</td></tr>\n<tr><td>zijn</td><td>geweest</td><td>hebben</td><td>gehad</td></tr></table>\n<p>Alcuni sono irregolari anche se finiscono in -t: <i>kopen</i> → <b>gekocht</b>, <i>zoeken</i> → <b>gezocht</b>.</p>\n<h3>Separabili e inseparabili</h3>\n<p>Nei verbi separabili <b>ge-</b> va fra particella e verbo: <i>opbellen</i> → <b>opgebeld</b>, <i>opstaan</i> → <b>opgestaan</b>. I verbi con <b>be-, ver-, ont-, her-</b> non prendono ge-: <i>betalen</i> → <b>betaald</b>, <i>verhuizen</i> → <b>verhuisd</b>, <i>vergeten</i> → <b>vergeten</b>.</p>\n<h3>Hebben o zijn?</h3>\n<p>Quasi tutti i verbi usano <b>hebben</b>, anche quando in italiano usiamo \"essere\". Si usa <b>zijn</b> con:</p>\n<ul>\n<li>i verbi che indicano un <b>cambiamento di luogo</b>: gaan, komen, vertrekken, aankomen, terugkomen, verhuizen;</li>\n<li>i verbi di <b>cambiamento</b> (worden = diventare) e con <b>zijn</b> e <b>blijven</b>: <i>Ik ben thuis gebleven</i>.</li>\n</ul>\n<p>Con fietsen, rijden, wandelen, zwemmen: <b>hebben</b> se conta l'attività, <b>zijn</b> se c'è una meta. <i>Ik heb gefietst</i> ma <i>Ik ben naar Gent gefietst</i>.</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Mettere il participio subito dopo l'ausiliare: <s>Ik heb gelezen een boek</s> → <b>Ik heb een boek gelezen</b>.</li>\n<li>Usare zijn con un movimento senza meta: <s>Ik ben gisteren gefietst</s> → <b>Ik heb gisteren gefietst</b> (ma: <i>Ik ben naar Gent gefietst</i>).</li>\n<li>Sbagliare t/d: <s>gewoont</s> → <b>gewoond</b>, <s>gewerkd</s> → <b>gewerkt</b>.</li>\n<li>Mettere ge- nei verbi inseparabili: <s>gebetaald</s> → <b>betaald</b>.</li>\n</ul>",
+ "vlaams": "In Fiandra si dice <b>naar de zee gaan</b> (andare al mare), mentre nei Paesi Bassi è più comune \"naar zee\". Con <b>gij/ge</b> l'ausiliare zijn diventa <i>zijt</i>: \"Zijt ge gisteren uitgegaan?\" (sei uscito ieri sera?).",
+ "vocab": [
+  [
+   "gisteren",
+   "ieri"
+  ],
+  [
+   "vorig",
+   "scorso (vorige week = la settimana scorsa)"
+  ],
+  [
+   "het weekend",
+   "il fine settimana"
+  ],
+  [
+   "kopen",
+   "comprare"
+  ],
+  [
+   "reizen",
+   "viaggiare"
+  ],
+  [
+   "wandelen",
+   "passeggiare"
+  ],
+  [
+   "spelen",
+   "giocare"
+  ],
+  [
+   "verhuizen",
+   "traslocare, trasferirsi"
+  ],
+  [
+   "de film",
+   "il film"
+  ],
+  [
+   "de zee",
+   "il mare"
+  ],
+  [
+   "het brood",
+   "il pane"
+  ],
+  [
+   "de krant",
+   "il giornale"
+  ]
+ ],
+ "core": [
+  [
+   "hebben",
+   "avere (ausiliare)"
+  ],
+  [
+   "zijn",
+   "essere (ausiliare)"
+  ],
+  [
+   "ge-",
+   "prefisso del participio"
+  ],
+  [
+   "'t kofschip",
+   "t, k, f, s, ch, p → -t"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "werken → participio",
+   "o": [
+    "gewerkt",
+    "gewerkd",
+    "werkt",
+    "gewerken"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "k è nel kofschip → <b>-t</b>: gewerkt.",
+   "g": {
+    "gewerkt": "lavorato",
+    "gewerkd": "k è nel kofschip: serve -t",
+    "werkt": "lavora (presente)",
+    "gewerken": "forma che non esiste"
+   },
+   "tt": "lavorato"
+  },
+  {
+   "t": "mc",
+   "q": "wonen → participio",
+   "o": [
+    "gewoond",
+    "gewoont",
+    "gewonen",
+    "woonde"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "n non è nel kofschip → <b>-d</b>: gewoond.",
+   "g": {
+    "gewoond": "abitato",
+    "gewoont": "n non è nel kofschip: serve -d",
+    "gewonen": "forma che non esiste",
+    "woonde": "abitava (passato semplice, unità 20)"
+   },
+   "tt": "abitato"
+  },
+  {
+   "t": "mc",
+   "q": "reizen → participio",
+   "o": [
+    "gereisd",
+    "gereist",
+    "gereizd",
+    "gereisen"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "L'infinito ha la z, che non è nel kofschip → <b>-d</b>; a fine sillaba si scrive s: gereisd.",
+   "g": {
+    "gereisd": "viaggiato",
+    "gereist": "guarda l'infinito (z): serve -d",
+    "gereizd": "prima di d si scrive s, non z",
+    "gereisen": "forma che non esiste"
+   },
+   "tt": "viaggiato"
+  },
+  {
+   "t": "mc",
+   "q": "Ik ___ naar Gent gegaan.",
+   "o": [
+    "ben",
+    "heb",
+    "is",
+    "word"
+   ],
+   "a": 0,
+   "e": "Spostamento verso un luogo → <b>zijn</b>: ik <b>ben</b> gegaan.",
+   "g": {
+    "ben": "sono (ausiliare zijn)",
+    "heb": "ho: gaan vuole zijn",
+    "is": "è (lui/lei): con ik serve ben",
+    "word": "divento"
+   },
+   "tt": "Sono andato a Gand."
+  },
+  {
+   "t": "mc",
+   "q": "Ik ___ een film gezien.",
+   "o": [
+    "heb",
+    "ben",
+    "heeft",
+    "hebt"
+   ],
+   "a": 0,
+   "e": "zien usa <b>hebben</b>: ik <b>heb</b> gezien.",
+   "g": {
+    "heb": "ho",
+    "ben": "sono: zien vuole hebben",
+    "heeft": "ha (lui/lei)",
+    "hebt": "hai (tu)"
+   },
+   "tt": "Ho visto un film."
+  },
+  {
+   "t": "mc",
+   "q": "drinken → participio",
+   "o": [
+    "gedronken",
+    "gedrinkt",
+    "gedrinken",
+    "gedronkt"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Verbo forte: <b>gedronken</b>.",
+   "g": {
+    "gedronken": "bevuto",
+    "gedrinkt": "forma che non esiste: drinken è forte",
+    "gedrinken": "forma che non esiste: la vocale cambia",
+    "gedronkt": "forma che non esiste"
+   },
+   "tt": "bevuto"
+  },
+  {
+   "t": "mc",
+   "q": "opbellen → participio",
+   "o": [
+    "opgebeld",
+    "geopbeld",
+    "opgebelt",
+    "gebeld op"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "ge- va fra particella e verbo: <b>opgebeld</b>.",
+   "g": {
+    "opgebeld": "telefonato",
+    "geopbeld": "ge- va dopo la particella",
+    "opgebelt": "l non è nel kofschip: serve -d",
+    "gebeld op": "il participio si scrive attaccato"
+   },
+   "tt": "telefonato"
+  },
+  {
+   "t": "mc",
+   "q": "betalen → participio",
+   "o": [
+    "betaald",
+    "gebetaald",
+    "betaalt",
+    "gebetaalt"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "be- è inseparabile: niente ge-, <b>betaald</b>.",
+   "g": {
+    "betaald": "pagato",
+    "gebetaald": "con be- niente ge-",
+    "betaalt": "paga (presente)",
+    "gebetaalt": "niente ge- e serve -d"
+   },
+   "tt": "pagato"
+  },
+  {
+   "t": "fill",
+   "q": "Wij hebben brood ___.",
+   "h": "eten",
+   "a": [
+    "gegeten"
+   ],
+   "e": "Verbo forte: eten → <b>gegeten</b>.",
+   "tt": "Abbiamo mangiato pane."
+  },
+  {
+   "t": "order",
+   "q": "Ieri ho lavorato.",
+   "a": "Gisteren heb ik gewerkt",
+   "alt": [
+    "Ik heb gisteren gewerkt"
+   ],
+   "x": [
+    "ben",
+    "gewerkd"
+   ],
+   "e": "Ausiliare al secondo posto, participio in fondo."
+  }
+ ],
+ "items": [
+  {
+   "t": "fill",
+   "q": "Ik heb gisteren een boek ___.",
+   "h": "lezen",
+   "a": [
+    "gelezen"
+   ],
+   "e": "Verbo forte: lezen → <b>gelezen</b>, in fondo alla frase."
+  },
+  {
+   "t": "mc",
+   "q": "Vorige week ___ we naar de zee gereden.",
+   "o": [
+    "zijn",
+    "hebben",
+    "is",
+    "worden"
+   ],
+   "a": 0,
+   "e": "rijden con una meta (naar de zee) → <b>zijn</b>."
+  },
+  {
+   "t": "order",
+   "q": "Ho comprato un giornale.",
+   "a": "Ik heb een krant gekocht",
+   "alt": [
+    "Een krant heb ik gekocht"
+   ],
+   "x": [
+    "ben",
+    "gekoopt"
+   ],
+   "e": "kopen è irregolare: <b>gekocht</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Lei è rimasta a casa.",
+   "a": [
+    "Ze is thuis gebleven",
+    "Zij is thuis gebleven",
+    "Ze is thuisgebleven",
+    "Zij is thuisgebleven"
+   ],
+   "e": "blijven usa <b>zijn</b>: is … <b>gebleven</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Hoe laat ben je ___?",
+   "h": "opstaan",
+   "o": [
+    "opgestaan",
+    "geopstaan",
+    "opgestaant",
+    "opstaan"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Separabile: ge- in mezzo, <b>opgestaan</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Wij ___ in het weekend gewandeld.",
+   "h": "ausiliare",
+   "a": [
+    "hebben"
+   ],
+   "e": "wandelen senza meta → <b>hebben</b>."
+  },
+  {
+   "t": "mc",
+   "q": "De kinderen hebben in de tuin ___.",
+   "o": [
+    "gespeeld",
+    "gespeelt",
+    "gespelen",
+    "speelden"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "l non è nel kofschip → <b>-d</b>: gespeeld."
+  },
+  {
+   "t": "tr",
+   "q": "Ho visto un bel film.",
+   "a": [
+    "Ik heb een mooie film gezien",
+    "Ik heb een goede film gezien",
+    "Ik heb een leuke film gezien"
+   ],
+   "e": "<b>heb</b> … <b>gezien</b>; participio in fondo."
+  },
+  {
+   "t": "mc",
+   "q": "Quale frase è corretta?",
+   "o": [
+    "Ik heb gisteren met Anna gesproken.",
+    "Ik heb gesproken gisteren met Anna.",
+    "Ik gesproken heb gisteren met Anna.",
+    "Gisteren ik heb met Anna gesproken."
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Ausiliare al secondo posto, participio <b>alla fine</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Mijn zus is vorig jaar naar Antwerpen ___.",
+   "h": "verhuizen",
+   "a": [
+    "verhuisd"
+   ],
+   "e": "ver- senza ge-, z → s + d: <b>verhuisd</b>."
+  },
+  {
+   "t": "order",
+   "q": "Il treno è partito alle otto.",
+   "a": "De trein is om acht uur vertrokken",
+   "alt": [
+    "Om acht uur is de trein vertrokken"
+   ],
+   "x": [
+    "heeft",
+    "gevertrokken"
+   ],
+   "e": "vertrekken usa <b>zijn</b>; ver- senza ge-: <b>vertrokken</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Che cosa hai fatto ieri?",
+   "a": [
+    "Wat heb je gisteren gedaan",
+    "Wat heb jij gisteren gedaan",
+    "Wat hebt u gisteren gedaan",
+    "Wat heeft u gisteren gedaan"
+   ],
+   "e": "doen → <b>gedaan</b>. Nella domanda: Wat <b>heb je</b> … gedaan?"
+  }
+ ],
+ "gloss": {
+  "0": {
+   "t": "Ieri ho letto un libro."
+  },
+  "1": {
+   "g": {
+    "zijn": "siamo (zijn con una meta)",
+    "hebben": "abbiamo: con una meta serve zijn",
+    "is": "è (singolare)",
+    "worden": "diventiamo"
+   },
+   "t": "La settimana scorsa siamo andati al mare in macchina."
+  },
+  "2": {
+   "t": "Ho comprato un giornale."
+  },
+  "3": {
+   "t": "Lei è rimasta a casa."
+  },
+  "4": {
+   "g": {
+    "opgestaan": "alzato",
+    "geopstaan": "ge- va dopo la particella",
+    "opgestaant": "forma che non esiste",
+    "opstaan": "alzarsi (infinito)"
+   },
+   "t": "A che ora ti sei alzato?"
+  },
+  "5": {
+   "t": "Nel fine settimana abbiamo passeggiato."
+  },
+  "6": {
+   "g": {
+    "gespeeld": "giocato",
+    "gespeelt": "l non è nel kofschip: serve -d",
+    "gespelen": "forma che non esiste",
+    "speelden": "giocavano (passato semplice): qui serve il participio"
+   },
+   "t": "I bambini hanno giocato in giardino."
+  },
+  "7": {
+   "t": "Ho visto un bel film."
+  },
+  "8": {
+   "g": {
+    "Ik heb gisteren met Anna gesproken.": "Ieri ho parlato con Anna (corretta)",
+    "Ik heb gesproken gisteren met Anna.": "il participio va alla fine",
+    "Ik gesproken heb gisteren met Anna.": "l'ausiliare deve stare al secondo posto",
+    "Gisteren ik heb met Anna gesproken.": "dopo Gisteren serve l'inversione: heb ik"
+   },
+   "t": "Ieri ho parlato con Anna."
+  },
+  "9": {
+   "t": "L'anno scorso mia sorella si è trasferita ad Anversa."
+  },
+  "10": {
+   "t": "Il treno è partito alle otto."
+  },
+  "11": {
+   "t": "Che cosa hai fatto ieri?"
+  }
+ }
+}

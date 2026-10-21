@@ -1,0 +1,481 @@
+{
+ "id": "u15",
+ "n": 15,
+ "module": 3,
+ "nl": "Vergelijken",
+ "it": "Comparativo e superlativo",
+ "note": "\n<h3>L'idea</h3>\n<p>In italiano per confrontare aggiungi una parola: \"<b>più</b> grande\", \"<b>il più</b> grande\". In olandese, come in inglese, si aggiunge una <b>desinenza</b> all'aggettivo: <i>groot → groter → grootst</i>. Non si dice <s>meer groot</s>.</p>\n<h3>Il comparativo: -er … dan</h3>\n<p>Aggettivo + <b>-er</b>, poi <b>dan</b> (= di, che): <i>Anna is jonger <b>dan</b> Tom</i> (Anna è più giovane di Tom). <i>In Italië is het warmer <b>dan</b> in België</i> (fa più caldo in Italia che in Belgio).</p>\n<p>L'ortografia segue le regole della -e (unità 14): <i>groot → groter</i>, <i>snel → sneller</i>. Se l'aggettivo finisce in <b>-r</b>, si aggiunge <b>-der</b>: <i>duur → duurder</i>, <i>ver → verder</i>, <i>lekker → lekkerder</i>.</p>\n<p>Davanti al nome il comparativo segue le regole degli aggettivi: <i>een grotere stad</i>, ma <i>een groter huis</i>.</p>\n<h3>L'uguaglianza: even … als</h3>\n<p>\"Così… come\", \"tanto… quanto\": <b>even</b> + aggettivo + <b>als</b>. <i>Mijn broer is even oud als ik.</i> (Mio fratello ha la mia stessa età.)</p>\n<h3>Il superlativo: -st</h3>\n<table><tr><th>uso</th><th>forma</th><th>esempio</th></tr>\n<tr><td>dopo il verbo</td><td><b>het</b> + -st</td><td>Piet is <b>het langst</b>.</td></tr>\n<tr><td>davanti al nome</td><td>de/het + -ste</td><td><b>de langste</b> man, <b>het kleinste</b> huis</td></tr></table>\n<p>Dopo il verbo puoi anche dire <i>Piet is de langste</i> (sottinteso: della famiglia, del gruppo).</p>\n<h3>Le forme irregolari</h3>\n<table><tr><th>base</th><th>comparativo</th><th>superlativo</th></tr>\n<tr><td>goed (buono, bene)</td><td>beter</td><td>best</td></tr>\n<tr><td>veel (molto)</td><td>meer</td><td>meest</td></tr>\n<tr><td>weinig (poco)</td><td>minder</td><td>minst</td></tr>\n<tr><td>graag (volentieri)</td><td>liever</td><td>liefst</td></tr></table>\n<p><b>graag / liever / liefst</b> servono per le preferenze: <i>Ik drink graag thee</i> (mi piace bere tè), <i>Ik drink liever koffie</i> (preferisco il caffè), <i>Ik drink het liefst water</i> (più di tutto mi piace l'acqua).</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Usare <i>meer</i> come \"più\": <s>meer groot</s> → <b>groter</b>.</li>\n<li>Usare <i>van</i> per \"di\": <s>groter van Tom</s> → <b>groter dan Tom</b>.</li>\n<li>Usare <i>dan</i> nell'uguaglianza: <s>even oud dan ik</s> → <b>even oud als ik</b>.</li>\n<li>Dimenticare -der: <s>duurer</s> → <b>duurder</b>.</li>\n<li>Regolarizzare gli irregolari: <s>goeder, graager</s> → <b>beter, liever</b>.</li>\n</ul>",
+ "vlaams": "Per l'uguaglianza <b>even … als</b> è comune ovunque; nei Paesi Bassi senti molto anche <i>net zo … als</i>. Nel parlato, ovunque, senti spesso \"groter <b>als</b>\", ma nello scritto curato si usa sempre <b>dan</b>.",
+ "vocab": [
+  [
+   "jong",
+   "giovane"
+  ],
+  [
+   "lang",
+   "alto (persona), lungo"
+  ],
+  [
+   "kort",
+   "corto, basso"
+  ],
+  [
+   "zwaar",
+   "pesante"
+  ],
+  [
+   "ver",
+   "lontano"
+  ],
+  [
+   "dichtbij",
+   "vicino"
+  ],
+  [
+   "rijk",
+   "ricco"
+  ],
+  [
+   "arm",
+   "povero"
+  ],
+  [
+   "slim",
+   "intelligente"
+  ],
+  [
+   "weinig",
+   "poco"
+  ],
+  [
+   "de thee",
+   "il tè"
+  ],
+  [
+   "de zee",
+   "il mare"
+  ],
+  [
+   "de berg",
+   "la montagna"
+  ],
+  [
+   "het land",
+   "il paese (nazione)"
+  ]
+ ],
+ "core": [
+  [
+   "dan",
+   "di, che (nel paragone)"
+  ],
+  [
+   "even … als",
+   "(così)… come"
+  ],
+  [
+   "beter",
+   "migliore, meglio"
+  ],
+  [
+   "best",
+   "il migliore, il meglio"
+  ],
+  [
+   "meer",
+   "più (quantità)"
+  ],
+  [
+   "meest",
+   "il più (quantità)"
+  ],
+  [
+   "liever",
+   "preferibilmente, più volentieri"
+  ],
+  [
+   "liefst",
+   "più volentieri di tutto"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "klein → ___",
+   "h": "più piccolo",
+   "o": [
+    "kleiner",
+    "kleinder",
+    "meer klein",
+    "kleinst"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Aggettivo + <b>-er</b>: kleiner.",
+   "g": {
+    "kleiner": "più piccolo",
+    "kleinder": "-der solo dopo una r",
+    "meer klein": "non si usa meer per formare il comparativo",
+    "kleinst": "il più piccolo (superlativo)"
+   },
+   "tt": "piccolo → più piccolo"
+  },
+  {
+   "t": "mc",
+   "q": "groot → ___",
+   "h": "più grande",
+   "o": [
+    "groter",
+    "grooter",
+    "grotter",
+    "groterder"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "+ -er e oo → o: <b>groter</b>.",
+   "g": {
+    "groter": "più grande",
+    "grooter": "forma che non esiste: oo diventa o",
+    "grotter": "forma che non esiste: la o è lunga",
+    "groterder": "forma che non esiste"
+   },
+   "tt": "grande → più grande"
+  },
+  {
+   "t": "mc",
+   "q": "duur → ___",
+   "h": "più caro",
+   "o": [
+    "duurder",
+    "duurer",
+    "durer",
+    "meer duur"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Finisce in -r → <b>-der</b>: duurder.",
+   "g": {
+    "duurder": "più caro",
+    "duurer": "dopo la r serve -der",
+    "durer": "forma che non esiste",
+    "meer duur": "non si usa meer per formare il comparativo"
+   },
+   "tt": "caro → più caro"
+  },
+  {
+   "t": "mc",
+   "q": "goed → ___",
+   "h": "migliore, meglio",
+   "o": [
+    "beter",
+    "goeder",
+    "meer goed",
+    "best"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Irregolare: goed → <b>beter</b> → best.",
+   "g": {
+    "beter": "migliore, meglio",
+    "goeder": "forma che non esiste: goed è irregolare",
+    "meer goed": "non si dice",
+    "best": "il migliore (superlativo)"
+   },
+   "tt": "buono → migliore"
+  },
+  {
+   "t": "mc",
+   "q": "Anna is ___ dan Tom.",
+   "h": "più giovane",
+   "o": [
+    "jonger",
+    "jongst",
+    "jong",
+    "jongere"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Comparativo + <b>dan</b>: jonger dan.",
+   "g": {
+    "jonger": "più giovane",
+    "jongst": "il più giovane: con dan serve il comparativo",
+    "jong": "giovane (forma base)",
+    "jongere": "dopo il verbo niente -e"
+   },
+   "tt": "Anna è più giovane di Tom."
+  },
+  {
+   "t": "mc",
+   "q": "Mijn broer is even oud ___ ik.",
+   "o": [
+    "als",
+    "dan",
+    "van",
+    "met"
+   ],
+   "a": 0,
+   "e": "<b>even … als</b> = così… come.",
+   "g": {
+    "als": "come (dopo even)",
+    "dan": "di, che: solo con il comparativo",
+    "van": "di (possesso, provenienza)",
+    "met": "con"
+   },
+   "tt": "Mio fratello ha la mia stessa età."
+  },
+  {
+   "t": "mc",
+   "q": "Tom is lang, Ben is langer, Piet is ___.",
+   "o": [
+    "het langst",
+    "het langer",
+    "het lange",
+    "meer lang"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Superlativo dopo il verbo: <b>het langst</b>.",
+   "g": {
+    "het langst": "il più alto",
+    "het langer": "het va con il superlativo, non con il comparativo",
+    "het lange": "forma sbagliata qui",
+    "meer lang": "non si usa meer"
+   },
+   "tt": "Tom è alto, Ben è più alto, Piet è il più alto."
+  },
+  {
+   "t": "mc",
+   "q": "Ik drink graag thee, maar ik drink ___ koffie.",
+   "o": [
+    "liever",
+    "graager",
+    "meer graag",
+    "lieverder"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Irregolare: graag → <b>liever</b> → liefst.",
+   "g": {
+    "liever": "più volentieri, preferisco",
+    "graager": "forma che non esiste",
+    "meer graag": "non si dice",
+    "lieverder": "forma che non esiste"
+   },
+   "tt": "Bevo volentieri il tè, ma preferisco il caffè."
+  },
+  {
+   "t": "fill",
+   "q": "Thee is ___ dan koffie.",
+   "h": "più economico (goedkoop)",
+   "a": [
+    "goedkoper"
+   ],
+   "e": "goedkoop + -er, oo → o: <b>goedkoper</b>.",
+   "tt": "Il tè è più economico del caffè."
+  },
+  {
+   "t": "fill",
+   "q": "Deze trui is mooier ___ die trui.",
+   "h": "di",
+   "a": [
+    "dan"
+   ],
+   "e": "Comparativo + <b>dan</b>.",
+   "tt": "Questo maglione è più bello di quel maglione."
+  }
+ ],
+ "items": [
+  {
+   "t": "mc",
+   "q": "Mijn vader is ___ dan mijn moeder.",
+   "h": "più vecchio",
+   "o": [
+    "ouder",
+    "oudst",
+    "oud",
+    "meer oud"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "oud + -er: <b>ouder</b> dan."
+  },
+  {
+   "t": "fill",
+   "q": "In Italië is het ___ dan in België.",
+   "h": "più caldo (warm)",
+   "a": [
+    "warmer"
+   ],
+   "e": "warm + -er: <b>warmer</b>. \"che in\" = <b>dan in</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Dit is de ___ koffie van Gent.",
+   "h": "il migliore",
+   "o": [
+    "beste",
+    "best",
+    "betere",
+    "goedste"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Superlativo davanti al nome: <b>de beste</b>."
+  },
+  {
+   "t": "order",
+   "q": "Il mio appartamento è più piccolo della tua casa.",
+   "a": "Mijn appartement is kleiner dan jouw huis",
+   "x": [
+    "kleinst",
+    "van"
+   ],
+   "e": "<b>kleiner dan</b>: il comparativo vuole dan."
+  },
+  {
+   "t": "tr",
+   "q": "Preferisco il tè.",
+   "a": [
+    "Ik drink liever thee",
+    "Ik heb liever thee",
+    "Ik wil liever thee",
+    "Ik verkies thee"
+   ],
+   "e": "Per le preferenze: verbo + <b>liever</b>. In Belgio si sente anche <i>Ik verkies thee</i>."
+  },
+  {
+   "t": "mc",
+   "q": "Hij heeft ___ geld dan zijn broer.",
+   "h": "più",
+   "o": [
+    "meer",
+    "meest",
+    "veeler",
+    "beter"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "veel → <b>meer</b> → meest."
+  },
+  {
+   "t": "fill",
+   "q": "Anna is even ___ als Sofie.",
+   "h": "alta",
+   "a": [
+    "lang",
+    "groot"
+   ],
+   "e": "<b>even lang als</b> (anche: even groot als)."
+  },
+  {
+   "t": "mc",
+   "q": "Wat eet je het ___? — Frieten!",
+   "h": "più volentieri",
+   "o": [
+    "liefst",
+    "liever",
+    "graagst",
+    "lieverst"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Superlativo di graag: <b>het liefst</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Bruges è più piccola di Gand.",
+   "a": [
+    "Brugge is kleiner dan Gent"
+   ],
+   "e": "<b>kleiner dan</b>."
+  },
+  {
+   "t": "order",
+   "q": "Questa borsa è la più pesante.",
+   "a": "Deze tas is het zwaarst",
+   "x": [
+    "meest",
+    "dan"
+   ],
+   "e": "Superlativo dopo il verbo: <b>het zwaarst</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Quale frase è corretta?",
+   "o": [
+    "Mijn huis is groter dan jouw huis.",
+    "Mijn huis is meer groot dan jouw huis.",
+    "Mijn huis is grooter dan jouw huis.",
+    "Mijn huis is groter van jouw huis."
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<b>groter dan</b>: -er, oo → o, e dan."
+  },
+  {
+   "t": "fill",
+   "q": "Mijn broer kookt ___ dan ik.",
+   "h": "meglio",
+   "a": [
+    "beter"
+   ],
+   "e": "Irregolare: goed → <b>beter</b>."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "g": {
+    "ouder": "più vecchio",
+    "oudst": "il più vecchio: con dan serve il comparativo",
+    "oud": "vecchio (forma base)",
+    "meer oud": "non si usa meer"
+   },
+   "t": "Mio padre è più vecchio di mia madre."
+  },
+  "1": {
+   "t": "In Italia fa più caldo che in Belgio."
+  },
+  "2": {
+   "g": {
+    "beste": "il migliore (davanti al nome)",
+    "best": "senza -e: davanti al nome con de serve -e",
+    "betere": "migliore (comparativo), non il migliore",
+    "goedste": "forma che non esiste: goed è irregolare"
+   },
+   "t": "Questo è il caffè migliore di Gand."
+  },
+  "5": {
+   "g": {
+    "meer": "più (quantità)",
+    "meest": "il più: con dan serve il comparativo",
+    "veeler": "forma che non esiste: veel è irregolare",
+    "beter": "migliore: non riguarda la quantità"
+   },
+   "t": "Lui ha più soldi di suo fratello."
+  },
+  "6": {
+   "t": "Anna è alta come Sofie."
+  },
+  "7": {
+   "g": {
+    "liefst": "più volentieri di tutto",
+    "liever": "più volentieri (comparativo): con het serve liefst",
+    "graagst": "forma che non esiste",
+    "lieverst": "forma che non esiste"
+   },
+   "t": "Che cosa mangi più volentieri? — Patatine fritte!"
+  },
+  "10": {
+   "g": {
+    "Mijn huis is groter dan jouw huis.": "La mia casa è più grande della tua. (giusta)",
+    "Mijn huis is meer groot dan jouw huis.": "non si usa meer: groter",
+    "Mijn huis is grooter dan jouw huis.": "ortografia: oo diventa o",
+    "Mijn huis is groter van jouw huis.": "nel paragone si usa dan, non van"
+   },
+   "t": "La mia casa è più grande della tua casa."
+  },
+  "11": {
+   "t": "Mio fratello cucina meglio di me."
+  }
+ }
+}

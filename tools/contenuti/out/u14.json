@@ -1,0 +1,640 @@
+{
+ "id": "u14",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "We hebben geen ___ huis in Brussel, maar een klein appartement.",
+   "o": [
+    "groot",
+    "grote",
+    "groote",
+    "groten"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<i>het huis</i> al singolare dopo <b>geen</b> si comporta come dopo <i>een</i>: nessuna -e, <b>geen groot huis</b>. Lo stesso vale per <i>een klein appartement</i>.",
+   "g": {
+    "groot": "grande (giusto: geen + het-parola)",
+    "grote": "con -e: dopo geen + het-parola non serve",
+    "groote": "forma che non esiste: oo diventa o",
+    "groten": "forma che non esiste"
+   },
+   "tt": "Non abbiamo una casa grande a Bruxelles, ma un piccolo appartamento."
+  },
+  {
+   "t": "fill",
+   "q": "Om zes uur drinkt mijn vader altijd een ___ bier.",
+   "h": "koud",
+   "a": [
+    "koud"
+   ],
+   "e": "Trabocchetto: <i>het bier</i> è una het-parola e c'è <i>een</i>: l'aggettivo resta <b>koud</b>, senza -e. Nota l'inversione dopo <i>Om zes uur</i>.",
+   "tt": "Alle sei mio padre beve sempre una birra fresca."
+  },
+  {
+   "t": "mc",
+   "q": "Dit ___ hemd is te duur.",
+   "h": "bianco",
+   "o": [
+    "witte",
+    "wit",
+    "wite",
+    "witten"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<i>het hemd</i> è una het-parola, ma con <b>dit</b> si comporta come con <i>het</i>: serve la -e. Vocale breve → doppia t: <b>witte</b>.",
+   "g": {
+    "witte": "bianca (giusto: dit + aggettivo con -e)",
+    "wit": "senza -e solo con een/geen/niente articolo + het-parola",
+    "wite": "manca la doppia t: la i è breve",
+    "witten": "forma che non esiste"
+   },
+   "tt": "Questa camicia bianca è troppo cara."
+  },
+  {
+   "t": "fill",
+   "q": "Ons ___ dorp ligt dicht bij Brugge.",
+   "h": "klein",
+   "a": [
+    "kleine"
+   ],
+   "e": "<i>het dorp</i> è una het-parola, ma dopo un possessivo (<i>ons</i>) l'aggettivo prende la -e, come dopo <i>het</i>: <b>ons kleine dorp</b>.",
+   "tt": "Il nostro piccolo paese è vicino a Bruges."
+  },
+  {
+   "t": "tr",
+   "q": "Questa settimana dormo in una piccola camera a Gand.",
+   "a": [
+    "Deze week slaap ik in een kleine kamer in Gent",
+    "Ik slaap deze week in een kleine kamer in Gent",
+    "In Gent slaap ik deze week in een kleine kamer"
+   ],
+   "e": "<i>de kamer</i> → <b>een kleine kamer</b>, con la -e. Con <i>Deze week</i> all'inizio: inversione <i>slaap ik</i>."
+  },
+  {
+   "t": "order",
+   "q": "Mia sorella ha un cane nero e un gatto bianco.",
+   "a": "Mijn zus heeft een zwarte hond en een witte kat",
+   "alt": [
+    "Mijn zus heeft een witte kat en een zwarte hond"
+   ],
+   "x": [
+    "zwart",
+    "wit"
+   ],
+   "e": "<i>de hond</i>, <i>de kat</i>: de-parole, quindi anche con <i>een</i> la -e: <b>zwarte</b>, <b>witte</b> (con doppia t). L'aggettivo va sempre prima del nome.",
+   "tt": "Mia sorella ha un cane nero e un gatto bianco."
+  },
+  {
+   "t": "tr",
+   "q": "Quella casa grande in centro è di mio fratello.",
+   "a": [
+    "Dat grote huis in het centrum is van mijn broer",
+    "Dat grote huis in het stadscentrum is van mijn broer"
+   ],
+   "e": "<i>het huis</i> con <b>dat</b> → -e: <b>dat grote huis</b>. L'aggettivo va prima del nome."
+  },
+  {
+   "t": "order",
+   "q": "Quei pantaloni grigi non li compro.",
+   "a": "Die grijze broek koop ik niet",
+   "alt": [
+    "Ik koop die grijze broek niet"
+   ],
+   "x": [
+    "grijs",
+    "geen"
+   ],
+   "e": "<i>de broek</i> (singolare) → <b>die grijze broek</b>, con -e e s → z. Con l'oggetto all'inizio: inversione <i>koop ik</i>, e <b>niet</b> in fondo.",
+   "tt": "Quei pantaloni grigi non li compro."
+  }
+ ],
+ "en": {
+  "it": "Adjectives",
+  "note": "\n<h3>The idea</h3>\n<p>In English an adjective never changes: a red car, the red cars. Dutch adjectives have two forms: <b>without -e</b> (<i>groot</i>) and <b>with -e</b> (<i>grote</i>). The good news: as in English, the adjective goes <b>before</b> the noun: <i>een rode auto</i> (a red car).</p>\n<h3>After the verb: no -e</h3>\n<p>When the adjective comes after <i>zijn</i> (or similar verbs), it never changes, just like in English:</p>\n<p><i>Het huis is <b>groot</b>. De kamers zijn <b>groot</b>. Het bier is <b>koud</b>.</i></p>\n<h3>Before the noun: almost always -e</h3>\n<p>Before a noun the adjective takes <b>-e</b> in every case but one:</p>\n<table><tr><th></th><th>de-word</th><th>het-word</th><th>plural</th></tr>\n<tr><td>with de / het</td><td>de grot<b>e</b> kamer</td><td>het grot<b>e</b> huis</td><td>de grot<b>e</b> huizen</td></tr>\n<tr><td>with een / geen / no article</td><td>een grot<b>e</b> kamer</td><td>een <b>groot</b> huis</td><td>grot<b>e</b> huizen</td></tr></table>\n<p>The only box without -e: a <b>singular het-word without de/het</b>, that is after <i>een</i>, <i>geen</i> or with no article: <i>een groot huis</i>, <i>geen groot huis</i>, <i>koud water</i>, <i>lekker brood</i>. With <i>dit, dat, mijn, ons</i>… it works like with <i>het</i>: <i>dit grote huis</i>, <i>mijn grote huis</i>.</p>\n<h3>Spelling changes</h3>\n<p>When you add -e, the same rules apply as for the plural (unit 6):</p>\n<ul>\n<li>Long double vowel → single: <i>groot → grote</i>, <i>rood → rode</i>, <i>duur → dure</i>.</li>\n<li>Short vowel → double consonant: <i>wit → witte</i>, <i>dik → dikke</i>, <i>snel → snelle</i>.</li>\n<li>f → v and s → z: <i>lief → lieve</i>, <i>grijs → grijze</i>.</li>\n<li>Adjectives ending in <b>-en</b> never change: <i>een open winkel</i>, <i>de open winkel</i>.</li>\n</ul>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Forgetting the -e, because English adjectives never change: <s>de groot kamer</s> → <b>de grote kamer</b>.</li>\n<li>Adding -e after the verb: <s>Het huis is grote</s> → <b>Het huis is groot</b>.</li>\n<li>Adding -e with een + het-word: <s>een grote huis</s> → <b>een groot huis</b>.</li>\n<li>Forgetting the -e with <i>het</i>: <s>het groot huis</s> → <b>het grote huis</b>.</li>\n<li>Getting the spelling wrong: <s>groote, wite</s> → <b>grote, witte</b>.</li>\n</ul>",
+  "vlaams": "In Flanders <b>schoon</b> often means \"beautiful\": <i>een schoon huis</i>, <i>schoon weer</i> (in the Netherlands schoon only means \"clean\"). In speech, in Belgium as in the Netherlands, <i>goede</i> often becomes <b>goeie</b>: <i>een goeie fiets</i>.",
+  "vocab": [
+   [
+    "rood",
+    "red"
+   ],
+   [
+    "wit",
+    "white"
+   ],
+   [
+    "zwart",
+    "black"
+   ],
+   [
+    "grijs",
+    "gray"
+   ],
+   [
+    "lief",
+    "sweet, kind"
+   ],
+   [
+    "dik",
+    "thick, fat"
+   ],
+   [
+    "snel",
+    "fast"
+   ],
+   [
+    "de hond",
+    "the dog"
+   ],
+   [
+    "de kat",
+    "the cat"
+   ],
+   [
+    "de kamer",
+    "the room, the bedroom"
+   ],
+   [
+    "het bed",
+    "the bed"
+   ],
+   [
+    "de wijn",
+    "the wine"
+   ],
+   [
+    "het bier",
+    "the beer"
+   ],
+   [
+    "de straat",
+    "the street"
+   ],
+   [
+    "het dorp",
+    "the village"
+   ]
+  ],
+  "core": [],
+  "items": [
+   {
+    "t": "mc",
+    "q": "Ik drink een glas ___ wijn.",
+    "h": "red",
+    "o": [
+     "rode",
+     "rood",
+     "roode",
+     "rodde"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<i>de wijn</i> is a de-word: <b>rode wijn</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Wij wonen in een ___ dorp.",
+    "h": "small",
+    "o": [
+     "klein",
+     "kleine"
+    ],
+    "a": 0,
+    "e": "<b>een</b> + het-word (het dorp): no -e."
+   },
+   {
+    "t": "fill",
+    "q": "Het is een ___ hond.",
+    "h": "lief",
+    "a": [
+     "lieve"
+    ],
+    "e": "<i>de hond</i>: -e and f → v, <b>lieve</b>."
+   },
+   {
+    "t": "order",
+    "q": "The big room is expensive.",
+    "a": "De grote kamer is duur",
+    "x": [
+     "groote",
+     "dure"
+    ],
+    "e": "Before the noun <b>grote</b>, after the verb <b>duur</b> without -e."
+   },
+   {
+    "t": "tr",
+    "q": "I have a new bike.",
+    "a": [
+     "Ik heb een nieuwe fiets"
+    ],
+    "e": "<i>de fiets</i> → <b>nieuwe</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Which one is correct?",
+    "o": [
+     "een wit bed",
+     "een witte bed",
+     "een wite bed",
+     "een wit bedde"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<i>het bed</i>, with een: <b>een wit bed</b>."
+   },
+   {
+    "t": "fill",
+    "q": "De ___ kat slaapt.",
+    "h": "grijs",
+    "a": [
+     "grijze"
+    ],
+    "e": "With <i>de</i>: -e and s → z, <b>grijze</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Dit bier is ___.",
+    "h": "tasty",
+    "o": [
+     "lekker",
+     "lekkere"
+    ],
+    "a": 0,
+    "e": "After the verb: no -e."
+   },
+   {
+    "t": "order",
+    "q": "They live in a big city.",
+    "a": "Ze wonen in een grote stad",
+    "alt": [
+     "In een grote stad wonen ze"
+    ],
+    "x": [
+     "groot",
+     "het"
+    ],
+    "e": "<i>de stad</i> → <b>een grote stad</b>."
+   },
+   {
+    "t": "tr",
+    "q": "The black dog is small.",
+    "a": [
+     "De zwarte hond is klein"
+    ],
+    "e": "Before the noun <b>zwarte</b>, after the verb <b>klein</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Hij heeft een ___ auto.",
+    "h": "snel",
+    "a": [
+     "snelle"
+    ],
+    "e": "<i>de auto</i>: -e and short vowel → <b>snelle</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Ik drink ___ water.",
+    "h": "cold",
+    "o": [
+     "koud",
+     "koude"
+    ],
+    "a": 0,
+    "e": "<i>het water</i>, no article: no -e, <b>koud water</b>."
+   }
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "een ___ huis",
+    "h": "big",
+    "o": [
+     "groot",
+     "grote",
+     "groote",
+     "grot"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<b>een</b> + singular het-word: no -e, <b>een groot huis</b>.",
+    "g": {
+     "groot": "big (no -e: een + het-word)",
+     "grote": "big with -e: not needed here",
+     "groote": "doesn't exist: oo becomes o",
+     "grot": "a cave (grot): it's a noun, not the adjective"
+    },
+    "tt": "a big house"
+   },
+   {
+    "t": "mc",
+    "q": "het ___ huis",
+    "h": "big",
+    "o": [
+     "grote",
+     "groot",
+     "groote",
+     "grotte"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "With <b>het</b> in front: always -e, <b>het grote huis</b>.",
+    "g": {
+     "grote": "big (with -e)",
+     "groot": "no -e only with een + het-word",
+     "groote": "doesn't exist: oo becomes o",
+     "grotte": "doesn't exist: the o is long"
+    },
+    "tt": "the big house"
+   },
+   {
+    "t": "mc",
+    "q": "de ___ hond",
+    "h": "black",
+    "o": [
+     "zwarte",
+     "zwart"
+    ],
+    "a": 0,
+    "e": "With <b>de</b>: always -e.",
+    "g": {
+     "zwarte": "black (with -e)",
+     "zwart": "no -e: with de you need -e"
+    },
+    "tt": "the black dog"
+   },
+   {
+    "t": "mc",
+    "q": "een ___ kat",
+    "h": "black",
+    "o": [
+     "zwarte",
+     "zwart"
+    ],
+    "a": 0,
+    "e": "<i>de kat</i> is a de-word: even with een → <b>zwarte</b>.",
+    "g": {
+     "zwarte": "black (with -e)",
+     "zwart": "no -e only with een + het-word"
+    },
+    "tt": "a black cat"
+   },
+   {
+    "t": "mc",
+    "q": "twee ___ bedden",
+    "h": "small",
+    "o": [
+     "kleine",
+     "klein",
+     "kleinen",
+     "klijne"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Plural: always -e, <b>kleine</b>.",
+    "g": {
+     "kleine": "small (with -e)",
+     "klein": "no -e: the plural needs -e",
+     "kleinen": "doesn't exist",
+     "klijne": "doesn't exist"
+    },
+    "tt": "two small beds"
+   },
+   {
+    "t": "mc",
+    "q": "Het bier is ___.",
+    "h": "cold",
+    "o": [
+     "koud",
+     "koude"
+    ],
+    "a": 0,
+    "e": "After the verb: no -e, <b>koud</b>.",
+    "g": {
+     "koud": "cold (after the verb)",
+     "koude": "-e only before a noun"
+    },
+    "tt": "The beer is cold."
+   },
+   {
+    "t": "mc",
+    "q": "een ___ fiets",
+    "h": "white",
+    "o": [
+     "witte",
+     "wite",
+     "wit"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "de-word → -e; short vowel → double t: <b>witte</b>.",
+    "g": {
+     "witte": "white (with -e)",
+     "wite": "missing the double t: the i is short",
+     "wit": "no -e only with een + het-word"
+    },
+    "tt": "a white bike"
+   },
+   {
+    "t": "mc",
+    "q": "de ___ kat",
+    "h": "sweet",
+    "o": [
+     "lieve",
+     "liefe",
+     "lief"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "-e and f → v: <b>lieve</b>.",
+    "g": {
+     "lieve": "sweet, kind (with -e)",
+     "liefe": "doesn't exist: f → v",
+     "lief": "no -e: with de you need -e"
+    },
+    "tt": "the sweet cat"
+   },
+   {
+    "t": "fill",
+    "q": "de ___ wijn",
+    "h": "rood",
+    "a": [
+     "rode"
+    ],
+    "e": "With <i>de</i>: -e, and oo → o: <b>rode</b>.",
+    "tt": "the red wine"
+   },
+   {
+    "t": "fill",
+    "q": "Dat zijn ___ straten.",
+    "h": "mooi",
+    "a": [
+     "mooie"
+    ],
+    "e": "Plural: always -e, <b>mooie</b>.",
+    "tt": "Those are beautiful streets."
+   }
+  ],
+  "gloss": {
+   "0": {
+    "g": {
+     "rode": "red (with -e)",
+     "rood": "no -e: wijn is a de-word",
+     "roode": "doesn't exist: oo becomes o",
+     "rodde": "doesn't exist"
+    },
+    "t": "I'm drinking a glass of red wine."
+   },
+   "1": {
+    "g": {
+     "klein": "small (een + het-word)",
+     "kleine": "with -e: not needed here, het dorp"
+    },
+    "t": "We live in a small village."
+   },
+   "2": {
+    "t": "It's a sweet dog."
+   },
+   "5": {
+    "g": {
+     "een wit bed": "a white bed (correct)",
+     "een witte bed": "bed is a het-word: with een no -e",
+     "een wite bed": "bed is a het-word: no -e (and with -e it would be spelled witte)",
+     "een wit bedde": "doesn't exist"
+    },
+    "t": "a white bed"
+   },
+   "6": {
+    "t": "The gray cat is sleeping."
+   },
+   "7": {
+    "g": {
+     "lekker": "tasty (after the verb)",
+     "lekkere": "-e only before a noun"
+    },
+    "t": "This beer is good."
+   },
+   "10": {
+    "t": "He has a fast car."
+   },
+   "11": {
+    "g": {
+     "koud": "cold (het-word, no article)",
+     "koude": "with -e: not needed here, het water"
+    },
+    "t": "I drink cold water."
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "We hebben geen ___ huis in Brussel, maar een klein appartement.",
+    "o": [
+     "groot",
+     "grote",
+     "groote",
+     "groten"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Singular <i>het huis</i> after <b>geen</b> works like after <i>een</i>: no -e, <b>geen groot huis</b>. The same goes for <i>een klein appartement</i>.",
+    "g": {
+     "groot": "big (correct: geen + het-word)",
+     "grote": "with -e: not needed after geen + het-word",
+     "groote": "doesn't exist: oo becomes o",
+     "groten": "doesn't exist"
+    },
+    "tt": "We don't have a big house in Brussels, but a small apartment."
+   },
+   {
+    "t": "fill",
+    "q": "Om zes uur drinkt mijn vader altijd een ___ bier.",
+    "h": "koud",
+    "a": [
+     "koud"
+    ],
+    "e": "Trap: <i>het bier</i> is a het-word and there's <i>een</i>: the adjective stays <b>koud</b>, without -e. Note the inversion after <i>Om zes uur</i>.",
+    "tt": "At six o'clock my father always drinks a cold beer."
+   },
+   {
+    "t": "mc",
+    "q": "Dit ___ hemd is te duur.",
+    "h": "white",
+    "o": [
+     "witte",
+     "wit",
+     "wite",
+     "witten"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<i>het hemd</i> is a het-word, but after <b>dit</b> it works like after <i>het</i>: you need -e. Short vowel → double t: <b>witte</b>.",
+    "g": {
+     "witte": "white (correct: dit + adjective with -e)",
+     "wit": "no -e only after een/geen/no article + het-word",
+     "wite": "missing the double t: the i is short",
+     "witten": "doesn't exist"
+    },
+    "tt": "This white shirt is too expensive."
+   },
+   {
+    "t": "fill",
+    "q": "Ons ___ dorp ligt dicht bij Brugge.",
+    "h": "klein",
+    "a": [
+     "kleine"
+    ],
+    "e": "<i>het dorp</i> is a het-word, but after a possessive (<i>ons</i>) the adjective takes -e, just like after <i>het</i>: <b>ons kleine dorp</b>.",
+    "tt": "Our little village is close to Bruges."
+   },
+   {
+    "t": "tr",
+    "q": "This week I'm sleeping in a small room in Ghent.",
+    "a": [
+     "Deze week slaap ik in een kleine kamer in Gent",
+     "Ik slaap deze week in een kleine kamer in Gent",
+     "In Gent slaap ik deze week in een kleine kamer"
+    ],
+    "e": "<i>de kamer</i> → <b>een kleine kamer</b>, with -e. With <i>Deze week</i> first: inversion <i>slaap ik</i>."
+   },
+   {
+    "t": "order",
+    "q": "My sister has a black dog and a white cat.",
+    "a": "Mijn zus heeft een zwarte hond en een witte kat",
+    "alt": [
+     "Mijn zus heeft een witte kat en een zwarte hond"
+    ],
+    "x": [
+     "zwart",
+     "wit"
+    ],
+    "e": "<i>de hond</i>, <i>de kat</i>: de-words, so even with <i>een</i> they take -e: <b>zwarte</b>, <b>witte</b> (double t). English adjectives never change, so this -e is easy to forget.",
+    "tt": "My sister has a black dog and a white cat."
+   },
+   {
+    "t": "tr",
+    "q": "That big house downtown belongs to my brother.",
+    "a": [
+     "Dat grote huis in het centrum is van mijn broer",
+     "Dat grote huis in het stadscentrum is van mijn broer"
+    ],
+    "e": "<i>het huis</i> with <b>dat</b> → -e: <b>dat grote huis</b>. \"Belongs to\" → <i>is van</i>."
+   },
+   {
+    "t": "order",
+    "q": "Those gray pants, I'm not buying them.",
+    "a": "Die grijze broek koop ik niet",
+    "alt": [
+     "Ik koop die grijze broek niet"
+    ],
+    "x": [
+     "grijs",
+     "geen"
+    ],
+    "e": "<i>de broek</i> (singular) → <b>die grijze broek</b>, with -e and s → z. With the object first: inversion <i>koop ik</i>, and <b>niet</b> at the end.",
+    "tt": "Those gray pants, I'm not buying them."
+   }
+  ]
+ }
+}

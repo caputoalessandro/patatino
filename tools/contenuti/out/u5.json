@@ -1,0 +1,728 @@
+{
+ "id": "u5",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "Alla cassa di un negozio a Gand: «Dat is dan ___, alstublieft.» (€17,80)",
+   "o": [
+    "zeventig euro achttien",
+    "zeventien komma tachtig euro",
+    "zeventien euro tachtig",
+    "zeventien euro en tachtig"
+   ],
+   "a": 2,
+   "oit": true,
+   "e": "Nei prezzi la virgola non si legge e non c'è <i>en</i>: <b>zeventien euro tachtig</b>. Attenzione a 17 (<i>zeventien</i>) e 70 (<i>zeventig</i>).",
+   "g": {
+    "zeventig euro achttien": "settanta euro e diciotto: numeri confusi",
+    "zeventien komma tachtig euro": "nei prezzi la virgola non si legge",
+    "zeventien euro tachtig": "diciassette euro e ottanta",
+    "zeventien euro en tachtig": "en qui non si usa"
+   },
+   "tt": "Allora fa 17,80 euro, ecco a Lei."
+  },
+  {
+   "t": "mc",
+   "q": "1848 (anno)",
+   "o": [
+    "achttienhonderdachtenveertig",
+    "duizend achthonderd achtenveertig",
+    "achttienhonderdveertigacht",
+    "achtienhonderdachtenveertig"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Gli anni prima del 2000 si dicono a centinaia: 18 + honderd + 48 = <b>achttienhonderdachtenveertig</b>. 18 si scrive con due t: <i>acht</i> + <i>tien</i>.",
+   "g": {
+    "achttienhonderdachtenveertig": "1848 detto a centinaia",
+    "duizend achthonderd achtenveertig": "milleottocento… ma gli anni si dicono a centinaia",
+    "achttienhonderdveertigacht": "ordine sbagliato: prima l'unità, poi en e la decina",
+    "achtienhonderdachtenveertig": "errore di ortografia: achttien ha due t"
+   },
+   "tt": "milleottocentoquarantotto"
+  },
+  {
+   "t": "fill",
+   "q": "Mijn oma ___ vierenzestig jaar en ze woont nog in Brugge.",
+   "h": "essere / avere?",
+   "a": [
+    "is"
+   ],
+   "e": "Per l'età l'olandese usa <b>zijn</b>, non <i>hebben</i>: <i>ze <b>is</b> 64 jaar</i>. Mai <s>ze heeft 64 jaar</s>.",
+   "tt": "Mia nonna ha sessantaquattro anni e abita ancora a Bruges."
+  },
+  {
+   "t": "fill",
+   "q": "Het is mijn ___ jaar in Antwerpen.",
+   "h": "8° (ordinale)",
+   "a": [
+    "achtste"
+   ],
+   "e": "Fino a 19 l'ordinale prende -de, ma <b>achtste</b> è un'eccezione (come <i>eerste</i> e <i>derde</i>).",
+   "tt": "È il mio ottavo anno ad Anversa."
+  },
+  {
+   "t": "tr",
+   "q": "Il formaggio costa quattro euro e cinquanta al chilo.",
+   "a": [
+    "De kaas kost vier euro vijftig per kilo",
+    "De kaas kost vier euro vijftig de kilo",
+    "De kaas kost €4,50 per kilo",
+    "De kaas kost 4,50 euro per kilo",
+    "De kaas kost per kilo vier euro vijftig",
+    "Per kilo kost de kaas vier euro vijftig"
+   ],
+   "e": "<b>de kaas</b> + <b>kost</b> (radice + t). Prezzo: <b>vier euro vijftig</b>, senza leggere la virgola. \"Al chilo\" = <b>per kilo</b> (in Belgio anche <i>de kilo</i>)."
+  },
+  {
+   "t": "tr",
+   "q": "Mio figlio ha ventidue anni.",
+   "a": [
+    "Mijn zoon is tweeëntwintig jaar",
+    "Mijn zoon is tweeëntwintig jaar oud",
+    "Mijn zoon is 22 jaar",
+    "Mijn zoon is 22 jaar oud",
+    "Mijn zoon is tweeëntwintig",
+    "Mijn zoon is 22"
+   ],
+   "e": "Età con <b>zijn</b>: <i>is</i>. 22 = <b>tweeëntwintig</b>: quando due e si incontrano serve la dieresi."
+  },
+  {
+   "t": "order",
+   "q": "Oggi la bici costa solo duecentoquaranta euro.",
+   "a": "Vandaag kost de fiets maar tweehonderdveertig euro",
+   "alt": [
+    "De fiets kost vandaag maar tweehonderdveertig euro"
+   ],
+   "x": [
+    "kosten",
+    "veertigtweehonderd"
+   ],
+   "e": "Le centinaia vanno prima: <b>tweehonderdveertig</b>. Se la frase inizia con <i>Vandaag</i>, il verbo <b>kost</b> viene subito dopo. <i>maar</i> qui significa \"solo\".",
+   "tt": "Oggi la bici costa solo duecentoquaranta euro."
+  },
+  {
+   "t": "order",
+   "q": "Lei ha quarantacinque anni e abita al numero ventuno.",
+   "a": "Ze is vijfenveertig jaar en woont op nummer eenentwintig",
+   "x": [
+    "heeft",
+    "veertigvijf"
+   ],
+   "e": "Età con <b>zijn</b> (<i>ze is</i>), e prima l'unità: <b>vijfenveertig</b>, <b>eenentwintig</b>. Il numero civico: <i>op nummer</i>.",
+   "tt": "Lei ha quarantacinque anni e abita al numero ventuno."
+  }
+ ],
+ "en": {
+  "it": "Numbers and measurements",
+  "note": "\n<h3>From 0 to 20</h3>\n<p>0 nul · 1 een · 2 twee · 3 drie · 4 vier · 5 vijf · 6 zes · 7 zeven · 8 acht · 9 negen · 10 tien · 11 elf · 12 twaalf</p>\n<p>From 13 to 19 you join the unit to <b>tien</b>, just like English \"-teen\", with a few small changes: 13 <b>dertien</b> (not drietien), 14 <b>veertien</b> (not viertien), 15 vijftien, 16 zestien, 17 zeventien, 18 achttien, 19 negentien. 20 is <b>twintig</b>.</p>\n<h3>The tens</h3>\n<p>20 <b>twintig</b> · 30 <b>dertig</b> · 40 <b>veertig</b> · 50 vijftig · 60 zestig · 70 zeventig · 80 <b>tachtig</b> · 90 negentig. The forms in bold are the irregular ones to memorize. Note how <i>-tig</i> works like English \"-ty\".</p>\n<h3>From 21 to 99: units first</h3>\n<p>Here's the big difference from English: you say the <b>unit</b> first, then <b>en</b> (and), then the ten, all in one word. It's like the old English \"four-and-twenty blackbirds\" instead of \"twenty-four\".</p>\n<table><tr><th>number</th><th>Dutch</th><th>literally</th></tr>\n<tr><td>21</td><td>eenentwintig</td><td>one and twenty</td></tr>\n<tr><td>35</td><td>vijfendertig</td><td>five and thirty</td></tr>\n<tr><td>47</td><td>zevenenveertig</td><td>seven and forty</td></tr>\n<tr><td>88</td><td>achtentachtig</td><td>eight and eighty</td></tr></table>\n<p>When two e's meet, you add a diaeresis: 22 <b>tweeëntwintig</b>, 23 <b>drieëntwintig</b>.</p>\n<h3>Hundreds, thousands and years</h3>\n<p>100 is <b>honderd</b> (no \"een\" in front, unlike \"one hundred\"), 200 tweehonderd, 1000 <b>duizend</b>. 2026 = <b>tweeduizend zesentwintig</b>. Years before 2000 are said in hundreds, as in English, but with the word <i>honderd</i> included: 1990 = <b>negentienhonderdnegentig</b> (nineteen-hundred-ninety).</p>\n<h3>Prices, decimals and measurements</h3>\n<ul>\n<li>Dutch uses a <b>comma</b> where English uses a decimal point, and reads it <b>komma</b>: 2,5 = twee komma vijf.</li>\n<li>In prices the comma isn't read: €3,50 = <b>drie euro vijftig</b>, like \"three fifty\".</li>\n<li>Units of measurement stay <b>singular</b>: twee kilo, honderd gram, drie liter.</li>\n</ul>\n<h3>Ordinals (first, second…)</h3>\n<p>Up to 19 you add <b>-de</b>: tweede, vierde, vijfde. Three exceptions: <b>eerste</b> (first), <b>derde</b> (third), <b>achtste</b> (eighth). From 20 up you add <b>-ste</b>: twintigste, honderdste.</p>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Following the English order: 21 isn't <s>twintigeen</s> but <b>eenentwintig</b>.</li>\n<li>Saying \"point\" for decimals: <s>twee punt vijf</s> → <b>twee komma vijf</b>.</li>\n<li>Making measurements plural like \"two kilos\": <s>twee kilos</s> → <b>twee kilo</b>.</li>\n<li>Saying \"one hundred\": <s>een honderd</s> → <b>honderd</b>.</li>\n</ul>",
+  "vlaams": "French-speaking Belgians say \"septante\" and \"nonante\", but in Dutch it's always <b>zeventig</b> and <b>negentig</b>. When you pay, you'll be asked \"Met Bancontact?\", and you'll hear \"<b>alstublieft</b>\" as a reply to \"dank u\" too: in Belgium it also means \"you're welcome\".",
+  "vocab": [
+   [
+    "de kaas",
+    "the cheese"
+   ],
+   [
+    "het jaar",
+    "the year"
+   ],
+   [
+    "de prijs",
+    "the price"
+   ],
+   [
+    "kosten",
+    "to cost"
+   ],
+   [
+    "het nummer",
+    "the number"
+   ],
+   [
+    "de kilo",
+    "the kilo"
+   ],
+   [
+    "de euro",
+    "the euro"
+   ],
+   [
+    "alstublieft",
+    "please, here you are"
+   ],
+   [
+    "de appel",
+    "the apple"
+   ]
+  ],
+  "core": [
+   [
+    "een",
+    "one"
+   ],
+   [
+    "twee",
+    "two"
+   ],
+   [
+    "drie",
+    "three"
+   ],
+   [
+    "vier",
+    "four"
+   ],
+   [
+    "vijf",
+    "five"
+   ],
+   [
+    "zes",
+    "six"
+   ],
+   [
+    "zeven",
+    "seven"
+   ],
+   [
+    "acht",
+    "eight"
+   ],
+   [
+    "negen",
+    "nine"
+   ],
+   [
+    "tien",
+    "ten"
+   ],
+   [
+    "twaalf",
+    "twelve"
+   ],
+   [
+    "dertien",
+    "thirteen"
+   ],
+   [
+    "twintig",
+    "twenty"
+   ],
+   [
+    "dertig",
+    "thirty"
+   ],
+   [
+    "honderd",
+    "a hundred"
+   ],
+   [
+    "duizend",
+    "a thousand"
+   ]
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "7 + 3 = ?",
+    "o": [
+     "tien",
+     "negen",
+     "elf",
+     "twaalf"
+    ],
+    "a": 0,
+    "e": "10 = <b>tien</b>.",
+    "g": {
+     "tien": "10",
+     "negen": "9",
+     "elf": "11",
+     "twaalf": "12"
+    },
+    "tt": "seven plus three is ten"
+   },
+   {
+    "t": "mc",
+    "q": "15",
+    "o": [
+     "vijftien",
+     "vijfentien",
+     "vijftig",
+     "vijfenvijftig"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "From 13 to 19: unit + tien → <b>vijftien</b>.",
+    "g": {
+     "vijftien": "15",
+     "vijfentien": "not a real form",
+     "vijftig": "50",
+     "vijfenvijftig": "55"
+    },
+    "tt": "fifteen"
+   },
+   {
+    "t": "mc",
+    "q": "30",
+    "o": [
+     "dertig",
+     "drieëntig",
+     "drietig",
+     "dertien"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Irregular: <b>dertig</b>.",
+    "g": {
+     "dertig": "30",
+     "drieëntig": "not a real form",
+     "drietig": "not a real form",
+     "dertien": "13"
+    },
+    "tt": "thirty"
+   },
+   {
+    "t": "mc",
+    "q": "24",
+    "o": [
+     "vierentwintig",
+     "twintigvier",
+     "vierentwintigste",
+     "viertwintig"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Unit + en + ten: <b>vierentwintig</b>.",
+    "g": {
+     "vierentwintig": "24",
+     "twintigvier": "not a real form: the unit comes first",
+     "vierentwintigste": "twenty-fourth",
+     "viertwintig": "not a real form: en is missing"
+    },
+    "tt": "twenty-four"
+   },
+   {
+    "t": "mc",
+    "q": "100",
+    "o": [
+     "honderd",
+     "een honderd",
+     "hondert",
+     "duizend"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<b>honderd</b>, with no een in front.",
+    "g": {
+     "honderd": "100",
+     "een honderd": "you don't say een before honderd",
+     "hondert": "spelling mistake",
+     "duizend": "1000"
+    },
+    "tt": "a hundred"
+   },
+   {
+    "t": "mc",
+    "q": "de vierde",
+    "o": [
+     "the fourth",
+     "four",
+     "forty",
+     "the fourteenth"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<b>vierde</b> = fourth."
+   },
+   {
+    "t": "fill",
+    "q": "3 = ___",
+    "a": [
+     "drie"
+    ],
+    "e": "<b>drie</b>.",
+    "tt": "three"
+   },
+   {
+    "t": "fill",
+    "q": "50 = ___",
+    "a": [
+     "vijftig"
+    ],
+    "e": "<b>vijftig</b>.",
+    "tt": "fifty"
+   },
+   {
+    "t": "fill",
+    "q": "2 → de ___",
+    "h": "ordinal",
+    "a": [
+     "tweede"
+    ],
+    "e": "Up to 19 you add -de: <b>tweede</b>.",
+    "tt": "the second"
+   },
+   {
+    "t": "mc",
+    "q": "€2,20",
+    "o": [
+     "twee euro twintig",
+     "twintig twee euro",
+     "twee komma twintig euro",
+     "twee euro en twintig"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "In prices the comma isn't read: <b>twee euro twintig</b>.",
+    "g": {
+     "twee euro twintig": "two euros twenty",
+     "twintig twee euro": "wrong order",
+     "twee komma twintig euro": "in prices the comma isn't read",
+     "twee euro en twintig": "en isn't used here"
+    },
+    "tt": "two euros twenty"
+   }
+  ],
+  "items": [
+   {
+    "t": "mc",
+    "oit": true,
+    "say": "eenentwintig",
+    "q": "21",
+    "o": [
+     "eenentwintig",
+     "twintigeen",
+     "tweeëntwintig",
+     "eentwintig"
+    ],
+    "a": 0,
+    "e": "Unit + en + tens: <b>eenentwintig</b>."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "say": "zevenenveertig",
+    "q": "47",
+    "o": [
+     "veertigzeven",
+     "zevenenveertig",
+     "zevenveertig",
+     "zeventig"
+    ],
+    "a": 1,
+    "e": "<b>zevenenveertig</b>."
+   },
+   {
+    "t": "fill",
+    "say": "Acht plus vijf is dertien.",
+    "q": "8 + 5 = ___",
+    "h": "in words",
+    "a": [
+     "dertien"
+    ],
+    "e": "13 = <b>dertien</b>."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "say": "drie euro vijftig",
+    "q": "€3,50",
+    "o": [
+     "drie euro vijftig",
+     "drie komma vijftig euro",
+     "vijftig drie euro",
+     "drie euro en een half"
+    ],
+    "a": 0,
+    "e": "You say <b>drie euro vijftig</b>."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "say": "negentienhonderdnegentig",
+    "q": "1990 (year)",
+    "o": [
+     "duizend negenhonderd negentig",
+     "negentienhonderdnegentig",
+     "negentig negentien",
+     "een negen negen nul"
+    ],
+    "a": 1,
+    "e": "Years in hundreds: <b>negentienhonderdnegentig</b>."
+   },
+   {
+    "t": "tr",
+    "q": "I'm thirty (years old).",
+    "a": [
+     "Ik ben dertig jaar",
+     "Ik ben dertig jaar oud",
+     "Ik ben 30 jaar",
+     "Ik ben 30 jaar oud"
+    ],
+    "e": "As in English, age is expressed with <b>zijn</b>: ik ben dertig jaar."
+   },
+   {
+    "t": "fill",
+    "say": "twaalf",
+    "q": "12 = ___",
+    "a": [
+     "twaalf"
+    ],
+    "e": "<b>twaalf</b>."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "say": "twee komma vijf",
+    "q": "2,5",
+    "o": [
+     "twee punt vijf",
+     "twee komma vijf",
+     "twee en vijf",
+     "vijf twee"
+    ],
+    "a": 1,
+    "e": "The decimal comma is read <b>komma</b>."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "say": "de derde",
+    "q": "de derde",
+    "o": [
+     "the third",
+     "three",
+     "the thirtieth",
+     "the third time"
+    ],
+    "a": 0,
+    "e": "<b>derde</b> = third."
+   },
+   {
+    "t": "fill",
+    "say": "de eerste",
+    "q": "1 → de ___",
+    "h": "ordinal",
+    "a": [
+     "eerste"
+    ],
+    "e": "<b>eerste</b> = first."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "say": "honderd gram kaas",
+    "q": "100 grams of cheese",
+    "o": [
+     "honderd gram kaas",
+     "honderd grammen kaas",
+     "een honderd gram kaas",
+     "honderd van gram kaas"
+    ],
+    "a": 0,
+    "e": "Measurements stay singular: <b>honderd gram</b>."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "say": "achtentachtig",
+    "q": "88",
+    "o": [
+     "achtentachtig",
+     "tachtigacht",
+     "achtachtig",
+     "achtenachttig"
+    ],
+    "a": 0,
+    "e": "<b>achtentachtig</b>."
+   }
+  ],
+  "gloss": {
+   "0": {
+    "g": {
+     "eenentwintig": "21",
+     "twintigeen": "not a real form: the unit comes first",
+     "tweeëntwintig": "22",
+     "eentwintig": "not a real form: en is missing"
+    },
+    "t": "twenty-one"
+   },
+   "1": {
+    "g": {
+     "veertigzeven": "not a real form: the unit comes first",
+     "zevenenveertig": "47",
+     "zevenveertig": "not a real form: en is missing",
+     "zeventig": "70"
+    },
+    "t": "forty-seven"
+   },
+   "2": {
+    "t": "Eight plus five is thirteen."
+   },
+   "3": {
+    "g": {
+     "drie euro vijftig": "three euros fifty",
+     "drie komma vijftig euro": "in prices the comma isn't read",
+     "vijftig drie euro": "wrong order",
+     "drie euro en een half": "three and a half euros: not used"
+    },
+    "t": "three euros fifty"
+   },
+   "4": {
+    "g": {
+     "duizend negenhonderd negentig": "one thousand nine hundred ninety, but years are said in hundreds",
+     "negentienhonderdnegentig": "1990 said in hundreds",
+     "negentig negentien": "wrong order",
+     "een negen negen nul": "digits read one by one"
+    },
+    "t": "nineteen ninety"
+   },
+   "6": {
+    "t": "twelve"
+   },
+   "7": {
+    "g": {
+     "twee punt vijf": "the decimal point is English, not Dutch",
+     "twee komma vijf": "two point five",
+     "twee en vijf": "two and five",
+     "vijf twee": "five two"
+    },
+    "t": "two point five"
+   },
+   "9": {
+    "t": "the first"
+   },
+   "10": {
+    "g": {
+     "honderd gram kaas": "a hundred grams of cheese",
+     "honderd grammen kaas": "measurements stay singular",
+     "een honderd gram kaas": "you don't say een before honderd",
+     "honderd van gram kaas": "van isn't needed here"
+    },
+    "t": "a hundred grams of cheese"
+   },
+   "11": {
+    "g": {
+     "achtentachtig": "88",
+     "tachtigacht": "not a real form: the unit comes first",
+     "achtachtig": "not a real form: en is missing",
+     "achtenachttig": "spelling mistake: it's tachtig"
+    },
+    "t": "eighty-eight"
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "At the checkout in a shop in Ghent: «Dat is dan ___, alstublieft.» (€17,80)",
+    "o": [
+     "zeventig euro achttien",
+     "zeventien komma tachtig euro",
+     "zeventien euro tachtig",
+     "zeventien euro en tachtig"
+    ],
+    "a": 2,
+    "oit": true,
+    "e": "In prices the comma isn't read and there's no <i>en</i>: <b>zeventien euro tachtig</b>. Careful with 17 (<i>zeventien</i>) and 70 (<i>zeventig</i>), just like seventeen and seventy.",
+    "g": {
+     "zeventig euro achttien": "seventy euros eighteen: numbers mixed up",
+     "zeventien komma tachtig euro": "in prices the comma isn't read",
+     "zeventien euro tachtig": "seventeen euros eighty",
+     "zeventien euro en tachtig": "en isn't used here"
+    },
+    "tt": "That'll be €17.80, then, please."
+   },
+   {
+    "t": "mc",
+    "q": "1848 (year)",
+    "o": [
+     "achttienhonderdachtenveertig",
+     "duizend achthonderd achtenveertig",
+     "achttienhonderdveertigacht",
+     "achtienhonderdachtenveertig"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Years before 2000 are said in hundreds: 18 + honderd + 48 = <b>achttienhonderdachtenveertig</b>. Unlike English \"eighteen forty-eight\", <i>honderd</i> is included and the unit comes first. 18 has two t's: <i>acht</i> + <i>tien</i>.",
+    "g": {
+     "achttienhonderdachtenveertig": "1848 said in hundreds",
+     "duizend achthonderd achtenveertig": "one thousand eight hundred… but years are said in hundreds",
+     "achttienhonderdveertigacht": "wrong order: unit first, then en and the ten",
+     "achtienhonderdachtenveertig": "spelling mistake: achttien has two t's"
+    },
+    "tt": "eighteen forty-eight"
+   },
+   {
+    "t": "fill",
+    "q": "Mijn oma ___ vierenzestig jaar en ze woont nog in Brugge.",
+    "h": "to be",
+    "a": [
+     "is"
+    ],
+    "e": "As in English, age uses <b>zijn</b>: <i>ze <b>is</b> 64 jaar</i>. Note the number: 64 = four-and-sixty, <b>vierenzestig</b>.",
+    "tt": "My grandma is sixty-four and still lives in Bruges."
+   },
+   {
+    "t": "fill",
+    "q": "Het is mijn ___ jaar in Antwerpen.",
+    "h": "8th (ordinal)",
+    "a": [
+     "achtste"
+    ],
+    "e": "Up to 19 ordinals take -de, but <b>achtste</b> is an exception (like <i>eerste</i> and <i>derde</i>).",
+    "tt": "It's my eighth year in Antwerp."
+   },
+   {
+    "t": "tr",
+    "q": "The cheese costs four euros fifty a kilo.",
+    "a": [
+     "De kaas kost vier euro vijftig per kilo",
+     "De kaas kost vier euro vijftig de kilo",
+     "De kaas kost €4,50 per kilo",
+     "De kaas kost 4,50 euro per kilo",
+     "De kaas kost per kilo vier euro vijftig",
+     "Per kilo kost de kaas vier euro vijftig"
+    ],
+    "e": "<b>de kaas</b> + <b>kost</b> (stem + t). Price: <b>vier euro vijftig</b>, with euro in the singular. \"A kilo\" = <b>per kilo</b> (in Belgium also <i>de kilo</i>)."
+   },
+   {
+    "t": "tr",
+    "q": "My son is twenty-two (years old).",
+    "a": [
+     "Mijn zoon is tweeëntwintig jaar",
+     "Mijn zoon is tweeëntwintig jaar oud",
+     "Mijn zoon is 22 jaar",
+     "Mijn zoon is 22 jaar oud",
+     "Mijn zoon is tweeëntwintig",
+     "Mijn zoon is 22"
+    ],
+    "e": "Age with <b>zijn</b>: <i>is</i>. 22 = <b>tweeëntwintig</b> (two-and-twenty): when two e's meet you need the diaeresis."
+   },
+   {
+    "t": "order",
+    "q": "Today the bike only costs two hundred and forty euros.",
+    "a": "Vandaag kost de fiets maar tweehonderdveertig euro",
+    "alt": [
+     "De fiets kost vandaag maar tweehonderdveertig euro"
+    ],
+    "x": [
+     "kosten",
+     "veertigtweehonderd"
+    ],
+    "e": "Hundreds come first, as in English, all in one word: <b>tweehonderdveertig</b>, and <i>euro</i> stays singular. If the sentence starts with <i>Vandaag</i>, the verb <b>kost</b> comes right after it. <i>maar</i> means \"only\" here.",
+    "tt": "Today the bike only costs two hundred and forty euros."
+   },
+   {
+    "t": "order",
+    "q": "She's forty-five and lives at number twenty-one.",
+    "a": "Ze is vijfenveertig jaar en woont op nummer eenentwintig",
+    "x": [
+     "heeft",
+     "veertigvijf"
+    ],
+    "e": "Unit first: <b>vijfenveertig</b> (five-and-forty), <b>eenentwintig</b>. Dutch adds <i>jaar</i> after the age. A house number: <i>op nummer</i>.",
+    "tt": "She's forty-five and lives at number twenty-one."
+   }
+  ]
+ }
+}

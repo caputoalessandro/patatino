@@ -1,0 +1,743 @@
+{
+ "id": "u22",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "de ring → twee ___",
+   "o": [
+    "ringetjes",
+    "ringjes",
+    "ringtjes",
+    "ringetjen"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<i>ring</i> ha una vocale breve accentata + ng: <b>-etje</b> (ringetje). Poi il plurale di ogni diminutivo è <b>-s</b>: <b>ringetjes</b>.",
+   "g": {
+    "ringetjes": "anellini (corretta)",
+    "ringjes": "forma che non esiste: dopo vocale breve + ng serve -etje",
+    "ringtjes": "forma che non esiste",
+    "ringetjen": "forma che non esiste: il plurale dei diminutivi è sempre -s"
+   },
+   "tt": "l'anello → due anellini"
+  },
+  {
+   "t": "mc",
+   "q": "In de tuin van mijn oma speelt een ___ hondje met een balletje.",
+   "o": [
+    "klein",
+    "kleine",
+    "kleintje",
+    "kleiner"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Trabocchetto doppio: <i>de hond</i> è una de-parola, ma <b>het hondje</b> è una het-parola. Con <b>een</b> + het-parola l'aggettivo non prende -e (unità 14): <i>een <b>klein</b> hondje</i>.",
+   "g": {
+    "klein": "piccolo (corretta: een + het-parola, senza -e)",
+    "kleine": "con -e: andrebbe bene con het hondje, non con een",
+    "kleintje": "il piccolino: è un nome, non un aggettivo",
+    "kleiner": "più piccolo (comparativo)"
+   },
+   "tt": "Nel giardino di mia nonna un cagnolino gioca con una pallina."
+  },
+  {
+   "t": "fill",
+   "q": "Gisteren hebben de kinderen in het park drie ___ gegeten.",
+   "h": "het ijs, diminutivo plurale",
+   "a": [
+    "ijsjes"
+   ],
+   "e": "ijs → <b>ijsje</b> (un gelato, la porzione) → plurale <b>ijsjes</b>, sempre con -s.",
+   "tt": "Ieri i bambini hanno mangiato tre gelati al parco."
+  },
+  {
+   "t": "fill",
+   "q": "In het centrum van Brussel staat een beroemd ___: Manneken Pis.",
+   "h": "de man, diminutivo",
+   "a": [
+    "mannetje",
+    "manneke"
+   ],
+   "e": "man: vocale breve + n → la n raddoppia + <b>-etje</b>: <b>mannetje</b>. In fiammingo si dice <i>manneke</i>, da cui il nome della statua. Nota <i>een beroemd</i> senza -e: il diminutivo è het.",
+   "tt": "Nel centro di Bruxelles c'è un omino famoso: il Manneken Pis."
+  },
+  {
+   "t": "tr",
+   "q": "Vorrei un panino al prosciutto e una tazzina di caffè.",
+   "a": [
+    "Ik wil graag een broodje ham en een kopje koffie",
+    "Ik wil graag een broodje ham en een tas koffie",
+    "Ik wil graag een broodje ham en een tasje koffie",
+    "Ik wil graag een broodje met ham en een kopje koffie",
+    "Ik wil graag een broodje met ham en een tas koffie",
+    "Ik wil graag een broodje met ham en een tasje koffie",
+    "Ik wil een broodje ham en een kopje koffie",
+    "Ik wil een broodje ham en een tas koffie",
+    "Ik wil een broodje ham en een tasje koffie",
+    "Ik wil een broodje met ham en een kopje koffie",
+    "Ik wil een broodje met ham en een tas koffie",
+    "Ik wil een broodje met ham en een tasje koffie",
+    "Graag een broodje ham en een kopje koffie",
+    "Graag een broodje ham en een tas koffie",
+    "Graag een broodje ham en een tasje koffie",
+    "Graag een broodje met ham en een kopje koffie",
+    "Graag een broodje met ham en een tas koffie",
+    "Graag een broodje met ham en een tasje koffie",
+    "Ik zou graag een broodje ham en een kopje koffie willen",
+    "Ik zou graag een broodje ham en een tas koffie willen",
+    "Ik zou graag een broodje ham en een tasje koffie willen",
+    "Ik zou graag een broodje met ham en een kopje koffie willen",
+    "Ik zou graag een broodje met ham en een tas koffie willen",
+    "Ik zou graag een broodje met ham en een tasje koffie willen",
+    "Mag ik een broodje ham en een kopje koffie",
+    "Mag ik een broodje ham en een tas koffie",
+    "Mag ik een broodje ham en een tasje koffie",
+    "Mag ik een broodje met ham en een kopje koffie",
+    "Mag ik een broodje met ham en een tas koffie",
+    "Mag ik een broodje met ham en een tasje koffie"
+   ],
+   "e": "Il panino è <b>een broodje</b> (non <s>een klein brood</s>), la tazzina <b>een kopje</b>; in Belgio anche <i>een tas koffie</i>. Dopo <i>broodje</i> e <i>kopje</i> il nome segue senza preposizione."
+  },
+  {
+   "t": "tr",
+   "q": "Le bambine hanno giocato con le palline.",
+   "a": [
+    "De meisjes hebben met de balletjes gespeeld",
+    "De meisjes hebben gespeeld met de balletjes",
+    "De meisjes speelden met de balletjes"
+   ],
+   "e": "Due diminutivi al plurale: <i>meisje → <b>meisjes</b></i>, <i>bal → balletje → <b>balletjes</b></i>; al plurale l'articolo è <b>de</b>. Spelen vuole <b>hebben</b>."
+  },
+  {
+   "t": "order",
+   "q": "Mia nonna ha dato un biscotto a ogni bambino.",
+   "a": "Mijn oma heeft elk kind een koekje gegeven",
+   "x": [
+    "koektje",
+    "gegeeft"
+   ],
+   "e": "Prima la persona, poi la cosa: <i>elk kind een koekje</i>. <b>koekje</b> (biscotto) è un diminutivo con un significato proprio; <i>geven</i> → <b>gegeven</b>.",
+   "tt": "Mia nonna ha dato un biscotto a ogni bambino."
+  },
+  {
+   "t": "order",
+   "q": "Nella stanza di Lotte ci sono due seggioline e un tavolino.",
+   "a": "In de kamer van Lotte staan twee stoeltjes en een tafeltje",
+   "alt": [
+    "Twee stoeltjes en een tafeltje staan in de kamer van Lotte"
+   ],
+   "x": [
+    "stoelletjes",
+    "tafelje"
+   ],
+   "e": "stoel → <b>stoeltje</b> (vocale lunga + l), tafel → <b>tafeltje</b> (-el finale): sempre <b>-tje</b>. Con l'inversione il verbo resta al secondo posto: <i>In de kamer van Lotte <b>staan</b>…</i>",
+   "tt": "Nella stanza di Lotte ci sono due seggioline e un tavolino."
+  }
+ ],
+ "en": {
+  "it": "Diminutives",
+  "note": "\n<h3>The idea</h3>\n<p>English has a few diminutive endings, like -ie, -y or -let (doggie, booklet), but mostly just says \"little\". Dutch has one family of endings, all based on <b>-je</b>: <i>huis → huisje</i> (little house), <i>kat → katje</i> (kitten). The Dutch and the Flemish use diminutives far more than English speakers do: not only for small things, but also to show affection, to make a sentence sound lighter and more casual, or with a completely new meaning.</p>\n<h3>Two fixed rules</h3>\n<ul>\n<li>A diminutive is <b>always het</b>, even if the base noun is a de-word: <i>de hond → het hondje</i>.</li>\n<li>The plural is always <b>-s</b>: <i>het hondje → de hondjes</i>.</li>\n</ul>\n<h3>Which ending?</h3>\n<p>The form depends on the final sound of the word. You don't have to memorize it: it's the one that's easiest to pronounce.</p>\n<table><tr><th>ending</th><th>when</th><th>examples</th></tr>\n<tr><td>-je</td><td>after most consonants (p, t, k, d, f, s...)</td><td>boek → boekje, hond → hondje, huis → huisje</td></tr>\n<tr><td>-tje</td><td>after a vowel; after l, n, r with a long vowel before them; after final -el, -en, -er</td><td>auto → autootje, stoel → stoeltje, deur → deurtje, tafel → tafeltje</td></tr>\n<tr><td>-pje</td><td>after m with a long vowel before it, and after -lm, -rm</td><td>boom → boompje, film → filmpje</td></tr>\n<tr><td>-etje</td><td>after a short stressed vowel + l, m, n, r, ng (the consonant doubles)</td><td>bal → balletje, man → mannetje, ring → ringetje</td></tr>\n<tr><td>-kje</td><td>after unstressed -ing: ng becomes nk</td><td>koning → koninkje</td></tr></table>\n<p>In words ending in <b>a, o, u</b> the vowel is doubled so that it stays long: <i>auto → autootje</i>, <i>menu → menuutje</i>.</p>\n<h3>Diminutives with their own meaning</h3>\n<p>Some diminutives have become words in their own right, to be learned as such:</p>\n<ul>\n<li><b>het broodje</b>: a sandwich, a bread roll (not \"a little bread\"). <i>Een broodje kaas</i> = a cheese sandwich.</li>\n<li><b>het koekje</b>: a cookie.</li>\n<li><b>het kopje</b>: a cup (of coffee or tea). <i>Een kopje koffie</i>.</li>\n<li><b>het ijsje</b>: an ice cream (one serving, a cone).</li>\n<li><b>het biertje</b>: a beer, said in a casual, friendly way.</li>\n<li><b>het meisje</b>: girl (unit 3).</li>\n<li><b>een beetje</b>: a bit, a little. <i>Ik spreek een beetje Nederlands.</i></li>\n</ul>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Keeping the article of the base word: <s>de hondje</s> → <b>het hondje</b>.</li>\n<li>Making the plural with -en: <s>twee huisjen</s> → <b>twee huisjes</b>.</li>\n<li>Always just adding -je: <s>autoje</s>, <s>balje</s> → <b>autootje</b>, <b>balletje</b>.</li>\n<li>Translating \"a sandwich\" word for word or as <s>een klein brood</s> → <b>een broodje</b>.</li>\n<li>Avoiding diminutives because English rarely uses them: in Dutch <i>een kopje koffie</i> or <i>een biertje</i> sounds more natural than the plain word.</li>\n</ul>",
+  "vlaams": "In spoken Flemish the diminutive often ends in <b>-ke</b> instead of -je: \"een manneke\" (a little man), which gives us the name of Brussels' <b>Manneken Pis</b>. In a Belgian bar people happily order \"<b>een pintje</b>\", a glass of draft lager.",
+  "vocab": [
+   [
+    "het brood",
+    "the bread"
+   ],
+   [
+    "het broodje",
+    "the sandwich, the roll"
+   ],
+   [
+    "het bier",
+    "the beer"
+   ],
+   [
+    "het koekje",
+    "the cookie"
+   ],
+   [
+    "de kop",
+    "the cup, the mug"
+   ],
+   [
+    "het kopje",
+    "the (small) cup"
+   ],
+   [
+    "het ijs",
+    "the ice cream; the ice"
+   ],
+   [
+    "de stoel",
+    "the chair"
+   ],
+   [
+    "de kamer",
+    "the room"
+   ],
+   [
+    "de bal",
+    "the ball"
+   ],
+   [
+    "de film",
+    "the movie"
+   ],
+   [
+    "de deur",
+    "the door"
+   ],
+   [
+    "de hond",
+    "the dog"
+   ],
+   [
+    "de kat",
+    "the cat"
+   ],
+   [
+    "de koning",
+    "the king"
+   ],
+   [
+    "klein",
+    "small, little"
+   ],
+   [
+    "lekker",
+    "tasty, good"
+   ]
+  ],
+  "core": [
+   [
+    "-je",
+    "diminutive (general rule)"
+   ],
+   [
+    "-tje",
+    "after a vowel, or after l, n, r with a long vowel"
+   ],
+   [
+    "-pje",
+    "after m with a long vowel"
+   ],
+   [
+    "-etje",
+    "after a short vowel + l, m, n, r, ng"
+   ],
+   [
+    "-kje",
+    "-ing becomes -inkje"
+   ],
+   [
+    "een beetje",
+    "a bit, a little"
+   ]
+  ],
+  "items": [
+   {
+    "t": "fill",
+    "q": "Een ___ kaas, alstublieft.",
+    "h": "sandwich",
+    "a": [
+     "broodje"
+    ],
+    "e": "<b>het broodje</b> = the sandwich, the roll."
+   },
+   {
+    "t": "mc",
+    "q": "'een koekje' is:",
+    "o": [
+     "a cookie",
+     "a small cake",
+     "a cook",
+     "a sandwich"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<b>het koekje</b> = the cookie."
+   },
+   {
+    "t": "mc",
+    "q": "Het meisje zit met ___ katje in de tuin.",
+    "o": [
+     "het",
+     "de"
+    ],
+    "a": 0,
+    "e": "Diminutive → <b>het</b> katje."
+   },
+   {
+    "t": "fill",
+    "q": "We hebben twee ___.",
+    "h": "de hond, diminutive plural",
+    "a": [
+     "hondjes"
+    ],
+    "e": "hond → hondje → <b>hondjes</b>."
+   },
+   {
+    "t": "order",
+    "q": "The child is eating a cookie.",
+    "a": "Het kind eet een koekje",
+    "x": [
+     "de",
+     "koektje"
+    ],
+    "e": "<b>het</b> kind, een <b>koekje</b>."
+   },
+   {
+    "t": "tr",
+    "q": "A beer, please.",
+    "a": [
+     "Een biertje alstublieft",
+     "Een bier alstublieft",
+     "Een pintje alstublieft",
+     "Een biertje graag",
+     "Een bier graag",
+     "Een pintje graag",
+     "Een biertje alsjeblieft",
+     "Een bier alsjeblieft",
+     "Een pintje alsjeblieft"
+    ],
+    "e": "In a bar people happily say <b>een biertje</b> (in Belgium also: een pintje)."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "de deur → het ___",
+    "o": [
+     "deurtje",
+     "deurje",
+     "deurretje",
+     "deurpje"
+    ],
+    "a": 0,
+    "e": "Long vowel (eu) + r: <b>-tje</b>."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "de film → het ___",
+    "o": [
+     "filmpje",
+     "filmje",
+     "filmetje",
+     "filmtje"
+    ],
+    "a": 0,
+    "e": "After -lm: <b>-pje</b>, filmpje."
+   },
+   {
+    "t": "fill",
+    "q": "Mijn zus woont in een klein ___.",
+    "h": "huis, diminutive",
+    "a": [
+     "huisje"
+    ],
+    "e": "huis → <b>huisje</b>."
+   },
+   {
+    "t": "tr",
+    "q": "The children are eating an ice cream.",
+    "a": [
+     "De kinderen eten een ijsje",
+     "De kinderen eten een ijs"
+    ],
+    "e": "<b>een ijsje</b> = an ice cream (one serving)."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "Spreek je Nederlands? — Ja, een ___.",
+    "o": [
+     "beetje",
+     "beet",
+     "bietje",
+     "beetjes"
+    ],
+    "a": 0,
+    "e": "<b>een beetje</b> = a bit, a little."
+   },
+   {
+    "t": "order",
+    "q": "The kittens are in the room.",
+    "a": "De katjes zijn in de kamer",
+    "alt": [
+     "In de kamer zijn de katjes"
+    ],
+    "x": [
+     "het",
+     "is"
+    ],
+    "e": "In the plural diminutives take <b>de</b> too: de katjes."
+   }
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "de hond → ___ hondje",
+    "o": [
+     "het",
+     "de"
+    ],
+    "a": 0,
+    "e": "Diminutives are always <b>het</b>.",
+    "g": {
+     "het": "the article of all diminutives",
+     "de": "no: a diminutive is always het"
+    },
+    "tt": "the dog → the little dog"
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "het boek → het ___",
+    "o": [
+     "boekje",
+     "boektje",
+     "boekpje",
+     "boekjen"
+    ],
+    "a": 0,
+    "e": "After k: <b>-je</b>.",
+    "g": {
+     "boekje": "the booklet",
+     "boektje": "doesn't exist: after k, -je is enough",
+     "boekpje": "doesn't exist",
+     "boekjen": "doesn't exist"
+    },
+    "tt": "the book → the booklet"
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "de stoel → het ___",
+    "o": [
+     "stoeltje",
+     "stoelje",
+     "stoelletje",
+     "stoelpje"
+    ],
+    "a": 0,
+    "e": "Long vowel (oe) + l: <b>-tje</b>.",
+    "g": {
+     "stoeltje": "the little chair",
+     "stoelje": "doesn't exist: after a long vowel + l you need -tje",
+     "stoelletje": "doesn't exist: -etje only after a short vowel",
+     "stoelpje": "doesn't exist"
+    },
+    "tt": "the chair → the little chair"
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "de boom → het ___",
+    "o": [
+     "boompje",
+     "boomje",
+     "boomtje",
+     "boometje"
+    ],
+    "a": 0,
+    "e": "Long vowel + m: <b>-pje</b>.",
+    "g": {
+     "boompje": "the little tree",
+     "boomje": "doesn't exist",
+     "boomtje": "doesn't exist: after m you need -pje",
+     "boometje": "doesn't exist: the vowel is long"
+    },
+    "tt": "the tree → the little tree"
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "de bal → het ___",
+    "o": [
+     "balletje",
+     "baltje",
+     "balje",
+     "balpje"
+    ],
+    "a": 0,
+    "e": "Short vowel + l: the l doubles and you add <b>-etje</b>.",
+    "g": {
+     "balletje": "the little ball",
+     "baltje": "doesn't exist: the a is short",
+     "balje": "doesn't exist",
+     "balpje": "doesn't exist"
+    },
+    "tt": "the ball → the little ball"
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "de auto → het ___",
+    "o": [
+     "autootje",
+     "autotje",
+     "autoje",
+     "auto'tje"
+    ],
+    "a": 0,
+    "e": "After -o the vowel doubles: <b>autootje</b>.",
+    "g": {
+     "autootje": "the little car, the toy car",
+     "autotje": "wrong spelling: the o must be doubled",
+     "autoje": "doesn't exist: after a vowel you need -tje",
+     "auto'tje": "doesn't exist: no apostrophe"
+    },
+    "tt": "the car → the little car"
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "de koning → het ___",
+    "o": [
+     "koninkje",
+     "koningje",
+     "koningetje",
+     "koningtje"
+    ],
+    "a": 0,
+    "e": "Unstressed -ing: ng → nk + <b>-je</b>.",
+    "g": {
+     "koninkje": "the little king",
+     "koningje": "doesn't exist: ng becomes nk",
+     "koningetje": "doesn't exist: -ing is unstressed",
+     "koningtje": "doesn't exist"
+    },
+    "tt": "the king → the little king"
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "de tafel → het ___",
+    "o": [
+     "tafeltje",
+     "tafelje",
+     "tafelletje",
+     "tafelpje"
+    ],
+    "a": 0,
+    "e": "After final -el: <b>-tje</b>.",
+    "g": {
+     "tafeltje": "the small table",
+     "tafelje": "doesn't exist: after -el you need -tje",
+     "tafelletje": "doesn't exist: -el is unstressed",
+     "tafelpje": "doesn't exist"
+    },
+    "tt": "the table → the small table"
+   },
+   {
+    "t": "fill",
+    "q": "één huisje → twee ___",
+    "a": [
+     "huisjes"
+    ],
+    "e": "Plural of diminutives: always <b>-s</b>.",
+    "tt": "one little house → two little houses"
+   },
+   {
+    "t": "fill",
+    "q": "de kat → het ___",
+    "h": "diminutive",
+    "a": [
+     "katje"
+    ],
+    "e": "After t: <b>-je</b>, katje.",
+    "tt": "the cat → the kitten"
+   }
+  ],
+  "gloss": {
+   "0": {
+    "t": "A cheese sandwich, please."
+   },
+   "1": {
+    "t": "a cookie"
+   },
+   "2": {
+    "g": {
+     "het": "the article of all diminutives",
+     "de": "no: a diminutive is always het"
+    },
+    "t": "The girl is sitting in the garden with the kitten."
+   },
+   "3": {
+    "t": "We have two little dogs."
+   },
+   "5": {
+    "t": "A beer, please."
+   },
+   "6": {
+    "g": {
+     "deurtje": "the little door",
+     "deurje": "doesn't exist: after a long vowel + r you need -tje",
+     "deurretje": "doesn't exist: eu is long",
+     "deurpje": "doesn't exist"
+    },
+    "t": "the door → the little door"
+   },
+   "7": {
+    "g": {
+     "filmpje": "the video clip, the short film",
+     "filmje": "doesn't exist",
+     "filmetje": "doesn't exist",
+     "filmtje": "doesn't exist: after -lm you need -pje"
+    },
+    "t": "the movie → the video clip"
+   },
+   "8": {
+    "t": "My sister lives in a little house."
+   },
+   "9": {
+    "t": "The children are eating an ice cream."
+   },
+   "10": {
+    "g": {
+     "beetje": "a bit",
+     "beet": "bite: a different word",
+     "bietje": "doesn't exist",
+     "beetjes": "plural: not used here"
+    },
+    "t": "Do you speak Dutch? — Yes, a little."
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "de ring → twee ___",
+    "o": [
+     "ringetjes",
+     "ringjes",
+     "ringtjes",
+     "ringetjen"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<i>ring</i> has a short stressed vowel + ng: <b>-etje</b> (ringetje). Then every diminutive takes <b>-s</b> in the plural: <b>ringetjes</b>.",
+    "g": {
+     "ringetjes": "little rings (correct)",
+     "ringjes": "doesn't exist: after a short vowel + ng you need -etje",
+     "ringtjes": "doesn't exist",
+     "ringetjen": "doesn't exist: diminutives always take -s in the plural"
+    },
+    "tt": "the ring → two little rings"
+   },
+   {
+    "t": "mc",
+    "q": "In de tuin van mijn oma speelt een ___ hondje met een balletje.",
+    "o": [
+     "klein",
+     "kleine",
+     "kleintje",
+     "kleiner"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Double trap: <i>de hond</i> is a de-word, but <b>het hondje</b> is a het-word. With <b>een</b> + a het-word the adjective takes no -e (unit 14): <i>een <b>klein</b> hondje</i>.",
+    "g": {
+     "klein": "small (correct: een + het-word, no -e)",
+     "kleine": "with -e: fine with het hondje, not with een",
+     "kleintje": "little one: it's a noun, not an adjective",
+     "kleiner": "smaller (comparative)"
+    },
+    "tt": "In my grandma's garden a little dog is playing with a little ball."
+   },
+   {
+    "t": "fill",
+    "q": "Gisteren hebben de kinderen in het park drie ___ gegeten.",
+    "h": "het ijs, diminutive plural",
+    "a": [
+     "ijsjes"
+    ],
+    "e": "ijs → <b>ijsje</b> (an ice cream, one serving) → plural <b>ijsjes</b>, always with -s.",
+    "tt": "Yesterday the children ate three ice creams in the park."
+   },
+   {
+    "t": "fill",
+    "q": "In het centrum van Brussel staat een beroemd ___: Manneken Pis.",
+    "h": "de man, diminutive",
+    "a": [
+     "mannetje",
+     "manneke"
+    ],
+    "e": "man: short vowel + n → the n doubles + <b>-etje</b>: <b>mannetje</b>. In Flemish it's <i>manneke</i>, hence the statue's name. Note <i>een beroemd</i> with no -e: the diminutive is a het-word.",
+    "tt": "In the center of Brussels there's a famous little man: Manneken Pis."
+   },
+   {
+    "t": "tr",
+    "q": "I'd like a ham sandwich and a cup of coffee.",
+    "a": [
+     "Ik wil graag een broodje ham en een kopje koffie",
+     "Ik wil graag een broodje ham en een tas koffie",
+     "Ik wil graag een broodje ham en een tasje koffie",
+     "Ik wil graag een broodje met ham en een kopje koffie",
+     "Ik wil graag een broodje met ham en een tas koffie",
+     "Ik wil graag een broodje met ham en een tasje koffie",
+     "Ik wil een broodje ham en een kopje koffie",
+     "Ik wil een broodje ham en een tas koffie",
+     "Ik wil een broodje ham en een tasje koffie",
+     "Ik wil een broodje met ham en een kopje koffie",
+     "Ik wil een broodje met ham en een tas koffie",
+     "Ik wil een broodje met ham en een tasje koffie",
+     "Graag een broodje ham en een kopje koffie",
+     "Graag een broodje ham en een tas koffie",
+     "Graag een broodje ham en een tasje koffie",
+     "Graag een broodje met ham en een kopje koffie",
+     "Graag een broodje met ham en een tas koffie",
+     "Graag een broodje met ham en een tasje koffie",
+     "Ik zou graag een broodje ham en een kopje koffie willen",
+     "Ik zou graag een broodje ham en een tas koffie willen",
+     "Ik zou graag een broodje ham en een tasje koffie willen",
+     "Ik zou graag een broodje met ham en een kopje koffie willen",
+     "Ik zou graag een broodje met ham en een tas koffie willen",
+     "Ik zou graag een broodje met ham en een tasje koffie willen",
+     "Mag ik een broodje ham en een kopje koffie",
+     "Mag ik een broodje ham en een tas koffie",
+     "Mag ik een broodje ham en een tasje koffie",
+     "Mag ik een broodje met ham en een kopje koffie",
+     "Mag ik een broodje met ham en een tas koffie",
+     "Mag ik een broodje met ham en een tasje koffie"
+    ],
+    "e": "A sandwich (a roll) is <b>een broodje</b>, a cup of coffee <b>een kopje</b> koffie; in Belgium also <i>een tas koffie</i>. Note: no word for \"of\": <i>een kopje koffie</i>, <i>een broodje ham</i>."
+   },
+   {
+    "t": "tr",
+    "q": "The girls played with the little balls.",
+    "a": [
+     "De meisjes hebben met de balletjes gespeeld",
+     "De meisjes hebben gespeeld met de balletjes",
+     "De meisjes speelden met de balletjes"
+    ],
+    "e": "Two diminutives in the plural: <i>meisje → <b>meisjes</b></i>, <i>bal → balletje → <b>balletjes</b></i>; in the plural the article is <b>de</b>. Spelen takes <b>hebben</b>."
+   },
+   {
+    "t": "order",
+    "q": "My grandma gave every child a cookie.",
+    "a": "Mijn oma heeft elk kind een koekje gegeven",
+    "x": [
+     "koektje",
+     "gegeeft"
+    ],
+    "e": "As in English, the person comes before the thing: <i>elk kind een koekje</i>. <b>koekje</b> (cookie) is a diminutive with its own meaning; <i>geven</i> → <b>gegeven</b>, at the end.",
+    "tt": "My grandma gave every child a cookie."
+   },
+   {
+    "t": "order",
+    "q": "In Lotte's room there are two little chairs and a small table.",
+    "a": "In de kamer van Lotte staan twee stoeltjes en een tafeltje",
+    "alt": [
+     "Twee stoeltjes en een tafeltje staan in de kamer van Lotte"
+    ],
+    "x": [
+     "stoelletjes",
+     "tafelje"
+    ],
+    "e": "stoel → <b>stoeltje</b> (long vowel + l), tafel → <b>tafeltje</b> (final -el): both <b>-tje</b>. With inversion the verb stays in second place: <i>In de kamer van Lotte <b>staan</b>…</i>",
+    "tt": "In Lotte's room there are two little chairs and a small table."
+   }
+  ]
+ }
+}

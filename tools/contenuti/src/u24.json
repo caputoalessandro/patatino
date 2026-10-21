@@ -1,0 +1,473 @@
+{
+ "id": "u24",
+ "n": 24,
+ "module": 5,
+ "nl": "Voorzetsels",
+ "it": "Le preposizioni",
+ "note": "\n<h3>L'idea</h3>\n<p>Le preposizioni quasi mai si traducono parola per parola. In italiano \"a\" e \"da\" fanno mille lavori diversi; in olandese ognuno di questi lavori ha una preposizione propria. Per scegliere quella giusta chiediti sempre: <b>stato o moto?</b> <b>Dentro, sopra o attaccato?</b> <b>Una persona o un luogo?</b></p>\n<h3>Dove si trova qualcosa</h3>\n<table><tr><th>olandese</th><th>significato</th><th>esempio</th></tr>\n<tr><td>in</td><td>dentro</td><td>in de kast (nell'armadio)</td></tr>\n<tr><td>op</td><td>sopra, a contatto</td><td>op de tafel (sul tavolo)</td></tr>\n<tr><td>boven</td><td>sopra, senza contatto</td><td>boven de tafel (sopra il tavolo, appeso)</td></tr>\n<tr><td>onder</td><td>sotto</td><td>onder het bed</td></tr>\n<tr><td>voor</td><td>davanti a</td><td>voor het huis</td></tr>\n<tr><td>achter</td><td>dietro</td><td>achter het huis</td></tr>\n<tr><td>naast</td><td>accanto a</td><td>naast de deur</td></tr>\n<tr><td>tussen</td><td>tra</td><td>tussen de stoel en de tafel</td></tr>\n<tr><td>aan</td><td>attaccato a, sul bordo di</td><td>aan de muur, aan zee</td></tr>\n<tr><td>bij</td><td>presso, da (una persona)</td><td>bij de bakker (dal panettiere)</td></tr></table>\n<h3>Moto e provenienza</h3>\n<ul>\n<li><b>naar</b>: verso, a (con movimento). <i>Ik ga naar Gent, naar de bakker.</i></li>\n<li><b>van</b>: da (punto di partenza), di (appartenenza). <i>van Gent naar Brugge</i>, <i>het boek van Tom</i>.</li>\n<li><b>uit</b>: fuori da, provenienza. <i>Ik kom uit Italië</i>, <i>Ik kijk uit het raam</i>.</li>\n<li><b>over</b>: sopra, attraverso, e \"di\" (argomento). <i>over de straat</i>, <i>praten over muziek</i>.</li>\n<li><b>met</b>: con, anche per i mezzi di trasporto. <i>met de trein</i> (in treno).</li>\n</ul>\n<h3>\"A\" e \"da\" in olandese</h3>\n<table><tr><th>italiano</th><th>olandese</th></tr>\n<tr><td>sono a Gand / vado a Gand</td><td>in Gent / naar Gent</td></tr>\n<tr><td>sono dal medico / vado dal medico</td><td>bij de dokter / naar de dokter</td></tr>\n<tr><td>vengo dall'Italia</td><td>uit Italië</td></tr>\n<tr><td>sono al lavoro</td><td>op het werk</td></tr>\n<tr><td>siamo al mare / andiamo al mare</td><td>aan zee / naar zee</td></tr>\n<tr><td>vado in treno</td><td>met de trein</td></tr></table>\n<h3>Verbi con preposizione fissa</h3>\n<p>Molti verbi vogliono sempre la stessa preposizione, spesso diversa dall'italiano (o assente in italiano). Imparali come un blocco unico: <b>wachten op</b> (aspettare), <b>kijken naar</b> (guardare), <b>luisteren naar</b> (ascoltare), <b>denken aan</b> (pensare a), <b>houden van</b> (amare), <b>praten over</b> (parlare di), <b>bang zijn voor</b> (aver paura di).</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Usare in con il movimento: <s>Ik ga in Gent</s> → <b>Ik ga naar Gent</b>.</li>\n<li>Dimenticare la preposizione: <s>Ik wacht de trein</s> → <b>Ik wacht op de trein</b>; <s>Ik luister muziek</s> → <b>Ik luister naar muziek</b>.</li>\n<li>Usare van per il paese d'origine: <s>Ik kom van Italië</s> → <b>Ik kom uit Italië</b>.</li>\n<li>Tradurre \"in treno\" alla lettera: <s>in de trein</s> → <b>met de trein</b> (in de trein = dentro il treno).</li>\n<li>Usare op per qualcosa che non tocca: la lampada appesa è <b>boven</b> de tafel.</li>\n</ul>",
+ "vlaams": "In Belgio senti spesso \"<b>bang zijn van</b>\" accanto a bang zijn voor: entrambe sono accettate. Nel parlato fiammingo \"<b>Ik ben van Gent</b>\" significa \"sono di Gand\", cioè ci sei nato o cresciuto.",
+ "vocab": [
+  [
+   "de muur",
+   "il muro"
+  ],
+  [
+   "de bakker",
+   "il panettiere"
+  ],
+  [
+   "de kast",
+   "l'armadio"
+  ],
+  [
+   "het bed",
+   "il letto"
+  ],
+  [
+   "de lamp",
+   "la lampada"
+  ],
+  [
+   "de zee",
+   "il mare"
+  ],
+  [
+   "het raam",
+   "la finestra"
+  ],
+  [
+   "de straat",
+   "la strada"
+  ],
+  [
+   "het werk",
+   "il lavoro"
+  ],
+  [
+   "de muziek",
+   "la musica"
+  ],
+  [
+   "de kat",
+   "il gatto"
+  ],
+  [
+   "kijken naar",
+   "guardare"
+  ],
+  [
+   "luisteren naar",
+   "ascoltare"
+  ],
+  [
+   "bang zijn voor",
+   "aver paura di"
+  ],
+  [
+   "liggen",
+   "stare disteso, trovarsi (in orizzontale)"
+  ],
+  [
+   "hangen",
+   "essere appeso"
+  ]
+ ],
+ "core": [
+  [
+   "in",
+   "in, dentro"
+  ],
+  [
+   "op",
+   "su (a contatto)"
+  ],
+  [
+   "aan",
+   "a, attaccato a"
+  ],
+  [
+   "bij",
+   "presso, da (stato)"
+  ],
+  [
+   "naar",
+   "a, verso (moto)"
+  ],
+  [
+   "van / uit",
+   "da, di / fuori da (origine)"
+  ],
+  [
+   "voor / achter / naast / tussen",
+   "davanti / dietro / accanto / tra"
+  ],
+  [
+   "onder / boven / over",
+   "sotto / sopra / sopra, di (argomento)"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "Il libro è sul tavolo. → Het boek ligt ___ de tafel.",
+   "o": [
+    "op",
+    "in",
+    "aan",
+    "boven"
+   ],
+   "a": 0,
+   "e": "Sopra e a contatto: <b>op</b>.",
+   "g": {
+    "op": "su (a contatto)",
+    "in": "dentro",
+    "aan": "attaccato a, al bordo di",
+    "boven": "sopra ma senza contatto"
+   },
+   "tt": "Il libro è sul tavolo."
+  },
+  {
+   "t": "mc",
+   "q": "Vado a Bruxelles. → Ik ga ___ Brussel.",
+   "o": [
+    "naar",
+    "in",
+    "op",
+    "bij"
+   ],
+   "a": 0,
+   "e": "Movimento verso un luogo: <b>naar</b>.",
+   "g": {
+    "naar": "a, verso (moto)",
+    "in": "in (stato): non per il movimento",
+    "op": "su",
+    "bij": "presso (stato)"
+   },
+   "tt": "Vado a Bruxelles."
+  },
+  {
+   "t": "mc",
+   "q": "Abito a Bruxelles. → Ik woon ___ Brussel.",
+   "o": [
+    "in",
+    "naar",
+    "op",
+    "aan"
+   ],
+   "a": 0,
+   "e": "Stato in una città: <b>in</b>.",
+   "g": {
+    "in": "in, a (stato in luogo)",
+    "naar": "verso (moto)",
+    "op": "su",
+    "aan": "attaccato a, al bordo di"
+   },
+   "tt": "Abito a Bruxelles."
+  },
+  {
+   "t": "mc",
+   "q": "Vengo dall'Italia. → Ik kom ___ Italië.",
+   "o": [
+    "uit",
+    "naar",
+    "bij",
+    "op"
+   ],
+   "a": 0,
+   "e": "Paese d'origine: <b>uit</b>.",
+   "g": {
+    "uit": "da (origine)",
+    "naar": "verso (moto)",
+    "bij": "presso",
+    "op": "su"
+   },
+   "tt": "Vengo dall'Italia."
+  },
+  {
+   "t": "mc",
+   "q": "Sono dal medico. → Ik ben ___ de dokter.",
+   "o": [
+    "bij",
+    "naar",
+    "van",
+    "op"
+   ],
+   "a": 0,
+   "e": "Stato presso una persona: <b>bij</b>.",
+   "g": {
+    "bij": "da, presso (stato)",
+    "naar": "da, verso (moto): qui non c'è movimento",
+    "van": "da (provenienza), di",
+    "op": "su"
+   },
+   "tt": "Sono dal medico."
+  },
+  {
+   "t": "mc",
+   "q": "La lampada è appesa sopra il tavolo. → De lamp hangt ___ de tafel.",
+   "o": [
+    "boven",
+    "op",
+    "onder",
+    "naast"
+   ],
+   "a": 0,
+   "e": "Sopra senza contatto: <b>boven</b>.",
+   "g": {
+    "boven": "sopra (senza contatto)",
+    "op": "su, a contatto: non è appesa",
+    "onder": "sotto",
+    "naast": "accanto a"
+   },
+   "tt": "La lampada è appesa sopra il tavolo."
+  },
+  {
+   "t": "mc",
+   "q": "Aspetto il treno. → Ik wacht ___ de trein.",
+   "o": [
+    "op",
+    "naar",
+    "aan",
+    "van"
+   ],
+   "a": 0,
+   "e": "Combinazione fissa: <b>wachten op</b>.",
+   "g": {
+    "op": "wachten op = aspettare",
+    "naar": "wachten naar non esiste",
+    "aan": "wachten aan non esiste",
+    "van": "wachten van non esiste"
+   },
+   "tt": "Aspetto il treno."
+  },
+  {
+   "t": "fill",
+   "q": "Ik luister ___ muziek.",
+   "h": "ascoltare: luisteren + ?",
+   "a": [
+    "naar"
+   ],
+   "e": "Combinazione fissa: <b>luisteren naar</b>.",
+   "tt": "Ascolto musica."
+  },
+  {
+   "t": "fill",
+   "q": "De kat zit ___ de stoel en de tafel.",
+   "h": "tra",
+   "a": [
+    "tussen"
+   ],
+   "e": "tra = <b>tussen</b>.",
+   "tt": "Il gatto è tra la sedia e il tavolo."
+  },
+  {
+   "t": "order",
+   "q": "La bici è dietro la casa.",
+   "a": "De fiets is achter het huis",
+   "x": [
+    "naar",
+    "hem"
+   ],
+   "e": "dietro = <b>achter</b>."
+  }
+ ],
+ "items": [
+  {
+   "t": "mc",
+   "q": "Il gatto dorme sotto il letto. → De kat ligt ___ het bed.",
+   "o": [
+    "onder",
+    "op",
+    "in",
+    "naast"
+   ],
+   "a": 0,
+   "e": "sotto = <b>onder</b>."
+  },
+  {
+   "t": "fill",
+   "q": "De lamp hangt ___ de muur.",
+   "h": "attaccata a",
+   "a": [
+    "aan"
+   ],
+   "e": "Attaccato a una parete: <b>aan</b> de muur."
+  },
+  {
+   "t": "mc",
+   "q": "Domani vado dal panettiere. → Morgen ga ik ___ de bakker.",
+   "o": [
+    "naar",
+    "bij",
+    "van",
+    "uit"
+   ],
+   "a": 0,
+   "e": "Movimento verso una persona o un negozio: <b>naar</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Sono al lavoro.",
+   "a": [
+    "Ik ben op het werk",
+    "Ik ben op mijn werk"
+   ],
+   "e": "al lavoro = <b>op het werk</b>."
+  },
+  {
+   "t": "order",
+   "q": "Domani andiamo al mare.",
+   "a": "Morgen gaan we naar zee",
+   "alt": [
+    "We gaan morgen naar zee"
+   ],
+   "x": [
+    "bij",
+    "gaat"
+   ],
+   "e": "Moto: <b>naar zee</b> (stato: aan zee)."
+  },
+  {
+   "t": "mc",
+   "q": "Siamo al mare. → We zijn ___ zee.",
+   "o": [
+    "aan",
+    "naar",
+    "uit",
+    "bij"
+   ],
+   "a": 0,
+   "e": "Stato al mare: <b>aan zee</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Ik kijk graag ___ films.",
+   "h": "guardare: kijken + ?",
+   "a": [
+    "naar"
+   ],
+   "e": "Combinazione fissa: <b>kijken naar</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Ho paura dei cani. → Ik ben bang ___ honden.",
+   "o": [
+    "voor",
+    "op",
+    "aan",
+    "naar"
+   ],
+   "a": 0,
+   "e": "<b>bang zijn voor</b> = aver paura di."
+  },
+  {
+   "t": "tr",
+   "q": "Il libro è accanto alla lampada.",
+   "a": [
+    "Het boek ligt naast de lamp",
+    "Het boek is naast de lamp",
+    "Het boek staat naast de lamp"
+   ],
+   "e": "accanto a = <b>naast</b>."
+  },
+  {
+   "t": "order",
+   "q": "Guardo fuori dalla finestra.",
+   "a": "Ik kijk uit het raam",
+   "x": [
+    "van",
+    "op"
+   ],
+   "e": "fuori da = <b>uit</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Het raam is ___ de deur.",
+   "h": "sopra",
+   "a": [
+    "boven"
+   ],
+   "e": "Sopra senza contatto: <b>boven</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Il treno va da Gand a Bruges. → De trein gaat ___ Gent naar Brugge.",
+   "o": [
+    "van",
+    "op",
+    "bij",
+    "aan"
+   ],
+   "a": 0,
+   "e": "Punto di partenza: <b>van</b> ... naar."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "g": {
+    "onder": "sotto",
+    "op": "su",
+    "in": "dentro",
+    "naast": "accanto a"
+   },
+   "t": "Il gatto dorme sotto il letto."
+  },
+  "1": {
+   "t": "La lampada è appesa al muro."
+  },
+  "2": {
+   "g": {
+    "naar": "da, verso (moto)",
+    "bij": "da, presso (stato): qui c'è movimento",
+    "van": "da (provenienza)",
+    "uit": "fuori da"
+   },
+   "t": "Domani vado dal panettiere."
+  },
+  "3": {
+   "t": "Sono al lavoro."
+  },
+  "4": {
+   "t": "Domani andiamo al mare."
+  },
+  "5": {
+   "g": {
+    "aan": "al (mare), sul bordo di",
+    "naar": "verso (moto): qui non c'è movimento",
+    "uit": "fuori da",
+    "bij": "presso: per il mare si dice aan zee"
+   },
+   "t": "Siamo al mare."
+  },
+  "6": {
+   "t": "Mi piace guardare i film."
+  },
+  "7": {
+   "g": {
+    "voor": "bang zijn voor = aver paura di",
+    "op": "bang op non esiste",
+    "aan": "bang aan non esiste",
+    "naar": "bang naar non esiste"
+   },
+   "t": "Ho paura dei cani."
+  },
+  "8": {
+   "t": "Il libro è accanto alla lampada."
+  },
+  "9": {
+   "t": "Guardo fuori dalla finestra."
+  },
+  "10": {
+   "t": "La finestra è sopra la porta."
+  },
+  "11": {
+   "g": {
+    "van": "da (punto di partenza)",
+    "op": "su",
+    "bij": "presso",
+    "aan": "attaccato a"
+   },
+   "t": "Il treno va da Gand a Bruges."
+  }
+ }
+}

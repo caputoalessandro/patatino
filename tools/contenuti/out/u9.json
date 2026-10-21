@@ -1,0 +1,626 @@
+{
+ "id": "u9",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "Jullie ___ hier niet roken: het is verboden.",
+   "o": [
+    "mogen",
+    "mag",
+    "mogt",
+    "willen"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Divieto = <b>niet mogen</b>. Con <i>jullie</i> serve il plurale: <b>mogen</b> (non <i>mag</i>).",
+   "g": {
+    "mogen": "potete (avete il permesso)",
+    "mag": "può / posso: forma singolare",
+    "mogt": "forma che non esiste",
+    "willen": "volete: il senso è sbagliato"
+   },
+   "tt": "Qui non potete fumare: è vietato."
+  },
+  {
+   "t": "mc",
+   "q": "Scegli la frase corretta:",
+   "o": [
+    "Ik wil vanavond met mijn broer naar het station gaan.",
+    "Ik wil gaan vanavond met mijn broer naar het station.",
+    "Ik wilt vanavond met mijn broer naar het station gaan.",
+    "Ik wil vanavond met mijn broer naar het station gaat."
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Modale al secondo posto, <b>infinito alla fine</b>; con <i>ik</i> si dice <b>wil</b>, senza -t.",
+   "g": {
+    "Ik wil vanavond met mijn broer naar het station gaan.": "Stasera voglio andare alla stazione con mio fratello. (corretta)",
+    "Ik wil gaan vanavond met mijn broer naar het station.": "l'infinito deve andare alla fine",
+    "Ik wilt vanavond met mijn broer naar het station gaan.": "con ik: wil, senza -t",
+    "Ik wil vanavond met mijn broer naar het station gaat.": "alla fine serve l'infinito gaan"
+   },
+   "tt": "Stasera voglio andare alla stazione con mio fratello."
+  },
+  {
+   "t": "fill",
+   "q": "___ ik u helpen, meneer? — Ja, graag! Waar is het station?",
+   "h": "zullen (proposta)",
+   "a": [
+    "zal"
+   ],
+   "e": "Per offrire aiuto: <b>Zal ik</b> u helpen? (vuole che La aiuti?). Il verbo va all'inizio perché è una domanda.",
+   "tt": "Vuole che La aiuti, signore? — Sì, volentieri! Dov'è la stazione?"
+  },
+  {
+   "t": "fill",
+   "q": "Onze kinderen ___ nog niet zwemmen.",
+   "h": "kunnen",
+   "a": [
+    "kunnen"
+   ],
+   "e": "Soggetto plurale (<i>onze kinderen</i>): <b>kunnen</b>. <i>kunnen</i> = saper fare.",
+   "tt": "I nostri figli non sanno ancora nuotare."
+  },
+  {
+   "t": "tr",
+   "q": "Possiamo parcheggiare la nostra macchina qui?",
+   "a": [
+    "Mogen we onze auto hier parkeren",
+    "Mogen wij onze auto hier parkeren",
+    "Mogen we hier onze auto parkeren",
+    "Mogen wij hier onze auto parkeren",
+    "Kunnen we onze auto hier parkeren",
+    "Kunnen wij onze auto hier parkeren",
+    "Kunnen we hier onze auto parkeren",
+    "Kunnen wij hier onze auto parkeren"
+   ],
+   "e": "Permesso → <b>mogen</b> (anche <i>kunnen</i>); <b>onze</b> auto (de-parola); <b>parkeren</b> alla fine."
+  },
+  {
+   "t": "tr",
+   "q": "Mia madre vuole cucinare per i bambini stasera.",
+   "a": [
+    "Mijn moeder wil vanavond voor de kinderen koken",
+    "Mijn moeder wil vanavond koken voor de kinderen",
+    "Mijn moeder wil voor de kinderen vanavond koken",
+    "Mijn moeder wil voor de kinderen koken vanavond",
+    "Vanavond wil mijn moeder voor de kinderen koken",
+    "Vanavond wil mijn moeder koken voor de kinderen"
+   ],
+   "e": "<b>wil</b> al secondo posto, <b>koken</b> verso la fine: <i>Mijn moeder wil vanavond voor de kinderen koken</i>."
+  },
+  {
+   "t": "order",
+   "q": "Stasera devi chiamare tuo padre.",
+   "a": "Je moet vanavond je vader bellen",
+   "alt": [
+    "Je moet je vader vanavond bellen",
+    "Vanavond moet je je vader bellen"
+   ],
+   "x": [
+    "belt",
+    "moeten"
+   ],
+   "e": "<b>moet</b> al secondo posto, <b>bellen</b> alla fine; in mezzo il tempo e l'oggetto <i>je vader</i>.",
+   "tt": "Stasera devi chiamare tuo padre."
+  },
+  {
+   "t": "order",
+   "q": "Quando vuoi partire per Bruges?",
+   "a": "Wanneer wil je naar Brugge vertrekken",
+   "alt": [
+    "Wanneer wil je vertrekken naar Brugge"
+   ],
+   "x": [
+    "wilt",
+    "vertrek"
+   ],
+   "e": "Domanda: <b>Wanneer wil je</b> (davanti a je: <i>wil</i>, senza -t), infinito <b>vertrekken</b> alla fine.",
+   "tt": "Quando vuoi partire per Bruges?"
+  }
+ ],
+ "en": {
+  "it": "Modal verbs",
+  "note": "\n<h3>The idea</h3>\n<p>Modal verbs are the Dutch equivalents of can, may, must, want to and shall/will: they're used together with another verb in the infinitive. The key rule is about <b>position</b>, and it's where Dutch is very different from English: the conjugated modal is in second place, and the <b>infinitive goes to the end of the sentence</b>. The two parts form a kind of \"frame\" around everything else.</p>\n<p><i>Ik <b>wil</b> morgen met de trein naar Gent <b>gaan</b>.</i> (I want to go to Ghent by train tomorrow.)</p>\n<h3>What each one means</h3>\n<ul>\n<li><b>kunnen</b>: can, to be able to, to be possible. <i>Ik kan zwemmen</i> (I can swim). <i>Kun je morgen komen?</i> (Can you come tomorrow?)</li>\n<li><b>mogen</b>: may, to be allowed to. <i>Mag ik hier parkeren?</i> (May I park here?). <b>niet mogen</b> = not allowed: <i>Je mag hier niet roken</i> (you can't smoke here).</li>\n<li><b>moeten</b>: must, to have to. <i>Ik moet werken</i>. Careful: \"I don't have to\" is a different verb, <i>hoeven</i>, which you'll see later.</li>\n<li><b>willen</b>: to want. <i>Ik wil koffie</i>. To ask politely, add <i>graag</i>: <i>Ik wil graag koffie</i> (I'd like a coffee).</li>\n<li><b>zullen</b>: future, a promise or an offer. <i>Ik zal je helpen</i> (I'll help you). <i>Zal ik je helpen?</i> (Shall I help you?)</li>\n</ul>\n<h3>Conjugation</h3>\n<p>Modals are irregular in the singular: with ik, hij and zij they have no -t.</p>\n<table><tr><th></th><th>kunnen</th><th>moeten</th><th>willen</th><th>mogen</th><th>zullen</th></tr>\n<tr><td>ik</td><td>kan</td><td>moet</td><td>wil</td><td>mag</td><td>zal</td></tr>\n<tr><td>jij / u</td><td>kunt / kan</td><td>moet</td><td>wilt / wil</td><td>mag</td><td>zult / zal</td></tr>\n<tr><td>hij / zij</td><td>kan</td><td>moet</td><td>wil</td><td>mag</td><td>zal</td></tr>\n<tr><td>wij / jullie / zij</td><td>kunnen</td><td>moeten</td><td>willen</td><td>mogen</td><td>zullen</td></tr></table>\n<h3>Without the infinitive</h3>\n<p>With movement the infinitive is often left out, because it's obvious: <i>Ik moet naar huis</i> (I have to go home), <i>Ik wil naar Brugge</i> (I want to go to Bruges).</p>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Putting the infinitive right after the modal, as in English: <s>Ik wil gaan morgen naar Gent</s> → <b>Ik wil morgen naar Gent gaan</b>.</li>\n<li>False friend: <b>ik wil</b> means \"I want\", not \"I will\". \"I will\" is <i>ik zal</i>.</li>\n<li>Adding -t with hij: <s>hij kant</s> → <b>hij kan</b>.</li>\n<li>Using \"te\" as in \"to go\": <s>Ik wil te gaan</s> → <b>Ik wil gaan</b>. No te after a modal.</li>\n</ul>",
+  "vlaams": "For the future, spoken Dutch uses <b>gaan</b> + infinitive a lot, just like English \"going to\": \"Ik ga dat morgen doen\" (I'm going to do that tomorrow). \"<b>Ge moogt</b>\" (= je mag, you may) is typically Flemish.",
+  "vocab": [
+   [
+    "zwemmen",
+    "to swim"
+   ],
+   [
+    "koken",
+    "to cook"
+   ],
+   [
+    "parkeren",
+    "to park"
+   ],
+   [
+    "roken",
+    "to smoke"
+   ],
+   [
+    "vertrekken",
+    "to leave, to depart"
+   ],
+   [
+    "hier",
+    "here"
+   ],
+   [
+    "vanavond",
+    "tonight, this evening"
+   ],
+   [
+    "graag",
+    "gladly, with pleasure (I'd like)"
+   ]
+  ],
+  "core": [
+   [
+    "kunnen",
+    "can, to be able to"
+   ],
+   [
+    "moeten",
+    "must, to have to"
+   ],
+   [
+    "willen",
+    "to want"
+   ],
+   [
+    "mogen",
+    "may, to be allowed to"
+   ],
+   [
+    "zullen",
+    "shall / will (future, offer)"
+   ]
+  ],
+  "items": [
+   {
+    "t": "fill",
+    "q": "Ik ___ goed zwemmen.",
+    "h": "kunnen",
+    "a": [
+     "kan"
+    ],
+    "e": "ik <b>kan</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Hij ___ vandaag werken.",
+    "h": "moeten",
+    "a": [
+     "moet"
+    ],
+    "e": "hij <b>moet</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Jij ___ koffie.",
+    "h": "willen",
+    "oit": true,
+    "o": [
+     "wilt",
+     "willen",
+     "wille",
+     "willt"
+    ],
+    "a": 0,
+    "e": "jij <b>wilt</b> (also: wil)."
+   },
+   {
+    "t": "order",
+    "q": "I want to learn Dutch.",
+    "a": "Ik wil Nederlands leren",
+    "x": [
+     "leer",
+     "wilt"
+    ],
+    "e": "Infinitive at the end: ... <b>leren</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Mag ik hier ___?",
+    "o": [
+     "parkeren",
+     "parkeer",
+     "parkeert",
+     "geparkeerd"
+    ],
+    "a": 0,
+    "e": "After a modal: the <b>infinitive</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Wij ___ morgen komen.",
+    "h": "zullen",
+    "a": [
+     "zullen"
+    ],
+    "e": "wij <b>zullen</b>."
+   },
+   {
+    "t": "tr",
+    "q": "Can I help you?",
+    "a": [
+     "Kan ik je helpen",
+     "Kan ik jou helpen",
+     "Mag ik je helpen",
+     "Mag ik jou helpen",
+     "Kan ik u helpen",
+     "Mag ik u helpen"
+    ],
+    "e": "<b>Kan ik je helpen?</b> (<i>Mag ik…</i> also works.)"
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "With a modal verb, the infinitive goes:",
+    "o": [
+     "at the end of the sentence",
+     "right after the modal",
+     "at the beginning",
+     "before the subject"
+    ],
+    "a": 0,
+    "e": "Always <b>at the end</b>, unlike English."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "'mogen' mainly means:",
+    "o": [
+     "to be allowed to",
+     "to have to",
+     "to want",
+     "to know how to"
+    ],
+    "a": 0,
+    "e": "<b>mogen</b> = may, in the sense of permission."
+   },
+   {
+    "t": "fill",
+    "q": "___ je mij helpen?",
+    "h": "kunnen, question",
+    "a": [
+     "kun",
+     "kan"
+    ],
+    "e": "<b>Kun</b> je (or Kan je) mij helpen?"
+   },
+   {
+    "t": "tr",
+    "q": "I have to go.",
+    "a": [
+     "Ik moet gaan",
+     "Ik moet weg",
+     "Ik moet vertrekken"
+    ],
+    "e": "<b>Ik moet gaan</b>; in speech also: ik moet weg."
+   }
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "ik + kunnen",
+    "o": [
+     "kan",
+     "kun",
+     "kunt",
+     "kunnen"
+    ],
+    "a": 0,
+    "e": "ik <b>kan</b>.",
+    "g": {
+     "kan": "(I) can",
+     "kun": "(you) can (only before je)",
+     "kunt": "(you) can (jij, u)",
+     "kunnen": "(we) can / to be able to"
+    },
+    "tt": "I can"
+   },
+   {
+    "t": "mc",
+    "q": "hij + willen",
+    "o": [
+     "wil",
+     "wilt",
+     "willen",
+     "wille"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "With ik and hij there's no -t: hij <b>wil</b> (but jij <b>wilt</b>).",
+    "g": {
+     "wil": "(he) wants",
+     "wilt": "(you) want",
+     "willen": "(we) want / to want",
+     "wille": "not a real form"
+    },
+    "tt": "he wants"
+   },
+   {
+    "t": "mc",
+    "q": "wij + moeten",
+    "o": [
+     "moeten",
+     "moet",
+     "moest",
+     "moetten"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Plural = infinitive: <b>moeten</b>.",
+    "g": {
+     "moeten": "(we) must",
+     "moet": "(I/you/he) must",
+     "moest": "had to (past)",
+     "moetten": "not a real form"
+    },
+    "tt": "we must"
+   },
+   {
+    "t": "mc",
+    "q": "ik + mogen",
+    "o": [
+     "mag",
+     "mogt",
+     "moog",
+     "mogen"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Irregular: ik <b>mag</b>.",
+    "g": {
+     "mag": "(I) may, am allowed to",
+     "mogt": "not a real form",
+     "moog": "not a real form",
+     "mogen": "(we) may / to be allowed to"
+    },
+    "tt": "I may (I'm allowed to)"
+   },
+   {
+    "t": "mc",
+    "q": "Ik wil morgen ___.",
+    "o": [
+     "komen",
+     "kom",
+     "komt",
+     "gekomen"
+    ],
+    "a": 0,
+    "e": "After a modal: infinitive at the end, <b>komen</b>.",
+    "g": {
+     "komen": "to come (infinitive)",
+     "kom": "(I) come",
+     "komt": "(he) comes",
+     "gekomen": "come (past participle)"
+    },
+    "tt": "I want to come tomorrow."
+   },
+   {
+    "t": "mc",
+    "q": "Ask for permission: ___ ik binnenkomen?",
+    "o": [
+     "Mag",
+     "Moet",
+     "Wil",
+     "Zal"
+    ],
+    "a": 0,
+    "e": "Permission → <b>mogen</b>: Mag ik binnenkomen?",
+    "g": {
+     "Mag": "may (permission)",
+     "Moet": "must",
+     "Wil": "want",
+     "Zal": "shall (offer)"
+    },
+    "tt": "May I come in?"
+   },
+   {
+    "t": "mc",
+    "q": "Shall I help you? → ___ ik je helpen?",
+    "o": [
+     "Zal",
+     "Mag",
+     "Moet",
+     "Wil"
+    ],
+    "a": 0,
+    "e": "Offer → <b>zullen</b>: Zal ik je helpen?",
+    "g": {
+     "Zal": "shall (offer)",
+     "Mag": "may (permission)",
+     "Moet": "must",
+     "Wil": "want"
+    },
+    "tt": "Shall I help you?"
+   },
+   {
+    "t": "order",
+    "q": "I have to work.",
+    "a": "Ik moet werken",
+    "x": [
+     "werk",
+     "moeten"
+    ],
+    "e": "Modal in second place, infinitive at the end."
+   },
+   {
+    "t": "order",
+    "q": "I want a coffee.",
+    "a": "Ik wil een koffie",
+    "x": [
+     "wilt",
+     "willen"
+    ],
+    "e": "ik <b>wil</b>, no -t."
+   },
+   {
+    "t": "fill",
+    "q": "Hij ___ goed koken.",
+    "h": "kunnen",
+    "a": [
+     "kan"
+    ],
+    "e": "hij <b>kan</b>.",
+    "tt": "He can cook well."
+   }
+  ],
+  "gloss": {
+   "0": {
+    "t": "I can swim well."
+   },
+   "1": {
+    "t": "He has to work today."
+   },
+   "2": {
+    "g": {
+     "wilt": "(you) want",
+     "willen": "(we/you/they) want",
+     "wille": "not a real form",
+     "willt": "not a real form"
+    },
+    "t": "You want coffee."
+   },
+   "4": {
+    "g": {
+     "parkeren": "to park (infinitive)",
+     "parkeer": "(I) park",
+     "parkeert": "(he) parks",
+     "geparkeerd": "parked (past participle)"
+    },
+    "t": "May I park here?"
+   },
+   "5": {
+    "t": "We will come tomorrow."
+   },
+   "9": {
+    "t": "Can you help me?"
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "Jullie ___ hier niet roken: het is verboden.",
+    "o": [
+     "mogen",
+     "mag",
+     "mogt",
+     "willen"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Not allowed = <b>niet mogen</b>. With <i>jullie</i> you need the plural: <b>mogen</b> (not <i>mag</i>). Careful: English \"you mustn't\" is <i>je mag niet</i>, not <i>je moet niet</i>.",
+    "g": {
+     "mogen": "(you all) may, are allowed to",
+     "mag": "may: singular form",
+     "mogt": "not a real form",
+     "willen": "(you all) want: wrong meaning"
+    },
+    "tt": "You can't smoke here: it's forbidden."
+   },
+   {
+    "t": "mc",
+    "q": "Choose the correct sentence:",
+    "o": [
+     "Ik wil vanavond met mijn broer naar het station gaan.",
+     "Ik wil gaan vanavond met mijn broer naar het station.",
+     "Ik wilt vanavond met mijn broer naar het station gaan.",
+     "Ik wil vanavond met mijn broer naar het station gaat."
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Modal in second place, <b>infinitive at the end</b>; with <i>ik</i> it's <b>wil</b>, no -t.",
+    "g": {
+     "Ik wil vanavond met mijn broer naar het station gaan.": "Tonight I want to go to the station with my brother. (correct)",
+     "Ik wil gaan vanavond met mijn broer naar het station.": "English order: the infinitive must go at the end",
+     "Ik wilt vanavond met mijn broer naar het station gaan.": "with ik: wil, no -t",
+     "Ik wil vanavond met mijn broer naar het station gaat.": "you need the infinitive gaan at the end"
+    },
+    "tt": "Tonight I want to go to the station with my brother."
+   },
+   {
+    "t": "fill",
+    "q": "___ ik u helpen, meneer? — Ja, graag! Waar is het station?",
+    "h": "zullen (offer)",
+    "a": [
+     "zal"
+    ],
+    "e": "To offer help: <b>Zal ik</b> u helpen? (Shall I help you?). The verb comes first because it's a question.",
+    "tt": "Shall I help you, sir? — Yes, please! Where is the station?"
+   },
+   {
+    "t": "fill",
+    "q": "Onze kinderen ___ nog niet zwemmen.",
+    "h": "kunnen",
+    "a": [
+     "kunnen"
+    ],
+    "e": "Plural subject (<i>onze kinderen</i>): <b>kunnen</b>. Here <i>kunnen</i> = to know how to.",
+    "tt": "Our children can't swim yet."
+   },
+   {
+    "t": "tr",
+    "q": "May we park our car here?",
+    "a": [
+     "Mogen we onze auto hier parkeren",
+     "Mogen wij onze auto hier parkeren",
+     "Mogen we hier onze auto parkeren",
+     "Mogen wij hier onze auto parkeren",
+     "Kunnen we onze auto hier parkeren",
+     "Kunnen wij onze auto hier parkeren",
+     "Kunnen we hier onze auto parkeren",
+     "Kunnen wij hier onze auto parkeren"
+    ],
+    "e": "Permission → <b>mogen</b> (<i>kunnen</i> also works); <b>onze</b> auto (de-word); <b>parkeren</b> at the end."
+   },
+   {
+    "t": "tr",
+    "q": "My mother wants to cook for the children tonight.",
+    "a": [
+     "Mijn moeder wil vanavond voor de kinderen koken",
+     "Mijn moeder wil vanavond koken voor de kinderen",
+     "Mijn moeder wil voor de kinderen vanavond koken",
+     "Mijn moeder wil voor de kinderen koken vanavond",
+     "Vanavond wil mijn moeder voor de kinderen koken",
+     "Vanavond wil mijn moeder koken voor de kinderen"
+    ],
+    "e": "<b>wil</b> in second place, <b>koken</b> toward the end: <i>Mijn moeder wil vanavond voor de kinderen koken</i>. Not \"wil te koken\"."
+   },
+   {
+    "t": "order",
+    "q": "Tonight you have to call your father.",
+    "a": "Je moet vanavond je vader bellen",
+    "alt": [
+     "Je moet je vader vanavond bellen",
+     "Vanavond moet je je vader bellen"
+    ],
+    "x": [
+     "belt",
+     "moeten"
+    ],
+    "e": "<b>moet</b> in second place, <b>bellen</b> at the end; time and the object <i>je vader</i> go in between.",
+    "tt": "Tonight you have to call your father."
+   },
+   {
+    "t": "order",
+    "q": "When do you want to leave for Bruges?",
+    "a": "Wanneer wil je naar Brugge vertrekken",
+    "alt": [
+     "Wanneer wil je vertrekken naar Brugge"
+    ],
+    "x": [
+     "wilt",
+     "vertrek"
+    ],
+    "e": "Question: <b>Wanneer wil je</b> (before je: <i>wil</i>, no -t), infinitive <b>vertrekken</b> at the end.",
+    "tt": "When do you want to leave for Bruges?"
+   }
+  ]
+ }
+}

@@ -1,0 +1,718 @@
+{
+ "id": "u17",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "Domani ti chiamo alle nove. Scegli la frase corretta:",
+   "o": [
+    "Morgen bel ik je om negen uur op.",
+    "Morgen ik bel je om negen uur op.",
+    "Morgen bel ik op je om negen uur.",
+    "Morgen opbel ik je om negen uur."
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<i>Morgen</i> al primo posto → inversione <b>bel ik</b>; la particella <b>op</b> va in fondo, dopo tutto il resto.",
+   "g": {
+    "Morgen bel ik je om negen uur op.": "Domani ti chiamo alle nove. (corretta)",
+    "Morgen ik bel je om negen uur op.": "manca l'inversione dopo Morgen",
+    "Morgen bel ik op je om negen uur.": "op va alla fine della frase, non dopo il verbo",
+    "Morgen opbel ik je om negen uur.": "al presente opbellen si separa"
+   },
+   "tt": "Domani ti chiamo alle nove."
+  },
+  {
+   "t": "mc",
+   "q": "Waarom ga je zaterdag niet met ons ___?",
+   "o": [
+    "mee",
+    "met",
+    "samen",
+    "aan"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Trabocchetto: anche se c'è già <i>met ons</i>, il verbo è <b>meegaan</b> e la particella <b>mee</b> va comunque in fondo. <i>Met</i> da solo non può chiudere la frase.",
+   "g": {
+    "mee": "meegaan = venire con (corretta)",
+    "met": "met è una preposizione: in fondo serve la particella mee",
+    "samen": "insieme: qui manca la particella di meegaan",
+    "aan": "aangaan non ha senso qui"
+   },
+   "tt": "Perché sabato non vieni con noi?"
+  },
+  {
+   "t": "fill",
+   "q": "De trein uit Oostende ___ vandaag pas om tien uur in Gent aan.",
+   "h": "aankomen",
+   "a": [
+    "komt"
+   ],
+   "e": "Il soggetto è <i>de trein</i> (lui): <b>komt</b> al secondo posto, <b>aan</b> in fondo, anche dopo un lungo complemento.",
+   "tt": "Il treno da Ostenda oggi arriva a Gand solo alle dieci."
+  },
+  {
+   "t": "fill",
+   "q": "Neem jij morgen de kinderen naar het feest ___?",
+   "h": "meenemen",
+   "a": [
+    "mee"
+   ],
+   "e": "Nella domanda il verbo va al primo posto (<i>Neem jij</i>), ma la particella <b>mee</b> resta in fondo, dopo <i>naar het feest</i>.",
+   "tt": "Domani porti tu i bambini alla festa?"
+  },
+  {
+   "t": "tr",
+   "q": "La chiamo stasera, non lo dimentico.",
+   "a": [
+    "Ik bel haar vanavond op, ik vergeet het niet",
+    "Ik bel haar vanavond op, dat vergeet ik niet",
+    "Vanavond bel ik haar op, ik vergeet het niet",
+    "Vanavond bel ik haar op, dat vergeet ik niet",
+    "Ik bel haar vanavond, ik vergeet het niet",
+    "Ik bel haar vanavond, dat vergeet ik niet",
+    "Vanavond bel ik haar, ik vergeet het niet",
+    "Vanavond bel ik haar, dat vergeet ik niet"
+   ],
+   "e": "<b>opbellen</b> si separa (<i>bel … op</i>), <b>vergeten</b> no (<i>ver-</i> resta attaccato). Il pronome <i>haar</i> viene prima dell'avverbio di tempo."
+  },
+  {
+   "t": "tr",
+   "q": "Stasera non usciamo, domani dobbiamo alzarci presto.",
+   "a": [
+    "Vanavond gaan we niet uit, morgen moeten we vroeg opstaan",
+    "Vanavond gaan we niet uit, we moeten morgen vroeg opstaan",
+    "Vanavond gaan we niet uit, morgen moeten wij vroeg opstaan",
+    "Vanavond gaan we niet uit, wij moeten morgen vroeg opstaan",
+    "We gaan vanavond niet uit, morgen moeten we vroeg opstaan",
+    "We gaan vanavond niet uit, we moeten morgen vroeg opstaan",
+    "We gaan vanavond niet uit, morgen moeten wij vroeg opstaan",
+    "We gaan vanavond niet uit, wij moeten morgen vroeg opstaan",
+    "Vanavond gaan wij niet uit, morgen moeten we vroeg opstaan",
+    "Vanavond gaan wij niet uit, we moeten morgen vroeg opstaan",
+    "Vanavond gaan wij niet uit, morgen moeten wij vroeg opstaan",
+    "Vanavond gaan wij niet uit, wij moeten morgen vroeg opstaan",
+    "Wij gaan vanavond niet uit, morgen moeten we vroeg opstaan",
+    "Wij gaan vanavond niet uit, we moeten morgen vroeg opstaan",
+    "Wij gaan vanavond niet uit, morgen moeten wij vroeg opstaan",
+    "Wij gaan vanavond niet uit, wij moeten morgen vroeg opstaan"
+   ],
+   "e": "Senza modale il verbo si separa: <i>gaan … niet <b>uit</b></i>. Con il modale l'infinito resta intero in fondo: <i>moeten … <b>opstaan</b></i>."
+  },
+  {
+   "t": "order",
+   "q": "Il treno da Bruxelles arriva a Gand alle otto e mezza.",
+   "a": "De trein uit Brussel komt om half negen in Gent aan",
+   "alt": [
+    "Om half negen komt de trein uit Brussel in Gent aan",
+    "In Gent komt de trein uit Brussel om half negen aan"
+   ],
+   "x": [
+    "aankomt",
+    "kom"
+   ],
+   "e": "<b>komt</b> al secondo posto, prima il tempo (<i>om half negen</i>) poi il luogo (<i>in Gent</i>), e <b>aan</b> chiude la frase. Ricorda: <i>half negen</i> = 8:30.",
+   "tt": "Il treno da Bruxelles arriva a Gand alle otto e mezza."
+  },
+  {
+   "t": "order",
+   "q": "Domani devo portare con me l'ombrello.",
+   "a": "Morgen moet ik mijn paraplu meenemen",
+   "alt": [
+    "Ik moet morgen mijn paraplu meenemen"
+   ],
+   "x": [
+    "neem",
+    "mee"
+   ],
+   "e": "Con il modale <b>moet</b> il verbo separabile resta intero all'infinito in fondo: <b>meenemen</b>.",
+   "tt": "Domani devo portare con me l'ombrello."
+  }
+ ],
+ "en": {
+  "it": "Separable verbs",
+  "note": "\n<h3>The idea</h3>\n<p>Many Dutch verbs are made of a <b>particle</b> + a verb: <i>op</i> + <i>staan</i> = <b>opstaan</b> (to get up), <i>mee</i> + <i>gaan</i> = <b>meegaan</b> (to go along, to come along). They are a lot like English phrasal verbs such as \"get up\", \"call up\" or \"come back\", where a little word changes the meaning of the verb. The twist is that in Dutch, in a main clause, these two parts <b>split up</b>, and the particle travels much further than in English.</p>\n<h3>The rule: the particle goes to the end</h3>\n<p>In the present tense the conjugated verb stays in <b>second position</b> as always, while the particle goes to the <b>very end of the sentence</b>. This creates the same \"frame\" you saw with modal verbs.</p>\n<table><tr><th>infinitive</th><th>sentence</th><th>English</th></tr>\n<tr><td>opstaan</td><td>Ik <b>sta</b> om zeven uur <b>op</b>.</td><td>I get up at seven.</td></tr>\n<tr><td>opbellen</td><td>Hij <b>belt</b> zijn moeder <b>op</b>.</td><td>He calls his mother (up).</td></tr>\n<tr><td>aankomen</td><td>De trein <b>komt</b> om tien uur <b>aan</b>.</td><td>The train arrives at ten.</td></tr>\n<tr><td>uitgaan</td><td>We <b>gaan</b> vanavond <b>uit</b>.</td><td>We're going out tonight.</td></tr>\n<tr><td>meegaan</td><td><b>Ga</b> je <b>mee</b>?</td><td>Are you coming (with us)?</td></tr></table>\n<p>With inversion and in questions, too, the particle stays at the end: <i>Morgen <b>kom</b> ik <b>terug</b></i>. <i>Hoe laat <b>kom</b> je <b>aan</b>?</i></p>\n<h3>With a modal: the verb stays in one piece</h3>\n<p>When there is a modal verb (unit 9), the separable verb is an infinitive at the end of the sentence, so it stays <b>together</b>: <i>Ik moet morgen vroeg <b>opstaan</b></i>. <i>Wil je vanavond <b>uitgaan</b>?</i></p>\n<h3>The most common particles</h3>\n<p><b>op</b> (up, on), <b>mee</b> (along, with), <b>aan</b> (on, at), <b>uit</b> (out), <b>terug</b> (back), <b>binnen</b> (in, inside). You can also recognize them by the stress: in separable verbs the stress falls on the particle: <i>ÓPstaan, MÉEgaan, teRUGkomen</i>.</p>\n<h3>Prefixes that never split</h3>\n<p>Verbs starting with <b>be-, ver-, ont-, her-</b> (and also ge-, er-) are <b>inseparable</b>: the prefix always stays attached and the stress falls on the verb, not the prefix, just like English \"beCOME\" or \"forGET\" (Dutch <i>vergeten</i>).</p>\n<table><tr><th>infinitive</th><th>sentence</th></tr>\n<tr><td>betalen (to pay)</td><td>Ik betaal de koffie.</td></tr>\n<tr><td>vertellen (to tell)</td><td>Hij vertelt het aan zijn zus.</td></tr>\n<tr><td>ontmoeten (to meet)</td><td>Ik ontmoet Sofie vanavond.</td></tr>\n<tr><td>herhalen (to repeat)</td><td>Kunt u dat herhalen?</td></tr>\n<tr><td>begrijpen (to understand)</td><td>Ik begrijp het niet.</td></tr></table>\n<p>In unit 19 you'll see that separable verbs also behave in a special way in the past participle.</p>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Keeping the verb together in the present: <s>Ik opsta om zeven uur</s> → <b>Ik sta om zeven uur op</b>.</li>\n<li>Putting the particle right after the verb, as in \"call up your mother\": <s>Hij belt op zijn moeder</s> → <b>Hij belt zijn moeder op</b>.</li>\n<li>Stopping the particle too early in a long sentence: in Dutch it goes after time, place and everything else: <b>Ik sta morgen om zeven uur op</b>.</li>\n<li>Splitting the verb after a modal: <s>Ik moet sta op</s> → <b>Ik moet opstaan</b>.</li>\n<li>Splitting an inseparable verb: <s>Ik taal de koffie be</s> → <b>Ik betaal de koffie</b>.</li>\n</ul>",
+  "vlaams": "In Belgium you often hear <b>buitengaan</b> for \"to go outside\": \"Ik ga buiten\" (I'm going outside). In the Netherlands people tend to say <i>naar buiten gaan</i>. <b>uitgaan</b>, on the other hand, means \"to go out (in the evening), to have fun\" everywhere.",
+  "vocab": [
+   [
+    "opbellen",
+    "to call (on the phone)"
+   ],
+   [
+    "opstaan",
+    "to get up"
+   ],
+   [
+    "meegaan",
+    "to go along, to come along"
+   ],
+   [
+    "aankomen",
+    "to arrive"
+   ],
+   [
+    "uitgaan",
+    "to go out (in the evening)"
+   ],
+   [
+    "meenemen",
+    "to take along, to bring"
+   ],
+   [
+    "terugkomen",
+    "to come back"
+   ],
+   [
+    "betalen",
+    "to pay"
+   ],
+   [
+    "vertellen",
+    "to tell"
+   ],
+   [
+    "ontmoeten",
+    "to meet"
+   ],
+   [
+    "herhalen",
+    "to repeat"
+   ],
+   [
+    "begrijpen",
+    "to understand"
+   ],
+   [
+    "vergeten",
+    "to forget"
+   ],
+   [
+    "de paraplu",
+    "the umbrella"
+   ],
+   [
+    "het feest",
+    "the party"
+   ]
+  ],
+  "core": [
+   [
+    "op",
+    "up (op-staan)"
+   ],
+   [
+    "mee",
+    "along, with (mee-gaan)"
+   ],
+   [
+    "aan",
+    "on, at (aan-komen)"
+   ],
+   [
+    "uit",
+    "out (uit-gaan)"
+   ],
+   [
+    "terug",
+    "back (terug-komen)"
+   ],
+   [
+    "be-, ver-, ont-, her-",
+    "prefixes that never split"
+   ]
+  ],
+  "items": [
+   {
+    "t": "fill",
+    "q": "Ik ___ je morgen op.",
+    "h": "opbellen",
+    "a": [
+     "bel"
+    ],
+    "e": "<b>bel</b> in second position, the particle <i>op</i> at the end."
+   },
+   {
+    "t": "mc",
+    "q": "Hoe laat komt de trein in Brussel ___?",
+    "o": [
+     "aan",
+     "op",
+     "uit",
+     "mee"
+    ],
+    "a": 0,
+    "e": "to arrive = <b>aankomen</b>: komt … <b>aan</b>."
+   },
+   {
+    "t": "order",
+    "q": "We get up at seven.",
+    "a": "We staan om zeven uur op",
+    "alt": [
+     "Om zeven uur staan we op"
+    ],
+    "x": [
+     "opstaan",
+     "staat"
+    ],
+    "e": "<b>opstaan</b>: staan in second position, <b>op</b> at the end."
+   },
+   {
+    "t": "tr",
+    "q": "Are you (all) coming with us?",
+    "a": [
+     "Gaan jullie met ons mee",
+     "Gaan jullie mee",
+     "Komen jullie met ons mee",
+     "Komen jullie mee"
+    ],
+    "e": "<b>meegaan</b>: Gaan jullie (met ons) <b>mee</b>?"
+   },
+   {
+    "t": "mc",
+    "q": "Which sentence is correct?",
+    "o": [
+     "Ik betaal de koffie.",
+     "Ik taal de koffie be.",
+     "Ik betaal de koffie be.",
+     "Ik be de koffie taal."
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<b>be-</b> never splits: Ik <b>betaal</b> de koffie."
+   },
+   {
+    "t": "fill",
+    "q": "Ik ___ altijd mijn sleutel.",
+    "h": "vergeten",
+    "a": [
+     "vergeet"
+    ],
+    "e": "<b>ver-</b> stays attached: ik <b>vergeet</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Ik wil vanavond ___.",
+    "o": [
+     "uitgaan",
+     "uit gaan",
+     "ga uit",
+     "uitgaat"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "After the modal the infinitive stays in one piece: <b>uitgaan</b>."
+   },
+   {
+    "t": "order",
+    "q": "She takes her umbrella with her.",
+    "a": "Ze neemt haar paraplu mee",
+    "alt": [
+     "Haar paraplu neemt ze mee"
+    ],
+    "x": [
+     "meeneemt",
+     "nemen"
+    ],
+    "e": "<b>meenemen</b>: neemt in second position, <b>mee</b> at the end."
+   },
+   {
+    "t": "tr",
+    "q": "I'm coming back tomorrow.",
+    "a": [
+     "Ik kom morgen terug",
+     "Morgen kom ik terug"
+    ],
+    "e": "<b>terugkomen</b>: Ik kom morgen <b>terug</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Ik ___ Sofie vanavond.",
+    "h": "ontmoeten",
+    "a": [
+     "ontmoet"
+    ],
+    "e": "<b>ont-</b> doesn't split: ik <b>ontmoet</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Kunt u dat ___, alstublieft?",
+    "h": "to repeat",
+    "o": [
+     "herhalen",
+     "herhaal",
+     "herhaalt",
+     "halen"
+    ],
+    "a": 0,
+    "e": "After the modal: whole infinitive, <b>herhalen</b>."
+   },
+   {
+    "t": "order",
+    "q": "What time are you arriving?",
+    "a": "Hoe laat kom je aan",
+    "x": [
+     "aankom",
+     "komt"
+    ],
+    "e": "In questions too the particle <b>aan</b> goes at the end."
+   }
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "opstaan: Ik ___ om zeven uur op.",
+    "o": [
+     "sta",
+     "opsta",
+     "staan",
+     "staat"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "In the present the particle goes to the end; <b>sta</b> stays in second position.",
+    "g": {
+     "sta": "I get up (with op at the end)",
+     "opsta": "wrong form: op goes at the end",
+     "staan": "plural / infinitive form",
+     "staat": "he/she gets up"
+    },
+    "tt": "I get up at seven."
+   },
+   {
+    "t": "mc",
+    "q": "Which sentence is correct?",
+    "o": [
+     "Hij belt zijn moeder op.",
+     "Hij opbelt zijn moeder.",
+     "Hij belt op zijn moeder.",
+     "Hij op belt zijn moeder."
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "The particle <b>op</b> goes at the end of the sentence.",
+    "g": {
+     "Hij belt zijn moeder op.": "He calls his mother (correct)",
+     "Hij opbelt zijn moeder.": "in the present the verb splits",
+     "Hij belt op zijn moeder.": "the particle goes at the end, after the object",
+     "Hij op belt zijn moeder.": "wrong order"
+    },
+    "tt": "He calls his mother."
+   },
+   {
+    "t": "mc",
+    "q": "Ik moet morgen vroeg ___.",
+    "o": [
+     "opstaan",
+     "sta op",
+     "op staan",
+     "opstaat"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "With a modal the infinitive stays in one piece at the end: <b>opstaan</b>.",
+    "g": {
+     "opstaan": "to get up (whole infinitive)",
+     "sta op": "after a modal you need the infinitive",
+     "op staan": "the infinitive is written as one word",
+     "opstaat": "doesn't exist"
+    },
+    "tt": "I have to get up early tomorrow."
+   },
+   {
+    "t": "mc",
+    "q": "Which verb is inseparable?",
+    "o": [
+     "betalen",
+     "opbellen",
+     "meegaan",
+     "uitgaan"
+    ],
+    "a": 0,
+    "e": "<b>be-</b> never splits: ik betaal.",
+    "g": {
+     "betalen": "to pay (be- is inseparable)",
+     "opbellen": "to call (separable: ik bel … op)",
+     "meegaan": "to go along (separable: ik ga … mee)",
+     "uitgaan": "to go out (separable: ik ga … uit)"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "begrijpen: Ik ___ het niet.",
+    "o": [
+     "begrijp",
+     "grijp",
+     "grijp be",
+     "begrijpen"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<b>be-</b> stays attached: ik <b>begrijp</b>.",
+    "g": {
+     "begrijp": "I understand",
+     "grijp": "I grab (a different verb, be- is missing)",
+     "grijp be": "be- never splits",
+     "begrijpen": "to understand (infinitive / plural)"
+    },
+    "tt": "I don't understand it."
+   },
+   {
+    "t": "mc",
+    "q": "aankomen: De trein ___ om tien uur aan.",
+    "o": [
+     "komt",
+     "aankomt",
+     "komen",
+     "kom"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Conjugated verb in second position, <b>aan</b> at the end: de trein <b>komt</b> … aan.",
+    "g": {
+     "komt": "arrives (with aan at the end)",
+     "aankomt": "in the present the verb splits",
+     "komen": "plural form",
+     "kom": "ik form"
+    },
+    "tt": "The train arrives at ten."
+   },
+   {
+    "t": "mc",
+    "q": "In a main clause in the present, the particle (op, mee, uit…) goes:",
+    "o": [
+     "at the end of the sentence",
+     "right after the verb",
+     "before the subject",
+     "before the verb"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Always <b>at the end</b>, like the infinitive with modal verbs."
+   },
+   {
+    "t": "fill",
+    "q": "Ga je vanavond ___?",
+    "h": "meegaan",
+    "a": [
+     "mee"
+    ],
+    "e": "<b>meegaan</b>: Ga je … <b>mee</b>?",
+    "tt": "Are you coming with us tonight?"
+   },
+   {
+    "t": "fill",
+    "q": "Wanneer kom je ___?",
+    "h": "terugkomen",
+    "a": [
+     "terug"
+    ],
+    "e": "<b>terugkomen</b>: Wanneer kom je <b>terug</b>?",
+    "tt": "When are you coming back?"
+   },
+   {
+    "t": "order",
+    "q": "I'm going out tonight.",
+    "a": "Ik ga vanavond uit",
+    "alt": [
+     "Vanavond ga ik uit"
+    ],
+    "x": [
+     "uitga",
+     "gaat"
+    ],
+    "e": "<b>uitgaan</b>: ga in second position, <b>uit</b> at the end."
+   }
+  ],
+  "gloss": {
+   "0": {
+    "t": "I'll call you tomorrow."
+   },
+   "1": {
+    "g": {
+     "aan": "aankomen = to arrive",
+     "op": "opkomen = to rise (the sun): doesn't fit",
+     "uit": "uitkomen = to come out, to turn out: doesn't fit",
+     "mee": "meekomen = to come along: doesn't fit"
+    },
+    "t": "What time does the train arrive in Brussels?"
+   },
+   "2": {
+    "t": "We get up at seven."
+   },
+   "3": {
+    "t": "Are you (all) coming with us?"
+   },
+   "4": {
+    "g": {
+     "Ik betaal de koffie.": "I'll pay for the coffee (correct)",
+     "Ik taal de koffie be.": "be- never splits",
+     "Ik betaal de koffie be.": "be- appears twice",
+     "Ik be de koffie taal.": "impossible order"
+    },
+    "t": "I'll pay for the coffee."
+   },
+   "5": {
+    "t": "I always forget my key."
+   },
+   "6": {
+    "g": {
+     "uitgaan": "to go out (whole infinitive)",
+     "uit gaan": "the infinitive is written as one word",
+     "ga uit": "after a modal you need the infinitive",
+     "uitgaat": "doesn't exist"
+    },
+    "t": "I want to go out tonight."
+   },
+   "7": {
+    "t": "She takes her umbrella with her."
+   },
+   "8": {
+    "t": "I'm coming back tomorrow."
+   },
+   "9": {
+    "t": "I'm meeting Sofie tonight."
+   },
+   "10": {
+    "g": {
+     "herhalen": "to repeat (infinitive)",
+     "herhaal": "I repeat",
+     "herhaalt": "he/she repeats",
+     "halen": "to fetch (a different verb)"
+    },
+    "t": "Could you repeat that, please?"
+   },
+   "11": {
+    "t": "What time are you arriving?"
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "I'll call you tomorrow at nine. Choose the correct sentence:",
+    "o": [
+     "Morgen bel ik je om negen uur op.",
+     "Morgen ik bel je om negen uur op.",
+     "Morgen bel ik op je om negen uur.",
+     "Morgen opbel ik je om negen uur."
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<i>Morgen</i> in first position → inversion <b>bel ik</b>; the particle <b>op</b> goes at the very end, after everything else.",
+    "g": {
+     "Morgen bel ik je om negen uur op.": "I'll call you tomorrow at nine. (correct)",
+     "Morgen ik bel je om negen uur op.": "missing inversion after Morgen",
+     "Morgen bel ik op je om negen uur.": "op goes at the end of the sentence, not after the verb (unlike English \"call up\")",
+     "Morgen opbel ik je om negen uur.": "in the present opbellen splits"
+    },
+    "tt": "I'll call you tomorrow at nine."
+   },
+   {
+    "t": "mc",
+    "q": "Waarom ga je zaterdag niet met ons ___?",
+    "o": [
+     "mee",
+     "met",
+     "samen",
+     "aan"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Trap: even though <i>met ons</i> is already there, the verb is <b>meegaan</b>, so the particle <b>mee</b> still goes at the end. <i>Met</i> on its own can't end the sentence (unlike English \"come with\").",
+    "g": {
+     "mee": "meegaan = to come along (correct)",
+     "met": "met is a preposition: the end needs the particle mee",
+     "samen": "together: the particle of meegaan is missing",
+     "aan": "aangaan makes no sense here"
+    },
+    "tt": "Why don't you come with us on Saturday?"
+   },
+   {
+    "t": "fill",
+    "q": "De trein uit Oostende ___ vandaag pas om tien uur in Gent aan.",
+    "h": "aankomen",
+    "a": [
+     "komt"
+    ],
+    "e": "The subject is <i>de trein</i> (it): <b>komt</b> in second position, <b>aan</b> at the end, even after a long phrase.",
+    "tt": "Today the train from Ostend only arrives in Ghent at ten."
+   },
+   {
+    "t": "fill",
+    "q": "Neem jij morgen de kinderen naar het feest ___?",
+    "h": "meenemen",
+    "a": [
+     "mee"
+    ],
+    "e": "In the question the verb comes first (<i>Neem jij</i>), but the particle <b>mee</b> stays at the end, after <i>naar het feest</i>.",
+    "tt": "Are you taking the kids to the party tomorrow?"
+   },
+   {
+    "t": "tr",
+    "q": "I'll call her tonight, I won't forget.",
+    "a": [
+     "Ik bel haar vanavond op, ik vergeet het niet",
+     "Ik bel haar vanavond op, dat vergeet ik niet",
+     "Vanavond bel ik haar op, ik vergeet het niet",
+     "Vanavond bel ik haar op, dat vergeet ik niet",
+     "Ik bel haar vanavond, ik vergeet het niet",
+     "Ik bel haar vanavond, dat vergeet ik niet",
+     "Vanavond bel ik haar, ik vergeet het niet",
+     "Vanavond bel ik haar, dat vergeet ik niet"
+    ],
+    "e": "<b>opbellen</b> splits (<i>bel … op</i>), <b>vergeten</b> doesn't (<i>ver-</i> stays attached, like English \"forget\"). The pronoun <i>haar</i> comes before the time adverb."
+   },
+   {
+    "t": "tr",
+    "q": "We're not going out tonight, tomorrow we have to get up early.",
+    "a": [
+     "Vanavond gaan we niet uit, morgen moeten we vroeg opstaan",
+     "Vanavond gaan we niet uit, we moeten morgen vroeg opstaan",
+     "Vanavond gaan we niet uit, morgen moeten wij vroeg opstaan",
+     "Vanavond gaan we niet uit, wij moeten morgen vroeg opstaan",
+     "We gaan vanavond niet uit, morgen moeten we vroeg opstaan",
+     "We gaan vanavond niet uit, we moeten morgen vroeg opstaan",
+     "We gaan vanavond niet uit, morgen moeten wij vroeg opstaan",
+     "We gaan vanavond niet uit, wij moeten morgen vroeg opstaan",
+     "Vanavond gaan wij niet uit, morgen moeten we vroeg opstaan",
+     "Vanavond gaan wij niet uit, we moeten morgen vroeg opstaan",
+     "Vanavond gaan wij niet uit, morgen moeten wij vroeg opstaan",
+     "Vanavond gaan wij niet uit, wij moeten morgen vroeg opstaan",
+     "Wij gaan vanavond niet uit, morgen moeten we vroeg opstaan",
+     "Wij gaan vanavond niet uit, we moeten morgen vroeg opstaan",
+     "Wij gaan vanavond niet uit, morgen moeten wij vroeg opstaan",
+     "Wij gaan vanavond niet uit, wij moeten morgen vroeg opstaan"
+    ],
+    "e": "Without a modal the verb splits: <i>gaan … niet <b>uit</b></i>. With the modal the infinitive stays whole at the end: <i>moeten … <b>opstaan</b></i>."
+   },
+   {
+    "t": "order",
+    "q": "The train from Brussels arrives in Ghent at half past eight.",
+    "a": "De trein uit Brussel komt om half negen in Gent aan",
+    "alt": [
+     "Om half negen komt de trein uit Brussel in Gent aan",
+     "In Gent komt de trein uit Brussel om half negen aan"
+    ],
+    "x": [
+     "aankomt",
+     "kom"
+    ],
+    "e": "<b>komt</b> in second position, time (<i>om half negen</i>) before place (<i>in Gent</i>), and <b>aan</b> closes the sentence. Remember: <i>half negen</i> = 8:30, not 9:30.",
+    "tt": "The train from Brussels arrives in Ghent at half past eight."
+   },
+   {
+    "t": "order",
+    "q": "Tomorrow I have to take my umbrella with me.",
+    "a": "Morgen moet ik mijn paraplu meenemen",
+    "alt": [
+     "Ik moet morgen mijn paraplu meenemen"
+    ],
+    "x": [
+     "neem",
+     "mee"
+    ],
+    "e": "With the modal <b>moet</b> the separable verb stays in one piece as an infinitive at the end: <b>meenemen</b>.",
+    "tt": "Tomorrow I have to take my umbrella with me."
+   }
+  ]
+ }
+}

@@ -1,0 +1,393 @@
+{
+ "id": "u10",
+ "n": 10,
+ "module": 2,
+ "nl": "Woordvolgorde",
+ "it": "Ordine delle parole",
+ "note": "\n<h3>L'idea: il verbo in seconda posizione</h3>\n<p>In italiano l'ordine delle parole è abbastanza libero. In olandese c'è una regola fissa per la frase principale: il <b>verbo coniugato sta sempre al secondo posto</b>. Al primo posto può esserci il soggetto, ma anche un'altra parte della frase.</p>\n<table><tr><th>1° posto</th><th>2° (verbo)</th><th>resto</th></tr>\n<tr><td>Ik</td><td>werk</td><td>vandaag thuis.</td></tr>\n<tr><td>Vandaag</td><td>werk</td><td>ik thuis.</td></tr>\n<tr><td>Thuis</td><td>werk</td><td>ik vandaag.</td></tr></table>\n<h3>L'inversione</h3>\n<p>Se al primo posto metti qualcosa che non è il soggetto (un'espressione di tempo, un luogo, un oggetto), il soggetto passa <b>dopo il verbo</b>. Questo si chiama inversione: <i>Morgen <b>ga ik</b> naar Brugge</i>, mai <s>Morgen ik ga</s>. È l'errore più comune per chi parla italiano.</p>\n<h3>Tempo – modo – luogo</h3>\n<p>Quando nella stessa frase ci sono più indicazioni, l'ordine abituale è: <b>quando</b>, poi <b>come</b>, poi <b>dove</b>.</p>\n<p><i>Ik ga <b>morgen</b> <b>met de trein</b> <b>naar Gent</b>.</i> (Domani vado a Gand in treno.)</p>\n<h3>La cornice con due verbi</h3>\n<p>Con un verbo modale (unità 9) il verbo coniugato resta al secondo posto e l'infinito va in fondo: <i>Vanavond <b>willen</b> we in Gent <b>eten</b></i>.</p>\n<h3>Le congiunzioni</h3>\n<p><b>en</b> (e), <b>maar</b> (ma), <b>of</b> (o) e <b>want</b> (perché, dato che) non contano come posizione: dopo di loro l'ordine resta normale. <i>Ik blijf thuis, want ik <b>ben</b> moe.</i></p>\n<p><b>dus</b> (quindi) è più libero: può occupare il primo posto (<i>Ik ben moe, dus <b>blijf ik</b> thuis</i>) oppure comportarsi come want (<i>dus <b>ik blijf</b> thuis</i>). Entrambe le forme sono corrette.</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Dimenticare l'inversione: <s>Vandaag ik werk</s> → <b>Vandaag werk ik</b>.</li>\n<li>Mettere il luogo prima del tempo: <s>Ik ga naar Gent morgen</s> → <b>Ik ga morgen naar Gent</b>.</li>\n<li>Invertire dopo <i>want</i>: <s>want ben ik moe</s> → <b>want ik ben moe</b>.</li>\n</ul>",
+ "vlaams": "Le regole sono identiche in tutto il territorio, cambia il lessico. In Fiandra dici <b>een broodje smos</b> (panino farcito con verdure), <b>de gsm</b> (il cellulare) e <b>'s voormiddags</b> (in mattinata).",
+ "vocab": [
+  [
+   "vandaag",
+   "oggi"
+  ],
+  [
+   "morgen",
+   "domani"
+  ],
+  [
+   "vanavond",
+   "stasera"
+  ],
+  [
+   "thuis",
+   "a casa (stato)"
+  ],
+  [
+   "blijven",
+   "restare"
+  ],
+  [
+   "de trein",
+   "il treno"
+  ],
+  [
+   "de zus",
+   "la sorella"
+  ],
+  [
+   "vaak",
+   "spesso"
+  ],
+  [
+   "elke dag",
+   "ogni giorno"
+  ]
+ ],
+ "core": [
+  [
+   "en",
+   "e"
+  ],
+  [
+   "maar",
+   "ma"
+  ],
+  [
+   "of",
+   "o"
+  ],
+  [
+   "want",
+   "perché (dato che)"
+  ],
+  [
+   "dus",
+   "quindi"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "Vandaag ___ thuis.",
+   "o": [
+    "werk ik",
+    "ik werk",
+    "werken ik",
+    "ik werken"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Verbo al secondo posto, soggetto dopo: <b>werk ik</b>.",
+   "g": {
+    "werk ik": "lavoro (con inversione)",
+    "ik werk": "io lavoro: dopo vandaag serve l'inversione",
+    "werken ik": "werken è plurale",
+    "ik werken": "verbo sbagliato e niente inversione"
+   },
+   "tt": "Oggi lavoro a casa."
+  },
+  {
+   "t": "mc",
+   "q": "Morgen ___ naar Gent.",
+   "o": [
+    "gaan we",
+    "we gaan",
+    "gaat we",
+    "we gaat"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Inversione: Morgen <b>gaan we</b>.",
+   "g": {
+    "gaan we": "andiamo (con inversione)",
+    "we gaan": "andiamo: qui serve l'inversione",
+    "gaat we": "gaat è singolare",
+    "we gaat": "verbo sbagliato e niente inversione"
+   },
+   "tt": "Domani andiamo a Gand."
+  },
+  {
+   "t": "mc",
+   "q": "In seconda posizione nella frase principale c'è sempre:",
+   "o": [
+    "il verbo coniugato",
+    "il soggetto",
+    "l'infinito",
+    "l'oggetto"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Regola fissa: il <b>verbo coniugato</b> è al secondo posto."
+  },
+  {
+   "t": "mc",
+   "q": "Ik blijf thuis, want ___ moe.",
+   "o": [
+    "ik ben",
+    "ben ik"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Dopo <b>want</b> l'ordine resta normale.",
+   "g": {
+    "ik ben": "sono (ordine normale)",
+    "ben ik": "dopo want non si inverte"
+   },
+   "tt": "Resto a casa perché sono stanco."
+  },
+  {
+   "t": "mc",
+   "q": "Ik ben moe, ___ ik blijf thuis.",
+   "o": [
+    "dus",
+    "want",
+    "maar",
+    "of"
+   ],
+   "a": 0,
+   "e": "<b>dus</b> = quindi. Dopo dus vanno bene sia <i>dus ik blijf</i> sia <i>dus blijf ik</i>.",
+   "g": {
+    "dus": "quindi",
+    "want": "perché (dato che): non ha senso qui",
+    "maar": "ma",
+    "of": "o"
+   },
+   "tt": "Sono stanco, quindi resto a casa."
+  },
+  {
+   "t": "mc",
+   "q": "e",
+   "o": [
+    "en",
+    "maar",
+    "of",
+    "want"
+   ],
+   "a": 0,
+   "e": "<b>en</b> = e.",
+   "g": {
+    "en": "e",
+    "maar": "ma",
+    "of": "o",
+    "want": "perché (dato che)"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "ma",
+   "o": [
+    "maar",
+    "dus",
+    "en",
+    "of"
+   ],
+   "a": 0,
+   "e": "<b>maar</b> = ma.",
+   "g": {
+    "maar": "ma",
+    "dus": "quindi",
+    "en": "e",
+    "of": "o"
+   }
+  },
+  {
+   "t": "order",
+   "q": "Oggi lavoro.",
+   "a": "Vandaag werk ik",
+   "alt": [
+    "Ik werk vandaag"
+   ],
+   "x": [
+    "werkt",
+    "mij"
+   ],
+   "e": "Se inizi con vandaag, il verbo viene subito dopo: <b>Vandaag werk ik</b>."
+  },
+  {
+   "t": "order",
+   "q": "Domani andiamo a Bruges.",
+   "a": "Morgen gaan we naar Brugge",
+   "alt": [
+    "We gaan morgen naar Brugge"
+   ],
+   "x": [
+    "gaat",
+    "ons"
+   ],
+   "e": "Morgen + <b>gaan</b> + we."
+  },
+  {
+   "t": "fill",
+   "q": "Elke dag ___ ik koffie.",
+   "h": "drinken",
+   "a": [
+    "drink"
+   ],
+   "e": "Inversione: Elke dag <b>drink</b> ik.",
+   "tt": "Ogni giorno bevo caffè."
+  }
+ ],
+ "items": [
+  {
+   "t": "order",
+   "q": "Oggi lavoro a casa.",
+   "a": "Vandaag werk ik thuis",
+   "alt": [
+    "Ik werk vandaag thuis"
+   ],
+   "x": [
+    "werkt",
+    "mij"
+   ],
+   "e": "Verbo in seconda posizione: Vandaag <b>werk</b> ik."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "Morgen ___ naar Brugge.",
+   "o": [
+    "ga ik",
+    "ik ga",
+    "gaan ik",
+    "ik gaan"
+   ],
+   "a": 0,
+   "e": "Inversione: Morgen <b>ga ik</b>."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "say": "Ik ga morgen met de trein naar Gent.",
+   "q": "Quale frase è corretta?",
+   "o": [
+    "Ik ga morgen met de trein naar Gent.",
+    "Ik ga naar Gent morgen met de trein.",
+    "Morgen ik ga met de trein naar Gent.",
+    "Ik morgen ga naar Gent."
+   ],
+   "a": 0,
+   "e": "Tempo – modo – luogo."
+  },
+  {
+   "t": "order",
+   "q": "Stasera vogliamo mangiare a Gand.",
+   "a": "Vanavond willen we in Gent eten",
+   "alt": [
+    "We willen vanavond in Gent eten"
+   ],
+   "x": [
+    "eet",
+    "wil"
+   ],
+   "e": "Verbo coniugato in seconda posizione, infinito alla fine."
+  },
+  {
+   "t": "mc",
+   "q": "In Antwerpen ___ mijn zus.",
+   "o": [
+    "woont",
+    "woon",
+    "wonen",
+    "is wonen"
+   ],
+   "a": 0,
+   "e": "In Antwerpen <b>woont</b> mijn zus."
+  },
+  {
+   "t": "tr",
+   "q": "Domani vado a Bruxelles.",
+   "a": [
+    "Morgen ga ik naar Brussel",
+    "Ik ga morgen naar Brussel"
+   ],
+   "e": "<b>Morgen ga ik</b> naar Brussel."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "Il verbo coniugato nella frase principale sta in posizione:",
+   "o": [
+    "prima",
+    "seconda",
+    "ultima",
+    "dopo l'oggetto"
+   ],
+   "a": 1,
+   "e": "<b>Seconda</b> posizione."
+  },
+  {
+   "t": "order",
+   "q": "Mangio spesso le patatine fritte.",
+   "a": "Ik eet vaak frieten",
+   "x": [
+    "eten",
+    "frietje"
+   ],
+   "e": "In Belgio: <b>frieten</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Elke dag ___ hij koffie.",
+   "h": "drinken",
+   "a": [
+    "drinkt"
+   ],
+   "e": "Inversione: Elke dag <b>drinkt</b> hij."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "Dopo 'want' (perché):",
+   "o": [
+    "l'ordine resta normale",
+    "il verbo va alla fine",
+    "il verbo va al primo posto",
+    "si usa l'infinito"
+   ],
+   "a": 0,
+   "e": "en, maar, of, want: ordine <b>normale</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Stasera lavoro.",
+   "a": [
+    "Vanavond werk ik",
+    "Ik werk vanavond"
+   ],
+   "e": "<b>Vanavond werk ik.</b>"
+  }
+ ],
+ "gloss": {
+  "1": {
+   "g": {
+    "ga ik": "vado (verbo + soggetto dopo Morgen)",
+    "ik ga": "io vado: qui serve l'inversione",
+    "gaan ik": "gaan è plurale",
+    "ik gaan": "verbo sbagliato e niente inversione"
+   },
+   "t": "Domani vado a Bruges."
+  },
+  "2": {
+   "g": {
+    "Ik ga morgen met de trein naar Gent.": "Domani vado a Gand in treno (tempo, modo, luogo)",
+    "Ik ga naar Gent morgen met de trein.": "il luogo va dopo tempo e modo",
+    "Morgen ik ga met de trein naar Gent.": "dopo Morgen serve l'inversione: ga ik",
+    "Ik morgen ga naar Gent.": "il verbo deve stare al secondo posto"
+   },
+   "t": "Domani vado a Gand in treno."
+  },
+  "4": {
+   "g": {
+    "woont": "abita (lui/lei)",
+    "woon": "abito (io)",
+    "wonen": "abitiamo / abitano",
+    "is wonen": "forma che non esiste"
+   },
+   "t": "Ad Anversa abita mia sorella."
+  },
+  "8": {
+   "t": "Ogni giorno lui beve caffè."
+  }
+ }
+}

@@ -1,0 +1,650 @@
+{
+ "id": "u3",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "Quale di queste parole prende het?",
+   "o": [
+    "meisje",
+    "vrouw",
+    "dokter",
+    "kinderen"
+   ],
+   "a": 0,
+   "e": "<b>het meisje</b>: è un diminutivo (-je), quindi het anche se indica una ragazza. Trabocchetto: <i>kind</i> è het, ma al plurale è <b>de</b> kinderen.",
+   "g": {
+    "meisje": "ragazza (het: diminutivo)",
+    "vrouw": "donna (de: persona)",
+    "dokter": "medico (de: professione)",
+    "kinderen": "bambini (plurale: sempre de)"
+   },
+   "tt": "ragazza / donna / medico / bambini"
+  },
+  {
+   "t": "mc",
+   "q": "Ik heb een nieuw appartement in Antwerpen. ___ is groot.",
+   "o": [
+    "Het",
+    "Hij",
+    "Ze",
+    "De"
+   ],
+   "a": 0,
+   "e": "<i>een</i> non ti dice l'articolo: devi sapere che è <b>het</b> appartement (-ment), quindi il pronome è <b>het</b> (unità 1).",
+   "g": {
+    "Het": "esso (per una het-parola)",
+    "Hij": "lui / esso (per una de-parola)",
+    "Ze": "lei / loro",
+    "De": "articolo, non pronome"
+   },
+   "tt": "Ho un appartamento nuovo ad Anversa. È grande."
+  },
+  {
+   "t": "fill",
+   "q": "Het kind van Lies is moe, maar ___ kinderen van Tom zitten in de tuin.",
+   "h": "articolo",
+   "a": [
+    "de"
+   ],
+   "e": "<i>het kind</i>, ma al plurale tutto prende <b>de</b>: <b>de kinderen</b>.",
+   "tt": "Il bambino di Lies è stanco, ma i bambini di Tom sono seduti in giardino."
+  },
+  {
+   "t": "fill",
+   "q": "Ik woon in een huisje in Brugge. ___ huisje is oud, maar mooi.",
+   "h": "articolo",
+   "a": [
+    "het"
+   ],
+   "e": "Tutti i diminutivi in -je sono <b>het</b>: <b>het huisje</b>.",
+   "tt": "Abito in una casetta a Bruges. La casetta è vecchia, ma bella."
+  },
+  {
+   "t": "tr",
+   "q": "La ragazza parla olandese e italiano.",
+   "a": [
+    "Het meisje spreekt Nederlands en Italiaans"
+   ],
+   "e": "<b>het meisje</b> (diminutivo) + <b>spreekt</b> (lei: radice + t). Davanti alle lingue non si mette articolo dopo <i>spreken</i>."
+  },
+  {
+   "t": "tr",
+   "q": "Il medico abita in un appartamento a Lovanio.",
+   "a": [
+    "De dokter woont in een appartement in Leuven",
+    "De arts woont in een appartement in Leuven",
+    "In Leuven woont de dokter in een appartement",
+    "De dokter woont in Leuven in een appartement",
+    "In Leuven woont de arts in een appartement",
+    "De arts woont in Leuven in een appartement"
+   ],
+   "e": "<b>de dokter</b> (professione) ma <b>een appartement</b>: een va bene per de- e het-parole. Leuven = Lovanio."
+  },
+  {
+   "t": "order",
+   "q": "La donna ha una bici e un'auto.",
+   "a": "De vrouw heeft een fiets en een auto",
+   "x": [
+    "het",
+    "hebt"
+   ],
+   "e": "<b>de vrouw</b> + <b>heeft</b> (irregolare). <b>een</b> è uguale per tutti i nomi.",
+   "tt": "La donna ha una bici e un'auto."
+  },
+  {
+   "t": "order",
+   "q": "I bambini mangiano una mela in giardino.",
+   "a": "De kinderen eten een appel in de tuin",
+   "alt": [
+    "In de tuin eten de kinderen een appel",
+    "De kinderen eten in de tuin een appel"
+   ],
+   "x": [
+    "het",
+    "eet"
+   ],
+   "e": "Plurale: <b>de kinderen</b> e verbo all'infinito <b>eten</b>. Se inizi con <i>In de tuin</i>, il verbo viene subito dopo.",
+   "tt": "I bambini mangiano una mela in giardino."
+  }
+ ],
+ "en": {
+  "it": "Articles and nouns",
+  "note": "\n<h3>The idea</h3>\n<p>English has one word for \"the\". Dutch has <b>two</b>: <b>de</b> and <b>het</b>. They depend on the noun's grammatical gender, something English doesn't have: <b>de</b> is used for masculine and feminine nouns, <b>het</b> for neuter nouns. In the Netherlands masculine and feminine have merged into one group; in Belgium many speakers still tell them apart (de tafel → hij, de deur → ze). About two nouns in three take <b>de</b>.</p>\n<p>There is only one indefinite article: <b>een</b> (a, an), for all nouns. In the indefinite plural there is no article, just like in English: <i>boeken</i> = books.</p>\n<h3>Useful rules</h3>\n<ul>\n<li>The <b>plural</b> always takes <b>de</b>: het boek → de boeken.</li>\n<li><b>Diminutives</b> in -je are always <b>het</b>: het meisje, het huisje.</li>\n<li><b>Languages</b> are het: het Nederlands, het Italiaans.</li>\n<li>An <b>infinitive</b> used as a noun is het: het eten (eating, food).</li>\n<li>Words starting with <b>ge-, be-, ver-</b> are often het, unless they end in -ing, -te or -er: het gesprek, het verhaal (but de vergadering).</li>\n<li>Many words in <b>-ment</b> are het: het appartement, het moment.</li>\n<li><b>People and professions</b> are almost always de: de man, de vrouw, de dokter. Exceptions to remember: <b>het kind</b> and <b>het meisje</b>.</li>\n</ul>\n<h3>Why it matters</h3>\n<p>No rule covers every noun, so the practical advice is simple: <b>learn every noun together with its article</b>, as you find it in the word list. The article also decides other things you'll see later: the pronoun (hij or het, unit 1), and the form of adjectives and demonstratives.</p>\n<table><tr><th></th><th>de-word</th><th>het-word</th></tr>\n<tr><td>definite</td><td>de stad</td><td>het huis</td></tr>\n<tr><td>indefinite</td><td>een stad</td><td>een huis</td></tr>\n<tr><td>plural</td><td>de steden</td><td>de huizen</td></tr></table>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Translating every \"the\" as <i>de</i>: it's <b>het huis</b>, <b>het boek</b>. Learn the article with the word.</li>\n<li>Guessing the article from meaning: \"girl\" is <b>het meisje</b>, because it's a diminutive.</li>\n<li>Using <i>het</i> in the plural: it's always <b>de</b>.</li>\n</ul>",
+  "vlaams": "In spoken Flemish you often hear <b>ne</b> instead of een before masculine nouns: \"ne goeie vriend\" (a good friend). In writing it's always <b>een</b>.",
+  "vocab": [
+   [
+    "het huis",
+    "the house"
+   ],
+   [
+    "de stad",
+    "the city, the town"
+   ],
+   [
+    "het meisje",
+    "the girl"
+   ],
+   [
+    "het kind",
+    "the child"
+   ],
+   [
+    "de man",
+    "the man"
+   ],
+   [
+    "de vrouw",
+    "the woman"
+   ],
+   [
+    "het water",
+    "the water"
+   ],
+   [
+    "het gesprek",
+    "the conversation"
+   ],
+   [
+    "het appartement",
+    "the apartment"
+   ],
+   [
+    "de dokter",
+    "the doctor"
+   ],
+   [
+    "de fiets",
+    "the bike"
+   ],
+   [
+    "de appel",
+    "the apple"
+   ],
+   [
+    "eten",
+    "to eat"
+   ],
+   [
+    "mooi",
+    "beautiful, nice"
+   ],
+   [
+    "het Nederlands",
+    "Dutch (the language)"
+   ]
+  ],
+  "core": [
+   [
+    "de",
+    "the (de-words and all plurals)"
+   ],
+   [
+    "het",
+    "the (het-words)"
+   ],
+   [
+    "een",
+    "a, an"
+   ]
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "In the plural the article is always:",
+    "o": [
+     "de",
+     "het",
+     "een"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Plural = always <b>de</b>.",
+    "g": {
+     "de": "article of all plurals",
+     "het": "never in the plural",
+     "een": "singular only"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "Diminutives in -je take:",
+    "o": [
+     "het",
+     "de"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Diminutives = always <b>het</b>.",
+    "g": {
+     "het": "article of all diminutives",
+     "de": "no: diminutives are always het"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "Languages (Nederlands, Italiaans) take:",
+    "o": [
+     "het",
+     "de"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<b>het</b> Nederlands.",
+    "g": {
+     "het": "article of languages",
+     "de": "no: languages are het"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "People and professions usually take:",
+    "o": [
+     "de",
+     "het"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<b>de</b> man, <b>de</b> dokter.",
+    "g": {
+     "de": "article of people and professions",
+     "het": "only exceptions like het kind, het meisje"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "Words starting with ge- (gesprek) take:",
+    "o": [
+     "het",
+     "de"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<b>het</b> gesprek.",
+    "g": {
+     "het": "article of words with ge-",
+     "de": "no, they're usually het"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "'een' is used with:",
+    "o": [
+     "de- and het-words",
+     "de-words only",
+     "het-words only",
+     "the plural"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<b>een</b> works for all singular nouns."
+   },
+   {
+    "t": "mc",
+    "q": "___ huisje (the little house)",
+    "o": [
+     "het",
+     "de"
+    ],
+    "a": 0,
+    "e": "Diminutive → <b>het</b> huisje.",
+    "g": {
+     "het": "article of het-words",
+     "de": "article of de-words"
+    },
+    "tt": "the little house"
+   },
+   {
+    "t": "mc",
+    "q": "___ boeken",
+    "o": [
+     "de",
+     "het"
+    ],
+    "a": 0,
+    "e": "Plural → <b>de</b>.",
+    "g": {
+     "de": "article of all plurals",
+     "het": "never in the plural"
+    },
+    "tt": "the books"
+   },
+   {
+    "t": "mc",
+    "q": "het kind → ___ kinderen",
+    "o": [
+     "de",
+     "het"
+    ],
+    "a": 0,
+    "e": "Het-words take <b>de</b> in the plural too.",
+    "g": {
+     "de": "article of all plurals",
+     "het": "never in the plural"
+    },
+    "tt": "the child → the children"
+   },
+   {
+    "t": "fill",
+    "q": "Ik heb ___ appel.",
+    "h": "an",
+    "a": [
+     "een"
+    ],
+    "e": "<b>een</b> = a, an.",
+    "tt": "I have an apple."
+   }
+  ],
+  "items": [
+   {
+    "t": "mc",
+    "q": "___ huis",
+    "o": [
+     "de",
+     "het"
+    ],
+    "a": 1,
+    "e": "<b>het</b> huis."
+   },
+   {
+    "t": "mc",
+    "q": "___ stad",
+    "o": [
+     "de",
+     "het"
+    ],
+    "a": 0,
+    "e": "<b>de</b> stad."
+   },
+   {
+    "t": "mc",
+    "q": "___ meisje",
+    "o": [
+     "de",
+     "het"
+    ],
+    "a": 1,
+    "e": "Diminutive (-je) → always <b>het</b>."
+   },
+   {
+    "t": "mc",
+    "q": "___ boeken",
+    "o": [
+     "de",
+     "het"
+    ],
+    "a": 0,
+    "e": "The plural always takes <b>de</b>."
+   },
+   {
+    "t": "mc",
+    "q": "___ water",
+    "o": [
+     "de",
+     "het"
+    ],
+    "a": 1,
+    "e": "<b>het</b> water."
+   },
+   {
+    "t": "mc",
+    "q": "___ tafel",
+    "o": [
+     "de",
+     "het"
+    ],
+    "a": 0,
+    "e": "<b>de</b> tafel."
+   },
+   {
+    "t": "mc",
+    "say": "het Nederlands",
+    "q": "___ Nederlands (the language)",
+    "o": [
+     "de",
+     "het"
+    ],
+    "a": 1,
+    "e": "Languages are <b>het</b>."
+   },
+   {
+    "t": "mc",
+    "q": "___ gesprek",
+    "o": [
+     "de",
+     "het"
+    ],
+    "a": 1,
+    "e": "Words with <i>ge-</i> → usually <b>het</b>."
+   },
+   {
+    "t": "mc",
+    "q": "___ appartement",
+    "o": [
+     "de",
+     "het"
+    ],
+    "a": 1,
+    "e": "Many words in <i>-ment</i> are <b>het</b>."
+   },
+   {
+    "t": "mc",
+    "q": "___ dokter",
+    "o": [
+     "de",
+     "het"
+    ],
+    "a": 0,
+    "e": "People and professions: <b>de</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Ik heb ___ fiets.",
+    "h": "a",
+    "a": [
+     "een"
+    ],
+    "e": "<b>een</b> works for de and het."
+   },
+   {
+    "t": "tr",
+    "q": "The house is big.",
+    "a": [
+     "Het huis is groot"
+    ],
+    "e": "<b>het</b> huis, groot = big."
+   },
+   {
+    "t": "order",
+    "q": "The child is eating an apple.",
+    "a": "Het kind eet een appel",
+    "x": [
+     "de",
+     "eten"
+    ],
+    "e": "<b>het</b> kind, <b>de</b> appel."
+   }
+  ],
+  "gloss": {
+   "0": {
+    "g": {
+     "de": "article of de-words",
+     "het": "article of het-words"
+    },
+    "t": "the house"
+   },
+   "1": {
+    "g": {
+     "de": "article of de-words",
+     "het": "article of het-words"
+    },
+    "t": "the city"
+   },
+   "2": {
+    "g": {
+     "de": "article of de-words",
+     "het": "article of het-words (all diminutives)"
+    },
+    "t": "the girl"
+   },
+   "3": {
+    "g": {
+     "de": "article of all plurals",
+     "het": "never in the plural"
+    },
+    "t": "the books"
+   },
+   "4": {
+    "g": {
+     "de": "article of de-words",
+     "het": "article of het-words"
+    },
+    "t": "the water"
+   },
+   "5": {
+    "g": {
+     "de": "article of de-words",
+     "het": "article of het-words"
+    },
+    "t": "the table"
+   },
+   "6": {
+    "g": {
+     "de": "article of de-words",
+     "het": "article of languages"
+    },
+    "t": "Dutch (the language)"
+   },
+   "7": {
+    "g": {
+     "de": "article of de-words",
+     "het": "article of words with ge-"
+    },
+    "t": "the conversation"
+   },
+   "8": {
+    "g": {
+     "de": "article of de-words",
+     "het": "article of many words in -ment"
+    },
+    "t": "the apartment"
+   },
+   "9": {
+    "g": {
+     "de": "article of people and professions",
+     "het": "article of het-words"
+    },
+    "t": "the doctor"
+   },
+   "10": {
+    "t": "I have a bike."
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "Which of these words takes het?",
+    "o": [
+     "meisje",
+     "vrouw",
+     "dokter",
+     "kinderen"
+    ],
+    "a": 0,
+    "e": "<b>het meisje</b>: it's a diminutive (-je), so it's het even though it means a girl. Trap: <i>kind</i> is het, but in the plural it's <b>de</b> kinderen.",
+    "g": {
+     "meisje": "girl (het: diminutive)",
+     "vrouw": "woman (de: person)",
+     "dokter": "doctor (de: profession)",
+     "kinderen": "children (plural: always de)"
+    },
+    "tt": "girl / woman / doctor / children"
+   },
+   {
+    "t": "mc",
+    "q": "Ik heb een nieuw appartement in Antwerpen. ___ is groot.",
+    "o": [
+     "Het",
+     "Hij",
+     "Ze",
+     "De"
+    ],
+    "a": 0,
+    "e": "<i>een</i> doesn't tell you the article: you need to know it's <b>het</b> appartement (-ment), so the pronoun is <b>het</b> (unit 1).",
+    "g": {
+     "Het": "it (for a het-word)",
+     "Hij": "he / it (for a de-word)",
+     "Ze": "she / they",
+     "De": "an article, not a pronoun"
+    },
+    "tt": "I have a new apartment in Antwerp. It's big."
+   },
+   {
+    "t": "fill",
+    "q": "Het kind van Lies is moe, maar ___ kinderen van Tom zitten in de tuin.",
+    "h": "article",
+    "a": [
+     "de"
+    ],
+    "e": "<i>het kind</i>, but in the plural everything takes <b>de</b>: <b>de kinderen</b>.",
+    "tt": "Lies's child is tired, but Tom's children are sitting in the garden."
+   },
+   {
+    "t": "fill",
+    "q": "Ik woon in een huisje in Brugge. ___ huisje is oud, maar mooi.",
+    "h": "article",
+    "a": [
+     "het"
+    ],
+    "e": "All diminutives in -je are <b>het</b>: <b>het huisje</b>.",
+    "tt": "I live in a little house in Bruges. The little house is old, but nice."
+   },
+   {
+    "t": "tr",
+    "q": "The girl speaks Dutch and Italian.",
+    "a": [
+     "Het meisje spreekt Nederlands en Italiaans"
+    ],
+    "e": "<b>het meisje</b> (diminutive) + <b>spreekt</b> (she: stem + t). As in English, no article before a language after <i>spreken</i>."
+   },
+   {
+    "t": "tr",
+    "q": "The doctor lives in an apartment in Leuven.",
+    "a": [
+     "De dokter woont in een appartement in Leuven",
+     "De arts woont in een appartement in Leuven",
+     "In Leuven woont de dokter in een appartement",
+     "De dokter woont in Leuven in een appartement",
+     "In Leuven woont de arts in een appartement",
+     "De arts woont in Leuven in een appartement"
+    ],
+    "e": "<b>de dokter</b> (profession) but <b>een appartement</b>: een works for de- and het-words alike."
+   },
+   {
+    "t": "order",
+    "q": "The woman has a bike and a car.",
+    "a": "De vrouw heeft een fiets en een auto",
+    "x": [
+     "het",
+     "hebt"
+    ],
+    "e": "<b>de vrouw</b> + <b>heeft</b> (irregular). <b>een</b> is the same for all nouns.",
+    "tt": "The woman has a bike and a car."
+   },
+   {
+    "t": "order",
+    "q": "The children are eating an apple in the garden.",
+    "a": "De kinderen eten een appel in de tuin",
+    "alt": [
+     "In de tuin eten de kinderen een appel",
+     "De kinderen eten in de tuin een appel"
+    ],
+    "x": [
+     "het",
+     "eet"
+    ],
+    "e": "Plural: <b>de kinderen</b> and the verb in the infinitive form <b>eten</b>. If you start with <i>In de tuin</i>, the verb comes right after it.",
+    "tt": "The children are eating an apple in the garden."
+   }
+  ]
+ }
+}

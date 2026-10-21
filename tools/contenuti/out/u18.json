@@ -1,0 +1,675 @@
+{
+ "id": "u18",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "Non chiudere la finestra, fa caldo! Scegli la frase corretta:",
+   "o": [
+    "Doe het raam niet dicht, het is warm!",
+    "Doe niet het raam dicht, het is warm!",
+    "Doe het raam dicht niet, het is warm!",
+    "Niet doe het raam dicht, het is warm!"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Verbo all'inizio, poi l'oggetto (<i>het raam</i>), poi <b>niet</b>, e la particella <b>dicht</b> in fondo: <i>niet</i> va prima della particella.",
+   "g": {
+    "Doe het raam niet dicht, het is warm!": "Non chiudere la finestra, fa caldo! (corretta)",
+    "Doe niet het raam dicht, het is warm!": "niet va dopo l'oggetto definito het raam",
+    "Doe het raam dicht niet, het is warm!": "niet va prima della particella dicht",
+    "Niet doe het raam dicht, het is warm!": "niet non va all'inizio: il verbo apre la frase"
+   },
+   "tt": "Non chiudere la finestra, fa caldo!"
+  },
+  {
+   "t": "mc",
+   "q": "Una commessa a Gand a un signore anziano: \"___ u even, alstublieft.\"",
+   "o": [
+    "Wacht",
+    "Wachtt",
+    "Wachten",
+    "Wachtet"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Forma di cortesia = radice + t + u. Ma la radice <i>wacht</i> finisce già in -t: non si raddoppia, quindi <b>Wacht u</b> even.",
+   "g": {
+    "Wacht": "aspetti (cortesia, con u): corretta",
+    "Wachtt": "la -t non si raddoppia mai",
+    "Wachten": "infinito: con u serve la radice + t",
+    "Wachtet": "forma che non esiste"
+   },
+   "tt": "Aspetti un attimo, per favore."
+  },
+  {
+   "t": "fill",
+   "q": "___ niet bang, de hond doet niets!",
+   "h": "zijn",
+   "a": [
+    "wees"
+   ],
+   "e": "Imperativo irregolare di zijn: <b>Wees</b>. Anche al negativo: <i>Wees niet bang</i> (non aver paura), mai <s>Ben niet bang</s>.",
+   "tt": "Non aver paura, il cane non fa niente!"
+  },
+  {
+   "t": "fill",
+   "q": "Mevrouw, ___ u morgen even terug, alstublieft.",
+   "h": "terugkomen",
+   "a": [
+    "komt"
+   ],
+   "e": "Cortesia: radice + t + u, <b>Komt u</b>; la particella <b>terug</b> va comunque in fondo.",
+   "tt": "Signora, torni domani, per favore."
+  },
+  {
+   "t": "tr",
+   "q": "Non dimenticare l'ombrello, piove!",
+   "a": [
+    "Vergeet je paraplu niet, het regent",
+    "Vergeet de paraplu niet, het regent",
+    "Vergeet jouw paraplu niet, het regent"
+   ],
+   "e": "Verbo all'inizio (<b>Vergeet</b>, senza -t), <b>niet</b> dopo l'oggetto. <i>Vergeten</i> è inseparabile."
+  },
+  {
+   "t": "tr",
+   "q": "Andiamo a Gand in bici domani!",
+   "a": [
+    "Laten we morgen naar Gent fietsen",
+    "Laten we morgen met de fiets naar Gent gaan",
+    "Laten we morgen met de fiets naar Gent rijden",
+    "Laat ons morgen naar Gent fietsen",
+    "Laat ons morgen met de fiets naar Gent gaan",
+    "Laat ons morgen met de fiets naar Gent rijden"
+   ],
+   "e": "Proposta: <b>Laten we</b> (o il fiammingo <b>Laat ons</b>) + infinito in fondo: <i>… naar Gent <b>fietsen</b></i>."
+  },
+  {
+   "t": "order",
+   "q": "Chiamami stasera dopo cena!",
+   "a": "Bel me vanavond na het eten op",
+   "x": [
+    "belt",
+    "opbellen"
+   ],
+   "e": "<b>Bel</b> all'inizio, il pronome <i>me</i> subito dopo, poi il tempo, e la particella <b>op</b> in fondo.",
+   "tt": "Chiamami stasera dopo cena!"
+  },
+  {
+   "t": "order",
+   "q": "Signore, non chiuda la porta, per favore.",
+   "a": "Doet u de deur niet dicht alstublieft",
+   "alt": [
+    "Doet u alstublieft de deur niet dicht"
+   ],
+   "x": [
+    "doe",
+    "dichtdoen"
+   ],
+   "e": "Cortesia: <b>Doet u</b> (radice + t + u); <b>niet</b> dopo l'oggetto e prima della particella <b>dicht</b>. Con u: <i>alstublieft</i>.",
+   "tt": "Signore, non chiuda la porta, per favore."
+  }
+ ],
+ "en": {
+  "it": "The imperative",
+  "note": "\n<h3>The idea</h3>\n<p>The imperative is used for orders, advice, instructions and invitations: \"come!\", \"listen!\", \"come in\". Good news for English speakers: Dutch works much like English. There is <b>one form</b> for \"you\", whether you're talking to one person or several: the <b>stem</b> of the verb, which is the <i>ik</i> form.</p>\n<h3>How to form it</h3>\n<p>Take the present-tense <b>ik</b> form and put it at the start of the sentence, with no subject:</p>\n<table><tr><th>infinitive</th><th>ik</th><th>imperative</th></tr>\n<tr><td>komen</td><td>ik kom</td><td><b>Kom</b> hier!</td></tr>\n<tr><td>luisteren</td><td>ik luister</td><td><b>Luister</b> naar mij!</td></tr>\n<tr><td>nemen</td><td>ik neem</td><td><b>Neem</b> je jas mee!</td></tr>\n<tr><td>gaan</td><td>ik ga</td><td><b>Ga</b> naar huis!</td></tr>\n<tr><td>doen</td><td>ik doe</td><td><b>Doe</b> de deur dicht!</td></tr></table>\n<p>The same form works for one person or many: <i>Kom, kinderen!</i> No -t, even though you're talking to \"you\": <s>Komt hier!</s>.</p>\n<p>The one important exception: <b>zijn</b> → <b>wees</b>. <i>Wees voorzichtig!</i> (be careful!), <i>Wees stil!</i> (be quiet!).</p>\n<h3>Separable verbs</h3>\n<p>The particle goes to the end, just as in the present (unit 17): <i><b>Sta</b> op!</i> (get up!), <i><b>Bel</b> me morgen <b>op</b>!</i>, <i><b>Doe</b> het raam <b>open</b>!</i></p>\n<h3>The polite form: Komt u binnen</h3>\n<p>With people you address as <i>u</i> you can use the stem + <b>-t</b>, followed by <b>u</b>: <i>Komt u binnen</i> (please come in), <i>Neemt u plaats</i> (please take a seat), <i>Gaat u zitten</i>. English has no special form for this; it's polite but a bit formal. In everyday life people also often use a question with a modal: <i>Kunt u dat herhalen?</i> or <i>Wilt u even wachten?</i></p>\n<h3>Softening the order</h3>\n<p>A bare imperative can sound abrupt. Dutch speakers often add small words:</p>\n<ul>\n<li><b>even</b> = for a moment: <i>Wacht even!</i> (wait a sec).</li>\n<li><b>maar</b> = go ahead, feel free (encouragement): <i>Kom maar binnen!</i> (come on in).</li>\n<li><b>alsjeblieft / alstublieft</b> = please (with je / with u).</li>\n</ul>\n<h3>The negative form</h3>\n<p>To say \"don't\" you put <b>niet</b> after the verb and after any object: <i>Rook hier <b>niet</b>!</i> (don't smoke here), <i>Vergeet je sleutel <b>niet</b>!</i>. There is no helper verb like English \"don't\". On signs you often see the infinitive: <i>Niet roken</i> (no smoking).</p>\n<h3>Laten we: \"let's…\"</h3>\n<p>To suggest something to the group, just like English \"let's go!\", \"let's eat!\", you use <b>laten we</b> + the infinitive at the end: <i>Laten we gaan!</i> (let's go!), <i>Laten we morgen naar Brugge gaan</i>. It's close to <i>Zullen we…?</i> (unit 9), but it's a suggestion, not a question.</p>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Translating \"don't\" word for word: <s>Doe niet roken!</s> or <s>Niet rook hier!</s> → <b>Rook hier niet!</b></li>\n<li>Adding a -t when talking to a friend: <s>Komt hier!</s> → <b>Kom hier!</b></li>\n<li>Using <i>ben</i> for \"be\": <s>Ben voorzichtig!</s> → <b>Wees voorzichtig!</b></li>\n<li>Forgetting the particle: <s>Sta om zeven uur!</s> → <b>Sta om zeven uur op!</b></li>\n</ul>",
+  "vlaams": "In Flanders you constantly hear <b>allez</b> (from French) as encouragement: \"Allez, kom!\" (come on!). Instead of <i>laten we</i>, Belgians often say <b>laat ons</b>: \"Laat ons gaan!\" (let's go!). Both forms are correct.",
+  "vocab": [
+   [
+    "luisteren",
+    "to listen"
+   ],
+   [
+    "kijken",
+    "to look, to watch"
+   ],
+   [
+    "nemen",
+    "to take"
+   ],
+   [
+    "zeggen",
+    "to say"
+   ],
+   [
+    "opendoen",
+    "to open"
+   ],
+   [
+    "dichtdoen",
+    "to close"
+   ],
+   [
+    "binnenkomen",
+    "to come in"
+   ],
+   [
+    "laten",
+    "to let, to have (laten we = let's)"
+   ],
+   [
+    "de deur",
+    "the door"
+   ],
+   [
+    "het raam",
+    "the window"
+   ],
+   [
+    "de plaats",
+    "the seat, the place"
+   ],
+   [
+    "stil",
+    "quiet, silent"
+   ],
+   [
+    "rustig",
+    "calm, quiet"
+   ],
+   [
+    "voorzichtig",
+    "careful"
+   ]
+  ],
+  "core": [
+   [
+    "wees",
+    "be (imperative of zijn)"
+   ],
+   [
+    "laten we",
+    "let's… (suggestion)"
+   ],
+   [
+    "even",
+    "for a moment, a sec"
+   ],
+   [
+    "maar",
+    "go ahead (encouragement)"
+   ],
+   [
+    "alsjeblieft / alstublieft",
+    "please (with je / with u)"
+   ]
+  ],
+  "items": [
+   {
+    "t": "fill",
+    "q": "___ naar mij!",
+    "h": "luisteren",
+    "a": [
+     "luister"
+    ],
+    "e": "Stem of luisteren: <b>Luister</b>!"
+   },
+   {
+    "t": "mc",
+    "q": "Ma'am, ___ u plaats.",
+    "o": [
+     "neemt",
+     "neem",
+     "nemen"
+    ],
+    "a": 0,
+    "e": "Polite: stem + t + <b>u</b>: <b>Neemt u</b> plaats."
+   },
+   {
+    "t": "order",
+    "q": "Take your jacket with you!",
+    "a": "Neem je jas mee",
+    "x": [
+     "neemt",
+     "meeneem"
+    ],
+    "e": "<b>meenemen</b>: Neem first, <b>mee</b> at the end."
+   },
+   {
+    "t": "tr",
+    "q": "Come in, please.",
+    "a": [
+     "Komt u binnen alstublieft",
+     "Komt u alstublieft binnen",
+     "Kom binnen alstublieft",
+     "Kom alstublieft binnen"
+    ],
+    "e": "Polite: <b>Komt u binnen</b>, alstublieft."
+   },
+   {
+    "t": "mc",
+    "q": "Don't forget your key!",
+    "o": [
+     "Vergeet je sleutel niet!",
+     "Niet vergeet je sleutel!",
+     "Je sleutel vergeet niet!",
+     "Vergeten je sleutel niet!"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Verb first, <b>niet</b> after the object."
+   },
+   {
+    "t": "fill",
+    "q": "___ we morgen naar Brugge gaan!",
+    "h": "suggestion: let's…",
+    "a": [
+     "laten"
+    ],
+    "e": "<b>Laten we</b> + infinitive at the end."
+   },
+   {
+    "t": "tr",
+    "q": "Kids, be quiet!",
+    "a": [
+     "Kinderen wees rustig",
+     "Wees rustig kinderen",
+     "Kinderen wees stil",
+     "Wees stil kinderen"
+    ],
+    "e": "The imperative is the same for several people: <b>Wees</b> rustig!"
+   },
+   {
+    "t": "mc",
+    "q": "Bel me morgen ___!",
+    "o": [
+     "op",
+     "aan",
+     "uit",
+     "mee"
+    ],
+    "a": 0,
+    "e": "<b>opbellen</b>: Bel me morgen <b>op</b>!"
+   },
+   {
+    "t": "order",
+    "q": "Don't open the window!",
+    "a": "Doe het raam niet open",
+    "x": [
+     "opendoen",
+     "doet"
+    ],
+    "e": "<b>opendoen</b>: Doe … <b>niet open</b>. Niet goes before the particle."
+   },
+   {
+    "t": "mc",
+    "q": "To your friend Tom: ___ even, Tom!",
+    "o": [
+     "Wacht",
+     "Wacht u",
+     "Wachten",
+     "Wachtt"
+    ],
+    "a": 0,
+    "e": "With a friend the stem is enough: <b>Wacht</b> even!"
+   },
+   {
+    "t": "tr",
+    "q": "Speak slowly, please.",
+    "a": [
+     "Spreek langzaam alsjeblieft",
+     "Spreek alsjeblieft langzaam",
+     "Spreekt u langzaam alstublieft",
+     "Spreekt u alstublieft langzaam",
+     "Spreek langzaam alstublieft",
+     "Praat langzaam alsjeblieft",
+     "Praat alsjeblieft langzaam"
+    ],
+    "e": "<b>Spreek</b> langzaam, alsjeblieft."
+   },
+   {
+    "t": "fill",
+    "q": "Rook hier ___!",
+    "h": "not",
+    "a": [
+     "niet"
+    ],
+    "e": "Negative imperative: verb + … + <b>niet</b>."
+   }
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "komen → imperative (to a friend)",
+    "o": [
+     "Kom!",
+     "Komt!",
+     "Komen!",
+     "Kommen!"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Imperative = stem: <b>Kom!</b>",
+    "g": {
+     "Kom!": "Come!",
+     "Komt!": "the -t only goes in the polite form: Komt u!",
+     "Komen!": "that's the infinitive",
+     "Kommen!": "doesn't exist"
+    },
+    "tt": "Come!"
+   },
+   {
+    "t": "mc",
+    "q": "nemen → imperative",
+    "o": [
+     "Neem",
+     "Nemen",
+     "Neemt",
+     "Nem"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Stem with a long double vowel: <b>Neem</b>.",
+    "g": {
+     "Neem": "take",
+     "Nemen": "that's the infinitive",
+     "Neemt": "he takes / polite form with u",
+     "Nem": "doesn't exist: the e is long"
+    },
+    "tt": "Take"
+   },
+   {
+    "t": "mc",
+    "q": "zijn → imperative",
+    "o": [
+     "Wees",
+     "Ben",
+     "Bent",
+     "Zijn"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Irregular: <b>Wees</b>!",
+    "g": {
+     "Wees": "be",
+     "Ben": "I am: not the imperative",
+     "Bent": "you are",
+     "Zijn": "to be (infinitive)"
+    },
+    "tt": "Be"
+   },
+   {
+    "t": "mc",
+    "q": "Polite form: ___ u binnen.",
+    "o": [
+     "Komt",
+     "Kom",
+     "Komen",
+     "Koom"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Polite: stem + t + u: <b>Komt u</b> binnen.",
+    "g": {
+     "Komt": "please come in (polite, with u)",
+     "Kom": "the je/jij form: with u you need the -t",
+     "Komen": "that's the infinitive",
+     "Koom": "doesn't exist"
+    },
+    "tt": "Please come in."
+   },
+   {
+    "t": "mc",
+    "q": "Don't smoke here!",
+    "o": [
+     "Rook hier niet!",
+     "Niet rook hier!",
+     "Rookt hier niet!",
+     "Hier rook niet!"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Verb first, <b>niet</b> after it: Rook hier niet!",
+    "g": {
+     "Rook hier niet!": "Don't smoke here! (correct)",
+     "Niet rook hier!": "niet doesn't go before the verb",
+     "Rookt hier niet!": "no -t when talking to a friend",
+     "Hier rook niet!": "the verb must come first"
+    },
+    "tt": "Don't smoke here!"
+   },
+   {
+    "t": "mc",
+    "q": "Laten we naar huis ___.",
+    "o": [
+     "gaan",
+     "ga",
+     "gaat"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "After <b>laten we</b> the infinitive goes at the end: <b>gaan</b>.",
+    "g": {
+     "gaan": "to go (infinitive)",
+     "ga": "go! (imperative)",
+     "gaat": "goes (he/she)"
+    },
+    "tt": "Let's go home."
+   },
+   {
+    "t": "mc",
+    "q": "opstaan → imperative",
+    "o": [
+     "Sta op!",
+     "Opsta!",
+     "Staat op!",
+     "Op sta!"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Verb first, particle at the end: <b>Sta op!</b>",
+    "g": {
+     "Sta op!": "Get up!",
+     "Opsta!": "the particle has to split off",
+     "Staat op!": "no -t when talking to a friend",
+     "Op sta!": "wrong order"
+    },
+    "tt": "Get up!"
+   },
+   {
+    "t": "fill",
+    "q": "___ even!",
+    "h": "wachten",
+    "a": [
+     "wacht"
+    ],
+    "e": "Stem of wachten: <b>Wacht</b> even!",
+    "tt": "Wait a sec!"
+   },
+   {
+    "t": "fill",
+    "q": "___ voorzichtig!",
+    "h": "zijn",
+    "a": [
+     "wees"
+    ],
+    "e": "Imperative of zijn: <b>Wees</b>.",
+    "tt": "Be careful!"
+   },
+   {
+    "t": "order",
+    "q": "Close the door, please.",
+    "a": "Doe de deur dicht alsjeblieft",
+    "alt": [
+     "Doe alsjeblieft de deur dicht"
+    ],
+    "x": [
+     "doet",
+     "dichtdoen"
+    ],
+    "e": "<b>dichtdoen</b>: Doe first, <b>dicht</b> at the end."
+   }
+  ],
+  "gloss": {
+   "0": {
+    "t": "Listen to me!"
+   },
+   "1": {
+    "g": {
+     "neemt": "please take (polite, with u)",
+     "neem": "take (je/jij form)",
+     "nemen": "to take (infinitive)"
+    },
+    "t": "Ma'am, please take a seat."
+   },
+   "2": {
+    "t": "Take your jacket with you!"
+   },
+   "3": {
+    "t": "Please come in."
+   },
+   "4": {
+    "g": {
+     "Vergeet je sleutel niet!": "Don't forget your key! (correct)",
+     "Niet vergeet je sleutel!": "niet doesn't go at the start",
+     "Je sleutel vergeet niet!": "the verb must come first",
+     "Vergeten je sleutel niet!": "vergeten is the infinitive"
+    },
+    "t": "Don't forget your key!"
+   },
+   "5": {
+    "t": "Let's go to Bruges tomorrow!"
+   },
+   "6": {
+    "t": "Kids, be quiet!"
+   },
+   "7": {
+    "g": {
+     "op": "opbellen = to call (on the phone)",
+     "aan": "aanbellen = to ring the doorbell: not with 'me'",
+     "uit": "uitbellen doesn't exist",
+     "mee": "meebellen makes no sense here"
+    },
+    "t": "Call me tomorrow!"
+   },
+   "8": {
+    "t": "Don't open the window!"
+   },
+   "9": {
+    "g": {
+     "Wacht": "wait (to a friend)",
+     "Wacht u": "please wait (polite): not with a friend",
+     "Wachten": "to wait (infinitive)",
+     "Wachtt": "doesn't exist"
+    },
+    "t": "Wait a sec, Tom!"
+   },
+   "10": {
+    "t": "Speak slowly, please."
+   },
+   "11": {
+    "t": "Don't smoke here!"
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "Don't close the window, it's hot! Choose the correct sentence:",
+    "o": [
+     "Doe het raam niet dicht, het is warm!",
+     "Doe niet het raam dicht, het is warm!",
+     "Doe het raam dicht niet, het is warm!",
+     "Niet doe het raam dicht, het is warm!"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Verb first, then the object (<i>het raam</i>), then <b>niet</b>, and the particle <b>dicht</b> at the end: <i>niet</i> goes before the particle.",
+    "g": {
+     "Doe het raam niet dicht, het is warm!": "Don't close the window, it's hot! (correct)",
+     "Doe niet het raam dicht, het is warm!": "niet goes after the definite object het raam",
+     "Doe het raam dicht niet, het is warm!": "niet goes before the particle dicht",
+     "Niet doe het raam dicht, het is warm!": "niet can't go first: the verb starts the sentence"
+    },
+    "tt": "Don't close the window, it's hot!"
+   },
+   {
+    "t": "mc",
+    "q": "A shop assistant in Ghent to an elderly gentleman: \"___ u even, alstublieft.\"",
+    "o": [
+     "Wacht",
+     "Wachtt",
+     "Wachten",
+     "Wachtet"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Polite form = stem + t + u. But the stem <i>wacht</i> already ends in -t: it never doubles, so <b>Wacht u</b> even.",
+    "g": {
+     "Wacht": "please wait (polite, with u): correct",
+     "Wachtt": "the -t never doubles",
+     "Wachten": "infinitive: with u you need stem + t",
+     "Wachtet": "doesn't exist"
+    },
+    "tt": "Please wait a moment."
+   },
+   {
+    "t": "fill",
+    "q": "___ niet bang, de hond doet niets!",
+    "h": "zijn",
+    "a": [
+     "wees"
+    ],
+    "e": "Irregular imperative of zijn: <b>Wees</b>. Also in the negative: <i>Wees niet bang</i> (don't be afraid), never <s>Ben niet bang</s>.",
+    "tt": "Don't be afraid, the dog won't do anything!"
+   },
+   {
+    "t": "fill",
+    "q": "Mevrouw, ___ u morgen even terug, alstublieft.",
+    "h": "terugkomen",
+    "a": [
+     "komt"
+    ],
+    "e": "Polite: stem + t + u, <b>Komt u</b>; the particle <b>terug</b> still goes at the end.",
+    "tt": "Ma'am, please come back tomorrow."
+   },
+   {
+    "t": "tr",
+    "q": "Don't forget your umbrella, it's raining!",
+    "a": [
+     "Vergeet je paraplu niet, het regent",
+     "Vergeet de paraplu niet, het regent",
+     "Vergeet jouw paraplu niet, het regent"
+    ],
+    "e": "Verb first (<b>Vergeet</b>, no -t), <b>niet</b> after the object. No word for \"don't\": <i>vergeten</i> is inseparable."
+   },
+   {
+    "t": "tr",
+    "q": "Let's cycle to Ghent tomorrow!",
+    "a": [
+     "Laten we morgen naar Gent fietsen",
+     "Laten we morgen met de fiets naar Gent gaan",
+     "Laten we morgen met de fiets naar Gent rijden",
+     "Laat ons morgen naar Gent fietsen",
+     "Laat ons morgen met de fiets naar Gent gaan",
+     "Laat ons morgen met de fiets naar Gent rijden"
+    ],
+    "e": "Suggestion: <b>Laten we</b> (or Flemish <b>Laat ons</b>) + infinitive at the end: <i>… naar Gent <b>fietsen</b></i>."
+   },
+   {
+    "t": "order",
+    "q": "Call me tonight after dinner!",
+    "a": "Bel me vanavond na het eten op",
+    "x": [
+     "belt",
+     "opbellen"
+    ],
+    "e": "<b>Bel</b> first, the pronoun <i>me</i> right after it, then the time, and the particle <b>op</b> at the end.",
+    "tt": "Call me tonight after dinner!"
+   },
+   {
+    "t": "order",
+    "q": "Sir, please don't close the door. (formal)",
+    "a": "Doet u de deur niet dicht alstublieft",
+    "alt": [
+     "Doet u alstublieft de deur niet dicht"
+    ],
+    "x": [
+     "doe",
+     "dichtdoen"
+    ],
+    "e": "Polite: <b>Doet u</b> (stem + t + u); <b>niet</b> after the object and before the particle <b>dicht</b>. With u: <i>alstublieft</i>.",
+    "tt": "Sir, please don't close the door."
+   }
+  ]
+ }
+}

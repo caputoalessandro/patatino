@@ -1,0 +1,455 @@
+{
+ "id": "u23",
+ "n": 23,
+ "module": 5,
+ "nl": "Het woordje 'er'",
+ "it": "La parola er",
+ "note": "\n<h3>L'idea</h3>\n<p><b>er</b> è una parolina piccolissima che compare dappertutto. Per un italiano è meno strana di quanto sembra, perché fa più o meno il lavoro delle nostre particelle <b>ci</b> e <b>ne</b>: c'è, ci abito, ne ho due, ci penso. Ha quattro usi principali.</p>\n<h3>1. er = ci (luogo)</h3>\n<p>Sostituisce un luogo già nominato, come il nostro \"ci\": <i>Woon je in Gent? — Ja, ik woon er graag.</i> (sì, ci abito volentieri). <b>er</b> non è mai accentato. Se vuoi dare enfasi, o metterlo al primo posto, usi <b>daar</b> (là): <i>Daar woon ik graag.</i></p>\n<h3>2. er + numero = ne</h3>\n<p>Quando rispondi con un numero o una quantità senza ripetere il nome, serve <b>er</b>, proprio come il nostro \"ne\": <i>Hoeveel broers heb je? — Ik heb er twee.</i> (ne ho due). Funziona anche con <i>veel</i> e <i>geen</i>: <i>Ik heb er veel</i> (ne ho molti), <i>Ik heb er geen</i> (non ne ho). Senza er la frase è incompleta.</p>\n<h3>3. er is / er zijn = c'è / ci sono</h3>\n<p>Per dire che qualcosa esiste o si trova da qualche parte: <i>Er is een probleem</i> (c'è un problema), <i>Er zijn veel mensen in de winkel</i> (ci sono molte persone nel negozio). Il verbo si accorda con il nome che segue. Nella domanda: <i>Is er een bank in deze straat?</i> Si usa con un nome indeterminato (een, veel, twee...). Con un nome determinato non serve: <i>De bank is daar.</i></p>\n<h3>4. er + preposizione</h3>\n<p>Per le <b>cose</b> l'olandese non dice \"preposizione + het/hem/ze\", ma unisce <b>er</b> e la preposizione in una sola parola:</p>\n<table><tr><th>con una cosa</th><th>diventa</th><th>italiano</th></tr>\n<tr><td>op de trein</td><td>erop</td><td>Ik wacht erop. (lo aspetto)</td></tr>\n<tr><td>over de film</td><td>erover</td><td>We praten erover. (ne parliamo)</td></tr>\n<tr><td>aan het feest</td><td>eraan</td><td>Ik denk eraan. (ci penso)</td></tr>\n<tr><td>met de pen</td><td>ermee</td><td>Ik schrijf ermee. (ci scrivo)</td></tr></table>\n<p>Attenzione: <b>met</b> diventa <b>mee</b>. Con l'enfasi usi <b>daar-</b> (<i>daarover</i>), nelle domande <b>waar-</b>: <i>Waarmee betaal je?</i> (con che cosa paghi?), <i>Waarop wacht je?</i> Spesso er (o waar) e la preposizione si separano: <i>Ik heb er geen zin in</i> (non ne ho voglia), <i>Waar wacht je op?</i></p>\n<p>Per le <b>persone</b> invece resta preposizione + pronome: <i>Ik denk aan haar</i> (penso a lei), mai <s>eraan</s>.</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Dimenticare il \"ne\": <s>Ik heb twee</s> → <b>Ik heb er twee</b>.</li>\n<li>Tradurre \"c'è\" con het: <s>Het is een probleem</s> → <b>Er is een probleem</b>.</li>\n<li>Usare il pronome per una cosa: <s>Ik schrijf met het</s> → <b>Ik schrijf ermee</b>.</li>\n<li>Scrivere <s>ermet</s> → <b>ermee</b>.</li>\n<li>Usare er per una persona: <s>Ik denk eraan</s> (a mia madre) → <b>Ik denk aan haar</b>.</li>\n</ul>",
+ "vlaams": "In Belgio \"avere voglia\" si dice spesso con <b>goesting</b> invece di zin: \"Ik heb er geen goesting in\" (non ne ho voglia), \"Daar heb ik goesting in!\" (ne ho proprio voglia!). Nello scritto standard usa <b>zin</b>.",
+ "vocab": [
+  [
+   "het probleem",
+   "il problema"
+  ],
+  [
+   "de mens",
+   "la persona, l'essere umano"
+  ],
+  [
+   "de mensen",
+   "la gente, le persone"
+  ],
+  [
+   "de pen",
+   "la penna"
+  ],
+  [
+   "schrijven",
+   "scrivere"
+  ],
+  [
+   "praten over",
+   "parlare di"
+  ],
+  [
+   "denken aan",
+   "pensare a"
+  ],
+  [
+   "zin hebben in",
+   "aver voglia di"
+  ],
+  [
+   "de winkel",
+   "il negozio"
+  ],
+  [
+   "de straat",
+   "la strada"
+  ],
+  [
+   "betalen",
+   "pagare"
+  ],
+  [
+   "de kaart",
+   "la carta (bancaria)"
+  ],
+  [
+   "het glas",
+   "il bicchiere"
+  ],
+  [
+   "de film",
+   "il film"
+  ]
+ ],
+ "core": [
+  [
+   "er",
+   "ci, ne"
+  ],
+  [
+   "er is / er zijn",
+   "c'è / ci sono"
+  ],
+  [
+   "daar",
+   "là (accentato)"
+  ],
+  [
+   "erop, eraan, erover",
+   "su questo, a questo, di questo"
+  ],
+  [
+   "ermee",
+   "con questo, con quello"
+  ],
+  [
+   "waarmee, waarop",
+   "con che cosa, su che cosa"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "___ is een probleem.",
+   "h": "c'è",
+   "o": [
+    "Er",
+    "Het",
+    "Hij",
+    "Dat"
+   ],
+   "a": 0,
+   "e": "c'è = <b>er is</b>.",
+   "g": {
+    "Er": "c'è (er is)",
+    "Het": "è (het is): non vuol dire c'è",
+    "Hij": "lui",
+    "Dat": "quello: 'quello è un problema', non 'c'è'"
+   },
+   "tt": "C'è un problema."
+  },
+  {
+   "t": "mc",
+   "q": "Er ___ veel mensen in de winkel.",
+   "o": [
+    "zijn",
+    "is",
+    "heeft",
+    "hebben"
+   ],
+   "a": 0,
+   "e": "Il verbo si accorda con <i>veel mensen</i>: <b>er zijn</b>.",
+   "g": {
+    "zijn": "ci sono (plurale)",
+    "is": "c'è: qui il nome è plurale",
+    "heeft": "ha",
+    "hebben": "hanno"
+   },
+   "tt": "Ci sono molte persone nel negozio."
+  },
+  {
+   "t": "mc",
+   "q": "Hoeveel broers heb je? — Ik heb ___ twee.",
+   "o": [
+    "er",
+    "het",
+    "ze",
+    "daar"
+   ],
+   "a": 0,
+   "e": "numero senza nome → <b>er</b> (ne).",
+   "g": {
+    "er": "ne",
+    "het": "lo: non si usa con un numero",
+    "ze": "li: non si usa con un numero",
+    "daar": "là: qui serve er"
+   },
+   "tt": "Quanti fratelli hai? — Ne ho due."
+  },
+  {
+   "t": "mc",
+   "q": "Ik wacht op de trein. → Ik wacht ___.",
+   "o": [
+    "erop",
+    "op het",
+    "op hem",
+    "eraan"
+   ],
+   "a": 0,
+   "e": "Cosa + preposizione → <b>er + op</b>.",
+   "g": {
+    "erop": "lo (su di esso): er + op",
+    "op het": "per una cosa non si dice op het",
+    "op hem": "op hem è per una persona; per una cosa: erop",
+    "eraan": "er + aan: preposizione sbagliata"
+   },
+   "tt": "Aspetto il treno. → Lo aspetto."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "er + met →",
+   "o": [
+    "ermee",
+    "ermet",
+    "metter",
+    "erbij"
+   ],
+   "a": 0,
+   "e": "<b>met</b> diventa <b>mee</b>: ermee.",
+   "g": {
+    "ermee": "con questo",
+    "ermet": "forma che non esiste: met diventa mee",
+    "metter": "forma che non esiste",
+    "erbij": "er + bij (presso): preposizione diversa"
+   },
+   "tt": "con questo"
+  },
+  {
+   "t": "mc",
+   "q": "Ik denk aan mijn moeder. → Ik denk aan ___.",
+   "o": [
+    "haar",
+    "eraan",
+    "er",
+    "het"
+   ],
+   "a": 0,
+   "e": "Per le <b>persone</b>: preposizione + pronome, <b>aan haar</b>.",
+   "g": {
+    "haar": "lei (dopo preposizione)",
+    "eraan": "solo per le cose, non per le persone",
+    "er": "qui manca il pronome per la persona",
+    "het": "esso (cosa)"
+   },
+   "tt": "Penso a mia madre. → Penso a lei."
+  },
+  {
+   "t": "mc",
+   "q": "___ schrijf je? — Met een pen.",
+   "o": [
+    "Waarmee",
+    "Waarmet",
+    "Wat met",
+    "Met wie"
+   ],
+   "a": 0,
+   "e": "Domanda su una cosa con met: <b>waarmee</b>.",
+   "g": {
+    "Waarmee": "con che cosa",
+    "Waarmet": "forma che non esiste: met diventa mee",
+    "Wat met": "ordine sbagliato",
+    "Met wie": "con chi (persona)"
+   },
+   "tt": "Con che cosa scrivi? — Con una penna."
+  },
+  {
+   "t": "fill",
+   "q": "Woon je in Brugge? — Ja, ik woon ___ graag.",
+   "h": "ci",
+   "a": [
+    "er",
+    "daar"
+   ],
+   "e": "Luogo già nominato → <b>er</b> (con enfasi: daar).",
+   "tt": "Abiti a Bruges? — Sì, ci abito volentieri."
+  },
+  {
+   "t": "fill",
+   "q": "Heb je appels? — Ja, ik heb ___ veel.",
+   "h": "ne",
+   "a": [
+    "er"
+   ],
+   "e": "Quantità senza nome → <b>er</b>.",
+   "tt": "Hai delle mele? — Sì, ne ho molte."
+  },
+  {
+   "t": "order",
+   "q": "Non ne ho voglia.",
+   "a": "Ik heb er geen zin in",
+   "x": [
+    "het",
+    "eraan"
+   ],
+   "e": "<b>zin hebben in</b>: er e in si separano, in va alla fine."
+  }
+ ],
+ "items": [
+  {
+   "t": "mc",
+   "q": "___ zijn veel mensen op straat.",
+   "h": "ci sono",
+   "o": [
+    "Er",
+    "Het",
+    "Ze",
+    "Hun"
+   ],
+   "a": 0,
+   "e": "ci sono = <b>er zijn</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Is ___ een winkel in deze straat?",
+   "h": "c'è",
+   "a": [
+    "er"
+   ],
+   "e": "Domanda: <b>Is er</b> ...?"
+  },
+  {
+   "t": "mc",
+   "q": "Hoeveel glazen wil je? — Ik wil ___ drie.",
+   "o": [
+    "er",
+    "ze",
+    "het",
+    "daar"
+   ],
+   "a": 0,
+   "e": "Numero senza nome → <b>er</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Betaal je met de kaart? — Ja, ik betaal ___.",
+   "h": "con quella",
+   "a": [
+    "ermee",
+    "daarmee"
+   ],
+   "e": "met + cosa → <b>ermee</b>."
+  },
+  {
+   "t": "order",
+   "q": "Ci penso spesso.",
+   "a": "Ik denk er vaak aan",
+   "x": [
+    "het",
+    "mee"
+   ],
+   "e": "<b>er</b> dopo il verbo, <b>aan</b> alla fine."
+  },
+  {
+   "t": "tr",
+   "q": "C'è un problema.",
+   "a": [
+    "Er is een probleem"
+   ],
+   "e": "<b>Er is</b> een probleem."
+  },
+  {
+   "t": "mc",
+   "q": "Praten jullie over de film? — Ja, we praten ___.",
+   "o": [
+    "erover",
+    "over het",
+    "over hem",
+    "ervan"
+   ],
+   "a": 0,
+   "e": "over + cosa → <b>erover</b>."
+  },
+  {
+   "t": "fill",
+   "q": "___ wacht je? — Op de trein.",
+   "h": "che cosa (con op)",
+   "a": [
+    "waarop"
+   ],
+   "e": "Domanda su una cosa con op: <b>waarop</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Ne ho due.",
+   "a": [
+    "Ik heb er twee"
+   ],
+   "e": "Il \"ne\" è <b>er</b>: Ik heb er twee."
+  },
+  {
+   "t": "mc",
+   "q": "Ken je Gent? — Ja, ___ woont mijn zus.",
+   "o": [
+    "daar",
+    "er",
+    "waar",
+    "het"
+   ],
+   "a": 0,
+   "e": "Al primo posto e con enfasi: <b>daar</b>."
+  },
+  {
+   "t": "order",
+   "q": "Ci sono due bicchieri sul tavolo.",
+   "a": "Er zijn twee glazen op de tafel",
+   "alt": [
+    "Op de tafel zijn er twee glazen",
+    "Er zijn op de tafel twee glazen"
+   ],
+   "x": [
+    "is",
+    "het"
+   ],
+   "e": "<b>Er zijn</b> + plurale."
+  },
+  {
+   "t": "tr",
+   "q": "Con che cosa paghi?",
+   "a": [
+    "Waarmee betaal je",
+    "Waarmee betaal jij",
+    "Waarmee betaalt u",
+    "Waar betaal je mee",
+    "Waar betaal jij mee",
+    "Waar betaalt u mee"
+   ],
+   "e": "<b>Waarmee</b> betaal je? (anche: Waar betaal je mee?)"
+  }
+ ],
+ "gloss": {
+  "0": {
+   "g": {
+    "Er": "ci (er zijn = ci sono)",
+    "Het": "esso: non vuol dire 'ci sono'",
+    "Ze": "loro: frase sbagliata",
+    "Hun": "loro (possessivo / a loro)"
+   },
+   "t": "Ci sono molte persone per strada."
+  },
+  "1": {
+   "t": "C'è un negozio in questa strada?"
+  },
+  "2": {
+   "g": {
+    "er": "ne",
+    "ze": "li: non si usa con un numero",
+    "het": "lo: non si usa con un numero",
+    "daar": "là: qui serve er"
+   },
+   "t": "Quanti bicchieri vuoi? — Ne voglio tre."
+  },
+  "3": {
+   "t": "Paghi con la carta? — Sì, pago con quella."
+  },
+  "4": {
+   "t": "Ci penso spesso."
+  },
+  "5": {
+   "t": "C'è un problema."
+  },
+  "6": {
+   "g": {
+    "erover": "ne (di esso): er + over",
+    "over het": "per una cosa non si dice over het",
+    "over hem": "over hem è per una persona",
+    "ervan": "er + van: preposizione sbagliata"
+   },
+   "t": "Parlate del film? — Sì, ne parliamo."
+  },
+  "7": {
+   "t": "Che cosa aspetti? — Il treno."
+  },
+  "8": {
+   "t": "Ne ho due."
+  },
+  "9": {
+   "g": {
+    "daar": "là (accentato, al primo posto)",
+    "er": "ci: non sta al primo posto con questo senso",
+    "waar": "dove (domanda)",
+    "het": "esso"
+   },
+   "t": "Conosci Gand? — Sì, lì abita mia sorella."
+  },
+  "10": {
+   "t": "Ci sono due bicchieri sul tavolo."
+  },
+  "11": {
+   "t": "Con che cosa paghi?"
+  }
+ }
+}

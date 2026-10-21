@@ -1,0 +1,453 @@
+{
+ "id": "u27",
+ "n": 27,
+ "module": 6,
+ "nl": "Betrekkelijke bijzinnen",
+ "it": "Le frasi relative",
+ "note": "\n<h3>L'idea</h3>\n<p>Una frase relativa descrive un nome: \"l'uomo <u>che abita qui</u>\", \"il libro <u>che leggo</u>\". In italiano basta quasi sempre \"che\" (o \"cui\" dopo una preposizione). In olandese il pronome relativo cambia secondo il nome a cui si riferisce, e la relativa è una subordinata: <b>il verbo va in fondo</b>.</p>\n<p><i>de man die hier <b>woont</b></i> = l'uomo che abita qui.</p>\n<h3>Die o dat?</h3>\n<table><tr><th>il nome è…</th><th>pronome</th><th>esempio</th></tr>\n<tr><td>de-parola singolare</td><td><b>die</b></td><td><i>de film die ik zie</i></td></tr>\n<tr><td>plurale (sempre)</td><td><b>die</b></td><td><i>de boeken die ik lees</i></td></tr>\n<tr><td>het-parola singolare</td><td><b>dat</b></td><td><i>het boek dat ik lees</i></td></tr></table>\n<p>Conta l'articolo, non il significato: <i>het meisje <b>dat</b> daar zit</i> (het meisje è una het-parola, anche se è una persona). Al plurale torna <b>die</b>: <i>de meisjes <b>die</b> daar zitten</i>. Dopo <i>iemand</i> (qualcuno) si usa <b>die</b>.</p>\n<h3>Con una preposizione: persone</h3>\n<p>Quando in italiano dici \"con cui\", \"di cui\", \"a cui\" e si tratta di una persona, in olandese usi <b>preposizione + wie</b>:</p>\n<p><i>de collega <b>met wie</b> ik werk</i> = il collega con cui lavoro.</p>\n<h3>Con una preposizione: cose</h3>\n<p>Per le cose non si dice <s>met die</s> o <s>met dat</s>, ma si forma una sola parola con <b>waar + preposizione</b>. Attenzione: <i>met</i> diventa <i>mee</i>.</p>\n<table><tr><th>preposizione</th><th>forma relativa</th><th>esempio</th></tr>\n<tr><td>met (con)</td><td>waarmee</td><td><i>de pen waarmee ik schrijf</i></td></tr>\n<tr><td>over (di, su)</td><td>waarover</td><td><i>het verhaal waarover we praten</i></td></tr>\n<tr><td>op (su)</td><td>waarop</td><td><i>de stoel waarop hij zit</i></td></tr>\n<tr><td>in (in)</td><td>waarin</td><td><i>het huis waarin ik woon</i></td></tr></table>\n<p>Nel parlato le due parti si separano spesso: <i>de pen <b>waar</b> ik <b>mee</b> schrijf</i>. Anche questo è corretto.</p>\n<h3>Wat: dopo alles, iets, niets</h3>\n<p>Dopo <b>alles</b> (tutto), <b>iets</b> (qualcosa) e <b>niets</b> (niente) si usa di solito <b>wat</b>: <i>alles <b>wat</b> ik weet</i> (tutto ciò che so), <i>iets <b>wat</b> lekker is</i>. Dopo <i>iets</i> e <i>niets</i> si trova anche <i>dat</i>, ma <b>wat</b> è la scelta più sicura.</p>\n<h3>Il verbo in fondo</h3>\n<p>Come in tutte le subordinate, il verbo coniugato va alla fine della relativa. Se la relativa sta in mezzo alla frase, il verbo principale viene subito dopo: <i>De film die we vanavond <b>zien</b>, <b>is</b> interessant.</i></p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Usare sempre die: <s>het boek die ik lees</s> → <b>het boek dat ik lees</b>.</li>\n<li>Lasciare il verbo al centro: <s>de man die woont hier</s> → <b>de man die hier woont</b>.</li>\n<li>Tradurre \"con cui\" parola per parola per le cose: <s>de pen met die ik schrijf</s> → <b>de pen waarmee ik schrijf</b>.</li>\n<li>Usare wie senza preposizione: <s>de man wie ik ken</s> → <b>de man die ik ken</b>.</li>\n<li>Usare die dopo alles: <s>alles die ik weet</s> → <b>alles wat ik weet</b>.</li>\n</ul>",
+ "vlaams": "Nel parlato fiammingo si sente spesso un <b>dat</b> in più dopo il pronome relativo: \"de man <b>die dat</b> daar woont\", \"het café <b>waar dat</b> we zitten\". È tipico della lingua parlata; nello scritto usa solo <b>die</b> e <b>waar</b>.",
+ "vocab": [
+  [
+   "de buurman",
+   "il vicino di casa"
+  ],
+  [
+   "de collega",
+   "il collega"
+  ],
+  [
+   "de film",
+   "il film"
+  ],
+  [
+   "de pen",
+   "la penna"
+  ],
+  [
+   "schrijven",
+   "scrivere"
+  ],
+  [
+   "praten",
+   "parlare, chiacchierare"
+  ],
+  [
+   "praten over",
+   "parlare di"
+  ],
+  [
+   "kopen",
+   "comprare"
+  ],
+  [
+   "het verhaal",
+   "la storia, il racconto"
+  ],
+  [
+   "interessant",
+   "interessante"
+  ],
+  [
+   "de foto",
+   "la foto"
+  ],
+  [
+   "lekker",
+   "buono, gustoso"
+  ],
+  [
+   "iemand",
+   "qualcuno"
+  ],
+  [
+   "iets",
+   "qualcosa"
+  ],
+  [
+   "alles",
+   "tutto"
+  ]
+ ],
+ "core": [
+  [
+   "die",
+   "che (de-parole e plurali)"
+  ],
+  [
+   "dat",
+   "che (het-parole singolari)"
+  ],
+  [
+   "met wie",
+   "con cui (persone)"
+  ],
+  [
+   "waarmee",
+   "con cui (cose)"
+  ],
+  [
+   "waarover",
+   "di cui (cose)"
+  ],
+  [
+   "wat",
+   "che, ciò che (dopo alles, iets, niets)"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "de man ___ daar woont",
+   "o": [
+    "die",
+    "dat",
+    "wie",
+    "wat"
+   ],
+   "a": 0,
+   "e": "de-parola → <b>die</b>.",
+   "g": {
+    "die": "che (de-parole e plurali)",
+    "dat": "che, ma solo per het-parole",
+    "wie": "si usa solo dopo una preposizione",
+    "wat": "si usa dopo alles, iets, niets"
+   },
+   "tt": "l'uomo che abita là"
+  },
+  {
+   "t": "mc",
+   "q": "het huis ___ ik koop",
+   "o": [
+    "dat",
+    "die",
+    "wie",
+    "waar"
+   ],
+   "a": 0,
+   "e": "het-parola singolare → <b>dat</b>.",
+   "g": {
+    "dat": "che (het-parole singolari)",
+    "die": "che, ma per de-parole e plurali",
+    "wie": "si usa solo dopo una preposizione",
+    "waar": "dove: qui serve il complemento oggetto"
+   },
+   "tt": "la casa che compro"
+  },
+  {
+   "t": "mc",
+   "q": "de boeken ___ ik lees",
+   "o": [
+    "die",
+    "dat",
+    "wat",
+    "wie"
+   ],
+   "a": 0,
+   "e": "Plurale → sempre <b>die</b>, anche se <i>boek</i> è una het-parola.",
+   "g": {
+    "die": "che (plurali)",
+    "dat": "solo per het-parole al singolare",
+    "wat": "si usa dopo alles, iets, niets",
+    "wie": "si usa solo dopo una preposizione"
+   },
+   "tt": "i libri che leggo"
+  },
+  {
+   "t": "mc",
+   "q": "het meisje ___ Nederlands leert",
+   "o": [
+    "dat",
+    "die",
+    "wie",
+    "wat"
+   ],
+   "a": 0,
+   "e": "Conta l'articolo: <i>het</i> meisje → <b>dat</b>.",
+   "g": {
+    "dat": "che (het-parole singolari, anche persone)",
+    "die": "per de-parole: meisje è una het-parola",
+    "wie": "si usa solo dopo una preposizione",
+    "wat": "si usa dopo alles, iets, niets"
+   },
+   "tt": "la ragazza che impara l'olandese"
+  },
+  {
+   "t": "mc",
+   "q": "Dat is de collega ___ ik werk.",
+   "h": "con cui",
+   "o": [
+    "met wie",
+    "met die",
+    "met wat",
+    "met dat"
+   ],
+   "a": 0,
+   "e": "Persona + preposizione → <b>met wie</b>.",
+   "g": {
+    "met wie": "con cui (persone)",
+    "met die": "die non si usa dopo una preposizione",
+    "met wat": "wat non si usa per le persone",
+    "met dat": "dat non si usa dopo una preposizione"
+   },
+   "tt": "Quello è il collega con cui lavoro."
+  },
+  {
+   "t": "mc",
+   "q": "Dat is de pen ___ ik schrijf.",
+   "h": "con cui",
+   "o": [
+    "waarmee",
+    "met wie",
+    "met die",
+    "met wat"
+   ],
+   "a": 0,
+   "e": "Cosa + preposizione → <b>waar + mee</b>.",
+   "g": {
+    "waarmee": "con cui (cose)",
+    "met wie": "con cui, ma solo per persone",
+    "met die": "die non si usa dopo una preposizione",
+    "met wat": "per le cose si usa waar + preposizione"
+   },
+   "tt": "Questa è la penna con cui scrivo."
+  },
+  {
+   "t": "mc",
+   "q": "Alles ___ ik weet, staat in dit boek.",
+   "o": [
+    "wat",
+    "die",
+    "wie",
+    "waar"
+   ],
+   "a": 0,
+   "e": "Dopo <b>alles</b> → <b>wat</b>.",
+   "g": {
+    "wat": "ciò che (dopo alles)",
+    "die": "non si usa dopo alles",
+    "wie": "chi (persone)",
+    "waar": "dove"
+   },
+   "tt": "Tutto ciò che so sta in questo libro."
+  },
+  {
+   "t": "fill",
+   "q": "De film ___ we vanavond zien, is interessant.",
+   "h": "che",
+   "a": [
+    "die"
+   ],
+   "e": "de film → <b>die</b>.",
+   "tt": "Il film che vediamo stasera è interessante."
+  },
+  {
+   "t": "fill",
+   "q": "Het verhaal ___ ik lees, is mooi.",
+   "h": "che",
+   "a": [
+    "dat"
+   ],
+   "e": "het verhaal → <b>dat</b>.",
+   "tt": "La storia che leggo è bella."
+  },
+  {
+   "t": "order",
+   "q": "Conosco l'uomo che abita qui.",
+   "a": "Ik ken de man die hier woont",
+   "x": [
+    "dat",
+    "woon"
+   ],
+   "e": "de man → <b>die</b>, verbo in fondo: <i>hier <b>woont</b></i>."
+  }
+ ],
+ "items": [
+  {
+   "t": "mc",
+   "q": "Dat is de buurman ___ ik vaak praat.",
+   "h": "con cui",
+   "o": [
+    "met wie",
+    "die",
+    "met die",
+    "wat"
+   ],
+   "a": 0,
+   "e": "Persona + preposizione (praten met) → <b>met wie</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Het verhaal ___ we praten, is interessant.",
+   "h": "di cui",
+   "a": [
+    "waarover"
+   ],
+   "e": "praten <b>over</b> + cosa → <b>waarover</b>."
+  },
+  {
+   "t": "order",
+   "q": "Il film che vediamo stasera è interessante.",
+   "a": "De film die we vanavond zien is interessant",
+   "x": [
+    "dat",
+    "zie"
+   ],
+   "e": "de film → <b>die</b>; il verbo della relativa va in fondo, poi viene subito <i>is</i>."
+  },
+  {
+   "t": "tr",
+   "q": "Questo è il libro che leggo.",
+   "a": [
+    "Dit is het boek dat ik lees",
+    "Dat is het boek dat ik lees"
+   ],
+   "e": "het boek → <b>dat</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Ik ken iemand ___ in Gent woont.",
+   "o": [
+    "die",
+    "wat",
+    "wie",
+    "dat"
+   ],
+   "a": 0,
+   "e": "Dopo <b>iemand</b> → <b>die</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Hij koopt alles ___ lekker is.",
+   "h": "ciò che",
+   "a": [
+    "wat"
+   ],
+   "e": "Dopo <b>alles</b> → <b>wat</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Quale frase è corretta?",
+   "o": [
+    "Het meisje dat daar zit, is mijn zus.",
+    "Het meisje die daar zit, is mijn zus.",
+    "Het meisje dat zit daar, is mijn zus.",
+    "Het meisje wat daar zit, is mijn zus."
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "het meisje → <b>dat</b>, e il verbo della relativa va in fondo."
+  },
+  {
+   "t": "order",
+   "q": "Questa è la penna con cui scrivo.",
+   "a": "Dit is de pen waarmee ik schrijf",
+   "x": [
+    "wie",
+    "schrijft"
+   ],
+   "e": "Cosa + met → <b>waarmee</b>."
+  },
+  {
+   "t": "tr",
+   "q": "La collega con cui parlo abita a Gand.",
+   "a": [
+    "De collega met wie ik praat, woont in Gent",
+    "De collega met wie ik spreek, woont in Gent",
+    "De collega waarmee ik praat, woont in Gent"
+   ],
+   "e": "Persona + met → <b>met wie</b>. Dopo la relativa viene subito il verbo principale: <i>woont</i>."
+  },
+  {
+   "t": "fill",
+   "q": "Is er iets ___ je wilt kopen?",
+   "h": "che",
+   "a": [
+    "wat",
+    "dat"
+   ],
+   "e": "Dopo <b>iets</b> di solito <b>wat</b> (anche <i>dat</i> è possibile)."
+  },
+  {
+   "t": "mc",
+   "q": "de foto's ___ je maakt",
+   "o": [
+    "die",
+    "dat",
+    "wie",
+    "waar"
+   ],
+   "a": 0,
+   "e": "Plurale → <b>die</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Conosco la donna che lavora qui.",
+   "a": [
+    "Ik ken de vrouw die hier werkt"
+   ],
+   "e": "de vrouw → <b>die</b>, verbo in fondo."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "g": {
+    "met wie": "con cui (persone)",
+    "die": "che: ma praten vuole met",
+    "met die": "die non si usa dopo una preposizione",
+    "wat": "si usa dopo alles, iets, niets"
+   },
+   "t": "Quello è il vicino con cui chiacchiero spesso."
+  },
+  "1": {
+   "t": "La storia di cui parliamo è interessante."
+  },
+  "2": {
+   "t": "Il film che vediamo stasera è interessante."
+  },
+  "3": {
+   "t": "Questo è il libro che leggo."
+  },
+  "4": {
+   "g": {
+    "die": "che (dopo iemand)",
+    "wat": "si usa dopo alles, iets, niets, non dopo iemand",
+    "wie": "si usa solo dopo una preposizione",
+    "dat": "solo per het-parole"
+   },
+   "t": "Conosco qualcuno che abita a Gand."
+  },
+  "5": {
+   "t": "Compra tutto ciò che è buono."
+  },
+  "6": {
+   "g": {
+    "Het meisje dat daar zit, is mijn zus.": "La ragazza che è seduta là è mia sorella (corretta)",
+    "Het meisje die daar zit, is mijn zus.": "meisje è una het-parola: serve dat",
+    "Het meisje dat zit daar, is mijn zus.": "nella relativa il verbo va in fondo",
+    "Het meisje wat daar zit, is mijn zus.": "wat si sente nel parlato, ma qui lo standard vuole dat"
+   },
+   "t": "La ragazza che è seduta là è mia sorella."
+  },
+  "7": {
+   "t": "Questa è la penna con cui scrivo."
+  },
+  "8": {
+   "t": "La collega con cui parlo abita a Gand."
+  },
+  "9": {
+   "t": "C'è qualcosa che vuoi comprare?"
+  },
+  "10": {
+   "g": {
+    "die": "che (plurali)",
+    "dat": "solo het-parole al singolare",
+    "wie": "si usa solo dopo una preposizione",
+    "waar": "dove"
+   },
+   "t": "le foto che fai"
+  },
+  "11": {
+   "t": "Conosco la donna che lavora qui."
+  }
+ }
+}

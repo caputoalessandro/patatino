@@ -1,0 +1,439 @@
+{
+ "id": "u13",
+ "n": 13,
+ "module": 3,
+ "nl": "Deze, die, dit, dat",
+ "it": "I dimostrativi",
+ "note": "\n<h3>L'idea</h3>\n<p>Come in italiano, ci sono due distanze: <b>questo</b> (vicino) e <b>quello</b> (lontano). Ma in olandese la forma non dipende dal maschile o femminile: dipende dall'<b>articolo</b> del nome, <i>de</i> o <i>het</i>, proprio come per <i>welk/welke</i> e <i>ons/onze</i>.</p>\n<h3>La tabella</h3>\n<table><tr><th></th><th>questo / questi</th><th>quello / quelli</th></tr>\n<tr><td>de-parole</td><td><b>deze</b> stoel</td><td><b>die</b> stoel</td></tr>\n<tr><td>het-parole</td><td><b>dit</b> huis</td><td><b>dat</b> huis</td></tr>\n<tr><td>plurale</td><td><b>deze</b> stoelen</td><td><b>die</b> stoelen</td></tr></table>\n<p>Un aiuto per ricordare: le forme in <b>-e</b> (deze, die) vanno con <b>de</b>; le forme in <b>-t</b> (dit, dat) vanno con <b>het</b>. Al plurale tutti i nomi prendono <i>de</i>, quindi anche <i>deze/die</i>: <i>dit huis</i> → <i>deze huizen</i>.</p>\n<h3>Dimostrativo al posto dell'articolo</h3>\n<p>Il dimostrativo sostituisce l'articolo, come in italiano: <i>de broek</i> → <i>deze broek</i> (questi pantaloni). Attenzione: <i>de broek</i> è <b>singolare</b> in olandese, anche se in italiano diciamo \"i pantaloni\".</p>\n<h3>Dit is… / Dat zijn…: presentare</h3>\n<p>Per presentare o indicare qualcosa con <i>zijn</i> (è / sono), si usa sempre <b>dit</b> o <b>dat</b>, qualunque sia il nome, anche al plurale. È il <b>verbo</b> che si accorda:</p>\n<ul>\n<li><i>Dit <b>is</b> mijn broer.</i> (Questo è mio fratello.)</li>\n<li><i>Dit <b>zijn</b> mijn kinderen.</i> (Questi sono i miei figli.)</li>\n<li><i>Dat <b>zijn</b> mijn schoenen.</i> (Quelle sono le mie scarpe.)</li>\n</ul>\n<h3>Questo o quello?</h3>\n<p><b>deze/dit</b> per ciò che è vicino a chi parla (spesso con <i>hier</i>), <b>die/dat</b> per ciò che è più lontano (spesso con <i>daar</i>): <i>Deze trui is mooi, maar die trui is lelijk.</i></p>\n<p><i>dat</i> si usa anche per riferirsi a una cosa appena detta, come \"ciò\" in italiano: <i>Dat weet ik niet.</i></p>\n<h3>Le parole di tempo</h3>\n<p>Con le parole di tempo si usa <i>deze/dit</i> per il periodo attuale: <i>deze week</i> (questa settimana), <i>dit jaar</i> (quest'anno).</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Scegliere in base al genere italiano: <s>dit stoel</s> → <b>deze stoel</b> (de stoel).</li>\n<li>Usare dit/dat al plurale davanti a un nome: <s>dat boeken</s> → <b>die boeken</b>.</li>\n<li>Usare deze per presentare: <s>Deze zijn mijn kinderen</s> → <b>Dit zijn mijn kinderen</b>.</li>\n<li>Lasciare il verbo al singolare: <s>Dat is mijn schoenen</s> → <b>Dat zijn mijn schoenen</b>.</li>\n<li>Tenere anche l'articolo: <s>deze de broek</s> → <b>deze broek</b>.</li>\n</ul>",
+ "vlaams": "Nel parlato fiammingo senti spesso <b>da</b> al posto di dat (\"da's goed\", \"da weet ik nie\"); in alcune zone anche <b>dees</b> al posto di deze. In Belgio la camicia si chiama <b>het hemd</b>; nei Paesi Bassi si dice di solito <i>het overhemd</i>.",
+ "vocab": [
+  [
+   "de week",
+   "la settimana"
+  ],
+  [
+   "de broek",
+   "i pantaloni"
+  ],
+  [
+   "het hemd",
+   "la camicia"
+  ],
+  [
+   "de trui",
+   "il maglione"
+  ],
+  [
+   "het brood",
+   "il pane"
+  ],
+  [
+   "het glas",
+   "il bicchiere"
+  ],
+  [
+   "de stoel",
+   "la sedia"
+  ],
+  [
+   "de foto",
+   "la foto"
+  ],
+  [
+   "het restaurant",
+   "il ristorante"
+  ],
+  [
+   "kopen",
+   "comprare"
+  ],
+  [
+   "nemen",
+   "prendere"
+  ],
+  [
+   "klein",
+   "piccolo"
+  ],
+  [
+   "lelijk",
+   "brutto"
+  ],
+  [
+   "goedkoop",
+   "economico"
+  ]
+ ],
+ "core": [
+  [
+   "deze",
+   "questo, questi (de-parole e plurale)"
+  ],
+  [
+   "dit",
+   "questo (het-parole)"
+  ],
+  [
+   "die",
+   "quello, quelli (de-parole e plurale)"
+  ],
+  [
+   "dat",
+   "quello (het-parole)"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "___ stoel",
+   "h": "questa",
+   "o": [
+    "deze",
+    "dit",
+    "die",
+    "dat"
+   ],
+   "a": 0,
+   "e": "<i>de stoel</i>, vicino → <b>deze</b>.",
+   "g": {
+    "deze": "questo (de-parole)",
+    "dit": "questo, ma solo con het-parole",
+    "die": "quello (de-parole)",
+    "dat": "quello (het-parole)"
+   },
+   "tt": "questa sedia"
+  },
+  {
+   "t": "mc",
+   "q": "___ glas",
+   "h": "questo",
+   "o": [
+    "dit",
+    "deze",
+    "dat",
+    "die"
+   ],
+   "a": 0,
+   "e": "<i>het glas</i>, vicino → <b>dit</b>.",
+   "g": {
+    "dit": "questo (het-parole)",
+    "deze": "questo, ma solo con de-parole e plurali",
+    "dat": "quello (het-parole)",
+    "die": "quello (de-parole)"
+   },
+   "tt": "questo bicchiere"
+  },
+  {
+   "t": "mc",
+   "q": "___ boeken",
+   "h": "quei",
+   "o": [
+    "die",
+    "dat",
+    "deze",
+    "dit"
+   ],
+   "a": 0,
+   "e": "Plurale, lontano → <b>die</b>.",
+   "g": {
+    "die": "quelli (plurale)",
+    "dat": "quello: mai davanti a un plurale",
+    "deze": "questi (vicino)",
+    "dit": "questo: mai davanti a un plurale"
+   },
+   "tt": "quei libri"
+  },
+  {
+   "t": "mc",
+   "q": "___ huis",
+   "h": "quella",
+   "o": [
+    "dat",
+    "die",
+    "dit",
+    "deze"
+   ],
+   "a": 0,
+   "e": "<i>het huis</i>, lontano → <b>dat</b>.",
+   "g": {
+    "dat": "quello (het-parole)",
+    "die": "quello, ma solo con de-parole e plurali",
+    "dit": "questo (het-parole)",
+    "deze": "questo (de-parole)"
+   },
+   "tt": "quella casa"
+  },
+  {
+   "t": "mc",
+   "q": "___ is mijn broer.",
+   "h": "questo",
+   "o": [
+    "Dit",
+    "Deze",
+    "Die",
+    "Dat"
+   ],
+   "a": 0,
+   "e": "Per presentare qualcuno: <b>Dit is</b>…",
+   "g": {
+    "Dit": "questo (per presentare)",
+    "Deze": "per presentare con zijn si usa dit",
+    "Die": "quello, e per presentare si usa dit/dat",
+    "Dat": "quello (lontano), non questo"
+   },
+   "tt": "Questo è mio fratello."
+  },
+  {
+   "t": "mc",
+   "q": "___ zijn mijn schoenen.",
+   "h": "queste",
+   "o": [
+    "Dit",
+    "Deze",
+    "Die",
+    "Dat"
+   ],
+   "a": 0,
+   "e": "Per presentare, anche al plurale: <b>Dit zijn</b>…",
+   "g": {
+    "Dit": "questo / questi (per presentare)",
+    "Deze": "per presentare con zijn si usa dit",
+    "Die": "per presentare con zijn si usa dat",
+    "Dat": "quelle (lontano), non queste"
+   },
+   "tt": "Queste sono le mie scarpe."
+  },
+  {
+   "t": "mc",
+   "q": "de week → ___ week",
+   "h": "questa",
+   "o": [
+    "deze",
+    "dit"
+   ],
+   "a": 0,
+   "e": "<i>de week</i> → <b>deze week</b>.",
+   "g": {
+    "deze": "questo (de-parole)",
+    "dit": "questo (solo het-parole)"
+   },
+   "tt": "questa settimana"
+  },
+  {
+   "t": "fill",
+   "q": "Ik neem ___ broek.",
+   "h": "questi",
+   "a": [
+    "deze"
+   ],
+   "e": "<i>de broek</i> (singolare in olandese) → <b>deze</b>.",
+   "tt": "Prendo questi pantaloni."
+  },
+  {
+   "t": "fill",
+   "q": "___ brood is lekker.",
+   "h": "quel",
+   "a": [
+    "dat"
+   ],
+   "e": "<i>het brood</i>, lontano → <b>dat</b>.",
+   "tt": "Quel pane è buono."
+  },
+  {
+   "t": "order",
+   "q": "Quella sedia è piccola.",
+   "a": "Die stoel is klein",
+   "x": [
+    "hem",
+    "kleinen"
+   ],
+   "e": "<i>de stoel</i>, lontano → <b>die</b>."
+  }
+ ],
+ "items": [
+  {
+   "t": "mc",
+   "q": "Ik wil ___ hemd kopen.",
+   "h": "questa camicia",
+   "o": [
+    "dit",
+    "deze",
+    "dat",
+    "die"
+   ],
+   "a": 0,
+   "e": "<i>het hemd</i>, vicino → <b>dit</b>."
+  },
+  {
+   "t": "mc",
+   "q": "___ broek is goedkoop.",
+   "h": "quei pantaloni",
+   "o": [
+    "Die",
+    "Dat",
+    "Deze",
+    "Dit"
+   ],
+   "a": 0,
+   "e": "<i>de broek</i>, lontano → <b>die</b>. In olandese è singolare: <i>is</i>."
+  },
+  {
+   "t": "fill",
+   "q": "___ zijn mijn kinderen.",
+   "h": "questi (presentando)",
+   "a": [
+    "dit"
+   ],
+   "e": "Per presentare: <b>Dit zijn</b>, anche al plurale."
+  },
+  {
+   "t": "tr",
+   "q": "Questo ristorante è caro.",
+   "a": [
+    "Dit restaurant is duur"
+   ],
+   "e": "<i>het restaurant</i> → <b>dit</b>."
+  },
+  {
+   "t": "order",
+   "q": "Compro questo pane.",
+   "a": "Ik koop dit brood",
+   "alt": [
+    "Dit brood koop ik"
+   ],
+   "x": [
+    "deze",
+    "koopt"
+   ],
+   "e": "<i>het brood</i> → <b>dit</b> brood."
+  },
+  {
+   "t": "mc",
+   "q": "Van wie is ___ glas?",
+   "h": "quel",
+   "o": [
+    "dat",
+    "die",
+    "dit",
+    "deze"
+   ],
+   "a": 0,
+   "e": "<i>het glas</i>, lontano → <b>dat</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Is ___ foto van jou?",
+   "h": "questa",
+   "a": [
+    "deze"
+   ],
+   "e": "<i>de foto</i>, vicino → <b>deze</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Deze trui is mooi, maar ___ trui is lelijk.",
+   "o": [
+    "die",
+    "dat",
+    "dit",
+    "het"
+   ],
+   "a": 0,
+   "e": "Contrasto vicino/lontano: <i>deze</i> trui… <b>die</b> trui."
+  },
+  {
+   "t": "tr",
+   "q": "Questa settimana lavoro a casa.",
+   "a": [
+    "Deze week werk ik thuis",
+    "Ik werk deze week thuis",
+    "Ik werk thuis deze week"
+   ],
+   "e": "<i>de week</i> → <b>deze week</b>; all'inizio, poi inversione: werk ik."
+  },
+  {
+   "t": "order",
+   "q": "Queste sedie sono piccole.",
+   "a": "Deze stoelen zijn klein",
+   "x": [
+    "kleine",
+    "stoel"
+   ],
+   "e": "Plurale → <b>deze</b>, e il verbo al plurale: <b>zijn</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Quale frase è corretta?",
+   "o": [
+    "Dat zijn mijn schoenen.",
+    "Dat is mijn schoenen.",
+    "Deze is mijn schoenen.",
+    "Dit is mijn schoenen."
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Con un plurale il verbo è <b>zijn</b>: <b>Dat zijn</b> mijn schoenen."
+  },
+  {
+   "t": "tr",
+   "q": "Quella foto è bella.",
+   "a": [
+    "Die foto is mooi"
+   ],
+   "e": "<i>de foto</i>, lontano → <b>die</b>."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "g": {
+    "dit": "questo (het-parole)",
+    "deze": "questo, ma hemd è una het-parola",
+    "dat": "quello (lontano)",
+    "die": "quello, e solo con de-parole"
+   },
+   "t": "Voglio comprare questa camicia."
+  },
+  "1": {
+   "g": {
+    "Die": "quello (de-parole)",
+    "Dat": "quello, ma broek è una de-parola",
+    "Deze": "questo (vicino)",
+    "Dit": "questo, e solo con het-parole"
+   },
+   "t": "Quei pantaloni sono economici."
+  },
+  "2": {
+   "t": "Questi sono i miei figli."
+  },
+  "5": {
+   "g": {
+    "dat": "quello (het-parole)",
+    "die": "quello, ma glas è una het-parola",
+    "dit": "questo (vicino)",
+    "deze": "questo, e solo con de-parole"
+   },
+   "t": "Di chi è quel bicchiere?"
+  },
+  "6": {
+   "t": "È tua questa foto?"
+  },
+  "7": {
+   "g": {
+    "die": "quello (de-parole)",
+    "dat": "quello, ma trui è una de-parola",
+    "dit": "questo, e solo con het-parole",
+    "het": "articolo delle het-parole: trui è una de-parola"
+   },
+   "t": "Questo maglione è bello, ma quel maglione è brutto."
+  },
+  "10": {
+   "g": {
+    "Dat zijn mijn schoenen.": "Quelle sono le mie scarpe. (giusta)",
+    "Dat is mijn schoenen.": "con un plurale serve zijn",
+    "Deze is mijn schoenen.": "per presentare si usa dit/dat, e serve zijn",
+    "Dit is mijn schoenen.": "con un plurale serve zijn"
+   },
+   "t": "Quelle sono le mie scarpe."
+  }
+ }
+}

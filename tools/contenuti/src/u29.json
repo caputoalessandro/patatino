@@ -1,0 +1,457 @@
+{
+ "id": "u29",
+ "n": 29,
+ "module": 6,
+ "nl": "Ontkenning II",
+ "it": "La negazione II",
+ "note": "\n<h3>L'idea</h3>\n<p>Conosci già <b>niet</b> e <b>geen</b>. Ora impari le negazioni più precise: \"non ancora\", \"non più\", \"mai\", \"nessuno\", \"niente\", \"da nessuna parte\". La grande differenza con l'italiano: in olandese <b>basta una sola negazione</b>. In italiano dici \"<u>non</u> vedo <u>nessuno</u>\", in olandese solo <i>Ik zie <b>niemand</b></i>. Non aggiungere mai <i>niet</i>.</p>\n<h3>Non ancora, non più</h3>\n<table><tr><th>olandese</th><th>italiano</th><th>esempio</th></tr>\n<tr><td>nog niet</td><td>non ancora</td><td><i>Hij is nog niet thuis.</i></td></tr>\n<tr><td>nog geen + nome</td><td>non ancora (nessun…)</td><td><i>Ik heb nog geen kinderen.</i></td></tr>\n<tr><td>niet meer</td><td>non più</td><td><i>Ik rook niet meer.</i></td></tr>\n<tr><td>geen + nome + meer</td><td>non più (con un nome)</td><td><i>Er is geen brood meer.</i></td></tr></table>\n<p>Come per <i>niet</i> e <i>geen</i>: davanti a un nome con <i>een</i> o senza articolo usi <b>geen</b>, altrimenti <b>niet</b>. Nota la posizione di <b>meer</b>: dopo il nome, <i>geen melk <b>meer</b></i>. Il contrario di <i>nog niet</i> è <b>al</b> (già): <i>Is hij al thuis? — Nee, nog niet.</i></p>\n<h3>Mai, nessuno, niente, da nessuna parte</h3>\n<table><tr><th>positivo</th><th>negativo</th></tr>\n<tr><td>altijd (sempre)</td><td><b>nooit</b> (mai)</td></tr>\n<tr><td>iemand (qualcuno)</td><td><b>niemand</b> (nessuno)</td></tr>\n<tr><td>iets (qualcosa)</td><td><b>niets</b> / <b>niks</b> (niente)</td></tr>\n<tr><td>overal (dappertutto)</td><td><b>nergens</b> (da nessuna parte)</td></tr></table>\n<p><b>niks</b> è la forma parlata di <i>niets</i>, comunissima. \"Mai finora\" si dice <b>nog nooit</b>: <i>Ik ben nog nooit in Brugge geweest.</i></p>\n<h3>Una sola negazione</h3>\n<p><i>Niemand komt.</i> (Non viene nessuno.) — <i>Ik begrijp niets.</i> (Non capisco niente.) — <i>Hij drinkt nooit koffie.</i> (Non beve mai caffè.)</p>\n<p><i>niemand</i> e <i>niets</i> possono anche fare da soggetto all'inizio della frase: <i><b>Niemand</b> rookt hier.</i></p>\n<h3>La posizione</h3>\n<p><b>nooit</b>, <b>nog niet</b> e <b>niet meer</b> si comportano come <i>niet</i>: stanno dopo il verbo coniugato e dopo l'oggetto pronome, ma prima dell'infinito o del participio: <i>Ik heb hem nooit gezien. Ik kan nog niet komen.</i> Nelle subordinate stanno prima del verbo finale: <i>omdat hij niet meer rookt</i>.</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Doppia negazione: <s>Ik zie niet niemand</s> → <b>Ik zie niemand</b>.</li>\n<li><s>Ik heb niet niets gegeten</s> → <b>Ik heb niets gegeten</b>.</li>\n<li>Usare niet meer con un nome: <s>Ik heb niet meer melk</s> → <b>Ik heb geen melk meer</b>.</li>\n<li>Mettere meer prima del nome: <s>geen meer brood</s> → <b>geen brood meer</b>.</li>\n<li>Tradurre \"non… mai\" con due parole: <s>Ik niet ga nooit</s> → <b>Ik ga nooit</b>.</li>\n</ul>",
+ "vlaams": "Nel parlato fiammingo la doppia negazione esiste ancora: \"Ik heb <b>nooit geen</b> tijd\", \"Er is <b>niemand niet</b> thuis\". È dialetto o lingua informale: nello standard è un errore. Molto diffuso è anche <b>niks</b> al posto di <i>niets</i>, e <b>nooit niet</b> per dare enfasi.",
+ "vocab": [
+  [
+   "al",
+   "già"
+  ],
+  [
+   "altijd",
+   "sempre"
+  ],
+  [
+   "overal",
+   "dappertutto"
+  ],
+  [
+   "iemand",
+   "qualcuno"
+  ],
+  [
+   "iets",
+   "qualcosa"
+  ],
+  [
+   "het geld",
+   "i soldi"
+  ],
+  [
+   "de tijd",
+   "il tempo"
+  ],
+  [
+   "het brood",
+   "il pane"
+  ],
+  [
+   "de melk",
+   "il latte"
+  ],
+  [
+   "het vlees",
+   "la carne"
+  ],
+  [
+   "vinden",
+   "trovare"
+  ],
+  [
+   "begrijpen",
+   "capire"
+  ],
+  [
+   "roken",
+   "fumare"
+  ]
+ ],
+ "core": [
+  [
+   "nog niet",
+   "non ancora"
+  ],
+  [
+   "nog geen",
+   "non ancora (con un nome)"
+  ],
+  [
+   "niet meer",
+   "non più"
+  ],
+  [
+   "geen … meer",
+   "non più (con un nome)"
+  ],
+  [
+   "nooit",
+   "mai"
+  ],
+  [
+   "niemand",
+   "nessuno"
+  ],
+  [
+   "niets / niks",
+   "niente"
+  ],
+  [
+   "nergens",
+   "da nessuna parte"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "Ik ben ___ klaar.",
+   "h": "non ancora",
+   "o": [
+    "nog niet",
+    "niet meer",
+    "nooit",
+    "nog geen"
+   ],
+   "a": 0,
+   "e": "Con un aggettivo: <b>nog niet</b>.",
+   "g": {
+    "nog niet": "non ancora",
+    "niet meer": "non più",
+    "nooit": "mai",
+    "nog geen": "non ancora, ma solo davanti a un nome"
+   },
+   "tt": "Non sono ancora pronto."
+  },
+  {
+   "t": "mc",
+   "q": "Ik rook ___.",
+   "h": "non più",
+   "o": [
+    "niet meer",
+    "geen meer",
+    "meer niet",
+    "nog niet"
+   ],
+   "a": 0,
+   "e": "Con un verbo: <b>niet meer</b>.",
+   "g": {
+    "niet meer": "non più",
+    "geen meer": "geen va solo davanti a un nome",
+    "meer niet": "ordine sbagliato",
+    "nog niet": "non ancora"
+   },
+   "tt": "Non fumo più."
+  },
+  {
+   "t": "mc",
+   "q": "Ik heb ___ melk meer.",
+   "o": [
+    "geen",
+    "niet",
+    "niets",
+    "niemand"
+   ],
+   "a": 0,
+   "e": "Nome senza articolo → <b>geen</b> ... meer.",
+   "g": {
+    "geen": "nessun / non (davanti a un nome)",
+    "niet": "non si usa davanti a un nome senza articolo",
+    "niets": "niente",
+    "niemand": "nessuno"
+   },
+   "tt": "Non ho più latte."
+  },
+  {
+   "t": "mc",
+   "q": "Ik zie ___.",
+   "h": "nessuno",
+   "o": [
+    "niemand",
+    "niet niemand",
+    "geen iemand",
+    "niet iemand"
+   ],
+   "a": 0,
+   "e": "Una sola negazione: <b>niemand</b>.",
+   "g": {
+    "niemand": "nessuno",
+    "niet niemand": "doppia negazione: in olandese è sbagliata",
+    "geen iemand": "forma sbagliata: si dice niemand",
+    "niet iemand": "forma sbagliata: si dice niemand"
+   },
+   "tt": "Non vedo nessuno."
+  },
+  {
+   "t": "mc",
+   "q": "Hij is ___ op tijd.",
+   "h": "mai",
+   "o": [
+    "nooit",
+    "niet nooit",
+    "geen",
+    "niets"
+   ],
+   "a": 0,
+   "e": "\"non… mai\" = solo <b>nooit</b>.",
+   "g": {
+    "nooit": "mai",
+    "niet nooit": "doppia negazione: sbagliata",
+    "geen": "nessun (davanti a un nome)",
+    "niets": "niente"
+   },
+   "tt": "Non è mai puntuale."
+  },
+  {
+   "t": "mc",
+   "q": "Ik vind mijn sleutel ___.",
+   "h": "da nessuna parte",
+   "o": [
+    "nergens",
+    "niemand",
+    "niets",
+    "geen"
+   ],
+   "a": 0,
+   "e": "<b>nergens</b> = da nessuna parte.",
+   "g": {
+    "nergens": "da nessuna parte",
+    "niemand": "nessuno",
+    "niets": "niente",
+    "geen": "nessun (davanti a un nome)"
+   },
+   "tt": "Non trovo la mia chiave da nessuna parte."
+  },
+  {
+   "t": "fill",
+   "q": "Ik ben ___ in Italië geweest.",
+   "h": "mai (finora)",
+   "a": [
+    "nog nooit",
+    "nooit"
+   ],
+   "e": "\"mai finora\" = <b>nog nooit</b>.",
+   "tt": "Non sono mai stato in Italia."
+  },
+  {
+   "t": "fill",
+   "q": "Ik heb ___ gegeten.",
+   "h": "niente",
+   "a": [
+    "niets",
+    "niks"
+   ],
+   "e": "<b>niets</b> (parlato: niks), senza niet.",
+   "tt": "Non ho mangiato niente."
+  },
+  {
+   "t": "order",
+   "q": "Lui non beve mai caffè.",
+   "a": "Hij drinkt nooit koffie",
+   "alt": [
+    "Koffie drinkt hij nooit"
+   ],
+   "x": [
+    "niet",
+    "drinken"
+   ],
+   "e": "Solo <b>nooit</b>, senza niet."
+  },
+  {
+   "t": "order",
+   "q": "Non ho più soldi.",
+   "a": "Ik heb geen geld meer",
+   "x": [
+    "niet",
+    "heeft"
+   ],
+   "e": "<b>geen</b> + nome + <b>meer</b>."
+  }
+ ],
+ "items": [
+  {
+   "t": "mc",
+   "q": "Is Tom al thuis? — Nee, hij is ___ thuis.",
+   "o": [
+    "nog niet",
+    "geen",
+    "nog geen",
+    "nergens"
+   ],
+   "a": 0,
+   "e": "Risposta a <i>al</i> (già): <b>nog niet</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Er is ___ brood meer.",
+   "h": "non più",
+   "a": [
+    "geen"
+   ],
+   "e": "Nome senza articolo: <b>geen</b> brood <b>meer</b>."
+  },
+  {
+   "t": "order",
+   "q": "Non c'è nessuno a casa.",
+   "a": "Er is niemand thuis",
+   "alt": [
+    "Thuis is er niemand",
+    "Niemand is er thuis"
+   ],
+   "x": [
+    "geen",
+    "zijn"
+   ],
+   "e": "Una sola negazione: <b>niemand</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Non capisco niente.",
+   "a": [
+    "Ik begrijp niets",
+    "Ik begrijp niks",
+    "Ik begrijp er niets van",
+    "Ik begrijp er niks van"
+   ],
+   "e": "Solo <b>niets</b>, senza niet."
+  },
+  {
+   "t": "mc",
+   "q": "Quale frase è corretta?",
+   "o": [
+    "Ik zie niemand.",
+    "Ik zie niet niemand.",
+    "Ik zie geen niemand.",
+    "Ik niet zie niemand."
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "In olandese basta una negazione: <b>Ik zie niemand</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Hij woont ___ in Gent.",
+   "h": "non più",
+   "a": [
+    "niet meer"
+   ],
+   "e": "Con un verbo: <b>niet meer</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Ze eet ___ vlees.",
+   "h": "mai",
+   "o": [
+    "nooit",
+    "niet nooit",
+    "geen nooit",
+    "nooit geen"
+   ],
+   "a": 0,
+   "e": "Solo <b>nooit</b>."
+  },
+  {
+   "t": "order",
+   "q": "Non sono mai stato a Bruges.",
+   "a": "Ik ben nog nooit in Brugge geweest",
+   "x": [
+    "heb",
+    "geen"
+   ],
+   "e": "\"mai finora\" = <b>nog nooit</b>; <i>zijn</i> + geweest."
+  },
+  {
+   "t": "tr",
+   "q": "Nessuno fuma qui.",
+   "a": [
+    "Niemand rookt hier",
+    "Hier rookt niemand"
+   ],
+   "e": "<b>niemand</b> come soggetto."
+  },
+  {
+   "t": "mc",
+   "q": "Heb je al kinderen? — Nee, ik heb ___ kinderen.",
+   "o": [
+    "nog geen",
+    "nog niet",
+    "niet meer",
+    "geen meer"
+   ],
+   "a": 0,
+   "e": "Non ancora + nome: <b>nog geen</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Hij zegt ___.",
+   "h": "niente",
+   "a": [
+    "niets",
+    "niks"
+   ],
+   "e": "<b>niets</b> (parlato: niks)."
+  },
+  {
+   "t": "tr",
+   "q": "Non ho più tempo.",
+   "a": [
+    "Ik heb geen tijd meer"
+   ],
+   "e": "<b>geen</b> + nome + <b>meer</b>."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "g": {
+    "nog niet": "non ancora",
+    "geen": "nessun (davanti a un nome)",
+    "nog geen": "non ancora, ma solo davanti a un nome",
+    "nergens": "da nessuna parte"
+   },
+   "t": "Tom è già a casa? — No, non è ancora a casa."
+  },
+  "1": {
+   "t": "Non c'è più pane."
+  },
+  "2": {
+   "t": "Non c'è nessuno a casa."
+  },
+  "3": {
+   "t": "Non capisco niente."
+  },
+  "4": {
+   "g": {
+    "Ik zie niemand.": "Non vedo nessuno (corretta)",
+    "Ik zie niet niemand.": "doppia negazione: sbagliata",
+    "Ik zie geen niemand.": "doppia negazione: sbagliata",
+    "Ik niet zie niemand.": "ordine e doppia negazione sbagliati"
+   },
+   "t": "Non vedo nessuno."
+  },
+  "5": {
+   "t": "Non abita più a Gand."
+  },
+  "6": {
+   "g": {
+    "nooit": "mai",
+    "niet nooit": "doppia negazione: sbagliata",
+    "geen nooit": "doppia negazione: sbagliata",
+    "nooit geen": "doppia negazione: si sente nel fiammingo parlato, ma è sbagliata"
+   },
+   "t": "Non mangia mai carne."
+  },
+  "7": {
+   "t": "Non sono mai stato a Bruges."
+  },
+  "8": {
+   "t": "Nessuno fuma qui."
+  },
+  "9": {
+   "g": {
+    "nog geen": "non ancora (con un nome)",
+    "nog niet": "non ancora, ma non davanti a un nome senza articolo",
+    "niet meer": "non più, e non davanti a un nome",
+    "geen meer": "meer va dopo il nome"
+   },
+   "t": "Hai già figli? — No, non ho ancora figli."
+  },
+  "10": {
+   "t": "Non dice niente."
+  },
+  "11": {
+   "t": "Non ho più tempo."
+  }
+ }
+}

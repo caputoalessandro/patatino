@@ -1,0 +1,414 @@
+{
+ "id": "u29",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "Op zondag is er in ons dorp ___ open: geen bakker, geen supermarkt, geen café.",
+   "o": ["niets", "niemand", "nergens", "geen"],
+   "a": 0,
+   "e": "Si parla di cose (negozi aperti): <b>niets</b> = niente. Una sola negazione, senza <i>niet</i>.",
+   "g": {
+    "niets": "niente (corretta)",
+    "niemand": "nessuno: si parla di negozi, non di persone",
+    "nergens": "da nessuna parte: qui manca la cosa che è aperta",
+    "geen": "geen vuole un nome dopo"
+   },
+   "tt": "La domenica nel nostro paese non c'è niente di aperto: niente panettiere, niente supermercato, niente bar."
+  },
+  {
+   "t": "mc",
+   "q": "Ik heb mijn bril overal gezocht, maar ik heb hem ___ gevonden.",
+   "o": ["nergens", "niet nergens", "nergens niet", "niemand"],
+   "a": 0,
+   "e": "Il contrario di <i>overal</i> è <b>nergens</b>. Sta dopo il pronome oggetto <i>hem</i> e prima del participio, e basta da solo.",
+   "g": {
+    "nergens": "da nessuna parte (corretta)",
+    "niet nergens": "doppia negazione: sbagliata nello standard",
+    "nergens niet": "doppia negazione: si sente nel parlato, ma è sbagliata",
+    "niemand": "nessuno: si parla di un posto"
+   },
+   "tt": "Ho cercato gli occhiali dappertutto, ma non li ho trovati da nessuna parte."
+  },
+  {
+   "t": "fill",
+   "q": "Sorry, we hebben vandaag ___ pistolets meer.",
+   "h": "non più",
+   "a": ["geen"],
+   "e": "Nome senza articolo → <b>geen</b> ... <b>meer</b>, con <i>meer</i> dopo il nome. (<i>pistolets</i> sono i panini tondi tipici del Belgio.)",
+   "tt": "Mi dispiace, oggi non abbiamo più panini."
+  },
+  {
+   "t": "fill",
+   "q": "Mijn broer zegt dat hij die film ___ gezien heeft.",
+   "h": "mai (finora)",
+   "a": ["nog nooit", "nooit"],
+   "e": "Nella subordinata <b>nog nooit</b> sta prima dei verbi finali: <i>nog nooit gezien heeft</i>. Con <i>die film</i> (articolo determinativo) niente <i>geen</i>.",
+   "tt": "Mio fratello dice che non ha mai visto quel film."
+  },
+  {
+   "t": "tr",
+   "q": "Non c'è più latte in frigo.",
+   "a": ["Er is geen melk meer in de koelkast", "Er is geen melk meer in de frigo", "Er zit geen melk meer in de koelkast", "Er zit geen melk meer in de frigo", "Er is in de koelkast geen melk meer", "Er is in de frigo geen melk meer", "In de koelkast is er geen melk meer", "In de frigo is er geen melk meer", "In de koelkast is geen melk meer", "In de frigo is geen melk meer", "In de koelkast zit geen melk meer", "In de frigo zit geen melk meer"],
+   "e": "<b>geen</b> + nome + <b>meer</b>. In Belgio il frigorifero si chiama spesso <i>de frigo</i>; in Olanda <i>de koelkast</i>."
+  },
+  {
+   "t": "tr",
+   "q": "Oggi non ho ancora visto nessuno.",
+   "a": ["Ik heb vandaag nog niemand gezien", "Vandaag heb ik nog niemand gezien"],
+   "e": "\"non ancora nessuno\" = <b>nog niemand</b>, una sola negazione. Il participio <i>gezien</i> va in fondo."
+  },
+  {
+   "t": "order",
+   "q": "Non abbiamo ancora comprato i biglietti per il concerto.",
+   "a": "We hebben de tickets voor het concert nog niet gekocht",
+   "alt": ["De tickets voor het concert hebben we nog niet gekocht"],
+   "x": ["geen", "meer"],
+   "e": "Trabocchetto: <i>de tickets</i> ha l'articolo determinativo, quindi <b>nog niet</b> (non <i>nog geen</i>), dopo l'oggetto e prima del participio.",
+   "tt": "Non abbiamo ancora comprato i biglietti per il concerto."
+  },
+  {
+   "t": "order",
+   "q": "Perché nessuno vuole venire alla mia festa?",
+   "a": "Waarom wil niemand naar mijn feest komen",
+   "x": ["niet", "iemand"],
+   "e": "Dopo <i>waarom</i> l'inversione: <b>wil niemand</b>. <i>niemand</i> è il soggetto e basta da solo, senza <i>niet</i>.",
+   "tt": "Perché nessuno vuole venire alla mia festa?"
+  }
+ ],
+ "en": {
+  "it": "Negation II",
+  "note": "\n<h3>The idea</h3>\n<p>You already know <b>niet</b> and <b>geen</b>. Now you'll learn the more precise negatives: \"not yet\", \"not anymore\", \"never\", \"nobody\", \"nothing\", \"nowhere\". The key point: Dutch <b>uses only one negative word</b>. English often says \"I do<u>n't</u> see anybody\", but Dutch has no \"anybody\" here: you say <i>Ik zie <b>niemand</b></i> (I see nobody). Never add <i>niet</i>.</p>\n<h3>Not yet, not anymore</h3>\n<table><tr><th>Dutch</th><th>English</th><th>example</th></tr>\n<tr><td>nog niet</td><td>not yet</td><td><i>Hij is nog niet thuis.</i></td></tr>\n<tr><td>nog geen + noun</td><td>no … yet, not any … yet</td><td><i>Ik heb nog geen kinderen.</i></td></tr>\n<tr><td>niet meer</td><td>not anymore, no longer</td><td><i>Ik rook niet meer.</i></td></tr>\n<tr><td>geen + noun + meer</td><td>no more … (with a noun)</td><td><i>Er is geen brood meer.</i></td></tr></table>\n<p>As with <i>niet</i> and <i>geen</i>: before a noun with <i>een</i> or with no article you use <b>geen</b>, otherwise <b>niet</b>. Note the position of <b>meer</b>: after the noun, <i>geen melk <b>meer</b></i> (literally \"no milk more\"). The opposite of <i>nog niet</i> is <b>al</b> (already): <i>Is hij al thuis? — Nee, nog niet.</i></p>\n<h3>Never, nobody, nothing, nowhere</h3>\n<table><tr><th>positive</th><th>negative</th></tr>\n<tr><td>altijd (always)</td><td><b>nooit</b> (never)</td></tr>\n<tr><td>iemand (someone)</td><td><b>niemand</b> (nobody)</td></tr>\n<tr><td>iets (something)</td><td><b>niets</b> / <b>niks</b> (nothing)</td></tr>\n<tr><td>overal (everywhere)</td><td><b>nergens</b> (nowhere)</td></tr></table>\n<p><b>niks</b> is the spoken form of <i>niets</i>, and very common. \"Never (so far)\" is <b>nog nooit</b>: <i>Ik ben nog nooit in Brugge geweest.</i></p>\n<h3>Just one negative</h3>\n<p><i>Niemand komt.</i> (Nobody is coming.) — <i>Ik begrijp niets.</i> (I don't understand anything.) — <i>Hij drinkt nooit koffie.</i> (He never drinks coffee.)</p>\n<p><i>niemand</i> and <i>niets</i> can also be the subject at the start of the sentence: <i><b>Niemand</b> rookt hier.</i></p>\n<h3>Position</h3>\n<p><b>nooit</b>, <b>nog niet</b> and <b>niet meer</b> behave like <i>niet</i>: they come after the conjugated verb and after an object pronoun, but before an infinitive or participle: <i>Ik heb hem nooit gezien. Ik kan nog niet komen.</i> In subordinate clauses they come before the final verb: <i>omdat hij niet meer rookt</i>.</p>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Translating \"not ... anybody / anything\": <s>Ik zie niet iemand</s> → <b>Ik zie niemand</b>; <s>Ik heb niet iets gegeten</s> → <b>Ik heb niets gegeten</b>.</li>\n<li>Translating \"not any more milk\" with niet meer: <s>Ik heb niet meer melk</s> → <b>Ik heb geen melk meer</b>.</li>\n<li>Putting meer before the noun, as in \"no more bread\": <s>geen meer brood</s> → <b>geen brood meer</b>.</li>\n<li>Adding niet to nooit: <s>Ik ga niet nooit</s> → <b>Ik ga nooit</b>.</li>\n<li>Putting the negative before the verb, as in \"I never go\": <s>Ik nooit ga</s> → <b>Ik ga nooit</b>.</li>\n</ul>",
+  "vlaams": "In spoken Flemish the double negative still exists: \"Ik heb <b>nooit geen</b> tijd\", \"Er is <b>niemand niet</b> thuis\". It's dialect or informal speech: in standard Dutch it's a mistake. Also very common is <b>niks</b> instead of <i>niets</i>, and <b>nooit niet</b> for emphasis.",
+  "vocab": [["al", "already"], ["altijd", "always"], ["overal", "everywhere"], ["iemand", "someone"], ["iets", "something"], ["het geld", "money"], ["de tijd", "time"], ["het brood", "bread"], ["de melk", "milk"], ["het vlees", "meat"], ["vinden", "to find"], ["begrijpen", "to understand"], ["roken", "to smoke"]],
+  "core": [["nog niet", "not yet"], ["nog geen", "no … yet (with a noun)"], ["niet meer", "not anymore"], ["geen … meer", "no more … (with a noun)"], ["nooit", "never"], ["niemand", "nobody"], ["niets / niks", "nothing"], ["nergens", "nowhere"]],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "Ik ben ___ klaar.",
+    "h": "not yet",
+    "o": ["nog niet", "niet meer", "nooit", "nog geen"],
+    "a": 0,
+    "e": "With an adjective: <b>nog niet</b>.",
+    "g": {
+     "nog niet": "not yet",
+     "niet meer": "not anymore",
+     "nooit": "never",
+     "nog geen": "no … yet, but only before a noun"
+    },
+    "tt": "I'm not ready yet."
+   },
+   {
+    "t": "mc",
+    "q": "Ik rook ___.",
+    "h": "not anymore",
+    "o": ["niet meer", "geen meer", "meer niet", "nog niet"],
+    "a": 0,
+    "e": "With a verb: <b>niet meer</b>.",
+    "g": {
+     "niet meer": "not anymore",
+     "geen meer": "geen only goes before a noun",
+     "meer niet": "wrong order",
+     "nog niet": "not yet"
+    },
+    "tt": "I don't smoke anymore."
+   },
+   {
+    "t": "mc",
+    "q": "Ik heb ___ melk meer.",
+    "o": ["geen", "niet", "niets", "niemand"],
+    "a": 0,
+    "e": "Noun with no article → <b>geen</b> ... meer.",
+    "g": {
+     "geen": "no, not any (before a noun)",
+     "niet": "not used before a noun with no article",
+     "niets": "nothing",
+     "niemand": "nobody"
+    },
+    "tt": "I don't have any more milk."
+   },
+   {
+    "t": "mc",
+    "q": "Ik zie ___.",
+    "h": "nobody",
+    "o": ["niemand", "niet niemand", "geen iemand", "niet iemand"],
+    "a": 0,
+    "e": "Just one negative: <b>niemand</b>.",
+    "g": {
+     "niemand": "nobody",
+     "niet niemand": "double negative: wrong in Dutch",
+     "geen iemand": "wrong form: say niemand",
+     "niet iemand": "\"not anybody\" word for word: say niemand"
+    },
+    "tt": "I don't see anybody."
+   },
+   {
+    "t": "mc",
+    "q": "Hij is ___ op tijd.",
+    "h": "never",
+    "o": ["nooit", "niet nooit", "geen", "niets"],
+    "a": 0,
+    "e": "\"never\" = just <b>nooit</b>.",
+    "g": {
+     "nooit": "never",
+     "niet nooit": "double negative: wrong",
+     "geen": "no (before a noun)",
+     "niets": "nothing"
+    },
+    "tt": "He's never on time."
+   },
+   {
+    "t": "mc",
+    "q": "Ik vind mijn sleutel ___.",
+    "h": "nowhere",
+    "o": ["nergens", "niemand", "niets", "geen"],
+    "a": 0,
+    "e": "<b>nergens</b> = nowhere.",
+    "g": {
+     "nergens": "nowhere",
+     "niemand": "nobody",
+     "niets": "nothing",
+     "geen": "no (before a noun)"
+    },
+    "tt": "I can't find my key anywhere."
+   },
+   {
+    "t": "fill",
+    "q": "Ik ben ___ in Italië geweest.",
+    "h": "never (so far)",
+    "a": ["nog nooit", "nooit"],
+    "e": "\"never so far\" = <b>nog nooit</b>.",
+    "tt": "I've never been to Italy."
+   },
+   {
+    "t": "fill",
+    "q": "Ik heb ___ gegeten.",
+    "h": "nothing",
+    "a": ["niets", "niks"],
+    "e": "<b>niets</b> (spoken: niks), without niet.",
+    "tt": "I haven't eaten anything."
+   },
+   {
+    "t": "order",
+    "q": "He never drinks coffee.",
+    "a": "Hij drinkt nooit koffie",
+    "alt": ["Koffie drinkt hij nooit"],
+    "x": ["niet", "drinken"],
+    "e": "Just <b>nooit</b>, after the verb."
+   },
+   {
+    "t": "order",
+    "q": "I don't have any more money.",
+    "a": "Ik heb geen geld meer",
+    "x": ["niet", "heeft"],
+    "e": "<b>geen</b> + noun + <b>meer</b>."
+   }
+  ],
+  "items": [
+   {
+    "t": "mc",
+    "q": "Is Tom al thuis? — Nee, hij is ___ thuis.",
+    "o": ["nog niet", "geen", "nog geen", "nergens"],
+    "a": 0,
+    "e": "Answer to <i>al</i> (already): <b>nog niet</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Er is ___ brood meer.",
+    "h": "no more",
+    "a": ["geen"],
+    "e": "Noun with no article: <b>geen</b> brood <b>meer</b>."
+   },
+   {
+    "t": "order",
+    "q": "There's nobody home.",
+    "a": "Er is niemand thuis",
+    "alt": ["Thuis is er niemand", "Niemand is er thuis"],
+    "x": ["geen", "zijn"],
+    "e": "Just one negative: <b>niemand</b>."
+   },
+   {
+    "t": "tr",
+    "q": "I don't understand anything.",
+    "a": ["Ik begrijp niets", "Ik begrijp niks", "Ik begrijp er niets van", "Ik begrijp er niks van"],
+    "e": "Just <b>niets</b>, without niet: there's no word for \"anything\" here."
+   },
+   {
+    "t": "mc",
+    "q": "Which sentence is correct?",
+    "o": ["Ik zie niemand.", "Ik zie niet niemand.", "Ik zie geen niemand.", "Ik niet zie niemand."],
+    "a": 0,
+    "oit": true,
+    "e": "In Dutch one negative is enough: <b>Ik zie niemand</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Hij woont ___ in Gent.",
+    "h": "not anymore",
+    "a": ["niet meer"],
+    "e": "With a verb: <b>niet meer</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Ze eet ___ vlees.",
+    "h": "never",
+    "o": ["nooit", "niet nooit", "geen nooit", "nooit geen"],
+    "a": 0,
+    "e": "Just <b>nooit</b>."
+   },
+   {
+    "t": "order",
+    "q": "I've never been to Bruges.",
+    "a": "Ik ben nog nooit in Brugge geweest",
+    "x": ["heb", "geen"],
+    "e": "\"never so far\" = <b>nog nooit</b>; <i>zijn</i> + geweest."
+   },
+   {
+    "t": "tr",
+    "q": "Nobody smokes here.",
+    "a": ["Niemand rookt hier", "Hier rookt niemand"],
+    "e": "<b>niemand</b> as the subject."
+   },
+   {
+    "t": "mc",
+    "q": "Heb je al kinderen? — Nee, ik heb ___ kinderen.",
+    "o": ["nog geen", "nog niet", "niet meer", "geen meer"],
+    "a": 0,
+    "e": "Not yet + noun: <b>nog geen</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Hij zegt ___.",
+    "h": "nothing",
+    "a": ["niets", "niks"],
+    "e": "<b>niets</b> (spoken: niks)."
+   },
+   {
+    "t": "tr",
+    "q": "I don't have any more time.",
+    "a": ["Ik heb geen tijd meer"],
+    "e": "<b>geen</b> + noun + <b>meer</b>."
+   }
+  ],
+  "gloss": {
+   "0": {
+    "g": {
+     "nog niet": "not yet",
+     "geen": "no (before a noun)",
+     "nog geen": "no … yet, but only before a noun",
+     "nergens": "nowhere"
+    },
+    "t": "Is Tom home already? — No, he isn't home yet."
+   },
+   "1": {"t": "There's no more bread."},
+   "2": {"t": "There's nobody home."},
+   "3": {"t": "I don't understand anything."},
+   "4": {
+    "g": {
+     "Ik zie niemand.": "I don't see anybody (correct)",
+     "Ik zie niet niemand.": "double negative: wrong",
+     "Ik zie geen niemand.": "double negative: wrong",
+     "Ik niet zie niemand.": "wrong order and double negative"
+    },
+    "t": "I don't see anybody."
+   },
+   "5": {"t": "He doesn't live in Ghent anymore."},
+   "6": {
+    "g": {
+     "nooit": "never",
+     "niet nooit": "double negative: wrong",
+     "geen nooit": "double negative: wrong",
+     "nooit geen": "double negative: heard in spoken Flemish, but wrong"
+    },
+    "t": "She never eats meat."
+   },
+   "7": {"t": "I've never been to Bruges."},
+   "8": {"t": "Nobody smokes here."},
+   "9": {
+    "g": {
+     "nog geen": "no … yet (with a noun)",
+     "nog niet": "not yet, but not before a noun with no article",
+     "niet meer": "not anymore, and not before a noun",
+     "geen meer": "meer goes after the noun"
+    },
+    "t": "Do you have kids yet? — No, I don't have kids yet."
+   },
+   "10": {"t": "He says nothing."},
+   "11": {"t": "I don't have any more time."}
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "Op zondag is er in ons dorp ___ open: geen bakker, geen supermarkt, geen café.",
+    "o": ["niets", "niemand", "nergens", "geen"],
+    "a": 0,
+    "e": "We're talking about things (open shops): <b>niets</b> = nothing. One negative only, no <i>niet</i>.",
+    "g": {
+     "niets": "nothing (correct)",
+     "niemand": "nobody: we're talking about shops, not people",
+     "nergens": "nowhere: then the thing that's open is missing",
+     "geen": "geen needs a noun after it"
+    },
+    "tt": "On Sundays nothing is open in our village: no bakery, no supermarket, no café."
+   },
+   {
+    "t": "mc",
+    "q": "Ik heb mijn bril overal gezocht, maar ik heb hem ___ gevonden.",
+    "o": ["nergens", "niet nergens", "nergens niet", "niemand"],
+    "a": 0,
+    "e": "The opposite of <i>overal</i> is <b>nergens</b>. It comes after the object pronoun <i>hem</i> and before the participle, and it's enough on its own (no \"not ... anywhere\").",
+    "g": {
+     "nergens": "nowhere (correct)",
+     "niet nergens": "double negative: wrong in standard Dutch",
+     "nergens niet": "double negative: heard in speech, but wrong",
+     "niemand": "nobody: we're talking about a place"
+    },
+    "tt": "I looked everywhere for my glasses, but I couldn't find them anywhere."
+   },
+   {
+    "t": "fill",
+    "q": "Sorry, we hebben vandaag ___ pistolets meer.",
+    "h": "no more",
+    "a": ["geen"],
+    "e": "Noun with no article → <b>geen</b> ... <b>meer</b>, with <i>meer</i> after the noun. (<i>pistolets</i> are the typical Belgian crusty rolls.)",
+    "tt": "Sorry, we don't have any more rolls today."
+   },
+   {
+    "t": "fill",
+    "q": "Mijn broer zegt dat hij die film ___ gezien heeft.",
+    "h": "never (so far)",
+    "a": ["nog nooit", "nooit"],
+    "e": "In a subordinate clause <b>nog nooit</b> comes before the final verbs: <i>nog nooit gezien heeft</i>. With <i>die film</i> (a definite noun) there's no <i>geen</i>.",
+    "tt": "My brother says he's never seen that movie."
+   },
+   {
+    "t": "tr",
+    "q": "There's no more milk in the fridge.",
+    "a": ["Er is geen melk meer in de koelkast", "Er is geen melk meer in de frigo", "Er zit geen melk meer in de koelkast", "Er zit geen melk meer in de frigo", "Er is in de koelkast geen melk meer", "Er is in de frigo geen melk meer", "In de koelkast is er geen melk meer", "In de frigo is er geen melk meer", "In de koelkast is geen melk meer", "In de frigo is geen melk meer", "In de koelkast zit geen melk meer", "In de frigo zit geen melk meer"],
+    "e": "<b>geen</b> + noun + <b>meer</b>. In Belgium the fridge is often called <i>de frigo</i>; in the Netherlands <i>de koelkast</i>."
+   },
+   {
+    "t": "tr",
+    "q": "I haven't seen anybody yet today.",
+    "a": ["Ik heb vandaag nog niemand gezien", "Vandaag heb ik nog niemand gezien"],
+    "e": "\"not ... anybody yet\" = <b>nog niemand</b>, a single negative word. The participle <i>gezien</i> goes to the end."
+   },
+   {
+    "t": "order",
+    "q": "We haven't bought the tickets for the concert yet.",
+    "a": "We hebben de tickets voor het concert nog niet gekocht",
+    "alt": ["De tickets voor het concert hebben we nog niet gekocht"],
+    "x": ["geen", "meer"],
+    "e": "Trap: <i>de tickets</i> has the definite article, so <b>nog niet</b> (not <i>nog geen</i>), after the object and before the participle.",
+    "tt": "We haven't bought the tickets for the concert yet."
+   },
+   {
+    "t": "order",
+    "q": "Why does nobody want to come to my party?",
+    "a": "Waarom wil niemand naar mijn feest komen",
+    "x": ["niet", "iemand"],
+    "e": "After <i>waarom</i>, inversion: <b>wil niemand</b>. <i>niemand</i> is the subject and works on its own, with no <i>niet</i> (and no \"does\").",
+    "tt": "Why does nobody want to come to my party?"
+   }
+  ]
+ }
+}

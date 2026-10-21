@@ -1,0 +1,466 @@
+{
+ "id": "u25",
+ "n": 25,
+ "module": 5,
+ "nl": "Infinitief met 'te'",
+ "it": "L'infinito con te",
+ "note": "\n<h3>L'idea</h3>\n<p>In italiano molti verbi si collegano a un infinito con <b>a</b> o <b>di</b>: provo <i>a</i> parlare, comincio <i>a</i> capire, ho dimenticato <i>di</i> chiamare. In olandese al loro posto c'è sempre la stessa parolina: <b>te</b>. E come tutti gli infiniti, <b>te + infinito</b> va <b>alla fine della frase</b>.</p>\n<p><i>Ik probeer elke dag Nederlands <b>te spreken</b>.</i> (Provo a parlare olandese ogni giorno.)</p>\n<h3>Verbi che vogliono te</h3>\n<table><tr><th>olandese</th><th>italiano</th><th>esempio</th></tr>\n<tr><td>proberen te</td><td>provare a</td><td>Ik probeer te koken.</td></tr>\n<tr><td>beginnen te</td><td>cominciare a</td><td>Het begint te regenen.</td></tr>\n<tr><td>vergeten te</td><td>dimenticare di</td><td>Ik vergeet brood te kopen.</td></tr>\n<tr><td>hopen te</td><td>sperare di</td><td>Ik hoop je morgen te zien.</td></tr>\n<tr><td>niet hoeven te</td><td>non essere necessario</td><td>Je hoeft niet te komen.</td></tr></table>\n<p><b>niet hoeven te</b> è il contrario di moeten: <i>Je moet komen</i> (devi venire) → <i>Je hoeft niet te komen</i> (non c'è bisogno che tu venga).</p>\n<p>Con i verbi separabili, <b>te</b> va in mezzo: <i>opstaan → op te staan</i>. <i>Ik probeer vroeg op te staan.</i></p>\n<h3>Om … te = per</h3>\n<p>Per indicare lo <b>scopo</b> (per + infinito) si usa <b>om … te</b>: <i>Ik ga naar de stad <b>om</b> brood <b>te</b> kopen</i> (vado in città per comprare il pane). Om sta all'inizio del gruppo, te + infinito alla fine. Si trova anche dopo aggettivi come moeilijk e makkelijk: <i>Het is moeilijk om Nederlands te leren</i> (qui om si può anche omettere).</p>\n<h3>Zonder … te = senza</h3>\n<p>\"Senza + infinito\" funziona allo stesso modo: <i>Ze vertrekt <b>zonder</b> iets <b>te</b> zeggen</i> (parte senza dire niente).</p>\n<h3>Verbi SENZA te</h3>\n<p>Alcuni verbi frequenti si legano all'infinito direttamente, senza te:</p>\n<ul>\n<li>i modali: <i>Ik wil koken, ik kan zwemmen</i> (unità 9)</li>\n<li><b>gaan</b>: <i>We gaan zwemmen</i> (andiamo a nuotare)</li>\n<li><b>laten</b>: <i>Ik laat de kinderen spelen</i> (lascio giocare i bambini)</li>\n<li><b>blijven</b>: <i>We blijven thuis eten</i> (restiamo a mangiare a casa)</li>\n<li><b>zien</b> e <b>horen</b>: <i>Ik zie hem komen</i>, <i>Ik hoor haar zingen</i></li>\n</ul>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Mettere te + infinito subito dopo il verbo: <s>Ik probeer te spreken Nederlands</s> → <b>Ik probeer Nederlands te spreken</b>.</li>\n<li>Aggiungere te dopo un modale o gaan: <s>Ik wil te komen</s> → <b>Ik wil komen</b>.</li>\n<li>Tradurre \"per\" con voor: <s>voor brood te kopen</s> → <b>om brood te kopen</b>.</li>\n<li>Staccare male i separabili: <s>te opstaan</s> → <b>op te staan</b>.</li>\n</ul>",
+ "vlaams": "Nel parlato belga si sente spesso <b>voor … te</b> al posto di om … te: \"Ik kom voor te helpen\". È molto diffuso, ma nello standard e nello scritto si usa sempre <b>om te helpen</b>.",
+ "vocab": [
+  [
+   "proberen",
+   "provare"
+  ],
+  [
+   "beginnen",
+   "cominciare"
+  ],
+  [
+   "vergeten",
+   "dimenticare"
+  ],
+  [
+   "hopen",
+   "sperare"
+  ],
+  [
+   "regenen",
+   "piovere"
+  ],
+  [
+   "kopen",
+   "comprare"
+  ],
+  [
+   "zeggen",
+   "dire"
+  ],
+  [
+   "spelen",
+   "giocare"
+  ],
+  [
+   "zingen",
+   "cantare"
+  ],
+  [
+   "laten",
+   "lasciare, far fare"
+  ],
+  [
+   "horen",
+   "sentire (con l'udito)"
+  ],
+  [
+   "moeilijk",
+   "difficile"
+  ],
+  [
+   "makkelijk",
+   "facile"
+  ],
+  [
+   "de deur",
+   "la porta"
+  ],
+  [
+   "sluiten",
+   "chiudere"
+  ],
+  [
+   "iets",
+   "qualcosa"
+  ],
+  [
+   "het brood",
+   "il pane"
+  ]
+ ],
+ "core": [
+  [
+   "te",
+   "a, di (davanti all'infinito)"
+  ],
+  [
+   "om … te",
+   "per (+ infinito, scopo)"
+  ],
+  [
+   "zonder … te",
+   "senza (+ infinito)"
+  ],
+  [
+   "niet hoeven te",
+   "non essere necessario"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "Ik probeer Nederlands ___.",
+   "o": [
+    "te spreken",
+    "spreken",
+    "te spreek",
+    "spreek te"
+   ],
+   "a": 0,
+   "e": "proberen + <b>te</b> + infinito, alla fine.",
+   "g": {
+    "te spreken": "a parlare (te + infinito)",
+    "spreken": "manca te: proberen lo vuole",
+    "te spreek": "dopo te serve l'infinito",
+    "spreek te": "te va prima dell'infinito"
+   },
+   "tt": "Provo a parlare olandese."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "Ik probeer morgen vroeg ___.",
+   "h": "opstaan",
+   "o": [
+    "op te staan",
+    "te opstaan",
+    "opstaan te",
+    "op staan te"
+   ],
+   "a": 0,
+   "e": "Separabile: te va tra particella e verbo, <b>op te staan</b>.",
+   "g": {
+    "op te staan": "ad alzarmi (te in mezzo)",
+    "te opstaan": "con i separabili te va in mezzo",
+    "opstaan te": "te va prima del verbo",
+    "op staan te": "ordine sbagliato"
+   },
+   "tt": "Domani provo ad alzarmi presto."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "Het begint ___.",
+   "h": "piovere",
+   "o": [
+    "te regenen",
+    "regenen",
+    "regent",
+    "om regenen"
+   ],
+   "a": 0,
+   "e": "beginnen + <b>te</b> + infinito.",
+   "g": {
+    "te regenen": "a piovere",
+    "regenen": "manca te",
+    "regent": "piove (forma coniugata)",
+    "om regenen": "om non si usa qui, e manca te"
+   },
+   "tt": "Comincia a piovere."
+  },
+  {
+   "t": "mc",
+   "q": "Ik ga naar de stad ___ brood te kopen.",
+   "o": [
+    "om",
+    "te",
+    "met",
+    "van"
+   ],
+   "a": 0,
+   "e": "Scopo (per): <b>om … te</b>.",
+   "g": {
+    "om": "per (om … te)",
+    "te": "te c'è già davanti a kopen",
+    "met": "con",
+    "van": "di, da"
+   },
+   "tt": "Vado in città per comprare il pane."
+  },
+  {
+   "t": "mc",
+   "q": "Ze vertrekt ___ iets te zeggen.",
+   "h": "senza",
+   "o": [
+    "zonder",
+    "om",
+    "met",
+    "niet"
+   ],
+   "a": 0,
+   "e": "senza + infinito = <b>zonder … te</b>.",
+   "g": {
+    "zonder": "senza",
+    "om": "per (scopo): non vuol dire senza",
+    "met": "con",
+    "niet": "non"
+   },
+   "tt": "Lei parte senza dire niente."
+  },
+  {
+   "t": "mc",
+   "q": "Quale verbo NON vuole te davanti all'infinito?",
+   "o": [
+    "kunnen",
+    "proberen",
+    "beginnen",
+    "vergeten"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "I modali come <b>kunnen</b> vogliono l'infinito senza te.",
+   "g": {
+    "kunnen": "potere: modale, senza te",
+    "proberen": "provare: vuole te",
+    "beginnen": "cominciare: vuole te",
+    "vergeten": "dimenticare: vuole te"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "We gaan vanavond ___.",
+   "h": "zwemmen",
+   "o": [
+    "zwemmen",
+    "te zwemmen",
+    "om te zwemmen",
+    "zwemt"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Dopo <b>gaan</b> niente te: we gaan <b>zwemmen</b>.",
+   "g": {
+    "zwemmen": "nuotare (infinito senza te)",
+    "te zwemmen": "dopo gaan non si usa te",
+    "om te zwemmen": "dopo gaan non si usa om te",
+    "zwemt": "nuota (forma coniugata)"
+   },
+   "tt": "Stasera andiamo a nuotare."
+  },
+  {
+   "t": "fill",
+   "q": "Vergeet niet de deur ___ sluiten.",
+   "h": "dimenticare di chiudere",
+   "a": [
+    "te"
+   ],
+   "e": "vergeten + <b>te</b> + infinito.",
+   "tt": "Non dimenticare di chiudere la porta."
+  },
+  {
+   "t": "fill",
+   "q": "Ik hoor de kinderen ___.",
+   "h": "cantare",
+   "a": [
+    "zingen"
+   ],
+   "e": "Dopo <b>horen</b> niente te: ik hoor ze <b>zingen</b>.",
+   "tt": "Sento i bambini cantare."
+  },
+  {
+   "t": "order",
+   "q": "Spero di vederti domani.",
+   "a": "Ik hoop je morgen te zien",
+   "alt": [
+    "Morgen hoop ik je te zien"
+   ],
+   "x": [
+    "om",
+    "gezien"
+   ],
+   "e": "hopen + <b>te</b> + infinito alla fine."
+  }
+ ],
+ "items": [
+  {
+   "t": "fill",
+   "q": "Ze begint ___ zingen.",
+   "h": "comincia a cantare",
+   "a": [
+    "te"
+   ],
+   "e": "beginnen + <b>te</b> + infinito."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "We hopen u morgen ___.",
+   "o": [
+    "te zien",
+    "zien",
+    "om zien",
+    "te ziet"
+   ],
+   "a": 0,
+   "e": "hopen + <b>te</b> + infinito."
+  },
+  {
+   "t": "order",
+   "q": "Vado in città per comprare il pane.",
+   "a": "Ik ga naar de stad om brood te kopen",
+   "alt": [
+    "Om brood te kopen ga ik naar de stad"
+   ],
+   "x": [
+    "met",
+    "gekocht"
+   ],
+   "e": "Scopo: <b>om</b> brood <b>te kopen</b>."
+  },
+  {
+   "t": "tr",
+   "q": "È difficile imparare l'olandese.",
+   "a": [
+    "Het is moeilijk om Nederlands te leren",
+    "Het is moeilijk Nederlands te leren",
+    "Nederlands leren is moeilijk"
+   ],
+   "e": "Dopo moeilijk: (<b>om</b>) Nederlands <b>te leren</b>."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "De kinderen spelen in de tuin. Ik laat ze ___.",
+   "h": "giocare",
+   "o": [
+    "spelen",
+    "te spelen",
+    "om te spelen",
+    "speelt"
+   ],
+   "a": 0,
+   "e": "Dopo <b>laten</b> niente te."
+  },
+  {
+   "t": "fill",
+   "q": "Ze vertrekt zonder iets ___ zeggen.",
+   "h": "senza dire niente",
+   "a": [
+    "te"
+   ],
+   "e": "<b>zonder</b> iets <b>te</b> zeggen."
+  },
+  {
+   "t": "mc",
+   "q": "Je ___ niet te komen.",
+   "h": "non è necessario",
+   "o": [
+    "hoeft",
+    "moet",
+    "wil",
+    "kan"
+   ],
+   "a": 0,
+   "e": "<b>niet hoeven te</b> = non è necessario."
+  },
+  {
+   "t": "tr",
+   "q": "Provo a cucinare.",
+   "a": [
+    "Ik probeer te koken"
+   ],
+   "e": "proberen + <b>te</b> + infinito."
+  },
+  {
+   "t": "order",
+   "q": "Comincia a piovere.",
+   "a": "Het begint te regenen",
+   "x": [
+    "geregend",
+    "om"
+   ],
+   "e": "beginnen + <b>te</b> + infinito."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "Quale frase è corretta?",
+   "o": [
+    "Ik ga morgen koken.",
+    "Ik ga morgen te koken.",
+    "Ik ga te morgen koken.",
+    "Ik ga morgen om koken."
+   ],
+   "a": 0,
+   "e": "Dopo <b>gaan</b> l'infinito senza te, alla fine."
+  },
+  {
+   "t": "fill",
+   "q": "Vergeet niet brood te ___!",
+   "h": "comprare",
+   "a": [
+    "kopen"
+   ],
+   "e": "te + infinito: <b>te kopen</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Lo sento cantare.",
+   "a": [
+    "Ik hoor hem zingen"
+   ],
+   "e": "Dopo <b>horen</b> niente te: ik hoor hem <b>zingen</b>."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "t": "Lei comincia a cantare."
+  },
+  "1": {
+   "g": {
+    "te zien": "di vedere (te + infinito)",
+    "zien": "manca te: hopen lo vuole",
+    "om zien": "om non serve qui, e manca te",
+    "te ziet": "dopo te serve l'infinito"
+   },
+   "t": "Speriamo di vederLa domani."
+  },
+  "2": {
+   "t": "Vado in città per comprare il pane."
+  },
+  "3": {
+   "t": "È difficile imparare l'olandese."
+  },
+  "4": {
+   "g": {
+    "spelen": "giocare (infinito senza te)",
+    "te spelen": "dopo laten non si usa te",
+    "om te spelen": "dopo laten non si usa om te",
+    "speelt": "gioca (forma coniugata)"
+   },
+   "t": "I bambini giocano in giardino. Li lascio giocare."
+  },
+  "5": {
+   "t": "Lei parte senza dire niente."
+  },
+  "6": {
+   "g": {
+    "hoeft": "è necessario (niet hoeven te = non è necessario)",
+    "moet": "devi: moeten non vuole te",
+    "wil": "vuoi: willen non vuole te",
+    "kan": "puoi: kunnen non vuole te"
+   },
+   "t": "Non è necessario che tu venga."
+  },
+  "7": {
+   "t": "Provo a cucinare."
+  },
+  "8": {
+   "t": "Comincia a piovere."
+  },
+  "9": {
+   "g": {
+    "Ik ga morgen koken.": "Domani cucino (corretta)",
+    "Ik ga morgen te koken.": "dopo gaan non si usa te",
+    "Ik ga te morgen koken.": "te non va davanti a morgen",
+    "Ik ga morgen om koken.": "om non serve, e manca te"
+   },
+   "t": "Domani cucino."
+  },
+  "10": {
+   "t": "Non dimenticare di comprare il pane!"
+  },
+  "11": {
+   "t": "Lo sento cantare."
+  }
+ }
+}

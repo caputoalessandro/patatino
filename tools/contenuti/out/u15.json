@@ -1,0 +1,702 @@
+{
+ "id": "u15",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "Antwerpen is een ___ stad dan Brugge.",
+   "o": [
+    "grotere",
+    "groter",
+    "grootste",
+    "meer grote"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Davanti al nome il comparativo segue le regole degli aggettivi: <i>de stad</i> è una de-parola, quindi anche con <i>een</i> serve la -e: <b>een grotere stad</b>.",
+   "g": {
+    "grotere": "più grande (giusto: de-parola + -e)",
+    "groter": "senza -e solo con een + het-parola (een groter huis)",
+    "grootste": "superlativo, e con dan serve il comparativo",
+    "meer grote": "non si usa meer per formare il comparativo"
+   },
+   "tt": "Anversa è una città più grande di Bruges."
+  },
+  {
+   "t": "fill",
+   "q": "De trein naar Brussel is ___ dan de bus, maar hij is ook sneller.",
+   "h": "più caro (duur)",
+   "a": [
+    "duurder"
+   ],
+   "e": "<i>duur</i> finisce in <b>-r</b> → comparativo con <b>-der</b>: <i>duurder</i>.",
+   "tt": "Il treno per Bruxelles è più caro dell'autobus, ma è anche più veloce."
+  },
+  {
+   "t": "mc",
+   "q": "Dat is het ___ restaurant van Leuven.",
+   "h": "il più caro",
+   "o": [
+    "duurste",
+    "duurst",
+    "duurdere",
+    "durste"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Superlativo davanti al nome: <b>het duurste</b> restaurant. Attenzione: la <i>-d-</i> di <i>duurder</i> serve solo nel comparativo, non nel superlativo.",
+   "g": {
+    "duurste": "il più caro (giusto: davanti al nome -ste)",
+    "duurst": "senza -e: davanti al nome con het serve -ste",
+    "duurdere": "più caro (comparativo), non il più caro",
+    "durste": "forma che non esiste: uu resta uu"
+   },
+   "tt": "Quello è il ristorante più caro di Lovanio."
+  },
+  {
+   "t": "fill",
+   "q": "Van alle steden in België vind ik Gent het ___.",
+   "h": "più bella (mooi)",
+   "a": [
+    "mooist",
+    "mooiste"
+   ],
+   "e": "Superlativo dopo il verbo: <b>het mooist</b> (si accetta anche <i>het mooiste</i>). Nota l'inversione: <i>vind ik</i>.",
+   "tt": "Fra tutte le città del Belgio, Gand è quella che trovo più bella."
+  },
+  {
+   "t": "tr",
+   "q": "Mio fratello non è alto quanto mio padre.",
+   "a": [
+    "Mijn broer is niet even lang als mijn vader",
+    "Mijn broer is niet zo lang als mijn vader",
+    "Mijn broer is niet even groot als mijn vader",
+    "Mijn broer is niet zo groot als mijn vader"
+   ],
+   "e": "Uguaglianza: <b>even … als</b> (anche <i>zo … als</i>), mai <s>dan</s>. <b>niet</b> va davanti a <i>even</i>. Per una persona \"alto\" = <i>lang</i> (o <i>groot</i>)."
+  },
+  {
+   "t": "order",
+   "q": "Preferisco andare a Gand in treno.",
+   "a": "Ik ga liever met de trein naar Gent",
+   "alt": [
+    "Naar Gent ga ik liever met de trein",
+    "Met de trein ga ik liever naar Gent"
+   ],
+   "x": [
+    "graag",
+    "liefst"
+   ],
+   "e": "\"Preferire\" = verbo + <b>liever</b>, subito dopo il verbo; poi modo (<i>met de trein</i>) e luogo (<i>naar Gent</i>).",
+   "tt": "Preferisco andare a Gand in treno."
+  },
+  {
+   "t": "tr",
+   "q": "Questi pantaloni sono più economici di quelli.",
+   "a": [
+    "Deze broek is goedkoper dan die",
+    "Deze broek is goedkoper dan die broek",
+    "Deze broek is goedkoper dan die daar"
+   ],
+   "e": "<i>de broek</i> è singolare: <b>deze broek is</b>. <i>goedkoop</i> + -er, oo → o: <b>goedkoper dan</b>. \"Quelli\" → <b>die</b>."
+  },
+  {
+   "t": "order",
+   "q": "Questo è il caffè più buono di tutto il Belgio.",
+   "a": "Dit is de lekkerste koffie van heel België",
+   "x": [
+    "lekkerder",
+    "meest"
+   ],
+   "e": "Trabocchetto: il comparativo è <i>lekkerder</i> (-der dopo la r), ma il superlativo è <b>lekkerste</b>, senza d. Per presentare: <b>Dit is</b>.",
+   "tt": "Questo è il caffè più buono di tutto il Belgio."
+  }
+ ],
+ "en": {
+  "it": "Comparatives and superlatives",
+  "note": "\n<h3>The idea</h3>\n<p>Good news: Dutch compares much like English, by adding an <b>ending</b> to the adjective: <i>groot → groter → grootst</i> (big → bigger → biggest). The difference: English switches to \"<b>more</b> / <b>most</b>\" for long adjectives (\"more expensive\", \"most beautiful\"), but Dutch <b>always</b> uses the ending, however long the word: <i>duurder</i>, <i>mooiste</i>. Never <s>meer groot</s> or <s>meer duur</s>.</p>\n<h3>The comparative: -er … dan</h3>\n<p>Adjective + <b>-er</b>, then <b>dan</b> (= than): <i>Anna is jonger <b>dan</b> Tom</i> (Anna is younger than Tom). <i>In Italië is het warmer <b>dan</b> in België</i> (it's warmer in Italy than in Belgium).</p>\n<p>The spelling follows the -e rules (unit 14): <i>groot → groter</i>, <i>snel → sneller</i>. If the adjective ends in <b>-r</b>, you add <b>-der</b>: <i>duur → duurder</i>, <i>ver → verder</i>, <i>lekker → lekkerder</i>.</p>\n<p>Before a noun the comparative follows the adjective rules: <i>een grotere stad</i>, but <i>een groter huis</i>.</p>\n<h3>Equality: even … als</h3>\n<p>\"As… as\": <b>even</b> + adjective + <b>als</b>. <i>Mijn broer is even oud als ik.</i> (My brother is as old as me.) Note that Dutch says <i>als <b>ik</b></i> and <i>dan <b>ik</b></i>, where English usually says \"as me\", \"than me\".</p>\n<h3>The superlative: -st</h3>\n<table><tr><th>use</th><th>form</th><th>example</th></tr>\n<tr><td>after the verb</td><td><b>het</b> + -st</td><td>Piet is <b>het langst</b>.</td></tr>\n<tr><td>before a noun</td><td>de/het + -ste</td><td><b>de langste</b> man, <b>het kleinste</b> huis</td></tr></table>\n<p>After the verb you can also say <i>Piet is de langste</i> (meaning: the tallest of the family, of the group).</p>\n<h3>Irregular forms</h3>\n<table><tr><th>base</th><th>comparative</th><th>superlative</th></tr>\n<tr><td>goed (good, well)</td><td>beter</td><td>best</td></tr>\n<tr><td>veel (much, many)</td><td>meer</td><td>meest</td></tr>\n<tr><td>weinig (little, few)</td><td>minder</td><td>minst</td></tr>\n<tr><td>graag (gladly)</td><td>liever</td><td>liefst</td></tr></table>\n<p><b>graag / liever / liefst</b> express preferences: <i>Ik drink graag thee</i> (I like drinking tea), <i>Ik drink liever koffie</i> (I prefer coffee), <i>Ik drink het liefst water</i> (most of all I like water).</p>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Using <i>meer</i> like \"more\" with long adjectives: <s>meer duur, meer groot</s> → <b>duurder, groter</b>.</li>\n<li>Using <i>als</i> for \"than\" (it sounds like English \"as\"): <s>groter als Tom</s> → <b>groter dan Tom</b> in careful Dutch.</li>\n<li>Using <i>dan</i> for \"as… as\": <s>even oud dan ik</s> → <b>even oud als ik</b>.</li>\n<li>Forgetting -der: <s>duurer</s> → <b>duurder</b>.</li>\n<li>Making the irregulars regular: <s>goeder, graager</s> → <b>beter, liever</b>.</li>\n</ul>",
+  "vlaams": "For equality, <b>even … als</b> is common everywhere; in the Netherlands you also often hear <i>net zo … als</i>. In speech, everywhere, you'll often hear \"groter <b>als</b>\", but careful written Dutch always uses <b>dan</b>.",
+  "vocab": [
+   [
+    "jong",
+    "young"
+   ],
+   [
+    "lang",
+    "tall (person), long"
+   ],
+   [
+    "kort",
+    "short"
+   ],
+   [
+    "zwaar",
+    "heavy"
+   ],
+   [
+    "ver",
+    "far"
+   ],
+   [
+    "dichtbij",
+    "close, nearby"
+   ],
+   [
+    "rijk",
+    "rich"
+   ],
+   [
+    "arm",
+    "poor"
+   ],
+   [
+    "slim",
+    "smart, clever"
+   ],
+   [
+    "weinig",
+    "little, few"
+   ],
+   [
+    "de thee",
+    "the tea"
+   ],
+   [
+    "de zee",
+    "the sea"
+   ],
+   [
+    "de berg",
+    "the mountain"
+   ],
+   [
+    "het land",
+    "the country"
+   ]
+  ],
+  "core": [
+   [
+    "dan",
+    "than (in comparisons)"
+   ],
+   [
+    "even … als",
+    "as … as"
+   ],
+   [
+    "beter",
+    "better"
+   ],
+   [
+    "best",
+    "best"
+   ],
+   [
+    "meer",
+    "more (quantity)"
+   ],
+   [
+    "meest",
+    "most (quantity)"
+   ],
+   [
+    "liever",
+    "rather, preferably"
+   ],
+   [
+    "liefst",
+    "most of all (preference)"
+   ]
+  ],
+  "items": [
+   {
+    "t": "mc",
+    "q": "Mijn vader is ___ dan mijn moeder.",
+    "h": "older",
+    "o": [
+     "ouder",
+     "oudst",
+     "oud",
+     "meer oud"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "oud + -er: <b>ouder</b> dan."
+   },
+   {
+    "t": "fill",
+    "q": "In Italië is het ___ dan in België.",
+    "h": "warmer (warm)",
+    "a": [
+     "warmer"
+    ],
+    "e": "warm + -er: <b>warmer</b>. \"than in\" = <b>dan in</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Dit is de ___ koffie van Gent.",
+    "h": "the best",
+    "o": [
+     "beste",
+     "best",
+     "betere",
+     "goedste"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Superlative before a noun: <b>de beste</b>."
+   },
+   {
+    "t": "order",
+    "q": "My apartment is smaller than your house.",
+    "a": "Mijn appartement is kleiner dan jouw huis",
+    "x": [
+     "kleinst",
+     "van"
+    ],
+    "e": "<b>kleiner dan</b>: the comparative takes dan."
+   },
+   {
+    "t": "tr",
+    "q": "I prefer tea.",
+    "a": [
+     "Ik drink liever thee",
+     "Ik heb liever thee",
+     "Ik wil liever thee",
+     "Ik verkies thee"
+    ],
+    "e": "For preferences: verb + <b>liever</b>. In Belgium you also hear <i>Ik verkies thee</i>."
+   },
+   {
+    "t": "mc",
+    "q": "Hij heeft ___ geld dan zijn broer.",
+    "h": "more",
+    "o": [
+     "meer",
+     "meest",
+     "veeler",
+     "beter"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "veel → <b>meer</b> → meest."
+   },
+   {
+    "t": "fill",
+    "q": "Anna is even ___ als Sofie.",
+    "h": "tall",
+    "a": [
+     "lang",
+     "groot"
+    ],
+    "e": "<b>even lang als</b> (also: even groot als)."
+   },
+   {
+    "t": "mc",
+    "q": "Wat eet je het ___? — Frieten!",
+    "h": "most of all (favorite)",
+    "o": [
+     "liefst",
+     "liever",
+     "graagst",
+     "lieverst"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Superlative of graag: <b>het liefst</b>."
+   },
+   {
+    "t": "tr",
+    "q": "Bruges is smaller than Ghent.",
+    "a": [
+     "Brugge is kleiner dan Gent"
+    ],
+    "e": "<b>kleiner dan</b>."
+   },
+   {
+    "t": "order",
+    "q": "This bag is the heaviest.",
+    "a": "Deze tas is het zwaarst",
+    "x": [
+     "meest",
+     "dan"
+    ],
+    "e": "Superlative after the verb: <b>het zwaarst</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Which sentence is correct?",
+    "o": [
+     "Mijn huis is groter dan jouw huis.",
+     "Mijn huis is meer groot dan jouw huis.",
+     "Mijn huis is grooter dan jouw huis.",
+     "Mijn huis is groter van jouw huis."
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<b>groter dan</b>: -er, oo → o, and dan."
+   },
+   {
+    "t": "fill",
+    "q": "Mijn broer kookt ___ dan ik.",
+    "h": "better",
+    "a": [
+     "beter"
+    ],
+    "e": "Irregular: goed → <b>beter</b>."
+   }
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "klein → ___",
+    "h": "smaller",
+    "o": [
+     "kleiner",
+     "kleinder",
+     "meer klein",
+     "kleinst"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Adjective + <b>-er</b>: kleiner.",
+    "g": {
+     "kleiner": "smaller",
+     "kleinder": "-der only after an r",
+     "meer klein": "Dutch never uses meer to form the comparative",
+     "kleinst": "smallest (superlative)"
+    },
+    "tt": "small → smaller"
+   },
+   {
+    "t": "mc",
+    "q": "groot → ___",
+    "h": "bigger",
+    "o": [
+     "groter",
+     "grooter",
+     "grotter",
+     "groterder"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "+ -er and oo → o: <b>groter</b>.",
+    "g": {
+     "groter": "bigger",
+     "grooter": "doesn't exist: oo becomes o",
+     "grotter": "doesn't exist: the o is long",
+     "groterder": "doesn't exist"
+    },
+    "tt": "big → bigger"
+   },
+   {
+    "t": "mc",
+    "q": "duur → ___",
+    "h": "more expensive",
+    "o": [
+     "duurder",
+     "duurer",
+     "durer",
+     "meer duur"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Ends in -r → <b>-der</b>: duurder. No \"more\" as in English.",
+    "g": {
+     "duurder": "more expensive",
+     "duurer": "after r you need -der",
+     "durer": "doesn't exist",
+     "meer duur": "Dutch never uses meer to form the comparative"
+    },
+    "tt": "expensive → more expensive"
+   },
+   {
+    "t": "mc",
+    "q": "goed → ___",
+    "h": "better",
+    "o": [
+     "beter",
+     "goeder",
+     "meer goed",
+     "best"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Irregular: goed → <b>beter</b> → best.",
+    "g": {
+     "beter": "better",
+     "goeder": "doesn't exist: goed is irregular",
+     "meer goed": "not used",
+     "best": "best (superlative)"
+    },
+    "tt": "good → better"
+   },
+   {
+    "t": "mc",
+    "q": "Anna is ___ dan Tom.",
+    "h": "younger",
+    "o": [
+     "jonger",
+     "jongst",
+     "jong",
+     "jongere"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Comparative + <b>dan</b>: jonger dan.",
+    "g": {
+     "jonger": "younger",
+     "jongst": "youngest: with dan you need the comparative",
+     "jong": "young (base form)",
+     "jongere": "no -e after the verb"
+    },
+    "tt": "Anna is younger than Tom."
+   },
+   {
+    "t": "mc",
+    "q": "Mijn broer is even oud ___ ik.",
+    "o": [
+     "als",
+     "dan",
+     "van",
+     "met"
+    ],
+    "a": 0,
+    "e": "<b>even … als</b> = as… as.",
+    "g": {
+     "als": "as (after even)",
+     "dan": "than: only with the comparative",
+     "van": "of, from (possession, origin)",
+     "met": "with"
+    },
+    "tt": "My brother is as old as me."
+   },
+   {
+    "t": "mc",
+    "q": "Tom is lang, Ben is langer, Piet is ___.",
+    "o": [
+     "het langst",
+     "het langer",
+     "het lange",
+     "meer lang"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Superlative after the verb: <b>het langst</b>.",
+    "g": {
+     "het langst": "the tallest",
+     "het langer": "het goes with the superlative, not the comparative",
+     "het lange": "wrong form here",
+     "meer lang": "Dutch doesn't use meer"
+    },
+    "tt": "Tom is tall, Ben is taller, Piet is the tallest."
+   },
+   {
+    "t": "mc",
+    "q": "Ik drink graag thee, maar ik drink ___ koffie.",
+    "o": [
+     "liever",
+     "graager",
+     "meer graag",
+     "lieverder"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Irregular: graag → <b>liever</b> → liefst.",
+    "g": {
+     "liever": "rather, I prefer",
+     "graager": "doesn't exist",
+     "meer graag": "not used",
+     "lieverder": "doesn't exist"
+    },
+    "tt": "I like drinking tea, but I prefer coffee."
+   },
+   {
+    "t": "fill",
+    "q": "Thee is ___ dan koffie.",
+    "h": "cheaper (goedkoop)",
+    "a": [
+     "goedkoper"
+    ],
+    "e": "goedkoop + -er, oo → o: <b>goedkoper</b>.",
+    "tt": "Tea is cheaper than coffee."
+   },
+   {
+    "t": "fill",
+    "q": "Deze trui is mooier ___ die trui.",
+    "h": "than",
+    "a": [
+     "dan"
+    ],
+    "e": "Comparative + <b>dan</b>.",
+    "tt": "This sweater is nicer than that sweater."
+   }
+  ],
+  "gloss": {
+   "0": {
+    "g": {
+     "ouder": "older",
+     "oudst": "oldest: with dan you need the comparative",
+     "oud": "old (base form)",
+     "meer oud": "Dutch doesn't use meer"
+    },
+    "t": "My father is older than my mother."
+   },
+   "1": {
+    "t": "It's warmer in Italy than in Belgium."
+   },
+   "2": {
+    "g": {
+     "beste": "the best (before a noun)",
+     "best": "no -e: before a noun with de you need -e",
+     "betere": "better (comparative), not the best",
+     "goedste": "doesn't exist: goed is irregular"
+    },
+    "t": "This is the best coffee in Ghent."
+   },
+   "5": {
+    "g": {
+     "meer": "more (quantity)",
+     "meest": "the most: with dan you need the comparative",
+     "veeler": "doesn't exist: veel is irregular",
+     "beter": "better: not about quantity"
+    },
+    "t": "He has more money than his brother."
+   },
+   "6": {
+    "t": "Anna is as tall as Sofie."
+   },
+   "7": {
+    "g": {
+     "liefst": "most of all (preference)",
+     "liever": "rather (comparative): with het you need liefst",
+     "graagst": "doesn't exist",
+     "lieverst": "doesn't exist"
+    },
+    "t": "What do you like eating most? — Fries!"
+   },
+   "10": {
+    "g": {
+     "Mijn huis is groter dan jouw huis.": "My house is bigger than your house. (correct)",
+     "Mijn huis is meer groot dan jouw huis.": "Dutch doesn't use meer: groter",
+     "Mijn huis is grooter dan jouw huis.": "spelling: oo becomes o",
+     "Mijn huis is groter van jouw huis.": "comparisons use dan, not van"
+    },
+    "t": "My house is bigger than your house."
+   },
+   "11": {
+    "t": "My brother cooks better than me."
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "Antwerpen is een ___ stad dan Brugge.",
+    "o": [
+     "grotere",
+     "groter",
+     "grootste",
+     "meer grote"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Before a noun the comparative follows the adjective rules: <i>de stad</i> is a de-word, so even with <i>een</i> it takes -e: <b>een grotere stad</b>.",
+    "g": {
+     "grotere": "bigger (correct: de-word + -e)",
+     "groter": "no -e only with een + het-word (een groter huis)",
+     "grootste": "superlative, and dan needs the comparative",
+     "meer grote": "Dutch never uses meer to form the comparative"
+    },
+    "tt": "Antwerp is a bigger city than Bruges."
+   },
+   {
+    "t": "fill",
+    "q": "De trein naar Brussel is ___ dan de bus, maar hij is ook sneller.",
+    "h": "more expensive (duur)",
+    "a": [
+     "duurder"
+    ],
+    "e": "<i>duur</i> ends in <b>-r</b> → comparative with <b>-der</b>: <i>duurder</i>. Unlike English \"more expensive\", Dutch always uses the ending.",
+    "tt": "The train to Brussels is more expensive than the bus, but it's also faster."
+   },
+   {
+    "t": "mc",
+    "q": "Dat is het ___ restaurant van Leuven.",
+    "h": "the most expensive",
+    "o": [
+     "duurste",
+     "duurst",
+     "duurdere",
+     "durste"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Superlative before a noun: <b>het duurste</b> restaurant (not \"most expensive\" with <i>meest</i>). Careful: the <i>-d-</i> of <i>duurder</i> is only for the comparative, not the superlative.",
+    "g": {
+     "duurste": "the most expensive (correct: -ste before the noun)",
+     "duurst": "no -e: before a noun with het you need -ste",
+     "duurdere": "more expensive (comparative), not the most expensive",
+     "durste": "doesn't exist: uu stays uu"
+    },
+    "tt": "That's the most expensive restaurant in Leuven."
+   },
+   {
+    "t": "fill",
+    "q": "Van alle steden in België vind ik Gent het ___.",
+    "h": "most beautiful (mooi)",
+    "a": [
+     "mooist",
+     "mooiste"
+    ],
+    "e": "Superlative after the verb: <b>het mooist</b> (<i>het mooiste</i> is also accepted). Note the inversion: <i>vind ik</i>.",
+    "tt": "Of all the cities in Belgium, I think Ghent is the most beautiful."
+   },
+   {
+    "t": "tr",
+    "q": "My brother isn't as tall as my father.",
+    "a": [
+     "Mijn broer is niet even lang als mijn vader",
+     "Mijn broer is niet zo lang als mijn vader",
+     "Mijn broer is niet even groot als mijn vader",
+     "Mijn broer is niet zo groot als mijn vader"
+    ],
+    "e": "Equality: <b>even … als</b> (also <i>zo … als</i>), never <s>dan</s>. <b>niet</b> goes before <i>even</i>. For a person, \"tall\" = <i>lang</i> (or <i>groot</i>)."
+   },
+   {
+    "t": "order",
+    "q": "I'd rather go to Ghent by train.",
+    "a": "Ik ga liever met de trein naar Gent",
+    "alt": [
+     "Naar Gent ga ik liever met de trein",
+     "Met de trein ga ik liever naar Gent"
+    ],
+    "x": [
+     "graag",
+     "liefst"
+    ],
+    "e": "\"Prefer / would rather\" = verb + <b>liever</b>, right after the verb; then manner (<i>met de trein</i>) and place (<i>naar Gent</i>).",
+    "tt": "I'd rather go to Ghent by train."
+   },
+   {
+    "t": "tr",
+    "q": "These pants are cheaper than those.",
+    "a": [
+     "Deze broek is goedkoper dan die",
+     "Deze broek is goedkoper dan die broek",
+     "Deze broek is goedkoper dan die daar"
+    ],
+    "e": "<i>de broek</i> is singular: <b>deze broek is</b>. <i>goedkoop</i> + -er, oo → o: <b>goedkoper dan</b>. \"Those\" → <b>die</b>."
+   },
+   {
+    "t": "order",
+    "q": "This is the best-tasting coffee in all of Belgium.",
+    "a": "Dit is de lekkerste koffie van heel België",
+    "x": [
+     "lekkerder",
+     "meest"
+    ],
+    "e": "Trap: the comparative is <i>lekkerder</i> (-der after r), but the superlative is <b>lekkerste</b>, without d. To point something out: <b>Dit is</b>.",
+    "tt": "This is the best-tasting coffee in all of Belgium."
+   }
+  ]
+ }
+}

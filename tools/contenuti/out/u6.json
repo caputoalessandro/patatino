@@ -1,0 +1,618 @@
+{
+ "id": "u6",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "Ik koop op de markt in Antwerpen drie ___ en twee kilo kaas.",
+   "o": [
+    "eieren",
+    "eien",
+    "eis",
+    "ei's"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<b>ei</b> è irregolare: <b>eieren</b> (come <i>kinderen</i>). Nota invece <i>twee kilo</i>: dopo un numero le misure restano al singolare.",
+   "g": {
+    "eieren": "uova",
+    "eien": "forma che non esiste: ei è irregolare",
+    "eis": "forma che non esiste",
+    "ei's": "forma che non esiste: ei è irregolare (eieren)"
+   },
+   "tt": "Al mercato di Anversa compro tre uova e due chili di formaggio."
+  },
+  {
+   "t": "mc",
+   "q": "Quale frase è corretta?",
+   "o": [
+    "De menu's in het frietkot zijn nieuw.",
+    "Het menu's in het frietkot zijn nieuw.",
+    "De menus in het frietkot zijn nieuw.",
+    "De menu's in het frietkot is nieuw."
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Al plurale l'articolo è sempre <b>de</b> (anche se <i>het menu</i>), dopo -u serve <b>-'s</b> e il verbo va al plurale: <b>zijn</b>.",
+   "g": {
+    "De menu's in het frietkot zijn nieuw.": "I menù del frietkot sono nuovi.",
+    "Het menu's in het frietkot zijn nieuw.": "errore: al plurale sempre de",
+    "De menus in het frietkot zijn nieuw.": "errore: manca l'apostrofo (menu's)",
+    "De menu's in het frietkot is nieuw.": "errore: soggetto plurale, verbo zijn"
+   },
+   "tt": "I menù del frietkot sono nuovi."
+  },
+  {
+   "t": "fill",
+   "q": "De ___ in Vlaanderen zijn mooi: Gent, Brugge, Leuven...",
+   "h": "città (de stad)",
+   "a": [
+    "steden"
+   ],
+   "e": "Plurale irregolare: <b>stad → steden</b> (cambia anche la vocale). Non <i>stadden</i>.",
+   "tt": "Le città delle Fiandre sono belle: Gand, Bruges, Lovanio..."
+  },
+  {
+   "t": "fill",
+   "q": "Ik zie drie ___ in de haven van Antwerpen.",
+   "h": "nave (het schip)",
+   "a": [
+    "schepen"
+   ],
+   "e": "Irregolare: <b>schip → schepen</b>, con la vocale che cambia da i a e. Non <i>schippen</i>.",
+   "tt": "Vedo tre navi nel porto di Anversa."
+  },
+  {
+   "t": "tr",
+   "q": "Le ragazze hanno tre bici e due auto.",
+   "a": [
+    "De meisjes hebben drie fietsen en twee auto's"
+   ],
+   "e": "Tre desinenze in una frase: <b>meisjes</b> (-je → -s), <b>fietsen</b> (-en), <b>auto's</b> (vocale → -'s)."
+  },
+  {
+   "t": "tr",
+   "q": "Gli uomini comprano patatine al frietkot.",
+   "a": [
+    "De mannen kopen frieten in het frietkot",
+    "De mannen kopen frieten bij het frietkot",
+    "De mannen kopen friet in het frietkot",
+    "De mannen kopen friet bij het frietkot",
+    "De mannen kopen frieten aan het frietkot",
+    "De mannen kopen friet aan het frietkot"
+   ],
+   "e": "<b>mannen</b>: vocale breve, si raddoppia la n. In Belgio <b>frieten</b> (o <i>friet</i>), non <i>patat</i>."
+  },
+  {
+   "t": "order",
+   "q": "Gli uomini cercano le chiavi della macchina.",
+   "a": "De mannen zoeken de sleutels van de auto",
+   "x": [
+    "het",
+    "sleutelen"
+   ],
+   "e": "<b>sleutel</b> finisce in -el: plurale <b>sleutels</b>. Al plurale l'articolo è sempre <b>de</b>.",
+   "tt": "Gli uomini cercano le chiavi della macchina."
+  },
+  {
+   "t": "order",
+   "q": "Le ragazze ci danno tre libri domani.",
+   "a": "De meisjes geven ons morgen drie boeken",
+   "alt": [
+    "Morgen geven de meisjes ons drie boeken"
+   ],
+   "x": [
+    "wij",
+    "boeks"
+   ],
+   "e": "<b>meisjes</b> e <b>boeken</b>; il complemento oggetto pronome è <b>ons</b> (non <i>wij</i>) e il verbo al plurale <b>geven</b>.",
+   "tt": "Le ragazze ci danno tre libri domani."
+  }
+ ],
+ "en": {
+  "it": "The plural",
+  "note": "\n<h3>The idea</h3>\n<p>Like English, Dutch makes plurals by <b>adding</b> an ending. But instead of one main ending (-s) there are two: <b>-en</b> and <b>-s</b>. And in the plural the article is always <b>de</b>, just as English always uses \"the\".</p>\n<h3>Which ending?</h3>\n<ul>\n<li><b>-en</b> is the general rule: boek → <b>boeken</b>, fiets → <b>fietsen</b>.</li>\n<li><b>-s</b> for words ending in <b>-el, -em, -en, -er, -je</b> (weak final syllable): tafel → <b>tafels</b>, meisje → <b>meisjes</b>, kamer → <b>kamers</b>.</li>\n<li><b>-'s</b> (with an apostrophe) for words ending in <b>a, i, o, u, y</b>: auto → <b>auto's</b>, menu → <b>menu's</b>. The apostrophe keeps the vowel long.</li>\n</ul>\n<h3>Spelling with -en</h3>\n<p>Same logic as the verbs (unit 2): the sound stays the same, the spelling changes.</p>\n<ul>\n<li>A <b>long vowel</b> written double becomes single, because the syllable opens up: boom → <b>bo-men</b>, jaar → <b>ja-ren</b>.</li>\n<li><b>Short vowel</b>: double the consonant to keep it short: man → <b>man-nen</b>, bus → <b>bus-sen</b>.</li>\n<li><b>f → v</b> and <b>s → z</b> between two vowels: brief → <b>brieven</b>, huis → <b>huizen</b>.</li>\n</ul>\n<h3>Irregulars to memorize</h3>\n<table><tr><th>singular</th><th>plural</th></tr>\n<tr><td>het kind</td><td>de kinderen</td></tr>\n<tr><td>het ei</td><td>de eieren</td></tr>\n<tr><td>de stad</td><td>de steden</td></tr>\n<tr><td>het schip</td><td>de schepen</td></tr></table>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Adding -s everywhere, English-style: <s>boeks</s> → <b>boeken</b>.</li>\n<li>Keeping the double vowel: <s>boomen</s> → <b>bomen</b>.</li>\n<li>Forgetting the apostrophe: <s>autos</s> → <b>auto's</b>.</li>\n<li>Using het in the plural: <s>het kinderen</s> → <b>de kinderen</b>.</li>\n</ul>",
+  "vlaams": "In Belgium French fries are <b>frieten</b> (de friet, de frieten) and you buy them at a <b>frituur</b> or \"frietkot\". In the Netherlands you'd say \"patat\". In everyday speech, especially in the Netherlands, the final -n of the plural is often dropped: \"boeke\".",
+  "vocab": [
+   [
+    "de man",
+    "the man"
+   ],
+   [
+    "de boom",
+    "the tree"
+   ],
+   [
+    "de brief",
+    "the letter"
+   ],
+   [
+    "de stad",
+    "the city"
+   ],
+   [
+    "het kind",
+    "the child"
+   ],
+   [
+    "het meisje",
+    "the girl"
+   ],
+   [
+    "de tafel",
+    "the table"
+   ],
+   [
+    "het menu",
+    "the menu"
+   ],
+   [
+    "de fiets",
+    "the bike"
+   ],
+   [
+    "het huis",
+    "the house"
+   ],
+   [
+    "de friet",
+    "the (French) fry"
+   ],
+   [
+    "het ei",
+    "the egg"
+   ],
+   [
+    "veel",
+    "much, many, a lot"
+   ]
+  ],
+  "core": [],
+  "items": [
+   {
+    "t": "fill",
+    "q": "één boek → twee ___",
+    "a": [
+     "boeken"
+    ],
+    "e": "General rule: <b>boeken</b>."
+   },
+   {
+    "t": "fill",
+    "q": "één tafel → twee ___",
+    "a": [
+     "tafels"
+    ],
+    "e": "After -el: <b>tafels</b>."
+   },
+   {
+    "t": "fill",
+    "q": "één auto → twee ___",
+    "a": [
+     "auto's"
+    ],
+    "e": "After -o: <b>auto's</b> with an apostrophe."
+   },
+   {
+    "t": "fill",
+    "q": "één man → twee ___",
+    "a": [
+     "mannen"
+    ],
+    "e": "Short vowel: double the n, <b>mannen</b>."
+   },
+   {
+    "t": "fill",
+    "q": "één boom → twee ___",
+    "a": [
+     "bomen"
+    ],
+    "e": "Long vowel in an open syllable: <b>bomen</b>."
+   },
+   {
+    "t": "fill",
+    "q": "één huis → twee ___",
+    "a": [
+     "huizen"
+    ],
+    "e": "s → z: <b>huizen</b>."
+   },
+   {
+    "t": "fill",
+    "q": "één kind → twee ___",
+    "a": [
+     "kinderen"
+    ],
+    "e": "Irregular: <b>kinderen</b> (like English <i>children</i>)."
+   },
+   {
+    "t": "fill",
+    "q": "één meisje → twee ___",
+    "a": [
+     "meisjes"
+    ],
+    "e": "After -je: <b>meisjes</b>."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "één stad → twee ___",
+    "o": [
+     "stadden",
+     "steden",
+     "stads",
+     "stadenen"
+    ],
+    "a": 1,
+    "e": "Irregular: <b>steden</b>."
+   },
+   {
+    "t": "fill",
+    "q": "één brief → twee ___",
+    "a": [
+     "brieven"
+    ],
+    "e": "f → v: <b>brieven</b>."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "één menu → twee ___",
+    "o": [
+     "menus",
+     "menu's",
+     "menuen",
+     "menuën"
+    ],
+    "a": 1,
+    "e": "<b>menu's</b>."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "één fiets → twee ___",
+    "o": [
+     "fietsen",
+     "fiets",
+     "fietses",
+     "fietzen"
+    ],
+    "a": 0,
+    "e": "<b>fietsen</b>."
+   },
+   {
+    "t": "tr",
+    "q": "two children",
+    "a": [
+     "twee kinderen"
+    ],
+    "e": "<b>kinderen</b>."
+   }
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "een boek → twee ___",
+    "o": [
+     "boeken",
+     "boeks",
+     "boekken",
+     "boekes"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "General rule: <b>-en</b>.",
+    "g": {
+     "boeken": "books",
+     "boeks": "not a real form",
+     "boekken": "not a real form: oe stays as it is",
+     "boekes": "not a real form"
+    },
+    "tt": "a book → two books"
+   },
+   {
+    "t": "mc",
+    "q": "een tafel → twee ___",
+    "o": [
+     "tafels",
+     "tafelen",
+     "tafel's",
+     "tafles"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "After -el: <b>-s</b>.",
+    "g": {
+     "tafels": "tables",
+     "tafelen": "not a real form",
+     "tafel's": "the apostrophe is only used after a vowel",
+     "tafles": "not a real form"
+    },
+    "tt": "a table → two tables"
+   },
+   {
+    "t": "mc",
+    "q": "een auto → twee ___",
+    "o": [
+     "auto's",
+     "autos",
+     "autoen",
+     "auten"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "After a vowel: <b>-'s</b>.",
+    "g": {
+     "auto's": "cars",
+     "autos": "missing the apostrophe",
+     "autoen": "not a real form",
+     "auten": "not a real form"
+    },
+    "tt": "a car → two cars"
+   },
+   {
+    "t": "mc",
+    "q": "Which ending after -el, -er, -je?",
+    "o": [
+     "-s",
+     "-en",
+     "-'s",
+     "none"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Weak final syllable: <b>-s</b> (tafels, kamers, meisjes)."
+   },
+   {
+    "t": "mc",
+    "q": "een man → twee ___",
+    "o": [
+     "mannen",
+     "manen",
+     "mans",
+     "man's"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Short vowel: double the consonant, <b>mannen</b>.",
+    "g": {
+     "mannen": "men",
+     "manen": "moons: with one n the a becomes long",
+     "mans": "not a real form",
+     "man's": "not a real form"
+    },
+    "tt": "a man → two men"
+   },
+   {
+    "t": "mc",
+    "q": "een boom → twee ___",
+    "o": [
+     "bomen",
+     "boomen",
+     "boommen",
+     "booms"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Open syllable: the long vowel is written single, <b>bomen</b>.",
+    "g": {
+     "bomen": "trees",
+     "boomen": "not a real form: oo becomes o",
+     "boommen": "not a real form",
+     "booms": "not a real form"
+    },
+    "tt": "a tree → two trees"
+   },
+   {
+    "t": "mc",
+    "q": "een huis → twee ___",
+    "o": [
+     "huizen",
+     "huisen",
+     "huises",
+     "huis's"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "s becomes z between two vowels: <b>huizen</b>.",
+    "g": {
+     "huizen": "houses",
+     "huisen": "not a real form: s → z",
+     "huises": "not a real form",
+     "huis's": "not a real form"
+    },
+    "tt": "a house → two houses"
+   },
+   {
+    "t": "fill",
+    "q": "een fiets → twee ___",
+    "a": [
+     "fietsen"
+    ],
+    "e": "<b>fietsen</b>.",
+    "tt": "a bike → two bikes"
+   },
+   {
+    "t": "fill",
+    "q": "een meisje → twee ___",
+    "a": [
+     "meisjes"
+    ],
+    "e": "After -je: <b>meisjes</b>.",
+    "tt": "a girl → two girls"
+   },
+   {
+    "t": "fill",
+    "q": "een kind → twee ___",
+    "a": [
+     "kinderen"
+    ],
+    "e": "Irregular: <b>kinderen</b>.",
+    "tt": "a child → two children"
+   }
+  ],
+  "gloss": {
+   "0": {
+    "t": "one book → two books"
+   },
+   "1": {
+    "t": "one table → two tables"
+   },
+   "2": {
+    "t": "one car → two cars"
+   },
+   "3": {
+    "t": "one man → two men"
+   },
+   "4": {
+    "t": "one tree → two trees"
+   },
+   "5": {
+    "t": "one house → two houses"
+   },
+   "6": {
+    "t": "one child → two children"
+   },
+   "7": {
+    "t": "one girl → two girls"
+   },
+   "8": {
+    "g": {
+     "stadden": "not a real form",
+     "steden": "cities (irregular plural)",
+     "stads": "not a real form",
+     "stadenen": "not a real form"
+    },
+    "t": "one city → two cities"
+   },
+   "9": {
+    "t": "one letter → two letters"
+   },
+   "10": {
+    "g": {
+     "menus": "missing the apostrophe",
+     "menu's": "menus",
+     "menuen": "not a real form",
+     "menuën": "not a real form"
+    },
+    "t": "one menu → two menus"
+   },
+   "11": {
+    "g": {
+     "fietsen": "bikes",
+     "fiets": "bike (singular)",
+     "fietses": "not a real form",
+     "fietzen": "not a real form"
+    },
+    "t": "one bike → two bikes"
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "Ik koop op de markt in Antwerpen drie ___ en twee kilo kaas.",
+    "o": [
+     "eieren",
+     "eien",
+     "eis",
+     "ei's"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<b>ei</b> is irregular: <b>eieren</b> (like <i>kinderen</i>). Note <i>twee kilo</i>, though: after a number, units of measure stay singular.",
+    "g": {
+     "eieren": "eggs",
+     "eien": "not a real form: ei is irregular",
+     "eis": "not a real form",
+     "ei's": "not a real form: ei is irregular (eieren)"
+    },
+    "tt": "I buy three eggs and two kilos of cheese at the market in Antwerp."
+   },
+   {
+    "t": "mc",
+    "q": "Which sentence is correct?",
+    "o": [
+     "De menu's in het frietkot zijn nieuw.",
+     "Het menu's in het frietkot zijn nieuw.",
+     "De menus in het frietkot zijn nieuw.",
+     "De menu's in het frietkot is nieuw."
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "In the plural the article is always <b>de</b> (even though it's <i>het menu</i>), after -u you need <b>-'s</b>, and the verb is plural: <b>zijn</b>.",
+    "g": {
+     "De menu's in het frietkot zijn nieuw.": "The menus at the frietkot are new.",
+     "Het menu's in het frietkot zijn nieuw.": "wrong: plural always takes de",
+     "De menus in het frietkot zijn nieuw.": "wrong: missing the apostrophe (menu's)",
+     "De menu's in het frietkot is nieuw.": "wrong: plural subject, so the verb is zijn"
+    },
+    "tt": "The menus at the frietkot are new."
+   },
+   {
+    "t": "fill",
+    "q": "De ___ in Vlaanderen zijn mooi: Gent, Brugge, Leuven...",
+    "h": "city (de stad)",
+    "a": [
+     "steden"
+    ],
+    "e": "Irregular plural: <b>stad → steden</b> (the vowel changes too). Not <i>stadden</i>.",
+    "tt": "The cities in Flanders are beautiful: Ghent, Bruges, Leuven..."
+   },
+   {
+    "t": "fill",
+    "q": "Ik zie drie ___ in de haven van Antwerpen.",
+    "h": "ship (het schip)",
+    "a": [
+     "schepen"
+    ],
+    "e": "Irregular: <b>schip → schepen</b>, with the vowel changing from i to e. Not <i>schippen</i>.",
+    "tt": "I see three ships in the port of Antwerp."
+   },
+   {
+    "t": "tr",
+    "q": "The girls have three bikes and two cars.",
+    "a": [
+     "De meisjes hebben drie fietsen en twee auto's"
+    ],
+    "e": "Three endings in one sentence: <b>meisjes</b> (-je → -s), <b>fietsen</b> (-en), <b>auto's</b> (vowel → -'s)."
+   },
+   {
+    "t": "tr",
+    "q": "The men buy fries at the frietkot.",
+    "a": [
+     "De mannen kopen frieten in het frietkot",
+     "De mannen kopen frieten bij het frietkot",
+     "De mannen kopen friet in het frietkot",
+     "De mannen kopen friet bij het frietkot",
+     "De mannen kopen frieten aan het frietkot",
+     "De mannen kopen friet aan het frietkot"
+    ],
+    "e": "<b>mannen</b>: short vowel, so the n doubles. In Belgium fries are <b>frieten</b> (or <i>friet</i>), not <i>patat</i>."
+   },
+   {
+    "t": "order",
+    "q": "The men are looking for the car keys.",
+    "a": "De mannen zoeken de sleutels van de auto",
+    "x": [
+     "het",
+     "sleutelen"
+    ],
+    "e": "<b>sleutel</b> ends in -el: plural <b>sleutels</b>. In the plural the article is always <b>de</b>. Note that Dutch says <i>de sleutels van de auto</i> (\"the keys of the car\").",
+    "tt": "The men are looking for the car keys."
+   },
+   {
+    "t": "order",
+    "q": "The girls are giving us three books tomorrow.",
+    "a": "De meisjes geven ons morgen drie boeken",
+    "alt": [
+     "Morgen geven de meisjes ons drie boeken"
+    ],
+    "x": [
+     "wij",
+     "boeks"
+    ],
+    "e": "<b>meisjes</b> and <b>boeken</b>; the object pronoun is <b>ons</b> (not <i>wij</i>), and the verb is plural: <b>geven</b>. Dutch uses the simple present for this (<i>geven</i>, not \"are giving\").",
+    "tt": "The girls are giving us three books tomorrow."
+   }
+  ]
+ }
+}

@@ -1,0 +1,706 @@
+{
+ "id": "u23",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "Koekjes? Gisteren heeft mijn broer ___ vijf opgegeten!",
+   "o": [
+    "er",
+    "ze",
+    "het",
+    "daar"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Numero senza nome → <b>er</b> (ne). Con l'inversione <b>er</b> viene dopo il soggetto: <i>heeft mijn broer <b>er</b> vijf opgegeten</i>.",
+   "g": {
+    "er": "ne (corretta)",
+    "ze": "li: non si usa con un numero",
+    "het": "lo: non si usa con un numero",
+    "daar": "là: qui serve er (ne)"
+   },
+   "tt": "Biscotti? Ieri mio fratello ne ha mangiati cinque!"
+  },
+  {
+   "t": "mc",
+   "q": "Ik heb een nieuwe fiets en ik rijd ___ elke dag mee naar mijn werk in Leuven.",
+   "o": [
+    "er",
+    "ermee",
+    "hem",
+    "het"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Trabocchetto: <b>er</b> e <b>mee</b> si separano, e <i>mee</i> è già in fondo alla frase. Quindi qui serve solo <b>er</b>: <i>ik rijd <b>er</b> elke dag <b>mee</b></i>.",
+   "g": {
+    "er": "ci (er … mee = con essa, corretta)",
+    "ermee": "con essa: ma mee c'è già, sarebbe doppio",
+    "hem": "lui/la: per una cosa dopo una preposizione si usa er",
+    "het": "esso: non si dice met het"
+   },
+   "tt": "Ho una bici nuova e ci vado ogni giorno al lavoro a Lovanio."
+  },
+  {
+   "t": "fill",
+   "q": "___ denk je aan? — Aan onze vakantie in Oostende.",
+   "h": "a che cosa",
+   "a": [
+    "Waar"
+   ],
+   "e": "Domanda su una cosa con <i>aan</i>: <b>waaraan</b>, ma spesso si separa: <b>Waar</b> denk je <b>aan</b>? Qui <i>aan</i> è già in fondo.",
+   "tt": "A che cosa pensi? — Alla nostra vacanza a Ostenda."
+  },
+  {
+   "t": "fill",
+   "q": "Er ___ in het centrum van Gent veel mooie oude huizen.",
+   "h": "esserci",
+   "a": [
+    "zijn",
+    "staan"
+   ],
+   "e": "Il verbo si accorda con il nome che segue, plurale: <b>er zijn</b> (o <i>er staan</i>, per gli edifici).",
+   "tt": "Nel centro di Gand ci sono molte belle case antiche."
+  },
+  {
+   "t": "tr",
+   "q": "Ieri ne ho comprati due.",
+   "a": [
+    "Gisteren heb ik er twee gekocht",
+    "Ik heb er gisteren twee gekocht",
+    "Gisteren kocht ik er twee",
+    "Ik kocht er gisteren twee"
+   ],
+   "e": "Il \"ne\" è <b>er</b>, subito dopo il verbo (o dopo il soggetto con l'inversione); il participio va in fondo: <i>Ik heb <b>er</b> gisteren twee gekocht</i>."
+  },
+  {
+   "t": "tr",
+   "q": "Ne parliamo domani.",
+   "a": [
+    "We praten er morgen over",
+    "Wij praten er morgen over",
+    "Morgen praten we erover",
+    "Morgen praten wij erover",
+    "Morgen praten we er over",
+    "Morgen praten wij er over",
+    "We praten morgen erover",
+    "Wij praten morgen erover",
+    "Daar praten we morgen over",
+    "Daar praten wij morgen over",
+    "We praten daar morgen over",
+    "Wij praten daar morgen over",
+    "We praten morgen daarover",
+    "Wij praten morgen daarover",
+    "Morgen praten we daarover",
+    "Morgen praten wij daarover",
+    "Daarover praten we morgen",
+    "Daarover praten wij morgen",
+    "Morgen praten we daar over",
+    "Morgen praten wij daar over"
+   ],
+   "e": "<i>praten over</i> + cosa → <b>erover</b>; di solito si separa: <i>We praten <b>er</b> morgen <b>over</b></i>. Con enfasi: <i>daarover</i>."
+  },
+  {
+   "t": "order",
+   "q": "C'è ancora un tram per la stazione stasera?",
+   "a": "Is er vanavond nog een tram naar het station",
+   "alt": [
+    "Is er nog een tram naar het station vanavond"
+   ],
+   "x": [
+    "heeft",
+    "zijn"
+   ],
+   "e": "Domanda: <b>Is er</b> …? Il verbo è singolare perché segue <i>een tram</i>.",
+   "tt": "C'è ancora un tram per la stazione stasera?"
+  },
+  {
+   "t": "order",
+   "q": "Sì, ci ho già pensato.",
+   "a": "Ja ik heb er al aan gedacht",
+   "x": [
+    "ben",
+    "eraan"
+   ],
+   "e": "<i>denken aan</i> + cosa: <b>er</b> dopo l'ausiliare, <b>aan</b> subito prima del participio. <i>denken</i> → <b>gedacht</b>.",
+   "tt": "Sì, ci ho già pensato."
+  }
+ ],
+ "en": {
+  "it": "The word er",
+  "note": "\n<h3>The idea</h3>\n<p><b>er</b> is a tiny word that turns up everywhere. It does several jobs that English handles with \"there\", \"it\" or \"of them\", or with nothing at all. It has four main uses.</p>\n<h3>1. er = there (place)</h3>\n<p>It replaces a place already mentioned, like an unstressed English \"there\": <i>Woon je in Gent? — Ja, ik woon er graag.</i> (yes, I like living there). <b>er</b> is never stressed. For emphasis, or to put it first in the sentence, use <b>daar</b> (there): <i>Daar woon ik graag.</i></p>\n<h3>2. er + number = of them</h3>\n<p>When you answer with a number or a quantity without repeating the noun, Dutch needs <b>er</b>, where English often just says the number: <i>Hoeveel broers heb je? — Ik heb er twee.</i> (I have two). It also works with <i>veel</i> and <i>geen</i>: <i>Ik heb er veel</i> (I have a lot), <i>Ik heb er geen</i> (I don't have any). Without er the sentence is incomplete.</p>\n<h3>3. er is / er zijn = there is / there are</h3>\n<p>To say that something exists or is somewhere: <i>Er is een probleem</i> (there's a problem), <i>Er zijn veel mensen in de winkel</i> (there are a lot of people in the store). The verb agrees with the noun that follows. In questions: <i>Is er een bank in deze straat?</i> It's used with an indefinite noun (een, veel, twee...). With a definite noun you don't need it: <i>De bank is daar.</i></p>\n<h3>4. er + preposition</h3>\n<p>For <b>things</b>, Dutch doesn't say \"preposition + het/hem/ze\" (on it, about it), but joins <b>er</b> and the preposition into one word, a bit like old English \"thereon, thereby\":</p>\n<table><tr><th>with a thing</th><th>becomes</th><th>English</th></tr>\n<tr><td>op de trein</td><td>erop</td><td>Ik wacht erop. (I'm waiting for it)</td></tr>\n<tr><td>over de film</td><td>erover</td><td>We praten erover. (we're talking about it)</td></tr>\n<tr><td>aan het feest</td><td>eraan</td><td>Ik denk eraan. (I'm thinking about it)</td></tr>\n<tr><td>met de pen</td><td>ermee</td><td>Ik schrijf ermee. (I write with it)</td></tr></table>\n<p>Watch out: <b>met</b> becomes <b>mee</b>. For emphasis use <b>daar-</b> (<i>daarover</i>), in questions <b>waar-</b>: <i>Waarmee betaal je?</i> (what are you paying with?), <i>Waarop wacht je?</i> Er (or waar) and the preposition often split, just as English leaves the preposition at the end: <i>Ik heb er geen zin in</i> (I don't feel like it), <i>Waar wacht je op?</i> (what are you waiting for?).</p>\n<p>For <b>people</b>, however, it stays preposition + pronoun: <i>Ik denk aan haar</i> (I'm thinking of her), never <s>eraan</s>.</p>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Leaving out er with numbers, as in English: <s>Ik heb twee</s> → <b>Ik heb er twee</b>.</li>\n<li>Translating \"there is\" with daar: <s>Daar is een probleem</s> → <b>Er is een probleem</b>.</li>\n<li>Using a pronoun for a thing, as in English \"with it\": <s>Ik schrijf met het</s> → <b>Ik schrijf ermee</b>.</li>\n<li>Writing <s>ermet</s> → <b>ermee</b>.</li>\n<li>Using er for a person: <s>Ik denk eraan</s> (about my mother) → <b>Ik denk aan haar</b>.</li>\n</ul>",
+  "vlaams": "In Belgium \"to feel like\" is often said with <b>goesting</b> instead of zin: \"Ik heb er geen goesting in\" (I don't feel like it), \"Daar heb ik goesting in!\" (I really feel like that!). In standard written Dutch, use <b>zin</b>.",
+  "vocab": [
+   [
+    "het probleem",
+    "the problem"
+   ],
+   [
+    "de mens",
+    "the person, the human being"
+   ],
+   [
+    "de mensen",
+    "people"
+   ],
+   [
+    "de pen",
+    "the pen"
+   ],
+   [
+    "schrijven",
+    "to write"
+   ],
+   [
+    "praten over",
+    "to talk about"
+   ],
+   [
+    "denken aan",
+    "to think of/about"
+   ],
+   [
+    "zin hebben in",
+    "to feel like"
+   ],
+   [
+    "de winkel",
+    "the store, the shop"
+   ],
+   [
+    "de straat",
+    "the street"
+   ],
+   [
+    "betalen",
+    "to pay"
+   ],
+   [
+    "de kaart",
+    "the (bank) card"
+   ],
+   [
+    "het glas",
+    "the glass"
+   ],
+   [
+    "de film",
+    "the movie"
+   ]
+  ],
+  "core": [
+   [
+    "er",
+    "there; of them"
+   ],
+   [
+    "er is / er zijn",
+    "there is / there are"
+   ],
+   [
+    "daar",
+    "there (stressed)"
+   ],
+   [
+    "erop, eraan, erover",
+    "on it, of it, about it"
+   ],
+   [
+    "ermee",
+    "with it"
+   ],
+   [
+    "waarmee, waarop",
+    "with what, on/for what"
+   ]
+  ],
+  "items": [
+   {
+    "t": "mc",
+    "q": "___ zijn veel mensen op straat.",
+    "h": "there are",
+    "o": [
+     "Er",
+     "Het",
+     "Ze",
+     "Hun"
+    ],
+    "a": 0,
+    "e": "there are = <b>er zijn</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Is ___ een winkel in deze straat?",
+    "h": "there",
+    "a": [
+     "er"
+    ],
+    "e": "Question: <b>Is er</b> ...?"
+   },
+   {
+    "t": "mc",
+    "q": "Hoeveel glazen wil je? — Ik wil ___ drie.",
+    "o": [
+     "er",
+     "ze",
+     "het",
+     "daar"
+    ],
+    "a": 0,
+    "e": "A number with no noun → <b>er</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Betaal je met de kaart? — Ja, ik betaal ___.",
+    "h": "with it",
+    "a": [
+     "ermee",
+     "daarmee"
+    ],
+    "e": "met + thing → <b>ermee</b>."
+   },
+   {
+    "t": "order",
+    "q": "I often think about it.",
+    "a": "Ik denk er vaak aan",
+    "x": [
+     "het",
+     "mee"
+    ],
+    "e": "<b>er</b> after the verb, <b>aan</b> at the end."
+   },
+   {
+    "t": "tr",
+    "q": "There's a problem.",
+    "a": [
+     "Er is een probleem"
+    ],
+    "e": "<b>Er is</b> een probleem (not daar is)."
+   },
+   {
+    "t": "mc",
+    "q": "Praten jullie over de film? — Ja, we praten ___.",
+    "o": [
+     "erover",
+     "over het",
+     "over hem",
+     "ervan"
+    ],
+    "a": 0,
+    "e": "over + thing → <b>erover</b>."
+   },
+   {
+    "t": "fill",
+    "q": "___ wacht je? — Op de trein.",
+    "h": "what (with op)",
+    "a": [
+     "waarop"
+    ],
+    "e": "A question about a thing with op: <b>waarop</b>."
+   },
+   {
+    "t": "tr",
+    "q": "I have two of them.",
+    "a": [
+     "Ik heb er twee"
+    ],
+    "e": "\"Of them\" is <b>er</b>: Ik heb er twee."
+   },
+   {
+    "t": "mc",
+    "q": "Ken je Gent? — Ja, ___ woont mijn zus.",
+    "o": [
+     "daar",
+     "er",
+     "waar",
+     "het"
+    ],
+    "a": 0,
+    "e": "In first position and with emphasis: <b>daar</b>."
+   },
+   {
+    "t": "order",
+    "q": "There are two glasses on the table.",
+    "a": "Er zijn twee glazen op de tafel",
+    "alt": [
+     "Op de tafel zijn er twee glazen",
+     "Er zijn op de tafel twee glazen"
+    ],
+    "x": [
+     "is",
+     "het"
+    ],
+    "e": "<b>Er zijn</b> + plural."
+   },
+   {
+    "t": "tr",
+    "q": "What are you paying with?",
+    "a": [
+     "Waarmee betaal je",
+     "Waarmee betaal jij",
+     "Waarmee betaalt u",
+     "Waar betaal je mee",
+     "Waar betaal jij mee",
+     "Waar betaalt u mee"
+    ],
+    "e": "<b>Waarmee</b> betaal je? (also: Waar betaal je mee?)"
+   }
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "___ is een probleem.",
+    "h": "there",
+    "o": [
+     "Er",
+     "Het",
+     "Hij",
+     "Dat"
+    ],
+    "a": 0,
+    "e": "there is = <b>er is</b>.",
+    "g": {
+     "Er": "there (er is = there is)",
+     "Het": "it (het is = it is): doesn't mean there is",
+     "Hij": "he",
+     "Dat": "that: 'that is a problem', not 'there is'"
+    },
+    "tt": "There's a problem."
+   },
+   {
+    "t": "mc",
+    "q": "Er ___ veel mensen in de winkel.",
+    "o": [
+     "zijn",
+     "is",
+     "heeft",
+     "hebben"
+    ],
+    "a": 0,
+    "e": "The verb agrees with <i>veel mensen</i>: <b>er zijn</b>.",
+    "g": {
+     "zijn": "there are (plural)",
+     "is": "there is: the noun here is plural",
+     "heeft": "has",
+     "hebben": "have"
+    },
+    "tt": "There are a lot of people in the store."
+   },
+   {
+    "t": "mc",
+    "q": "Hoeveel broers heb je? — Ik heb ___ twee.",
+    "o": [
+     "er",
+     "het",
+     "ze",
+     "daar"
+    ],
+    "a": 0,
+    "e": "A number with no noun → <b>er</b>.",
+    "g": {
+     "er": "of them",
+     "het": "it: not used with a number",
+     "ze": "them: not used with a number",
+     "daar": "there: here you need er"
+    },
+    "tt": "How many brothers do you have? — I have two."
+   },
+   {
+    "t": "mc",
+    "q": "Ik wacht op de trein. → Ik wacht ___.",
+    "o": [
+     "erop",
+     "op het",
+     "op hem",
+     "eraan"
+    ],
+    "a": 0,
+    "e": "Thing + preposition → <b>er + op</b>.",
+    "g": {
+     "erop": "for it: er + op",
+     "op het": "for a thing you don't say op het",
+     "op hem": "op hem is for a person; for a thing: erop",
+     "eraan": "er + aan: wrong preposition"
+    },
+    "tt": "I'm waiting for the train. → I'm waiting for it."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "er + met →",
+    "o": [
+     "ermee",
+     "ermet",
+     "metter",
+     "erbij"
+    ],
+    "a": 0,
+    "e": "<b>met</b> becomes <b>mee</b>: ermee.",
+    "g": {
+     "ermee": "with it",
+     "ermet": "doesn't exist: met becomes mee",
+     "metter": "doesn't exist",
+     "erbij": "er + bij (with, near): a different preposition"
+    },
+    "tt": "with it"
+   },
+   {
+    "t": "mc",
+    "q": "Ik denk aan mijn moeder. → Ik denk aan ___.",
+    "o": [
+     "haar",
+     "eraan",
+     "er",
+     "het"
+    ],
+    "a": 0,
+    "e": "For <b>people</b>: preposition + pronoun, <b>aan haar</b>.",
+    "g": {
+     "haar": "her (after a preposition)",
+     "eraan": "only for things, not for people",
+     "er": "the pronoun for the person is missing",
+     "het": "it (thing)"
+    },
+    "tt": "I'm thinking of my mother. → I'm thinking of her."
+   },
+   {
+    "t": "mc",
+    "q": "___ schrijf je? — Met een pen.",
+    "o": [
+     "Waarmee",
+     "Waarmet",
+     "Wat met",
+     "Met wie"
+    ],
+    "a": 0,
+    "e": "A question about a thing with met: <b>waarmee</b>.",
+    "g": {
+     "Waarmee": "with what",
+     "Waarmet": "doesn't exist: met becomes mee",
+     "Wat met": "wrong order",
+     "Met wie": "with whom (person)"
+    },
+    "tt": "What are you writing with? — With a pen."
+   },
+   {
+    "t": "fill",
+    "q": "Woon je in Brugge? — Ja, ik woon ___ graag.",
+    "h": "there",
+    "a": [
+     "er",
+     "daar"
+    ],
+    "e": "A place already mentioned → <b>er</b> (with emphasis: daar).",
+    "tt": "Do you live in Bruges? — Yes, I like living there."
+   },
+   {
+    "t": "fill",
+    "q": "Heb je appels? — Ja, ik heb ___ veel.",
+    "h": "of them",
+    "a": [
+     "er"
+    ],
+    "e": "A quantity with no noun → <b>er</b>.",
+    "tt": "Do you have apples? — Yes, I have lots."
+   },
+   {
+    "t": "order",
+    "q": "I don't feel like it.",
+    "a": "Ik heb er geen zin in",
+    "x": [
+     "het",
+     "eraan"
+    ],
+    "e": "<b>zin hebben in</b>: er and in split up, in goes at the end."
+   }
+  ],
+  "gloss": {
+   "0": {
+    "g": {
+     "Er": "there (er zijn = there are)",
+     "Het": "it: doesn't mean 'there are'",
+     "Ze": "they: wrong sentence",
+     "Hun": "their / (to) them"
+    },
+    "t": "There are a lot of people in the street."
+   },
+   "1": {
+    "t": "Is there a store in this street?"
+   },
+   "2": {
+    "g": {
+     "er": "of them",
+     "ze": "them: not used with a number",
+     "het": "it: not used with a number",
+     "daar": "there: here you need er"
+    },
+    "t": "How many glasses do you want? — I want three."
+   },
+   "3": {
+    "t": "Are you paying by card? — Yes, I'm paying with it."
+   },
+   "4": {
+    "t": "I often think about it."
+   },
+   "5": {
+    "t": "There's a problem."
+   },
+   "6": {
+    "g": {
+     "erover": "about it: er + over",
+     "over het": "for a thing you don't say over het",
+     "over hem": "over hem is for a person",
+     "ervan": "er + van: wrong preposition"
+    },
+    "t": "Are you talking about the movie? — Yes, we're talking about it."
+   },
+   "7": {
+    "t": "What are you waiting for? — The train."
+   },
+   "8": {
+    "t": "I have two of them."
+   },
+   "9": {
+    "g": {
+     "daar": "there (stressed, in first position)",
+     "er": "there: can't go first with this meaning",
+     "waar": "where (question)",
+     "het": "it"
+    },
+    "t": "Do you know Ghent? — Yes, my sister lives there."
+   },
+   "10": {
+    "t": "There are two glasses on the table."
+   },
+   "11": {
+    "t": "What are you paying with?"
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "Koekjes? Gisteren heeft mijn broer ___ vijf opgegeten!",
+    "o": [
+     "er",
+     "ze",
+     "het",
+     "daar"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "A number without a noun → <b>er</b>. English says \"he ate five\", Dutch needs <b>er</b> (of them). After inversion it comes after the subject: <i>heeft mijn broer <b>er</b> vijf opgegeten</i>.",
+    "g": {
+     "er": "of them (correct)",
+     "ze": "them: not used with a number",
+     "het": "it: not used with a number",
+     "daar": "there: here you need er"
+    },
+    "tt": "Cookies? Yesterday my brother ate five of them!"
+   },
+   {
+    "t": "mc",
+    "q": "Ik heb een nieuwe fiets en ik rijd ___ elke dag mee naar mijn werk in Leuven.",
+    "o": [
+     "er",
+     "ermee",
+     "hem",
+     "het"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Trap: <b>er</b> and <b>mee</b> split up, and <i>mee</i> is already near the end of the sentence. So only <b>er</b> is needed: <i>ik rijd <b>er</b> elke dag <b>mee</b></i>.",
+    "g": {
+     "er": "it (er … mee = with it, correct)",
+     "ermee": "with it: but mee is already there, it would be doubled",
+     "hem": "him/it: for a thing after a preposition you use er",
+     "het": "it: you don't say met het"
+    },
+    "tt": "I have a new bike and I ride it to work in Leuven every day."
+   },
+   {
+    "t": "fill",
+    "q": "___ denk je aan? — Aan onze vakantie in Oostende.",
+    "h": "what (with aan)",
+    "a": [
+     "Waar"
+    ],
+    "e": "A question about a thing with <i>aan</i>: <b>waaraan</b>, but it often splits, like English \"What are you thinking about?\": <b>Waar</b> denk je <b>aan</b>? Here <i>aan</i> is already at the end.",
+    "tt": "What are you thinking about? — About our vacation in Ostend."
+   },
+   {
+    "t": "fill",
+    "q": "Er ___ in het centrum van Gent veel mooie oude huizen.",
+    "h": "there are",
+    "a": [
+     "zijn",
+     "staan"
+    ],
+    "e": "The verb agrees with the noun that follows, plural: <b>er zijn</b> (or <i>er staan</i>, for buildings).",
+    "tt": "There are lots of beautiful old houses in the center of Ghent."
+   },
+   {
+    "t": "tr",
+    "q": "Yesterday I bought two of them.",
+    "a": [
+     "Gisteren heb ik er twee gekocht",
+     "Ik heb er gisteren twee gekocht",
+     "Gisteren kocht ik er twee",
+     "Ik kocht er gisteren twee"
+    ],
+    "e": "\"Of them\" (or just a number with no noun) = <b>er</b>, right after the verb (after the subject with inversion); the participle goes at the end: <i>Ik heb <b>er</b> gisteren twee gekocht</i>."
+   },
+   {
+    "t": "tr",
+    "q": "We'll talk about it tomorrow.",
+    "a": [
+     "We praten er morgen over",
+     "Wij praten er morgen over",
+     "Morgen praten we erover",
+     "Morgen praten wij erover",
+     "Morgen praten we er over",
+     "Morgen praten wij er over",
+     "We praten morgen erover",
+     "Wij praten morgen erover",
+     "Daar praten we morgen over",
+     "Daar praten wij morgen over",
+     "We praten daar morgen over",
+     "Wij praten daar morgen over",
+     "We praten morgen daarover",
+     "Wij praten morgen daarover",
+     "Morgen praten we daarover",
+     "Morgen praten wij daarover",
+     "Daarover praten we morgen",
+     "Daarover praten wij morgen",
+     "Morgen praten we daar over",
+     "Morgen praten wij daar over"
+    ],
+    "e": "<i>praten over</i> + a thing → <b>erover</b>, not <s>over het</s>; it usually splits: <i>We praten <b>er</b> morgen <b>over</b></i>. With emphasis: <i>daarover</i>."
+   },
+   {
+    "t": "order",
+    "q": "Is there still a tram to the station tonight?",
+    "a": "Is er vanavond nog een tram naar het station",
+    "alt": [
+     "Is er nog een tram naar het station vanavond"
+    ],
+    "x": [
+     "heeft",
+     "zijn"
+    ],
+    "e": "Question: <b>Is er</b> …? (there is = <i>er is</i>, not <s>daar is</s>). The verb is singular because <i>een tram</i> follows.",
+    "tt": "Is there still a tram to the station tonight?"
+   },
+   {
+    "t": "order",
+    "q": "Yes, I've already thought about it.",
+    "a": "Ja ik heb er al aan gedacht",
+    "x": [
+     "ben",
+     "eraan"
+    ],
+    "e": "<i>denken aan</i> + a thing: <b>er</b> after the auxiliary, <b>aan</b> just before the participle. <i>denken</i> → <b>gedacht</b> (like think → thought).",
+    "tt": "Yes, I've already thought about it."
+   }
+  ]
+ }
+}

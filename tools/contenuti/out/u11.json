@@ -1,0 +1,703 @@
+{
+ "id": "u11",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "De tram naar het station vertrekt om tien over half zeven. Hoe laat is dat?",
+   "o": [
+    "6:40",
+    "7:40",
+    "6:10",
+    "5:40"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<b>half zeven</b> = 6:30 (la mezza verso le sette); <b>tien over half zeven</b> = dieci minuti dopo: 6:40.",
+   "g": {
+    "6:40": "giusto: dieci dopo la mezza (6:30)",
+    "7:40": "half zeven non è 7:30: guarda all'ora successiva",
+    "6:10": "sarebbe tien over zes",
+    "5:40": "half zeven è 6:30, non 5:30"
+   },
+   "tt": "Il tram per la stazione parte alle sei e quaranta."
+  },
+  {
+   "t": "mc",
+   "q": "Om kwart voor acht ___ mijn broer de bus naar Brussel.",
+   "o": [
+    "neemt",
+    "nemen",
+    "neemt hij",
+    "hij neemt"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Dopo <i>Om kwart voor acht</i> c'è l'inversione: verbo + soggetto. Il soggetto è <i>mijn broer</i>: <b>neemt</b>, senza ripetere <i>hij</i>.",
+   "g": {
+    "neemt": "prende (giusto: verbo, poi il soggetto mijn broer)",
+    "nemen": "prendono: il soggetto è singolare",
+    "neemt hij": "il soggetto c'è già: mijn broer",
+    "hij neemt": "manca l'inversione, e il soggetto è doppio"
+   },
+   "tt": "Alle otto meno un quarto mio fratello prende l'autobus per Bruxelles."
+  },
+  {
+   "t": "fill",
+   "q": "Hoe laat ___ jullie winkel op zaterdag?",
+   "h": "sluiten",
+   "a": [
+    "sluit"
+   ],
+   "e": "Il soggetto non è <i>jullie</i> ma <i>jullie winkel</i> (il vostro negozio, singolare): <b>sluit</b>. Nella domanda il verbo viene subito dopo <i>Hoe laat</i>.",
+   "tt": "A che ora chiude il vostro negozio il sabato?"
+  },
+  {
+   "t": "fill",
+   "q": "23:40 → De laatste tram naar huis vertrekt om tien over half ___.",
+   "h": "in lettere",
+   "a": [
+    "twaalf"
+   ],
+   "e": "23:40 = dieci minuti dopo la mezza; la mezza guarda all'ora successiva: 23:30 = <b>half twaalf</b>, quindi <i>tien over half twaalf</i>.",
+   "tt": "L'ultimo tram per casa parte alle undici e quaranta."
+  },
+  {
+   "t": "tr",
+   "q": "Il negozio chiude alle sei e mezza di sera.",
+   "a": [
+    "De winkel sluit om half zeven 's avonds",
+    "De winkel sluit 's avonds om half zeven",
+    "Om half zeven 's avonds sluit de winkel",
+    "'s Avonds sluit de winkel om half zeven",
+    "Om half zeven sluit de winkel 's avonds"
+   ],
+   "e": "Le sei e mezza = <b>half zeven</b> (non <s>half zes</s>). Se cominci con <i>'s Avonds</i> o <i>Om half zeven</i>, inversione: <b>sluit de winkel</b>."
+  },
+  {
+   "t": "order",
+   "q": "Il nostro treno per Bruges parte alle nove meno cinque.",
+   "a": "Onze trein naar Brugge vertrekt om vijf voor negen",
+   "alt": [
+    "Om vijf voor negen vertrekt onze trein naar Brugge"
+   ],
+   "x": [
+    "over",
+    "uren"
+   ],
+   "e": "Le nove meno cinque = <b>vijf voor negen</b>. Con <i>Om vijf voor negen</i> all'inizio: <b>vertrekt onze trein</b>.",
+   "tt": "Il nostro treno per Bruges parte alle nove meno cinque."
+  },
+  {
+   "t": "tr",
+   "q": "Di mattina mio figlio deve essere a scuola alle otto e un quarto.",
+   "a": [
+    "Mijn zoon moet 's morgens om kwart over acht op school zijn",
+    "'s Morgens moet mijn zoon om kwart over acht op school zijn",
+    "Om kwart over acht moet mijn zoon 's morgens op school zijn",
+    "Mijn zoon moet 's morgens om kwart na acht op school zijn",
+    "'s Morgens moet mijn zoon om kwart na acht op school zijn",
+    "Om kwart na acht moet mijn zoon 's morgens op school zijn",
+    "Mijn zoon moet 's ochtends om kwart over acht op school zijn",
+    "'s Ochtends moet mijn zoon om kwart over acht op school zijn",
+    "Mijn zoon moet 's ochtends om kwart na acht op school zijn",
+    "'s Ochtends moet mijn zoon om kwart na acht op school zijn",
+    "Om kwart over acht moet mijn zoon 's ochtends op school zijn",
+    "Om kwart na acht moet mijn zoon 's ochtends op school zijn"
+   ],
+   "e": "Modale <b>moet</b> al secondo posto, infinito <b>zijn</b> alla fine; prima il tempo (<i>'s morgens om kwart over acht</i>), poi il luogo (<i>op school</i>). In Belgio anche <i>kwart na acht</i>."
+  },
+  {
+   "t": "order",
+   "q": "Domani alle sette e venti devo prendere il tram.",
+   "a": "Morgen moet ik om tien voor half acht de tram nemen",
+   "alt": [
+    "Ik moet morgen om tien voor half acht de tram nemen",
+    "Om tien voor half acht moet ik morgen de tram nemen"
+   ],
+   "x": [
+    "over",
+    "neem"
+   ],
+   "e": "7:20 = dieci prima della mezza (7:30 = half acht): <b>tien voor half acht</b>. <i>Morgen</i> all'inizio → <b>moet ik</b>, e l'infinito <b>nemen</b> va alla fine.",
+   "tt": "Domani alle sette e venti devo prendere il tram."
+  }
+ ],
+ "en": {
+  "it": "Telling the time",
+  "note": "\n<h3>The idea</h3>\n<p>To ask the time you say <i>Hoe laat is het?</i> (literally: \"how late is it?\"). The answer always starts with <i>Het is…</i>, just like English \"It is…\": <i>Het is drie uur</i> (it's three o'clock). In everyday speech people almost always use the 12-hour clock. The real surprise for English speakers is the word <b>half</b>, which looks ahead to the <b>next</b> hour.</p>\n<h3>Full hours</h3>\n<p>Number + <b>uur</b>, always singular, like \"o'clock\": <i>Het is tien uur</i> (it's ten o'clock), never <s>tien uren</s>. For one o'clock you write <i>één uur</i>, with accents, so it isn't confused with the article <i>een</i>.</p>\n<h3>Over and voor</h3>\n<p><b>over</b> = \"past\" (minutes after the hour), <b>voor</b> = \"to\" (minutes before the hour). <b>kwart</b> = a quarter. With minutes the word <i>uur</i> disappears, just as English drops \"o'clock\".</p>\n<table><tr><th>time</th><th>Dutch</th></tr>\n<tr><td>3:05</td><td>vijf over drie</td></tr>\n<tr><td>3:15</td><td>kwart over drie</td></tr>\n<tr><td>3:45</td><td>kwart voor vier</td></tr>\n<tr><td>3:55</td><td>vijf voor vier</td></tr></table>\n<h3>Half: the half hour that looks ahead</h3>\n<p><i>half vier</i> is not \"half past four\" but <b>half past three</b>: \"halfway to four\". Always think of the hour that's <b>coming</b>. Careful if you speak British English: \"half three\" means 3:30, but Dutch <i>half drie</i> is 2:30!</p>\n<p>Around the half hour, minutes are counted from <i>half</i>:</p>\n<table><tr><th>time</th><th>Dutch</th><th>literally</th></tr>\n<tr><td>3:20</td><td>tien voor half vier</td><td>ten before the half</td></tr>\n<tr><td>3:25</td><td>vijf voor half vier</td><td>five before the half</td></tr>\n<tr><td>3:30</td><td>half vier</td><td>half (toward four)</td></tr>\n<tr><td>3:35</td><td>vijf over half vier</td><td>five after the half</td></tr>\n<tr><td>3:40</td><td>tien over half vier</td><td>ten after the half</td></tr></table>\n<h3>At what time? Om … uur</h3>\n<p>To say <b>at what time</b> something happens: <i>Hoe laat…?</i> and in the answer <b>om</b> (= at): <i>Hoe laat begint de les? — Om negen uur.</i> (What time does the lesson start? — At nine.) Remember the verb in second place: <i>Om acht uur <b>eten</b> we.</i></p>\n<h3>Parts of the day</h3>\n<p>To tell 8 a.m. from 8 p.m.: <b>'s morgens</b> (in the morning), <b>'s middags</b> (in the afternoon), <b>'s avonds</b> (in the evening), <b>'s nachts</b> (at night). <i>Om tien uur 's avonds</i> = at 10 p.m. The apostrophe stays even at the start of a sentence: <i>'s Avonds lees ik.</i></p>\n<h3>Official times</h3>\n<p>Trains, shops and schedules use the 24-hour clock: <i>14.30 uur</i> is read <i>veertien uur dertig</i>.</p>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Reading <i>half</i> like British \"half three\": <s>half drie</s> for 3:30 → <b>half vier</b> (3:30).</li>\n<li>Using the plural: <s>Het zijn drie uren</s> → <b>Het is drie uur</b>.</li>\n<li>Forgetting <i>om</i> (English \"at\"): <s>De les begint negen uur</s> → <b>De les begint om negen uur</b>.</li>\n<li>Building the time with <i>en</i> (\"three and a quarter\"): <s>drie en kwart</s> → <b>kwart over drie</b>.</li>\n</ul>",
+  "vlaams": "In Belgium you very often hear <b>na</b> instead of over: <i>kwart na drie</i>, <i>vijf na tien</i>. For parts of the day Flemish speakers like to say <b>'s voormiddags</b> (in the morning, before noon) and <b>'s namiddags</b> (in the afternoon); <b>'s middags</b> then mainly means lunchtime, around noon.",
+  "vocab": [
+   [
+    "de klok",
+    "the clock (wall clock)"
+   ],
+   [
+    "de minuut",
+    "the minute"
+   ],
+   [
+    "'s morgens",
+    "in the morning"
+   ],
+   [
+    "'s middags",
+    "in the afternoon (in Belgium often: around noon)"
+   ],
+   [
+    "'s avonds",
+    "in the evening"
+   ],
+   [
+    "'s nachts",
+    "at night"
+   ],
+   [
+    "beginnen",
+    "to begin, to start"
+   ],
+   [
+    "sluiten",
+    "to close"
+   ],
+   [
+    "slapen",
+    "to sleep"
+   ],
+   [
+    "de les",
+    "the lesson"
+   ],
+   [
+    "de film",
+    "the movie"
+   ],
+   [
+    "de winkel",
+    "the shop, the store"
+   ],
+   [
+    "de afspraak",
+    "the appointment"
+   ],
+   [
+    "laat",
+    "late"
+   ],
+   [
+    "vroeg",
+    "early"
+   ]
+  ],
+  "core": [
+   [
+    "hoe laat",
+    "what time / at what time"
+   ],
+   [
+    "uur",
+    "hour, o'clock (after a number: drie uur)"
+   ],
+   [
+    "om",
+    "at (+ time)"
+   ],
+   [
+    "half",
+    "half (toward the next hour)"
+   ],
+   [
+    "kwart",
+    "quarter"
+   ],
+   [
+    "over",
+    "past (minutes after)"
+   ],
+   [
+    "voor",
+    "to (minutes before)"
+   ]
+  ],
+  "items": [
+   {
+    "t": "mc",
+    "say": "Het is half drie.",
+    "q": "Hoe laat is het? (14:30) — Het is ___.",
+    "o": [
+     "half drie",
+     "half twee",
+     "half vier",
+     "twee en half"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "14:30 = half past two = <b>half drie</b>."
+   },
+   {
+    "t": "fill",
+    "q": "De winkel sluit ___ zes uur.",
+    "h": "at",
+    "a": [
+     "om"
+    ],
+    "e": "At what time → <b>om</b>."
+   },
+   {
+    "t": "tr",
+    "q": "The lesson starts at nine.",
+    "a": [
+     "De les begint om negen uur",
+     "Om negen uur begint de les"
+    ],
+    "e": "<b>om negen uur</b>; with <i>Om negen uur</i> first there's inversion: begint de les."
+   },
+   {
+    "t": "order",
+    "q": "In the evening I read a book.",
+    "a": "Ik lees 's avonds een boek",
+    "alt": [
+     "'s Avonds lees ik een boek",
+     "Een boek lees ik 's avonds"
+    ],
+    "x": [
+     "leest",
+     "om"
+    ],
+    "e": "<b>'s avonds</b> = in the evening. If you put it first: <i>'s Avonds lees ik</i>."
+   },
+   {
+    "t": "mc",
+    "say": "Het is kwart voor twaalf.",
+    "q": "11:45 → Het is ___.",
+    "o": [
+     "kwart voor twaalf",
+     "kwart over elf",
+     "kwart voor elf",
+     "kwart over twaalf"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "A quarter before twelve: <b>kwart voor twaalf</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Ik heb een afspraak om ___ elf.",
+    "h": "10:30",
+    "a": [
+     "half"
+    ],
+    "e": "10:30 = halfway to eleven: <b>half elf</b>."
+   },
+   {
+    "t": "mc",
+    "say": "tien uur 's avonds",
+    "q": "22:00 → tien uur ___",
+    "o": [
+     "'s avonds",
+     "'s morgens",
+     "'s middags",
+     "'s nachts"
+    ],
+    "a": 0,
+    "e": "10 p.m. is ten o'clock <b>in the evening</b>: 's avonds."
+   },
+   {
+    "t": "tr",
+    "q": "What time is it?",
+    "a": [
+     "Hoe laat is het",
+     "Wat is het uur"
+    ],
+    "e": "<b>Hoe laat is het?</b> In Belgium you also often hear <i>Wat is het uur?</i>"
+   },
+   {
+    "t": "order",
+    "q": "At eight o'clock we eat.",
+    "a": "Om acht uur eten we",
+    "alt": [
+     "We eten om acht uur"
+    ],
+    "x": [
+     "eet",
+     "op"
+    ],
+    "e": "If you start with <i>Om acht uur</i>, the verb comes right after: <b>eten we</b>."
+   },
+   {
+    "t": "mc",
+    "say": "Om vijf voor acht.",
+    "q": "Hoe laat vertrekt de trein? — Om vijf ___ acht. (7:55)",
+    "o": [
+     "voor",
+     "over",
+     "half",
+     "na"
+    ],
+    "a": 0,
+    "e": "Five minutes before eight: vijf <b>voor</b> acht."
+   },
+   {
+    "t": "fill",
+    "q": "De film begint om tien ___ half negen.",
+    "h": "8:20",
+    "a": [
+     "voor"
+    ],
+    "e": "8:20 = ten minutes before the half hour: tien <b>voor</b> half negen."
+   },
+   {
+    "t": "tr",
+    "q": "The movie starts at a quarter past eight.",
+    "a": [
+     "De film begint om kwart over acht",
+     "Om kwart over acht begint de film",
+     "De film begint om kwart na acht",
+     "Om kwart na acht begint de film"
+    ],
+    "e": "<b>om kwart over acht</b> (in Belgium also: kwart na acht)."
+   }
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "say": "half vier",
+    "q": "3:30",
+    "o": [
+     "half vier",
+     "half drie",
+     "drie en half",
+     "dertig over drie"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<b>half vier</b>: halfway to four.",
+    "g": {
+     "half vier": "3:30",
+     "half drie": "2:30: half looks ahead to the next hour",
+     "drie en half": "not how you tell the time",
+     "dertig over drie": "not used: you say half vier"
+    },
+    "tt": "It's half past three."
+   },
+   {
+    "t": "mc",
+    "say": "kwart over twee",
+    "q": "2:15",
+    "o": [
+     "kwart over twee",
+     "kwart voor twee",
+     "kwart over drie",
+     "twee en kwart"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "A quarter past two: <b>kwart over twee</b>.",
+    "g": {
+     "kwart over twee": "2:15",
+     "kwart voor twee": "1:45",
+     "kwart over drie": "3:15",
+     "twee en kwart": "not used: you need over"
+    },
+    "tt": "It's a quarter past two."
+   },
+   {
+    "t": "mc",
+    "say": "kwart voor zeven",
+    "q": "6:45",
+    "o": [
+     "kwart voor zeven",
+     "kwart over zes",
+     "kwart voor zes",
+     "zes en drie kwart"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "A quarter before seven: <b>kwart voor zeven</b>.",
+    "g": {
+     "kwart voor zeven": "6:45",
+     "kwart over zes": "6:15",
+     "kwart voor zes": "5:45",
+     "zes en drie kwart": "not how you tell the time"
+    },
+    "tt": "It's a quarter to seven."
+   },
+   {
+    "t": "mc",
+    "say": "tien voor half negen",
+    "q": "8:20",
+    "o": [
+     "tien voor half negen",
+     "tien over half negen",
+     "tien voor half acht",
+     "twintig voor negen"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Ten minutes before the half hour (8:30 = half negen): <b>tien voor half negen</b>. You also hear, especially in Belgium, <i>twintig over acht</i> (or <i>twintig na acht</i>).",
+    "g": {
+     "tien voor half negen": "8:20",
+     "tien over half negen": "8:40",
+     "tien voor half acht": "7:20",
+     "twintig voor negen": "8:40"
+    },
+    "tt": "It's twenty past eight."
+   },
+   {
+    "t": "mc",
+    "say": "vijf over half vijf",
+    "q": "4:35",
+    "o": [
+     "vijf over half vijf",
+     "vijf over half vier",
+     "vijf voor half vijf",
+     "vijf over vier"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Five minutes after the half hour (4:30 = half vijf): <b>vijf over half vijf</b>.",
+    "g": {
+     "vijf over half vijf": "4:35",
+     "vijf over half vier": "3:35",
+     "vijf voor half vijf": "4:25",
+     "vijf over vier": "4:05"
+    },
+    "tt": "It's four thirty-five."
+   },
+   {
+    "t": "mc",
+    "q": "Hoe laat begint de les? — ___ negen uur.",
+    "o": [
+     "Om",
+     "Op",
+     "In",
+     "Aan"
+    ],
+    "a": 0,
+    "e": "At what time? → <b>om</b> + time.",
+    "g": {
+     "Om": "at (with clock times)",
+     "Op": "on: not used with clock times",
+     "In": "in: not used with clock times",
+     "Aan": "at, on: not used with clock times"
+    },
+    "tt": "What time does the lesson start? — At nine."
+   },
+   {
+    "t": "mc",
+    "q": "Het is tien ___.",
+    "h": "10:00",
+    "o": [
+     "uur",
+     "uren"
+    ],
+    "a": 0,
+    "e": "After a number, telling the time: singular <b>uur</b>, like \"o'clock\".",
+    "g": {
+     "uur": "hour, o'clock (singular, correct after a number)",
+     "uren": "hours: the plural isn't used to tell the time"
+    },
+    "tt": "It's ten o'clock."
+   },
+   {
+    "t": "fill",
+    "say": "Het is half acht.",
+    "q": "7:30 → Het is half ___.",
+    "h": "in words",
+    "a": [
+     "acht"
+    ],
+    "e": "Halfway to eight: <b>half acht</b>.",
+    "tt": "It's half past seven."
+   },
+   {
+    "t": "fill",
+    "say": "Het is tien voor tien.",
+    "q": "9:50 → Het is tien ___ tien.",
+    "a": [
+     "voor"
+    ],
+    "e": "Ten minutes before ten: tien <b>voor</b> tien.",
+    "tt": "It's ten to ten."
+   },
+   {
+    "t": "order",
+    "q": "It's a quarter past three.",
+    "a": "Het is kwart over drie",
+    "x": [
+     "uren",
+     "halve"
+    ],
+    "e": "<b>kwart over drie</b>: a quarter after three."
+   }
+  ],
+  "gloss": {
+   "0": {
+    "g": {
+     "half drie": "2:30 (14:30)",
+     "half twee": "1:30",
+     "half vier": "3:30",
+     "twee en half": "not how you tell the time"
+    },
+    "t": "What time is it? — It's half past two."
+   },
+   "1": {
+    "t": "The shop closes at six."
+   },
+   "4": {
+    "g": {
+     "kwart voor twaalf": "11:45",
+     "kwart over elf": "11:15",
+     "kwart voor elf": "10:45",
+     "kwart over twaalf": "12:15"
+    },
+    "t": "It's a quarter to twelve."
+   },
+   "5": {
+    "t": "I have an appointment at half past ten."
+   },
+   "6": {
+    "g": {
+     "'s avonds": "in the evening",
+     "'s morgens": "in the morning",
+     "'s middags": "in the afternoon",
+     "'s nachts": "at night (not for 10 p.m.)"
+    },
+    "t": "ten o'clock in the evening"
+   },
+   "9": {
+    "g": {
+     "voor": "to (minutes before)",
+     "over": "past (minutes after): 8:05",
+     "half": "half: vijf half acht doesn't exist",
+     "na": "past (in Belgium, like over): 8:05"
+    },
+    "t": "What time does the train leave? — At five to eight."
+   },
+   "10": {
+    "t": "The movie starts at twenty past eight."
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "De tram naar het station vertrekt om tien over half zeven. What time is that?",
+    "o": [
+     "6:40",
+     "7:40",
+     "6:10",
+     "5:40"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<b>half zeven</b> = 6:30 (halfway to seven); <b>tien over half zeven</b> = ten minutes later: 6:40.",
+    "g": {
+     "6:40": "correct: ten past the half hour (6:30)",
+     "7:40": "half zeven isn't 7:30: it looks ahead to the next hour",
+     "6:10": "that would be tien over zes",
+     "5:40": "half zeven is 6:30, not 5:30"
+    },
+    "tt": "The tram to the station leaves at 6:40."
+   },
+   {
+    "t": "mc",
+    "q": "Om kwart voor acht ___ mijn broer de bus naar Brussel.",
+    "o": [
+     "neemt",
+     "nemen",
+     "neemt hij",
+     "hij neemt"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "After <i>Om kwart voor acht</i> comes inversion: verb + subject. The subject is <i>mijn broer</i>: <b>neemt</b>, without repeating <i>hij</i>.",
+    "g": {
+     "neemt": "takes (correct: verb, then the subject mijn broer)",
+     "nemen": "take: the subject is singular",
+     "neemt hij": "there's already a subject: mijn broer",
+     "hij neemt": "no inversion, and a double subject"
+    },
+    "tt": "At a quarter to eight my brother takes the bus to Brussels."
+   },
+   {
+    "t": "fill",
+    "q": "Hoe laat ___ jullie winkel op zaterdag?",
+    "h": "sluiten",
+    "a": [
+     "sluit"
+    ],
+    "e": "The subject isn't <i>jullie</i> but <i>jullie winkel</i> (your shop, singular): <b>sluit</b>. In the question the verb comes right after <i>Hoe laat</i>.",
+    "tt": "What time does your shop close on Saturdays?"
+   },
+   {
+    "t": "fill",
+    "q": "23:40 → De laatste tram naar huis vertrekt om tien over half ___.",
+    "h": "in words",
+    "a": [
+     "twaalf"
+    ],
+    "e": "23:40 = ten minutes past the half hour, and the half hour looks ahead to the next hour: 23:30 = <b>half twaalf</b>, so <i>tien over half twaalf</i>.",
+    "tt": "The last tram home leaves at 11:40 p.m."
+   },
+   {
+    "t": "tr",
+    "q": "The shop closes at half past six in the evening.",
+    "a": [
+     "De winkel sluit om half zeven 's avonds",
+     "De winkel sluit 's avonds om half zeven",
+     "Om half zeven 's avonds sluit de winkel",
+     "'s Avonds sluit de winkel om half zeven",
+     "Om half zeven sluit de winkel 's avonds"
+    ],
+    "e": "Half past six = <b>half zeven</b> (not <s>half zes</s>, the British \"half six\" trap). If you start with <i>'s Avonds</i> or <i>Om half zeven</i>, invert: <b>sluit de winkel</b>."
+   },
+   {
+    "t": "order",
+    "q": "Our train to Bruges leaves at five to nine.",
+    "a": "Onze trein naar Brugge vertrekt om vijf voor negen",
+    "alt": [
+     "Om vijf voor negen vertrekt onze trein naar Brugge"
+    ],
+    "x": [
+     "over",
+     "uren"
+    ],
+    "e": "Five to nine = <b>vijf voor negen</b>. With <i>Om vijf voor negen</i> first: <b>vertrekt onze trein</b>.",
+    "tt": "Our train to Bruges leaves at five to nine."
+   },
+   {
+    "t": "tr",
+    "q": "In the morning my son has to be at school at a quarter past eight.",
+    "a": [
+     "Mijn zoon moet 's morgens om kwart over acht op school zijn",
+     "'s Morgens moet mijn zoon om kwart over acht op school zijn",
+     "Om kwart over acht moet mijn zoon 's morgens op school zijn",
+     "Mijn zoon moet 's morgens om kwart na acht op school zijn",
+     "'s Morgens moet mijn zoon om kwart na acht op school zijn",
+     "Om kwart na acht moet mijn zoon 's morgens op school zijn",
+     "Mijn zoon moet 's ochtends om kwart over acht op school zijn",
+     "'s Ochtends moet mijn zoon om kwart over acht op school zijn",
+     "Mijn zoon moet 's ochtends om kwart na acht op school zijn",
+     "'s Ochtends moet mijn zoon om kwart na acht op school zijn",
+     "Om kwart over acht moet mijn zoon 's ochtends op school zijn",
+     "Om kwart na acht moet mijn zoon 's ochtends op school zijn"
+    ],
+    "e": "The modal <b>moet</b> in second place, the infinitive <b>zijn</b> at the end; time first (<i>'s morgens om kwart over acht</i>), then place (<i>op school</i>). In Belgium also <i>kwart na acht</i>."
+   },
+   {
+    "t": "order",
+    "q": "Tomorrow at twenty past seven I have to take the tram.",
+    "a": "Morgen moet ik om tien voor half acht de tram nemen",
+    "alt": [
+     "Ik moet morgen om tien voor half acht de tram nemen",
+     "Om tien voor half acht moet ik morgen de tram nemen"
+    ],
+    "x": [
+     "over",
+     "neem"
+    ],
+    "e": "7:20 = ten before the half hour (7:30 = half acht): <b>tien voor half acht</b>. <i>Morgen</i> first → <b>moet ik</b>, and the infinitive <b>nemen</b> goes to the end.",
+    "tt": "Tomorrow at twenty past seven I have to take the tram."
+   }
+  ]
+ }
+}

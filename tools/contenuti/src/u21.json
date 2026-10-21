@@ -1,0 +1,473 @@
+{
+ "id": "u21",
+ "n": 21,
+ "module": 5,
+ "nl": "Wederkerende werkwoorden",
+ "it": "I verbi riflessivi",
+ "note": "\n<h3>L'idea</h3>\n<p>Anche in olandese esistono i verbi riflessivi, come lavarsi o sentirsi: il soggetto fa l'azione su se stesso. Si costruiscono con un <b>pronome riflessivo</b>, che corrisponde al nostro mi, ti, si, ci, vi. Due differenze importanti con l'italiano: il pronome va <b>dopo il verbo</b> (<i>ik was me</i> = mi lavo), e non tutti i verbi riflessivi italiani lo sono anche in olandese.</p>\n<h3>I pronomi riflessivi</h3>\n<table><tr><th>soggetto</th><th>riflessivo</th><th>esempio</th></tr>\n<tr><td>ik</td><td>me (mij)</td><td>ik was me</td></tr>\n<tr><td>jij</td><td>je</td><td>jij wast je</td></tr>\n<tr><td>u</td><td>zich / u</td><td>u wast zich</td></tr>\n<tr><td>hij / zij / het</td><td>zich</td><td>hij wast zich</td></tr>\n<tr><td>wij</td><td>ons</td><td>wij wassen ons</td></tr>\n<tr><td>jullie</td><td>je</td><td>jullie wassen je</td></tr>\n<tr><td>zij (loro)</td><td>zich</td><td>zij wassen zich</td></tr></table>\n<p>Come vedi, sono quasi uguali ai pronomi oggetto (unità 4). L'unica forma nuova è <b>zich</b>, per lui, lei, loro e per la cortesia: è il nostro \"si\". Con <b>u</b> puoi dire sia <i>u vergist zich</i> sia <i>u vergist u</i>. Con <b>jullie</b> il riflessivo è <b>je</b>. <i>mij</i> al posto di <i>me</i> si usa per dare enfasi o in uno stile più formale (in Belgio è frequente anche nel parlato).</p>\n<h3>Dove va il pronome</h3>\n<ul>\n<li>Subito dopo il verbo coniugato: <i>Ik voel me goed.</i> (mi sento bene)</li>\n<li>Con l'inversione va dopo il soggetto: <i>Vandaag voel ik me goed.</i></li>\n<li>Nelle domande con je trovi due volte \"je\": <i>Voel je je goed?</i> Il primo è il soggetto (tu), il secondo il riflessivo (ti).</li>\n<li>Con un modale l'infinito va in fondo: <i>Ik moet me haasten.</i> (mi devo affrettare)</li>\n<li>Con un verbo separabile la particella va in fondo: <i>Ik kleed me aan.</i> (mi vesto)</li>\n</ul>\n<h3>Il passato prossimo vuole hebben</h3>\n<p>In italiano i riflessivi vogliono \"essere\" (mi sono sbagliato). In olandese si usa sempre <b>hebben</b>: <i>Ik heb me vergist</i> (mi sono sbagliato), <i>We hebben ons geamuseerd</i> (ci siamo divertiti).</p>\n<h3>Riflessivi solo in italiano</h3>\n<p>Molti verbi che in italiano hanno il \"si\" in olandese sono verbi normali: chiamarsi = <b>heten</b> (<i>ik heet Luca</i>), alzarsi = <b>opstaan</b>, dimenticarsi = <b>vergeten</b>, sedersi = <b>gaan zitten</b>. Per questo conviene imparare i riflessivi insieme a <b>zich</b>, come nella lista delle parole: zich wassen, zich herinneren (ricordarsi), zich haasten (affrettarsi).</p>\n<h3>Zichzelf: se stesso</h3>\n<p>Aggiungendo <b>-zelf</b> ottieni \"me stesso, se stesso\": <i>mezelf, jezelf, zichzelf, onszelf</i>. Si usa con verbi che di solito non sono riflessivi, soprattutto dopo una preposizione: <i>Hij denkt alleen aan zichzelf</i> (pensa solo a se stesso). Con i verbi veramente riflessivi non si usa: <s>ik vergis mezelf</s> → <i>ik vergis me</i>.</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Rendere riflessivo \"chiamarsi\": <s>Ik heet me Luca</s> → <b>Ik heet Luca</b>.</li>\n<li>Usare \"essere\" al passato: <s>Ik ben me vergist</s> → <b>Ik heb me vergist</b>.</li>\n<li>Mettere il pronome prima del verbo: <s>Ik me was</s> → <b>Ik was me</b>.</li>\n<li>Usare zich con tutti: <s>Wij wassen zich</s> → <b>Wij wassen ons</b>.</li>\n</ul>",
+ "vlaams": "Con <b>gij/ge</b> il riflessivo è <b>u</b>: \"Ge moet u niet haasten\" (non devi affrettarti). Prima di una festa nelle Fiandre senti spesso \"<b>Amuseer u!</b>\" o \"Amuseer je!\", cioè \"divertiti!\".",
+ "vocab": [
+  [
+   "zich wassen",
+   "lavarsi"
+  ],
+  [
+   "zich voelen",
+   "sentirsi"
+  ],
+  [
+   "zich vergissen",
+   "sbagliarsi"
+  ],
+  [
+   "zich herinneren",
+   "ricordarsi"
+  ],
+  [
+   "zich haasten",
+   "affrettarsi"
+  ],
+  [
+   "zich vervelen",
+   "annoiarsi"
+  ],
+  [
+   "zich amuseren",
+   "divertirsi"
+  ],
+  [
+   "zich scheren",
+   "radersi"
+  ],
+  [
+   "zich aankleden",
+   "vestirsi"
+  ],
+  [
+   "zich zorgen maken",
+   "preoccuparsi"
+  ],
+  [
+   "denken aan",
+   "pensare a"
+  ],
+  [
+   "ziek",
+   "malato"
+  ],
+  [
+   "snel",
+   "veloce, in fretta"
+  ],
+  [
+   "alleen",
+   "solo, soltanto"
+  ],
+  [
+   "het feest",
+   "la festa"
+  ]
+ ],
+ "core": [
+  [
+   "me",
+   "mi (riflessivo)"
+  ],
+  [
+   "je",
+   "ti, vi (riflessivo)"
+  ],
+  [
+   "zich",
+   "si (lui, lei, loro)"
+  ],
+  [
+   "u",
+   "Si (cortesia, riflessivo)"
+  ],
+  [
+   "ons",
+   "ci (riflessivo)"
+  ],
+  [
+   "zichzelf",
+   "se stesso"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "Ik was ___.",
+   "o": [
+    "me",
+    "zich",
+    "je",
+    "ons"
+   ],
+   "a": 0,
+   "e": "ik → <b>me</b>.",
+   "g": {
+    "me": "mi (con ik)",
+    "zich": "si: solo per lui, lei, loro",
+    "je": "ti: per jij",
+    "ons": "ci: per wij"
+   },
+   "tt": "Mi lavo."
+  },
+  {
+   "t": "mc",
+   "q": "Hij voelt ___ niet goed.",
+   "o": [
+    "zich",
+    "hem",
+    "je",
+    "me"
+   ],
+   "a": 0,
+   "e": "hij → <b>zich</b>.",
+   "g": {
+    "zich": "si (con hij)",
+    "hem": "lo (pronome oggetto): qui serve il riflessivo",
+    "je": "ti: per jij",
+    "me": "mi: per ik"
+   },
+   "tt": "Lui non si sente bene."
+  },
+  {
+   "t": "mc",
+   "q": "Wij haasten ___.",
+   "o": [
+    "ons",
+    "zich",
+    "onze",
+    "we"
+   ],
+   "a": 0,
+   "e": "wij → <b>ons</b>.",
+   "g": {
+    "ons": "ci (con wij)",
+    "zich": "si: non si usa con wij",
+    "onze": "nostro (possessivo)",
+    "we": "noi (soggetto)"
+   },
+   "tt": "Ci affrettiamo."
+  },
+  {
+   "t": "mc",
+   "q": "Jullie vergissen ___.",
+   "o": [
+    "je",
+    "jullie",
+    "ons",
+    "hun"
+   ],
+   "a": 0,
+   "e": "Con jullie il riflessivo è <b>je</b>.",
+   "g": {
+    "je": "vi (con jullie)",
+    "jullie": "voi: non è un riflessivo",
+    "ons": "ci: per wij",
+    "hun": "loro (possessivo / a loro)"
+   },
+   "tt": "Vi sbagliate."
+  },
+  {
+   "t": "mc",
+   "q": "Ze (loro) amuseren ___.",
+   "o": [
+    "zich",
+    "hun",
+    "ze",
+    "hen"
+   ],
+   "a": 0,
+   "e": "zij (loro) → <b>zich</b>.",
+   "g": {
+    "zich": "si (con loro)",
+    "hun": "loro (possessivo / a loro)",
+    "ze": "li, le (oggetto): qui serve il riflessivo",
+    "hen": "li, loro (oggetto): qui serve il riflessivo"
+   },
+   "tt": "Loro si divertono."
+  },
+  {
+   "t": "mc",
+   "q": "Voel je ___ goed?",
+   "o": [
+    "je",
+    "zich",
+    "jou",
+    "jij"
+   ],
+   "a": 0,
+   "e": "Il primo je è il soggetto, il secondo il riflessivo: <b>Voel je je goed?</b>",
+   "g": {
+    "je": "ti (riflessivo di jij)",
+    "zich": "si: non si usa con jij",
+    "jou": "te (forma accentata dell'oggetto): non è riflessivo",
+    "jij": "tu (soggetto)"
+   },
+   "tt": "Ti senti bene?"
+  },
+  {
+   "t": "mc",
+   "q": "U moet ___ niet haasten, meneer.",
+   "o": [
+    "zich",
+    "je",
+    "me",
+    "ons"
+   ],
+   "a": 0,
+   "e": "Con u: <b>zich</b> (oppure u).",
+   "g": {
+    "zich": "Si (cortesia)",
+    "je": "ti: forma informale, non va con u",
+    "me": "mi: per ik",
+    "ons": "ci: per wij"
+   },
+   "tt": "Non deve affrettarsi, signore."
+  },
+  {
+   "t": "order",
+   "q": "Domani mi devo affrettare.",
+   "a": "Morgen moet ik me haasten",
+   "alt": [
+    "Ik moet me morgen haasten"
+   ],
+   "x": [
+    "zich",
+    "jou"
+   ],
+   "e": "Modale al secondo posto, riflessivo dopo il soggetto, infinito alla fine."
+  },
+  {
+   "t": "fill",
+   "q": "Ik herinner ___ zijn naam niet.",
+   "h": "mi",
+   "a": [
+    "me",
+    "mij"
+   ],
+   "e": "<b>zich herinneren</b>: ik herinner <b>me</b>.",
+   "tt": "Non mi ricordo il suo nome."
+  },
+  {
+   "t": "mc",
+   "q": "Quale verbo è riflessivo in olandese?",
+   "o": [
+    "vergissen",
+    "heten",
+    "opstaan",
+    "vergeten"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<b>zich vergissen</b> = sbagliarsi. Chiamarsi, alzarsi e dimenticarsi in olandese non sono riflessivi.",
+   "g": {
+    "vergissen": "sbagliarsi: zich vergissen, riflessivo",
+    "heten": "chiamarsi: in olandese NON è riflessivo",
+    "opstaan": "alzarsi: NON è riflessivo",
+    "vergeten": "dimenticare, dimenticarsi: NON è riflessivo"
+   }
+  }
+ ],
+ "items": [
+  {
+   "t": "mc",
+   "q": "Ben je ziek? — Ja, ik voel ___ niet goed.",
+   "o": [
+    "me",
+    "mijn",
+    "ik",
+    "zich"
+   ],
+   "a": 0,
+   "e": "ik → <b>me</b>: ik voel me."
+  },
+  {
+   "t": "fill",
+   "q": "Hij scheert ___ elke dag.",
+   "h": "si",
+   "a": [
+    "zich"
+   ],
+   "e": "hij → <b>zich</b>."
+  },
+  {
+   "t": "fill",
+   "q": "We ___ ons, want de trein vertrekt.",
+   "h": "zich haasten",
+   "a": [
+    "haasten"
+   ],
+   "e": "wij + verbo al plurale: we <b>haasten</b> ons."
+  },
+  {
+   "t": "order",
+   "q": "I bambini si annoiano.",
+   "a": "De kinderen vervelen zich",
+   "x": [
+    "onze",
+    "verveelt"
+   ],
+   "e": "zij (loro) → <b>zich</b>; soggetto plurale → <b>vervelen</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Mi sono sbagliato.",
+   "a": [
+    "Ik heb me vergist",
+    "Ik heb mij vergist",
+    "Ik vergiste me",
+    "Ik vergiste mij"
+   ],
+   "e": "I riflessivi vogliono <b>hebben</b>: ik <b>heb</b> me vergist."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "Mevrouw, u ___ zich.",
+   "h": "zich vergissen",
+   "o": [
+    "vergist",
+    "vergis",
+    "vergissen",
+    "vergisst"
+   ],
+   "a": 0,
+   "e": "u si coniuga come jij: u <b>vergist</b> zich."
+  },
+  {
+   "t": "tr",
+   "q": "Ti ricordi il mio nome?",
+   "a": [
+    "Herinner je je mijn naam",
+    "Herinner jij je mijn naam",
+    "Herinnert u zich mijn naam",
+    "Herinnert u u mijn naam",
+    "Weet je mijn naam nog",
+    "Weet jij mijn naam nog"
+   ],
+   "e": "<b>Herinner je je</b> mijn naam? Il secondo je è il riflessivo."
+  },
+  {
+   "t": "order",
+   "q": "Mi vesto in fretta.",
+   "a": "Ik kleed me snel aan",
+   "alt": [
+    "Snel kleed ik me aan"
+   ],
+   "x": [
+    "zich",
+    "kleedt"
+   ],
+   "e": "Separabile: il riflessivo dopo il verbo, <b>aan</b> alla fine."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "Come si dice 'Mi chiamo Luca'?",
+   "o": [
+    "Ik heet Luca",
+    "Ik heet me Luca",
+    "Ik heet zich Luca",
+    "Mij heet Luca"
+   ],
+   "a": 0,
+   "e": "<b>heten</b> non è riflessivo: <b>Ik heet Luca</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Sofie si preoccupa.",
+   "a": [
+    "Sofie maakt zich zorgen",
+    "Sofie is bezorgd"
+   ],
+   "e": "<b>zich zorgen maken</b>: Sofie maakt <b>zich</b> zorgen."
+  },
+  {
+   "t": "mc",
+   "q": "Hij denkt alleen aan ___.",
+   "h": "se stesso",
+   "o": [
+    "zichzelf",
+    "mezelf",
+    "hem",
+    "zijn"
+   ],
+   "a": 0,
+   "e": "Dopo una preposizione, \"se stesso\" = <b>zichzelf</b>."
+  },
+  {
+   "t": "order",
+   "q": "Oggi mi sento bene.",
+   "a": "Vandaag voel ik me goed",
+   "alt": [
+    "Ik voel me vandaag goed",
+    "Ik voel me goed vandaag"
+   ],
+   "x": [
+    "zich",
+    "mijn"
+   ],
+   "e": "Inversione: Vandaag <b>voel ik me</b> goed."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "g": {
+    "me": "mi (riflessivo di ik)",
+    "mijn": "mio (possessivo)",
+    "ik": "io (soggetto)",
+    "zich": "si: solo per lui, lei, loro"
+   },
+   "t": "Sei malato? — Sì, non mi sento bene."
+  },
+  "1": {
+   "t": "Lui si rade ogni giorno."
+  },
+  "2": {
+   "t": "Ci affrettiamo, perché il treno parte."
+  },
+  "4": {
+   "t": "Mi sono sbagliato."
+  },
+  "5": {
+   "g": {
+    "vergist": "si sbaglia (con u)",
+    "vergis": "mi sbaglio (io): con u serve la -t",
+    "vergissen": "ci sbagliamo / si sbagliano (plurale)",
+    "vergisst": "forma che non esiste"
+   },
+   "t": "Signora, Lei si sbaglia."
+  },
+  "6": {
+   "t": "Ti ricordi il mio nome?"
+  },
+  "8": {
+   "g": {
+    "Ik heet Luca": "Mi chiamo Luca (corretta)",
+    "Ik heet me Luca": "heten non è riflessivo: niente me",
+    "Ik heet zich Luca": "heten non è riflessivo, e zich non va con ik",
+    "Mij heet Luca": "il soggetto è ik, non mij"
+   },
+   "t": "Mi chiamo Luca."
+  },
+  "9": {
+   "t": "Sofie si preoccupa."
+  },
+  "10": {
+   "g": {
+    "zichzelf": "se stesso",
+    "mezelf": "me stesso: il soggetto è hij",
+    "hem": "lui (un'altra persona)",
+    "zijn": "suo (possessivo)"
+   },
+   "t": "Lui pensa solo a se stesso."
+  },
+  "11": {
+   "t": "Oggi mi sento bene."
+  }
+ }
+}

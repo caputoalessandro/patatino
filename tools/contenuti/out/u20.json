@@ -1,0 +1,741 @@
+{
+ "id": "u20",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "Vroeger ___ mijn opa elke zondag met de bus naar ons dorp.",
+   "o": [
+    "kwam",
+    "kwamen",
+    "komde",
+    "komt"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Dopo <i>Vroeger</i> c'è l'inversione, ma il soggetto è <i>mijn opa</i> (singolare): <b>kwam</b>. <i>Komen</i> è forte, quindi niente -de.",
+   "g": {
+    "kwam": "veniva (corretta)",
+    "kwamen": "plurale: il soggetto mijn opa è singolare",
+    "komde": "forma che non esiste: komen è forte",
+    "komt": "viene (presente): non va con vroeger"
+   },
+   "tt": "Una volta mio nonno veniva ogni domenica in autobus al nostro paese."
+  },
+  {
+   "t": "mc",
+   "q": "Vorige zomer ___ we drie weken in Oostende en het ___ bijna elke dag.",
+   "o": [
+    "waren … regende",
+    "was … regende",
+    "waren … regenden",
+    "zijn … regent"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<i>we</i> è plurale → <b>waren</b>; <i>het</i> è singolare → <b>regende</b> (n non è nel kofschip: -de).",
+   "g": {
+    "waren … regende": "eravamo … pioveva (corretta)",
+    "was … regende": "con we serve il plurale waren",
+    "waren … regenden": "het è singolare: regende",
+    "zijn … regent": "presente: la frase parla della scorsa estate"
+   },
+   "tt": "L'estate scorsa siamo stati tre settimane a Ostenda e pioveva quasi ogni giorno."
+  },
+  {
+   "t": "fill",
+   "q": "Mijn broer ___ vroeger elke ochtend een half uur op de tram.",
+   "h": "wachten",
+   "a": [
+    "wachtte"
+   ],
+   "e": "Radice <i>wacht</i> + <b>-te</b> (t è nel kofschip): si scrivono due t, <b>wachtte</b>, anche se se ne sente una sola.",
+   "tt": "Una volta mio fratello aspettava il tram mezz'ora ogni mattina."
+  },
+  {
+   "t": "fill",
+   "q": "We ___ gisteren niet komen, want onze auto was kapot.",
+   "h": "kunnen",
+   "a": [
+    "konden"
+   ],
+   "e": "Modale al passato, plurale: <i>kunnen</i> → <b>konden</b>; l'infinito <i>komen</i> resta in fondo.",
+   "tt": "Ieri non siamo potuti venire, perché la nostra macchina era rotta."
+  },
+  {
+   "t": "tr",
+   "q": "Ieri faceva freddo, quindi siamo rimasti a casa.",
+   "a": [
+    "Gisteren was het koud, dus bleven we thuis",
+    "Gisteren was het koud, dus bleven wij thuis",
+    "Gisteren was het koud, dus we bleven thuis",
+    "Gisteren was het koud, dus wij bleven thuis",
+    "Gisteren was het koud, dus zijn we thuis gebleven",
+    "Gisteren was het koud, dus zijn wij thuis gebleven",
+    "Gisteren was het koud, dus zijn we thuisgebleven",
+    "Gisteren was het koud, dus zijn wij thuisgebleven",
+    "Gisteren was het koud, dus we zijn thuis gebleven",
+    "Gisteren was het koud, dus wij zijn thuis gebleven",
+    "Gisteren was het koud, dus we zijn thuisgebleven",
+    "Gisteren was het koud, dus wij zijn thuisgebleven",
+    "Het was gisteren koud, dus bleven we thuis",
+    "Het was gisteren koud, dus bleven wij thuis",
+    "Het was gisteren koud, dus we bleven thuis",
+    "Het was gisteren koud, dus wij bleven thuis",
+    "Het was gisteren koud, dus zijn we thuis gebleven",
+    "Het was gisteren koud, dus zijn wij thuis gebleven",
+    "Het was gisteren koud, dus zijn we thuisgebleven",
+    "Het was gisteren koud, dus zijn wij thuisgebleven",
+    "Het was gisteren koud, dus we zijn thuis gebleven",
+    "Het was gisteren koud, dus wij zijn thuis gebleven",
+    "Het was gisteren koud, dus we zijn thuisgebleven",
+    "Het was gisteren koud, dus wij zijn thuisgebleven"
+   ],
+   "e": "Lo stato (fa freddo) → verleden tijd: <b>was</b>. Il fatto si può dire in tutti e due i modi: <i>bleven we thuis</i> o <i>zijn we thuis gebleven</i>. Dopo <b>dus</b> vanno bene sia l'inversione sia l'ordine normale."
+  },
+  {
+   "t": "tr",
+   "q": "Da bambino non volevo mai mangiare la verdura.",
+   "a": [
+    "Als kind wilde ik nooit groenten eten",
+    "Als kind wilde ik nooit groente eten",
+    "Als kind wou ik nooit groenten eten",
+    "Als kind wou ik nooit groente eten",
+    "Ik wilde als kind nooit groenten eten",
+    "Ik wilde als kind nooit groente eten",
+    "Ik wou als kind nooit groenten eten",
+    "Ik wou als kind nooit groente eten"
+   ],
+   "e": "Modale al passato: <b>wilde</b> (o <b>wou</b>), <i>nooit</i> nel mezzo, l'infinito <i>eten</i> in fondo."
+  },
+  {
+   "t": "order",
+   "q": "Mia nonna leggeva sempre il giornale a colazione.",
+   "a": "Mijn oma las altijd de krant bij het ontbijt",
+   "alt": [
+    "Bij het ontbijt las mijn oma altijd de krant",
+    "Mijn oma las bij het ontbijt altijd de krant"
+   ],
+   "x": [
+    "leesde",
+    "lazen"
+   ],
+   "e": "Abitudine nel passato → verleden tijd. <i>lezen</i> è forte: singolare <b>las</b> (plurale <i>lazen</i>).",
+   "tt": "Mia nonna leggeva sempre il giornale a colazione."
+  },
+  {
+   "t": "order",
+   "q": "I miei amici sono arrivati a Gand alle otto.",
+   "a": "Mijn vrienden kwamen om acht uur in Gent aan",
+   "alt": [
+    "Om acht uur kwamen mijn vrienden in Gent aan",
+    "In Gent kwamen mijn vrienden om acht uur aan"
+   ],
+   "x": [
+    "kwam",
+    "aankwamen"
+   ],
+   "e": "<i>aankomen</i> al passato: <b>kwamen</b> (plurale) al secondo posto e la particella <b>aan</b> in fondo, come al presente.",
+   "tt": "I miei amici sono arrivati a Gand alle otto."
+  }
+ ],
+ "en": {
+  "it": "The simple past",
+  "note": "\n<h3>The idea</h3>\n<p>Besides the voltooide tijd (unit 19), Dutch has a one-word past tense: the <b>verleden tijd</b>. <i>Ik werkte</i> can mean \"I worked\", \"I was working\" or \"I used to work\", depending on the context. It looks like the English simple past, but it's used a bit differently: in conversation Dutch prefers the perfect to say what happened, and keeps the simple past mainly for <b>descriptions</b>, habits and stories.</p>\n<h3>Weak verbs: -te(n) or -de(n)</h3>\n<p>You add <b>-te</b> (plural <b>-ten</b>) or <b>-de</b> (plural <b>-den</b>) to the stem, a bit like English -ed. The choice follows the same rule as the participle: <b>'t kofschip</b>. If the stem ends in t, k, f, s, ch, p → <b>-te</b>; otherwise → <b>-de</b>. There is one form for the whole singular.</p>\n<table><tr><th></th><th>werken</th><th>wonen</th><th>reizen</th></tr>\n<tr><td>ik / jij / hij</td><td>werkte</td><td>woonde</td><td>reisde</td></tr>\n<tr><td>wij / jullie / zij</td><td>werkten</td><td>woonden</td><td>reisden</td></tr></table>\n<p>As with the participle, look at the infinitive: <i>reizen</i> has a z → <b>reisde</b>. If the stem already ends in t or d, you write two consonants even though you hear only one: <i>wachten</i> → <b>wachtte</b>.</p>\n<h3>Strong and irregular verbs: the vowel changes</h3>\n<p>Strong verbs take no ending in the singular: they change their vowel, just like English drink → drank or come → came. In the plural they add <b>-en</b>. They're the most common verbs, so they're worth learning right away (notice how many look like their English cousins):</p>\n<table><tr><th>infinitive</th><th>singular</th><th>plural</th></tr>\n<tr><td>zijn</td><td>was</td><td>waren</td></tr>\n<tr><td>hebben</td><td>had</td><td>hadden</td></tr>\n<tr><td>gaan</td><td>ging</td><td>gingen</td></tr>\n<tr><td>komen</td><td>kwam</td><td>kwamen</td></tr>\n<tr><td>zien</td><td>zag</td><td>zagen</td></tr>\n<tr><td>eten</td><td>at</td><td>aten</td></tr>\n<tr><td>lezen</td><td>las</td><td>lazen</td></tr>\n<tr><td>drinken</td><td>dronk</td><td>dronken</td></tr></table>\n<p>Modal verbs have their own forms too: <i>kunnen</i> → <b>kon</b>, <i>moeten</i> → <b>moest</b>, <i>mogen</i> → <b>mocht</b>, <i>willen</i> → <b>wilde</b> (or <b>wou</b>). And <i>kopen</i> → <b>kocht</b>.</p>\n<p>In separable verbs the particle goes to the end, as in the present: <i>We <b>kwamen</b> om acht uur <b>aan</b></i>.</p>\n<h3>When to use it: verleden tijd or voltooide tijd?</h3>\n<ul>\n<li><b>Voltooide tijd</b> (ik heb gewerkt): to say what happened, especially in conversation, even where English uses the simple past. <i>Wat heb je gisteren gedaan? — Ik heb een film gezien.</i> (What did you do yesterday? — I saw a movie.)</li>\n<li><b>Verleden tijd</b> (ik werkte): to <b>describe</b> a situation or a habit in the past, like English \"was ...ing\" or \"used to\". <i>Vroeger woonde ik in een klein dorp.</i> <i>Het regende.</i> It's also used to <b>tell</b> a series of events, in stories and books.</li>\n<li>With <b>zijn, hebben</b> and the <b>modals</b> the verleden tijd is completely normal in speech too: <i>Ik was moe</i>, <i>We hadden honger</i>, <i>Ik moest werken</i>.</li>\n</ul>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Treating a strong verb as weak: <s>ik gade</s>, <s>ik komde</s> → <b>ik ging</b>, <b>ik kwam</b>.</li>\n<li>Mixing up -te/-de: <s>woonte</s> → <b>woonde</b>, <s>werkde</s> → <b>werkte</b>.</li>\n<li>Forgetting the plural, since English \"was\" has no plural ending: <s>wij was</s> → <b>wij waren</b>.</li>\n<li>Using the simple past for every past event as in English: in conversation <b>Ik heb gisteren een film gezien</b> sounds more natural than <i>Ik zag gisteren een film</i>.</li>\n<li>Looking for an \"-ing\" form: \"I was reading\" is simply <b>ik las</b>.</li>\n</ul>",
+  "vlaams": "For \"I wanted\" in speech you often hear <b>ik wou</b> instead of <i>ik wilde</i>, in Belgium as well as in the Netherlands: both forms are correct. With <b>gij/ge</b> the past of zijn is <b>waart</b>: \"Waart ge moe?\" (were you tired?).",
+  "vocab": [
+   [
+    "vroeger",
+    "in the past, used to"
+   ],
+   [
+    "het weer",
+    "the weather"
+   ],
+   [
+    "de tijd",
+    "the time (that passes)"
+   ],
+   [
+    "koud",
+    "cold"
+   ],
+   [
+    "warm",
+    "warm, hot"
+   ],
+   [
+    "de honger",
+    "the hunger (honger hebben = to be hungry)"
+   ],
+   [
+    "klein",
+    "small, little"
+   ],
+   [
+    "het dorp",
+    "the village"
+   ],
+   [
+    "de vakantie",
+    "the vacation, the holidays"
+   ],
+   [
+    "regenen",
+    "to rain"
+   ],
+   [
+    "lachen",
+    "to laugh"
+   ],
+   [
+    "de school",
+    "the school"
+   ]
+  ],
+  "core": [
+   [
+    "was / waren",
+    "was / were"
+   ],
+   [
+    "had / hadden",
+    "had (singular / plural)"
+   ],
+   [
+    "ging / gingen",
+    "went (singular / plural)"
+   ],
+   [
+    "kwam / kwamen",
+    "came (singular / plural)"
+   ],
+   [
+    "zag / zagen",
+    "saw (singular / plural)"
+   ],
+   [
+    "-te / -de",
+    "ending of weak verbs"
+   ]
+  ],
+  "items": [
+   {
+    "t": "fill",
+    "q": "Vroeger ___ ik in een klein dorp.",
+    "h": "wonen",
+    "a": [
+     "woonde"
+    ],
+    "e": "n isn't in kofschip → <b>woonde</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Gisteren ___ we naar de zee.",
+    "o": [
+     "gingen",
+     "ging",
+     "gaan",
+     "gegaan"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Strong, plural: we <b>gingen</b>."
+   },
+   {
+    "t": "order",
+    "q": "The weather was bad.",
+    "a": "Het weer was slecht",
+    "x": [
+     "waren",
+     "weest"
+    ],
+    "e": "het weer is singular: <b>was</b>."
+   },
+   {
+    "t": "tr",
+    "q": "He had a lot of time.",
+    "a": [
+     "Hij had veel tijd"
+    ],
+    "e": "hebben in the past: <b>had</b>."
+   },
+   {
+    "t": "mc",
+    "q": "De kinderen ___ in de tuin en lachten.",
+    "o": [
+     "speelden",
+     "speelde",
+     "speelten",
+     "spelen"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Plural, l isn't in kofschip → <b>speelden</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Ik ___ gisteren een mooie film.",
+    "h": "zien",
+    "a": [
+     "zag"
+    ],
+    "e": "Strong: zien → <b>zag</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Ik ___ gisteren werken.",
+    "h": "moeten",
+    "o": [
+     "moest",
+     "moette",
+     "moesten",
+     "gemoeten"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "moeten in the past: <b>moest</b>."
+   },
+   {
+    "t": "tr",
+    "q": "I was tired.",
+    "a": [
+     "Ik was moe"
+    ],
+    "e": "zijn in the past: ik <b>was</b> moe."
+   },
+   {
+    "t": "fill",
+    "q": "Wij ___ om acht uur in Brussel aan.",
+    "h": "aankomen",
+    "a": [
+     "kwamen"
+    ],
+    "e": "komen is strong (<b>kwamen</b>) and the particle <i>aan</i> stays at the end."
+   },
+   {
+    "t": "order",
+    "q": "It used to rain a lot.",
+    "a": "Vroeger regende het vaak",
+    "alt": [
+     "Het regende vroeger vaak",
+     "Vaak regende het vroeger"
+    ],
+    "x": [
+     "regenden",
+     "geregend"
+    ],
+    "e": "A habit in the past → verleden tijd: <b>regende</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Zij ___ de krant.",
+    "h": "was reading",
+    "o": [
+     "las",
+     "leesde",
+     "lazen",
+     "lees"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Strong: lezen → <b>las</b>."
+   },
+   {
+    "t": "tr",
+    "q": "On vacation we often ate fries.",
+    "a": [
+     "Op vakantie aten we vaak frieten",
+     "We aten op vakantie vaak frieten",
+     "In de vakantie aten we vaak frieten",
+     "We aten in de vakantie vaak frieten",
+     "Tijdens de vakantie aten we vaak frieten"
+    ],
+    "e": "eten in the plural past: <b>aten</b>."
+   }
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "werken → ik (past)",
+    "o": [
+     "werkte",
+     "werkde",
+     "werkt",
+     "werkten"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "k is in kofschip → <b>-te</b>: werkte.",
+    "g": {
+     "werkte": "I worked",
+     "werkde": "k is in kofschip: you need -te",
+     "werkt": "works (present)",
+     "werkten": "we worked (plural)"
+    },
+    "tt": "I worked"
+   },
+   {
+    "t": "mc",
+    "q": "wonen → hij (past)",
+    "o": [
+     "woonde",
+     "woonte",
+     "wonde",
+     "woonden"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "n isn't in kofschip → <b>-de</b>: woonde.",
+    "g": {
+     "woonde": "he lived",
+     "woonte": "n isn't in kofschip: you need -de",
+     "wonde": "the long o must be written double (wonde = wound)",
+     "woonden": "we / they lived (plural)"
+    },
+    "tt": "he lived"
+   },
+   {
+    "t": "mc",
+    "q": "zijn → ik (past)",
+    "o": [
+     "was",
+     "ben",
+     "waren",
+     "wees"
+    ],
+    "a": 0,
+    "e": "Irregular: ik <b>was</b>.",
+    "g": {
+     "was": "I was",
+     "ben": "I am (present)",
+     "waren": "we / they were (plural)",
+     "wees": "be (imperative)"
+    },
+    "tt": "I was"
+   },
+   {
+    "t": "mc",
+    "q": "hebben → wij (past)",
+    "o": [
+     "hadden",
+     "had",
+     "hebden",
+     "hebten"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Irregular, plural: <b>hadden</b>.",
+    "g": {
+     "hadden": "we had",
+     "had": "I / he had (singular)",
+     "hebden": "doesn't exist",
+     "hebten": "doesn't exist"
+    },
+    "tt": "we had"
+   },
+   {
+    "t": "mc",
+    "q": "gaan → zij, they (past)",
+    "o": [
+     "gingen",
+     "ging",
+     "gaanden",
+     "gegaan"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Strong, plural: <b>gingen</b>.",
+    "g": {
+     "gingen": "they went",
+     "ging": "I / he went (singular)",
+     "gaanden": "doesn't exist",
+     "gegaan": "gone (participle)"
+    },
+    "tt": "they went"
+   },
+   {
+    "t": "mc",
+    "q": "reizen → hij (past)",
+    "o": [
+     "reisde",
+     "reiste",
+     "reizde",
+     "reizte"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "The infinitive has a z → <b>-de</b>, spelled with s: reisde.",
+    "g": {
+     "reisde": "he traveled",
+     "reiste": "look at the infinitive (z): you need -de",
+     "reizde": "before d you write s",
+     "reizte": "doesn't exist"
+    },
+    "tt": "he traveled"
+   },
+   {
+    "t": "mc",
+    "q": "komen → ik (past)",
+    "o": [
+     "kwam",
+     "kom",
+     "komde",
+     "kwamen"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Strong: ik <b>kwam</b>.",
+    "g": {
+     "kwam": "I came",
+     "kom": "I come (present)",
+     "komde": "doesn't exist: komen is strong",
+     "kwamen": "we came (plural)"
+    },
+    "tt": "I came"
+   },
+   {
+    "t": "mc",
+    "q": "Vroeger ___ ik in Rome.",
+    "o": [
+     "woonde",
+     "woon",
+     "woonden",
+     "gewoond"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "A situation in the past → verleden tijd: <b>woonde</b>.",
+    "g": {
+     "woonde": "I lived",
+     "woon": "I live (present): doesn't go with vroeger",
+     "woonden": "we lived (plural)",
+     "gewoond": "lived (participle): needs heb"
+    },
+    "tt": "I used to live in Rome."
+   },
+   {
+    "t": "fill",
+    "q": "Gisteren ___ het koud.",
+    "h": "zijn",
+    "a": [
+     "was"
+    ],
+    "e": "zijn in the past: <b>was</b>.",
+    "tt": "It was cold yesterday."
+   },
+   {
+    "t": "order",
+    "q": "We were hungry.",
+    "a": "We hadden honger",
+    "alt": [
+     "Honger hadden we"
+    ],
+    "x": [
+     "had",
+     "waren"
+    ],
+    "e": "hebben in the plural past: <b>hadden</b>. Dutch says honger <i>hebben</i> (have hunger), not zijn."
+   }
+  ],
+  "gloss": {
+   "0": {
+    "t": "I used to live in a small village."
+   },
+   "1": {
+    "g": {
+     "gingen": "we went (plural)",
+     "ging": "I / he went (singular)",
+     "gaan": "we go (present)",
+     "gegaan": "gone (participle): needs zijn"
+    },
+    "t": "Yesterday we went to the seaside."
+   },
+   "2": {
+    "t": "The weather was bad."
+   },
+   "3": {
+    "t": "He had a lot of time."
+   },
+   "4": {
+    "g": {
+     "speelden": "they were playing",
+     "speelde": "was playing (singular)",
+     "speelten": "l isn't in kofschip: you need -den",
+     "spelen": "they play (present): the sentence is in the past"
+    },
+    "t": "The children were playing in the garden and laughing."
+   },
+   "5": {
+    "t": "Yesterday I saw a nice movie."
+   },
+   "6": {
+    "g": {
+     "moest": "had to (singular)",
+     "moette": "doesn't exist",
+     "moesten": "had to (plural)",
+     "gemoeten": "participle: here you need the simple past"
+    },
+    "t": "I had to work yesterday."
+   },
+   "7": {
+    "t": "I was tired."
+   },
+   "8": {
+    "t": "We arrived in Brussels at eight."
+   },
+   "9": {
+    "t": "It used to rain a lot."
+   },
+   "10": {
+    "g": {
+     "las": "was reading, read",
+     "leesde": "doesn't exist: lezen is strong",
+     "lazen": "they read (plural)",
+     "lees": "I read (present)"
+    },
+    "t": "She was reading the newspaper."
+   },
+   "11": {
+    "t": "On vacation we often ate fries."
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "Vroeger ___ mijn opa elke zondag met de bus naar ons dorp.",
+    "o": [
+     "kwam",
+     "kwamen",
+     "komde",
+     "komt"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "After <i>Vroeger</i> there's inversion, but the subject is <i>mijn opa</i> (singular): <b>kwam</b>. <i>Komen</i> is strong, so no -de (like English come → came).",
+    "g": {
+     "kwam": "came, used to come (correct)",
+     "kwamen": "plural: the subject mijn opa is singular",
+     "komde": "doesn't exist: komen is strong",
+     "komt": "comes (present): doesn't go with vroeger"
+    },
+    "tt": "My grandpa used to come to our village by bus every Sunday."
+   },
+   {
+    "t": "mc",
+    "q": "Vorige zomer ___ we drie weken in Oostende en het ___ bijna elke dag.",
+    "o": [
+     "waren … regende",
+     "was … regende",
+     "waren … regenden",
+     "zijn … regent"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<i>we</i> is plural → <b>waren</b>; <i>het</i> is singular → <b>regende</b> (n isn't in kofschip: -de).",
+    "g": {
+     "waren … regende": "were … rained (correct)",
+     "was … regende": "with we you need the plural waren",
+     "waren … regenden": "het is singular: regende",
+     "zijn … regent": "present: the sentence is about last summer"
+    },
+    "tt": "Last summer we spent three weeks in Ostend and it rained almost every day."
+   },
+   {
+    "t": "fill",
+    "q": "Mijn broer ___ vroeger elke ochtend een half uur op de tram.",
+    "h": "wachten",
+    "a": [
+     "wachtte"
+    ],
+    "e": "Stem <i>wacht</i> + <b>-te</b> (t is in kofschip): you write two t's, <b>wachtte</b>, even though you hear only one.",
+    "tt": "My brother used to wait half an hour for the tram every morning."
+   },
+   {
+    "t": "fill",
+    "q": "We ___ gisteren niet komen, want onze auto was kapot.",
+    "h": "kunnen",
+    "a": [
+     "konden"
+    ],
+    "e": "Modal in the past, plural: <i>kunnen</i> → <b>konden</b>; the infinitive <i>komen</i> stays at the end.",
+    "tt": "We couldn't come yesterday, because our car had broken down."
+   },
+   {
+    "t": "tr",
+    "q": "It was cold yesterday, so we stayed at home.",
+    "a": [
+     "Gisteren was het koud, dus bleven we thuis",
+     "Gisteren was het koud, dus bleven wij thuis",
+     "Gisteren was het koud, dus we bleven thuis",
+     "Gisteren was het koud, dus wij bleven thuis",
+     "Gisteren was het koud, dus zijn we thuis gebleven",
+     "Gisteren was het koud, dus zijn wij thuis gebleven",
+     "Gisteren was het koud, dus zijn we thuisgebleven",
+     "Gisteren was het koud, dus zijn wij thuisgebleven",
+     "Gisteren was het koud, dus we zijn thuis gebleven",
+     "Gisteren was het koud, dus wij zijn thuis gebleven",
+     "Gisteren was het koud, dus we zijn thuisgebleven",
+     "Gisteren was het koud, dus wij zijn thuisgebleven",
+     "Het was gisteren koud, dus bleven we thuis",
+     "Het was gisteren koud, dus bleven wij thuis",
+     "Het was gisteren koud, dus we bleven thuis",
+     "Het was gisteren koud, dus wij bleven thuis",
+     "Het was gisteren koud, dus zijn we thuis gebleven",
+     "Het was gisteren koud, dus zijn wij thuis gebleven",
+     "Het was gisteren koud, dus zijn we thuisgebleven",
+     "Het was gisteren koud, dus zijn wij thuisgebleven",
+     "Het was gisteren koud, dus we zijn thuis gebleven",
+     "Het was gisteren koud, dus wij zijn thuis gebleven",
+     "Het was gisteren koud, dus we zijn thuisgebleven",
+     "Het was gisteren koud, dus wij zijn thuisgebleven"
+    ],
+    "e": "The state (it's cold) → verleden tijd: <b>was</b>. The event can be said both ways: <i>bleven we thuis</i> or <i>zijn we thuis gebleven</i>. After <b>dus</b> both inversion and normal order are fine."
+   },
+   {
+    "t": "tr",
+    "q": "As a child I never wanted to eat vegetables.",
+    "a": [
+     "Als kind wilde ik nooit groenten eten",
+     "Als kind wilde ik nooit groente eten",
+     "Als kind wou ik nooit groenten eten",
+     "Als kind wou ik nooit groente eten",
+     "Ik wilde als kind nooit groenten eten",
+     "Ik wilde als kind nooit groente eten",
+     "Ik wou als kind nooit groenten eten",
+     "Ik wou als kind nooit groente eten"
+    ],
+    "e": "Modal in the past: <b>wilde</b> (or <b>wou</b>), <i>nooit</i> in the middle, the infinitive <i>eten</i> at the end."
+   },
+   {
+    "t": "order",
+    "q": "My grandma always read the newspaper at breakfast.",
+    "a": "Mijn oma las altijd de krant bij het ontbijt",
+    "alt": [
+     "Bij het ontbijt las mijn oma altijd de krant",
+     "Mijn oma las bij het ontbijt altijd de krant"
+    ],
+    "x": [
+     "leesde",
+     "lazen"
+    ],
+    "e": "A habit in the past → verleden tijd. <i>lezen</i> is strong: singular <b>las</b> (plural <i>lazen</i>).",
+    "tt": "My grandma always read the newspaper at breakfast."
+   },
+   {
+    "t": "order",
+    "q": "My friends arrived in Ghent at eight.",
+    "a": "Mijn vrienden kwamen om acht uur in Gent aan",
+    "alt": [
+     "Om acht uur kwamen mijn vrienden in Gent aan",
+     "In Gent kwamen mijn vrienden om acht uur aan"
+    ],
+    "x": [
+     "kwam",
+     "aankwamen"
+    ],
+    "e": "<i>aankomen</i> in the past: <b>kwamen</b> (plural) in second position and the particle <b>aan</b> at the end, as in the present.",
+    "tt": "My friends arrived in Ghent at eight."
+   }
+  ]
+ }
+}

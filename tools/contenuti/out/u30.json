@@ -1,0 +1,740 @@
+{
+ "id": "u30",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "Dit is ___ fiets.",
+   "h": "di Thomas",
+   "o": [
+    "Thomas'",
+    "Thomas's",
+    "Thomass",
+    "Thomas'is"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Il nome finisce in <b>-s</b>: si aggiunge solo l'apostrofo, <b>Thomas'</b> fiets. (In alternativa: <i>de fiets van Thomas</i>.)",
+   "g": {
+    "Thomas'": "di Thomas (solo apostrofo, corretto)",
+    "Thomas's": "forma inglese: in olandese dopo -s solo l'apostrofo",
+    "Thomass": "forma che non esiste",
+    "Thomas'is": "forma che non esiste"
+   },
+   "tt": "Questa è la bici di Thomas."
+  },
+  {
+   "t": "mc",
+   "q": "Quale di queste frasi è scritta senza errori?",
+   "o": [
+    "Op dinsdag rijden we met Anna's auto naar West-Vlaanderen.",
+    "Op Dinsdag rijden we met Anna's auto naar West-Vlaanderen.",
+    "Op dinsdag rijden we met Annas auto naar West-Vlaanderen.",
+    "Op dinsdag rijden we met Anna's auto naar West Vlaanderen."
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Tre regole insieme: giorni minuscoli (<i>dinsdag</i>), apostrofo dopo vocale lunga (<i>Anna's</i>), trattino nei nomi geografici composti (<i>West-Vlaanderen</i>).",
+   "g": {
+    "Op dinsdag rijden we met Anna's auto naar West-Vlaanderen.": "Martedì andiamo con la macchina di Anna nelle Fiandre Occidentali (corretta)",
+    "Op Dinsdag rijden we met Anna's auto naar West-Vlaanderen.": "i giorni si scrivono minuscoli",
+    "Op dinsdag rijden we met Annas auto naar West-Vlaanderen.": "dopo vocale lunga serve l'apostrofo: Anna's",
+    "Op dinsdag rijden we met Anna's auto naar West Vlaanderen.": "le province composte vogliono il trattino"
+   },
+   "tt": "Martedì andiamo con la macchina di Anna nelle Fiandre Occidentali."
+  },
+  {
+   "t": "fill",
+   "q": "Mijn oma wordt dit jaar ___.",
+   "h": "83, in lettere",
+   "a": [
+    "drieëntachtig"
+   ],
+   "e": "<i>drie + en + tachtig</i>: le vocali <i>e-e</i> si scontrano, quindi la dieresi: <b>drieëntachtig</b>, tutto attaccato.",
+   "tt": "Mia nonna quest'anno compie 83 anni."
+  },
+  {
+   "t": "fill",
+   "q": "De eerste twee ___ van dit boek zijn heel saai.",
+   "h": "pagina, plurale",
+   "a": [
+    "pagina's"
+   ],
+   "e": "<i>pagina</i> finisce in <i>a</i> lunga: plurale con l'apostrofo, <b>pagina's</b>.",
+   "tt": "Le prime due pagine di questo libro sono noiosissime."
+  },
+  {
+   "t": "tr",
+   "q": "Il mio compleanno è il 23 maggio.",
+   "a": [
+    "Mijn verjaardag is op drieëntwintig mei",
+    "Mijn verjaardag is drieëntwintig mei",
+    "Mijn verjaardag is op 23 mei",
+    "Mijn verjaardag is 23 mei",
+    "Mijn verjaardag valt op drieëntwintig mei",
+    "Mijn verjaardag valt op 23 mei"
+   ],
+   "e": "<b>drieëntwintig</b> con la dieresi e <b>mei</b> minuscolo: i mesi non vogliono la maiuscola."
+  },
+  {
+   "t": "tr",
+   "q": "Di sera parlo italiano con mia madre.",
+   "a": [
+    "'s Avonds spreek ik Italiaans met mijn moeder",
+    "'s Avonds spreek ik met mijn moeder Italiaans",
+    "Ik spreek 's avonds Italiaans met mijn moeder",
+    "Ik spreek 's avonds met mijn moeder Italiaans"
+   ],
+   "e": "<b>'s avonds</b>: <i>'s</i> resta minuscolo anche a inizio frase (la maiuscola va sulla parola dopo: <i>'s Avonds</i>). La lingua è maiuscola: <b>Italiaans</b>. Dopo <i>'s avonds</i> all'inizio: inversione."
+  },
+  {
+   "t": "order",
+   "q": "Le foto di Marco sono su questa pagina.",
+   "a": "Marco's foto's staan op deze pagina",
+   "alt": [
+    "Op deze pagina staan Marco's foto's"
+   ],
+   "x": [
+    "Marcos",
+    "fotos"
+   ],
+   "e": "Due apostrofi diversi: genitivo <b>Marco's</b> (nome in vocale lunga) e plurale <b>foto's</b>.",
+   "tt": "Le foto di Marco sono su questa pagina."
+  },
+  {
+   "t": "order",
+   "q": "Mia zia abita nelle Fiandre Orientali e parla bene l'italiano.",
+   "a": "Mijn tante woont in Oost-Vlaanderen en spreekt goed Italiaans",
+   "x": [
+    "Oost",
+    "Vlaanderen"
+   ],
+   "e": "<b>Oost-Vlaanderen</b> con il trattino e <b>Italiaans</b> con la maiuscola (le lingue sono maiuscole).",
+   "tt": "Mia zia abita nelle Fiandre Orientali e parla bene l'italiano."
+  }
+ ],
+ "en": {
+  "it": "Punctuation and spelling",
+  "note": "\n<h3>The idea</h3>\n<p>Dutch spelling is very regular, but it has a few marks that English uses differently or not at all: the apostrophe in plurals, the diaeresis (<b>ë</b>, <b>ï</b>), the hyphen in compound words. And some capitalization rules work the opposite way from English. Here are the rules you really need to write a text or an email without mistakes.</p>\n<h3>The apostrophe: plurals</h3>\n<p>After a word ending in a long vowel <b>a, i, o, u, y</b>, the -s plural takes an apostrophe so the vowel stays long: <i>auto's, foto's, menu's, pagina's, baby's</i>. In English an apostrophe in a plural is a mistake; in Dutch it's the rule here. After <b>-é</b> and after a silent <b>-e</b> there's no apostrophe: <i>cafés, tantes</i> (tante = aunt).</p>\n<h3>The apostrophe: the possessive</h3>\n<p>With people's names you can say <i>de fiets van Anna</i> or add <b>-s</b>: </p>\n<table><tr><th>the name ends in…</th><th>form</th></tr>\n<tr><td>a consonant or silent -e</td><td><b>Jans</b> fiets, <b>Annes</b> fiets (no apostrophe)</td></tr>\n<tr><td>a long vowel a, i, o, u, y</td><td><b>Anna's</b> fiets, <b>Marco's</b> fiets</td></tr>\n<tr><td>-s, -x, -z</td><td><b>Thomas'</b> fiets (apostrophe only)</td></tr></table>\n<p>Careful: <s>Jan's fiets</s> is a mistake copied from English. Also note <b>'s avonds</b> (in the evening), <b>'s morgens</b> (in the morning): here <i>'s</i> is an old article and is always lowercase.</p>\n<h3>The diaeresis (het trema)</h3>\n<p>When two vowels next to each other could be read as one sound, the diaeresis shows that a new syllable starts (as in English \"naïve\"): <i>België, Italië, ideeën, zeeën, ruïne, tweeëntwintig, drieëntwintig</i>.</p>\n<h3>The hyphen (het koppelteken)</h3>\n<p>In compound words, if the first part ends in a vowel and the second starts with a vowel that could merge with it, use a <b>hyphen</b> (not the diaeresis): <i>zee-egel, auto-ongeluk, zonne-energie, na-apen</i>. The hyphen is also used in compound place names: <i>West-Vlaanderen, Oost-Vlaanderen, Sint-Niklaas</i>.</p>\n<h3>Capital letters</h3>\n<p>Unlike German, common nouns are lowercase. Unlike English, days and months are <b>lowercase</b>: <i>maandag, dinsdag, mei</i>. As in English, languages and nationality adjectives are <b>capitalized</b>: <i>Nederlands, Italiaans, een Italiaanse auto</i>. Unlike English \"I\", <i>ik</i> is lowercase. The letter <b>ij</b> at the start of a proper name becomes <b>IJ</b>: <i>de IJzer</i> (the Yser river), <i>IJsland</i>.</p>\n<h3>Commas and quotation marks</h3>\n<p>If the subordinate clause comes before the main clause, you usually put a comma between the two verbs: <i>Omdat het regent, blijf ik thuis.</i> If it comes after, the comma is optional. Direct speech is introduced with a <b>colon</b> (not a comma as in English) and starts with a capital: <i>Hij zegt: \"Ik kom morgen.\"</i></p>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Capitalizing months and days as in English: <s>in Mei</s> → <b>in mei</b>, <s>op Maandag</s> → <b>op maandag</b>.</li>\n<li>English-style possessive apostrophe: <s>Jan's boek</s> → <b>Jans boek</b>.</li>\n<li>Plural without the apostrophe: <s>fotos</s> → <b>foto's</b>.</li>\n<li>Capitalizing ik like \"I\": <s>Morgen kom Ik</s> → <b>Morgen kom ik</b>.</li>\n<li>Forgetting the diaeresis: <s>Belgie</s> → <b>België</b>.</li>\n</ul>",
+  "vlaams": "The spelling rules are the same in Belgium and the Netherlands: they're set by the Nederlandse Taalunie (Dutch Language Union) and summed up in the \"Groene Boekje\" (Green Booklet). Belgian provinces are written with a hyphen: <b>West-Vlaanderen</b>, <b>Oost-Vlaanderen</b>, <b>Vlaams-Brabant</b>.",
+  "vocab": [
+   [
+    "de verjaardag",
+    "the birthday"
+   ],
+   [
+    "mei",
+    "May"
+   ],
+   [
+    "dinsdag",
+    "Tuesday"
+   ],
+   [
+    "het idee",
+    "the idea"
+   ],
+   [
+    "de zee",
+    "the sea"
+   ],
+   [
+    "de ruïne",
+    "the ruin"
+   ],
+   [
+    "het auto-ongeluk",
+    "the car accident"
+   ],
+   [
+    "de zonne-energie",
+    "solar energy"
+   ],
+   [
+    "de zee-egel",
+    "the sea urchin"
+   ],
+   [
+    "de baby",
+    "the baby"
+   ],
+   [
+    "het café",
+    "the café, the bar"
+   ],
+   [
+    "de pagina",
+    "the page"
+   ],
+   [
+    "België",
+    "Belgium"
+   ],
+   [
+    "Italiaans",
+    "Italian"
+   ],
+   [
+    "de foto",
+    "the photo"
+   ]
+  ],
+  "core": [
+   [
+    "de apostrof",
+    "the apostrophe"
+   ],
+   [
+    "het trema",
+    "the diaeresis (ë, ï)"
+   ],
+   [
+    "het koppelteken",
+    "the hyphen"
+   ],
+   [
+    "de hoofdletter",
+    "the capital letter"
+   ],
+   [
+    "de komma",
+    "the comma"
+   ],
+   [
+    "de aanhalingstekens",
+    "quotation marks"
+   ]
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "een foto → twee ___",
+    "o": [
+     "foto's",
+     "fotos",
+     "fotoos",
+     "foto'en"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "After a long vowel: <b>-'s</b>.",
+    "g": {
+     "foto's": "photos (plural, correct)",
+     "fotos": "the apostrophe is missing",
+     "fotoos": "this form doesn't exist",
+     "foto'en": "this form doesn't exist"
+    },
+    "tt": "one photo → two photos"
+   },
+   {
+    "t": "mc",
+    "q": "een café → twee ___",
+    "o": [
+     "cafés",
+     "café's",
+     "cafees",
+     "cafeeën"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "After <b>-é</b> just <b>-s</b>: <i>cafés</i>.",
+    "g": {
+     "cafés": "cafés (plural, correct)",
+     "café's": "no apostrophe needed after -é",
+     "cafees": "this form doesn't exist",
+     "cafeeën": "this form doesn't exist"
+    },
+    "tt": "one café → two cafés"
+   },
+   {
+    "t": "mc",
+    "q": "22 in words",
+    "o": [
+     "tweeëntwintig",
+     "tweeentwintig",
+     "twee-en-twintig",
+     "twintigtwee"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<i>twee + en</i>: the diaeresis separates the vowels, <b>tweeëntwintig</b>.",
+    "g": {
+     "tweeëntwintig": "22 (correct)",
+     "tweeentwintig": "the diaeresis is missing",
+     "twee-en-twintig": "no hyphens in numbers",
+     "twintigtwee": "the unit comes first"
+    },
+    "tt": "twenty-two"
+   },
+   {
+    "t": "mc",
+    "q": "een idee → twee ___",
+    "o": [
+     "ideeën",
+     "ideeen",
+     "idee's",
+     "idees"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<i>idee + en</i> → <b>ideeën</b>.",
+    "g": {
+     "ideeën": "ideas (plural, correct)",
+     "ideeen": "the diaeresis is missing",
+     "idee's": "wrong form: it's ideeën",
+     "idees": "non-standard form: write ideeën"
+    },
+    "tt": "one idea → two ideas"
+   },
+   {
+    "t": "mc",
+    "q": "the sea urchin",
+    "o": [
+     "de zee-egel",
+     "de zeeegel",
+     "de zeeëgel",
+     "de zee egel"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "A compound word where vowels collide → <b>hyphen</b>.",
+    "g": {
+     "de zee-egel": "the sea urchin (correct)",
+     "de zeeegel": "you need the hyphen",
+     "de zeeëgel": "compounds take a hyphen, not a diaeresis",
+     "de zee egel": "compound words are written as one word"
+    },
+    "tt": "the sea urchin"
+   },
+   {
+    "t": "mc",
+    "q": "Which sentence is spelled correctly?",
+    "o": [
+     "Ik kom op maandag.",
+     "Ik kom op Maandag.",
+     "ik kom op maandag.",
+     "Ik Kom op maandag."
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Days are lowercase (unlike English); the sentence starts with a capital.",
+    "g": {
+     "Ik kom op maandag.": "I'm coming on Monday (correct)",
+     "Ik kom op Maandag.": "days are written lowercase",
+     "ik kom op maandag.": "the sentence starts with a capital",
+     "Ik Kom op maandag.": "verbs are lowercase"
+    },
+    "tt": "I'm coming on Monday."
+   },
+   {
+    "t": "mc",
+    "q": "Anna's bike",
+    "o": [
+     "Anna's fiets",
+     "Annas fiets",
+     "Anna fiets's",
+     "Annas' fiets"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "The name ends in a long <i>a</i> → <b>Anna's</b>.",
+    "g": {
+     "Anna's fiets": "Anna's bike (correct)",
+     "Annas fiets": "after a long vowel you need the apostrophe",
+     "Anna fiets's": "wrong form",
+     "Annas' fiets": "wrong form"
+    },
+    "tt": "Anna's bike"
+   },
+   {
+    "t": "mc",
+    "q": "Jan's bike",
+    "o": [
+     "Jans fiets",
+     "Jan's fiets",
+     "Jans' fiets",
+     "Jan fiets"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "After a consonant: <b>-s</b> with no apostrophe, unlike English.",
+    "g": {
+     "Jans fiets": "Jan's bike (correct)",
+     "Jan's fiets": "English-style apostrophe: wrong",
+     "Jans' fiets": "wrong form",
+     "Jan fiets": "the -s is missing"
+    },
+    "tt": "Jan's bike"
+   },
+   {
+    "t": "mc",
+    "q": "in the evening",
+    "o": [
+     "'s avonds",
+     "s'avonds",
+     "'S avonds",
+     "savonds"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "It's written <b>'s avonds</b>: apostrophe before the s, then a space.",
+    "g": {
+     "'s avonds": "in the evening (correct)",
+     "s'avonds": "the apostrophe goes before the s",
+     "'S avonds": "the s always stays lowercase",
+     "savonds": "the apostrophe is missing"
+    },
+    "tt": "in the evening"
+   },
+   {
+    "t": "fill",
+    "q": "Ik woon in ___.",
+    "h": "Belgium",
+    "a": [
+     "België"
+    ],
+    "e": "<b>België</b>, with the diaeresis.",
+    "tt": "I live in Belgium."
+   }
+  ],
+  "items": [
+   {
+    "t": "mc",
+    "q": "Which sentence is spelled correctly?",
+    "o": [
+     "Mijn verjaardag is in mei.",
+     "Mijn verjaardag is in Mei.",
+     "Mijn Verjaardag is in mei.",
+     "mijn verjaardag is in mei."
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Months and common nouns are lowercase; a capital only at the start."
+   },
+   {
+    "t": "mc",
+    "q": "Ik heb drie ___ gemaakt.",
+    "h": "photo, plural",
+    "o": [
+     "foto's",
+     "fotos",
+     "fotoos"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<b>foto's</b>, with the apostrophe."
+   },
+   {
+    "t": "order",
+    "q": "My birthday is on Tuesday.",
+    "a": "Mijn verjaardag is dinsdag",
+    "alt": [
+     "Dinsdag is mijn verjaardag"
+    ],
+    "x": [
+     "mij",
+     "zijn"
+    ],
+    "e": "<b>dinsdag</b> is lowercase (capitalized only at the start of a sentence)."
+   },
+   {
+    "t": "tr",
+    "q": "I live in Belgium.",
+    "a": [
+     "Ik woon in België"
+    ],
+    "e": "<b>België</b>, with the diaeresis."
+   },
+   {
+    "t": "mc",
+    "q": "Marco's birthday",
+    "o": [
+     "Marco's verjaardag",
+     "Marcos verjaardag",
+     "Marco verjaardag's",
+     "Marcos' verjaardag"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "The name ends in a long <i>o</i> → <b>Marco's</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Anne's birthday",
+    "o": [
+     "Annes verjaardag",
+     "Anne's verjaardag",
+     "Anne verjaardag",
+     "Annes' verjaardag"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "The name ends in a silent <i>-e</i> → <b>Annes</b>, no apostrophe."
+   },
+   {
+    "t": "fill",
+    "q": "In Italië zijn veel oude ___.",
+    "h": "ruin, plural",
+    "a": [
+     "ruïnes"
+    ],
+    "e": "<b>ruïnes</b>: the diaeresis stays in the plural too."
+   },
+   {
+    "t": "mc",
+    "q": "the car accident",
+    "o": [
+     "het auto-ongeluk",
+     "het autoongeluk",
+     "het autoöngeluk",
+     "het auto ongeluk"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<i>auto</i> + <i>ongeluk</i>: colliding vowels → <b>hyphen</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Which sentence is spelled correctly?",
+    "o": [
+     "Hij zegt: \"Ik kom morgen.\"",
+     "Hij zegt: \"ik kom morgen.\"",
+     "Hij zegt, \"Ik kom morgen\"."
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Direct speech: <b>colon</b>, quotation marks and a capital letter."
+   },
+   {
+    "t": "mc",
+    "q": "Omdat het regent ___ blijf ik thuis. Between the two parts you usually put:",
+    "o": [
+     "a comma",
+     "a period",
+     "a colon",
+     "a semicolon"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Subordinate clause first → usually a <b>comma</b> between the two verbs."
+   },
+   {
+    "t": "mc",
+    "q": "the Yser river (in Belgium)",
+    "o": [
+     "de IJzer",
+     "de Ijzer",
+     "de ijzer",
+     "de IJZER"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<b>ij</b> at the start of a proper name: both letters capitalized, <b>IJ</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Ze spreekt goed ___.",
+    "o": [
+     "Italiaans",
+     "italiaans"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Languages are capitalized, as in English: <b>Italiaans</b>."
+   }
+  ],
+  "gloss": {
+   "0": {
+    "g": {
+     "Mijn verjaardag is in mei.": "My birthday is in May (correct)",
+     "Mijn verjaardag is in Mei.": "months are written lowercase",
+     "Mijn Verjaardag is in mei.": "common nouns are lowercase",
+     "mijn verjaardag is in mei.": "the sentence starts with a capital"
+    },
+    "t": "My birthday is in May."
+   },
+   "1": {
+    "g": {
+     "foto's": "photos (plural, correct)",
+     "fotos": "the apostrophe is missing",
+     "fotoos": "this form doesn't exist"
+    },
+    "t": "I took three photos."
+   },
+   "2": {
+    "t": "My birthday is on Tuesday."
+   },
+   "3": {
+    "t": "I live in Belgium."
+   },
+   "4": {
+    "g": {
+     "Marco's verjaardag": "Marco's birthday (correct)",
+     "Marcos verjaardag": "after a long vowel you need the apostrophe",
+     "Marco verjaardag's": "wrong form",
+     "Marcos' verjaardag": "wrong form"
+    },
+    "t": "Marco's birthday"
+   },
+   "5": {
+    "g": {
+     "Annes verjaardag": "Anne's birthday (correct)",
+     "Anne's verjaardag": "no apostrophe after a silent -e",
+     "Anne verjaardag": "the -s is missing",
+     "Annes' verjaardag": "wrong form"
+    },
+    "t": "Anne's birthday"
+   },
+   "6": {
+    "t": "There are many ancient ruins in Italy."
+   },
+   "7": {
+    "g": {
+     "het auto-ongeluk": "the car accident (correct)",
+     "het autoongeluk": "you need the hyphen",
+     "het autoöngeluk": "compounds take a hyphen, not a diaeresis",
+     "het auto ongeluk": "compound words are written as one word"
+    },
+    "t": "the car accident"
+   },
+   "8": {
+    "g": {
+     "Hij zegt: \"Ik kom morgen.\"": "He says: \"I'm coming tomorrow.\" (correct)",
+     "Hij zegt: \"ik kom morgen.\"": "direct speech starts with a capital",
+     "Hij zegt, \"Ik kom morgen\".": "Dutch uses a colon, not a comma as in English; and the period goes inside the quotes"
+    },
+    "t": "He says: \"I'm coming tomorrow.\""
+   },
+   "9": {
+    "t": "Since it's raining, I'm staying home."
+   },
+   "10": {
+    "g": {
+     "de IJzer": "the Yser (correct)",
+     "de Ijzer": "the j of ij is capitalized too",
+     "de ijzer": "proper names need a capital",
+     "de IJZER": "all caps: not used"
+    },
+    "t": "the Yser"
+   },
+   "11": {
+    "g": {
+     "Italiaans": "Italian (language, correct)",
+     "italiaans": "languages are capitalized"
+    },
+    "t": "She speaks Italian well."
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "Dit is ___ fiets.",
+    "h": "Thomas's",
+    "o": [
+     "Thomas'",
+     "Thomas's",
+     "Thomass",
+     "Thomas'is"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "The name ends in <b>-s</b>: add only the apostrophe, <b>Thomas'</b> fiets. (Or: <i>de fiets van Thomas</i>.)",
+    "g": {
+     "Thomas'": "Thomas's (apostrophe only, correct)",
+     "Thomas's": "English form: in Dutch, after -s only the apostrophe",
+     "Thomass": "this form doesn't exist",
+     "Thomas'is": "this form doesn't exist"
+    },
+    "tt": "This is Thomas's bike."
+   },
+   {
+    "t": "mc",
+    "q": "Which of these sentences has no spelling mistakes?",
+    "o": [
+     "Op dinsdag rijden we met Anna's auto naar West-Vlaanderen.",
+     "Op Dinsdag rijden we met Anna's auto naar West-Vlaanderen.",
+     "Op dinsdag rijden we met Annas auto naar West-Vlaanderen.",
+     "Op dinsdag rijden we met Anna's auto naar West Vlaanderen."
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Three rules at once: days lowercase (<i>dinsdag</i>, unlike English), an apostrophe after a long vowel (<i>Anna's</i>), a hyphen in compound place names (<i>West-Vlaanderen</i>).",
+    "g": {
+     "Op dinsdag rijden we met Anna's auto naar West-Vlaanderen.": "On Tuesday we're driving to West Flanders in Anna's car (correct)",
+     "Op Dinsdag rijden we met Anna's auto naar West-Vlaanderen.": "days are written lowercase",
+     "Op dinsdag rijden we met Annas auto naar West-Vlaanderen.": "after a long vowel you need the apostrophe: Anna's",
+     "Op dinsdag rijden we met Anna's auto naar West Vlaanderen.": "compound province names need a hyphen"
+    },
+    "tt": "On Tuesday we're driving to West Flanders in Anna's car."
+   },
+   {
+    "t": "fill",
+    "q": "Mijn oma wordt dit jaar ___.",
+    "h": "83, in words",
+    "a": [
+     "drieëntachtig"
+    ],
+    "e": "<i>drie + en + tachtig</i>: the vowels <i>e-e</i> collide, so a diaeresis: <b>drieëntachtig</b>, all one word.",
+    "tt": "My grandma turns 83 this year."
+   },
+   {
+    "t": "fill",
+    "q": "De eerste twee ___ van dit boek zijn heel saai.",
+    "h": "page, plural",
+    "a": [
+     "pagina's"
+    ],
+    "e": "<i>pagina</i> ends in a long <i>a</i>: plural with an apostrophe, <b>pagina's</b>.",
+    "tt": "The first two pages of this book are really boring."
+   },
+   {
+    "t": "tr",
+    "q": "My birthday is May 23rd.",
+    "a": [
+     "Mijn verjaardag is op drieëntwintig mei",
+     "Mijn verjaardag is drieëntwintig mei",
+     "Mijn verjaardag is op 23 mei",
+     "Mijn verjaardag is 23 mei",
+     "Mijn verjaardag valt op drieëntwintig mei",
+     "Mijn verjaardag valt op 23 mei"
+    ],
+    "e": "Day before month: <b>drieëntwintig mei</b>, with the diaeresis, and <b>mei</b> lowercase: months don't take a capital in Dutch."
+   },
+   {
+    "t": "tr",
+    "q": "In the evening I speak Italian with my mother.",
+    "a": [
+     "'s Avonds spreek ik Italiaans met mijn moeder",
+     "'s Avonds spreek ik met mijn moeder Italiaans",
+     "Ik spreek 's avonds Italiaans met mijn moeder",
+     "Ik spreek 's avonds met mijn moeder Italiaans"
+    ],
+    "e": "<b>'s avonds</b>: <i>'s</i> stays lowercase even at the start of a sentence (the capital goes on the next word: <i>'s Avonds</i>). The language is capitalized: <b>Italiaans</b>. After <i>'s avonds</i> in first position: inversion."
+   },
+   {
+    "t": "order",
+    "q": "Marco's photos are on this page.",
+    "a": "Marco's foto's staan op deze pagina",
+    "alt": [
+     "Op deze pagina staan Marco's foto's"
+    ],
+    "x": [
+     "Marcos",
+     "fotos"
+    ],
+    "e": "Two different apostrophes: possessive <b>Marco's</b> (name ending in a long vowel) and plural <b>foto's</b> (which English would never write).",
+    "tt": "Marco's photos are on this page."
+   },
+   {
+    "t": "order",
+    "q": "My aunt lives in East Flanders and speaks Italian well.",
+    "a": "Mijn tante woont in Oost-Vlaanderen en spreekt goed Italiaans",
+    "x": [
+     "Oost",
+     "Vlaanderen"
+    ],
+    "e": "<b>Oost-Vlaanderen</b> with a hyphen and <b>Italiaans</b> with a capital (languages are capitalized).",
+    "tt": "My aunt lives in East Flanders and speaks Italian well."
+   }
+  ]
+ }
+}

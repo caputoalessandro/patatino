@@ -1,0 +1,412 @@
+{
+ "id": "u28",
+ "n": 28,
+ "module": 6,
+ "nl": "De indirecte rede",
+ "it": "Il discorso indiretto",
+ "note": "\n<h3>L'idea</h3>\n<p>Con il discorso indiretto riferisci quello che ha detto o chiesto qualcun altro: \"Anna dice <u>che è stanca</u>\", \"Tom chiede <u>se vengo</u>\". Come in italiano cambiano i pronomi (io → lei) e a volte il tempo. La differenza con l'italiano è l'ordine: la parte riferita è una subordinata, quindi <b>il verbo va in fondo</b>.</p>\n<h3>Un'affermazione: zeggen dat</h3>\n<p>Per riferire un'affermazione usi <b>dat</b> (che):</p>\n<p>Anna: \"Ik <b>ben</b> moe.\" → <i>Anna zegt dat ze moe <b>is</b>.</i></p>\n<p>Lo stesso con <i>denken dat</i>, <i>vertellen dat</i>, <i>antwoorden dat</i>, <i>beloven dat</i>.</p>\n<h3>Una domanda sì/no: vragen of</h3>\n<p>Se la domanda originale si risponde con sì o no, usi <b>of</b> (se):</p>\n<p>Tom: \"<b>Kom</b> je morgen?\" → <i>Tom vraagt of ik morgen <b>kom</b>.</i></p>\n<h3>Una domanda con parola interrogativa</h3>\n<p>Se la domanda comincia con <i>wie, wat, waar, wanneer, waarom, hoe, hoeveel…</i>, la parola interrogativa resta e prende il posto di <i>of</i>:</p>\n<p>\"Waar <b>woon</b> je?\" → <i>Hij vraagt waar ik <b>woon</b>.</i></p>\n<h3>Cosa cambia</h3>\n<table><tr><th>discorso diretto</th><th>discorso indiretto</th></tr>\n<tr><td>Lisa: \"Ik werk vandaag.\"</td><td>Lisa zegt dat <b>ze</b> vandaag <b>werkt</b>.</td></tr>\n<tr><td>Marco (a te): \"Ik help je.\"</td><td>Marco zegt dat <b>hij</b> <b>je</b> helpt.</td></tr>\n<tr><td>Anna (a te): \"Waar is je fiets?\"</td><td>Anna vraagt waar <b>mijn</b> fiets is.</td></tr>\n<tr><td>De baas: \"Kom morgen!\"</td><td>De baas zegt dat ik morgen <b>moet komen</b>.</td></tr></table>\n<p>I pronomi e i possessivi cambiano secondo chi parla e chi ascolta, esattamente come in italiano. Il verbo si accorda con il nuovo soggetto (<i>ik werk → ze werkt</i>). Un ordine si riferisce con <b>moeten</b>.</p>\n<h3>Il tempo</h3>\n<p>Se il verbo che introduce è al presente (<i>zegt, vraagt</i>), il tempo non cambia. Se è al passato (<i>zei, vroeg</i>), di solito anche il verbo riferito va al passato: <i>Hij zei: \"Ik ben ziek.\" → Hij zei dat hij ziek <b>was</b>.</i> Nel parlato si sente anche il presente se il fatto è ancora vero.</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Tenere l'ordine della domanda: <s>Ze vraagt of ben je moe</s> → <b>Ze vraagt of je moe bent</b>.</li>\n<li>Lasciare il verbo al centro: <s>Hij zegt dat hij komt morgen</s> → <b>Hij zegt dat hij morgen komt</b>.</li>\n<li>Usare dat per una domanda: <s>Hij vraagt dat ik kom</s> → <b>Hij vraagt of ik kom</b>.</li>\n<li>Usare als per \"se\": <s>Ik vraag als hij thuis is</s> → <b>Ik vraag of hij thuis is</b>.</li>\n<li>Dimenticare di cambiare il pronome: Anna: \"Ik ben moe.\" → <s>Anna zegt dat ik moe ben</s> → <b>Anna zegt dat ze moe is</b>.</li>\n</ul>",
+ "vlaams": "In Belgio si sente spesso <b>iets zeggen aan iemand</b> (\"Ik heb het aan mijn baas gezegd\"); lo standard preferisce <b>zeggen tegen</b>. Anche qui nel parlato compare il doppio <b>of dat</b>: \"Ze vraagt <b>of dat</b> ik kom\". Nello scritto usa solo <b>of</b>.",
+ "vocab": [
+  [
+   "zeggen",
+   "dire"
+  ],
+  [
+   "vragen",
+   "chiedere"
+  ],
+  [
+   "vertellen",
+   "raccontare"
+  ],
+  [
+   "antwoorden",
+   "rispondere"
+  ],
+  [
+   "beloven",
+   "promettere"
+  ],
+  [
+   "het bericht",
+   "il messaggio"
+  ],
+  [
+   "de baas",
+   "il capo"
+  ],
+  [
+   "klaar",
+   "pronto, finito"
+  ],
+  [
+   "het feest",
+   "la festa"
+  ],
+  [
+   "de vergadering",
+   "la riunione"
+  ],
+  [
+   "ziek",
+   "malato"
+  ],
+  [
+   "moe",
+   "stanco"
+  ]
+ ],
+ "core": [
+  [
+   "zeggen dat",
+   "dire che"
+  ],
+  [
+   "vragen of",
+   "chiedere se"
+  ],
+  [
+   "vragen waar / wanneer / …",
+   "chiedere dove / quando / …"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "Anna: \"Ik ben moe.\" → Anna zegt dat ___ moe is.",
+   "o": [
+    "ze",
+    "ik",
+    "je",
+    "hij"
+   ],
+   "a": 0,
+   "e": "Chi parla è Anna: <i>ik</i> diventa <b>ze</b>.",
+   "g": {
+    "ze": "lei (Anna)",
+    "ik": "io: ma qui parla Anna",
+    "je": "tu",
+    "hij": "lui"
+   },
+   "tt": "Anna: \"Sono stanca.\" → Anna dice che è stanca."
+  },
+  {
+   "t": "mc",
+   "q": "Tom (a me): \"Kom je morgen?\" → Tom vraagt ___ ik morgen kom.",
+   "o": [
+    "of",
+    "dat",
+    "als",
+    "wat"
+   ],
+   "a": 0,
+   "e": "Domanda sì/no → <b>of</b>.",
+   "g": {
+    "of": "se (domanda sì/no)",
+    "dat": "che: per le affermazioni",
+    "als": "se (condizione): nel parlato si sente, ma qui è scorretto",
+    "wat": "che cosa"
+   },
+   "tt": "Tom: \"Vieni domani?\" → Tom chiede se vengo domani."
+  },
+  {
+   "t": "mc",
+   "q": "\"Waar woon je?\" → Hij vraagt ___ ik woon.",
+   "o": [
+    "waar",
+    "of",
+    "dat",
+    "wie"
+   ],
+   "a": 0,
+   "e": "La parola interrogativa resta: <b>waar</b>.",
+   "g": {
+    "waar": "dove",
+    "of": "se: solo per domande sì/no",
+    "dat": "che: per le affermazioni",
+    "wie": "chi"
+   },
+   "tt": "\"Dove abiti?\" → Mi chiede dove abito."
+  },
+  {
+   "t": "mc",
+   "q": "Hij zegt dat hij morgen ___.",
+   "h": "komen",
+   "o": [
+    "komt",
+    "kom",
+    "komen",
+    "kwam"
+   ],
+   "a": 0,
+   "e": "hij + <b>komt</b>, in fondo.",
+   "g": {
+    "komt": "viene",
+    "kom": "vengo (io)",
+    "komen": "veniamo / vengono",
+    "kwam": "veniva / venne: non va con morgen"
+   },
+   "tt": "Dice che viene domani."
+  },
+  {
+   "t": "mc",
+   "q": "Quale frase è corretta?",
+   "o": [
+    "Ze vraagt of je moe bent.",
+    "Ze vraagt of ben je moe.",
+    "Ze vraagt ben je moe.",
+    "Ze vraagt of je bent moe."
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<b>of</b> + soggetto + ... + verbo in fondo.",
+   "g": {
+    "Ze vraagt of je moe bent.": "Chiede se sei stanco (corretta)",
+    "Ze vraagt of ben je moe.": "dopo of niente ordine da domanda",
+    "Ze vraagt ben je moe.": "manca of",
+    "Ze vraagt of je bent moe.": "il verbo va in fondo"
+   },
+   "tt": "Chiede se sei stanco."
+  },
+  {
+   "t": "fill",
+   "q": "Lisa: \"Ik werk vandaag.\" → Lisa zegt dat ze vandaag ___.",
+   "h": "werken",
+   "a": [
+    "werkt"
+   ],
+   "e": "Nuovo soggetto <i>ze</i> → <b>werkt</b>, in fondo.",
+   "tt": "Lisa: \"Oggi lavoro.\" → Lisa dice che oggi lavora."
+  },
+  {
+   "t": "fill",
+   "q": "\"Is hij ziek?\" → Ik vraag ___ hij ziek is.",
+   "h": "se",
+   "a": [
+    "of"
+   ],
+   "e": "Domanda sì/no → <b>of</b>.",
+   "tt": "\"È malato?\" → Chiedo se è malato."
+  },
+  {
+   "t": "fill",
+   "q": "Marco (a te): \"Ik help je.\" → Marco zegt dat hij ___ helpt.",
+   "h": "te",
+   "a": [
+    "je",
+    "jou"
+   ],
+   "e": "Marco parla a te: il pronome resta <b>je</b>.",
+   "tt": "Marco: \"Ti aiuto.\" → Marco dice che ti aiuta."
+  },
+  {
+   "t": "order",
+   "q": "Lei dice che è stanca.",
+   "a": "Ze zegt dat ze moe is",
+   "x": [
+    "wat",
+    "bent"
+   ],
+   "e": "<b>dat</b> + soggetto + ... + verbo in fondo."
+  },
+  {
+   "t": "order",
+   "q": "Lui chiede dove abito.",
+   "a": "Hij vraagt waar ik woon",
+   "x": [
+    "woont",
+    "dat"
+   ],
+   "e": "La parola interrogativa resta, il verbo va in fondo."
+  }
+ ],
+ "items": [
+  {
+   "t": "mc",
+   "q": "Sara en Tom: \"We gaan naar het feest.\" → Ze zeggen dat ___ naar het feest gaan.",
+   "o": [
+    "ze",
+    "jullie",
+    "hij",
+    "ik"
+   ],
+   "a": 0,
+   "e": "Parlano Sara e Tom: <i>we</i> diventa <b>ze</b> (loro)."
+  },
+  {
+   "t": "fill",
+   "q": "De baas vraagt: \"Is het werk klaar?\" → De baas vraagt of het werk klaar ___.",
+   "h": "zijn",
+   "a": [
+    "is"
+   ],
+   "e": "Dopo <b>of</b> il verbo va in fondo: <i>klaar <b>is</b></i>."
+  },
+  {
+   "t": "order",
+   "q": "Lei chiede se vengo alla festa.",
+   "a": "Ze vraagt of ik naar het feest kom",
+   "x": [
+    "wat",
+    "komt"
+   ],
+   "e": "Domanda sì/no → <b>of</b>, verbo in fondo."
+  },
+  {
+   "t": "tr",
+   "q": "Lui dice che domani lavora.",
+   "a": [
+    "Hij zegt dat hij morgen werkt",
+    "Hij zegt dat hij morgen moet werken",
+    "Hij zegt dat hij morgen werken moet"
+   ],
+   "e": "<b>dat</b> + hij + morgen + <b>werkt</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Quale frase è corretta?",
+   "o": [
+    "Ik weet niet waar hij woont.",
+    "Ik weet niet waar woont hij.",
+    "Ik weet niet of waar hij woont.",
+    "Ik weet niet waar hij wonen."
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Parola interrogativa + soggetto + verbo in fondo."
+  },
+  {
+   "t": "fill",
+   "q": "Mijn moeder vraagt: \"Wanneer kom je naar huis?\" → Ze vraagt wanneer ik naar huis ___.",
+   "h": "komen",
+   "a": [
+    "kom"
+   ],
+   "e": "Il nuovo soggetto è <i>ik</i> → <b>kom</b>, in fondo."
+  },
+  {
+   "t": "mc",
+   "q": "Hij zei: \"Ik ben ziek.\" → Hij zei dat hij ziek ___.",
+   "o": [
+    "was",
+    "ben",
+    "zijn",
+    "waren"
+   ],
+   "a": 0,
+   "e": "Verbo introduttivo al passato (<i>zei</i>) → di solito passato: <b>was</b>."
+  },
+  {
+   "t": "order",
+   "q": "Lui promette che viene domani.",
+   "a": "Hij belooft dat hij morgen komt",
+   "x": [
+    "of",
+    "kom"
+   ],
+   "e": "<b>beloven dat</b> + verbo in fondo."
+  },
+  {
+   "t": "tr",
+   "q": "Lei chiede perché sono stanco.",
+   "a": [
+    "Ze vraagt waarom ik moe ben",
+    "Zij vraagt waarom ik moe ben"
+   ],
+   "e": "<b>waarom</b> resta, il verbo va in fondo: <i>moe <b>ben</b></i>."
+  },
+  {
+   "t": "mc",
+   "q": "De baas: \"Kom morgen om negen uur!\" → De baas zegt dat ik morgen om negen uur ___.",
+   "o": [
+    "moet komen",
+    "moeten komen",
+    "moet komt",
+    "komt moet"
+   ],
+   "a": 0,
+   "e": "Un ordine si riferisce con <b>moeten</b>: <i>dat ik ... moet komen</i>."
+  },
+  {
+   "t": "fill",
+   "q": "Anna (a me): \"Waar is je fiets?\" → Anna vraagt waar ___ fiets is.",
+   "h": "mia",
+   "a": [
+    "mijn"
+   ],
+   "e": "La bici è la mia: <i>je</i> diventa <b>mijn</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Le chiedo se è malata.",
+   "a": [
+    "Ik vraag haar of ze ziek is",
+    "Ik vraag haar of zij ziek is",
+    "Ik vraag of ze ziek is"
+   ],
+   "e": "<b>vragen of</b> + verbo in fondo."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "g": {
+    "ze": "loro (Sara e Tom)",
+    "jullie": "voi",
+    "hij": "lui",
+    "ik": "io"
+   },
+   "t": "Sara e Tom: \"Andiamo alla festa.\" → Dicono che vanno alla festa."
+  },
+  "1": {
+   "t": "Il capo chiede: \"Il lavoro è pronto?\" → Il capo chiede se il lavoro è pronto."
+  },
+  "2": {
+   "t": "Lei chiede se vengo alla festa."
+  },
+  "3": {
+   "t": "Lui dice che domani lavora."
+  },
+  "4": {
+   "g": {
+    "Ik weet niet waar hij woont.": "Non so dove abita (corretta)",
+    "Ik weet niet waar woont hij.": "ordine da domanda: il verbo va in fondo",
+    "Ik weet niet of waar hij woont.": "of e waar insieme non vanno",
+    "Ik weet niet waar hij wonen.": "serve il verbo coniugato: woont"
+   },
+   "t": "Non so dove abita."
+  },
+  "5": {
+   "t": "Mia madre chiede: \"Quando torni a casa?\" → Chiede quando torno a casa."
+  },
+  "6": {
+   "g": {
+    "was": "era",
+    "ben": "sono (io): ma il soggetto è hij",
+    "zijn": "sono (plurale)",
+    "waren": "erano (plurale)"
+   },
+   "t": "Ha detto: \"Sono malato.\" → Ha detto che era malato."
+  },
+  "7": {
+   "t": "Lui promette che viene domani."
+  },
+  "8": {
+   "t": "Lei chiede perché sono stanco."
+  },
+  "9": {
+   "g": {
+    "moet komen": "devo venire",
+    "moeten komen": "dobbiamo venire: il soggetto è ik",
+    "moet komt": "dopo moet serve l'infinito",
+    "komt moet": "forma sbagliata"
+   },
+   "t": "Il capo: \"Vieni domani alle nove!\" → Il capo dice che devo venire domani alle nove."
+  },
+  "10": {
+   "t": "Anna: \"Dov'è la tua bici?\" → Anna chiede dov'è la mia bici."
+  },
+  "11": {
+   "t": "Le chiedo se è malata."
+  }
+ }
+}

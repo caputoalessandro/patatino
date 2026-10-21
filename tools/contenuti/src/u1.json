@@ -1,0 +1,449 @@
+{
+ "id": "u1",
+ "n": 1,
+ "module": 1,
+ "nl": "Persoonlijke voornaamwoorden",
+ "it": "Pronomi soggetto",
+ "note": "\n<h3>L'idea</h3>\n<p>I pronomi soggetto sono le parole che dicono <b>chi</b> fa l'azione: io, tu, lui… La differenza più importante con l'italiano è che in olandese il soggetto <b>non si può mai omettere</b>. In italiano dici \"abito a Gand\" e il verbo basta a capire chi parla. In olandese il verbo cambia poco, quindi il pronome è obbligatorio: <i>Ik woon in Gent</i>, mai solo <i>Woon in Gent</i>.</p>\n<h3>La tabella</h3>\n<table><tr><th>italiano</th><th>accentata</th><th>non accentata</th></tr>\n<tr><td>io</td><td>ik</td><td>('k)</td></tr>\n<tr><td>tu</td><td>jij</td><td>je</td></tr>\n<tr><td>Lei (cortesia)</td><td>u</td><td>u</td></tr>\n<tr><td>lui</td><td>hij</td><td>(ie)</td></tr>\n<tr><td>lei</td><td>zij</td><td>ze</td></tr>\n<tr><td>esso (cosa)</td><td>het</td><td>('t)</td></tr>\n<tr><td>noi</td><td>wij</td><td>we</td></tr>\n<tr><td>voi</td><td>jullie</td><td>jullie</td></tr>\n<tr><td>loro</td><td>zij</td><td>ze</td></tr></table>\n<p>Le forme tra parentesi si sentono nel parlato veloce, ma non devi usarle tu.</p>\n<h3>Forma accentata o non accentata?</h3>\n<p>Molti pronomi hanno due forme. Quella <b>non accentata</b> (je, ze, we) è la normale: è quella che senti di più. La forma <b>accentata</b> (jij, zij, wij) si usa quando vuoi mettere in risalto la persona, di solito per un contrasto: <i>Jij bent moe, ik niet</i> (tu sei stanco, io no). Se sei in dubbio, entrambe sono corrette.</p>\n<h3>Tu, Lei e voi</h3>\n<p><b>jij/je</b> si usa con amici, familiari e coetanei. <b>u</b> è la forma di cortesia, come il nostro \"Lei\", e vale sia per una persona sia per più persone. Attenzione: con <b>u</b> il verbo si coniuga come con <i>jij</i> (u bent, u woont), non come con \"lei\". <b>jullie</b> è il \"voi\" informale e vuole il verbo al plurale (jullie zijn).</p>\n<h3>Zij: lei o loro?</h3>\n<p><b>zij/ze</b> significa sia \"lei\" sia \"loro\". Capisci quale dal verbo: <i>zij is</i> = lei è, <i>zij zijn</i> = loro sono.</p>\n<h3>Per le cose: hij o het</h3>\n<p>Quando ti riferisci a una cosa già nominata, il pronome dipende dall'articolo del nome (lo vedrai meglio nell'unità 3). Con un nome che ha <b>de</b> usi <b>hij</b>: <i>de tafel → hij</i>. Con un nome che ha <b>het</b> usi <b>het</b>: <i>het boek → het</i>. Al plurale usi sempre <b>ze</b>. Quindi un tavolo, per un olandese, è \"lui\".</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Dimenticare il soggetto: <s>Ben moe</s> → <b>Ik ben moe</b>.</li>\n<li>Scrivere <i>Ik</i> con la maiuscola in mezzo alla frase: si scrive <b>ik</b>, minuscolo.</li>\n<li>Usare il verbo di \"lei\" con <i>u</i>: <s>u is</s> → <b>u bent</b>.</li>\n</ul>",
+ "vlaams": "Nel parlato fiammingo informale al posto di <b>jij/je</b> senti spesso <b>gij/ge</b>: \"Waar woont ge?\". Nello scritto e con chi non conosci usa <b>u</b>, che in Belgio è più diffuso che nei Paesi Bassi: lo usano anche molti bambini con i nonni.",
+ "vocab": [
+  [
+   "zijn",
+   "essere"
+  ],
+  [
+   "wonen",
+   "abitare"
+  ],
+  [
+   "komen uit",
+   "venire da"
+  ],
+  [
+   "waar",
+   "dove"
+  ],
+  [
+   "de vriend",
+   "l'amico"
+  ],
+  [
+   "het boek",
+   "il libro"
+  ],
+  [
+   "de tafel",
+   "il tavolo"
+  ],
+  [
+   "nieuw",
+   "nuovo"
+  ],
+  [
+   "groot",
+   "grande"
+  ],
+  [
+   "moe",
+   "stanco"
+  ]
+ ],
+ "core": [
+  [
+   "ik",
+   "io"
+  ],
+  [
+   "jij / je",
+   "tu"
+  ],
+  [
+   "u",
+   "Lei (cortesia)"
+  ],
+  [
+   "hij",
+   "lui"
+  ],
+  [
+   "zij / ze",
+   "lei, loro"
+  ],
+  [
+   "het",
+   "esso (cosa con het)"
+  ],
+  [
+   "wij / we",
+   "noi"
+  ],
+  [
+   "jullie",
+   "voi"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "io",
+   "o": [
+    "ik",
+    "jij",
+    "hij",
+    "wij"
+   ],
+   "a": 0,
+   "e": "<b>ik</b> = io.",
+   "g": {
+    "ik": "io",
+    "jij": "tu",
+    "hij": "lui",
+    "wij": "noi"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "voi",
+   "o": [
+    "jullie",
+    "wij",
+    "zij",
+    "u"
+   ],
+   "a": 0,
+   "e": "<b>jullie</b> = voi.",
+   "g": {
+    "jullie": "voi",
+    "wij": "noi",
+    "zij": "lei / loro",
+    "u": "Lei (cortesia)"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "noi (forma non accentata)",
+   "o": [
+    "we",
+    "je",
+    "ze",
+    "het"
+   ],
+   "a": 0,
+   "e": "<b>wij</b> accentato, <b>we</b> non accentato.",
+   "g": {
+    "we": "noi",
+    "je": "tu",
+    "ze": "lei / loro",
+    "het": "esso (cosa)"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "Marco → ___",
+   "o": [
+    "hij",
+    "zij",
+    "het",
+    "ze"
+   ],
+   "a": 0,
+   "e": "Un uomo → <b>hij</b>.",
+   "g": {
+    "hij": "lui",
+    "zij": "lei / loro",
+    "het": "esso (cosa)",
+    "ze": "lei / loro"
+   },
+   "tt": "Marco → lui"
+  },
+  {
+   "t": "mc",
+   "q": "Anna en Tom → ___",
+   "o": [
+    "ze",
+    "hij",
+    "jullie",
+    "we"
+   ],
+   "a": 0,
+   "e": "Più persone di cui parli → <b>ze</b> (loro).",
+   "g": {
+    "ze": "loro",
+    "hij": "lui",
+    "jullie": "voi",
+    "we": "noi"
+   },
+   "tt": "Anna e Tom → loro"
+  },
+  {
+   "t": "mc",
+   "q": "het huis → ___",
+   "o": [
+    "het",
+    "hij",
+    "zij",
+    "ze"
+   ],
+   "a": 0,
+   "e": "Una het-parola diventa <b>het</b>.",
+   "g": {
+    "het": "esso (cose con het)",
+    "hij": "lui (cose con de)",
+    "zij": "lei",
+    "ze": "loro"
+   },
+   "tt": "la casa → essa"
+  },
+  {
+   "t": "mc",
+   "q": "de tafel → ___",
+   "o": [
+    "hij",
+    "het",
+    "ze",
+    "u"
+   ],
+   "a": 0,
+   "e": "Le cose con <i>de</i> diventano <b>hij</b> (in Belgio i nomi femminili come <i>de stad</i> diventano invece <b>ze</b>).",
+   "g": {
+    "hij": "lui (anche cose con de)",
+    "het": "esso (cose con het)",
+    "ze": "loro, o lei per i nomi femminili",
+    "u": "Lei (cortesia)"
+   },
+   "tt": "il tavolo → esso"
+  },
+  {
+   "t": "mc",
+   "q": "u ___ (essere)",
+   "o": [
+    "bent",
+    "is",
+    "ben",
+    "zijn"
+   ],
+   "a": 0,
+   "e": "Con <b>u</b> il verbo è come con jij: u <b>bent</b>.",
+   "g": {
+    "bent": "sei / è (con u)",
+    "is": "è (lui, lei)",
+    "ben": "sono (io)",
+    "zijn": "siamo / sono (plurale)"
+   },
+   "tt": "Lei è"
+  },
+  {
+   "t": "fill",
+   "q": "___ zijn moe.",
+   "h": "noi",
+   "a": [
+    "wij",
+    "we"
+   ],
+   "e": "<b>Wij</b> (o we) zijn moe.",
+   "tt": "Siamo stanchi."
+  },
+  {
+   "t": "fill",
+   "q": "___ is mijn vriendin.",
+   "h": "lei",
+   "a": [
+    "zij",
+    "ze"
+   ],
+   "e": "<b>Zij</b> (o ze) is mijn vriendin.",
+   "tt": "Lei è la mia amica."
+  }
+ ],
+ "items": [
+  {
+   "t": "mc",
+   "q": "Parli con il tuo nuovo capo a Bruxelles. Quale pronome usi?",
+   "o": [
+    "jij",
+    "u",
+    "jullie",
+    "hij"
+   ],
+   "a": 1,
+   "e": "<b>u</b> è la forma di cortesia, singolare e plurale."
+  },
+  {
+   "t": "mc",
+   "q": "'loro' (persone), forma non accentata:",
+   "o": [
+    "ze",
+    "jullie",
+    "het",
+    "we"
+   ],
+   "a": 0,
+   "e": "<b>zij</b> accentato, <b>ze</b> non accentato."
+  },
+  {
+   "t": "fill",
+   "q": "___ ben Marco.",
+   "h": "io",
+   "a": [
+    "ik"
+   ],
+   "e": "<b>ik</b> = io. Si scrive minuscolo, a differenza dell'inglese 'I'."
+  },
+  {
+   "t": "fill",
+   "q": "Waar wonen ___?",
+   "h": "voi",
+   "a": [
+    "jullie"
+   ],
+   "e": "<b>jullie</b> = voi (plurale informale)."
+  },
+  {
+   "t": "mc",
+   "q": "Het boek is nieuw. → ___ is nieuw.",
+   "o": [
+    "hij",
+    "zij",
+    "het",
+    "ze"
+   ],
+   "a": 2,
+   "e": "<i>boek</i> è una het-parola → <b>het</b>."
+  },
+  {
+   "t": "mc",
+   "q": "De tafel is groot. → ___ is groot.",
+   "o": [
+    "het",
+    "hij",
+    "ze",
+    "u"
+   ],
+   "a": 1,
+   "e": "Le cose con <i>de</i> diventano <b>hij</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Lei (Anna) viene da Anversa.",
+   "a": [
+    "Zij komt uit Antwerpen",
+    "Ze komt uit Antwerpen",
+    "Zij is uit Antwerpen",
+    "Ze is uit Antwerpen"
+   ],
+   "e": "<b>komen uit</b> = venire da. Antwerpen = Anversa."
+  },
+  {
+   "t": "order",
+   "q": "Noi siamo a Gand.",
+   "a": "We zijn in Gent",
+   "x": [
+    "is",
+    "jullie"
+   ],
+   "e": "<b>we</b> + <b>zijn</b>. Gent = Gand."
+  },
+  {
+   "t": "mc",
+   "q": "Nel parlato fiammingo informale, al posto di 'jij' senti spesso:",
+   "o": [
+    "gij / ge",
+    "du",
+    "hun",
+    "men"
+   ],
+   "a": 0,
+   "e": "<b>gij/ge</b> è tipico del fiammingo parlato."
+  },
+  {
+   "t": "fill",
+   "q": "___ bent mijn vriend, niet hij!",
+   "h": "tu, con enfasi",
+   "a": [
+    "jij"
+   ],
+   "e": "Con contrasto si usa la forma accentata <b>jij</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Voi siete stanchi.",
+   "a": [
+    "Jullie zijn moe"
+   ],
+   "e": "<b>moe</b> = stanco. jullie + <b>zijn</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Quale pronome è sia singolare sia plurale?",
+   "o": [
+    "jij",
+    "u",
+    "hij",
+    "wij"
+   ],
+   "a": 1,
+   "e": "<b>u</b> vale per una o più persone."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "g": {
+    "jij": "tu (informale)",
+    "u": "Lei (cortesia)",
+    "jullie": "voi",
+    "hij": "lui"
+   }
+  },
+  "1": {
+   "g": {
+    "ze": "loro / lei (non accentato)",
+    "jullie": "voi",
+    "het": "esso (cosa)",
+    "we": "noi"
+   }
+  },
+  "2": {
+   "t": "Sono Marco."
+  },
+  "3": {
+   "t": "Dove abitate?"
+  },
+  "4": {
+   "g": {
+    "hij": "lui (per le de-parole)",
+    "zij": "lei / loro",
+    "het": "esso (per le het-parole)",
+    "ze": "loro / lei"
+   },
+   "t": "Il libro è nuovo. → È nuovo."
+  },
+  "5": {
+   "g": {
+    "het": "esso (per le het-parole)",
+    "hij": "lui (anche per le cose con de)",
+    "ze": "loro / lei",
+    "u": "Lei (cortesia)"
+   },
+   "t": "Il tavolo è grande. → È grande."
+  },
+  "8": {
+   "g": {
+    "gij / ge": "tu (fiammingo parlato)",
+    "du": "tu in tedesco, non in olandese",
+    "hun": "loro (a loro)",
+    "men": "si (impersonale)"
+   }
+  },
+  "9": {
+   "t": "Sei TU il mio amico, non lui!"
+  },
+  "11": {
+   "g": {
+    "jij": "tu (solo singolare)",
+    "u": "Lei / Loro (cortesia)",
+    "hij": "lui (solo singolare)",
+    "wij": "noi (solo plurale)"
+   }
+  }
+ }
+}

@@ -1,0 +1,696 @@
+{
+ "id": "u4",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "De auto van Tom? Ik zie ___ niet in de straat.",
+   "o": [
+    "hem",
+    "het",
+    "haar",
+    "hun"
+   ],
+   "a": 0,
+   "e": "<i>de auto</i> è una de-parola, quindi come oggetto diventa <b>hem</b>, anche se in italiano l'auto è femminile.",
+   "g": {
+    "hem": "la / lo (cosa con de)",
+    "het": "lo (cosa con het)",
+    "haar": "la / lei (persona)",
+    "hun": "a loro (persone)"
+   },
+   "tt": "L'auto di Tom? Non la vedo per strada."
+  },
+  {
+   "t": "mc",
+   "q": "Anna en Tom wonen nu in Gent. Ik bel ___ morgen.",
+   "o": [
+    "ze",
+    "zij",
+    "hun",
+    "jullie"
+   ],
+   "a": 0,
+   "e": "Oggetto diretto di <i>bellen</i>: nel parlato <b>ze</b> (nello scritto anche <i>hen</i>). <b>zij</b> è soggetto, <b>hun</b> vale \"a loro\" (oggetto indiretto), <i>jullie</i> è per le persone a cui parli.",
+   "g": {
+    "ze": "li / loro (oggetto, parlato)",
+    "zij": "loro (soggetto)",
+    "hun": "a loro (oggetto indiretto)",
+    "jullie": "vi / voi"
+   },
+   "tt": "Anna e Tom ora abitano a Gand. Li chiamo domani."
+  },
+  {
+   "t": "fill",
+   "q": "Mevrouw Janssens, ik wacht morgen op ___ bij het station.",
+   "h": "Lei (cortesia)",
+   "a": [
+    "u"
+   ],
+   "e": "La forma di cortesia è <b>u</b> anche come oggetto e dopo una preposizione: <i>wachten op <b>u</b></i>. Non confonderla con <i>uw</i> (Suo).",
+   "tt": "Signora Janssens, domani La aspetto alla stazione."
+  },
+  {
+   "t": "fill",
+   "q": "Het cadeau voor Lies? Ik geef ___ morgen aan haar.",
+   "h": "lo (il regalo)",
+   "a": [
+    "het"
+   ],
+   "e": "<i>het cadeau</i> è una het-parola → <b>het</b>. Il pronome oggetto va dopo il verbo: <i>Ik geef <b>het</b> …</i>",
+   "tt": "Il regalo per Lies? Glielo do domani."
+  },
+  {
+   "t": "tr",
+   "q": "Conosci Lies? Sì, la conosco bene.",
+   "a": [
+    "Ken je Lies? Ja, ik ken haar goed",
+    "Ken jij Lies? Ja, ik ken haar goed",
+    "Ken je Lies? Ja, ik ken haar heel goed",
+    "Ken jij Lies? Ja, ik ken haar heel goed"
+   ],
+   "e": "<b>Ken je</b>: domanda con je, la t cade. \"La\" (Lies) = <b>haar</b>, dopo il verbo: <i>ik ken <b>haar</b></i>."
+  },
+  {
+   "t": "tr",
+   "q": "Lui chiama lei domani, non me.",
+   "a": [
+    "Hij belt haar morgen, niet mij",
+    "Hij belt haar morgen en niet mij",
+    "Morgen belt hij haar, niet mij",
+    "Hij belt morgen haar, niet mij",
+    "Morgen belt hij haar en niet mij"
+   ],
+   "e": "Oggetto dopo il verbo: belt <b>haar</b>. Nel contrasto serve la forma accentata <b>mij</b>: <s>niet me</s> non si dice."
+  },
+  {
+   "t": "order",
+   "q": "Le scarpe? Lui le cerca per noi.",
+   "a": "Hij zoekt ze voor ons",
+   "x": [
+    "wij",
+    "hen"
+   ],
+   "e": "Cose al plurale → <b>ze</b>: <i>hen</i> si usa solo per le persone. Dopo <i>voor</i> serve la forma oggetto: <b>ons</b>, mai <s>voor wij</s>.",
+   "tt": "Le scarpe? Lui le cerca per noi."
+  },
+  {
+   "t": "order",
+   "q": "Domani aspettiamo voi e non loro.",
+   "a": "We wachten morgen op jullie en niet op hen",
+   "alt": [
+    "Morgen wachten we op jullie en niet op hen"
+   ],
+   "x": [
+    "hun",
+    "ons"
+   ],
+   "e": "Dopo una preposizione (<i>op</i>) \"loro\" è <b>hen</b>: <s>op hun</s> è un errore frequente anche tra i nativi. Se inizi con <i>Morgen</i>, il verbo viene prima di <i>we</i>.",
+   "tt": "Domani aspettiamo voi e non loro."
+  }
+ ],
+ "en": {
+  "it": "Object pronouns",
+  "note": "\n<h3>The idea</h3>\n<p>Object pronouns are the English me, you, him, her, it, us, them: they show <b>who receives</b> the action. Good news: they work much like in English.</p>\n<ul>\n<li><b>Position</b>: as in English, the pronoun goes <b>after</b> the verb: <i>Ik zie hem</i> (I see him).</li>\n<li>The same form is used after <b>prepositions</b>: <i>met mij</i> (with me), <i>voor jou</i> (for you), <i>van hem</i> (from him).</li>\n</ul>\n<p>The tricky parts are elsewhere: \"it\" is not always <i>het</i>, \"you\" has several forms, and \"them\" has three.</p>\n<h3>The table</h3>\n<table><tr><th>subject</th><th>object</th><th>English</th></tr>\n<tr><td>ik</td><td>mij / me</td><td>me</td></tr>\n<tr><td>jij</td><td>jou / je</td><td>you (informal)</td></tr>\n<tr><td>u</td><td>u</td><td>you (formal)</td></tr>\n<tr><td>hij</td><td>hem</td><td>him</td></tr>\n<tr><td>zij (she)</td><td>haar</td><td>her</td></tr>\n<tr><td>het</td><td>het</td><td>it (thing)</td></tr>\n<tr><td>wij</td><td>ons</td><td>us</td></tr>\n<tr><td>jullie</td><td>jullie</td><td>you (plural)</td></tr>\n<tr><td>zij (they)</td><td>hen / hun / ze</td><td>them</td></tr></table>\n<p>As with subjects, <b>me</b> and <b>je</b> are the normal, unstressed forms. <b>mij</b> and <b>jou</b> are for emphasis or after prepositions: <i>Ik wacht op jou, niet op hem</i>.</p>\n<h3>\"Them\": hen, hun or ze?</h3>\n<p>In formal writing <b>hen</b> is used as a direct object and after prepositions (<i>Ik zie hen</i>, <i>met hen</i>), <b>hun</b> as an indirect object, meaning \"to them\" (<i>Ik geef hun een cadeau</i>). In speech almost everyone just says <b>ze</b>: <i>Ik zie ze</i>. When speaking, use ze.</p>\n<h3>Things: hem, het, ze</h3>\n<p>Here the article matters again. English says \"it\" for every thing, but in Dutch a thing with <b>de</b> becomes <b>hem</b>: <i>De sleutel? Ik zoek hem</i> (the key? I'm looking for it). A thing with <b>het</b> becomes <b>het</b>. Things in the plural become <b>ze</b>.</p>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Using <i>het</i> for every \"it\": <s>De sleutel? Ik zoek het</s> → <b>Ik zoek hem</b>.</li>\n<li>Using the subject form after a preposition, as in \"between you and I\": <s>met ik</s> → <b>met mij</b>.</li>\n<li>Mixing up <i>haar</i> (her) and <i>hun</i>: <i>hun</i> is \"to them\", never \"her\".</li>\n</ul>",
+  "vlaams": "In Flanders \"<b>ik zie u graag</b>\" means \"I love you\" and is said in families and between partners too: here <b>u</b> isn't formal: it's the object form of gij/ge (gij → u, just as jij → je). In the Netherlands you'd say \"ik hou van je\".",
+  "vocab": [
+   [
+    "zien",
+    "to see"
+   ],
+   [
+    "bellen",
+    "to call (phone)"
+   ],
+   [
+    "kennen",
+    "to know (a person, a place)"
+   ],
+   [
+    "zoeken",
+    "to look for"
+   ],
+   [
+    "helpen",
+    "to help"
+   ],
+   [
+    "geven",
+    "to give"
+   ],
+   [
+    "wachten op",
+    "to wait for"
+   ],
+   [
+    "houden van",
+    "to love"
+   ],
+   [
+    "de sleutel",
+    "the key"
+   ],
+   [
+    "de schoenen",
+    "the shoes"
+   ],
+   [
+    "het cadeau",
+    "the present, the gift"
+   ],
+   [
+    "morgen",
+    "tomorrow"
+   ],
+   [
+    "niet",
+    "not"
+   ],
+   [
+    "met",
+    "with"
+   ],
+   [
+    "mevrouw",
+    "madam, Mrs."
+   ]
+  ],
+  "core": [
+   [
+    "mij / me",
+    "me"
+   ],
+   [
+    "jou / je",
+    "you (object)"
+   ],
+   [
+    "hem",
+    "him (also 'it' for de-words)"
+   ],
+   [
+    "haar",
+    "her"
+   ],
+   [
+    "ons",
+    "us"
+   ],
+   [
+    "hen / hun / ze",
+    "them"
+   ]
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "hij → object form",
+    "o": [
+     "hem",
+     "hij",
+     "zijn",
+     "haar"
+    ],
+    "a": 0,
+    "e": "hij → <b>hem</b>.",
+    "g": {
+     "hem": "him (object)",
+     "hij": "he (subject)",
+     "zijn": "his / to be",
+     "haar": "her"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "ik → object form",
+    "o": [
+     "mij",
+     "ik",
+     "mijn",
+     "wij"
+    ],
+    "a": 0,
+    "e": "ik → <b>mij</b> (unstressed: me).",
+    "g": {
+     "mij": "me (object)",
+     "ik": "I (subject)",
+     "mijn": "my",
+     "wij": "we (subject)"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "wij → object form",
+    "o": [
+     "ons",
+     "wij",
+     "onze",
+     "jullie"
+    ],
+    "a": 0,
+    "e": "wij → <b>ons</b>.",
+    "g": {
+     "ons": "us (object)",
+     "wij": "we (subject)",
+     "onze": "our",
+     "jullie": "you (plural)"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "zij (she) → object form",
+    "o": [
+     "haar",
+     "zij",
+     "hem",
+     "hun"
+    ],
+    "a": 0,
+    "e": "zij → <b>haar</b>.",
+    "g": {
+     "haar": "her (object)",
+     "zij": "she (subject)",
+     "hem": "him",
+     "hun": "to them"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "met ___ (with me)",
+    "o": [
+     "mij",
+     "ik",
+     "mijn",
+     "wij"
+    ],
+    "a": 0,
+    "e": "After a preposition: <b>met mij</b>.",
+    "g": {
+     "mij": "me (after a preposition)",
+     "ik": "I (subject)",
+     "mijn": "my",
+     "wij": "we (subject)"
+    },
+    "tt": "with me"
+   },
+   {
+    "t": "mc",
+    "q": "De sleutel? Ik heb ___.",
+    "o": [
+     "hem",
+     "het",
+     "haar",
+     "ze"
+    ],
+    "a": 0,
+    "e": "de-word → <b>hem</b>.",
+    "g": {
+     "hem": "it (de-words)",
+     "het": "it (het-words)",
+     "haar": "her (person)",
+     "ze": "them (plural)"
+    },
+    "tt": "The key? I've got it."
+   },
+   {
+    "t": "mc",
+    "q": "Het boek? Ik lees ___.",
+    "o": [
+     "het",
+     "hem",
+     "ze",
+     "haar"
+    ],
+    "a": 0,
+    "e": "het-word → <b>het</b>.",
+    "g": {
+     "het": "it (het-words)",
+     "hem": "it (de-words)",
+     "ze": "them (plural)",
+     "haar": "her (person)"
+    },
+    "tt": "The book? I'm reading it."
+   },
+   {
+    "t": "mc",
+    "q": "De schoenen? Ik zie ___.",
+    "o": [
+     "ze",
+     "hem",
+     "het",
+     "haar"
+    ],
+    "a": 0,
+    "e": "Plural → <b>ze</b>.",
+    "g": {
+     "ze": "them (plural)",
+     "hem": "it (singular, de)",
+     "het": "it (singular, het)",
+     "haar": "her (person)"
+    },
+    "tt": "The shoes? I see them."
+   },
+   {
+    "t": "fill",
+    "q": "Ik zie ___.",
+    "h": "him",
+    "a": [
+     "hem"
+    ],
+    "e": "Object form of hij: <b>hem</b>.",
+    "tt": "I see him."
+   },
+   {
+    "t": "order",
+    "q": "She helps me.",
+    "a": "Zij helpt mij",
+    "x": [
+     "ik",
+     "mijn"
+    ],
+    "e": "The object pronoun goes after the verb: helpt <b>mij</b>."
+   }
+  ],
+  "items": [
+   {
+    "t": "mc",
+    "q": "Ik zie ___.",
+    "h": "him",
+    "o": [
+     "hij",
+     "hem",
+     "zijn",
+     "haar"
+    ],
+    "a": 1,
+    "e": "Object form of hij = <b>hem</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Hij belt ___ morgen.",
+    "h": "me",
+    "o": [
+     "me",
+     "ik",
+     "mijn",
+     "wij"
+    ],
+    "a": 0,
+    "e": "Object form of ik = <b>mij/me</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Ken jij ___?",
+    "h": "her",
+    "a": [
+     "haar"
+    ],
+    "e": "Object form of zij (she) = <b>haar</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Waar is de sleutel? Ik zoek ___.",
+    "o": [
+     "het",
+     "hem",
+     "haar",
+     "ze"
+    ],
+    "a": 1,
+    "e": "<i>de</i> sleutel → <b>hem</b>, even though it's a thing."
+   },
+   {
+    "t": "mc",
+    "q": "Waar is het boek? Ik heb ___.",
+    "o": [
+     "hem",
+     "het",
+     "haar",
+     "ze"
+    ],
+    "a": 1,
+    "e": "<i>het</i> boek → <b>het</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Waar zijn mijn schoenen? Ik zie ___ niet.",
+    "o": [
+     "hem",
+     "het",
+     "ze",
+     "hun"
+    ],
+    "a": 2,
+    "e": "Things in the plural → <b>ze</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Kom je met ___ mee?",
+    "h": "us",
+    "a": [
+     "ons"
+    ],
+    "e": "Object form of wij = <b>ons</b>."
+   },
+   {
+    "t": "tr",
+    "q": "I love you.",
+    "a": [
+     "Ik hou van jou",
+     "Ik hou van je",
+     "Ik houd van jou",
+     "Ik houd van je",
+     "Ik zie je graag",
+     "Ik zie jou graag",
+     "Ik zie u graag"
+    ],
+    "e": "<b>houden van</b> = to love. In Flanders also: ik zie je graag."
+   },
+   {
+    "t": "order",
+    "q": "He helps us.",
+    "a": "Hij helpt ons",
+    "x": [
+     "wij",
+     "onze"
+    ],
+    "e": "Object form of wij = <b>ons</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Ik geef ___ een cadeau.",
+    "h": "to them, written",
+    "o": [
+     "hen",
+     "hun",
+     "zij",
+     "ons"
+    ],
+    "a": 1,
+    "e": "Indirect object (to them) in writing: <b>hun</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Ik wacht op ___, niet op hem.",
+    "h": "you, stressed",
+    "a": [
+     "jou"
+    ],
+    "e": "For a contrast: the stressed form <b>jou</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Ik bel ___ morgen, mevrouw.",
+    "o": [
+     "jij",
+     "u",
+     "jou",
+     "uw"
+    ],
+    "a": 1,
+    "e": "The polite form is <b>u</b> as an object too."
+   }
+  ],
+  "gloss": {
+   "0": {
+    "g": {
+     "hij": "he (subject)",
+     "hem": "him (object)",
+     "zijn": "his / to be",
+     "haar": "her (object)"
+    },
+    "t": "I see him."
+   },
+   "1": {
+    "g": {
+     "me": "me (object)",
+     "ik": "I (subject)",
+     "mijn": "my",
+     "wij": "we (subject)"
+    },
+    "t": "He's calling me tomorrow."
+   },
+   "2": {
+    "t": "Do you know her?"
+   },
+   "3": {
+    "g": {
+     "het": "it (for het-words)",
+     "hem": "it (for de-words, like de sleutel)",
+     "haar": "her (person)",
+     "ze": "them (plural)"
+    },
+    "t": "Where's the key? I'm looking for it."
+   },
+   "4": {
+    "g": {
+     "hem": "it (for de-words)",
+     "het": "it (for het-words, like het boek)",
+     "haar": "her (person)",
+     "ze": "them (plural)"
+    },
+    "t": "Where's the book? I've got it."
+   },
+   "5": {
+    "g": {
+     "hem": "it (singular, de-word)",
+     "het": "it (singular, het-word)",
+     "ze": "them (plural)",
+     "hun": "to them (people)"
+    },
+    "t": "Where are my shoes? I can't see them."
+   },
+   "6": {
+    "t": "Are you coming with us?"
+   },
+   "9": {
+    "g": {
+     "hen": "them (direct object)",
+     "hun": "to them (indirect object)",
+     "zij": "they (subject)",
+     "ons": "us"
+    },
+    "t": "I'm giving them a present."
+   },
+   "10": {
+    "t": "I'm waiting for YOU, not for him."
+   },
+   "11": {
+    "g": {
+     "jij": "you (subject)",
+     "u": "you (formal, object)",
+     "jou": "you (informal)",
+     "uw": "your (formal possessive)"
+    },
+    "t": "I'll call you tomorrow, madam."
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "De auto van Tom? Ik zie ___ niet in de straat.",
+    "o": [
+     "hem",
+     "het",
+     "haar",
+     "hun"
+    ],
+    "a": 0,
+    "e": "<i>de auto</i> is a de-word, so as an object it becomes <b>hem</b>, where English says \"it\".",
+    "g": {
+     "hem": "it (thing with de)",
+     "het": "it (thing with het)",
+     "haar": "her (person)",
+     "hun": "to them (people)"
+    },
+    "tt": "Tom's car? I don't see it in the street."
+   },
+   {
+    "t": "mc",
+    "q": "Anna en Tom wonen nu in Gent. Ik bel ___ morgen.",
+    "o": [
+     "ze",
+     "zij",
+     "hun",
+     "jullie"
+    ],
+    "a": 0,
+    "e": "Direct object of <i>bellen</i>: in speech <b>ze</b> (in writing also <i>hen</i>). <b>zij</b> is the subject, <b>hun</b> means \"to them\" (indirect object), <i>jullie</i> is for the people you're talking to.",
+    "g": {
+     "ze": "them (object, spoken)",
+     "zij": "they (subject)",
+     "hun": "to them (indirect object)",
+     "jullie": "you (plural)"
+    },
+    "tt": "Anna and Tom live in Ghent now. I'll call them tomorrow."
+   },
+   {
+    "t": "fill",
+    "q": "Mevrouw Janssens, ik wacht morgen op ___ bij het station.",
+    "h": "you (formal)",
+    "a": [
+     "u"
+    ],
+    "e": "The polite form is <b>u</b> as an object and after a preposition too: <i>wachten op <b>u</b></i>. Don't confuse it with <i>uw</i> (your).",
+    "tt": "Mrs. Janssens, I'll wait for you at the station tomorrow."
+   },
+   {
+    "t": "fill",
+    "q": "Het cadeau voor Lies? Ik geef ___ morgen aan haar.",
+    "h": "it (the present)",
+    "a": [
+     "het"
+    ],
+    "e": "<i>het cadeau</i> is a het-word → <b>het</b>. The object pronoun goes after the verb: <i>Ik geef <b>het</b> …</i>",
+    "tt": "The present for Lies? I'll give it to her tomorrow."
+   },
+   {
+    "t": "tr",
+    "q": "Do you know Lies? Yes, I know her well.",
+    "a": [
+     "Ken je Lies? Ja, ik ken haar goed",
+     "Ken jij Lies? Ja, ik ken haar goed",
+     "Ken je Lies? Ja, ik ken haar heel goed",
+     "Ken jij Lies? Ja, ik ken haar heel goed"
+    ],
+    "e": "<b>Ken je</b>: a question with je, so the t drops, and no \"do\". \"Her\" = <b>haar</b>, after the verb, just like in English."
+   },
+   {
+    "t": "tr",
+    "q": "He's calling her tomorrow, not me.",
+    "a": [
+     "Hij belt haar morgen, niet mij",
+     "Hij belt haar morgen en niet mij",
+     "Morgen belt hij haar, niet mij",
+     "Hij belt morgen haar, niet mij",
+     "Morgen belt hij haar en niet mij"
+    ],
+    "e": "Object after the verb: belt <b>haar</b>. In the contrast you need the stressed form <b>mij</b>: <s>niet me</s> is wrong."
+   },
+   {
+    "t": "order",
+    "q": "The shoes? He's looking for them for us.",
+    "a": "Hij zoekt ze voor ons",
+    "x": [
+     "wij",
+     "hen"
+    ],
+    "e": "Things in the plural → <b>ze</b>: <i>hen</i> is only for people. After <i>voor</i> you need the object form: <b>ons</b>, never <s>voor wij</s>.",
+    "tt": "The shoes? He's looking for them for us."
+   },
+   {
+    "t": "order",
+    "q": "Tomorrow we're waiting for you guys and not for them.",
+    "a": "We wachten morgen op jullie en niet op hen",
+    "alt": [
+     "Morgen wachten we op jullie en niet op hen"
+    ],
+    "x": [
+     "hun",
+     "ons"
+    ],
+    "e": "After a preposition (<i>op</i>) \"them\" is <b>hen</b>: <s>op hun</s> is a common mistake, even among native speakers. If you start with <i>Morgen</i>, the verb comes before <i>we</i>.",
+    "tt": "Tomorrow we're waiting for you guys and not for them."
+   }
+  ]
+ }
+}

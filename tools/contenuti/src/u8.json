@@ -1,0 +1,417 @@
+{
+ "id": "u8",
+ "n": 8,
+ "module": 2,
+ "nl": "Bezittelijke voornaamwoorden",
+ "it": "Possessivi",
+ "note": "\n<h3>L'idea</h3>\n<p>I possessivi dicono <b>di chi</b> è qualcosa. Due differenze importanti con l'italiano:</p>\n<ul>\n<li><b>Niente articolo</b> davanti al possessivo: \"il mio libro\" è <i>mijn boek</i>, non <s>het mijn boek</s>.</li>\n<li>Il possessivo dipende dal <b>possessore</b>, non dall'oggetto. In italiano \"suo\" è ambiguo; in olandese no: <i>zijn moeder</i> è la madre di lui, <i>haar moeder</i> è la madre di lei.</li>\n</ul>\n<h3>La tabella</h3>\n<table><tr><th>persona</th><th>possessivo</th><th>esempio</th></tr>\n<tr><td>ik</td><td>mijn</td><td>mijn naam</td></tr>\n<tr><td>jij</td><td>jouw / je</td><td>jouw fiets</td></tr>\n<tr><td>u</td><td>uw</td><td>uw jas</td></tr>\n<tr><td>hij</td><td>zijn</td><td>zijn moeder</td></tr>\n<tr><td>zij (lei)</td><td>haar</td><td>haar vader</td></tr>\n<tr><td>wij</td><td>ons / onze</td><td>ons huis, onze stad</td></tr>\n<tr><td>jullie</td><td>jullie / je</td><td>jullie kinderen</td></tr>\n<tr><td>zij (loro)</td><td>hun</td><td>hun boeken</td></tr></table>\n<h3>Ons o onze?</h3>\n<p>È l'unico possessivo che cambia. <b>ons</b> davanti a una <b>het-parola al singolare</b> (ons huis), <b>onze</b> in tutti gli altri casi: de-parole (onze stad) e plurali (onze kinderen).</p>\n<h3>Jouw o je?</h3>\n<p>Come per i pronomi, <b>je</b> è la forma non accentata e più comune: <i>Is dat je fiets?</i>. <b>jouw</b> serve per l'enfasi: <i>Is dat jouw fiets of mijn fiets?</i></p>\n<h3>\"È mio\": van mij</h3>\n<p>Quando il possessivo sta da solo, dopo il verbo, si usa <b>van</b> + pronome oggetto: <i>Van wie is dat? — Het is van mij</i> (di chi è? — è mio). Per i nomi si usa <b>van</b>: <i>de fiets van Tom</i> (la bici di Tom).</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Aggiungere l'articolo: <s>de mijn auto</s> → <b>mijn auto</b>.</li>\n<li>Scegliere zijn/haar in base all'oggetto: Anna e suo padre è <b>haar vader</b>, perché il possessore è lei.</li>\n<li>Usare <i>ons</i> con una de-parola: <s>ons stad</s> → <b>onze stad</b>.</li>\n</ul>",
+ "vlaams": "Nel parlato fiammingo, insieme a gij/ge, si usa <b>uw</b> anche tra amici: \"Is dat uw fiets?\" può essere detto in modo del tutto informale.",
+ "vocab": [
+  [
+   "de moeder",
+   "la madre"
+  ],
+  [
+   "de vader",
+   "il padre"
+  ],
+  [
+   "de jas",
+   "la giacca"
+  ],
+  [
+   "de tas",
+   "la borsa"
+  ],
+  [
+   "de naam",
+   "il nome"
+  ],
+  [
+   "meneer",
+   "signore"
+  ],
+  [
+   "dit",
+   "questo"
+  ],
+  [
+   "dat",
+   "quello"
+  ],
+  [
+   "daar",
+   "là"
+  ]
+ ],
+ "core": [
+  [
+   "mijn",
+   "mio"
+  ],
+  [
+   "jouw / je",
+   "tuo"
+  ],
+  [
+   "uw",
+   "Suo (cortesia)"
+  ],
+  [
+   "zijn",
+   "suo (di lui)"
+  ],
+  [
+   "haar",
+   "suo (di lei)"
+  ],
+  [
+   "ons / onze",
+   "nostro"
+  ],
+  [
+   "hun",
+   "loro (possessivo)"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "mio",
+   "o": [
+    "mijn",
+    "mij",
+    "jouw",
+    "ons"
+   ],
+   "a": 0,
+   "e": "<b>mijn</b> = mio.",
+   "g": {
+    "mijn": "mio",
+    "mij": "mi / me",
+    "jouw": "tuo",
+    "ons": "nostro"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "suo (di lei)",
+   "o": [
+    "haar",
+    "zijn",
+    "hun",
+    "uw"
+   ],
+   "a": 0,
+   "e": "Possessore femminile: <b>haar</b>.",
+   "g": {
+    "haar": "suo (di lei)",
+    "zijn": "suo (di lui)",
+    "hun": "loro",
+    "uw": "Suo (cortesia)"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "suo (di lui)",
+   "o": [
+    "zijn",
+    "haar",
+    "hun",
+    "hem"
+   ],
+   "a": 0,
+   "e": "Possessore maschile: <b>zijn</b>.",
+   "g": {
+    "zijn": "suo (di lui)",
+    "haar": "suo (di lei)",
+    "hun": "loro",
+    "hem": "lo / lui (oggetto)"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "loro (possessivo)",
+   "o": [
+    "hun",
+    "hen",
+    "zij",
+    "jullie"
+   ],
+   "a": 0,
+   "e": "<b>hun</b> boeken = i loro libri.",
+   "g": {
+    "hun": "loro (possessivo)",
+    "hen": "li / loro (oggetto)",
+    "zij": "loro (soggetto)",
+    "jullie": "voi / vostro"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "___ huis (nostro)",
+   "o": [
+    "ons",
+    "onze"
+   ],
+   "a": 0,
+   "e": "het-parola singolare → <b>ons</b>.",
+   "g": {
+    "ons": "nostro (het-parola singolare)",
+    "onze": "nostro (de-parola o plurale)"
+   },
+   "tt": "la nostra casa"
+  },
+  {
+   "t": "mc",
+   "q": "___ stad (nostra)",
+   "o": [
+    "onze",
+    "ons"
+   ],
+   "a": 0,
+   "e": "de-parola → <b>onze</b>.",
+   "g": {
+    "onze": "nostro (de-parola o plurale)",
+    "ons": "solo het-parole al singolare"
+   },
+   "tt": "la nostra città"
+  },
+  {
+   "t": "mc",
+   "q": "Anna en ___ vader",
+   "o": [
+    "haar",
+    "zijn",
+    "hun",
+    "jouw"
+   ],
+   "a": 0,
+   "e": "Il possessore è Anna: <b>haar</b> vader.",
+   "g": {
+    "haar": "suo (di lei)",
+    "zijn": "suo (di lui)",
+    "hun": "loro",
+    "jouw": "tuo"
+   },
+   "tt": "Anna e suo padre"
+  },
+  {
+   "t": "mc",
+   "q": "Het is ___ (è mio)",
+   "o": [
+    "van mij",
+    "mijn",
+    "mij",
+    "van ik"
+   ],
+   "a": 0,
+   "e": "Da solo dopo il verbo: <b>van mij</b>.",
+   "g": {
+    "van mij": "mio (da solo)",
+    "mijn": "mio (davanti a un nome)",
+    "mij": "mi / me",
+    "van ik": "dopo van serve mij"
+   },
+   "tt": "È mio."
+  },
+  {
+   "t": "fill",
+   "q": "___ naam is Luca.",
+   "h": "mio",
+   "a": [
+    "mijn"
+   ],
+   "e": "<b>mijn</b> naam.",
+   "tt": "Il mio nome è Luca."
+  },
+  {
+   "t": "fill",
+   "q": "Is dit ___ jas, meneer?",
+   "h": "Suo, cortesia",
+   "a": [
+    "uw"
+   ],
+   "e": "Cortesia: <b>uw</b>.",
+   "tt": "È Sua questa giacca, signore?"
+  }
+ ],
+ "items": [
+  {
+   "t": "mc",
+   "q": "___ huis",
+   "h": "nostra casa",
+   "o": [
+    "ons",
+    "onze"
+   ],
+   "a": 0,
+   "e": "het huis → <b>ons</b>."
+  },
+  {
+   "t": "mc",
+   "q": "___ auto",
+   "h": "nostra auto",
+   "o": [
+    "ons",
+    "onze"
+   ],
+   "a": 1,
+   "e": "de auto → <b>onze</b>."
+  },
+  {
+   "t": "mc",
+   "q": "___ kinderen",
+   "h": "nostri figli",
+   "o": [
+    "ons",
+    "onze"
+   ],
+   "a": 1,
+   "e": "Plurale → <b>onze</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Dit is ___ moeder.",
+   "h": "sua — di lui",
+   "a": [
+    "zijn"
+   ],
+   "e": "Possessore maschile: <b>zijn</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Dat is ___ fiets.",
+   "h": "sua — di lei",
+   "a": [
+    "haar"
+   ],
+   "e": "Possessore femminile: <b>haar</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Is dit ___ jas, meneer?",
+   "o": [
+    "u",
+    "uw",
+    "jouw",
+    "zijn"
+   ],
+   "a": 1,
+   "e": "Cortesia: <b>uw</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Dat zijn ___ boeken.",
+   "h": "loro",
+   "a": [
+    "hun"
+   ],
+   "e": "<b>hun</b> = loro."
+  },
+  {
+   "t": "tr",
+   "q": "Il mio nome è Luca.",
+   "a": [
+    "Mijn naam is Luca"
+   ],
+   "e": "<b>mijn</b> naam."
+  },
+  {
+   "t": "mc",
+   "q": "___ tas staat daar.",
+   "h": "tua, con enfasi",
+   "o": [
+    "Jouw",
+    "Jou",
+    "Jij",
+    "Jullie"
+   ],
+   "a": 0,
+   "e": "<b>jouw</b> (non accentato: je)."
+  },
+  {
+   "t": "order",
+   "q": "Questa è la nostra città.",
+   "a": "Dit is onze stad",
+   "x": [
+    "ons",
+    "deze"
+   ],
+   "e": "de stad → <b>onze</b>."
+  },
+  {
+   "t": "mc",
+   "say": "Van wie is dat? Het is van mij.",
+   "q": "Van wie is dat? — Het is ___.",
+   "h": "mio",
+   "o": [
+    "van mij",
+    "mijn",
+    "van ik",
+    "mij"
+   ],
+   "a": 0,
+   "e": "<b>van mij</b> = mio."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "g": {
+    "ons": "nostro (het-parola singolare)",
+    "onze": "nostro (de-parola o plurale)"
+   },
+   "t": "la nostra casa"
+  },
+  "1": {
+   "g": {
+    "ons": "nostro (het-parola singolare)",
+    "onze": "nostro (de-parola o plurale)"
+   },
+   "t": "la nostra auto"
+  },
+  "2": {
+   "g": {
+    "ons": "nostro (het-parola singolare)",
+    "onze": "nostro (de-parola o plurale)"
+   },
+   "t": "i nostri figli"
+  },
+  "3": {
+   "t": "Questa è sua madre (di lui)."
+  },
+  "4": {
+   "t": "Quella è la sua bici (di lei)."
+  },
+  "5": {
+   "g": {
+    "u": "Lei (pronome, non possessivo)",
+    "uw": "Suo (cortesia)",
+    "jouw": "tuo (informale)",
+    "zijn": "suo (di lui)"
+   },
+   "t": "È Sua questa giacca, signore?"
+  },
+  "6": {
+   "t": "Quelli sono i loro libri."
+  },
+  "8": {
+   "g": {
+    "Jouw": "tuo (possessivo)",
+    "Jou": "te (oggetto)",
+    "Jij": "tu (soggetto)",
+    "Jullie": "voi / vostro"
+   },
+   "t": "La tua borsa è là."
+  },
+  "10": {
+   "g": {
+    "van mij": "mio (da solo, dopo il verbo)",
+    "mijn": "mio (solo davanti a un nome)",
+    "van ik": "ik è soggetto: dopo van serve mij",
+    "mij": "mi / me"
+   },
+   "t": "Di chi è? È mio."
+  }
+ }
+}

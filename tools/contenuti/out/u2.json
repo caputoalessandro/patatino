@@ -1,0 +1,421 @@
+{
+ "id": "u2",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "Hij ___ Gent een mooie stad. (vinden)",
+   "o": ["vindt", "vind", "vint", "vinden"],
+   "a": 0,
+   "oit": true,
+   "e": "Radice <i>vind</i> + <b>t</b> = <b>vindt</b>. La t si scrive anche se non si sente: solo le radici in <b>-t</b> (zit) non ne prendono un'altra.",
+   "g": {
+    "vindt": "trova (lui)",
+    "vind": "trovo (io), o trovi davanti a je",
+    "vint": "forma che non esiste: la d della radice resta",
+    "vinden": "troviamo / trovate / trovano"
+   },
+   "tt": "Lui trova che Gand sia una bella città."
+  },
+  {
+   "t": "mc",
+   "q": "Meneer, ___ u vandaag in Antwerpen? (werken)",
+   "o": ["werkt", "werk", "werken", "werkd"],
+   "a": 0,
+   "oit": true,
+   "e": "La t cade <b>solo</b> davanti a jij/je. Con <b>u</b> resta anche nella domanda: <b>Werkt u</b>?",
+   "g": {
+    "werkt": "lavora (Lei), anche nella domanda",
+    "werk": "lavoro (io), o lavori davanti a je",
+    "werken": "lavoriamo / lavorano (plurale)",
+    "werkd": "forma che non esiste"
+   },
+   "tt": "Signore, oggi Lei lavora ad Anversa?"
+  },
+  {
+   "t": "fill",
+   "q": "Mijn vriend en ik ___ in de tuin.",
+   "h": "zitten",
+   "a": ["zitten"],
+   "e": "<i>Mijn vriend en ik</i> = noi, quindi plurale: l'infinito <b>zitten</b>. Non farti ingannare da <i>ik</i> vicino al verbo.",
+   "tt": "Il mio amico e io siamo seduti in giardino."
+  },
+  {
+   "t": "fill",
+   "q": "___ je vandaag naar Brussel?",
+   "h": "gaan",
+   "a": ["ga"],
+   "e": "gaan è irregolare (jij <i>gaat</i>), ma la regola vale lo stesso: davanti a <b>je</b> la t cade, <b>Ga je</b>?",
+   "tt": "Vai a Bruxelles oggi?"
+  },
+  {
+   "t": "tr",
+   "q": "Lei (Lies) legge un libro e beve un caffè.",
+   "a": [
+    "Zij leest een boek en drinkt een koffie",
+    "Ze leest een boek en drinkt een koffie",
+    "Zij leest een boek en ze drinkt een koffie",
+    "Ze leest een boek en ze drinkt een koffie",
+    "Zij leest een boek en zij drinkt een koffie",
+    "Ze leest een boek en zij drinkt een koffie",
+    "Zij leest een boek en drinkt koffie",
+    "Ze leest een boek en drinkt koffie",
+    "Zij leest een boek en ze drinkt koffie",
+    "Ze leest een boek en ze drinkt koffie",
+    "Zij leest een boek en zij drinkt koffie",
+    "Ze leest een boek en zij drinkt koffie"
+   ],
+   "e": "lezen → lees (z → s, vocale doppia) + t = <b>leest</b>; drinken → <b>drinkt</b>. In Belgio al bar si dice volentieri <i>een koffie</i>."
+  },
+  {
+   "t": "tr",
+   "q": "Parli olandese o francese? (a un amico)",
+   "a": [
+    "Spreek je Nederlands of Frans",
+    "Spreek jij Nederlands of Frans"
+   ],
+   "e": "Domanda: verbo all'inizio, e davanti a <b>je/jij</b> la -t cade: <b>Spreek je</b>. Frans = francese, la seconda lingua del Belgio."
+  },
+  {
+   "t": "order",
+   "q": "Pieter abita a Lovanio e lavora in una banca.",
+   "a": "Pieter woont in Leuven en werkt in een bank",
+   "x": ["woon", "werken"],
+   "e": "Pieter = hij: <b>woont</b> (o lunga doppia + t) e <b>werkt</b>. Leuven = Lovanio.",
+   "tt": "Pieter abita a Lovanio e lavora in una banca."
+  },
+  {
+   "t": "order",
+   "q": "Lavori domani a Gand o a Bruxelles?",
+   "a": "Werk je morgen in Gent of in Brussel",
+   "x": ["Werkt", "werken"],
+   "e": "Nella domanda il verbo va all'inizio e davanti a <b>je</b> perde la t: <b>Werk je</b>. Il presente vale anche per il futuro: <i>morgen</i> = domani.",
+   "tt": "Lavori domani a Gand o a Bruxelles?"
+  }
+ ],
+ "en": {
+  "it": "The present tense",
+  "note": "\n<h3>The idea</h3>\n<p>English has two present forms (I work, he work<b>s</b>). Dutch has <b>three forms</b>, so it's only a little harder. The Dutch present also covers \"I'm working\" and often the near future: <i>Ik werk morgen</i> = I'm working tomorrow. There is no separate \"-ing\" form.</p>\n<h3>How to conjugate in three steps</h3>\n<p><b>1.</b> Find the <b>stem</b>: drop <i>-en</i> from the infinitive. werk<s>en</s> → <b>werk</b>.<br>\n<b>2.</b> With <b>ik</b> use the bare stem.<br>\n<b>3.</b> With <b>jij, u, hij, zij (she), het</b> add <b>-t</b>. In the <b>plural</b> (wij, jullie, zij) use the full infinitive.</p>\n<table><tr><th></th><th>werken (to work)</th><th>wonen (to live)</th></tr>\n<tr><td>ik</td><td>werk</td><td>woon</td></tr>\n<tr><td>jij / u</td><td>werkt</td><td>woont</td></tr>\n<tr><td>hij / zij / het</td><td>werkt</td><td>woont</td></tr>\n<tr><td>wij / jullie / zij</td><td>werken</td><td>wonen</td></tr></table>\n<h3>Spelling rules</h3>\n<p>The sound never changes: only the spelling does, to keep the same sound when the word gets shorter.</p>\n<ul>\n<li><b>Long vowel</b>: in <i>wo-nen</i> the o is long but written single, because the syllable ends in a vowel. When you drop <i>-en</i> the syllable closes, and to keep the long sound you have to double the vowel: <b>woon</b>. Likewise maken → <b>maak</b>, lopen → <b>loop</b>.</li>\n<li><b>Double consonant</b>: zitten → <b>zit</b>, liggen → <b>lig</b>. Dutch never writes two identical consonants at the end of a word.</li>\n<li><b>v → f and z → s</b> at the end of a word: leven → <b>leef</b>, lezen → <b>lees</b>.</li>\n<li>If the stem already ends in <b>-t</b>, don't add another t: zitten → hij <b>zit</b>. If it ends in <b>-d</b>, add the t anyway, even though you can't hear it: vinden → hij <b>vindt</b>.</li>\n</ul>\n<h3>Questions with jij/je</h3>\n<p>Dutch has no helper \"do\": to ask a question you simply put the verb first (unit 7). When <b>jij/je</b> follows the verb, the <b>-t drops</b>: <i>Jij werkt</i> but <i>Werk je?</i> This applies <b>only</b> to jij/je: <i>Werkt hij? Werkt u?</i> keep the t.</p>\n<h3>The most common irregular verbs</h3>\n<table><tr><th></th><th>zijn (to be)</th><th>hebben (to have)</th><th>gaan (to go)</th><th>doen (to do)</th></tr>\n<tr><td>ik</td><td>ben</td><td>heb</td><td>ga</td><td>doe</td></tr>\n<tr><td>jij / u</td><td>bent</td><td>hebt</td><td>gaat</td><td>doet</td></tr>\n<tr><td>hij / zij</td><td>is</td><td>heeft</td><td>gaat</td><td>doet</td></tr>\n<tr><td>wij / jullie / zij</td><td>zijn</td><td>hebben</td><td>gaan</td><td>doen</td></tr></table>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Translating \"I'm working\" word for word: <s>ik ben werken</s> → just <b>ik werk</b>.</li>\n<li>Using <i>doen</i> like the English helper \"do\": <s>Doe je spreken Nederlands?</s> → <b>Spreek je Nederlands?</b></li>\n<li>Keeping the t in the question: <s>Werkt je?</s> → <b>Werk je?</b></li>\n<li>Writing a single vowel: <s>ik wom</s>, <s>ik mak</s> → <b>ik woon</b>, <b>ik maak</b>.</li>\n</ul>",
+  "vlaams": "With <b>gij/ge</b> the verb keeps its -t even in questions: \"Werkt ge vandaag?\". The verb zijn becomes \"ge zijt\". You'll hear it everywhere in Flanders, but you don't need to use it yourself.",
+  "vocab": [
+   ["werken", "to work"],
+   ["wonen", "to live (reside)"],
+   ["leren", "to learn, to study"],
+   ["lezen", "to read"],
+   ["drinken", "to drink"],
+   ["spreken", "to speak"],
+   ["maken", "to make, to do"],
+   ["hebben", "to have"],
+   ["zitten", "to sit, to be sitting"],
+   ["gaan", "to go"],
+   ["komen", "to come"],
+   ["de koffie", "the coffee"],
+   ["de bank", "the bank"],
+   ["de tuin", "the garden, the yard"],
+   ["naar huis", "home (going home)"],
+   ["oud", "old"],
+   ["de auto", "the car"]
+  ],
+  "core": [],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "ik + werken",
+    "o": ["werk", "werkt", "werken", "werke"],
+    "a": 0,
+    "oit": true,
+    "e": "With ik, just the stem: <b>werk</b>.",
+    "g": {"werk": "I work", "werkt": "you work / he works", "werken": "we / you (pl.) / they work", "werke": "not a real form"},
+    "tt": "I work"
+   },
+   {
+    "t": "mc",
+    "q": "hij + wonen",
+    "o": ["woont", "woon", "wonen", "wont"],
+    "a": 0,
+    "oit": true,
+    "e": "Stem + t, with the long vowel doubled: <b>woont</b>.",
+    "g": {"woont": "lives", "woon": "live (I)", "wonen": "we / they live", "wont": "not a real form: the long o must be written double"},
+    "tt": "he lives"
+   },
+   {
+    "t": "mc",
+    "q": "wij + spreken",
+    "o": ["spreken", "spreekt", "spreek", "sprekt"],
+    "a": 0,
+    "oit": true,
+    "e": "Plural = infinitive: <b>spreken</b>.",
+    "g": {"spreken": "we speak", "spreekt": "you speak / he speaks", "spreek": "I speak", "sprekt": "not a real form"},
+    "tt": "we speak"
+   },
+   {
+    "t": "mc",
+    "q": "jij + lezen",
+    "o": ["leest", "leez", "lezt", "lezen"],
+    "a": 0,
+    "oit": true,
+    "e": "z becomes s at the end of a word: <b>leest</b>.",
+    "g": {"leest": "you read", "leez": "not a real form: z → s", "lezt": "not a real form", "lezen": "to read / we read"},
+    "tt": "you read"
+   },
+   {
+    "t": "mc",
+    "q": "___ je Nederlands? (spreken)",
+    "o": ["Spreek", "Spreekt", "Spreken", "Spreeken"],
+    "a": 0,
+    "oit": true,
+    "e": "Before je the -t drops: <b>Spreek je</b>?",
+    "g": {"Spreek": "speak (before je)", "Spreekt": "speaks: before je the t drops", "Spreken": "we speak / to speak", "Spreeken": "not a real form"},
+    "tt": "Do you speak Dutch?"
+   },
+   {
+    "t": "mc",
+    "q": "zij (she) + hebben",
+    "o": ["heeft", "hebt", "heb", "hebben"],
+    "a": 0,
+    "e": "Irregular: zij <b>heeft</b>.",
+    "g": {"heeft": "has", "hebt": "have (you)", "heb": "have (I)", "hebben": "we / they have"},
+    "tt": "she has"
+   },
+   {
+    "t": "mc",
+    "q": "jullie + zijn",
+    "o": ["zijn", "zijt", "bent", "is"],
+    "a": 0,
+    "e": "Plural: jullie <b>zijn</b>.",
+    "g": {"zijn": "you (pl.) are", "zijt": "you are (with gij, spoken Flemish)", "bent": "you are (singular)", "is": "is"},
+    "tt": "you (plural) are"
+   },
+   {
+    "t": "fill",
+    "q": "Ik ___ naar huis.",
+    "h": "gaan",
+    "a": ["ga"],
+    "e": "Irregular: ik <b>ga</b>.",
+    "tt": "I'm going home."
+   },
+   {
+    "t": "fill",
+    "q": "Hij ___ hier.",
+    "h": "zitten",
+    "a": ["zit"],
+    "e": "The stem ends in -t: hij <b>zit</b>.",
+    "tt": "He's sitting here."
+   },
+   {
+    "t": "order",
+    "q": "He's working today.",
+    "a": "Hij werkt vandaag",
+    "alt": ["Vandaag werkt hij"],
+    "x": ["werk", "werken"],
+    "e": "hij + stem + t: <b>werkt</b>."
+   }
+  ],
+  "items": [
+   {
+    "t": "fill",
+    "q": "Ik ___ in een bank.",
+    "h": "werken",
+    "a": ["werk"],
+    "e": "ik = stem: <b>werk</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Hij ___ in Leuven.",
+    "h": "wonen",
+    "a": ["woont"],
+    "e": "woon + t = <b>woont</b> (the long vowel is written double)."
+   },
+   {
+    "t": "fill",
+    "q": "Wij ___ Nederlands.",
+    "h": "leren",
+    "a": ["leren"],
+    "e": "Plural = infinitive: <b>leren</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Jij ___ een boek.",
+    "h": "lezen",
+    "a": ["leest"],
+    "e": "lezen → lees (z→s) + t = <b>leest</b>."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "___ je koffie?",
+    "h": "drinken",
+    "o": ["Drinkt", "Drink", "Drinken", "Drinkte"],
+    "a": 1,
+    "e": "With <i>je</i> after the verb the -t drops: <b>Drink je</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Zij ___ een auto.",
+    "h": "hebben, she",
+    "a": ["heeft"],
+    "e": "hebben is irregular: zij <b>heeft</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Ik ___ moe.",
+    "h": "zijn",
+    "a": ["ben"],
+    "e": "ik <b>ben</b>, jij bent, hij is."
+   },
+   {
+    "t": "fill",
+    "q": "Hij ___ in de tuin.",
+    "h": "zitten",
+    "a": ["zit"],
+    "e": "The stem ends in -t: no second t, <b>zit</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Hoe oud ___ u?",
+    "o": ["ben", "bent", "is", "zijn"],
+    "a": 1,
+    "e": "With <b>u</b> you use the jij form: u <b>bent</b>."
+   },
+   {
+    "t": "tr",
+    "q": "He's going home.",
+    "a": ["Hij gaat naar huis"],
+    "e": "gaan: hij <b>gaat</b>. naar huis = home (with movement)."
+   },
+   {
+    "t": "order",
+    "q": "We work in Brussels.",
+    "a": "We werken in Brussel",
+    "alt": ["In Brussel werken we"],
+    "x": ["werkt", "wonen"],
+    "e": "we + <b>werken</b>. Brussel = Brussels."
+   },
+   {
+    "t": "fill",
+    "q": "Ik ___ uit Italië.",
+    "h": "komen",
+    "a": ["kom"],
+    "e": "ik <b>kom</b>."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "Infinitive of 'ik maak':",
+    "o": ["maken", "maaken", "makken", "maakt"],
+    "a": 0,
+    "e": "In the infinitive the long vowel is written single: <b>maken</b>."
+   },
+   {
+    "t": "tr",
+    "q": "Do you speak Dutch?",
+    "a": ["Spreek jij Nederlands", "Spreek je Nederlands", "Spreekt u Nederlands"],
+    "e": "Verb first + the -t drops: <b>Spreek je</b> Nederlands? No \"do\" in Dutch."
+   }
+  ],
+  "gloss": {
+   "0": {"t": "I work in a bank."},
+   "1": {"t": "He lives in Leuven."},
+   "2": {"t": "We're learning Dutch."},
+   "3": {"t": "You're reading a book."},
+   "4": {"g": {"Drinkt": "drinks / you drink, but before je the -t drops", "Drink": "drink (the right form before je)", "Drinken": "to drink / we drink (plural)", "Drinkte": "not a real form: the past is dronk"}, "t": "Do you drink coffee?"},
+   "5": {"t": "She has a car."},
+   "6": {"t": "I'm tired."},
+   "7": {"t": "He's sitting in the garden."},
+   "8": {"g": {"ben": "am (I)", "bent": "are (you, also formal u)", "is": "is (he, she)", "zijn": "are (plural)"}, "t": "How old are you?"},
+   "11": {"t": "I come from Italy."},
+   "12": {"g": {"maken": "to make (infinitive)", "maaken": "not a real form: in the infinitive the long vowel is single", "makken": "not a real form: the a is long, not short", "maakt": "makes (he/she)"}}
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "Hij ___ Gent een mooie stad. (vinden)",
+    "o": ["vindt", "vind", "vint", "vinden"],
+    "a": 0,
+    "oit": true,
+    "e": "Stem <i>vind</i> + <b>t</b> = <b>vindt</b>. You write the t even though you can't hear it: only stems ending in <b>-t</b> (zit) don't take another one.",
+    "g": {
+     "vindt": "finds / thinks (he)",
+     "vind": "find (I), or you find before je",
+     "vint": "not a real form: the d of the stem stays",
+     "vinden": "we / you (pl.) / they find"
+    },
+    "tt": "He thinks Ghent is a beautiful city."
+   },
+   {
+    "t": "mc",
+    "q": "Meneer, ___ u vandaag in Antwerpen? (werken)",
+    "o": ["werkt", "werk", "werken", "werkd"],
+    "a": 0,
+    "oit": true,
+    "e": "The t drops <b>only</b> before jij/je. With <b>u</b> it stays, even in a question: <b>Werkt u</b>?",
+    "g": {
+     "werkt": "work (formal you), also in questions",
+     "werk": "work (I), or you work before je",
+     "werken": "we / they work (plural)",
+     "werkd": "not a real form"
+    },
+    "tt": "Sir, are you working in Antwerp today?"
+   },
+   {
+    "t": "fill",
+    "q": "Mijn vriend en ik ___ in de tuin.",
+    "h": "zitten",
+    "a": ["zitten"],
+    "e": "<i>Mijn vriend en ik</i> = we, so plural: the infinitive <b>zitten</b>. Don't be fooled by the <i>ik</i> right next to the verb.",
+    "tt": "My friend and I are sitting in the garden."
+   },
+   {
+    "t": "fill",
+    "q": "___ je vandaag naar Brussel?",
+    "h": "gaan",
+    "a": ["ga"],
+    "e": "gaan is irregular (jij <i>gaat</i>), but the rule still applies: before <b>je</b> the t drops, <b>Ga je</b>?",
+    "tt": "Are you going to Brussels today?"
+   },
+   {
+    "t": "tr",
+    "q": "She (Lies) is reading a book and drinking a coffee.",
+    "a": [
+     "Zij leest een boek en drinkt een koffie",
+     "Ze leest een boek en drinkt een koffie",
+     "Zij leest een boek en ze drinkt een koffie",
+     "Ze leest een boek en ze drinkt een koffie",
+     "Zij leest een boek en zij drinkt een koffie",
+     "Ze leest een boek en zij drinkt een koffie",
+     "Zij leest een boek en drinkt koffie",
+     "Ze leest een boek en drinkt koffie",
+     "Zij leest een boek en ze drinkt koffie",
+     "Ze leest een boek en ze drinkt koffie",
+     "Zij leest een boek en zij drinkt koffie",
+     "Ze leest een boek en zij drinkt koffie"
+    ],
+    "e": "No \"is reading\" in Dutch: just <b>leest</b> (lezen → lees, z → s, double vowel, + t) and <b>drinkt</b>. In Belgian cafés <i>een koffie</i> is perfectly normal."
+   },
+   {
+    "t": "tr",
+    "q": "Do you speak Dutch or French? (to a friend)",
+    "a": [
+     "Spreek je Nederlands of Frans",
+     "Spreek jij Nederlands of Frans"
+    ],
+    "e": "Question: verb first, no \"do\", and before <b>je/jij</b> the -t drops: <b>Spreek je</b>. Frans = French, Belgium's other big language."
+   },
+   {
+    "t": "order",
+    "q": "Pieter lives in Leuven and works in a bank.",
+    "a": "Pieter woont in Leuven en werkt in een bank",
+    "x": ["woon", "werken"],
+    "e": "Pieter = hij: <b>woont</b> (long o doubled + t) and <b>werkt</b>. Like English \"lives / works\", but with -t instead of -s.",
+    "tt": "Pieter lives in Leuven and works in a bank."
+   },
+   {
+    "t": "order",
+    "q": "Are you working in Ghent or in Brussels tomorrow?",
+    "a": "Werk je morgen in Gent of in Brussel",
+    "x": ["Werkt", "werken"],
+    "e": "In the question the verb goes first and loses its t before <b>je</b>: <b>Werk je</b>. The present also covers the future: <i>morgen</i> = tomorrow.",
+    "tt": "Are you working in Ghent or in Brussels tomorrow?"
+   }
+  ]
+ }
+}

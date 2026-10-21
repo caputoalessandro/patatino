@@ -1,0 +1,466 @@
+{
+ "id": "u20",
+ "n": 20,
+ "module": 4,
+ "nl": "De verleden tijd",
+ "it": "Il passato semplice / imperfetto",
+ "note": "\n<h3>L'idea</h3>\n<p>Oltre alla voltooide tijd (unità 19) l'olandese ha un passato di una sola parola: la <b>verleden tijd</b>. <i>Ik werkte</i> può voler dire \"lavoravo\", \"lavorai\" o \"ho lavorato\": dipende dal contesto. In pratica corrisponde soprattutto al nostro <b>imperfetto</b> e al passato dei racconti.</p>\n<h3>Verbi deboli: -te(n) o -de(n)</h3>\n<p>Si aggiunge alla radice <b>-te</b> (plurale <b>-ten</b>) oppure <b>-de</b> (plurale <b>-den</b>). La scelta segue la stessa regola del participio: <b>'t kofschip</b>. Se la radice finisce in t, k, f, s, ch, p → <b>-te</b>; altrimenti → <b>-de</b>. C'è una sola forma per tutto il singolare.</p>\n<table><tr><th></th><th>werken</th><th>wonen</th><th>reizen</th></tr>\n<tr><td>ik / jij / hij</td><td>werkte</td><td>woonde</td><td>reisde</td></tr>\n<tr><td>wij / jullie / zij</td><td>werkten</td><td>woonden</td><td>reisden</td></tr></table>\n<p>Come per il participio, guarda l'infinito: <i>reizen</i> ha la z → <b>reisde</b>. Se la radice finisce già in t o d, si scrivono due consonanti anche se se ne sente una sola: <i>wachten</i> → <b>wachtte</b>.</p>\n<h3>Verbi forti e irregolari: la vocale cambia</h3>\n<p>I verbi forti non prendono desinenza al singolare: cambiano la vocale. Al plurale aggiungono <b>-en</b>. Sono i verbi più frequenti, quindi vale la pena impararli subito:</p>\n<table><tr><th>infinito</th><th>singolare</th><th>plurale</th></tr>\n<tr><td>zijn</td><td>was</td><td>waren</td></tr>\n<tr><td>hebben</td><td>had</td><td>hadden</td></tr>\n<tr><td>gaan</td><td>ging</td><td>gingen</td></tr>\n<tr><td>komen</td><td>kwam</td><td>kwamen</td></tr>\n<tr><td>zien</td><td>zag</td><td>zagen</td></tr>\n<tr><td>eten</td><td>at</td><td>aten</td></tr>\n<tr><td>lezen</td><td>las</td><td>lazen</td></tr>\n<tr><td>drinken</td><td>dronk</td><td>dronken</td></tr></table>\n<p>Anche i modali hanno forme proprie: <i>kunnen</i> → <b>kon</b>, <i>moeten</i> → <b>moest</b>, <i>mogen</i> → <b>mocht</b>, <i>willen</i> → <b>wilde</b> (o <b>wou</b>). E <i>kopen</i> → <b>kocht</b>.</p>\n<p>Nei verbi separabili la particella va in fondo, come al presente: <i>We <b>kwamen</b> om acht uur <b>aan</b></i>.</p>\n<h3>Quando si usa: verleden tijd o voltooide tijd?</h3>\n<ul>\n<li><b>Voltooide tijd</b> (ik heb gewerkt): per dire che cosa è successo, soprattutto in una conversazione. <i>Wat heb je gisteren gedaan? — Ik heb een film gezien.</i></li>\n<li><b>Verleden tijd</b> (ik werkte): per <b>descrivere</b> una situazione o un'abitudine nel passato, come il nostro imperfetto. <i>Vroeger woonde ik in een klein dorp.</i> <i>Het regende.</i> Si usa anche per <b>raccontare</b> una serie di fatti, nelle storie e nei libri.</li>\n<li>Con <b>zijn, hebben</b> e i <b>modali</b> la verleden tijd è normalissima anche nel parlato: <i>Ik was moe</i>, <i>We hadden honger</i>, <i>Ik moest werken</i>.</li>\n</ul>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Trattare un verbo forte come debole: <s>ik gade</s>, <s>ik komde</s> → <b>ik ging</b>, <b>ik kwam</b>.</li>\n<li>Sbagliare -te/-de: <s>woonte</s> → <b>woonde</b>, <s>werkde</s> → <b>werkte</b>.</li>\n<li>Dimenticare il plurale: <s>wij was</s> → <b>wij waren</b>.</li>\n<li>Usare la voltooide tijd per descrivere uno stato: \"ero stanco\" è più naturale come <b>ik was moe</b>.</li>\n</ul>",
+ "vlaams": "Per \"volevo\" nel parlato si sente spesso <b>ik wou</b> invece di <i>ik wilde</i>, in Belgio come nei Paesi Bassi: entrambe le forme sono corrette. Con <b>gij/ge</b> il passato di zijn è <b>waart</b>: \"Waart ge moe?\" (eri stanco?).",
+ "vocab": [
+  [
+   "vroeger",
+   "una volta, in passato"
+  ],
+  [
+   "het weer",
+   "il tempo (meteo)"
+  ],
+  [
+   "de tijd",
+   "il tempo (che passa)"
+  ],
+  [
+   "koud",
+   "freddo"
+  ],
+  [
+   "warm",
+   "caldo"
+  ],
+  [
+   "de honger",
+   "la fame (honger hebben = avere fame)"
+  ],
+  [
+   "klein",
+   "piccolo"
+  ],
+  [
+   "het dorp",
+   "il paese, il villaggio"
+  ],
+  [
+   "de vakantie",
+   "le vacanze"
+  ],
+  [
+   "regenen",
+   "piovere"
+  ],
+  [
+   "lachen",
+   "ridere"
+  ],
+  [
+   "de school",
+   "la scuola"
+  ]
+ ],
+ "core": [
+  [
+   "was / waren",
+   "ero, era / eravamo, erano"
+  ],
+  [
+   "had / hadden",
+   "avevo, aveva / avevamo, avevano"
+  ],
+  [
+   "ging / gingen",
+   "andavo / andavamo"
+  ],
+  [
+   "kwam / kwamen",
+   "venivo / venivamo"
+  ],
+  [
+   "zag / zagen",
+   "vedevo / vedevamo"
+  ],
+  [
+   "-te / -de",
+   "desinenza dei verbi deboli"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "werken → ik (passato)",
+   "o": [
+    "werkte",
+    "werkde",
+    "werkt",
+    "werkten"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "k è nel kofschip → <b>-te</b>: werkte.",
+   "g": {
+    "werkte": "lavoravo",
+    "werkde": "k è nel kofschip: serve -te",
+    "werkt": "lavora (presente)",
+    "werkten": "lavoravamo (plurale)"
+   },
+   "tt": "io lavoravo"
+  },
+  {
+   "t": "mc",
+   "q": "wonen → hij (passato)",
+   "o": [
+    "woonde",
+    "woonte",
+    "wonde",
+    "woonden"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "n non è nel kofschip → <b>-de</b>: woonde.",
+   "g": {
+    "woonde": "abitava",
+    "woonte": "n non è nel kofschip: serve -de",
+    "wonde": "la o lunga va scritta doppia (wonde = ferita)",
+    "woonden": "abitavamo / abitavano (plurale)"
+   },
+   "tt": "lui abitava"
+  },
+  {
+   "t": "mc",
+   "q": "zijn → ik (passato)",
+   "o": [
+    "was",
+    "ben",
+    "waren",
+    "wees"
+   ],
+   "a": 0,
+   "e": "Irregolare: ik <b>was</b>.",
+   "g": {
+    "was": "ero",
+    "ben": "sono (presente)",
+    "waren": "eravamo / erano (plurale)",
+    "wees": "sii (imperativo)"
+   },
+   "tt": "io ero"
+  },
+  {
+   "t": "mc",
+   "q": "hebben → wij (passato)",
+   "o": [
+    "hadden",
+    "had",
+    "hebden",
+    "hebten"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Irregolare, plurale: <b>hadden</b>.",
+   "g": {
+    "hadden": "avevamo",
+    "had": "avevo / aveva (singolare)",
+    "hebden": "forma che non esiste",
+    "hebten": "forma che non esiste"
+   },
+   "tt": "noi avevamo"
+  },
+  {
+   "t": "mc",
+   "q": "gaan → zij, loro (passato)",
+   "o": [
+    "gingen",
+    "ging",
+    "gaanden",
+    "gegaan"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Forte, plurale: <b>gingen</b>.",
+   "g": {
+    "gingen": "andavano",
+    "ging": "andavo / andava (singolare)",
+    "gaanden": "forma che non esiste",
+    "gegaan": "andato (participio)"
+   },
+   "tt": "loro andavano"
+  },
+  {
+   "t": "mc",
+   "q": "reizen → hij (passato)",
+   "o": [
+    "reisde",
+    "reiste",
+    "reizde",
+    "reizte"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "L'infinito ha la z → <b>-de</b>, scritto con s: reisde.",
+   "g": {
+    "reisde": "viaggiava",
+    "reiste": "guarda l'infinito (z): serve -de",
+    "reizde": "davanti a d si scrive s",
+    "reizte": "forma che non esiste"
+   },
+   "tt": "lui viaggiava"
+  },
+  {
+   "t": "mc",
+   "q": "komen → ik (passato)",
+   "o": [
+    "kwam",
+    "kom",
+    "komde",
+    "kwamen"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Forte: ik <b>kwam</b>.",
+   "g": {
+    "kwam": "venivo",
+    "kom": "vengo (presente)",
+    "komde": "forma che non esiste: komen è forte",
+    "kwamen": "venivamo (plurale)"
+   },
+   "tt": "io venivo"
+  },
+  {
+   "t": "mc",
+   "q": "Vroeger ___ ik in Rome.",
+   "o": [
+    "woonde",
+    "woon",
+    "woonden",
+    "gewoond"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Situazione nel passato → verleden tijd: <b>woonde</b>.",
+   "g": {
+    "woonde": "abitavo",
+    "woon": "abito (presente): non va con vroeger",
+    "woonden": "abitavamo (plurale)",
+    "gewoond": "abitato: il participio ha bisogno di heb"
+   },
+   "tt": "Una volta abitavo a Roma."
+  },
+  {
+   "t": "fill",
+   "q": "Gisteren ___ het koud.",
+   "h": "zijn",
+   "a": [
+    "was"
+   ],
+   "e": "zijn al passato: <b>was</b>.",
+   "tt": "Ieri faceva freddo."
+  },
+  {
+   "t": "order",
+   "q": "Avevamo fame.",
+   "a": "We hadden honger",
+   "alt": [
+    "Honger hadden we"
+   ],
+   "x": [
+    "had",
+    "waren"
+   ],
+   "e": "hebben al plurale: <b>hadden</b>. Honger <i>hebben</i>, non zijn."
+  }
+ ],
+ "items": [
+  {
+   "t": "fill",
+   "q": "Vroeger ___ ik in een klein dorp.",
+   "h": "wonen",
+   "a": [
+    "woonde"
+   ],
+   "e": "n non è nel kofschip → <b>woonde</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Gisteren ___ we naar de zee.",
+   "o": [
+    "gingen",
+    "ging",
+    "gaan",
+    "gegaan"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Forte, plurale: we <b>gingen</b>."
+  },
+  {
+   "t": "order",
+   "q": "Il tempo era brutto.",
+   "a": "Het weer was slecht",
+   "x": [
+    "waren",
+    "weest"
+   ],
+   "e": "het weer è singolare: <b>was</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Lui aveva molto tempo.",
+   "a": [
+    "Hij had veel tijd"
+   ],
+   "e": "hebben al passato: <b>had</b>."
+  },
+  {
+   "t": "mc",
+   "q": "De kinderen ___ in de tuin en lachten.",
+   "o": [
+    "speelden",
+    "speelde",
+    "speelten",
+    "spelen"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Plurale, l non è nel kofschip → <b>speelden</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Ik ___ gisteren een mooie film.",
+   "h": "zien",
+   "a": [
+    "zag"
+   ],
+   "e": "Forte: zien → <b>zag</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Ik ___ gisteren werken.",
+   "h": "moeten",
+   "o": [
+    "moest",
+    "moette",
+    "moesten",
+    "gemoeten"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "moeten al passato: <b>moest</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Ero stanco.",
+   "a": [
+    "Ik was moe"
+   ],
+   "e": "zijn al passato: ik <b>was</b> moe."
+  },
+  {
+   "t": "fill",
+   "q": "Wij ___ om acht uur in Brussel aan.",
+   "h": "aankomen",
+   "a": [
+    "kwamen"
+   ],
+   "e": "komen è forte (<b>kwamen</b>) e la particella <i>aan</i> resta in fondo."
+  },
+  {
+   "t": "order",
+   "q": "Una volta pioveva spesso.",
+   "a": "Vroeger regende het vaak",
+   "alt": [
+    "Het regende vroeger vaak",
+    "Vaak regende het vroeger"
+   ],
+   "x": [
+    "regenden",
+    "geregend"
+   ],
+   "e": "Abitudine nel passato → verleden tijd: <b>regende</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Zij ___ de krant.",
+   "h": "leggeva",
+   "o": [
+    "las",
+    "leesde",
+    "lazen",
+    "lees"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Forte: lezen → <b>las</b>."
+  },
+  {
+   "t": "tr",
+   "q": "In vacanza mangiavamo spesso patatine fritte.",
+   "a": [
+    "Op vakantie aten we vaak frieten",
+    "We aten op vakantie vaak frieten",
+    "In de vakantie aten we vaak frieten",
+    "We aten in de vakantie vaak frieten",
+    "Tijdens de vakantie aten we vaak frieten"
+   ],
+   "e": "eten al passato plurale: <b>aten</b>."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "t": "Una volta abitavo in un piccolo paese."
+  },
+  "1": {
+   "g": {
+    "gingen": "andammo / siamo andati (plurale)",
+    "ging": "andavo / andava (singolare)",
+    "gaan": "andiamo (presente)",
+    "gegaan": "andato (participio): serve zijn"
+   },
+   "t": "Ieri siamo andati al mare."
+  },
+  "2": {
+   "t": "Il tempo era brutto."
+  },
+  "3": {
+   "t": "Lui aveva molto tempo."
+  },
+  "4": {
+   "g": {
+    "speelden": "giocavano",
+    "speelde": "giocava (singolare)",
+    "speelten": "l non è nel kofschip: serve -den",
+    "spelen": "giocano (presente): la frase è al passato"
+   },
+   "t": "I bambini giocavano in giardino e ridevano."
+  },
+  "5": {
+   "t": "Ieri ho visto un bel film."
+  },
+  "6": {
+   "g": {
+    "moest": "dovevo / dovetti",
+    "moette": "forma che non esiste",
+    "moesten": "dovevamo (plurale)",
+    "gemoeten": "participio: qui serve il passato semplice"
+   },
+   "t": "Ieri ho dovuto lavorare."
+  },
+  "7": {
+   "t": "Ero stanco."
+  },
+  "8": {
+   "t": "Siamo arrivati a Bruxelles alle otto."
+  },
+  "9": {
+   "t": "Una volta pioveva spesso."
+  },
+  "10": {
+   "g": {
+    "las": "leggeva",
+    "leesde": "forma che non esiste: lezen è forte",
+    "lazen": "leggevano (plurale)",
+    "lees": "leggo (presente)"
+   },
+   "t": "Lei leggeva il giornale."
+  },
+  "11": {
+   "t": "In vacanza mangiavamo spesso patatine fritte."
+  }
+ }
+}

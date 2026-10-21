@@ -1,0 +1,656 @@
+{
+ "id": "u12",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "In Antwerpen hebben we ___ auto, want we doen alles met de tram.",
+   "o": [
+    "geen",
+    "niet een",
+    "niet",
+    "geen een"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Nella frase positiva sarebbe <i>een auto</i> → nella negativa <b>geen auto</b>. <i>niet een</i> non si usa per la negazione normale, e <i>geen</i> contiene già <i>een</i>.",
+   "g": {
+    "geen": "nessuna / non… un (giusto)",
+    "niet een": "errore tipico: al posto di niet een si dice geen",
+    "niet": "con un nome senza de/het serve geen",
+    "geen een": "geen contiene già een"
+   },
+   "tt": "Ad Anversa non abbiamo l'auto, perché facciamo tutto col tram."
+  },
+  {
+   "t": "fill",
+   "q": "Heb je de tickets voor de film? — Nee, ik heb ze ___.",
+   "h": "non",
+   "a": [
+    "niet"
+   ],
+   "e": "<i>ze</i> è un pronome (= de tickets, con l'articolo): non si usa <i>geen</i> ma <b>niet</b>, in fondo, dopo il pronome.",
+   "tt": "Hai i biglietti per il film? — No, non li ho."
+  },
+  {
+   "t": "mc",
+   "q": "Oggi mio fratello non lavora a Bruxelles: quale frase è corretta?",
+   "o": [
+    "Vandaag werkt mijn broer niet in Brussel.",
+    "Vandaag mijn broer werkt niet in Brussel.",
+    "Vandaag niet werkt mijn broer in Brussel.",
+    "Vandaag werkt mijn broer geen in Brussel."
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<i>Vandaag</i> al primo posto → inversione <b>werkt mijn broer</b>; poi <b>niet</b> davanti al luogo <i>in Brussel</i>.",
+   "g": {
+    "Vandaag werkt mijn broer niet in Brussel.": "Oggi mio fratello non lavora a Bruxelles. (giusta)",
+    "Vandaag mijn broer werkt niet in Brussel.": "manca l'inversione dopo Vandaag",
+    "Vandaag niet werkt mijn broer in Brussel.": "niet non sta mai prima del verbo coniugato",
+    "Vandaag werkt mijn broer geen in Brussel.": "geen solo davanti a un nome senza de/het"
+   },
+   "tt": "Oggi mio fratello non lavora a Bruxelles."
+  },
+  {
+   "t": "fill",
+   "q": "Ik drink 's avonds geen koffie, want dan kan ik ___ slapen.",
+   "h": "non",
+   "a": [
+    "niet"
+   ],
+   "e": "Con un modale (<i>kan</i>) e l'infinito in fondo, <b>niet</b> va subito prima dell'infinito: <i>kan ik niet slapen</i>. Dopo <i>dan</i> c'è l'inversione.",
+   "tt": "Di sera non bevo caffè, perché poi non riesco a dormire."
+  },
+  {
+   "t": "tr",
+   "q": "Mio figlio non beve mai latte di sera.",
+   "a": [
+    "Mijn zoon drinkt 's avonds nooit melk",
+    "Mijn zoon drinkt nooit melk 's avonds",
+    "'s Avonds drinkt mijn zoon nooit melk"
+   ],
+   "e": "<b>nooit</b> basta da solo, senza un altro \"non\": <s>niet nooit</s>. Con <i>'s Avonds</i> all'inizio: inversione <b>drinkt mijn zoon</b>."
+  },
+  {
+   "t": "order",
+   "q": "Non capisco la tua domanda.",
+   "a": "Ik begrijp je vraag niet",
+   "alt": [
+    "Je vraag begrijp ik niet"
+   ],
+   "x": [
+    "geen",
+    "begrijpt"
+   ],
+   "e": "<i>je vraag</i> ha un possessivo: si nega con <b>niet</b>, in fondo, non con geen.",
+   "tt": "Non capisco la tua domanda."
+  },
+  {
+   "t": "tr",
+   "q": "Oggi mia sorella non va a Gand in treno.",
+   "a": [
+    "Mijn zus gaat vandaag niet met de trein naar Gent",
+    "Vandaag gaat mijn zus niet met de trein naar Gent",
+    "Mijn zus gaat vandaag niet naar Gent met de trein",
+    "Vandaag gaat mijn zus niet naar Gent met de trein",
+    "Mijn zuster gaat vandaag niet met de trein naar Gent",
+    "Vandaag gaat mijn zuster niet met de trein naar Gent"
+   ],
+   "e": "Tempo (<i>vandaag</i>) prima di <b>niet</b>; poi <b>niet</b> davanti al modo e al luogo: <i>niet met de trein naar Gent</i>."
+  },
+  {
+   "t": "order",
+   "q": "Nessuno a Bruxelles conosce il mio numero.",
+   "a": "Niemand in Brussel kent mijn nummer",
+   "alt": [
+    "In Brussel kent niemand mijn nummer"
+   ],
+   "x": [
+    "niet",
+    "kennen"
+   ],
+   "e": "<b>niemand</b> è già negativo (niente <i>niet</i> in più) ed è singolare: <b>kent</b>. Con <i>In Brussel</i> all'inizio: <i>kent niemand</i>.",
+   "tt": "Nessuno a Bruxelles conosce il mio numero."
+  }
+ ],
+ "en": {
+  "it": "Negation",
+  "note": "\n<h3>The idea</h3>\n<p>English negates with <b>not</b>, usually with a helper verb: \"I <b>don't</b> work\", \"I <b>don't</b> have a car\", \"it <b>isn't</b> big\". Dutch never uses a helper like \"do\", and it has two words for \"not\":</p>\n<ul>\n<li><b>geen</b> negates a <b>noun</b> that would have <i>een</i> or no article: it's like English \"no / not a / not any\".</li>\n<li><b>niet</b> negates everything else: verbs, adjectives, nouns with <i>de/het</i> or with a possessive, pronouns.</li>\n</ul>\n<h3>When to use geen</h3>\n<table><tr><th>positive</th><th>negative</th></tr>\n<tr><td>Ik heb een auto.</td><td>Ik heb <b>geen</b> auto.</td></tr>\n<tr><td>Hij drinkt koffie.</td><td>Hij drinkt <b>geen</b> koffie.</td></tr>\n<tr><td>We hebben kinderen.</td><td>We hebben <b>geen</b> kinderen.</td></tr></table>\n<p>The trick: if the positive sentence has <i>een</i> or no article at all, the negative uses <b>geen</b>. Think of English \"I have <b>no</b> car / <b>no</b> children\". This also works for expressions with <i>hebben</i>: <i>Ik heb geen honger, geen tijd, geen zin</i> (I'm not hungry, I have no time, I don't feel like it).</p>\n<h3>When to use niet</h3>\n<table><tr><th>positive</th><th>negative</th></tr>\n<tr><td>Ik heb de sleutel.</td><td>Ik heb de sleutel <b>niet</b>.</td></tr>\n<tr><td>Ik zie hem.</td><td>Ik zie hem <b>niet</b>.</td></tr>\n<tr><td>Het huis is groot.</td><td>Het huis is <b>niet</b> groot.</td></tr></table>\n<h3>Where does niet go?</h3>\n<p>This is the tricky part. Basic rules:</p>\n<ul>\n<li><b>At the end</b>, after the verb, an object with de/het, pronouns and time words: <i>Ik werk vandaag <b>niet</b>. Ik begrijp het <b>niet</b>.</i></li>\n<li><b>Before</b> an adjective: <i>De koffie is <b>niet</b> warm.</i></li>\n<li><b>Before</b> a place or a preposition: <i>Ik woon <b>niet</b> in Brussel. Hij gaat <b>niet</b> naar huis.</i></li>\n<li><b>Before</b> the infinitive at the end: <i>Ik kan <b>niet</b> komen. Ik wil vandaag <b>niet</b> werken.</i></li>\n</ul>\n<p>For contrast you can put <i>niet</i> right before the word you want to negate: <i>Niet ik, maar hij.</i> (Not me, him.)</p>\n<h3>Other negative words</h3>\n<p><b>nooit</b> (never), <b>niets</b> (nothing; spoken: <i>niks</i>), <b>niemand</b> (nobody), <b>nog niet</b> (not yet), <b>ook niet</b> (not… either). As in standard English, they work on their own, without a second \"not\": <i>Ik rook nooit</i> (I never smoke), <i>Niemand weet het</i> (nobody knows).</p>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Copying \"don't\" or putting niet before the verb: <s>Ik niet werk</s> → <b>Ik werk niet</b>.</li>\n<li>Using niet with a noun without an article: <s>Ik heb niet tijd</s> → <b>Ik heb geen tijd</b>.</li>\n<li>Translating \"not a\" word for word: <s>Ik heb niet een auto</s> → <b>Ik heb geen auto</b>.</li>\n<li>Doubling the negation: <s>Ik zie niet niemand</s> → <b>Ik zie niemand</b>.</li>\n<li>Putting niet after the infinitive, as in \"I can come not\": <s>Ik kan komen niet</s> → <b>Ik kan niet komen</b>.</li>\n</ul>",
+  "vlaams": "In spoken Flemish you almost always hear <b>nie</b> instead of niet: \"'k weet het nie\". To say \"I don't feel like it\", Belgians very often say <b>Ik heb geen goesting</b> (goesting = desire, appetite); in the Netherlands you'd say <i>Ik heb geen zin</i>.",
+  "vocab": [
+   [
+    "de tijd",
+    "time"
+   ],
+   [
+    "de zin",
+    "desire, feeling like (doing something)"
+   ],
+   [
+    "het geld",
+    "money"
+   ],
+   [
+    "de honger",
+    "hunger"
+   ],
+   [
+    "de dorst",
+    "thirst"
+   ],
+   [
+    "het vlees",
+    "meat"
+   ],
+   [
+    "de melk",
+    "milk"
+   ],
+   [
+    "de suiker",
+    "sugar"
+   ],
+   [
+    "begrijpen",
+    "to understand"
+   ],
+   [
+    "weten",
+    "to know (a fact)"
+   ],
+   [
+    "ziek",
+    "sick, ill"
+   ],
+   [
+    "duur",
+    "expensive"
+   ],
+   [
+    "lekker",
+    "tasty, delicious"
+   ],
+   [
+    "warm",
+    "warm, hot"
+   ],
+   [
+    "koud",
+    "cold"
+   ]
+  ],
+  "core": [
+   [
+    "niet",
+    "not"
+   ],
+   [
+    "geen",
+    "no, not a / not any"
+   ],
+   [
+    "nooit",
+    "never"
+   ],
+   [
+    "niets",
+    "nothing"
+   ],
+   [
+    "niemand",
+    "nobody"
+   ],
+   [
+    "nog niet",
+    "not yet"
+   ],
+   [
+    "ook niet",
+    "not… either"
+   ]
+  ],
+  "items": [
+   {
+    "t": "mc",
+    "q": "Heb je honger? — Nee, ik heb ___ honger.",
+    "o": [
+     "geen",
+     "niet",
+     "niets",
+     "niemand"
+    ],
+    "a": 0,
+    "e": "<i>honger hebben</i> (to be hungry): noun without an article → <b>geen</b> honger."
+   },
+   {
+    "t": "mc",
+    "q": "Is de koffie warm? — Nee, de koffie is ___ warm.",
+    "o": [
+     "niet",
+     "geen"
+    ],
+    "a": 0,
+    "e": "Before the adjective: <b>niet</b> warm. In fact, it's koud!"
+   },
+   {
+    "t": "fill",
+    "q": "Ik begrijp het ___.",
+    "h": "not",
+    "a": [
+     "niet"
+    ],
+    "e": "After the pronoun <i>het</i>, at the end: <b>niet</b>."
+   },
+   {
+    "t": "order",
+    "q": "I don't eat meat.",
+    "a": "Ik eet geen vlees",
+    "x": [
+     "een",
+     "eten"
+    ],
+    "e": "<i>vlees</i> without an article → <b>geen</b> vlees (\"no meat\")."
+   },
+   {
+    "t": "tr",
+    "q": "I have no time.",
+    "a": [
+     "Ik heb geen tijd"
+    ],
+    "e": "<b>geen tijd</b>: noun without an article."
+   },
+   {
+    "t": "mc",
+    "q": "Kun je zwemmen? — Nee, ik kan ___ zwemmen.",
+    "o": [
+     "niet",
+     "geen",
+     "niets",
+     "nee"
+    ],
+    "a": 0,
+    "e": "Before the infinitive: <b>niet</b> zwemmen."
+   },
+   {
+    "t": "fill",
+    "q": "Hij heeft ___ geld.",
+    "h": "no / not any",
+    "a": [
+     "geen"
+    ],
+    "e": "<i>geld</i> without an article → <b>geen</b>."
+   },
+   {
+    "t": "order",
+    "q": "I don't live in Brussels.",
+    "a": "Ik woon niet in Brussel",
+    "alt": [
+     "In Brussel woon ik niet"
+    ],
+    "x": [
+     "geen",
+     "woont"
+    ],
+    "e": "<b>niet</b> goes before the place: niet in Brussel."
+   },
+   {
+    "t": "mc",
+    "q": "Wie is thuis? — ___.",
+    "o": [
+     "Niemand",
+     "Nooit",
+     "Niets",
+     "Geen"
+    ],
+    "a": 0,
+    "e": "No person → <b>niemand</b>."
+   },
+   {
+    "t": "tr",
+    "q": "I don't know.",
+    "a": [
+     "Ik weet het niet",
+     "Dat weet ik niet",
+     "Ik weet dat niet"
+    ],
+    "e": "<b>Ik weet het niet.</b> niet at the end, after het."
+   },
+   {
+    "t": "mc",
+    "q": "Which sentence is correct?",
+    "o": [
+     "Ik drink geen melk.",
+     "Ik drink niet melk.",
+     "Ik drink melk geen.",
+     "Ik geen drink melk."
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<i>melk</i> without an article → <b>geen melk</b>, before the noun."
+   },
+   {
+    "t": "tr",
+    "q": "I don't feel like it.",
+    "a": [
+     "Ik heb geen zin",
+     "Ik heb er geen zin in",
+     "Ik heb geen goesting",
+     "Ik heb er geen goesting in"
+    ],
+    "e": "<b>zin hebben</b> = to feel like (doing something) → <b>geen zin</b>. In Belgium: geen goesting."
+   }
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "Ik heb ___ auto.",
+    "o": [
+     "geen",
+     "niet"
+    ],
+    "a": 0,
+    "e": "<i>een auto</i> → <b>geen auto</b>.",
+    "g": {
+     "geen": "no / not a (before a noun with een)",
+     "niet": "not: with a noun without de/het you use geen"
+    },
+    "tt": "I don't have a car."
+   },
+   {
+    "t": "mc",
+    "q": "Ik heb de sleutel ___.",
+    "o": [
+     "niet",
+     "geen"
+    ],
+    "a": 0,
+    "e": "Noun with <i>de</i> → <b>niet</b>, at the end.",
+    "g": {
+     "niet": "not (with de/het)",
+     "geen": "only with nouns without de/het"
+    },
+    "tt": "I don't have the key."
+   },
+   {
+    "t": "mc",
+    "q": "Hij drinkt ___ koffie.",
+    "o": [
+     "geen",
+     "niet"
+    ],
+    "a": 0,
+    "e": "<i>koffie</i> without an article → <b>geen</b>.",
+    "g": {
+     "geen": "no / not any (noun without an article)",
+     "niet": "not: with a noun without an article you need geen"
+    },
+    "tt": "He doesn't drink coffee."
+   },
+   {
+    "t": "mc",
+    "q": "Het huis is ___ groot.",
+    "o": [
+     "niet",
+     "geen"
+    ],
+    "a": 0,
+    "e": "Before an adjective → <b>niet</b>.",
+    "g": {
+     "niet": "not (before the adjective)",
+     "geen": "only before a noun"
+    },
+    "tt": "The house isn't big."
+   },
+   {
+    "t": "mc",
+    "q": "Which sentence is correct?",
+    "o": [
+     "Ik kan niet zwemmen.",
+     "Ik kan zwemmen niet.",
+     "Ik niet kan zwemmen.",
+     "Ik kan geen zwemmen."
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<b>niet</b> goes before the infinitive at the end.",
+    "g": {
+     "Ik kan niet zwemmen.": "I can't swim. (correct)",
+     "Ik kan zwemmen niet.": "niet goes before the infinitive",
+     "Ik niet kan zwemmen.": "niet never goes before the conjugated verb",
+     "Ik kan geen zwemmen.": "geen only goes with nouns"
+    },
+    "tt": "I can't swim."
+   },
+   {
+    "t": "mc",
+    "q": "never",
+    "o": [
+     "nooit",
+     "niets",
+     "niemand",
+     "niet"
+    ],
+    "a": 0,
+    "e": "<b>nooit</b> = never.",
+    "g": {
+     "nooit": "never",
+     "niets": "nothing",
+     "niemand": "nobody",
+     "niet": "not"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "nobody",
+    "o": [
+     "niemand",
+     "nooit",
+     "niets",
+     "geen"
+    ],
+    "a": 0,
+    "e": "<b>niemand</b> = nobody (a person).",
+    "g": {
+     "niemand": "nobody (a person)",
+     "nooit": "never",
+     "niets": "nothing",
+     "geen": "no (before a noun)"
+    }
+   },
+   {
+    "t": "fill",
+    "q": "Ik ben ___ moe.",
+    "h": "not",
+    "a": [
+     "niet"
+    ],
+    "e": "Before the adjective: <b>niet</b> moe.",
+    "tt": "I'm not tired."
+   },
+   {
+    "t": "fill",
+    "q": "We hebben ___ kinderen.",
+    "h": "no",
+    "a": [
+     "geen"
+    ],
+    "e": "Plural without an article → <b>geen</b>.",
+    "tt": "We have no children."
+   },
+   {
+    "t": "order",
+    "q": "I can't come.",
+    "a": "Ik kan niet komen",
+    "x": [
+     "geen",
+     "kom"
+    ],
+    "e": "Modal in second place, <b>niet</b> + infinitive at the end."
+   }
+  ],
+  "gloss": {
+   "0": {
+    "g": {
+     "geen": "no / not any (noun without an article)",
+     "niet": "not: before a noun without an article you need geen",
+     "niets": "nothing: doesn't combine with honger",
+     "niemand": "nobody (a person)"
+    },
+    "t": "Are you hungry? — No, I'm not hungry."
+   },
+   "1": {
+    "g": {
+     "niet": "not (before the adjective)",
+     "geen": "only before a noun"
+    },
+    "t": "Is the coffee hot? — No, the coffee isn't hot."
+   },
+   "2": {
+    "t": "I don't understand it."
+   },
+   "5": {
+    "g": {
+     "niet": "not (before the infinitive)",
+     "geen": "only before a noun",
+     "niets": "nothing: makes no sense here",
+     "nee": "no (as an answer), not inside the sentence"
+    },
+    "t": "Can you swim? — No, I can't swim."
+   },
+   "6": {
+    "t": "He has no money."
+   },
+   "8": {
+    "g": {
+     "Niemand": "nobody",
+     "Nooit": "never",
+     "Niets": "nothing (things, not people)",
+     "Geen": "no: needs a noun after it"
+    },
+    "t": "Who's at home? — Nobody."
+   },
+   "10": {
+    "g": {
+     "Ik drink geen melk.": "I don't drink milk. (correct)",
+     "Ik drink niet melk.": "with a noun without an article you need geen",
+     "Ik drink melk geen.": "geen goes before the noun",
+     "Ik geen drink melk.": "geen doesn't go before the verb"
+    },
+    "t": "I don't drink milk."
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "In Antwerpen hebben we ___ auto, want we doen alles met de tram.",
+    "o": [
+     "geen",
+     "niet een",
+     "niet",
+     "geen een"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "The positive sentence would have <i>een auto</i> → the negative has <b>geen auto</b>, like English \"no car\". <i>niet een</i> (\"not a\") isn't used for normal negation, and <i>geen</i> already contains <i>een</i>.",
+    "g": {
+     "geen": "no / not a (correct)",
+     "niet een": "typical mistake: instead of niet een you say geen",
+     "niet": "with a noun without de/het you need geen",
+     "geen een": "geen already contains een"
+    },
+    "tt": "In Antwerp we don't have a car, because we do everything by tram."
+   },
+   {
+    "t": "fill",
+    "q": "Heb je de tickets voor de film? — Nee, ik heb ze ___.",
+    "h": "not",
+    "a": [
+     "niet"
+    ],
+    "e": "<i>ze</i> is a pronoun (= de tickets, with an article): you don't use <i>geen</i> but <b>niet</b>, at the end, after the pronoun.",
+    "tt": "Do you have the tickets for the movie? — No, I don't have them."
+   },
+   {
+    "t": "mc",
+    "q": "My brother isn't working in Brussels today: which sentence is correct?",
+    "o": [
+     "Vandaag werkt mijn broer niet in Brussel.",
+     "Vandaag mijn broer werkt niet in Brussel.",
+     "Vandaag niet werkt mijn broer in Brussel.",
+     "Vandaag werkt mijn broer geen in Brussel."
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<i>Vandaag</i> in first place → inversion <b>werkt mijn broer</b>; then <b>niet</b> before the place <i>in Brussel</i>.",
+    "g": {
+     "Vandaag werkt mijn broer niet in Brussel.": "My brother isn't working in Brussels today. (correct)",
+     "Vandaag mijn broer werkt niet in Brussel.": "no inversion after Vandaag",
+     "Vandaag niet werkt mijn broer in Brussel.": "niet never comes before the conjugated verb",
+     "Vandaag werkt mijn broer geen in Brussel.": "geen only goes before a noun without de/het"
+    },
+    "tt": "My brother isn't working in Brussels today."
+   },
+   {
+    "t": "fill",
+    "q": "Ik drink 's avonds geen koffie, want dan kan ik ___ slapen.",
+    "h": "not",
+    "a": [
+     "niet"
+    ],
+    "e": "With a modal (<i>kan</i>) and the infinitive at the end, <b>niet</b> goes right before the infinitive: <i>kan ik niet slapen</i>. After <i>dan</i> there's inversion.",
+    "tt": "I don't drink coffee in the evening, because then I can't sleep."
+   },
+   {
+    "t": "tr",
+    "q": "My son never drinks milk in the evening.",
+    "a": [
+     "Mijn zoon drinkt 's avonds nooit melk",
+     "Mijn zoon drinkt nooit melk 's avonds",
+     "'s Avonds drinkt mijn zoon nooit melk"
+    ],
+    "e": "<b>nooit</b> works on its own, as in English \"never\": no extra <s>niet</s>. With <i>'s Avonds</i> first: inversion <b>drinkt mijn zoon</b>."
+   },
+   {
+    "t": "order",
+    "q": "I don't understand your question.",
+    "a": "Ik begrijp je vraag niet",
+    "alt": [
+     "Je vraag begrijp ik niet"
+    ],
+    "x": [
+     "geen",
+     "begrijpt"
+    ],
+    "e": "<i>je vraag</i> has a possessive: you negate it with <b>niet</b> at the end, not with geen. And no \"do\": just <i>Ik begrijp… niet</i>.",
+    "tt": "I don't understand your question."
+   },
+   {
+    "t": "tr",
+    "q": "My sister isn't going to Ghent by train today.",
+    "a": [
+     "Mijn zus gaat vandaag niet met de trein naar Gent",
+     "Vandaag gaat mijn zus niet met de trein naar Gent",
+     "Mijn zus gaat vandaag niet naar Gent met de trein",
+     "Vandaag gaat mijn zus niet naar Gent met de trein",
+     "Mijn zuster gaat vandaag niet met de trein naar Gent",
+     "Vandaag gaat mijn zuster niet met de trein naar Gent"
+    ],
+    "e": "Time (<i>vandaag</i>) before <b>niet</b>; then <b>niet</b> before manner and place: <i>niet met de trein naar Gent</i>."
+   },
+   {
+    "t": "order",
+    "q": "Nobody in Brussels knows my number.",
+    "a": "Niemand in Brussel kent mijn nummer",
+    "alt": [
+     "In Brussel kent niemand mijn nummer"
+    ],
+    "x": [
+     "niet",
+     "kennen"
+    ],
+    "e": "<b>niemand</b> is already negative (no extra <i>niet</i>) and singular: <b>kent</b>. With <i>In Brussel</i> first: <i>kent niemand</i>.",
+    "tt": "Nobody in Brussels knows my number."
+   }
+  ]
+ }
+}

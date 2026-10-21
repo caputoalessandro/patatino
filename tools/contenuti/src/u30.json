@@ -1,0 +1,517 @@
+{
+ "id": "u30",
+ "n": 30,
+ "module": 6,
+ "nl": "Leestekens en spelling",
+ "it": "Punteggiatura e ortografia",
+ "note": "\n<h3>L'idea</h3>\n<p>L'ortografia olandese è molto regolare, ma ha alcuni segni che in italiano non usiamo o usiamo diversamente: l'apostrofo nei plurali, la dieresi (<b>ë</b>, <b>ï</b>), il trattino nelle parole composte. Ecco le regole che ti servono davvero per scrivere un messaggio o una mail senza errori.</p>\n<h3>L'apostrofo: plurali</h3>\n<p>Dopo una parola che finisce in vocale lunga <b>a, i, o, u, y</b> il plurale in -s prende l'apostrofo, così la vocale resta lunga: <i>auto's, foto's, menu's, pagina's, baby's</i>. Dopo <b>-é</b> e dopo la <b>-e</b> muta niente apostrofo: <i>cafés, tantes</i> (tante = zia).</p>\n<h3>L'apostrofo: il genitivo</h3>\n<p>Con i nomi di persona puoi dire <i>de fiets van Anna</i> oppure aggiungere <b>-s</b>: </p>\n<table><tr><th>il nome finisce in…</th><th>forma</th></tr>\n<tr><td>consonante o -e muta</td><td><b>Jans</b> fiets, <b>Annes</b> fiets (senza apostrofo)</td></tr>\n<tr><td>vocale lunga a, i, o, u, y</td><td><b>Anna's</b> fiets, <b>Marco's</b> fiets</td></tr>\n<tr><td>-s, -x, -z</td><td><b>Thomas'</b> fiets (solo apostrofo)</td></tr></table>\n<p>Attenzione: <s>Jan's fiets</s> è un errore copiato dall'inglese. Nota anche <b>'s avonds</b> (di sera), <b>'s morgens</b> (di mattina): qui <i>'s</i> è un vecchio articolo e si scrive sempre minuscolo.</p>\n<h3>La dieresi (het trema)</h3>\n<p>Quando due vocali vicine potrebbero essere lette come un solo suono, la dieresi indica che comincia una nuova sillaba: <i>België, Italië, ideeën, zeeën, ruïne, tweeëntwintig, drieëntwintig</i>.</p>\n<h3>Il trattino (het koppelteken)</h3>\n<p>Nelle parole composte, se la prima parte finisce in vocale e la seconda comincia con una vocale che si potrebbe unire, metti un <b>trattino</b> (non la dieresi): <i>zee-egel, auto-ongeluk, zonne-energie, na-apen</i>. Il trattino si usa anche nei nomi geografici composti: <i>West-Vlaanderen, Oost-Vlaanderen, Sint-Niklaas</i>.</p>\n<h3>Le maiuscole</h3>\n<p>Al contrario del tedesco, i nomi comuni sono minuscoli. Come in italiano, giorni e mesi sono minuscoli: <i>maandag, dinsdag, mei</i>. Diversamente dall'italiano, lingue e aggettivi di nazionalità sono <b>maiuscoli</b>: <i>Nederlands, Italiaans, een Italiaanse auto</i>. <i>ik</i> è minuscolo. La lettera <b>ij</b> all'inizio di un nome proprio diventa <b>IJ</b>: <i>de IJzer</i> (il fiume Yser), <i>IJsland</i>.</p>\n<h3>Virgola e virgolette</h3>\n<p>Se la subordinata viene prima della principale, di solito metti una virgola tra i due verbi: <i>Omdat het regent, blijf ik thuis.</i> Se viene dopo, la virgola è facoltativa. Il discorso diretto si introduce con i <b>due punti</b> e comincia con la maiuscola: <i>Hij zegt: \"Ik kom morgen.\"</i></p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Mese o giorno maiuscolo: <s>in Mei</s> → <b>in mei</b>.</li>\n<li>Lingua minuscola: <s>Ik spreek italiaans</s> → <b>Ik spreek Italiaans</b>.</li>\n<li>Apostrofo all'inglese: <s>Jan's boek</s> → <b>Jans boek</b>.</li>\n<li>Plurale senza apostrofo: <s>fotos</s> → <b>foto's</b>.</li>\n<li>Dimenticare la dieresi: <s>Belgie</s> → <b>België</b>.</li>\n</ul>",
+ "vlaams": "Le regole ortografiche sono le stesse in Belgio e nei Paesi Bassi: le stabilisce la Nederlandse Taalunie e le riassume il \"Groene Boekje\". Le province belghe si scrivono con il trattino: <b>West-Vlaanderen</b>, <b>Oost-Vlaanderen</b>, <b>Vlaams-Brabant</b>.",
+ "vocab": [
+  [
+   "de verjaardag",
+   "il compleanno"
+  ],
+  [
+   "mei",
+   "maggio"
+  ],
+  [
+   "dinsdag",
+   "martedì"
+  ],
+  [
+   "het idee",
+   "l'idea"
+  ],
+  [
+   "de zee",
+   "il mare"
+  ],
+  [
+   "de ruïne",
+   "la rovina"
+  ],
+  [
+   "het auto-ongeluk",
+   "l'incidente d'auto"
+  ],
+  [
+   "de zonne-energie",
+   "l'energia solare"
+  ],
+  [
+   "de zee-egel",
+   "il riccio di mare"
+  ],
+  [
+   "de baby",
+   "il neonato"
+  ],
+  [
+   "het café",
+   "il bar"
+  ],
+  [
+   "de pagina",
+   "la pagina"
+  ],
+  [
+   "België",
+   "il Belgio"
+  ],
+  [
+   "Italiaans",
+   "italiano"
+  ],
+  [
+   "de foto",
+   "la foto"
+  ]
+ ],
+ "core": [
+  [
+   "de apostrof",
+   "l'apostrofo"
+  ],
+  [
+   "het trema",
+   "la dieresi (ë, ï)"
+  ],
+  [
+   "het koppelteken",
+   "il trattino"
+  ],
+  [
+   "de hoofdletter",
+   "la maiuscola"
+  ],
+  [
+   "de komma",
+   "la virgola"
+  ],
+  [
+   "de aanhalingstekens",
+   "le virgolette"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "een foto → twee ___",
+   "o": [
+    "foto's",
+    "fotos",
+    "fotoos",
+    "foto'en"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Dopo vocale lunga: <b>-'s</b>.",
+   "g": {
+    "foto's": "foto (plurale, corretto)",
+    "fotos": "manca l'apostrofo",
+    "fotoos": "forma che non esiste",
+    "foto'en": "forma che non esiste"
+   },
+   "tt": "una foto → due foto"
+  },
+  {
+   "t": "mc",
+   "q": "een café → twee ___",
+   "o": [
+    "cafés",
+    "café's",
+    "cafees",
+    "cafeeën"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Dopo <b>-é</b> basta <b>-s</b>: <i>cafés</i>.",
+   "g": {
+    "cafés": "bar (plurale, corretto)",
+    "café's": "dopo -é non serve l'apostrofo",
+    "cafees": "forma che non esiste",
+    "cafeeën": "forma che non esiste"
+   },
+   "tt": "un bar → due bar"
+  },
+  {
+   "t": "mc",
+   "q": "22 in lettere",
+   "o": [
+    "tweeëntwintig",
+    "tweeentwintig",
+    "twee-en-twintig",
+    "twintigtwee"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<i>twee + en</i>: la dieresi separa le vocali, <b>tweeëntwintig</b>.",
+   "g": {
+    "tweeëntwintig": "22 (corretto)",
+    "tweeentwintig": "manca la dieresi",
+    "twee-en-twintig": "niente trattini nei numeri",
+    "twintigtwee": "l'unità va prima"
+   },
+   "tt": "ventidue"
+  },
+  {
+   "t": "mc",
+   "q": "een idee → twee ___",
+   "o": [
+    "ideeën",
+    "ideeen",
+    "idee's",
+    "idees"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<i>idee + en</i> → <b>ideeën</b>.",
+   "g": {
+    "ideeën": "idee (plurale, corretto)",
+    "ideeen": "manca la dieresi",
+    "idee's": "forma sbagliata: si dice ideeën",
+    "idees": "forma non standard: si scrive ideeën"
+   },
+   "tt": "un'idea → due idee"
+  },
+  {
+   "t": "mc",
+   "q": "il riccio di mare",
+   "o": [
+    "de zee-egel",
+    "de zeeegel",
+    "de zeeëgel",
+    "de zee egel"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Parola composta con vocali che si scontrano → <b>trattino</b>.",
+   "g": {
+    "de zee-egel": "il riccio di mare (corretto)",
+    "de zeeegel": "serve il trattino",
+    "de zeeëgel": "nei composti si usa il trattino, non la dieresi",
+    "de zee egel": "le parole composte si scrivono unite"
+   },
+   "tt": "il riccio di mare"
+  },
+  {
+   "t": "mc",
+   "q": "Quale frase è scritta correttamente?",
+   "o": [
+    "Ik kom op maandag.",
+    "Ik kom op Maandag.",
+    "ik kom op maandag.",
+    "Ik Kom op maandag."
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "I giorni sono minuscoli; la frase comincia con la maiuscola.",
+   "g": {
+    "Ik kom op maandag.": "Vengo lunedì (corretta)",
+    "Ik kom op Maandag.": "i giorni si scrivono minuscoli",
+    "ik kom op maandag.": "la frase comincia con la maiuscola",
+    "Ik Kom op maandag.": "i verbi sono minuscoli"
+   },
+   "tt": "Vengo lunedì."
+  },
+  {
+   "t": "mc",
+   "q": "la bici di Anna",
+   "o": [
+    "Anna's fiets",
+    "Annas fiets",
+    "Anna fiets's",
+    "Annas' fiets"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Il nome finisce in <i>a</i> lunga → <b>Anna's</b>.",
+   "g": {
+    "Anna's fiets": "la bici di Anna (corretto)",
+    "Annas fiets": "dopo vocale lunga serve l'apostrofo",
+    "Anna fiets's": "forma sbagliata",
+    "Annas' fiets": "forma sbagliata"
+   },
+   "tt": "la bici di Anna"
+  },
+  {
+   "t": "mc",
+   "q": "la bici di Jan",
+   "o": [
+    "Jans fiets",
+    "Jan's fiets",
+    "Jans' fiets",
+    "Jan fiets"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Dopo consonante: <b>-s</b> senza apostrofo.",
+   "g": {
+    "Jans fiets": "la bici di Jan (corretto)",
+    "Jan's fiets": "apostrofo all'inglese: sbagliato",
+    "Jans' fiets": "forma sbagliata",
+    "Jan fiets": "manca la -s"
+   },
+   "tt": "la bici di Jan"
+  },
+  {
+   "t": "mc",
+   "q": "di sera",
+   "o": [
+    "'s avonds",
+    "s'avonds",
+    "'S avonds",
+    "savonds"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Si scrive <b>'s avonds</b>: apostrofo prima della s, poi uno spazio.",
+   "g": {
+    "'s avonds": "di sera (corretto)",
+    "s'avonds": "l'apostrofo va prima della s",
+    "'S avonds": "la s resta sempre minuscola",
+    "savonds": "manca l'apostrofo"
+   },
+   "tt": "di sera"
+  },
+  {
+   "t": "fill",
+   "q": "Ik woon in ___.",
+   "h": "Belgio",
+   "a": [
+    "België"
+   ],
+   "e": "<b>België</b>, con la dieresi.",
+   "tt": "Abito in Belgio."
+  }
+ ],
+ "items": [
+  {
+   "t": "mc",
+   "q": "Quale frase è scritta correttamente?",
+   "o": [
+    "Mijn verjaardag is in mei.",
+    "Mijn verjaardag is in Mei.",
+    "Mijn Verjaardag is in mei.",
+    "mijn verjaardag is in mei."
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Mesi e nomi comuni minuscoli, maiuscola solo all'inizio."
+  },
+  {
+   "t": "mc",
+   "q": "Ik heb drie ___ gemaakt.",
+   "h": "foto, plurale",
+   "o": [
+    "foto's",
+    "fotos",
+    "fotoos"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<b>foto's</b>, con l'apostrofo."
+  },
+  {
+   "t": "order",
+   "q": "Il mio compleanno è martedì.",
+   "a": "Mijn verjaardag is dinsdag",
+   "alt": [
+    "Dinsdag is mijn verjaardag"
+   ],
+   "x": [
+    "mij",
+    "zijn"
+   ],
+   "e": "<b>dinsdag</b> si scrive minuscolo (maiuscolo solo a inizio frase)."
+  },
+  {
+   "t": "tr",
+   "q": "Abito in Belgio.",
+   "a": [
+    "Ik woon in België"
+   ],
+   "e": "<b>België</b>, con la dieresi."
+  },
+  {
+   "t": "mc",
+   "q": "il compleanno di Marco",
+   "o": [
+    "Marco's verjaardag",
+    "Marcos verjaardag",
+    "Marco verjaardag's",
+    "Marcos' verjaardag"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Il nome finisce in <i>o</i> lunga → <b>Marco's</b>."
+  },
+  {
+   "t": "mc",
+   "q": "il compleanno di Anne",
+   "o": [
+    "Annes verjaardag",
+    "Anne's verjaardag",
+    "Anne verjaardag",
+    "Annes' verjaardag"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Il nome finisce in <i>-e</i> muta → <b>Annes</b>, senza apostrofo."
+  },
+  {
+   "t": "fill",
+   "q": "In Italië zijn veel oude ___.",
+   "h": "rovina, plurale",
+   "a": [
+    "ruïnes"
+   ],
+   "e": "<b>ruïnes</b>: la dieresi resta anche al plurale."
+  },
+  {
+   "t": "mc",
+   "q": "l'incidente d'auto",
+   "o": [
+    "het auto-ongeluk",
+    "het autoongeluk",
+    "het autoöngeluk",
+    "het auto ongeluk"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<i>auto</i> + <i>ongeluk</i>: vocali che si scontrano → <b>trattino</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Quale frase è scritta correttamente?",
+   "o": [
+    "Hij zegt: \"Ik kom morgen.\"",
+    "Hij zegt: \"ik kom morgen.\"",
+    "Hij zegt, \"Ik kom morgen\"."
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Discorso diretto: <b>due punti</b>, virgolette e maiuscola."
+  },
+  {
+   "t": "mc",
+   "q": "Omdat het regent ___ blijf ik thuis. Tra le due parti di solito si mette:",
+   "o": [
+    "la virgola",
+    "il punto",
+    "i due punti",
+    "il punto e virgola"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Subordinata all'inizio → di solito una <b>virgola</b> tra i due verbi."
+  },
+  {
+   "t": "mc",
+   "q": "il fiume Yser (in Belgio)",
+   "o": [
+    "de IJzer",
+    "de Ijzer",
+    "de ijzer",
+    "de IJZER"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<b>ij</b> all'inizio di un nome proprio: entrambe le lettere maiuscole, <b>IJ</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Ze spreekt goed ___.",
+   "o": [
+    "Italiaans",
+    "italiaans"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Le lingue si scrivono con la maiuscola: <b>Italiaans</b>."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "g": {
+    "Mijn verjaardag is in mei.": "Il mio compleanno è a maggio (corretta)",
+    "Mijn verjaardag is in Mei.": "i mesi si scrivono minuscoli",
+    "Mijn Verjaardag is in mei.": "i nomi comuni sono minuscoli",
+    "mijn verjaardag is in mei.": "la frase comincia con la maiuscola"
+   },
+   "t": "Il mio compleanno è a maggio."
+  },
+  "1": {
+   "g": {
+    "foto's": "foto (plurale, corretto)",
+    "fotos": "manca l'apostrofo",
+    "fotoos": "forma che non esiste"
+   },
+   "t": "Ho fatto tre foto."
+  },
+  "2": {
+   "t": "Il mio compleanno è martedì."
+  },
+  "3": {
+   "t": "Abito in Belgio."
+  },
+  "4": {
+   "g": {
+    "Marco's verjaardag": "il compleanno di Marco (corretto)",
+    "Marcos verjaardag": "dopo vocale lunga serve l'apostrofo",
+    "Marco verjaardag's": "forma sbagliata",
+    "Marcos' verjaardag": "forma sbagliata"
+   },
+   "t": "il compleanno di Marco"
+  },
+  "5": {
+   "g": {
+    "Annes verjaardag": "il compleanno di Anne (corretto)",
+    "Anne's verjaardag": "dopo -e muta niente apostrofo",
+    "Anne verjaardag": "manca la -s",
+    "Annes' verjaardag": "forma sbagliata"
+   },
+   "t": "il compleanno di Anne"
+  },
+  "6": {
+   "t": "In Italia ci sono molte rovine antiche."
+  },
+  "7": {
+   "g": {
+    "het auto-ongeluk": "l'incidente d'auto (corretto)",
+    "het autoongeluk": "serve il trattino",
+    "het autoöngeluk": "nei composti si usa il trattino, non la dieresi",
+    "het auto ongeluk": "le parole composte si scrivono unite"
+   },
+   "t": "l'incidente d'auto"
+  },
+  "8": {
+   "g": {
+    "Hij zegt: \"Ik kom morgen.\"": "Dice: \"Vengo domani.\" (corretta)",
+    "Hij zegt: \"ik kom morgen.\"": "il discorso diretto comincia con la maiuscola",
+    "Hij zegt, \"Ik kom morgen\".": "serve i due punti, non la virgola; e il punto va dentro le virgolette"
+   },
+   "t": "Dice: \"Vengo domani.\""
+  },
+  "9": {
+   "t": "Siccome piove, resto a casa."
+  },
+  "10": {
+   "g": {
+    "de IJzer": "lo Yser (corretto)",
+    "de Ijzer": "la j di ij va anch'essa maiuscola",
+    "de ijzer": "i nomi propri vogliono la maiuscola",
+    "de IJZER": "tutto maiuscolo: non si usa"
+   },
+   "t": "lo Yser"
+  },
+  "11": {
+   "g": {
+    "Italiaans": "italiano (lingua, corretto)",
+    "italiaans": "le lingue si scrivono con la maiuscola"
+   },
+   "t": "Parla bene l'italiano."
+  }
+ }
+}

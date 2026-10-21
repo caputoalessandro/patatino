@@ -1,0 +1,692 @@
+{
+ "id": "u19",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "Zaterdag ___ we in twee uur van Gent naar Brugge gefietst.",
+   "o": [
+    "zijn",
+    "hebben",
+    "is",
+    "heeft"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "C'è una meta (<i>naar Brugge</i>): fietsen vuole <b>zijn</b>. Senza meta diresti <i>we hebben twee uur gefietst</i>.",
+   "g": {
+    "zijn": "siamo (zijn: c'è una meta)",
+    "hebben": "abbiamo: con una meta (naar Brugge) serve zijn",
+    "is": "è: il soggetto è we (plurale)",
+    "heeft": "ha: soggetto e ausiliare sbagliati"
+   },
+   "tt": "Sabato siamo andati in bici da Gand a Bruges in due ore."
+  },
+  {
+   "t": "mc",
+   "q": "Ik heb overal mijn sleutel ___, maar hij is weg.",
+   "o": [
+    "gezocht",
+    "gezoekt",
+    "gezoekd",
+    "gezochten"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Trabocchetto: <i>zoeken</i> sembra debole, ma è irregolare: <b>gezocht</b> (come <i>kopen</i> → <i>gekocht</i>).",
+   "g": {
+    "gezocht": "cercato (corretta)",
+    "gezoekt": "zoeken è irregolare: gezocht",
+    "gezoekd": "zoeken è irregolare, e comunque k vorrebbe -t",
+    "gezochten": "forma che non esiste"
+   },
+   "tt": "Ho cercato la chiave dappertutto, ma è sparita."
+  },
+  {
+   "t": "fill",
+   "q": "Heb je je moeder al ___? Ze wacht op je telefoontje.",
+   "h": "opbellen",
+   "a": [
+    "opgebeld"
+   ],
+   "e": "Separabile: <b>ge-</b> fra particella e verbo, e l non è nel kofschip → <b>-d</b>: <i>opgebeld</i>.",
+   "tt": "Hai già chiamato tua madre? Aspetta la tua telefonata."
+  },
+  {
+   "t": "fill",
+   "q": "Waarom ___ je gisteren niet naar het feest gekomen?",
+   "h": "ausiliare",
+   "a": [
+    "ben"
+   ],
+   "e": "<i>komen</i> (verso un luogo) vuole <b>zijn</b>. Con l'inversione <i>je</i> viene dopo il verbo e la -t cade: <b>ben je</b>, non <s>bent je</s>.",
+   "tt": "Perché ieri non sei venuto alla festa?"
+  },
+  {
+   "t": "tr",
+   "q": "Ieri sono rimasto a casa e ho letto un libro.",
+   "a": [
+    "Gisteren ben ik thuis gebleven en heb ik een boek gelezen",
+    "Gisteren ben ik thuis gebleven en ik heb een boek gelezen",
+    "Gisteren ben ik thuisgebleven en heb ik een boek gelezen",
+    "Gisteren ben ik thuisgebleven en ik heb een boek gelezen",
+    "Ik ben gisteren thuis gebleven en ik heb een boek gelezen",
+    "Ik ben gisteren thuisgebleven en ik heb een boek gelezen",
+    "Ik ben gisteren thuis gebleven en heb een boek gelezen",
+    "Ik ben gisteren thuisgebleven en heb een boek gelezen"
+   ],
+   "e": "<i>blijven</i> vuole <b>zijn</b>, <i>lezen</i> vuole <b>hebben</b>; i participi (<i>gebleven</i>, <i>gelezen</i>) vanno in fondo a ciascuna frase."
+  },
+  {
+   "t": "tr",
+   "q": "Mia sorella è andata in bici ad Anversa.",
+   "a": [
+    "Mijn zus is naar Antwerpen gefietst",
+    "Mijn zus is met de fiets naar Antwerpen gegaan",
+    "Mijn zus is met de fiets naar Antwerpen gereden",
+    "Mijn zus is per fiets naar Antwerpen gegaan"
+   ],
+   "e": "Con una meta (<i>naar Antwerpen</i>) anche <i>fietsen</i> vuole <b>zijn</b>: <i>is … gefietst</i>, non <s>heeft gefietst</s>."
+  },
+  {
+   "t": "order",
+   "q": "Ieri il treno da Bruxelles è arrivato in ritardo.",
+   "a": "Gisteren is de trein uit Brussel te laat aangekomen",
+   "alt": [
+    "De trein uit Brussel is gisteren te laat aangekomen"
+   ],
+   "x": [
+    "heeft",
+    "geaankomen"
+   ],
+   "e": "<i>aankomen</i> vuole <b>zijn</b>; separabile: <b>aangekomen</b> (ge- in mezzo), in fondo alla frase.",
+   "tt": "Ieri il treno da Bruxelles è arrivato in ritardo."
+  },
+  {
+   "t": "order",
+   "q": "Hai già pagato il caffè?",
+   "a": "Heb je de koffie al betaald",
+   "alt": [
+    "Heb je al de koffie betaald"
+   ],
+   "x": [
+    "gebetaald",
+    "ben"
+   ],
+   "e": "Domanda: ausiliare al primo posto (<b>Heb je</b>), participio in fondo. <i>be-</i> è inseparabile: <b>betaald</b>, senza ge-.",
+   "tt": "Hai già pagato il caffè?"
+  }
+ ],
+ "en": {
+  "it": "The present perfect",
+  "note": "\n<h3>The idea</h3>\n<p>The <b>voltooide tijd</b> looks like the English present perfect: an auxiliary (<b>hebben</b> or <b>zijn</b>) + the <b>past participle</b>. <i>Ik heb gewerkt</i> = I have worked / I worked. <i>Ik ben gegaan</i> = I have gone / I went. But it's used much more widely than in English: it's the most common past tense in conversation, even with a finished time like \"yesterday\". <i>Ik heb gisteren gewerkt</i> = I worked yesterday.</p>\n<h3>Position: the participle goes to the end</h3>\n<p>The conjugated auxiliary is in <b>second position</b>, the participle goes to the <b>end of the sentence</b>: the same frame as with modal verbs.</p>\n<p><i>Ik <b>heb</b> gisteren een boek <b>gelezen</b>.</i> — <i>Gisteren <b>heb</b> ik een boek <b>gelezen</b>.</i></p>\n<h3>Weak verbs: ge- + stem + -t or -d</h3>\n<p>Most verbs form the participle like this: <b>ge</b> + stem + <b>t</b> or <b>d</b>. To choose between t and d there's a trick: the word <b>'t kofschip</b>. If the stem ends in one of the consonants of <b>t, k, f, s, ch, p</b>, add <b>-t</b>; in all other cases <b>-d</b>.</p>\n<table><tr><th>infinitive</th><th>stem</th><th>participle</th></tr>\n<tr><td>werken</td><td>werk (k)</td><td>gewerkt</td></tr>\n<tr><td>fietsen</td><td>fiets (s)</td><td>gefietst</td></tr>\n<tr><td>spelen</td><td>speel (l)</td><td>gespeeld</td></tr>\n<tr><td>wonen</td><td>woon (n)</td><td>gewoond</td></tr></table>\n<p>Watch out for verbs with <b>v</b> or <b>z</b> in the infinitive: look at the infinitive, not the ik form. <i>reizen</i> → ik reis, but z isn't in kofschip: <b>gereisd</b>. If the stem already ends in t or d, add nothing: <i>wachten</i> → <b>gewacht</b>.</p>\n<h3>Strong verbs: participle in -en</h3>\n<p>Many common verbs have a participle in <b>-en</b>, often with a vowel change, just like English \"drink, drunk\" or \"speak, spoken\". You have to learn them by heart (<i>zijn</i> and <i>hebben</i> are completely irregular):</p>\n<table><tr><th>infinitive</th><th>participle</th><th>infinitive</th><th>participle</th></tr>\n<tr><td>eten</td><td>gegeten</td><td>drinken</td><td>gedronken</td></tr>\n<tr><td>lezen</td><td>gelezen</td><td>spreken</td><td>gesproken</td></tr>\n<tr><td>zien</td><td>gezien</td><td>nemen</td><td>genomen</td></tr>\n<tr><td>gaan</td><td>gegaan</td><td>komen</td><td>gekomen</td></tr>\n<tr><td>doen</td><td>gedaan</td><td>blijven</td><td>gebleven</td></tr>\n<tr><td>zijn</td><td>geweest</td><td>hebben</td><td>gehad</td></tr></table>\n<p>Some are irregular even though they end in -t: <i>kopen</i> → <b>gekocht</b>, <i>zoeken</i> → <b>gezocht</b> (compare English buy → bought, seek → sought).</p>\n<h3>Separable and inseparable verbs</h3>\n<p>In separable verbs <b>ge-</b> goes between the particle and the verb: <i>opbellen</i> → <b>opgebeld</b>, <i>opstaan</i> → <b>opgestaan</b>. Verbs with <b>be-, ver-, ont-, her-</b> don't take ge-: <i>betalen</i> → <b>betaald</b>, <i>verhuizen</i> → <b>verhuisd</b>, <i>vergeten</i> → <b>vergeten</b>.</p>\n<h3>Hebben or zijn?</h3>\n<p>Almost all verbs use <b>hebben</b> (have), as in English. But some use <b>zijn</b> (be), a bit like old-fashioned English \"he is gone\". You use <b>zijn</b> with:</p>\n<ul>\n<li>verbs of <b>moving to a place</b>: gaan, komen, vertrekken, aankomen, terugkomen, verhuizen;</li>\n<li>verbs of <b>change</b> (worden = to become) and with <b>zijn</b> and <b>blijven</b>: <i>Ik ben thuis gebleven</i> (I stayed at home).</li>\n</ul>\n<p>With fietsen, rijden, wandelen, zwemmen: <b>hebben</b> if the activity is what counts, <b>zijn</b> if there's a destination. <i>Ik heb gefietst</i> but <i>Ik ben naar Gent gefietst</i>.</p>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Putting the participle right after the auxiliary, as in English: <s>Ik heb gelezen een boek</s> → <b>Ik heb een boek gelezen</b>.</li>\n<li>Always using hebben because English always uses \"have\": <s>Ik heb naar Gent gegaan</s> → <b>Ik ben naar Gent gegaan</b>.</li>\n<li>Using zijn for movement with no destination: <s>Ik ben gisteren gefietst</s> → <b>Ik heb gisteren gefietst</b> (but: <i>Ik ben naar Gent gefietst</i>).</li>\n<li>Mixing up t/d: <s>gewoont</s> → <b>gewoond</b>, <s>gewerkd</s> → <b>gewerkt</b>.</li>\n<li>Putting ge- on inseparable verbs: <s>gebetaald</s> → <b>betaald</b>.</li>\n</ul>",
+  "vlaams": "In Flanders people say <b>naar de zee gaan</b> (to go to the seaside), while in the Netherlands \"naar zee\" is more common. With <b>gij/ge</b> the auxiliary zijn becomes <i>zijt</i>: \"Zijt ge gisteren uitgegaan?\" (did you go out last night?).",
+  "vocab": [
+   [
+    "gisteren",
+    "yesterday"
+   ],
+   [
+    "vorig",
+    "last (vorige week = last week)"
+   ],
+   [
+    "het weekend",
+    "the weekend"
+   ],
+   [
+    "kopen",
+    "to buy"
+   ],
+   [
+    "reizen",
+    "to travel"
+   ],
+   [
+    "wandelen",
+    "to walk, to go for a walk"
+   ],
+   [
+    "spelen",
+    "to play"
+   ],
+   [
+    "verhuizen",
+    "to move (house)"
+   ],
+   [
+    "de film",
+    "the movie, the film"
+   ],
+   [
+    "de zee",
+    "the sea, the seaside"
+   ],
+   [
+    "het brood",
+    "the bread"
+   ],
+   [
+    "de krant",
+    "the newspaper"
+   ]
+  ],
+  "core": [
+   [
+    "hebben",
+    "to have (auxiliary)"
+   ],
+   [
+    "zijn",
+    "to be (auxiliary)"
+   ],
+   [
+    "ge-",
+    "participle prefix"
+   ],
+   [
+    "'t kofschip",
+    "t, k, f, s, ch, p → -t"
+   ]
+  ],
+  "items": [
+   {
+    "t": "fill",
+    "q": "Ik heb gisteren een boek ___.",
+    "h": "lezen",
+    "a": [
+     "gelezen"
+    ],
+    "e": "Strong verb: lezen → <b>gelezen</b>, at the end of the sentence."
+   },
+   {
+    "t": "mc",
+    "q": "Vorige week ___ we naar de zee gereden.",
+    "o": [
+     "zijn",
+     "hebben",
+     "is",
+     "worden"
+    ],
+    "a": 0,
+    "e": "rijden with a destination (naar de zee) → <b>zijn</b>."
+   },
+   {
+    "t": "order",
+    "q": "I bought a newspaper.",
+    "a": "Ik heb een krant gekocht",
+    "alt": [
+     "Een krant heb ik gekocht"
+    ],
+    "x": [
+     "ben",
+     "gekoopt"
+    ],
+    "e": "kopen is irregular: <b>gekocht</b>."
+   },
+   {
+    "t": "tr",
+    "q": "She stayed at home.",
+    "a": [
+     "Ze is thuis gebleven",
+     "Zij is thuis gebleven",
+     "Ze is thuisgebleven",
+     "Zij is thuisgebleven"
+    ],
+    "e": "blijven takes <b>zijn</b>: is … <b>gebleven</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Hoe laat ben je ___?",
+    "h": "opstaan",
+    "o": [
+     "opgestaan",
+     "geopstaan",
+     "opgestaant",
+     "opstaan"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Separable: ge- in the middle, <b>opgestaan</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Wij ___ in het weekend gewandeld.",
+    "h": "auxiliary",
+    "a": [
+     "hebben"
+    ],
+    "e": "wandelen with no destination → <b>hebben</b>."
+   },
+   {
+    "t": "mc",
+    "q": "De kinderen hebben in de tuin ___.",
+    "o": [
+     "gespeeld",
+     "gespeelt",
+     "gespelen",
+     "speelden"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "l isn't in kofschip → <b>-d</b>: gespeeld."
+   },
+   {
+    "t": "tr",
+    "q": "I saw a nice movie.",
+    "a": [
+     "Ik heb een mooie film gezien",
+     "Ik heb een goede film gezien",
+     "Ik heb een leuke film gezien"
+    ],
+    "e": "<b>heb</b> … <b>gezien</b>; participle at the end."
+   },
+   {
+    "t": "mc",
+    "q": "Which sentence is correct?",
+    "o": [
+     "Ik heb gisteren met Anna gesproken.",
+     "Ik heb gesproken gisteren met Anna.",
+     "Ik gesproken heb gisteren met Anna.",
+     "Gisteren ik heb met Anna gesproken."
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Auxiliary in second position, participle <b>at the end</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Mijn zus is vorig jaar naar Antwerpen ___.",
+    "h": "verhuizen",
+    "a": [
+     "verhuisd"
+    ],
+    "e": "ver- with no ge-, z → s + d: <b>verhuisd</b>."
+   },
+   {
+    "t": "order",
+    "q": "The train left at eight.",
+    "a": "De trein is om acht uur vertrokken",
+    "alt": [
+     "Om acht uur is de trein vertrokken"
+    ],
+    "x": [
+     "heeft",
+     "gevertrokken"
+    ],
+    "e": "vertrekken takes <b>zijn</b>; ver- with no ge-: <b>vertrokken</b>."
+   },
+   {
+    "t": "tr",
+    "q": "What did you do yesterday?",
+    "a": [
+     "Wat heb je gisteren gedaan",
+     "Wat heb jij gisteren gedaan",
+     "Wat hebt u gisteren gedaan",
+     "Wat heeft u gisteren gedaan"
+    ],
+    "e": "doen → <b>gedaan</b>. In the question: Wat <b>heb je</b> … gedaan?"
+   }
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "werken → past participle",
+    "o": [
+     "gewerkt",
+     "gewerkd",
+     "werkt",
+     "gewerken"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "k is in kofschip → <b>-t</b>: gewerkt.",
+    "g": {
+     "gewerkt": "worked",
+     "gewerkd": "k is in kofschip: you need -t",
+     "werkt": "works (present)",
+     "gewerken": "doesn't exist"
+    },
+    "tt": "worked"
+   },
+   {
+    "t": "mc",
+    "q": "wonen → past participle",
+    "o": [
+     "gewoond",
+     "gewoont",
+     "gewonen",
+     "woonde"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "n isn't in kofschip → <b>-d</b>: gewoond.",
+    "g": {
+     "gewoond": "lived",
+     "gewoont": "n isn't in kofschip: you need -d",
+     "gewonen": "doesn't exist",
+     "woonde": "lived (simple past, unit 20)"
+    },
+    "tt": "lived"
+   },
+   {
+    "t": "mc",
+    "q": "reizen → past participle",
+    "o": [
+     "gereisd",
+     "gereist",
+     "gereizd",
+     "gereisen"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "The infinitive has a z, which isn't in kofschip → <b>-d</b>; at the end of a syllable it's spelled s: gereisd.",
+    "g": {
+     "gereisd": "traveled",
+     "gereist": "look at the infinitive (z): you need -d",
+     "gereizd": "before d you write s, not z",
+     "gereisen": "doesn't exist"
+    },
+    "tt": "traveled"
+   },
+   {
+    "t": "mc",
+    "q": "Ik ___ naar Gent gegaan.",
+    "o": [
+     "ben",
+     "heb",
+     "is",
+     "word"
+    ],
+    "a": 0,
+    "e": "Moving to a place → <b>zijn</b>: ik <b>ben</b> gegaan.",
+    "g": {
+     "ben": "am (auxiliary zijn)",
+     "heb": "have: gaan takes zijn",
+     "is": "is (he/she): with ik you need ben",
+     "word": "become"
+    },
+    "tt": "I went to Ghent."
+   },
+   {
+    "t": "mc",
+    "q": "Ik ___ een film gezien.",
+    "o": [
+     "heb",
+     "ben",
+     "heeft",
+     "hebt"
+    ],
+    "a": 0,
+    "e": "zien takes <b>hebben</b>: ik <b>heb</b> gezien.",
+    "g": {
+     "heb": "have",
+     "ben": "am: zien takes hebben",
+     "heeft": "has (he/she)",
+     "hebt": "have (you)"
+    },
+    "tt": "I saw a movie."
+   },
+   {
+    "t": "mc",
+    "q": "drinken → past participle",
+    "o": [
+     "gedronken",
+     "gedrinkt",
+     "gedrinken",
+     "gedronkt"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Strong verb: <b>gedronken</b> (like drink → drunk).",
+    "g": {
+     "gedronken": "drunk",
+     "gedrinkt": "doesn't exist: drinken is strong",
+     "gedrinken": "doesn't exist: the vowel changes",
+     "gedronkt": "doesn't exist"
+    },
+    "tt": "drunk"
+   },
+   {
+    "t": "mc",
+    "q": "opbellen → past participle",
+    "o": [
+     "opgebeld",
+     "geopbeld",
+     "opgebelt",
+     "gebeld op"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "ge- goes between the particle and the verb: <b>opgebeld</b>.",
+    "g": {
+     "opgebeld": "called (on the phone)",
+     "geopbeld": "ge- goes after the particle",
+     "opgebelt": "l isn't in kofschip: you need -d",
+     "gebeld op": "the participle is written as one word"
+    },
+    "tt": "called"
+   },
+   {
+    "t": "mc",
+    "q": "betalen → past participle",
+    "o": [
+     "betaald",
+     "gebetaald",
+     "betaalt",
+     "gebetaalt"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "be- is inseparable: no ge-, <b>betaald</b>.",
+    "g": {
+     "betaald": "paid",
+     "gebetaald": "with be- there's no ge-",
+     "betaalt": "pays (present)",
+     "gebetaalt": "no ge-, and you need -d"
+    },
+    "tt": "paid"
+   },
+   {
+    "t": "fill",
+    "q": "Wij hebben brood ___.",
+    "h": "eten",
+    "a": [
+     "gegeten"
+    ],
+    "e": "Strong verb: eten → <b>gegeten</b>.",
+    "tt": "We ate bread."
+   },
+   {
+    "t": "order",
+    "q": "I worked yesterday.",
+    "a": "Gisteren heb ik gewerkt",
+    "alt": [
+     "Ik heb gisteren gewerkt"
+    ],
+    "x": [
+     "ben",
+     "gewerkd"
+    ],
+    "e": "Auxiliary in second position, participle at the end."
+   }
+  ],
+  "gloss": {
+   "0": {
+    "t": "I read a book yesterday."
+   },
+   "1": {
+    "g": {
+     "zijn": "are (zijn with a destination)",
+     "hebben": "have: with a destination you need zijn",
+     "is": "is (singular)",
+     "worden": "become"
+    },
+    "t": "Last week we drove to the seaside."
+   },
+   "2": {
+    "t": "I bought a newspaper."
+   },
+   "3": {
+    "t": "She stayed at home."
+   },
+   "4": {
+    "g": {
+     "opgestaan": "got up",
+     "geopstaan": "ge- goes after the particle",
+     "opgestaant": "doesn't exist",
+     "opstaan": "to get up (infinitive)"
+    },
+    "t": "What time did you get up?"
+   },
+   "5": {
+    "t": "We went for a walk over the weekend."
+   },
+   "6": {
+    "g": {
+     "gespeeld": "played",
+     "gespeelt": "l isn't in kofschip: you need -d",
+     "gespelen": "doesn't exist",
+     "speelden": "played (simple past): here you need the participle"
+    },
+    "t": "The children played in the garden."
+   },
+   "7": {
+    "t": "I saw a nice movie."
+   },
+   "8": {
+    "g": {
+     "Ik heb gisteren met Anna gesproken.": "I spoke with Anna yesterday (correct)",
+     "Ik heb gesproken gisteren met Anna.": "the participle goes at the end",
+     "Ik gesproken heb gisteren met Anna.": "the auxiliary must be in second position",
+     "Gisteren ik heb met Anna gesproken.": "after Gisteren you need inversion: heb ik"
+    },
+    "t": "I spoke with Anna yesterday."
+   },
+   "9": {
+    "t": "Last year my sister moved to Antwerp."
+   },
+   "10": {
+    "t": "The train left at eight."
+   },
+   "11": {
+    "t": "What did you do yesterday?"
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "Zaterdag ___ we in twee uur van Gent naar Brugge gefietst.",
+    "o": [
+     "zijn",
+     "hebben",
+     "is",
+     "heeft"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "There's a destination (<i>naar Brugge</i>): fietsen takes <b>zijn</b>. With no destination you'd say <i>we hebben twee uur gefietst</i>.",
+    "g": {
+     "zijn": "auxiliary zijn (correct: there is a destination)",
+     "hebben": "have: with a destination (naar Brugge) you need zijn",
+     "is": "is: the subject is we (plural)",
+     "heeft": "has: wrong subject and wrong auxiliary"
+    },
+    "tt": "On Saturday we cycled from Ghent to Bruges in two hours."
+   },
+   {
+    "t": "mc",
+    "q": "Ik heb overal mijn sleutel ___, maar hij is weg.",
+    "o": [
+     "gezocht",
+     "gezoekt",
+     "gezoekd",
+     "gezochten"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Trap: <i>zoeken</i> looks weak, but it's irregular: <b>gezocht</b> (like <i>kopen</i> → <i>gekocht</i>, and English seek → sought).",
+    "g": {
+     "gezocht": "searched, looked for (correct)",
+     "gezoekt": "zoeken is irregular: gezocht",
+     "gezoekd": "zoeken is irregular, and k would need -t anyway",
+     "gezochten": "doesn't exist"
+    },
+    "tt": "I looked everywhere for my key, but it's gone."
+   },
+   {
+    "t": "fill",
+    "q": "Heb je je moeder al ___? Ze wacht op je telefoontje.",
+    "h": "opbellen",
+    "a": [
+     "opgebeld"
+    ],
+    "e": "Separable: <b>ge-</b> between the particle and the verb, and l isn't in kofschip → <b>-d</b>: <i>opgebeld</i>.",
+    "tt": "Have you called your mother yet? She's waiting for your call."
+   },
+   {
+    "t": "fill",
+    "q": "Waarom ___ je gisteren niet naar het feest gekomen?",
+    "h": "auxiliary",
+    "a": [
+     "ben"
+    ],
+    "e": "<i>komen</i> (to a place) takes <b>zijn</b>. With inversion <i>je</i> comes after the verb and the -t drops: <b>ben je</b>, not <s>bent je</s>.",
+    "tt": "Why didn't you come to the party yesterday?"
+   },
+   {
+    "t": "tr",
+    "q": "Yesterday I stayed at home and read a book.",
+    "a": [
+     "Gisteren ben ik thuis gebleven en heb ik een boek gelezen",
+     "Gisteren ben ik thuis gebleven en ik heb een boek gelezen",
+     "Gisteren ben ik thuisgebleven en heb ik een boek gelezen",
+     "Gisteren ben ik thuisgebleven en ik heb een boek gelezen",
+     "Ik ben gisteren thuis gebleven en ik heb een boek gelezen",
+     "Ik ben gisteren thuisgebleven en ik heb een boek gelezen",
+     "Ik ben gisteren thuis gebleven en heb een boek gelezen",
+     "Ik ben gisteren thuisgebleven en heb een boek gelezen"
+    ],
+    "e": "<i>blijven</i> takes <b>zijn</b>, <i>lezen</i> takes <b>hebben</b>; the participles (<i>gebleven</i>, <i>gelezen</i>) go at the end of each clause. Dutch uses the perfect here even with \"yesterday\"."
+   },
+   {
+    "t": "tr",
+    "q": "My sister cycled to Antwerp.",
+    "a": [
+     "Mijn zus is naar Antwerpen gefietst",
+     "Mijn zus is met de fiets naar Antwerpen gegaan",
+     "Mijn zus is met de fiets naar Antwerpen gereden",
+     "Mijn zus is per fiets naar Antwerpen gegaan"
+    ],
+    "e": "With a destination (<i>naar Antwerpen</i>) even <i>fietsen</i> takes <b>zijn</b>: <i>is … gefietst</i>, not <s>heeft gefietst</s>."
+   },
+   {
+    "t": "order",
+    "q": "Yesterday the train from Brussels arrived late.",
+    "a": "Gisteren is de trein uit Brussel te laat aangekomen",
+    "alt": [
+     "De trein uit Brussel is gisteren te laat aangekomen"
+    ],
+    "x": [
+     "heeft",
+     "geaankomen"
+    ],
+    "e": "<i>aankomen</i> takes <b>zijn</b>; it's separable: <b>aangekomen</b> (ge- in the middle), at the end of the sentence.",
+    "tt": "Yesterday the train from Brussels arrived late."
+   },
+   {
+    "t": "order",
+    "q": "Have you already paid for the coffee?",
+    "a": "Heb je de koffie al betaald",
+    "alt": [
+     "Heb je al de koffie betaald"
+    ],
+    "x": [
+     "gebetaald",
+     "ben"
+    ],
+    "e": "Question: auxiliary first (<b>Heb je</b>), participle at the end. <i>be-</i> is inseparable: <b>betaald</b>, no ge-.",
+    "tt": "Have you already paid for the coffee?"
+   }
+  ]
+ }
+}

@@ -1,0 +1,720 @@
+{
+ "id": "u21",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "Gisteren hebben we ___ op het feest in Antwerpen echt goed geamuseerd.",
+   "o": [
+    "ons",
+    "zich",
+    "onze",
+    "onszelf"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Con <b>we</b> il riflessivo è <b>ons</b>, anche al passato prossimo e con l'inversione. <i>onszelf</i> non si usa con un verbo veramente riflessivo come <i>zich amuseren</i>.",
+   "g": {
+    "ons": "ci (riflessivo di we, corretta)",
+    "zich": "si: solo per lui, lei, loro e u",
+    "onze": "nostro/nostra (possessivo)",
+    "onszelf": "noi stessi: non con un verbo riflessivo vero"
+   },
+   "tt": "Ieri alla festa ad Anversa ci siamo divertiti davvero tanto."
+  },
+  {
+   "t": "mc",
+   "q": "Sorry, ik ___ me vergist: de tram naar het station vertrekt pas om kwart over acht.",
+   "o": [
+    "heb",
+    "ben",
+    "is",
+    "word"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Trabocchetto italiano: \"mi <i>sono</i> sbagliato\", ma in olandese i riflessivi vogliono sempre <b>hebben</b>: <i>ik <b>heb</b> me vergist</i>.",
+   "g": {
+    "heb": "ho (hebben: corretta con i riflessivi)",
+    "ben": "sono: i riflessivi non vogliono zijn",
+    "is": "è: soggetto sbagliato e ausiliare sbagliato",
+    "word": "divento: non è un ausiliare del passato prossimo"
+   },
+   "tt": "Scusa, mi sono sbagliato: il tram per la stazione parte solo alle otto e un quarto."
+  },
+  {
+   "t": "fill",
+   "q": "Vanmorgen heeft Pieter ___ niet geschoren, want hij was te laat.",
+   "h": "si",
+   "a": [
+    "zich"
+   ],
+   "e": "<i>hij</i> → <b>zich</b>. Con l'inversione il riflessivo viene subito dopo il soggetto: <i>heeft Pieter <b>zich</b> niet geschoren</i>.",
+   "tt": "Stamattina Pieter non si è rasato, perché era in ritardo."
+  },
+  {
+   "t": "fill",
+   "q": "Waarom ___ jullie je zo? De trein naar Brugge vertrekt pas om tien uur.",
+   "h": "zich haasten",
+   "a": [
+    "haasten"
+   ],
+   "e": "<i>jullie</i> vuole il verbo al plurale (<b>haasten</b>) e il riflessivo <b>je</b>, non <s>zich</s>.",
+   "tt": "Perché vi affrettate così? Il treno per Bruges parte solo alle dieci."
+  },
+  {
+   "t": "tr",
+   "q": "Ieri ci siamo annoiati al museo.",
+   "a": [
+    "Gisteren hebben we ons in het museum verveeld",
+    "Gisteren hebben wij ons in het museum verveeld",
+    "Gisteren hebben we ons verveeld in het museum",
+    "Gisteren hebben wij ons verveeld in het museum",
+    "We hebben ons gisteren in het museum verveeld",
+    "Wij hebben ons gisteren in het museum verveeld",
+    "We hebben ons gisteren verveeld in het museum",
+    "Wij hebben ons gisteren verveeld in het museum",
+    "Gisteren verveelden we ons in het museum",
+    "Gisteren verveelden wij ons in het museum",
+    "We verveelden ons gisteren in het museum",
+    "Wij verveelden ons gisteren in het museum"
+   ],
+   "e": "Riflessivo + <b>hebben</b>: <i>we <b>hebben ons</b> … verveeld</i>. Con l'inversione: <i>Gisteren hebben we ons…</i>; il participio va in fondo."
+  },
+  {
+   "t": "tr",
+   "q": "Non devi preoccuparti.",
+   "a": [
+    "Je moet je geen zorgen maken",
+    "Jij moet je geen zorgen maken",
+    "U moet zich geen zorgen maken",
+    "U moet u geen zorgen maken",
+    "Je hoeft je geen zorgen te maken",
+    "Jij hoeft je geen zorgen te maken",
+    "U hoeft zich geen zorgen te maken",
+    "U hoeft u geen zorgen te maken"
+   ],
+   "e": "<b>zich zorgen maken</b> con un modale: <i>Je moet <b>je geen</b> zorgen maken</i>. Il primo <i>je</i> è il soggetto, il secondo il riflessivo; <i>zorgen</i> è un nome, quindi la negazione è <b>geen</b>."
+  },
+  {
+   "t": "order",
+   "q": "Stamattina mi sono vestito in fretta.",
+   "a": "Vanmorgen heb ik me snel aangekleed",
+   "alt": [
+    "Ik heb me vanmorgen snel aangekleed"
+   ],
+   "x": [
+    "ben",
+    "geaankleed"
+   ],
+   "e": "<b>hebben</b> (non zijn) + riflessivo dopo il soggetto; <i>aankleden</i> è separabile: participio <b>aangekleed</b>, in fondo.",
+   "tt": "Stamattina mi sono vestito in fretta."
+  },
+  {
+   "t": "order",
+   "q": "Mio fratello non si ricorda più il nome della sua insegnante.",
+   "a": "Mijn broer herinnert zich de naam van zijn lerares niet meer",
+   "alt": [
+    "Mijn broer herinnert zich niet meer de naam van zijn lerares"
+   ],
+   "x": [
+    "hem",
+    "geen"
+   ],
+   "e": "<i>zich herinneren</i>: <b>zich</b> subito dopo il verbo; con un oggetto determinato (<i>de naam</i>) <b>niet meer</b> va di solito dopo l'oggetto.",
+   "tt": "Mio fratello non si ricorda più il nome della sua insegnante."
+  }
+ ],
+ "en": {
+  "it": "Reflexive verbs",
+  "note": "\n<h3>The idea</h3>\n<p>Dutch has reflexive verbs, where the subject does the action to itself, like English \"wash yourself\" or \"enjoy yourself\". They're built with a <b>reflexive pronoun</b>, the equivalent of myself, yourself, himself... The big difference from English: many verbs that are <b>not</b> reflexive in English are reflexive in Dutch, and the short pronoun is used all the time (<i>ik was me</i> = I wash, I get washed). The pronoun goes <b>after the verb</b>, just like an English object.</p>\n<h3>The reflexive pronouns</h3>\n<table><tr><th>subject</th><th>reflexive</th><th>example</th></tr>\n<tr><td>ik</td><td>me (mij)</td><td>ik was me</td></tr>\n<tr><td>jij</td><td>je</td><td>jij wast je</td></tr>\n<tr><td>u</td><td>zich / u</td><td>u wast zich</td></tr>\n<tr><td>hij / zij / het</td><td>zich</td><td>hij wast zich</td></tr>\n<tr><td>wij</td><td>ons</td><td>wij wassen ons</td></tr>\n<tr><td>jullie</td><td>je</td><td>jullie wassen je</td></tr>\n<tr><td>zij (they)</td><td>zich</td><td>zij wassen zich</td></tr></table>\n<p>As you can see, they're almost the same as the object pronouns (unit 4). The only new form is <b>zich</b>, for he, she, they and formal u: it covers himself, herself, itself, themselves. With <b>u</b> you can say both <i>u vergist zich</i> and <i>u vergist u</i>. With <b>jullie</b> the reflexive is <b>je</b>. <i>mij</i> instead of <i>me</i> is used for emphasis or in a more formal style (in Belgium it's common in speech too).</p>\n<h3>Where the pronoun goes</h3>\n<ul>\n<li>Right after the conjugated verb: <i>Ik voel me goed.</i> (I feel good)</li>\n<li>With inversion it comes after the subject: <i>Vandaag voel ik me goed.</i></li>\n<li>In questions with je you get \"je\" twice: <i>Voel je je goed?</i> The first is the subject (you), the second the reflexive (yourself).</li>\n<li>With a modal the infinitive goes to the end: <i>Ik moet me haasten.</i> (I have to hurry)</li>\n<li>With a separable verb the particle goes to the end: <i>Ik kleed me aan.</i> (I get dressed)</li>\n</ul>\n<h3>The perfect takes hebben</h3>\n<p>Reflexive verbs always form the perfect with <b>hebben</b>, as in English: <i>Ik heb me vergist</i> (I was wrong, I made a mistake), <i>We hebben ons geamuseerd</i> (we had a good time).</p>\n<h3>Reflexive in Dutch, not in English</h3>\n<p>This is the real challenge for English speakers: many everyday verbs need a reflexive pronoun in Dutch where English has none. Hurry = <b>zich haasten</b> (<i>ik haast me</i>), remember = <b>zich herinneren</b>, be wrong = <b>zich vergissen</b>, be bored = <b>zich vervelen</b>, get dressed = <b>zich aankleden</b>, shave = <b>zich scheren</b>, worry = <b>zich zorgen maken</b>. That's why it's best to learn these verbs together with <b>zich</b>, as in the word list. On the other hand, \"be called\" is simply <b>heten</b> (<i>ik heet Luca</i>), and get up = <b>opstaan</b>, sit down = <b>gaan zitten</b>.</p>\n<h3>Zichzelf: himself, herself</h3>\n<p>Adding <b>-zelf</b> gives the emphatic form, like English \"myself, himself\": <i>mezelf, jezelf, zichzelf, onszelf</i>. It's used with verbs that aren't normally reflexive, especially after a preposition: <i>Hij denkt alleen aan zichzelf</i> (he only thinks of himself). With truly reflexive verbs it isn't used: <s>ik vergis mezelf</s> → <i>ik vergis me</i>.</p>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Leaving out the reflexive: <s>Ik haast</s> → <b>Ik haast me</b> (I'm hurrying); <s>Ik voel goed</s> → <b>Ik voel me goed</b>.</li>\n<li>Using the -zelf form everywhere, like English \"myself\": <s>Ik vergis mezelf</s> → <b>Ik vergis me</b>.</li>\n<li>Using zich with everyone: <s>Wij wassen zich</s> → <b>Wij wassen ons</b>.</li>\n<li>Making \"be called\" reflexive: <s>Ik heet me Luca</s> → <b>Ik heet Luca</b>.</li>\n</ul>",
+  "vlaams": "With <b>gij/ge</b> the reflexive is <b>u</b>: \"Ge moet u niet haasten\" (you don't have to hurry). Before a party in Flanders you'll often hear \"<b>Amuseer u!</b>\" or \"Amuseer je!\", meaning \"have fun!\".",
+  "vocab": [
+   [
+    "zich wassen",
+    "to wash (oneself)"
+   ],
+   [
+    "zich voelen",
+    "to feel"
+   ],
+   [
+    "zich vergissen",
+    "to be mistaken"
+   ],
+   [
+    "zich herinneren",
+    "to remember"
+   ],
+   [
+    "zich haasten",
+    "to hurry"
+   ],
+   [
+    "zich vervelen",
+    "to be bored"
+   ],
+   [
+    "zich amuseren",
+    "to have fun, enjoy oneself"
+   ],
+   [
+    "zich scheren",
+    "to shave"
+   ],
+   [
+    "zich aankleden",
+    "to get dressed"
+   ],
+   [
+    "zich zorgen maken",
+    "to worry"
+   ],
+   [
+    "denken aan",
+    "to think of/about"
+   ],
+   [
+    "ziek",
+    "sick, ill"
+   ],
+   [
+    "snel",
+    "fast, quickly"
+   ],
+   [
+    "alleen",
+    "alone; only"
+   ],
+   [
+    "het feest",
+    "the party"
+   ]
+  ],
+  "core": [
+   [
+    "me",
+    "myself (reflexive)"
+   ],
+   [
+    "je",
+    "yourself, yourselves (reflexive)"
+   ],
+   [
+    "zich",
+    "himself, herself, themselves"
+   ],
+   [
+    "u",
+    "yourself (formal, reflexive)"
+   ],
+   [
+    "ons",
+    "ourselves (reflexive)"
+   ],
+   [
+    "zichzelf",
+    "himself/herself (emphatic)"
+   ]
+  ],
+  "items": [
+   {
+    "t": "mc",
+    "q": "Ben je ziek? — Ja, ik voel ___ niet goed.",
+    "o": [
+     "me",
+     "mijn",
+     "ik",
+     "zich"
+    ],
+    "a": 0,
+    "e": "ik → <b>me</b>: ik voel me. Unlike English \"I don't feel well\", Dutch needs the reflexive."
+   },
+   {
+    "t": "fill",
+    "q": "Hij scheert ___ elke dag.",
+    "h": "himself",
+    "a": [
+     "zich"
+    ],
+    "e": "hij → <b>zich</b>."
+   },
+   {
+    "t": "fill",
+    "q": "We ___ ons, want de trein vertrekt.",
+    "h": "zich haasten",
+    "a": [
+     "haasten"
+    ],
+    "e": "wij + plural verb: we <b>haasten</b> ons."
+   },
+   {
+    "t": "order",
+    "q": "The children are bored.",
+    "a": "De kinderen vervelen zich",
+    "x": [
+     "onze",
+     "verveelt"
+    ],
+    "e": "zij (they) → <b>zich</b>; plural subject → <b>vervelen</b>."
+   },
+   {
+    "t": "tr",
+    "q": "I was wrong.",
+    "a": [
+     "Ik heb me vergist",
+     "Ik heb mij vergist",
+     "Ik vergiste me",
+     "Ik vergiste mij"
+    ],
+    "e": "\"Be wrong\" = <b>zich vergissen</b>, with <b>hebben</b> in the perfect: ik <b>heb</b> me vergist."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "Mevrouw, u ___ zich.",
+    "h": "zich vergissen",
+    "o": [
+     "vergist",
+     "vergis",
+     "vergissen",
+     "vergisst"
+    ],
+    "a": 0,
+    "e": "u is conjugated like jij: u <b>vergist</b> zich."
+   },
+   {
+    "t": "tr",
+    "q": "Do you remember my name?",
+    "a": [
+     "Herinner je je mijn naam",
+     "Herinner jij je mijn naam",
+     "Herinnert u zich mijn naam",
+     "Herinnert u u mijn naam",
+     "Weet je mijn naam nog",
+     "Weet jij mijn naam nog"
+    ],
+    "e": "<b>Herinner je je</b> mijn naam? The second je is the reflexive."
+   },
+   {
+    "t": "order",
+    "q": "I get dressed quickly.",
+    "a": "Ik kleed me snel aan",
+    "alt": [
+     "Snel kleed ik me aan"
+    ],
+    "x": [
+     "zich",
+     "kleedt"
+    ],
+    "e": "Separable verb: the reflexive after the verb, <b>aan</b> at the end."
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "q": "How do you say 'My name is Luca'?",
+    "o": [
+     "Ik heet Luca",
+     "Ik heet me Luca",
+     "Ik heet zich Luca",
+     "Mij heet Luca"
+    ],
+    "a": 0,
+    "e": "<b>heten</b> is not reflexive: <b>Ik heet Luca</b>."
+   },
+   {
+    "t": "tr",
+    "q": "Sofie is worried.",
+    "a": [
+     "Sofie maakt zich zorgen",
+     "Sofie is bezorgd"
+    ],
+    "e": "<b>zich zorgen maken</b>: Sofie maakt <b>zich</b> zorgen."
+   },
+   {
+    "t": "mc",
+    "q": "Hij denkt alleen aan ___.",
+    "h": "himself",
+    "o": [
+     "zichzelf",
+     "mezelf",
+     "hem",
+     "zijn"
+    ],
+    "a": 0,
+    "e": "After a preposition, \"himself\" = <b>zichzelf</b>."
+   },
+   {
+    "t": "order",
+    "q": "Today I feel good.",
+    "a": "Vandaag voel ik me goed",
+    "alt": [
+     "Ik voel me vandaag goed",
+     "Ik voel me goed vandaag"
+    ],
+    "x": [
+     "zich",
+     "mijn"
+    ],
+    "e": "Inversion: Vandaag <b>voel ik me</b> goed."
+   }
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "Ik was ___.",
+    "o": [
+     "me",
+     "zich",
+     "je",
+     "ons"
+    ],
+    "a": 0,
+    "e": "ik → <b>me</b>.",
+    "g": {
+     "me": "myself (with ik)",
+     "zich": "himself/herself/themselves: only for he, she, they",
+     "je": "yourself: for jij",
+     "ons": "ourselves: for wij"
+    },
+    "tt": "I wash (myself)."
+   },
+   {
+    "t": "mc",
+    "q": "Hij voelt ___ niet goed.",
+    "o": [
+     "zich",
+     "hem",
+     "je",
+     "me"
+    ],
+    "a": 0,
+    "e": "hij → <b>zich</b>.",
+    "g": {
+     "zich": "himself (with hij)",
+     "hem": "him (object pronoun): you need the reflexive here",
+     "je": "yourself: for jij",
+     "me": "myself: for ik"
+    },
+    "tt": "He doesn't feel well."
+   },
+   {
+    "t": "mc",
+    "q": "Wij haasten ___.",
+    "o": [
+     "ons",
+     "zich",
+     "onze",
+     "we"
+    ],
+    "a": 0,
+    "e": "wij → <b>ons</b>.",
+    "g": {
+     "ons": "ourselves (with wij)",
+     "zich": "himself/themselves: not used with wij",
+     "onze": "our (possessive)",
+     "we": "we (subject)"
+    },
+    "tt": "We're hurrying."
+   },
+   {
+    "t": "mc",
+    "q": "Jullie vergissen ___.",
+    "o": [
+     "je",
+     "jullie",
+     "ons",
+     "hun"
+    ],
+    "a": 0,
+    "e": "With jullie the reflexive is <b>je</b>.",
+    "g": {
+     "je": "yourselves (with jullie)",
+     "jullie": "you (plural): not a reflexive",
+     "ons": "ourselves: for wij",
+     "hun": "their / (to) them"
+    },
+    "tt": "You're (all) mistaken."
+   },
+   {
+    "t": "mc",
+    "q": "Ze (they) amuseren ___.",
+    "o": [
+     "zich",
+     "hun",
+     "ze",
+     "hen"
+    ],
+    "a": 0,
+    "e": "zij (they) → <b>zich</b>.",
+    "g": {
+     "zich": "themselves (with they)",
+     "hun": "their / (to) them",
+     "ze": "them (object): you need the reflexive here",
+     "hen": "them (object): you need the reflexive here"
+    },
+    "tt": "They're having fun."
+   },
+   {
+    "t": "mc",
+    "q": "Voel je ___ goed?",
+    "o": [
+     "je",
+     "zich",
+     "jou",
+     "jij"
+    ],
+    "a": 0,
+    "e": "The first je is the subject, the second the reflexive: <b>Voel je je goed?</b>",
+    "g": {
+     "je": "yourself (reflexive for jij)",
+     "zich": "himself/herself: not used with jij",
+     "jou": "you (stressed object form): not reflexive",
+     "jij": "you (subject)"
+    },
+    "tt": "Do you feel OK?"
+   },
+   {
+    "t": "mc",
+    "q": "U moet ___ niet haasten, meneer.",
+    "o": [
+     "zich",
+     "je",
+     "me",
+     "ons"
+    ],
+    "a": 0,
+    "e": "With u: <b>zich</b> (or u).",
+    "g": {
+     "zich": "yourself (formal)",
+     "je": "yourself: informal, doesn't go with u",
+     "me": "myself: for ik",
+     "ons": "ourselves: for wij"
+    },
+    "tt": "There's no need to hurry, sir."
+   },
+   {
+    "t": "order",
+    "q": "Tomorrow I have to hurry.",
+    "a": "Morgen moet ik me haasten",
+    "alt": [
+     "Ik moet me morgen haasten"
+    ],
+    "x": [
+     "zich",
+     "jou"
+    ],
+    "e": "Modal in second position, reflexive after the subject, infinitive at the end."
+   },
+   {
+    "t": "fill",
+    "q": "Ik herinner ___ zijn naam niet.",
+    "h": "myself",
+    "a": [
+     "me",
+     "mij"
+    ],
+    "e": "<b>zich herinneren</b> (to remember): ik herinner <b>me</b>.",
+    "tt": "I don't remember his name."
+   },
+   {
+    "t": "mc",
+    "q": "Which verb is reflexive in Dutch?",
+    "o": [
+     "vergissen",
+     "heten",
+     "opstaan",
+     "vergeten"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<b>zich vergissen</b> = to be mistaken. Heten (to be called), opstaan (to get up) and vergeten (to forget) are not reflexive in Dutch.",
+    "g": {
+     "vergissen": "to be mistaken: zich vergissen, reflexive",
+     "heten": "to be called: NOT reflexive",
+     "opstaan": "to get up: NOT reflexive",
+     "vergeten": "to forget: NOT reflexive"
+    }
+   }
+  ],
+  "gloss": {
+   "0": {
+    "g": {
+     "me": "myself (reflexive for ik)",
+     "mijn": "my (possessive)",
+     "ik": "I (subject)",
+     "zich": "himself/herself: only for he, she, they"
+    },
+    "t": "Are you sick? — Yes, I don't feel well."
+   },
+   "1": {
+    "t": "He shaves every day."
+   },
+   "2": {
+    "t": "We're hurrying, because the train is leaving."
+   },
+   "4": {
+    "t": "I was wrong."
+   },
+   "5": {
+    "g": {
+     "vergist": "are mistaken (with u)",
+     "vergis": "I'm mistaken: with u you need the -t",
+     "vergissen": "we/they are mistaken (plural)",
+     "vergisst": "doesn't exist"
+    },
+    "t": "Madam, you are mistaken."
+   },
+   "6": {
+    "t": "Do you remember my name?"
+   },
+   "8": {
+    "g": {
+     "Ik heet Luca": "My name is Luca (correct)",
+     "Ik heet me Luca": "heten isn't reflexive: no me",
+     "Ik heet zich Luca": "heten isn't reflexive, and zich doesn't go with ik",
+     "Mij heet Luca": "the subject is ik, not mij"
+    },
+    "t": "My name is Luca."
+   },
+   "9": {
+    "t": "Sofie is worried."
+   },
+   "10": {
+    "g": {
+     "zichzelf": "himself",
+     "mezelf": "myself: the subject is hij",
+     "hem": "him (another person)",
+     "zijn": "his (possessive)"
+    },
+    "t": "He only thinks of himself."
+   },
+   "11": {
+    "t": "Today I feel good."
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "Gisteren hebben we ___ op het feest in Antwerpen echt goed geamuseerd.",
+    "o": [
+     "ons",
+     "zich",
+     "onze",
+     "onszelf"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "With <b>we</b> the reflexive is <b>ons</b>, also in the perfect and after inversion. <i>onszelf</i> (ourselves) isn't used with a truly reflexive verb like <i>zich amuseren</i>.",
+    "g": {
+     "ons": "ourselves (reflexive for we, correct)",
+     "zich": "himself/herself/themselves: only for hij, zij and u",
+     "onze": "our (possessive)",
+     "onszelf": "ourselves (emphatic): not with a true reflexive verb"
+    },
+    "tt": "Yesterday we really had a great time at the party in Antwerp."
+   },
+   {
+    "t": "mc",
+    "q": "Sorry, ik ___ me vergist: de tram naar het station vertrekt pas om kwart over acht.",
+    "o": [
+     "heb",
+     "ben",
+     "is",
+     "word"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Reflexive verbs always take <b>hebben</b> in the perfect, just like English \"I have made a mistake\": <i>ik <b>heb</b> me vergist</i>.",
+    "g": {
+     "heb": "have (hebben: correct with reflexives)",
+     "ben": "am: reflexives don't take zijn",
+     "is": "is: wrong subject and wrong auxiliary",
+     "word": "become: not a perfect-tense auxiliary"
+    },
+    "tt": "Sorry, I was wrong: the tram to the station doesn't leave until a quarter past eight."
+   },
+   {
+    "t": "fill",
+    "q": "Vanmorgen heeft Pieter ___ niet geschoren, want hij was te laat.",
+    "h": "himself",
+    "a": [
+     "zich"
+    ],
+    "e": "<i>hij</i> → <b>zich</b>. Unlike English \"he didn't shave\", Dutch needs the reflexive. After inversion it comes right after the subject: <i>heeft Pieter <b>zich</b> niet geschoren</i>.",
+    "tt": "Pieter didn't shave this morning, because he was late."
+   },
+   {
+    "t": "fill",
+    "q": "Waarom ___ jullie je zo? De trein naar Brugge vertrekt pas om tien uur.",
+    "h": "zich haasten",
+    "a": [
+     "haasten"
+    ],
+    "e": "<i>jullie</i> takes the plural verb (<b>haasten</b>) and the reflexive <b>je</b>, not <s>zich</s>.",
+    "tt": "Why are you (all) in such a hurry? The train to Bruges doesn't leave until ten."
+   },
+   {
+    "t": "tr",
+    "q": "We were bored at the museum yesterday.",
+    "a": [
+     "Gisteren hebben we ons in het museum verveeld",
+     "Gisteren hebben wij ons in het museum verveeld",
+     "Gisteren hebben we ons verveeld in het museum",
+     "Gisteren hebben wij ons verveeld in het museum",
+     "We hebben ons gisteren in het museum verveeld",
+     "Wij hebben ons gisteren in het museum verveeld",
+     "We hebben ons gisteren verveeld in het museum",
+     "Wij hebben ons gisteren verveeld in het museum",
+     "Gisteren verveelden we ons in het museum",
+     "Gisteren verveelden wij ons in het museum",
+     "We verveelden ons gisteren in het museum",
+     "Wij verveelden ons gisteren in het museum"
+    ],
+    "e": "English \"be bored\" is a reflexive in Dutch: <b>zich vervelen</b>, with <b>hebben</b> in the perfect: <i>we <b>hebben ons</b> … verveeld</i>. The participle goes at the end."
+   },
+   {
+    "t": "tr",
+    "q": "You don't need to worry.",
+    "a": [
+     "Je moet je geen zorgen maken",
+     "Jij moet je geen zorgen maken",
+     "U moet zich geen zorgen maken",
+     "U moet u geen zorgen maken",
+     "Je hoeft je geen zorgen te maken",
+     "Jij hoeft je geen zorgen te maken",
+     "U hoeft zich geen zorgen te maken",
+     "U hoeft u geen zorgen te maken"
+    ],
+    "e": "<b>zich zorgen maken</b> with a modal: <i>Je moet <b>je geen</b> zorgen maken</i>. The first <i>je</i> is the subject, the second the reflexive; <i>zorgen</i> is a noun, so the negation is <b>geen</b>."
+   },
+   {
+    "t": "order",
+    "q": "This morning I got dressed quickly.",
+    "a": "Vanmorgen heb ik me snel aangekleed",
+    "alt": [
+     "Ik heb me vanmorgen snel aangekleed"
+    ],
+    "x": [
+     "ben",
+     "geaankleed"
+    ],
+    "e": "\"Get dressed\" = <b>zich aankleden</b>, with <b>hebben</b>; the reflexive comes after the subject. <i>aankleden</i> is separable: participle <b>aangekleed</b>, at the end.",
+    "tt": "This morning I got dressed quickly."
+   },
+   {
+    "t": "order",
+    "q": "My brother no longer remembers his teacher's name.",
+    "a": "Mijn broer herinnert zich de naam van zijn lerares niet meer",
+    "alt": [
+     "Mijn broer herinnert zich niet meer de naam van zijn lerares"
+    ],
+    "x": [
+     "hem",
+     "geen"
+    ],
+    "e": "\"Remember\" is reflexive in Dutch: <i>zich herinneren</i>, with <b>zich</b> right after the verb. With a definite object (<i>de naam</i>), <b>niet meer</b> usually goes after the object.",
+    "tt": "My brother no longer remembers his teacher's name."
+   }
+  ]
+ }
+}

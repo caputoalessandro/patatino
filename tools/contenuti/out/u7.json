@@ -1,0 +1,639 @@
+{
+ "id": "u7",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "___ kinderen wonen in Gent? — De kinderen van Tom en Sofie.",
+   "o": [
+    "Welk",
+    "Welke",
+    "Wie",
+    "Wat"
+   ],
+   "a": 1,
+   "e": "<i>het kind</i> è una het-parola, ma al <b>plurale</b> si usa sempre <b>welke</b>: <i>welke kinderen</i>.",
+   "g": {
+    "Welk": "quale (solo het-parola al singolare)",
+    "Welke": "quali (plurale)",
+    "Wie": "chi (da solo, senza nome)",
+    "Wat": "che cosa"
+   },
+   "tt": "Quali bambini abitano a Gand? — I bambini di Tom e Sofie."
+  },
+  {
+   "t": "mc",
+   "q": "Scegli la domanda corretta: «Quando la chiami?»",
+   "o": [
+    "Wanneer bel je haar?",
+    "Wanneer belt je haar?",
+    "Wanneer je belt haar?",
+    "Wanneer bel je zij?"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Parola interrogativa + verbo + soggetto; davanti a <b>je</b> la -t cade; come complemento oggetto serve <b>haar</b>, non <i>zij</i>.",
+   "g": {
+    "Wanneer bel je haar?": "Quando la chiami? (corretta)",
+    "Wanneer belt je haar?": "davanti a je la t cade",
+    "Wanneer je belt haar?": "il verbo deve venire prima del soggetto",
+    "Wanneer bel je zij?": "zij è soggetto: come oggetto serve haar"
+   },
+   "tt": "Quando la chiami?"
+  },
+  {
+   "t": "fill",
+   "q": "___ station is dat? — Gent-Sint-Pieters.",
+   "h": "quale",
+   "a": [
+    "welk"
+   ],
+   "e": "<i>het station</i> è una het-parola al singolare: <b>welk</b>.",
+   "tt": "Che stazione è? — Gent-Sint-Pieters."
+  },
+  {
+   "t": "fill",
+   "q": "Hoeveel kinderen ___ Tom en Sofie? — Drie: twee meisjes en een jongen.",
+   "h": "avere",
+   "a": [
+    "hebben"
+   ],
+   "e": "Il soggetto <i>Tom en Sofie</i> è plurale: <b>hebben</b>. Il verbo viene subito dopo <i>hoeveel kinderen</i>.",
+   "tt": "Quanti bambini hanno Tom e Sofie? — Tre: due femmine e un maschio."
+  },
+  {
+   "t": "tr",
+   "q": "Perché prendete il treno per Bruxelles?",
+   "a": [
+    "Waarom nemen jullie de trein naar Brussel",
+    "Waarom pakken jullie de trein naar Brussel",
+    "Waarom neemt u de trein naar Brussel",
+    "Waarom pakt u de trein naar Brussel",
+    "Waarom neemt ge de trein naar Brussel",
+    "Waarom pakt ge de trein naar Brussel"
+   ],
+   "e": "<b>Waarom</b> + verbo + soggetto: <b>nemen jullie</b>. Per andare verso una città: <b>naar</b> Brussel."
+  },
+  {
+   "t": "tr",
+   "q": "Quanto costano tre chili di formaggio?",
+   "a": [
+    "Hoeveel kosten drie kilo kaas",
+    "Wat kosten drie kilo kaas",
+    "Hoeveel kost drie kilo kaas",
+    "Wat kost drie kilo kaas"
+   ],
+   "e": "Di solito il verbo va al plurale (<b>kosten</b>; con le misure è accettato anche <i>kost</i>), ma <b>kilo</b> resta al singolare dopo un numero, e non serve \"di\": <i>drie kilo kaas</i>."
+  },
+  {
+   "t": "order",
+   "q": "Da dove vengono le ragazze?",
+   "a": "Waar komen de meisjes vandaan",
+   "x": [
+    "komt",
+    "van"
+   ],
+   "e": "<b>Waar</b> all'inizio, <b>vandaan</b> alla fine; il verbo al plurale <b>komen</b> va prima del soggetto.",
+   "tt": "Da dove vengono le ragazze?"
+  },
+  {
+   "t": "order",
+   "q": "Perché non la chiami?",
+   "a": "Waarom bel je haar niet",
+   "x": [
+    "belt",
+    "zij"
+   ],
+   "e": "Verbo prima di <b>je</b> (senza -t), poi il pronome oggetto <b>haar</b> e <b>niet</b> alla fine.",
+   "tt": "Perché non la chiami?"
+  }
+ ],
+ "en": {
+  "it": "Questions",
+  "note": "\n<h3>Yes/no questions: the verb goes first</h3>\n<p>English builds most questions with \"do\" (<i>Do you speak Dutch?</i>). Dutch has no helper like that: you simply <b>swap the order</b> and put the verb in first position, before the subject.</p>\n<table><tr><th>statement</th><th>question</th></tr>\n<tr><td>Hij spreekt Frans.</td><td>Spreekt hij Frans?</td></tr>\n<tr><td>Jij woont in Gent.</td><td>Woon je in Gent?</td></tr>\n<tr><td>U komt morgen.</td><td>Komt u morgen?</td></tr></table>\n<p>Remember the rule from unit 2: in front of <b>je/jij</b> the -t of the verb drops.</p>\n<h3>Questions with a question word</h3>\n<p>The order is: <b>question word + verb + subject</b> + the rest.</p>\n<table><tr><th>Dutch</th><th>English</th><th>example</th></tr>\n<tr><td>wie</td><td>who</td><td>Wie is dat?</td></tr>\n<tr><td>wat</td><td>what</td><td>Wat doe je?</td></tr>\n<tr><td>waar</td><td>where</td><td>Waar woon je?</td></tr>\n<tr><td>wanneer</td><td>when</td><td>Wanneer kom je?</td></tr>\n<tr><td>waarom</td><td>why</td><td>Waarom leer je Nederlands?</td></tr>\n<tr><td>hoe</td><td>how</td><td>Hoe heet je?</td></tr>\n<tr><td>hoeveel</td><td>how much, how many</td><td>Hoeveel kost dat?</td></tr></table>\n<h3>Welke or welk?</h3>\n<p>\"Which\" is <b>welke</b>, except in front of a <b>singular het-word</b>, where it's <b>welk</b>: <i>welk huis?</i> but <i>welke fiets?</i> and <i>welke huizen?</i></p>\n<h3>Where from: waar … vandaan</h3>\n<p>\"Where are you from?\" is <b>Waar kom je vandaan?</b> <i>Waar</i> goes at the start and <i>vandaan</i> at the end of the sentence, a bit like English \"Where do you come <i>from</i>?\"</p>\n<h3>Hoe heet je?</h3>\n<p>To ask someone's name you use <b>hoe</b> (how), not wat: <i>Hoe heet je?</i> Literally \"how are you called?\", not \"what is your name?\".</p>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Looking for a \"do\" helper: <s>Doe je wonen in Gent?</s> → <b>Woon je in Gent?</b></li>\n<li>Keeping statement order after the question word: <s>Waar je woont?</s> → <b>Waar woon je?</b></li>\n<li>Translating \"what's your name\" word for word: <s>Wat heet je?</s> → <b>Hoe heet je?</b></li>\n</ul>",
+  "vlaams": "You'll often hear \"<b>Hoe gaat het met u?</b>\" (How are you?) even in informal settings. A typical answer is \"Goed, merci!\": Flemish people often say <b>merci</b> for thank you, alongside \"dank u\".",
+  "vocab": [
+   [
+    "heten",
+    "to be called (named)"
+   ],
+   [
+    "kosten",
+    "to cost"
+   ],
+   [
+    "vandaag",
+    "today"
+   ],
+   [
+    "de broer",
+    "the brother"
+   ],
+   [
+    "Frans",
+    "French"
+   ],
+   [
+    "de trein",
+    "the train"
+   ],
+   [
+    "het station",
+    "the station"
+   ]
+  ],
+  "core": [
+   [
+    "wie",
+    "who"
+   ],
+   [
+    "wat",
+    "what"
+   ],
+   [
+    "waar",
+    "where"
+   ],
+   [
+    "wanneer",
+    "when"
+   ],
+   [
+    "waarom",
+    "why"
+   ],
+   [
+    "hoe",
+    "how"
+   ],
+   [
+    "hoeveel",
+    "how much, how many"
+   ],
+   [
+    "welke / welk",
+    "which"
+   ]
+  ],
+  "items": [
+   {
+    "t": "mc",
+    "q": "___ woon je? — In Gent.",
+    "o": [
+     "Wie",
+     "Waar",
+     "Wat",
+     "Hoe"
+    ],
+    "a": 1,
+    "e": "<b>Waar</b> = where."
+   },
+   {
+    "t": "mc",
+    "q": "___ heet je? — Sofie.",
+    "o": [
+     "Hoe",
+     "Wat",
+     "Wie",
+     "Welk"
+    ],
+    "a": 0,
+    "e": "You say <b>Hoe</b> heet je? (literally: how are you called)."
+   },
+   {
+    "t": "mc",
+    "q": "___ kom je? — Morgen.",
+    "o": [
+     "Waarom",
+     "Wanneer",
+     "Waar",
+     "Hoeveel"
+    ],
+    "a": 1,
+    "e": "<b>Wanneer</b> = when."
+   },
+   {
+    "t": "mc",
+    "q": "___ huis is van jou?",
+    "o": [
+     "Welk",
+     "Welke"
+    ],
+    "a": 0,
+    "e": "het huis → <b>welk</b>."
+   },
+   {
+    "t": "mc",
+    "q": "___ fiets is van jou?",
+    "o": [
+     "Welk",
+     "Welke"
+    ],
+    "a": 1,
+    "e": "de fiets → <b>welke</b>."
+   },
+   {
+    "t": "fill",
+    "q": "___ kost dat? — Vijf euro.",
+    "a": [
+     "hoeveel",
+     "wat"
+    ],
+    "e": "<b>Hoeveel</b> (or Wat) kost dat?"
+   },
+   {
+    "t": "order",
+    "q": "Are you working today?",
+    "a": "Werk je vandaag",
+    "x": [
+     "werkt",
+     "wat"
+    ],
+    "e": "Verb first, and the -t drops in front of je. No \"do\" or \"are\" helper: just <i>Werk je</i>."
+   },
+   {
+    "t": "tr",
+    "q": "Where do you live?",
+    "a": [
+     "Waar woon je",
+     "Waar woon jij",
+     "Waar woont u",
+     "Waar woont ge"
+    ],
+    "e": "<b>Waar woon je?</b>"
+   },
+   {
+    "t": "mc",
+    "oit": true,
+    "say": "Spreekt hij Frans?",
+    "q": "Hij spreekt Frans. → question:",
+    "o": [
+     "Spreekt hij Frans?",
+     "Hij spreekt Frans?",
+     "Spreek hij Frans?",
+     "Frans spreekt hij?"
+    ],
+    "a": 0,
+    "e": "Verb first: <b>Spreekt hij</b> Frans?"
+   },
+   {
+    "t": "tr",
+    "q": "Why are you learning Dutch?",
+    "a": [
+     "Waarom leer je Nederlands",
+     "Waarom leer jij Nederlands",
+     "Waarom leert u Nederlands"
+    ],
+    "e": "<b>Waarom leer je</b> Nederlands? Dutch uses the simple present here."
+   },
+   {
+    "t": "mc",
+    "q": "___ is dat? — Mijn broer.",
+    "o": [
+     "Wat",
+     "Wie",
+     "Welke",
+     "Hoe"
+    ],
+    "a": 1,
+    "e": "A person → <b>Wie</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Waar kom je ___? — Uit Italië.",
+    "a": [
+     "vandaan"
+    ],
+    "e": "<b>waar … vandaan</b> = where from."
+   }
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "where",
+    "o": [
+     "waar",
+     "wie",
+     "wat",
+     "wanneer"
+    ],
+    "a": 0,
+    "e": "<b>waar</b> = where.",
+    "g": {
+     "waar": "where",
+     "wie": "who",
+     "wat": "what",
+     "wanneer": "when"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "when",
+    "o": [
+     "wanneer",
+     "waarom",
+     "waar",
+     "hoe"
+    ],
+    "a": 0,
+    "e": "<b>wanneer</b> = when.",
+    "g": {
+     "wanneer": "when",
+     "waarom": "why",
+     "waar": "where",
+     "hoe": "how"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "why",
+    "o": [
+     "waarom",
+     "wanneer",
+     "wat",
+     "welke"
+    ],
+    "a": 0,
+    "e": "<b>waarom</b> = why.",
+    "g": {
+     "waarom": "why",
+     "wanneer": "when",
+     "wat": "what",
+     "welke": "which"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "how",
+    "o": [
+     "hoe",
+     "wie",
+     "hoeveel",
+     "waar"
+    ],
+    "a": 0,
+    "e": "<b>hoe</b> = how.",
+    "g": {
+     "hoe": "how",
+     "wie": "who",
+     "hoeveel": "how much, how many",
+     "waar": "where"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "Which question is correct?",
+    "o": [
+     "Woon je in Gent?",
+     "Je woont in Gent?",
+     "Woont je in Gent?",
+     "In Gent je woont?"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Verb first, and no t in front of je.",
+    "g": {
+     "Woon je in Gent?": "Do you live in Ghent? (correct)",
+     "Je woont in Gent?": "intonation only: you need to invert",
+     "Woont je in Gent?": "the t drops in front of je",
+     "In Gent je woont?": "the verb must come before the subject"
+    },
+    "tt": "Do you live in Ghent?"
+   },
+   {
+    "t": "mc",
+    "q": "___ boek? (which)",
+    "o": [
+     "Welk",
+     "Welke"
+    ],
+    "a": 0,
+    "e": "het boek → <b>welk</b>.",
+    "g": {
+     "Welk": "which (singular het-word)",
+     "Welke": "which (de-word or plural)"
+    },
+    "tt": "Which book?"
+   },
+   {
+    "t": "mc",
+    "q": "___ boeken? (which)",
+    "o": [
+     "Welke",
+     "Welk"
+    ],
+    "a": 0,
+    "e": "Plural → <b>welke</b>.",
+    "g": {
+     "Welke": "which (de-words and plurals)",
+     "Welk": "only singular het-words"
+    },
+    "tt": "Which books?"
+   },
+   {
+    "t": "order",
+    "q": "Where do you work?",
+    "a": "Waar werk je",
+    "x": [
+     "werkt",
+     "wie"
+    ],
+    "e": "Question word + verb + subject."
+   },
+   {
+    "t": "order",
+    "q": "How much is it?",
+    "a": "Hoeveel kost dat",
+    "x": [
+     "kosten",
+     "wie"
+    ],
+    "e": "<b>Hoeveel</b> kost dat?"
+   },
+   {
+    "t": "fill",
+    "q": "___ is dat?",
+    "h": "who",
+    "a": [
+     "wie"
+    ],
+    "e": "A person → <b>wie</b>.",
+    "tt": "Who is that?"
+   }
+  ],
+  "gloss": {
+   "0": {
+    "g": {
+     "Wie": "who",
+     "Waar": "where",
+     "Wat": "what",
+     "Hoe": "how"
+    },
+    "t": "Where do you live? In Ghent."
+   },
+   "1": {
+    "g": {
+     "Hoe": "how",
+     "Wat": "what",
+     "Wie": "who",
+     "Welk": "which"
+    },
+    "t": "What's your name? Sofie."
+   },
+   "2": {
+    "g": {
+     "Waarom": "why",
+     "Wanneer": "when",
+     "Waar": "where",
+     "Hoeveel": "how much, how many"
+    },
+    "t": "When are you coming? Tomorrow."
+   },
+   "3": {
+    "g": {
+     "Welk": "which (singular het-word)",
+     "Welke": "which (de-word or plural)"
+    },
+    "t": "Which house is yours?"
+   },
+   "4": {
+    "g": {
+     "Welk": "which (singular het-word)",
+     "Welke": "which (de-word or plural)"
+    },
+    "t": "Which bike is yours?"
+   },
+   "5": {
+    "t": "How much is it? Five euros."
+   },
+   "8": {
+    "g": {
+     "Spreekt hij Frans?": "Does he speak French? (verb first)",
+     "Hij spreekt Frans?": "intonation only: Dutch needs inversion",
+     "Spreek hij Frans?": "with hij the -t stays",
+     "Frans spreekt hij?": "statement order, not question order"
+    },
+    "t": "Does he speak French?"
+   },
+   "10": {
+    "g": {
+     "Wat": "what",
+     "Wie": "who",
+     "Welke": "which",
+     "Hoe": "how"
+    },
+    "t": "Who is that? My brother."
+   },
+   "11": {
+    "t": "Where are you from? From Italy."
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "___ kinderen wonen in Gent? — De kinderen van Tom en Sofie.",
+    "o": [
+     "Welk",
+     "Welke",
+     "Wie",
+     "Wat"
+    ],
+    "a": 1,
+    "e": "<i>het kind</i> is a het-word, but in the <b>plural</b> it's always <b>welke</b>: <i>welke kinderen</i>.",
+    "g": {
+     "Welk": "which (singular het-words only)",
+     "Welke": "which (plural)",
+     "Wie": "who (on its own, without a noun)",
+     "Wat": "what"
+    },
+    "tt": "Which children live in Ghent? — Tom and Sofie's children."
+   },
+   {
+    "t": "mc",
+    "q": "Pick the correct question: \"When are you calling her?\"",
+    "o": [
+     "Wanneer bel je haar?",
+     "Wanneer belt je haar?",
+     "Wanneer je belt haar?",
+     "Wanneer bel je zij?"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Question word + verb + subject; the -t drops in front of <b>je</b>; as the object you need <b>haar</b>, not <i>zij</i> (her, not she).",
+    "g": {
+     "Wanneer bel je haar?": "When are you calling her? (correct)",
+     "Wanneer belt je haar?": "the t drops in front of je",
+     "Wanneer je belt haar?": "the verb must come before the subject",
+     "Wanneer bel je zij?": "zij is a subject (she): as the object you need haar"
+    },
+    "tt": "When are you calling her?"
+   },
+   {
+    "t": "fill",
+    "q": "___ station is dat? — Gent-Sint-Pieters.",
+    "h": "which",
+    "a": [
+     "welk"
+    ],
+    "e": "<i>het station</i> is a singular het-word: <b>welk</b>.",
+    "tt": "Which station is that? — Gent-Sint-Pieters."
+   },
+   {
+    "t": "fill",
+    "q": "Hoeveel kinderen ___ Tom en Sofie? — Drie: twee meisjes en een jongen.",
+    "h": "to have",
+    "a": [
+     "hebben"
+    ],
+    "e": "The subject <i>Tom en Sofie</i> is plural: <b>hebben</b>. The verb comes right after <i>hoeveel kinderen</i>, with no \"do\" helper.",
+    "tt": "How many children do Tom and Sofie have? — Three: two girls and a boy."
+   },
+   {
+    "t": "tr",
+    "q": "Why are you guys taking the train to Brussels?",
+    "a": [
+     "Waarom nemen jullie de trein naar Brussel",
+     "Waarom pakken jullie de trein naar Brussel",
+     "Waarom neemt u de trein naar Brussel",
+     "Waarom pakt u de trein naar Brussel",
+     "Waarom neemt ge de trein naar Brussel",
+     "Waarom pakt ge de trein naar Brussel"
+    ],
+    "e": "<b>Waarom</b> + verb + subject: <b>nemen jullie</b>. Going to a city: <b>naar</b> Brussel."
+   },
+   {
+    "t": "tr",
+    "q": "How much do three kilos of cheese cost?",
+    "a": [
+     "Hoeveel kosten drie kilo kaas",
+     "Wat kosten drie kilo kaas",
+     "Hoeveel kost drie kilo kaas",
+     "Wat kost drie kilo kaas"
+    ],
+    "e": "The verb is usually plural (<b>kosten</b>; with measures <i>kost</i> is also accepted), but <b>kilo</b> stays singular after a number, and there's no \"of\": <i>drie kilo kaas</i>."
+   },
+   {
+    "t": "order",
+    "q": "Where are the girls from?",
+    "a": "Waar komen de meisjes vandaan",
+    "x": [
+     "komt",
+     "van"
+    ],
+    "e": "<b>Waar</b> at the start, <b>vandaan</b> at the end; the plural verb <b>komen</b> comes before the subject.",
+    "tt": "Where are the girls from?"
+   },
+   {
+    "t": "order",
+    "q": "Why don't you call her?",
+    "a": "Waarom bel je haar niet",
+    "x": [
+     "belt",
+     "zij"
+    ],
+    "e": "No \"do\" in Dutch: the verb comes before <b>je</b> (without -t), then the object pronoun <b>haar</b>, and <b>niet</b> at the end.",
+    "tt": "Why don't you call her?"
+   }
+  ]
+ }
+}

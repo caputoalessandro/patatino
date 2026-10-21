@@ -1,0 +1,403 @@
+{
+ "id": "u6",
+ "n": 6,
+ "module": 2,
+ "nl": "Het meervoud",
+ "it": "Il plurale",
+ "note": "\n<h3>L'idea</h3>\n<p>In italiano il plurale cambia l'ultima vocale (libro → libri). In olandese si <b>aggiunge</b> una desinenza. Le desinenze principali sono due: <b>-en</b> e <b>-s</b>. Ricorda che al plurale l'articolo è sempre <b>de</b>.</p>\n<h3>Quale desinenza?</h3>\n<ul>\n<li><b>-en</b> è la regola generale: boek → <b>boeken</b>, fiets → <b>fietsen</b>.</li>\n<li><b>-s</b> per le parole che finiscono in <b>-el, -em, -en, -er, -je</b> (sillaba finale debole): tafel → <b>tafels</b>, meisje → <b>meisjes</b>, kamer → <b>kamers</b>.</li>\n<li><b>-'s</b> (con apostrofo) per le parole che finiscono in <b>a, i, o, u, y</b>: auto → <b>auto's</b>, menu → <b>menu's</b>. L'apostrofo serve a mantenere lunga la vocale.</li>\n</ul>\n<h3>L'ortografia con -en</h3>\n<p>È la stessa logica dei verbi (unità 2): il suono resta uguale, cambia la scrittura.</p>\n<ul>\n<li><b>Vocale lunga</b> scritta doppia diventa singola, perché la sillaba si apre: boom → <b>bo-men</b>, jaar → <b>ja-ren</b>.</li>\n<li><b>Vocale breve</b>: raddoppi la consonante per tenerla breve: man → <b>man-nen</b>, bus → <b>bus-sen</b>.</li>\n<li><b>f → v</b> e <b>s → z</b> tra due vocali: brief → <b>brieven</b>, huis → <b>huizen</b>.</li>\n</ul>\n<h3>Gli irregolari da memorizzare</h3>\n<table><tr><th>singolare</th><th>plurale</th></tr>\n<tr><td>het kind</td><td>de kinderen</td></tr>\n<tr><td>het ei</td><td>de eieren</td></tr>\n<tr><td>de stad</td><td>de steden</td></tr>\n<tr><td>het schip</td><td>de schepen</td></tr></table>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Lasciare la vocale doppia: <s>boomen</s> → <b>bomen</b>.</li>\n<li>Dimenticare l'apostrofo: <s>autos</s> → <b>auto's</b>.</li>\n<li>Usare het al plurale: <s>het kinderen</s> → <b>de kinderen</b>.</li>\n</ul>",
+ "vlaams": "Le patatine fritte in Belgio sono <b>frieten</b> (de friet, de frieten) e si comprano in un <b>frituur</b> o \"frietkot\". Nei Paesi Bassi diresti \"patat\". Nel parlato, soprattutto nei Paesi Bassi, la -n finale del plurale spesso non si pronuncia: \"boeke\".",
+ "vocab": [
+  [
+   "de man",
+   "l'uomo"
+  ],
+  [
+   "de boom",
+   "l'albero"
+  ],
+  [
+   "de brief",
+   "la lettera"
+  ],
+  [
+   "de stad",
+   "la città"
+  ],
+  [
+   "het kind",
+   "il bambino"
+  ],
+  [
+   "het meisje",
+   "la ragazza"
+  ],
+  [
+   "de tafel",
+   "il tavolo"
+  ],
+  [
+   "het menu",
+   "il menù"
+  ],
+  [
+   "de fiets",
+   "la bici"
+  ],
+  [
+   "het huis",
+   "la casa"
+  ],
+  [
+   "de friet",
+   "la patatina fritta"
+  ],
+  [
+   "het ei",
+   "l'uovo"
+  ],
+  [
+   "veel",
+   "molto, molti"
+  ]
+ ],
+ "core": [],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "een boek → twee ___",
+   "o": [
+    "boeken",
+    "boeks",
+    "boekken",
+    "boekes"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Regola generale: <b>-en</b>.",
+   "g": {
+    "boeken": "libri",
+    "boeks": "forma che non esiste",
+    "boekken": "forma che non esiste: la oe resta così",
+    "boekes": "forma che non esiste"
+   },
+   "tt": "un libro → due libri"
+  },
+  {
+   "t": "mc",
+   "q": "een tafel → twee ___",
+   "o": [
+    "tafels",
+    "tafelen",
+    "tafel's",
+    "tafles"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Dopo -el: <b>-s</b>.",
+   "g": {
+    "tafels": "tavoli",
+    "tafelen": "forma che non esiste",
+    "tafel's": "l'apostrofo si usa solo dopo vocale",
+    "tafles": "forma che non esiste"
+   },
+   "tt": "un tavolo → due tavoli"
+  },
+  {
+   "t": "mc",
+   "q": "een auto → twee ___",
+   "o": [
+    "auto's",
+    "autos",
+    "autoen",
+    "auten"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Dopo vocale: <b>-'s</b>.",
+   "g": {
+    "auto's": "auto (plurale)",
+    "autos": "manca l'apostrofo",
+    "autoen": "forma che non esiste",
+    "auten": "forma che non esiste"
+   },
+   "tt": "un'auto → due auto"
+  },
+  {
+   "t": "mc",
+   "q": "Quale desinenza dopo -el, -er, -je?",
+   "o": [
+    "-s",
+    "-en",
+    "-'s",
+    "nessuna"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Sillaba finale debole: <b>-s</b> (tafels, kamers, meisjes)."
+  },
+  {
+   "t": "mc",
+   "q": "een man → twee ___",
+   "o": [
+    "mannen",
+    "manen",
+    "mans",
+    "man's"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Vocale breve: raddoppi la consonante, <b>mannen</b>.",
+   "g": {
+    "mannen": "uomini",
+    "manen": "lune: con una n la a diventa lunga",
+    "mans": "forma che non esiste",
+    "man's": "forma che non esiste"
+   },
+   "tt": "un uomo → due uomini"
+  },
+  {
+   "t": "mc",
+   "q": "een boom → twee ___",
+   "o": [
+    "bomen",
+    "boomen",
+    "boommen",
+    "booms"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Sillaba aperta: la vocale lunga si scrive singola, <b>bomen</b>.",
+   "g": {
+    "bomen": "alberi",
+    "boomen": "forma che non esiste: oo diventa o",
+    "boommen": "forma che non esiste",
+    "booms": "forma che non esiste"
+   },
+   "tt": "un albero → due alberi"
+  },
+  {
+   "t": "mc",
+   "q": "een huis → twee ___",
+   "o": [
+    "huizen",
+    "huisen",
+    "huises",
+    "huis's"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "s diventa z tra due vocali: <b>huizen</b>.",
+   "g": {
+    "huizen": "case",
+    "huisen": "forma che non esiste: s → z",
+    "huises": "forma che non esiste",
+    "huis's": "forma che non esiste"
+   },
+   "tt": "una casa → due case"
+  },
+  {
+   "t": "fill",
+   "q": "een fiets → twee ___",
+   "a": [
+    "fietsen"
+   ],
+   "e": "<b>fietsen</b>.",
+   "tt": "una bici → due bici"
+  },
+  {
+   "t": "fill",
+   "q": "een meisje → twee ___",
+   "a": [
+    "meisjes"
+   ],
+   "e": "Dopo -je: <b>meisjes</b>.",
+   "tt": "una ragazza → due ragazze"
+  },
+  {
+   "t": "fill",
+   "q": "een kind → twee ___",
+   "a": [
+    "kinderen"
+   ],
+   "e": "Irregolare: <b>kinderen</b>.",
+   "tt": "un bambino → due bambini"
+  }
+ ],
+ "items": [
+  {
+   "t": "fill",
+   "q": "één boek → twee ___",
+   "a": [
+    "boeken"
+   ],
+   "e": "Regola generale: <b>boeken</b>."
+  },
+  {
+   "t": "fill",
+   "q": "één tafel → twee ___",
+   "a": [
+    "tafels"
+   ],
+   "e": "Dopo -el: <b>tafels</b>."
+  },
+  {
+   "t": "fill",
+   "q": "één auto → twee ___",
+   "a": [
+    "auto's"
+   ],
+   "e": "Dopo -o: <b>auto's</b> con apostrofo."
+  },
+  {
+   "t": "fill",
+   "q": "één man → twee ___",
+   "a": [
+    "mannen"
+   ],
+   "e": "Vocale breve: raddoppia la n, <b>mannen</b>."
+  },
+  {
+   "t": "fill",
+   "q": "één boom → twee ___",
+   "a": [
+    "bomen"
+   ],
+   "e": "Vocale lunga in sillaba aperta: <b>bomen</b>."
+  },
+  {
+   "t": "fill",
+   "q": "één huis → twee ___",
+   "a": [
+    "huizen"
+   ],
+   "e": "s → z: <b>huizen</b>."
+  },
+  {
+   "t": "fill",
+   "q": "één kind → twee ___",
+   "a": [
+    "kinderen"
+   ],
+   "e": "Irregolare: <b>kinderen</b>."
+  },
+  {
+   "t": "fill",
+   "q": "één meisje → twee ___",
+   "a": [
+    "meisjes"
+   ],
+   "e": "Dopo -je: <b>meisjes</b>."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "één stad → twee ___",
+   "o": [
+    "stadden",
+    "steden",
+    "stads",
+    "stadenen"
+   ],
+   "a": 1,
+   "e": "Irregolare: <b>steden</b>."
+  },
+  {
+   "t": "fill",
+   "q": "één brief → twee ___",
+   "a": [
+    "brieven"
+   ],
+   "e": "f → v: <b>brieven</b>."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "één menu → twee ___",
+   "o": [
+    "menus",
+    "menu's",
+    "menuen",
+    "menuën"
+   ],
+   "a": 1,
+   "e": "<b>menu's</b>."
+  },
+  {
+   "t": "mc",
+   "oit": true,
+   "q": "één fiets → twee ___",
+   "o": [
+    "fietsen",
+    "fiets",
+    "fietses",
+    "fietzen"
+   ],
+   "a": 0,
+   "e": "<b>fietsen</b>."
+  },
+  {
+   "t": "tr",
+   "q": "due bambini",
+   "a": [
+    "twee kinderen"
+   ],
+   "e": "<b>kinderen</b>."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "t": "un libro → due libri"
+  },
+  "1": {
+   "t": "un tavolo → due tavoli"
+  },
+  "2": {
+   "t": "un'auto → due auto"
+  },
+  "3": {
+   "t": "un uomo → due uomini"
+  },
+  "4": {
+   "t": "un albero → due alberi"
+  },
+  "5": {
+   "t": "una casa → due case"
+  },
+  "6": {
+   "t": "un bambino → due bambini"
+  },
+  "7": {
+   "t": "una ragazza → due ragazze"
+  },
+  "8": {
+   "g": {
+    "stadden": "forma che non esiste",
+    "steden": "città (plurale irregolare)",
+    "stads": "forma che non esiste",
+    "stadenen": "forma che non esiste"
+   },
+   "t": "una città → due città"
+  },
+  "9": {
+   "t": "una lettera → due lettere"
+  },
+  "10": {
+   "g": {
+    "menus": "manca l'apostrofo",
+    "menu's": "menù (plurale)",
+    "menuen": "forma che non esiste",
+    "menuën": "forma che non esiste"
+   },
+   "t": "un menù → due menù"
+  },
+  "11": {
+   "g": {
+    "fietsen": "bici (plurale)",
+    "fiets": "bici (singolare)",
+    "fietses": "forma che non esiste",
+    "fietzen": "forma che non esiste"
+   },
+   "t": "una bici → due bici"
+  }
+ }
+}

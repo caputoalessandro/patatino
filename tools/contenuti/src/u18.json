@@ -1,0 +1,456 @@
+{
+ "id": "u18",
+ "n": 18,
+ "module": 4,
+ "nl": "De gebiedende wijs",
+ "it": "L'imperativo",
+ "note": "\n<h3>L'idea</h3>\n<p>L'imperativo serve per dare ordini, consigli, istruzioni e inviti: \"vieni!\", \"ascolta!\", \"entri pure\". In italiano ha forme diverse per tu, voi e Lei (vieni, venite, venga). In olandese è molto più semplice: c'è <b>una sola forma</b> per tu e voi, la <b>radice</b> del verbo, cioè la forma di <i>ik</i>.</p>\n<h3>Come si forma</h3>\n<p>Prendi la forma di <b>ik</b> al presente e mettila all'inizio della frase, senza soggetto:</p>\n<table><tr><th>infinito</th><th>ik</th><th>imperativo</th></tr>\n<tr><td>komen</td><td>ik kom</td><td><b>Kom</b> hier!</td></tr>\n<tr><td>luisteren</td><td>ik luister</td><td><b>Luister</b> naar mij!</td></tr>\n<tr><td>nemen</td><td>ik neem</td><td><b>Neem</b> je jas mee!</td></tr>\n<tr><td>gaan</td><td>ik ga</td><td><b>Ga</b> naar huis!</td></tr>\n<tr><td>doen</td><td>ik doe</td><td><b>Doe</b> de deur dicht!</td></tr></table>\n<p>La stessa forma vale per una persona o per tante: <i>Kom, kinderen!</i> Niente -t, anche se parli a \"tu\": <s>Komt hier!</s>.</p>\n<p>Unica eccezione importante: <b>zijn</b> → <b>wees</b>. <i>Wees voorzichtig!</i> (stai attento!), <i>Wees stil!</i> (sta' zitto!).</p>\n<h3>Verbi separabili</h3>\n<p>La particella va in fondo, come al presente (unità 17): <i><b>Sta</b> op!</i> (alzati!), <i><b>Bel</b> me morgen <b>op</b>!</i>, <i><b>Doe</b> het raam <b>open</b>!</i></p>\n<h3>La forma di cortesia: Komt u binnen</h3>\n<p>Con chi dai del Lei puoi usare la radice + <b>-t</b>, seguita da <b>u</b>: <i>Komt u binnen</i> (entri), <i>Neemt u plaats</i> (si accomodi), <i>Gaat u zitten</i>. È una forma educata ma un po' formale. Nella vita di tutti i giorni si usa molto anche una domanda con un modale: <i>Kunt u dat herhalen?</i> o <i>Wilt u even wachten?</i></p>\n<h3>Ammorbidire l'ordine</h3>\n<p>Un imperativo secco può sembrare brusco. Gli olandesi aggiungono spesso piccole parole:</p>\n<ul>\n<li><b>even</b> = un attimo: <i>Wacht even!</i> (aspetta un attimo).</li>\n<li><b>maar</b> = pure (incoraggiamento): <i>Kom maar binnen!</i> (entra pure).</li>\n<li><b>alsjeblieft / alstublieft</b> = per favore (con je / con u).</li>\n</ul>\n<h3>La forma negativa</h3>\n<p>Per dire \"non fare\" metti <b>niet</b> dopo il verbo e dopo l'eventuale oggetto: <i>Rook hier <b>niet</b>!</i> (non fumare qui), <i>Vergeet je sleutel <b>niet</b>!</i>. Sui cartelli trovi spesso l'infinito: <i>Niet roken</i> (vietato fumare).</p>\n<h3>Laten we: \"facciamo…\"</h3>\n<p>Per proporre qualcosa al gruppo, come l'italiano \"andiamo!\", \"mangiamo!\", si usa <b>laten we</b> + infinito in fondo: <i>Laten we gaan!</i> (andiamo!), <i>Laten we morgen naar Brugge gaan</i>. È simile a <i>Zullen we…?</i> (unità 9), ma è una proposta, non una domanda.</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Aggiungere la -t con tu: <s>Komt hier!</s> → <b>Kom hier!</b></li>\n<li>Usare <i>ben</i> per zijn: <s>Ben voorzichtig!</s> → <b>Wees voorzichtig!</b></li>\n<li>Mettere niet all'inizio come in italiano: <s>Niet rook hier!</s> → <b>Rook hier niet!</b></li>\n<li>Dimenticare la particella: <s>Sta om zeven uur!</s> → <b>Sta om zeven uur op!</b></li>\n</ul>",
+ "vlaams": "In Fiandra senti continuamente <b>allez</b> (dal francese) per incoraggiare: \"Allez, kom!\" (dai, vieni!). Al posto di <i>laten we</i> i belgi dicono spesso <b>laat ons</b>: \"Laat ons gaan!\" (andiamo!). Entrambe le forme sono corrette.",
+ "vocab": [
+  [
+   "luisteren",
+   "ascoltare"
+  ],
+  [
+   "kijken",
+   "guardare"
+  ],
+  [
+   "nemen",
+   "prendere"
+  ],
+  [
+   "zeggen",
+   "dire"
+  ],
+  [
+   "opendoen",
+   "aprire"
+  ],
+  [
+   "dichtdoen",
+   "chiudere"
+  ],
+  [
+   "binnenkomen",
+   "entrare"
+  ],
+  [
+   "laten",
+   "lasciare, fare (laten we = facciamo)"
+  ],
+  [
+   "de deur",
+   "la porta"
+  ],
+  [
+   "het raam",
+   "la finestra"
+  ],
+  [
+   "de plaats",
+   "il posto"
+  ],
+  [
+   "stil",
+   "zitto, silenzioso"
+  ],
+  [
+   "rustig",
+   "calmo, tranquillo"
+  ],
+  [
+   "voorzichtig",
+   "prudente, attento"
+  ]
+ ],
+ "core": [
+  [
+   "wees",
+   "sii (imperativo di zijn)"
+  ],
+  [
+   "laten we",
+   "facciamo…, andiamo… (proposta)"
+  ],
+  [
+   "even",
+   "un attimo"
+  ],
+  [
+   "maar",
+   "pure (incoraggiamento)"
+  ],
+  [
+   "alsjeblieft / alstublieft",
+   "per favore (con je / con u)"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "komen → imperativo (a un amico)",
+   "o": [
+    "Kom!",
+    "Komt!",
+    "Komen!",
+    "Kommen!"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Imperativo = radice: <b>Kom!</b>",
+   "g": {
+    "Kom!": "Vieni!",
+    "Komt!": "con -t solo nella forma di cortesia: Komt u!",
+    "Komen!": "è l'infinito",
+    "Kommen!": "forma che non esiste"
+   },
+   "tt": "Vieni!"
+  },
+  {
+   "t": "mc",
+   "q": "nemen → imperativo",
+   "o": [
+    "Neem",
+    "Nemen",
+    "Neemt",
+    "Nem"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Radice con vocale lunga doppia: <b>Neem</b>.",
+   "g": {
+    "Neem": "prendi",
+    "Nemen": "è l'infinito",
+    "Neemt": "prende (lui) / forma di cortesia con u",
+    "Nem": "forma che non esiste: la e è lunga"
+   },
+   "tt": "Prendi"
+  },
+  {
+   "t": "mc",
+   "q": "zijn → imperativo",
+   "o": [
+    "Wees",
+    "Ben",
+    "Bent",
+    "Zijn"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Irregolare: <b>Wees</b>!",
+   "g": {
+    "Wees": "sii",
+    "Ben": "sono (io): non è l'imperativo",
+    "Bent": "sei (tu)",
+    "Zijn": "essere (infinito)"
+   },
+   "tt": "Sii"
+  },
+  {
+   "t": "mc",
+   "q": "Forma di cortesia: ___ u binnen.",
+   "o": [
+    "Komt",
+    "Kom",
+    "Komen",
+    "Koom"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Cortesia: radice + t + u: <b>Komt u</b> binnen.",
+   "g": {
+    "Komt": "entri (cortesia, con u)",
+    "Kom": "forma per tu: con u serve la -t",
+    "Komen": "è l'infinito",
+    "Koom": "forma che non esiste"
+   },
+   "tt": "Entri."
+  },
+  {
+   "t": "mc",
+   "q": "Non fumare qui!",
+   "o": [
+    "Rook hier niet!",
+    "Niet rook hier!",
+    "Rookt hier niet!",
+    "Hier rook niet!"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Verbo all'inizio, <b>niet</b> dopo: Rook hier niet!",
+   "g": {
+    "Rook hier niet!": "Non fumare qui! (corretta)",
+    "Niet rook hier!": "niet non va prima del verbo",
+    "Rookt hier niet!": "con tu niente -t",
+    "Hier rook niet!": "il verbo deve stare all'inizio"
+   },
+   "tt": "Non fumare qui!"
+  },
+  {
+   "t": "mc",
+   "q": "Laten we naar huis ___.",
+   "o": [
+    "gaan",
+    "ga",
+    "gaat"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Dopo <b>laten we</b> l'infinito va in fondo: <b>gaan</b>.",
+   "g": {
+    "gaan": "andare (infinito)",
+    "ga": "vai! (imperativo)",
+    "gaat": "va (lui/lei)"
+   },
+   "tt": "Andiamo a casa."
+  },
+  {
+   "t": "mc",
+   "q": "opstaan → imperativo",
+   "o": [
+    "Sta op!",
+    "Opsta!",
+    "Staat op!",
+    "Op sta!"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Verbo all'inizio, particella in fondo: <b>Sta op!</b>",
+   "g": {
+    "Sta op!": "Alzati!",
+    "Opsta!": "la particella va separata",
+    "Staat op!": "con tu niente -t",
+    "Op sta!": "ordine sbagliato"
+   },
+   "tt": "Alzati!"
+  },
+  {
+   "t": "fill",
+   "q": "___ even!",
+   "h": "wachten",
+   "a": [
+    "wacht"
+   ],
+   "e": "Radice di wachten: <b>Wacht</b> even!",
+   "tt": "Aspetta un attimo!"
+  },
+  {
+   "t": "fill",
+   "q": "___ voorzichtig!",
+   "h": "zijn",
+   "a": [
+    "wees"
+   ],
+   "e": "Imperativo di zijn: <b>Wees</b>.",
+   "tt": "Stai attento!"
+  },
+  {
+   "t": "order",
+   "q": "Chiudi la porta, per favore.",
+   "a": "Doe de deur dicht alsjeblieft",
+   "alt": [
+    "Doe alsjeblieft de deur dicht"
+   ],
+   "x": [
+    "doet",
+    "dichtdoen"
+   ],
+   "e": "<b>dichtdoen</b>: Doe all'inizio, <b>dicht</b> in fondo."
+  }
+ ],
+ "items": [
+  {
+   "t": "fill",
+   "q": "___ naar mij!",
+   "h": "luisteren",
+   "a": [
+    "luister"
+   ],
+   "e": "Radice di luisteren: <b>Luister</b>!"
+  },
+  {
+   "t": "mc",
+   "q": "Mevrouw, ___ u plaats.",
+   "o": [
+    "neemt",
+    "neem",
+    "nemen"
+   ],
+   "a": 0,
+   "e": "Cortesia: radice + t + <b>u</b>: <b>Neemt u</b> plaats."
+  },
+  {
+   "t": "order",
+   "q": "Porta con te la giacca!",
+   "a": "Neem je jas mee",
+   "x": [
+    "neemt",
+    "meeneem"
+   ],
+   "e": "<b>meenemen</b>: Neem all'inizio, <b>mee</b> in fondo."
+  },
+  {
+   "t": "tr",
+   "q": "Entri, per favore.",
+   "a": [
+    "Komt u binnen alstublieft",
+    "Komt u alstublieft binnen",
+    "Kom binnen alstublieft",
+    "Kom alstublieft binnen"
+   ],
+   "e": "Cortesia: <b>Komt u binnen</b>, alstublieft."
+  },
+  {
+   "t": "mc",
+   "q": "Non dimenticare la chiave!",
+   "o": [
+    "Vergeet je sleutel niet!",
+    "Niet vergeet je sleutel!",
+    "Je sleutel vergeet niet!",
+    "Vergeten je sleutel niet!"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Verbo all'inizio, <b>niet</b> dopo l'oggetto."
+  },
+  {
+   "t": "fill",
+   "q": "___ we morgen naar Brugge gaan!",
+   "h": "proposta: facciamo…",
+   "a": [
+    "laten"
+   ],
+   "e": "<b>Laten we</b> + infinito in fondo."
+  },
+  {
+   "t": "tr",
+   "q": "Bambini, state tranquilli!",
+   "a": [
+    "Kinderen wees rustig",
+    "Wees rustig kinderen",
+    "Kinderen wees stil",
+    "Wees stil kinderen"
+   ],
+   "e": "L'imperativo è uguale al plurale: <b>Wees</b> rustig!"
+  },
+  {
+   "t": "mc",
+   "q": "Bel me morgen ___!",
+   "o": [
+    "op",
+    "aan",
+    "uit",
+    "mee"
+   ],
+   "a": 0,
+   "e": "<b>opbellen</b>: Bel me morgen <b>op</b>!"
+  },
+  {
+   "t": "order",
+   "q": "Non aprire la finestra!",
+   "a": "Doe het raam niet open",
+   "x": [
+    "opendoen",
+    "doet"
+   ],
+   "e": "<b>opendoen</b>: Doe … <b>niet open</b>. Niet va prima della particella."
+  },
+  {
+   "t": "mc",
+   "q": "Al tuo amico Tom: ___ even, Tom!",
+   "o": [
+    "Wacht",
+    "Wacht u",
+    "Wachten",
+    "Wachtt"
+   ],
+   "a": 0,
+   "e": "Con un amico basta la radice: <b>Wacht</b> even!"
+  },
+  {
+   "t": "tr",
+   "q": "Parla lentamente, per favore.",
+   "a": [
+    "Spreek langzaam alsjeblieft",
+    "Spreek alsjeblieft langzaam",
+    "Spreekt u langzaam alstublieft",
+    "Spreekt u alstublieft langzaam",
+    "Spreek langzaam alstublieft",
+    "Praat langzaam alsjeblieft",
+    "Praat alsjeblieft langzaam"
+   ],
+   "e": "<b>Spreek</b> langzaam, alsjeblieft."
+  },
+  {
+   "t": "fill",
+   "q": "Rook hier ___!",
+   "h": "non",
+   "a": [
+    "niet"
+   ],
+   "e": "Imperativo negativo: verbo + … + <b>niet</b>."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "t": "Ascoltami!"
+  },
+  "1": {
+   "g": {
+    "neemt": "prenda (cortesia, con u)",
+    "neem": "prendi (forma per tu)",
+    "nemen": "prendere (infinito)"
+   },
+   "t": "Signora, si accomodi."
+  },
+  "2": {
+   "t": "Porta con te la giacca!"
+  },
+  "3": {
+   "t": "Entri, per favore."
+  },
+  "4": {
+   "g": {
+    "Vergeet je sleutel niet!": "Non dimenticare la chiave! (corretta)",
+    "Niet vergeet je sleutel!": "niet non va all'inizio",
+    "Je sleutel vergeet niet!": "il verbo deve stare all'inizio",
+    "Vergeten je sleutel niet!": "vergeten è l'infinito"
+   },
+   "t": "Non dimenticare la chiave!"
+  },
+  "5": {
+   "t": "Andiamo a Bruges domani!"
+  },
+  "6": {
+   "t": "Bambini, state tranquilli!"
+  },
+  "7": {
+   "g": {
+    "op": "opbellen = telefonare",
+    "aan": "aanbellen = suonare il campanello: non con 'me'",
+    "uit": "uitbellen non esiste",
+    "mee": "meebellen non ha senso qui"
+   },
+   "t": "Chiamami domani!"
+  },
+  "8": {
+   "t": "Non aprire la finestra!"
+  },
+  "9": {
+   "g": {
+    "Wacht": "aspetta (a un amico)",
+    "Wacht u": "aspetti (cortesia): non con un amico",
+    "Wachten": "aspettare (infinito)",
+    "Wachtt": "forma che non esiste"
+   },
+   "t": "Aspetta un attimo, Tom!"
+  },
+  "10": {
+   "t": "Parla lentamente, per favore."
+  },
+  "11": {
+   "t": "Non fumare qui!"
+  }
+ }
+}

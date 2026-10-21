@@ -1,0 +1,481 @@
+{
+ "id": "u4",
+ "n": 4,
+ "module": 1,
+ "nl": "Objectvormen",
+ "it": "Pronomi oggetto",
+ "note": "\n<h3>L'idea</h3>\n<p>I pronomi oggetto sono quelli che in italiano sono mi, ti, lo, la, ci, vi, li: indicano <b>chi riceve</b> l'azione. Due differenze importanti con l'italiano:</p>\n<ul>\n<li><b>La posizione</b>: in italiano il pronome va prima del verbo (\"lo vedo\"), in olandese va <b>dopo</b>: <i>Ik zie hem</i> (letteralmente: io vedo lui).</li>\n<li>La stessa forma serve dopo le <b>preposizioni</b>: <i>met mij</i> (con me), <i>voor jou</i> (per te), <i>van hem</i> (da lui).</li>\n</ul>\n<h3>La tabella</h3>\n<table><tr><th>soggetto</th><th>oggetto</th><th>italiano</th></tr>\n<tr><td>ik</td><td>mij / me</td><td>mi, me</td></tr>\n<tr><td>jij</td><td>jou / je</td><td>ti, te</td></tr>\n<tr><td>u</td><td>u</td><td>La, Le</td></tr>\n<tr><td>hij</td><td>hem</td><td>lo, gli, lui</td></tr>\n<tr><td>zij (lei)</td><td>haar</td><td>la, le, lei</td></tr>\n<tr><td>het</td><td>het</td><td>lo (cosa)</td></tr>\n<tr><td>wij</td><td>ons</td><td>ci, noi</td></tr>\n<tr><td>jullie</td><td>jullie</td><td>vi, voi</td></tr>\n<tr><td>zij (loro)</td><td>hen / hun / ze</td><td>li, le, loro</td></tr></table>\n<p>Come per i soggetti, <b>me</b> e <b>je</b> sono le forme non accentate e normali. <b>mij</b> e <b>jou</b> servono per dare enfasi o dopo le preposizioni: <i>Ik wacht op jou, niet op hem</i>.</p>\n<h3>\"Loro\": hen, hun o ze?</h3>\n<p>Nello scritto formale <b>hen</b> si usa come oggetto diretto e dopo le preposizioni (<i>Ik zie hen</i>, <i>met hen</i>), <b>hun</b> come oggetto indiretto, cioè \"a loro\" (<i>Ik geef hun een cadeau</i>). Nel parlato quasi tutti dicono semplicemente <b>ze</b>: <i>Ik zie ze</i>. Per parlare, usa ze.</p>\n<h3>Le cose: hem, het, ze</h3>\n<p>Qui serve di nuovo l'articolo. Una cosa con <b>de</b> diventa <b>hem</b>, anche se in italiano è femminile: <i>De sleutel? Ik zoek hem</i> (la chiave? la cerco). Una cosa con <b>het</b> diventa <b>het</b>. Le cose al plurale diventano <b>ze</b>.</p>\n<h3>Attenzione: errori tipici di chi parla italiano</h3>\n<ul>\n<li>Mettere il pronome prima del verbo: <s>Ik hem zie</s> → <b>Ik zie hem</b>.</li>\n<li>Usare il soggetto dopo una preposizione: <s>met ik</s> → <b>met mij</b>.</li>\n<li>Scegliere il pronome dal genere italiano: la chiave è <i>de sleutel</i>, quindi <b>hem</b>.</li>\n</ul>",
+ "vlaams": "In Fiandra \"<b>ik zie u graag</b>\" significa \"ti voglio bene\" e si dice anche in famiglia e tra partner: qui <b>u</b> non è formale: è la forma oggetto di gij/ge (gij → u, come jij → je). Nei Paesi Bassi diresti \"ik hou van je\".",
+ "vocab": [
+  [
+   "zien",
+   "vedere"
+  ],
+  [
+   "bellen",
+   "telefonare"
+  ],
+  [
+   "kennen",
+   "conoscere"
+  ],
+  [
+   "zoeken",
+   "cercare"
+  ],
+  [
+   "helpen",
+   "aiutare"
+  ],
+  [
+   "geven",
+   "dare"
+  ],
+  [
+   "wachten op",
+   "aspettare"
+  ],
+  [
+   "houden van",
+   "amare, voler bene"
+  ],
+  [
+   "de sleutel",
+   "la chiave"
+  ],
+  [
+   "de schoenen",
+   "le scarpe"
+  ],
+  [
+   "het cadeau",
+   "il regalo"
+  ],
+  [
+   "morgen",
+   "domani"
+  ],
+  [
+   "niet",
+   "non"
+  ],
+  [
+   "met",
+   "con"
+  ],
+  [
+   "mevrouw",
+   "signora"
+  ]
+ ],
+ "core": [
+  [
+   "mij / me",
+   "mi, me"
+  ],
+  [
+   "jou / je",
+   "ti, te"
+  ],
+  [
+   "hem",
+   "lo, lui (oggetto)"
+  ],
+  [
+   "haar",
+   "la, lei (oggetto)"
+  ],
+  [
+   "ons",
+   "ci, noi (oggetto)"
+  ],
+  [
+   "hen / hun / ze",
+   "li, loro (oggetto)"
+  ]
+ ],
+ "drills": [
+  {
+   "t": "mc",
+   "q": "hij → forma oggetto",
+   "o": [
+    "hem",
+    "hij",
+    "zijn",
+    "haar"
+   ],
+   "a": 0,
+   "e": "hij → <b>hem</b>.",
+   "g": {
+    "hem": "lo / lui (oggetto)",
+    "hij": "lui (soggetto)",
+    "zijn": "suo / essere",
+    "haar": "la / lei"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "ik → forma oggetto",
+   "o": [
+    "mij",
+    "ik",
+    "mijn",
+    "wij"
+   ],
+   "a": 0,
+   "e": "ik → <b>mij</b> (non accentato: me).",
+   "g": {
+    "mij": "mi / me (oggetto)",
+    "ik": "io (soggetto)",
+    "mijn": "mio",
+    "wij": "noi (soggetto)"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "wij → forma oggetto",
+   "o": [
+    "ons",
+    "wij",
+    "onze",
+    "jullie"
+   ],
+   "a": 0,
+   "e": "wij → <b>ons</b>.",
+   "g": {
+    "ons": "ci / noi (oggetto)",
+    "wij": "noi (soggetto)",
+    "onze": "nostro",
+    "jullie": "voi"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "zij (lei) → forma oggetto",
+   "o": [
+    "haar",
+    "zij",
+    "hem",
+    "hun"
+   ],
+   "a": 0,
+   "e": "zij → <b>haar</b>.",
+   "g": {
+    "haar": "la / lei (oggetto)",
+    "zij": "lei (soggetto)",
+    "hem": "lo / lui",
+    "hun": "a loro"
+   }
+  },
+  {
+   "t": "mc",
+   "q": "met ___ (con me)",
+   "o": [
+    "mij",
+    "ik",
+    "mijn",
+    "wij"
+   ],
+   "a": 0,
+   "e": "Dopo una preposizione: <b>met mij</b>.",
+   "g": {
+    "mij": "me (dopo preposizione)",
+    "ik": "io (soggetto)",
+    "mijn": "mio",
+    "wij": "noi (soggetto)"
+   },
+   "tt": "con me"
+  },
+  {
+   "t": "mc",
+   "q": "De sleutel? Ik heb ___.",
+   "o": [
+    "hem",
+    "het",
+    "haar",
+    "ze"
+   ],
+   "a": 0,
+   "e": "de-parola → <b>hem</b>.",
+   "g": {
+    "hem": "lo (de-parole)",
+    "het": "lo (het-parole)",
+    "haar": "la (persona)",
+    "ze": "li / le (plurale)"
+   },
+   "tt": "La chiave? Ce l'ho."
+  },
+  {
+   "t": "mc",
+   "q": "Het boek? Ik lees ___.",
+   "o": [
+    "het",
+    "hem",
+    "ze",
+    "haar"
+   ],
+   "a": 0,
+   "e": "het-parola → <b>het</b>.",
+   "g": {
+    "het": "lo (het-parole)",
+    "hem": "lo (de-parole)",
+    "ze": "li / le (plurale)",
+    "haar": "la (persona)"
+   },
+   "tt": "Il libro? Lo leggo."
+  },
+  {
+   "t": "mc",
+   "q": "De schoenen? Ik zie ___.",
+   "o": [
+    "ze",
+    "hem",
+    "het",
+    "haar"
+   ],
+   "a": 0,
+   "e": "Plurale → <b>ze</b>.",
+   "g": {
+    "ze": "li / le (plurale)",
+    "hem": "lo (singolare, de)",
+    "het": "lo (singolare, het)",
+    "haar": "la (persona)"
+   },
+   "tt": "Le scarpe? Le vedo."
+  },
+  {
+   "t": "fill",
+   "q": "Ik zie ___.",
+   "h": "lui",
+   "a": [
+    "hem"
+   ],
+   "e": "Oggetto di hij: <b>hem</b>.",
+   "tt": "Lo vedo."
+  },
+  {
+   "t": "order",
+   "q": "Lei mi aiuta.",
+   "a": "Zij helpt mij",
+   "x": [
+    "ik",
+    "mijn"
+   ],
+   "e": "Il pronome oggetto va dopo il verbo: helpt <b>mij</b>."
+  }
+ ],
+ "items": [
+  {
+   "t": "mc",
+   "q": "Ik zie ___.",
+   "h": "lui",
+   "o": [
+    "hij",
+    "hem",
+    "zijn",
+    "haar"
+   ],
+   "a": 1,
+   "e": "Oggetto di hij = <b>hem</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Hij belt ___ morgen.",
+   "h": "mi",
+   "o": [
+    "me",
+    "ik",
+    "mijn",
+    "wij"
+   ],
+   "a": 0,
+   "e": "Oggetto di ik = <b>mij/me</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Ken jij ___?",
+   "h": "lei",
+   "a": [
+    "haar"
+   ],
+   "e": "Oggetto di zij (lei) = <b>haar</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Waar is de sleutel? Ik zoek ___.",
+   "o": [
+    "het",
+    "hem",
+    "haar",
+    "ze"
+   ],
+   "a": 1,
+   "e": "<i>de</i> sleutel → <b>hem</b>, anche se è una cosa."
+  },
+  {
+   "t": "mc",
+   "q": "Waar is het boek? Ik heb ___.",
+   "o": [
+    "hem",
+    "het",
+    "haar",
+    "ze"
+   ],
+   "a": 1,
+   "e": "<i>het</i> boek → <b>het</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Waar zijn mijn schoenen? Ik zie ___ niet.",
+   "o": [
+    "hem",
+    "het",
+    "ze",
+    "hun"
+   ],
+   "a": 2,
+   "e": "Cose al plurale → <b>ze</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Kom je met ___ mee?",
+   "h": "noi",
+   "a": [
+    "ons"
+   ],
+   "e": "Oggetto di wij = <b>ons</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Ti amo.",
+   "a": [
+    "Ik hou van jou",
+    "Ik hou van je",
+    "Ik houd van jou",
+    "Ik houd van je",
+    "Ik zie je graag",
+    "Ik zie jou graag",
+    "Ik zie u graag"
+   ],
+   "e": "<b>houden van</b> = amare. In Fiandra anche: ik zie je graag."
+  },
+  {
+   "t": "order",
+   "q": "Lui ci aiuta.",
+   "a": "Hij helpt ons",
+   "x": [
+    "wij",
+    "onze"
+   ],
+   "e": "Oggetto di wij = <b>ons</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Ik geef ___ een cadeau.",
+   "h": "a loro, scritto",
+   "o": [
+    "hen",
+    "hun",
+    "zij",
+    "ons"
+   ],
+   "a": 1,
+   "e": "Oggetto indiretto (a loro) nello scritto: <b>hun</b>."
+  },
+  {
+   "t": "fill",
+   "q": "Ik wacht op ___, niet op hem.",
+   "h": "te, con enfasi",
+   "a": [
+    "jou"
+   ],
+   "e": "Con contrasto: forma accentata <b>jou</b>."
+  },
+  {
+   "t": "mc",
+   "q": "Ik bel ___ morgen, mevrouw.",
+   "o": [
+    "jij",
+    "u",
+    "jou",
+    "uw"
+   ],
+   "a": 1,
+   "e": "Forma di cortesia anche come oggetto: <b>u</b>."
+  }
+ ],
+ "gloss": {
+  "0": {
+   "g": {
+    "hij": "lui (soggetto)",
+    "hem": "lo / lui (oggetto)",
+    "zijn": "suo / essere",
+    "haar": "la / lei (oggetto)"
+   },
+   "t": "Lo vedo."
+  },
+  "1": {
+   "g": {
+    "me": "mi (oggetto)",
+    "ik": "io (soggetto)",
+    "mijn": "mio",
+    "wij": "noi (soggetto)"
+   },
+   "t": "Lui mi chiama domani."
+  },
+  "2": {
+   "t": "La conosci?"
+  },
+  "3": {
+   "g": {
+    "het": "lo (per le het-parole)",
+    "hem": "lo (per le de-parole, come de sleutel)",
+    "haar": "la / lei (persona)",
+    "ze": "li / le (plurale)"
+   },
+   "t": "Dov'è la chiave? La cerco."
+  },
+  "4": {
+   "g": {
+    "hem": "lo (per le de-parole)",
+    "het": "lo (per le het-parole, come het boek)",
+    "haar": "la / lei (persona)",
+    "ze": "li / le (plurale)"
+   },
+   "t": "Dov'è il libro? Ce l'ho."
+  },
+  "5": {
+   "g": {
+    "hem": "lo (singolare, de-parola)",
+    "het": "lo (singolare, het-parola)",
+    "ze": "li / le (plurale)",
+    "hun": "a loro (persone)"
+   },
+   "t": "Dove sono le mie scarpe? Non le vedo."
+  },
+  "6": {
+   "t": "Vieni con noi?"
+  },
+  "9": {
+   "g": {
+    "hen": "li / loro (oggetto diretto)",
+    "hun": "a loro (oggetto indiretto)",
+    "zij": "loro (soggetto)",
+    "ons": "ci / noi"
+   },
+   "t": "Do loro un regalo."
+  },
+  "10": {
+   "t": "Aspetto te, non lui."
+  },
+  "11": {
+   "g": {
+    "jij": "tu (soggetto)",
+    "u": "La / Le (cortesia, oggetto)",
+    "jou": "ti / te (informale)",
+    "uw": "Suo (possessivo)"
+   },
+   "t": "La chiamo domani, signora."
+  }
+ }
+}

@@ -1,0 +1,422 @@
+{
+ "id": "u27",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "De broodjes ___ we bij de bakker gekocht hebben, zijn heel lekker.",
+   "o": ["die", "dat", "wat", "wie"],
+   "a": 0,
+   "e": "<i>het broodje</i> è una het-parola, ma qui è al plurale: al plurale sempre <b>die</b>.",
+   "g": {
+    "die": "che (plurali, corretta)",
+    "dat": "solo per het-parole al singolare: broodjes è plurale",
+    "wat": "si usa dopo alles, iets, niets",
+    "wie": "si usa solo dopo una preposizione"
+   },
+   "tt": "I panini che abbiamo comprato dal panettiere sono buonissimi."
+  },
+  {
+   "t": "mc",
+   "q": "Dat is het verhaal ___ iedereen in Gent nu praat.",
+   "h": "di cui",
+   "o": ["waarover", "waarmee", "over dat", "over wat"],
+   "a": 0,
+   "oit": true,
+   "e": "<i>praten <b>over</b></i> + una cosa → <b>waarover</b>. Dopo una preposizione non si usa mai <i>dat</i> per le cose.",
+   "g": {
+    "waarover": "di cui (cose, corretta)",
+    "waarmee": "con cui: ma si dice praten over, non praten met",
+    "over dat": "dopo una preposizione per le cose serve waar + preposizione",
+    "over wat": "per le cose si usa waar + preposizione"
+   },
+   "tt": "Questa è la storia di cui ora parlano tutti a Gand."
+  },
+  {
+   "t": "fill",
+   "q": "Ik ken niemand ___ in Brussel geen Frans spreekt.",
+   "h": "che",
+   "a": ["die"],
+   "e": "Dopo <i>niemand</i> (come dopo <i>iemand</i>) si usa <b>die</b>, non <i>wat</i>. Il verbo <i>spreekt</i> va in fondo.",
+   "tt": "Non conosco nessuno a Bruxelles che non parli francese."
+  },
+  {
+   "t": "fill",
+   "q": "De foto's die we vorige zomer in Brugge ___ hebben, zijn heel mooi.",
+   "h": "maken",
+   "a": ["gemaakt"],
+   "e": "Nella relativa participio e ausiliare vanno in fondo: <i>die we ... <b>gemaakt</b> hebben</i>. Poi subito il verbo principale: <i>zijn</i>.",
+   "tt": "Le foto che abbiamo fatto l'estate scorsa a Bruges sono bellissime."
+  },
+  {
+   "t": "tr",
+   "q": "Il ragazzo che vedi là è mio fratello.",
+   "a": ["De jongen die je daar ziet, is mijn broer", "De jongen die je daar ziet is mijn broer", "De jongen die jij daar ziet, is mijn broer", "De jongen die jij daar ziet is mijn broer"],
+   "e": "de jongen → <b>die</b>; nella relativa il verbo va in fondo (<i>ziet</i>, senza inversione), poi viene subito il verbo principale <b>is</b>."
+  },
+  {
+   "t": "tr",
+   "q": "Questa è la casa in cui abitavano i miei nonni.",
+   "a": ["Dit is het huis waarin mijn grootouders woonden", "Dit is het huis waarin mijn opa en oma woonden", "Dit is het huis waar mijn grootouders woonden", "Dit is het huis waar mijn opa en oma woonden", "Dit is het huis waar mijn grootouders in woonden", "Dit is het huis waar mijn opa en oma in woonden", "Dat is het huis waarin mijn grootouders woonden", "Dat is het huis waarin mijn opa en oma woonden", "Dat is het huis waar mijn grootouders woonden", "Dat is het huis waar mijn opa en oma woonden", "Dat is het huis waar mijn grootouders in woonden", "Dat is het huis waar mijn opa en oma in woonden"],
+   "e": "Cosa + <i>in</i> → <b>waarin</b> (o <i>waar ... in</i>, o semplicemente <i>waar</i>). Passato al plurale: <b>woonden</b>, in fondo."
+  },
+  {
+   "t": "order",
+   "q": "Conosco qualcuno che vuole comprare la tua bici.",
+   "a": "Ik ken iemand die je fiets wil kopen",
+   "alt": ["Ik ken iemand die je fiets kopen wil"],
+   "x": ["dat", "wat"],
+   "e": "Dopo <i>iemand</i> → <b>die</b>. Due verbi nella relativa: tutti e due in fondo, <i>wil kopen</i>.",
+   "tt": "Conosco qualcuno che vuole comprare la tua bici."
+  },
+  {
+   "t": "order",
+   "q": "La penna con cui ho scritto la lettera è sul tavolo.",
+   "a": "De pen waarmee ik de brief geschreven heb ligt op de tafel",
+   "alt": ["De pen waarmee ik de brief heb geschreven ligt op de tafel"],
+   "x": ["wie", "schreef"],
+   "e": "Cosa + <i>met</i> → <b>waarmee</b>. I due verbi della relativa vanno in fondo, poi subito il verbo principale <b>ligt</b>.",
+   "tt": "La penna con cui ho scritto la lettera è sul tavolo."
+  }
+ ],
+ "en": {
+  "it": "Relative clauses",
+  "note": "\n<h3>The idea</h3>\n<p>A relative clause describes a noun: \"the man <u>who lives here</u>\", \"the book <u>that I'm reading</u>\". In English you choose between \"who\", \"which\" and \"that\" depending on whether it's a person or a thing. In Dutch the relative pronoun depends instead on the <b>article</b> of the noun, and the relative clause is a subordinate clause: <b>the verb goes to the end</b>.</p>\n<p><i>de man die hier <b>woont</b></i> = the man who lives here.</p>\n<h3>Die or dat?</h3>\n<table><tr><th>the noun is…</th><th>pronoun</th><th>example</th></tr>\n<tr><td>singular de-word</td><td><b>die</b></td><td><i>de film die ik zie</i></td></tr>\n<tr><td>plural (always)</td><td><b>die</b></td><td><i>de boeken die ik lees</i></td></tr>\n<tr><td>singular het-word</td><td><b>dat</b></td><td><i>het boek dat ik lees</i></td></tr></table>\n<p>What counts is the article, not whether it's a person or a thing: <i>het meisje <b>dat</b> daar zit</i> (meisje is a het-word, even though it's a person). In the plural it's <b>die</b> again: <i>de meisjes <b>die</b> daar zitten</i>. After <i>iemand</i> (someone) you use <b>die</b>.</p>\n<h3>With a preposition: people</h3>\n<p>When English has \"with whom\", \"about whom\", \"to whom\" (or \"who ... with\") and it's a person, Dutch uses <b>preposition + wie</b>:</p>\n<p><i>de collega <b>met wie</b> ik werk</i> = the colleague I work with.</p>\n<h3>With a preposition: things</h3>\n<p>For things you don't say <s>met die</s> or <s>met dat</s>: you make one word with <b>waar + preposition</b>. Careful: <i>met</i> becomes <i>mee</i>.</p>\n<table><tr><th>preposition</th><th>relative form</th><th>example</th></tr>\n<tr><td>met (with)</td><td>waarmee</td><td><i>de pen waarmee ik schrijf</i></td></tr>\n<tr><td>over (about)</td><td>waarover</td><td><i>het verhaal waarover we praten</i></td></tr>\n<tr><td>op (on)</td><td>waarop</td><td><i>de stoel waarop hij zit</i></td></tr>\n<tr><td>in (in)</td><td>waarin</td><td><i>het huis waarin ik woon</i></td></tr></table>\n<p>In speech the two parts are often split, a bit like English \"the pen I write <u>with</u>\": <i>de pen <b>waar</b> ik <b>mee</b> schrijf</i>. This is correct too.</p>\n<h3>Wat: after alles, iets, niets</h3>\n<p>After <b>alles</b> (everything), <b>iets</b> (something) and <b>niets</b> (nothing) you usually use <b>wat</b>: <i>alles <b>wat</b> ik weet</i> (everything I know), <i>iets <b>wat</b> lekker is</i>. After <i>iets</i> and <i>niets</i> you also find <i>dat</i>, but <b>wat</b> is the safest choice.</p>\n<h3>The verb at the end</h3>\n<p>As in all subordinate clauses, the conjugated verb goes to the end of the relative clause. If the relative clause sits in the middle of the sentence, the main verb comes right after it: <i>De film die we vanavond <b>zien</b>, <b>is</b> interessant.</i></p>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Leaving out the relative pronoun, as English often does (\"the book I'm reading\"): <s>het boek ik lees</s> → <b>het boek dat ik lees</b>.</li>\n<li>Using die for everything: <s>het boek die ik lees</s> → <b>het boek dat ik lees</b>.</li>\n<li>Translating \"who\" with wie: <s>de man wie ik ken</s> → <b>de man die ik ken</b>. Wie only follows a preposition.</li>\n<li>Translating \"which\" with wat: <s>de fiets wat ik koop</s> → <b>de fiets die ik koop</b>.</li>\n<li>Leaving the verb in the middle: <s>de man die woont hier</s> → <b>de man die hier woont</b>.</li>\n<li>Translating \"with which\" word for word for things: <s>de pen met die ik schrijf</s> → <b>de pen waarmee ik schrijf</b>.</li>\n</ul>",
+  "vlaams": "In spoken Flemish you often hear an extra <b>dat</b> after the relative pronoun: \"de man <b>die dat</b> daar woont\", \"het café <b>waar dat</b> we zitten\". It's typical of the spoken language; in writing use just <b>die</b> and <b>waar</b>.",
+  "vocab": [["de buurman", "the neighbor"], ["de collega", "the colleague"], ["de film", "the movie"], ["de pen", "the pen"], ["schrijven", "to write"], ["praten", "to talk, to chat"], ["praten over", "to talk about"], ["kopen", "to buy"], ["het verhaal", "the story"], ["interessant", "interesting"], ["de foto", "the photo"], ["lekker", "tasty, delicious"], ["iemand", "someone"], ["iets", "something"], ["alles", "everything"]],
+  "core": [["die", "who, which, that (de-words and plurals)"], ["dat", "who, which, that (singular het-words)"], ["met wie", "with whom (people)"], ["waarmee", "with which (things)"], ["waarover", "about which (things)"], ["wat", "that, what (after alles, iets, niets)"]],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "de man ___ daar woont",
+    "o": ["die", "dat", "wie", "wat"],
+    "a": 0,
+    "e": "de-word → <b>die</b>.",
+    "g": {
+     "die": "who/that (de-words and plurals)",
+     "dat": "who/that, but only for het-words",
+     "wie": "only used after a preposition",
+     "wat": "used after alles, iets, niets"
+    },
+    "tt": "the man who lives there"
+   },
+   {
+    "t": "mc",
+    "q": "het huis ___ ik koop",
+    "o": ["dat", "die", "wie", "waar"],
+    "a": 0,
+    "e": "Singular het-word → <b>dat</b>.",
+    "g": {
+     "dat": "that/which (singular het-words)",
+     "die": "that/which, but for de-words and plurals",
+     "wie": "only used after a preposition",
+     "waar": "where: here you need the object"
+    },
+    "tt": "the house (that) I'm buying"
+   },
+   {
+    "t": "mc",
+    "q": "de boeken ___ ik lees",
+    "o": ["die", "dat", "wat", "wie"],
+    "a": 0,
+    "e": "Plural → always <b>die</b>, even though <i>boek</i> is a het-word.",
+    "g": {
+     "die": "that/which (plurals)",
+     "dat": "only for singular het-words",
+     "wat": "used after alles, iets, niets",
+     "wie": "only used after a preposition"
+    },
+    "tt": "the books (that) I read"
+   },
+   {
+    "t": "mc",
+    "q": "het meisje ___ Nederlands leert",
+    "o": ["dat", "die", "wie", "wat"],
+    "a": 0,
+    "e": "The article is what counts: <i>het</i> meisje → <b>dat</b>.",
+    "g": {
+     "dat": "who/that (singular het-words, people too)",
+     "die": "for de-words: meisje is a het-word",
+     "wie": "only used after a preposition",
+     "wat": "used after alles, iets, niets"
+    },
+    "tt": "the girl who is learning Dutch"
+   },
+   {
+    "t": "mc",
+    "q": "Dat is de collega ___ ik werk.",
+    "h": "with whom",
+    "o": ["met wie", "met die", "met wat", "met dat"],
+    "a": 0,
+    "e": "Person + preposition → <b>met wie</b>.",
+    "g": {
+     "met wie": "with whom (people)",
+     "met die": "die isn't used after a preposition",
+     "met wat": "wat isn't used for people",
+     "met dat": "dat isn't used after a preposition"
+    },
+    "tt": "That's the colleague I work with."
+   },
+   {
+    "t": "mc",
+    "q": "Dat is de pen ___ ik schrijf.",
+    "h": "with which",
+    "o": ["waarmee", "met wie", "met die", "met wat"],
+    "a": 0,
+    "e": "Thing + preposition → <b>waar + mee</b>.",
+    "g": {
+     "waarmee": "with which (things)",
+     "met wie": "with whom, only for people",
+     "met die": "die isn't used after a preposition",
+     "met wat": "for things you use waar + preposition"
+    },
+    "tt": "This is the pen I write with."
+   },
+   {
+    "t": "mc",
+    "q": "Alles ___ ik weet, staat in dit boek.",
+    "o": ["wat", "die", "wie", "waar"],
+    "a": 0,
+    "e": "After <b>alles</b> → <b>wat</b>.",
+    "g": {
+     "wat": "that, what (after alles)",
+     "die": "not used after alles",
+     "wie": "who (people)",
+     "waar": "where"
+    },
+    "tt": "Everything I know is in this book."
+   },
+   {
+    "t": "fill",
+    "q": "De film ___ we vanavond zien, is interessant.",
+    "h": "that",
+    "a": ["die"],
+    "e": "de film → <b>die</b>.",
+    "tt": "The movie we're seeing tonight is interesting."
+   },
+   {
+    "t": "fill",
+    "q": "Het verhaal ___ ik lees, is mooi.",
+    "h": "that",
+    "a": ["dat"],
+    "e": "het verhaal → <b>dat</b>.",
+    "tt": "The story I'm reading is beautiful."
+   },
+   {
+    "t": "order",
+    "q": "I know the man who lives here.",
+    "a": "Ik ken de man die hier woont",
+    "x": ["dat", "woon"],
+    "e": "de man → <b>die</b>, verb at the end: <i>hier <b>woont</b></i>."
+   }
+  ],
+  "items": [
+   {
+    "t": "mc",
+    "q": "Dat is de buurman ___ ik vaak praat.",
+    "h": "with whom",
+    "o": ["met wie", "die", "met die", "wat"],
+    "a": 0,
+    "e": "Person + preposition (praten met) → <b>met wie</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Het verhaal ___ we praten, is interessant.",
+    "h": "about which",
+    "a": ["waarover"],
+    "e": "praten <b>over</b> + thing → <b>waarover</b>."
+   },
+   {
+    "t": "order",
+    "q": "The movie we're seeing tonight is interesting.",
+    "a": "De film die we vanavond zien is interessant",
+    "x": ["dat", "zie"],
+    "e": "de film → <b>die</b>; the verb of the relative clause goes to the end, then <i>is</i> follows right away."
+   },
+   {
+    "t": "tr",
+    "q": "This is the book I'm reading.",
+    "a": ["Dit is het boek dat ik lees", "Dat is het boek dat ik lees"],
+    "e": "het boek → <b>dat</b>, and it can't be left out as in English."
+   },
+   {
+    "t": "mc",
+    "q": "Ik ken iemand ___ in Gent woont.",
+    "o": ["die", "wat", "wie", "dat"],
+    "a": 0,
+    "e": "After <b>iemand</b> → <b>die</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Hij koopt alles ___ lekker is.",
+    "h": "that",
+    "a": ["wat"],
+    "e": "After <b>alles</b> → <b>wat</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Which sentence is correct?",
+    "o": ["Het meisje dat daar zit, is mijn zus.", "Het meisje die daar zit, is mijn zus.", "Het meisje dat zit daar, is mijn zus.", "Het meisje wat daar zit, is mijn zus."],
+    "a": 0,
+    "oit": true,
+    "e": "het meisje → <b>dat</b>, and the verb of the relative clause goes to the end."
+   },
+   {
+    "t": "order",
+    "q": "This is the pen I write with.",
+    "a": "Dit is de pen waarmee ik schrijf",
+    "x": ["wie", "schrijft"],
+    "e": "Thing + met → <b>waarmee</b>."
+   },
+   {
+    "t": "tr",
+    "q": "The colleague I talk to lives in Ghent.",
+    "a": ["De collega met wie ik praat, woont in Gent", "De collega met wie ik spreek, woont in Gent", "De collega waarmee ik praat, woont in Gent"],
+    "e": "Person + met → <b>met wie</b>. After the relative clause the main verb comes right away: <i>woont</i>."
+   },
+   {
+    "t": "fill",
+    "q": "Is er iets ___ je wilt kopen?",
+    "h": "that",
+    "a": ["wat", "dat"],
+    "e": "After <b>iets</b> usually <b>wat</b> (<i>dat</i> is possible too)."
+   },
+   {
+    "t": "mc",
+    "q": "de foto's ___ je maakt",
+    "o": ["die", "dat", "wie", "waar"],
+    "a": 0,
+    "e": "Plural → <b>die</b>."
+   },
+   {
+    "t": "tr",
+    "q": "I know the woman who works here.",
+    "a": ["Ik ken de vrouw die hier werkt"],
+    "e": "de vrouw → <b>die</b> (not <i>wie</i>), verb at the end."
+   }
+  ],
+  "gloss": {
+   "0": {
+    "g": {
+     "met wie": "with whom (people)",
+     "die": "who/that: but praten needs met",
+     "met die": "die isn't used after a preposition",
+     "wat": "used after alles, iets, niets"
+    },
+    "t": "That's the neighbor I often chat with."
+   },
+   "1": {"t": "The story we're talking about is interesting."},
+   "2": {"t": "The movie we're seeing tonight is interesting."},
+   "3": {"t": "This is the book I'm reading."},
+   "4": {
+    "g": {
+     "die": "who (after iemand)",
+     "wat": "used after alles, iets, niets, not after iemand",
+     "wie": "only used after a preposition",
+     "dat": "only for het-words"
+    },
+    "t": "I know someone who lives in Ghent."
+   },
+   "5": {"t": "He buys everything that's tasty."},
+   "6": {
+    "g": {
+     "Het meisje dat daar zit, is mijn zus.": "The girl sitting over there is my sister (correct)",
+     "Het meisje die daar zit, is mijn zus.": "meisje is a het-word: you need dat",
+     "Het meisje dat zit daar, is mijn zus.": "in a relative clause the verb goes to the end",
+     "Het meisje wat daar zit, is mijn zus.": "you hear wat in speech, but standard Dutch needs dat here"
+    },
+    "t": "The girl sitting over there is my sister."
+   },
+   "7": {"t": "This is the pen I write with."},
+   "8": {"t": "The colleague I talk to lives in Ghent."},
+   "9": {"t": "Is there something you want to buy?"},
+   "10": {
+    "g": {
+     "die": "that/which (plurals)",
+     "dat": "only singular het-words",
+     "wie": "only used after a preposition",
+     "waar": "where"
+    },
+    "t": "the photos you take"
+   },
+   "11": {"t": "I know the woman who works here."}
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "De broodjes ___ we bij de bakker gekocht hebben, zijn heel lekker.",
+    "o": ["die", "dat", "wat", "wie"],
+    "a": 0,
+    "e": "<i>het broodje</i> is a het-word, but here it's plural: in the plural it's always <b>die</b>.",
+    "g": {
+     "die": "that/which (plurals, correct)",
+     "dat": "only for singular het-words: broodjes is plural",
+     "wat": "used after alles, iets, niets",
+     "wie": "only used after a preposition"
+    },
+    "tt": "The sandwiches we bought at the bakery are really tasty."
+   },
+   {
+    "t": "mc",
+    "q": "Dat is het verhaal ___ iedereen in Gent nu praat.",
+    "h": "about which",
+    "o": ["waarover", "waarmee", "over dat", "over wat"],
+    "a": 0,
+    "oit": true,
+    "e": "<i>praten <b>over</b></i> + a thing → <b>waarover</b>. After a preposition you never use <i>dat</i> for things.",
+    "g": {
+     "waarover": "about which (things, correct)",
+     "waarmee": "with which: but it's praten over, not praten met",
+     "over dat": "after a preposition, things need waar + preposition",
+     "over wat": "for things you use waar + preposition"
+    },
+    "tt": "That's the story everyone in Ghent is talking about now."
+   },
+   {
+    "t": "fill",
+    "q": "Ik ken niemand ___ in Brussel geen Frans spreekt.",
+    "h": "who",
+    "a": ["die"],
+    "e": "After <i>niemand</i> (as after <i>iemand</i>) you use <b>die</b>, not <i>wie</i> or <i>wat</i>. The verb <i>spreekt</i> goes to the end.",
+    "tt": "I don't know anyone in Brussels who doesn't speak French."
+   },
+   {
+    "t": "fill",
+    "q": "De foto's die we vorige zomer in Brugge ___ hebben, zijn heel mooi.",
+    "h": "maken",
+    "a": ["gemaakt"],
+    "e": "In the relative clause the participle and auxiliary go to the end: <i>die we ... <b>gemaakt</b> hebben</i>. Then the main verb comes right away: <i>zijn</i>.",
+    "tt": "The photos we took in Bruges last summer are beautiful."
+   },
+   {
+    "t": "tr",
+    "q": "The boy you see over there is my brother.",
+    "a": ["De jongen die je daar ziet, is mijn broer", "De jongen die je daar ziet is mijn broer", "De jongen die jij daar ziet, is mijn broer", "De jongen die jij daar ziet is mijn broer"],
+    "e": "de jongen → <b>die</b> (English can drop it, Dutch can't); in the relative clause the verb goes to the end (<i>ziet</i>), then the main verb <b>is</b> comes right away."
+   },
+   {
+    "t": "tr",
+    "q": "This is the house my grandparents lived in.",
+    "a": ["Dit is het huis waarin mijn grootouders woonden", "Dit is het huis waarin mijn opa en oma woonden", "Dit is het huis waar mijn grootouders woonden", "Dit is het huis waar mijn opa en oma woonden", "Dit is het huis waar mijn grootouders in woonden", "Dit is het huis waar mijn opa en oma in woonden", "Dat is het huis waarin mijn grootouders woonden", "Dat is het huis waarin mijn opa en oma woonden", "Dat is het huis waar mijn grootouders woonden", "Dat is het huis waar mijn opa en oma woonden", "Dat is het huis waar mijn grootouders in woonden", "Dat is het huis waar mijn opa en oma in woonden"],
+    "e": "Thing + <i>in</i> → <b>waarin</b> (or <i>waar ... in</i>, just like English \"... lived in\", or simply <i>waar</i>). Plural past tense: <b>woonden</b>, at the end."
+   },
+   {
+    "t": "order",
+    "q": "I know someone who wants to buy your bike.",
+    "a": "Ik ken iemand die je fiets wil kopen",
+    "alt": ["Ik ken iemand die je fiets kopen wil"],
+    "x": ["dat", "wat"],
+    "e": "After <i>iemand</i> → <b>die</b>. Two verbs in the relative clause: both at the end, <i>wil kopen</i>.",
+    "tt": "I know someone who wants to buy your bike."
+   },
+   {
+    "t": "order",
+    "q": "The pen I wrote the letter with is on the table.",
+    "a": "De pen waarmee ik de brief geschreven heb ligt op de tafel",
+    "alt": ["De pen waarmee ik de brief heb geschreven ligt op de tafel"],
+    "x": ["wie", "schreef"],
+    "e": "Thing + <i>met</i> → <b>waarmee</b>. The two verbs of the relative clause go to the end, then the main verb <b>ligt</b> comes right away.",
+    "tt": "The pen I wrote the letter with is on the table."
+   }
+  ]
+ }
+}

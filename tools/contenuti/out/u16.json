@@ -1,0 +1,703 @@
+{
+ "id": "u16",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "Mijn broer kookt ___ dan mijn moeder, maar hij kookt niet graag.",
+   "o": [
+    "beter",
+    "betere",
+    "goeder",
+    "best"
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Il comparativo usato come avverbio non prende la -e: <b>beter</b> (irregolare: goed → beter). <i>Betere</i> va solo davanti a un nome.",
+   "g": {
+    "beter": "meglio (corretta)",
+    "betere": "migliore/i: la -e solo davanti a un nome",
+    "goeder": "forma che non esiste: goed → beter",
+    "best": "superlativo (il meglio), qui serve il comparativo con dan"
+   },
+   "tt": "Mio fratello cucina meglio di mia madre, ma non gli piace cucinare."
+  },
+  {
+   "t": "mc",
+   "q": "Ad Anversa non prendo mai l'autobus. Scegli l'ordine giusto:",
+   "o": [
+    "In Antwerpen neem ik nooit de bus.",
+    "In Antwerpen ik neem nooit de bus.",
+    "In Antwerpen nooit neem ik de bus.",
+    "In Antwerpen neem nooit ik de bus."
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "<i>In Antwerpen</i> al primo posto → inversione <b>neem ik</b>; l'avverbio <b>nooit</b> viene dopo il soggetto.",
+   "g": {
+    "In Antwerpen neem ik nooit de bus.": "Ad Anversa non prendo mai l'autobus. (corretta)",
+    "In Antwerpen ik neem nooit de bus.": "manca l'inversione dopo In Antwerpen",
+    "In Antwerpen nooit neem ik de bus.": "il verbo deve stare al secondo posto, subito dopo In Antwerpen",
+    "In Antwerpen neem nooit ik de bus.": "con l'inversione il soggetto viene subito dopo il verbo, poi nooit"
+   },
+   "tt": "Ad Anversa non prendo mai l'autobus."
+  },
+  {
+   "t": "fill",
+   "q": "Woon je al lang in Gent? — Ja, ik woon hier ___ vijf jaar.",
+   "h": "da (già)",
+   "a": [
+    "al"
+   ],
+   "e": "Con un periodo di tempo <b>al</b> traduce \"da\": <i>ik woon hier al vijf jaar</i>, con il verbo al presente, proprio come in italiano.",
+   "tt": "Abiti a Gand da tanto? — Sì, abito qui da cinque anni."
+  },
+  {
+   "t": "fill",
+   "q": "Is het ontbijt al klaar? — Nee, het is ___ klaar, wacht efkes.",
+   "h": "non ancora",
+   "a": [
+    "nog niet"
+   ],
+   "e": "\"Non ancora\" = <b>nog niet</b>, in quest'ordine (mai <s>niet nog</s>). <i>Efkes</i> = un attimo, tipico fiammingo.",
+   "tt": "La colazione è già pronta? — No, non è ancora pronta, aspetta un attimo."
+  },
+  {
+   "t": "tr",
+   "q": "Non mi piace guidare a Bruxelles, prendo sempre il tram.",
+   "a": [
+    "Ik rijd niet graag in Brussel, ik neem altijd de tram",
+    "Ik rijd niet graag in Brussel, ik pak altijd de tram",
+    "Ik rij niet graag in Brussel, ik neem altijd de tram",
+    "Ik rij niet graag in Brussel, ik pak altijd de tram",
+    "In Brussel rijd ik niet graag, ik neem altijd de tram",
+    "In Brussel rijd ik niet graag, ik pak altijd de tram",
+    "In Brussel rij ik niet graag, ik neem altijd de tram",
+    "In Brussel rij ik niet graag, ik pak altijd de tram"
+   ],
+   "e": "\"Non mi piace\" = <b>niet graag</b> dopo il verbo. Se cominci con <i>In Brussel</i>, scatta l'inversione: <i>rijd ik</i>."
+  },
+  {
+   "t": "tr",
+   "q": "Mia madre cucina bene, ma mio padre cucina ancora meglio.",
+   "a": [
+    "Mijn moeder kookt goed, maar mijn vader kookt nog beter",
+    "Mijn moeder kookt goed, maar mijn vader kookt zelfs beter"
+   ],
+   "e": "<b>goed</b> = bene, <b>beter</b> = meglio. Trabocchetto: davanti a un comparativo <b>nog</b> significa \"ancora (di più)\": <i>nog beter</i>."
+  },
+  {
+   "t": "order",
+   "q": "A Gand vado spesso al lavoro in bici.",
+   "a": "In Gent fiets ik vaak naar het werk",
+   "alt": [
+    "Ik fiets in Gent vaak naar het werk",
+    "Vaak fiets ik in Gent naar het werk"
+   ],
+   "x": [
+    "fietst",
+    "snelle"
+   ],
+   "e": "<i>In Gent</i> all'inizio → inversione <b>fiets ik</b>; <b>vaak</b> subito dopo il soggetto, poi la direzione (<i>naar het werk</i>).",
+   "tt": "A Gand vado spesso al lavoro in bici."
+  },
+  {
+   "t": "order",
+   "q": "Mio figlio non vuole mai mangiare la verdura.",
+   "a": "Mijn zoon wil nooit groenten eten",
+   "alt": [
+    "Groenten wil mijn zoon nooit eten"
+   ],
+   "x": [
+    "willen",
+    "niet"
+   ],
+   "e": "Modale <b>wil</b> al secondo posto, l'avverbio <b>nooit</b> nel mezzo, l'infinito <b>eten</b> alla fine.",
+   "tt": "Mio figlio non vuole mai mangiare la verdura."
+  }
+ ],
+ "en": {
+  "it": "Adverbs",
+  "note": "\n<h3>The idea</h3>\n<p>In English you usually make an adverb by adding <i>-ly</i> to the adjective: slow → slowly. Dutch is much simpler: you use <b>the adjective as it is</b>, with no ending at all. <i>Hij rijdt langzaam</i> = he drives slowly. <i>Ze zingt goed</i> = she sings well. So the same <b>goed</b> means both \"good\" and \"well\".</p>\n<h3>Adjective or adverb?</h3>\n<p>In the unit on adjectives you saw that in front of a noun the adjective often takes an <b>-e</b>: <i>een goede kok</i>. When it describes <b>how</b> an action is done, it never takes the -e:</p>\n<table><tr><th>adjective (before a noun)</th><th>adverb (with the verb)</th></tr>\n<tr><td>een snelle fiets</td><td>Ze fietst snel.</td></tr>\n<tr><td>een langzame bus</td><td>De bus rijdt langzaam.</td></tr>\n<tr><td>een goede kok</td><td>Hij kookt goed.</td></tr></table>\n<h3>The most common adverbs</h3>\n<table><tr><th>frequency</th><th>time</th><th>others</th></tr>\n<tr><td><b>altijd</b> always</td><td><b>nu</b> now</td><td><b>ook</b> also, too</td></tr>\n<tr><td><b>vaak</b> often</td><td><b>al</b> already</td><td><b>graag</b> gladly</td></tr>\n<tr><td><b>soms</b> sometimes</td><td><b>nog</b> still</td><td><b>hier</b> here</td></tr>\n<tr><td><b>nooit</b> never</td><td><b>vroeg / laat</b> early / late</td><td><b>daar</b> there</td></tr></table>\n<h3>Where they go</h3>\n<p>The adverb usually goes <b>right after the conjugated verb</b> (and after the subject, if there is inversion): <i>Ik drink <b>altijd</b> thee</i>. <i>Morgen werk ik <b>ook</b></i>. An object pronoun comes before the adverb: <i>Ik zie hem vaak</i>.</p>\n<p>With a modal verb the adverb stays in the middle and the infinitive goes to the end: <i>Ik moet <b>vaak</b> laat werken</i>.</p>\n<p>You can also put the adverb in <b>first position</b>: then inversion kicks in (unit 10). <i><b>Soms</b> werk ik thuis</i>, never <s>Soms ik werk</s>.</p>\n<h3>Graag: \"I like to\"</h3>\n<p>To say you like <b>doing</b> something, Dutch doesn't use a verb like \"to like\": it adds <b>graag</b> to the verb. <i>Ik zwem graag</i> = I like swimming (literally: I swim gladly). <i>Ik eet graag frieten</i> = I like eating fries. The opposite is <b>niet graag</b>: <i>Ik kook niet graag</i>.</p>\n<h3>Al and nog</h3>\n<p><b>al</b> = already: <i>Ben je al klaar?</i> (are you done yet?). With a period of time it translates English \"for\", and the verb stays in the <b>present</b>: <i>Ik woon al drie jaar in Gent</i> = I have lived in Ghent for three years. <b>nog</b> = still: <i>Ben je nog moe?</i> (are you still tired?). Watch the order: \"not yet\" is <b>nog niet</b>.</p>\n<h3>Ook</h3>\n<p><b>ook</b> = also, too. It goes after the verb, not at the end like English \"too\": <i>Ik spreek ook Frans</i>. To answer \"me too\" you say <b>Ik ook</b>.</p>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Adding an ending to the adverb (like English -ly): <s>Hij kookt goede</s> → <b>Hij kookt goed</b>.</li>\n<li>Putting the adverb before the verb, as in \"I always drink\": <s>Ik altijd drink thee</s> → <b>Ik drink altijd thee</b>.</li>\n<li>Forgetting inversion: <s>Soms ik werk thuis</s> → <b>Soms werk ik thuis</b>.</li>\n<li>Using a past form for \"I have lived here for three years\": Dutch uses the present with <b>al</b>: <b>Ik woon hier al drie jaar</b>.</li>\n<li>Flipping \"not yet\": <s>niet nog</s> → <b>nog niet</b>.</li>\n</ul>",
+  "vlaams": "In spoken Flemish you'll often hear <b>seffens</b> (right away, in a moment): \"Tot seffens!\" = see you in a bit! In standard Dutch you say <i>straks</i> or <i>zo meteen</i>. Another typical word is <b>efkes</b> (a moment, a sec): \"Wacht efkes\" = wait a sec.",
+  "vocab": [
+   [
+    "langzaam",
+    "slow, slowly"
+   ],
+   [
+    "snel",
+    "fast, quickly"
+   ],
+   [
+    "goed",
+    "good, well"
+   ],
+   [
+    "slecht",
+    "bad, badly"
+   ],
+   [
+    "vroeg",
+    "early"
+   ],
+   [
+    "laat",
+    "late"
+   ],
+   [
+    "nu",
+    "now"
+   ],
+   [
+    "klaar",
+    "ready, done"
+   ],
+   [
+    "zingen",
+    "to sing"
+   ],
+   [
+    "rijden",
+    "to drive, to ride (a vehicle)"
+   ],
+   [
+    "fietsen",
+    "to cycle, to bike"
+   ],
+   [
+    "de thee",
+    "the tea"
+   ],
+   [
+    "het ontbijt",
+    "the breakfast"
+   ],
+   [
+    "de bus",
+    "the bus"
+   ],
+   [
+    "de kok",
+    "the cook"
+   ]
+  ],
+  "core": [
+   [
+    "altijd",
+    "always"
+   ],
+   [
+    "vaak",
+    "often"
+   ],
+   [
+    "soms",
+    "sometimes"
+   ],
+   [
+    "nooit",
+    "never"
+   ],
+   [
+    "al",
+    "already"
+   ],
+   [
+    "nog",
+    "still"
+   ],
+   [
+    "ook",
+    "also, too"
+   ],
+   [
+    "graag",
+    "gladly (I like to)"
+   ]
+  ],
+  "items": [
+   {
+    "t": "mc",
+    "q": "Mijn vader rijdt ___.",
+    "h": "slowly",
+    "o": [
+     "langzaam",
+     "langzame",
+     "langzaams"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "With a verb the adjective takes no ending: <b>langzaam</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Anna fietst ___ naar het station.",
+    "h": "quickly",
+    "a": [
+     "snel",
+     "vlug"
+    ],
+    "e": "<b>snel</b> (or <i>vlug</i>), no -e because it describes the action."
+   },
+   {
+    "t": "mc",
+    "q": "Hij komt ___ vroeg.",
+    "h": "always",
+    "o": [
+     "altijd",
+     "nooit",
+     "soms",
+     "nog"
+    ],
+    "a": 0,
+    "e": "always = <b>altijd</b>."
+   },
+   {
+    "t": "order",
+    "q": "Sometimes I work at home.",
+    "a": "Soms werk ik thuis",
+    "alt": [
+     "Ik werk soms thuis",
+     "Thuis werk ik soms"
+    ],
+    "x": [
+     "werkt",
+     "mij"
+    ],
+    "e": "If you start with <b>soms</b>, the verb comes right after it: Soms <b>werk</b> ik."
+   },
+   {
+    "t": "tr",
+    "q": "I like singing.",
+    "a": [
+     "Ik zing graag"
+    ],
+    "e": "verb + <b>graag</b>: Ik zing graag."
+   },
+   {
+    "t": "fill",
+    "q": "Ben je ___ klaar? — Nee, nog niet.",
+    "h": "already",
+    "a": [
+     "al"
+    ],
+    "e": "<b>al</b> = already. The answer <i>nog niet</i> = not yet."
+   },
+   {
+    "t": "mc",
+    "q": "Which sentence is correct?",
+    "o": [
+     "Ik moet vaak laat werken.",
+     "Ik moet werken vaak laat.",
+     "Ik vaak moet laat werken.",
+     "Vaak ik moet laat werken."
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Modal in second position, adverbs in the middle, infinitive at the end."
+   },
+   {
+    "t": "tr",
+    "q": "He drives well.",
+    "a": [
+     "Hij rijdt goed"
+    ],
+    "e": "<b>goed</b> = well, no ending."
+   },
+   {
+    "t": "fill",
+    "q": "Woon je ___ in Brussel? — Nee, nu woon ik in Gent.",
+    "h": "still",
+    "a": [
+     "nog"
+    ],
+    "e": "still = <b>nog</b>."
+   },
+   {
+    "t": "order",
+    "q": "The child eats slowly.",
+    "a": "Het kind eet langzaam",
+    "alt": [
+     "Langzaam eet het kind"
+    ],
+    "x": [
+     "langzame",
+     "eten"
+    ],
+    "e": "The adverb doesn't take an -e: <b>langzaam</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Ik drink graag thee. — Ik ___!",
+    "h": "me too",
+    "o": [
+     "ook",
+     "al",
+     "nog",
+     "soms"
+    ],
+    "a": 0,
+    "e": "me too = <b>Ik ook</b>."
+   },
+   {
+    "t": "tr",
+    "q": "I often drink tea.",
+    "a": [
+     "Ik drink vaak thee",
+     "Vaak drink ik thee"
+    ],
+    "e": "<b>vaak</b> after the conjugated verb."
+   }
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "Hij zingt ___. (well)",
+    "o": [
+     "goed",
+     "goede",
+     "goeds",
+     "goedmente"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "The adverb is the adjective with no ending: <b>goed</b>.",
+    "g": {
+     "goed": "well (adverb)",
+     "goede": "good: the -e only goes before a noun",
+     "goeds": "wrong form here",
+     "goedmente": "doesn't exist: no -ly/-mente ending in Dutch"
+    },
+    "tt": "He sings well."
+   },
+   {
+    "t": "mc",
+    "q": "slowly",
+    "o": [
+     "langzaam",
+     "langzame",
+     "langzaamlijk",
+     "langzamer"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Adjective without -e: <b>langzaam</b>.",
+    "g": {
+     "langzaam": "slowly",
+     "langzame": "slow, only before a noun",
+     "langzaamlijk": "doesn't exist",
+     "langzamer": "more slowly (comparative)"
+    },
+    "tt": "slowly"
+   },
+   {
+    "t": "mc",
+    "q": "never",
+    "o": [
+     "nooit",
+     "altijd",
+     "soms",
+     "vaak"
+    ],
+    "a": 0,
+    "e": "<b>nooit</b> = never.",
+    "g": {
+     "nooit": "never",
+     "altijd": "always",
+     "soms": "sometimes",
+     "vaak": "often"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "sometimes",
+    "o": [
+     "soms",
+     "ook",
+     "nog",
+     "al"
+    ],
+    "a": 0,
+    "e": "<b>soms</b> = sometimes.",
+    "g": {
+     "soms": "sometimes",
+     "ook": "also",
+     "nog": "still",
+     "al": "already"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "Which sentence is correct?",
+    "o": [
+     "Ik drink altijd thee.",
+     "Ik altijd drink thee.",
+     "Altijd ik drink thee.",
+     "Ik drinken altijd thee."
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "The adverb goes after the conjugated verb: <b>Ik drink altijd thee</b>.",
+    "g": {
+     "Ik drink altijd thee.": "I always drink tea (correct)",
+     "Ik altijd drink thee.": "the adverb doesn't go before the verb",
+     "Altijd ik drink thee.": "after Altijd you need inversion: drink ik",
+     "Ik drinken altijd thee.": "with ik the verb is drink"
+    },
+    "tt": "I always drink tea."
+   },
+   {
+    "t": "mc",
+    "q": "Soms ___ thuis.",
+    "o": [
+     "werk ik",
+     "ik werk"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "Adverb in first position → inversion: <b>Soms werk ik</b>.",
+    "g": {
+     "werk ik": "I work (with inversion)",
+     "ik werk": "I work: after soms you need inversion"
+    },
+    "tt": "Sometimes I work at home."
+   },
+   {
+    "t": "mc",
+    "q": "already",
+    "o": [
+     "al",
+     "nog",
+     "ook",
+     "nooit"
+    ],
+    "a": 0,
+    "e": "<b>al</b> = already.",
+    "g": {
+     "al": "already",
+     "nog": "still",
+     "ook": "also",
+     "nooit": "never"
+    }
+   },
+   {
+    "t": "mc",
+    "q": "Are you still tired? → Ben je ___ moe?",
+    "o": [
+     "nog",
+     "al",
+     "ook",
+     "soms"
+    ],
+    "a": 0,
+    "e": "still = <b>nog</b>.",
+    "g": {
+     "nog": "still",
+     "al": "already",
+     "ook": "also",
+     "soms": "sometimes"
+    },
+    "tt": "Are you still tired?"
+   },
+   {
+    "t": "fill",
+    "q": "Ik zwem ___.",
+    "h": "I like to",
+    "a": [
+     "graag"
+    ],
+    "e": "<b>graag</b> after the verb = you like doing it.",
+    "tt": "I like swimming."
+   },
+   {
+    "t": "order",
+    "q": "He speaks French too.",
+    "a": "Hij spreekt ook Frans",
+    "alt": [
+     "Frans spreekt hij ook"
+    ],
+    "x": [
+     "spreken",
+     "hem"
+    ],
+    "e": "<b>ook</b> goes after the conjugated verb."
+   }
+  ],
+  "gloss": {
+   "0": {
+    "g": {
+     "langzaam": "slowly",
+     "langzame": "slow, only before a noun",
+     "langzaams": "doesn't exist"
+    },
+    "t": "My father drives slowly."
+   },
+   "1": {
+    "t": "Anna cycles quickly to the station."
+   },
+   "2": {
+    "g": {
+     "altijd": "always",
+     "nooit": "never",
+     "soms": "sometimes",
+     "nog": "still"
+    },
+    "t": "He always comes early."
+   },
+   "3": {
+    "t": "Sometimes I work at home."
+   },
+   "4": {
+    "t": "I like singing."
+   },
+   "5": {
+    "t": "Are you done yet? — No, not yet."
+   },
+   "6": {
+    "g": {
+     "Ik moet vaak laat werken.": "I often have to work late (correct)",
+     "Ik moet werken vaak laat.": "the infinitive goes at the end",
+     "Ik vaak moet laat werken.": "the adverb doesn't go before the conjugated verb",
+     "Vaak ik moet laat werken.": "after Vaak you need inversion: moet ik"
+    },
+    "t": "I often have to work late."
+   },
+   "7": {
+    "t": "He drives well."
+   },
+   "8": {
+    "t": "Do you still live in Brussels? — No, now I live in Ghent."
+   },
+   "9": {
+    "t": "The child eats slowly."
+   },
+   "10": {
+    "g": {
+     "ook": "also (Ik ook = me too)",
+     "al": "already",
+     "nog": "still",
+     "soms": "sometimes"
+    },
+    "t": "I like drinking tea. — Me too!"
+   },
+   "11": {
+    "t": "I often drink tea."
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "Mijn broer kookt ___ dan mijn moeder, maar hij kookt niet graag.",
+    "o": [
+     "beter",
+     "betere",
+     "goeder",
+     "best"
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "A comparative used as an adverb takes no -e: <b>beter</b> (irregular: goed → beter). <i>Betere</i> only goes before a noun.",
+    "g": {
+     "beter": "better (correct)",
+     "betere": "better: the -e only goes before a noun",
+     "goeder": "doesn't exist: goed → beter",
+     "best": "superlative (the best); with dan you need the comparative"
+    },
+    "tt": "My brother cooks better than my mother, but he doesn't like cooking."
+   },
+   {
+    "t": "mc",
+    "q": "In Antwerp I never take the bus. Choose the right word order:",
+    "o": [
+     "In Antwerpen neem ik nooit de bus.",
+     "In Antwerpen ik neem nooit de bus.",
+     "In Antwerpen nooit neem ik de bus.",
+     "In Antwerpen neem nooit ik de bus."
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "<i>In Antwerpen</i> in first position → inversion <b>neem ik</b>; the adverb <b>nooit</b> comes after the subject.",
+    "g": {
+     "In Antwerpen neem ik nooit de bus.": "In Antwerp I never take the bus. (correct)",
+     "In Antwerpen ik neem nooit de bus.": "missing inversion after In Antwerpen",
+     "In Antwerpen nooit neem ik de bus.": "the verb must be in second position, right after In Antwerpen",
+     "In Antwerpen neem nooit ik de bus.": "with inversion the subject comes right after the verb, then nooit"
+    },
+    "tt": "In Antwerp I never take the bus."
+   },
+   {
+    "t": "fill",
+    "q": "Woon je al lang in Gent? — Ja, ik woon hier ___ vijf jaar.",
+    "h": "for (already)",
+    "a": [
+     "al"
+    ],
+    "e": "With a period of time <b>al</b> translates \"for\": <i>ik woon hier al vijf jaar</i>. Unlike English (\"I have lived\"), Dutch keeps the verb in the present.",
+    "tt": "Have you lived in Ghent for long? — Yes, I've lived here for five years."
+   },
+   {
+    "t": "fill",
+    "q": "Is het ontbijt al klaar? — Nee, het is ___ klaar, wacht efkes.",
+    "h": "not yet",
+    "a": [
+     "nog niet"
+    ],
+    "e": "\"Not yet\" = <b>nog niet</b>, in that order (never <s>niet nog</s>). <i>Efkes</i> = a sec, typically Flemish.",
+    "tt": "Is breakfast ready yet? — No, it isn't ready yet, wait a sec."
+   },
+   {
+    "t": "tr",
+    "q": "I don't like driving in Brussels, I always take the tram.",
+    "a": [
+     "Ik rijd niet graag in Brussel, ik neem altijd de tram",
+     "Ik rijd niet graag in Brussel, ik pak altijd de tram",
+     "Ik rij niet graag in Brussel, ik neem altijd de tram",
+     "Ik rij niet graag in Brussel, ik pak altijd de tram",
+     "In Brussel rijd ik niet graag, ik neem altijd de tram",
+     "In Brussel rijd ik niet graag, ik pak altijd de tram",
+     "In Brussel rij ik niet graag, ik neem altijd de tram",
+     "In Brussel rij ik niet graag, ik pak altijd de tram"
+    ],
+    "e": "\"I don't like ...ing\" = <b>niet graag</b> after the verb. If you start with <i>In Brussel</i>, inversion kicks in: <i>rijd ik</i>."
+   },
+   {
+    "t": "tr",
+    "q": "My mother cooks well, but my father cooks even better.",
+    "a": [
+     "Mijn moeder kookt goed, maar mijn vader kookt nog beter",
+     "Mijn moeder kookt goed, maar mijn vader kookt zelfs beter"
+    ],
+    "e": "<b>goed</b> = well, <b>beter</b> = better. Trap: before a comparative, <b>nog</b> means \"even\": <i>nog beter</i>."
+   },
+   {
+    "t": "order",
+    "q": "In Ghent I often cycle to work.",
+    "a": "In Gent fiets ik vaak naar het werk",
+    "alt": [
+     "Ik fiets in Gent vaak naar het werk",
+     "Vaak fiets ik in Gent naar het werk"
+    ],
+    "x": [
+     "fietst",
+     "snelle"
+    ],
+    "e": "<i>In Gent</i> first → inversion <b>fiets ik</b>; <b>vaak</b> right after the subject, then the direction (<i>naar het werk</i>).",
+    "tt": "In Ghent I often cycle to work."
+   },
+   {
+    "t": "order",
+    "q": "My son never wants to eat vegetables.",
+    "a": "Mijn zoon wil nooit groenten eten",
+    "alt": [
+     "Groenten wil mijn zoon nooit eten"
+    ],
+    "x": [
+     "willen",
+     "niet"
+    ],
+    "e": "Modal <b>wil</b> in second position, the adverb <b>nooit</b> in the middle, the infinitive <b>eten</b> at the end.",
+    "tt": "My son never wants to eat vegetables."
+   }
+  ]
+ }
+}

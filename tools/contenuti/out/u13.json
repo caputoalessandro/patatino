@@ -1,0 +1,650 @@
+{
+ "id": "u13",
+ "hard": [
+  {
+   "t": "mc",
+   "q": "Zie je ___ fietsen daar bij het station? Ze zijn niet van ons.",
+   "o": [
+    "die",
+    "dat",
+    "dit",
+    "deze"
+   ],
+   "a": 0,
+   "e": "Plurale e lontano (<i>daar</i>) → <b>die</b>. Al plurale davanti a un nome non si usa mai <i>dit</i> o <i>dat</i>.",
+   "g": {
+    "die": "quelle (plurale, lontano)",
+    "dat": "quello: mai davanti a un plurale",
+    "dit": "questo: mai davanti a un plurale",
+    "deze": "queste: vicino, ma qui c'è daar"
+   },
+   "tt": "Vedi quelle bici là vicino alla stazione? Non sono nostre."
+  },
+  {
+   "t": "fill",
+   "q": "Hoeveel kosten ___ glazen daar?",
+   "h": "quei",
+   "a": [
+    "die"
+   ],
+   "e": "<i>het glas</i> è una het-parola, ma al plurale tutti i nomi prendono <i>de</i>: <i>de glazen</i> → <b>die glazen</b>, non <s>dat glazen</s>.",
+   "tt": "Quanto costano quei bicchieri là?"
+  },
+  {
+   "t": "mc",
+   "q": "Mostri le foto a un'amica: quale frase è corretta?",
+   "o": [
+    "Dit zijn de foto's van ons weekend in Brugge.",
+    "Dit is de foto's van ons weekend in Brugge.",
+    "Deze zijn de foto's van ons weekend in Brugge.",
+    "Deze is de foto's van ons weekend in Brugge."
+   ],
+   "a": 0,
+   "oit": true,
+   "e": "Per presentare si usa sempre <b>dit</b>/<b>dat</b>, anche se il nome è plurale; il verbo invece si accorda: <b>Dit zijn</b> de foto's.",
+   "g": {
+    "Dit zijn de foto's van ons weekend in Brugge.": "Queste sono le foto del nostro weekend a Bruges. (giusta)",
+    "Dit is de foto's van ons weekend in Brugge.": "con un plurale serve zijn",
+    "Deze zijn de foto's van ons weekend in Brugge.": "per presentare con zijn si usa dit, non deze",
+    "Deze is de foto's van ons weekend in Brugge.": "due errori: deze e is"
+   },
+   "tt": "Queste sono le foto del nostro weekend a Bruges."
+  },
+  {
+   "t": "fill",
+   "q": "Deze week werk ik in Gent, maar ___ weekend blijf ik thuis.",
+   "h": "questo",
+   "a": [
+    "dit"
+   ],
+   "e": "<i>het weekend</i> è una het-parola → <b>dit weekend</b> (ma <i>deze week</i>, perché <i>de week</i>). Dopo <i>dit weekend</i> c'è l'inversione: <i>blijf ik</i>.",
+   "tt": "Questa settimana lavoro a Gand, ma questo fine settimana resto a casa."
+  },
+  {
+   "t": "tr",
+   "q": "Quest'anno non compriamo una macchina.",
+   "a": [
+    "Dit jaar kopen we geen auto",
+    "Dit jaar kopen wij geen auto",
+    "We kopen dit jaar geen auto",
+    "Wij kopen dit jaar geen auto",
+    "Dit jaar kopen we geen wagen",
+    "We kopen dit jaar geen wagen"
+   ],
+   "e": "<i>het jaar</i> → <b>dit jaar</b>; all'inizio, poi inversione <i>kopen we</i>. \"Non… una macchina\" → <b>geen auto</b> (in Belgio anche <i>geen wagen</i>)."
+  },
+  {
+   "t": "order",
+   "q": "Questi pantaloni sono troppo cari.",
+   "a": "Deze broek is te duur",
+   "x": [
+    "zijn",
+    "dit"
+   ],
+   "e": "<i>de broek</i> è singolare in olandese: <b>deze broek is</b>, non <s>zijn</s>.",
+   "tt": "Questi pantaloni sono troppo cari."
+  },
+  {
+   "t": "tr",
+   "q": "Quel ristorante vicino alla stazione non è caro.",
+   "a": [
+    "Dat restaurant bij het station is niet duur",
+    "Dat restaurant dicht bij het station is niet duur",
+    "Dat restaurant naast het station is niet duur"
+   ],
+   "e": "<i>het restaurant</i>, lontano → <b>dat</b>. <b>niet</b> va davanti all'aggettivo: <i>niet duur</i>."
+  },
+  {
+   "t": "order",
+   "q": "Queste sono le chiavi della nostra casa a Gand.",
+   "a": "Dit zijn de sleutels van ons huis in Gent",
+   "x": [
+    "deze",
+    "is"
+   ],
+   "e": "Per presentare: <b>Dit zijn</b> (dit anche al plurale, verbo al plurale). <i>het huis</i> → <b>ons</b> huis, non onze.",
+   "tt": "Queste sono le chiavi della nostra casa a Gand."
+  }
+ ],
+ "en": {
+  "it": "Demonstratives",
+  "note": "\n<h3>The idea</h3>\n<p>As in English, there are two distances: <b>this</b> (near) and <b>that</b> (far). But in Dutch the form doesn't just depend on singular or plural: it depends on the noun's <b>article</b>, <i>de</i> or <i>het</i>, just like <i>welk/welke</i> and <i>ons/onze</i>.</p>\n<h3>The table</h3>\n<table><tr><th></th><th>this / these</th><th>that / those</th></tr>\n<tr><td>de-words</td><td><b>deze</b> stoel</td><td><b>die</b> stoel</td></tr>\n<tr><td>het-words</td><td><b>dit</b> huis</td><td><b>dat</b> huis</td></tr>\n<tr><td>plural</td><td><b>deze</b> stoelen</td><td><b>die</b> stoelen</td></tr></table>\n<p>A memory aid: the forms ending in <b>-e</b> (deze, die) go with <b>de</b>; the forms ending in <b>-t</b> (dit, dat) go with <b>het</b>. In the plural all nouns take <i>de</i>, so they also take <i>deze/die</i>: <i>dit huis</i> → <i>deze huizen</i>.</p>\n<h3>Demonstrative instead of the article</h3>\n<p>The demonstrative replaces the article, as in English: <i>de broek</i> → <i>deze broek</i> (these pants). Careful: <i>de broek</i> is <b>singular</b> in Dutch, even though English says \"pants\" or \"trousers\": <i>deze broek <b>is</b></i>.</p>\n<h3>Dit is… / Dat zijn…: pointing things out</h3>\n<p>To introduce or point something out with <i>zijn</i> (is / are), you always use <b>dit</b> or <b>dat</b>, whatever the noun, even in the plural. English says \"<b>These</b> are my children\", but Dutch keeps <i>dit</i>; it's the <b>verb</b> that agrees:</p>\n<ul>\n<li><i>Dit <b>is</b> mijn broer.</i> (This is my brother.)</li>\n<li><i>Dit <b>zijn</b> mijn kinderen.</i> (These are my children.)</li>\n<li><i>Dat <b>zijn</b> mijn schoenen.</i> (Those are my shoes.)</li>\n</ul>\n<h3>This or that?</h3>\n<p><b>deze/dit</b> for what's near the speaker (often with <i>hier</i>), <b>die/dat</b> for what's farther away (often with <i>daar</i>): <i>Deze trui is mooi, maar die trui is lelijk.</i></p>\n<p><i>dat</i> is also used to refer to something just said, like English \"that\": <i>Dat weet ik niet.</i> (I don't know that.)</p>\n<h3>Time words</h3>\n<p>With time words you use <i>deze/dit</i> for the current period: <i>deze week</i> (this week), <i>dit jaar</i> (this year).</p>\n<h3>Watch out: typical mistakes for English speakers</h3>\n<ul>\n<li>Forgetting to check de/het: <s>dit stoel</s> → <b>deze stoel</b> (de stoel).</li>\n<li>Using dit/dat before a plural noun: <s>dat boeken</s> → <b>die boeken</b>.</li>\n<li>Translating \"These are…\" word for word: <s>Deze zijn mijn kinderen</s> → <b>Dit zijn mijn kinderen</b>.</li>\n<li>Leaving the verb singular: <s>Dat is mijn schoenen</s> → <b>Dat zijn mijn schoenen</b>.</li>\n<li>Keeping the article too: <s>deze de broek</s> → <b>deze broek</b>.</li>\n</ul>",
+  "vlaams": "In spoken Flemish you often hear <b>da</b> instead of dat (\"da's goed\", \"da weet ik nie\"); in some areas also <b>dees</b> instead of deze. In Belgium a dress shirt is called <b>het hemd</b>; in the Netherlands people usually say <i>het overhemd</i>.",
+  "vocab": [
+   [
+    "de week",
+    "the week"
+   ],
+   [
+    "de broek",
+    "the pants, the trousers"
+   ],
+   [
+    "het hemd",
+    "the shirt"
+   ],
+   [
+    "de trui",
+    "the sweater"
+   ],
+   [
+    "het brood",
+    "the bread"
+   ],
+   [
+    "het glas",
+    "the glass"
+   ],
+   [
+    "de stoel",
+    "the chair"
+   ],
+   [
+    "de foto",
+    "the photo"
+   ],
+   [
+    "het restaurant",
+    "the restaurant"
+   ],
+   [
+    "kopen",
+    "to buy"
+   ],
+   [
+    "nemen",
+    "to take"
+   ],
+   [
+    "klein",
+    "small, little"
+   ],
+   [
+    "lelijk",
+    "ugly"
+   ],
+   [
+    "goedkoop",
+    "cheap"
+   ]
+  ],
+  "core": [
+   [
+    "deze",
+    "this, these (de-words and plural)"
+   ],
+   [
+    "dit",
+    "this (het-words)"
+   ],
+   [
+    "die",
+    "that, those (de-words and plural)"
+   ],
+   [
+    "dat",
+    "that (het-words)"
+   ]
+  ],
+  "items": [
+   {
+    "t": "mc",
+    "q": "Ik wil ___ hemd kopen.",
+    "h": "this shirt",
+    "o": [
+     "dit",
+     "deze",
+     "dat",
+     "die"
+    ],
+    "a": 0,
+    "e": "<i>het hemd</i>, near → <b>dit</b>."
+   },
+   {
+    "t": "mc",
+    "q": "___ broek is goedkoop.",
+    "h": "those pants",
+    "o": [
+     "Die",
+     "Dat",
+     "Deze",
+     "Dit"
+    ],
+    "a": 0,
+    "e": "<i>de broek</i>, far → <b>die</b>. In Dutch it's singular: <i>is</i>."
+   },
+   {
+    "t": "fill",
+    "q": "___ zijn mijn kinderen.",
+    "h": "these (pointing out)",
+    "a": [
+     "dit"
+    ],
+    "e": "To point things out: <b>Dit zijn</b>, even in the plural."
+   },
+   {
+    "t": "tr",
+    "q": "This restaurant is expensive.",
+    "a": [
+     "Dit restaurant is duur"
+    ],
+    "e": "<i>het restaurant</i> → <b>dit</b>."
+   },
+   {
+    "t": "order",
+    "q": "I'm buying this bread.",
+    "a": "Ik koop dit brood",
+    "alt": [
+     "Dit brood koop ik"
+    ],
+    "x": [
+     "deze",
+     "koopt"
+    ],
+    "e": "<i>het brood</i> → <b>dit</b> brood."
+   },
+   {
+    "t": "mc",
+    "q": "Van wie is ___ glas?",
+    "h": "that",
+    "o": [
+     "dat",
+     "die",
+     "dit",
+     "deze"
+    ],
+    "a": 0,
+    "e": "<i>het glas</i>, far → <b>dat</b>."
+   },
+   {
+    "t": "fill",
+    "q": "Is ___ foto van jou?",
+    "h": "this",
+    "a": [
+     "deze"
+    ],
+    "e": "<i>de foto</i>, near → <b>deze</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Deze trui is mooi, maar ___ trui is lelijk.",
+    "o": [
+     "die",
+     "dat",
+     "dit",
+     "het"
+    ],
+    "a": 0,
+    "e": "Near/far contrast: <i>deze</i> trui… <b>die</b> trui."
+   },
+   {
+    "t": "tr",
+    "q": "This week I'm working from home.",
+    "a": [
+     "Deze week werk ik thuis",
+     "Ik werk deze week thuis",
+     "Ik werk thuis deze week"
+    ],
+    "e": "<i>de week</i> → <b>deze week</b>; if it comes first, invert: werk ik."
+   },
+   {
+    "t": "order",
+    "q": "These chairs are small.",
+    "a": "Deze stoelen zijn klein",
+    "x": [
+     "kleine",
+     "stoel"
+    ],
+    "e": "Plural → <b>deze</b>, and the verb in the plural: <b>zijn</b>."
+   },
+   {
+    "t": "mc",
+    "q": "Which sentence is correct?",
+    "o": [
+     "Dat zijn mijn schoenen.",
+     "Dat is mijn schoenen.",
+     "Deze is mijn schoenen.",
+     "Dit is mijn schoenen."
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "With a plural the verb is <b>zijn</b>: <b>Dat zijn</b> mijn schoenen."
+   },
+   {
+    "t": "tr",
+    "q": "That photo is beautiful.",
+    "a": [
+     "Die foto is mooi"
+    ],
+    "e": "<i>de foto</i>, far → <b>die</b>."
+   }
+  ],
+  "drills": [
+   {
+    "t": "mc",
+    "q": "___ stoel",
+    "h": "this",
+    "o": [
+     "deze",
+     "dit",
+     "die",
+     "dat"
+    ],
+    "a": 0,
+    "e": "<i>de stoel</i>, near → <b>deze</b>.",
+    "g": {
+     "deze": "this (de-words)",
+     "dit": "this, but only with het-words",
+     "die": "that (de-words)",
+     "dat": "that (het-words)"
+    },
+    "tt": "this chair"
+   },
+   {
+    "t": "mc",
+    "q": "___ glas",
+    "h": "this",
+    "o": [
+     "dit",
+     "deze",
+     "dat",
+     "die"
+    ],
+    "a": 0,
+    "e": "<i>het glas</i>, near → <b>dit</b>.",
+    "g": {
+     "dit": "this (het-words)",
+     "deze": "this, but only with de-words and plurals",
+     "dat": "that (het-words)",
+     "die": "that (de-words)"
+    },
+    "tt": "this glass"
+   },
+   {
+    "t": "mc",
+    "q": "___ boeken",
+    "h": "those",
+    "o": [
+     "die",
+     "dat",
+     "deze",
+     "dit"
+    ],
+    "a": 0,
+    "e": "Plural, far → <b>die</b>.",
+    "g": {
+     "die": "those (plural)",
+     "dat": "that: never before a plural",
+     "deze": "these (near)",
+     "dit": "this: never before a plural"
+    },
+    "tt": "those books"
+   },
+   {
+    "t": "mc",
+    "q": "___ huis",
+    "h": "that",
+    "o": [
+     "dat",
+     "die",
+     "dit",
+     "deze"
+    ],
+    "a": 0,
+    "e": "<i>het huis</i>, far → <b>dat</b>.",
+    "g": {
+     "dat": "that (het-words)",
+     "die": "that, but only with de-words and plurals",
+     "dit": "this (het-words)",
+     "deze": "this (de-words)"
+    },
+    "tt": "that house"
+   },
+   {
+    "t": "mc",
+    "q": "___ is mijn broer.",
+    "h": "this",
+    "o": [
+     "Dit",
+     "Deze",
+     "Die",
+     "Dat"
+    ],
+    "a": 0,
+    "e": "To introduce someone: <b>Dit is</b>…",
+    "g": {
+     "Dit": "this (to introduce)",
+     "Deze": "to introduce with zijn you use dit",
+     "Die": "that, and to introduce you use dit/dat",
+     "Dat": "that (far), not this"
+    },
+    "tt": "This is my brother."
+   },
+   {
+    "t": "mc",
+    "q": "___ zijn mijn schoenen.",
+    "h": "these",
+    "o": [
+     "Dit",
+     "Deze",
+     "Die",
+     "Dat"
+    ],
+    "a": 0,
+    "e": "To point things out, even in the plural: <b>Dit zijn</b>… (not \"Deze zijn\").",
+    "g": {
+     "Dit": "this / these (to point out)",
+     "Deze": "to point out with zijn you use dit",
+     "Die": "to point out with zijn you use dat",
+     "Dat": "those (far), not these"
+    },
+    "tt": "These are my shoes."
+   },
+   {
+    "t": "mc",
+    "q": "de week → ___ week",
+    "h": "this",
+    "o": [
+     "deze",
+     "dit"
+    ],
+    "a": 0,
+    "e": "<i>de week</i> → <b>deze week</b>.",
+    "g": {
+     "deze": "this (de-words)",
+     "dit": "this (het-words only)"
+    },
+    "tt": "this week"
+   },
+   {
+    "t": "fill",
+    "q": "Ik neem ___ broek.",
+    "h": "these",
+    "a": [
+     "deze"
+    ],
+    "e": "<i>de broek</i> (singular in Dutch) → <b>deze</b>.",
+    "tt": "I'll take these pants."
+   },
+   {
+    "t": "fill",
+    "q": "___ brood is lekker.",
+    "h": "that",
+    "a": [
+     "dat"
+    ],
+    "e": "<i>het brood</i>, far → <b>dat</b>.",
+    "tt": "That bread is good."
+   },
+   {
+    "t": "order",
+    "q": "That chair is small.",
+    "a": "Die stoel is klein",
+    "x": [
+     "hem",
+     "kleinen"
+    ],
+    "e": "<i>de stoel</i>, far → <b>die</b>."
+   }
+  ],
+  "gloss": {
+   "0": {
+    "g": {
+     "dit": "this (het-words)",
+     "deze": "this, but hemd is a het-word",
+     "dat": "that (far)",
+     "die": "that, and only with de-words"
+    },
+    "t": "I want to buy this shirt."
+   },
+   "1": {
+    "g": {
+     "Die": "that (de-words)",
+     "Dat": "that, but broek is a de-word",
+     "Deze": "this (near)",
+     "Dit": "this, and only with het-words"
+    },
+    "t": "Those pants are cheap."
+   },
+   "2": {
+    "t": "These are my children."
+   },
+   "5": {
+    "g": {
+     "dat": "that (het-words)",
+     "die": "that, but glas is a het-word",
+     "dit": "this (near)",
+     "deze": "this, and only with de-words"
+    },
+    "t": "Whose glass is that?"
+   },
+   "6": {
+    "t": "Is this photo yours?"
+   },
+   "7": {
+    "g": {
+     "die": "that (de-words)",
+     "dat": "that, but trui is a de-word",
+     "dit": "this, and only with het-words",
+     "het": "article for het-words: trui is a de-word"
+    },
+    "t": "This sweater is nice, but that sweater is ugly."
+   },
+   "10": {
+    "g": {
+     "Dat zijn mijn schoenen.": "Those are my shoes. (correct)",
+     "Dat is mijn schoenen.": "with a plural you need zijn",
+     "Deze is mijn schoenen.": "to point things out you use dit/dat, and you need zijn",
+     "Dit is mijn schoenen.": "with a plural you need zijn"
+    },
+    "t": "Those are my shoes."
+   }
+  },
+  "hard": [
+   {
+    "t": "mc",
+    "q": "Zie je ___ fietsen daar bij het station? Ze zijn niet van ons.",
+    "o": [
+     "die",
+     "dat",
+     "dit",
+     "deze"
+    ],
+    "a": 0,
+    "e": "Plural and far away (<i>daar</i>) → <b>die</b> (\"those\"). Before a plural noun you never use <i>dit</i> or <i>dat</i>.",
+    "g": {
+     "die": "those (plural, far)",
+     "dat": "that: never before a plural",
+     "dit": "this: never before a plural",
+     "deze": "these: near, but here we have daar"
+    },
+    "tt": "Do you see those bikes over there by the station? They're not ours."
+   },
+   {
+    "t": "fill",
+    "q": "Hoeveel kosten ___ glazen daar?",
+    "h": "those",
+    "a": [
+     "die"
+    ],
+    "e": "<i>het glas</i> is a het-word, but in the plural every noun takes <i>de</i>: <i>de glazen</i> → <b>die glazen</b>, not <s>dat glazen</s>.",
+    "tt": "How much are those glasses over there?"
+   },
+   {
+    "t": "mc",
+    "q": "You're showing a friend your photos: which sentence is correct?",
+    "o": [
+     "Dit zijn de foto's van ons weekend in Brugge.",
+     "Dit is de foto's van ons weekend in Brugge.",
+     "Deze zijn de foto's van ons weekend in Brugge.",
+     "Deze is de foto's van ons weekend in Brugge."
+    ],
+    "a": 0,
+    "oit": true,
+    "e": "To introduce or point things out you always use <b>dit</b>/<b>dat</b>, even with a plural noun — unlike English \"These are…\"; the verb does agree: <b>Dit zijn</b> de foto's.",
+    "g": {
+     "Dit zijn de foto's van ons weekend in Brugge.": "These are the photos from our weekend in Bruges. (correct)",
+     "Dit is de foto's van ons weekend in Brugge.": "with a plural you need zijn",
+     "Deze zijn de foto's van ons weekend in Brugge.": "the classic English-speaker mistake (\"These are…\"): use dit",
+     "Deze is de foto's van ons weekend in Brugge.": "two mistakes: deze and is"
+    },
+    "tt": "These are the photos from our weekend in Bruges."
+   },
+   {
+    "t": "fill",
+    "q": "Deze week werk ik in Gent, maar ___ weekend blijf ik thuis.",
+    "h": "this",
+    "a": [
+     "dit"
+    ],
+    "e": "<i>het weekend</i> is a het-word → <b>dit weekend</b> (but <i>deze week</i>, because it's <i>de week</i>). After <i>dit weekend</i> there's inversion: <i>blijf ik</i>.",
+    "tt": "This week I'm working in Ghent, but this weekend I'm staying home."
+   },
+   {
+    "t": "tr",
+    "q": "We're not buying a car this year.",
+    "a": [
+     "Dit jaar kopen we geen auto",
+     "Dit jaar kopen wij geen auto",
+     "We kopen dit jaar geen auto",
+     "Wij kopen dit jaar geen auto",
+     "Dit jaar kopen we geen wagen",
+     "We kopen dit jaar geen wagen"
+    ],
+    "e": "<i>het jaar</i> → <b>dit jaar</b>; if it comes first, invert: <i>kopen we</i>. \"Not… a car\" → <b>geen auto</b> (in Belgium also <i>geen wagen</i>)."
+   },
+   {
+    "t": "order",
+    "q": "These pants are too expensive.",
+    "a": "Deze broek is te duur",
+    "x": [
+     "zijn",
+     "dit"
+    ],
+    "e": "As in English, pants are \"plural\" — but Dutch <i>de broek</i> is singular: <b>deze broek is</b>, not <s>zijn</s>.",
+    "tt": "These pants are too expensive."
+   },
+   {
+    "t": "tr",
+    "q": "That restaurant near the station isn't expensive.",
+    "a": [
+     "Dat restaurant bij het station is niet duur",
+     "Dat restaurant dicht bij het station is niet duur",
+     "Dat restaurant naast het station is niet duur"
+    ],
+    "e": "<i>het restaurant</i>, far away → <b>dat</b>. <b>niet</b> goes before the adjective: <i>niet duur</i>."
+   },
+   {
+    "t": "order",
+    "q": "These are the keys to our house in Ghent.",
+    "a": "Dit zijn de sleutels van ons huis in Gent",
+    "x": [
+     "deze",
+     "is"
+    ],
+    "e": "To point things out: <b>Dit zijn</b> (dit even with a plural, verb in the plural) — not <s>Deze zijn</s>. <i>het huis</i> → <b>ons</b> huis, not onze.",
+    "tt": "These are the keys to our house in Ghent."
+   }
+  ]
+ }
+}
