@@ -2355,9 +2355,11 @@ function unloadPremium(){
   localize();
 }
 async function lockPremium(){ unloadPremium(); await MODDB.clear(); }
+// versione minima dei moduli: quelli scaricati prima (senza inglese ed esercizi difficili) si riscaricano
+const MODULE_VERSION = 2;
 async function loadCachedModules(){
   if(!isPremium()) return;
-  (await MODDB.all()).forEach(m => { if(m && validModule(m, m.module)) applyModule(m); });
+  (await MODDB.all()).forEach(m => { if(m && validModule(m, m.module) && (m.version || 1) >= MODULE_VERSION) applyModule(m); });
 }
 const missingModules = () => premiumModules().filter(n => !loadedModules.has(n));
 

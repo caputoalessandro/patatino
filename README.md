@@ -92,3 +92,18 @@ L'app considera revocata la licenza solo con una risposta esplicita `{ valid: fa
 Lo stato della licenza (codice, instanceId, data dell'ultima verifica) è salvato in `goesting.license` ed entra nel backup.
 
 **Modalità sviluppo**: aprendo l'app da `localhost`/`127.0.0.1` senza Worker, l'unico codice accettato è `TEST-PREMIUM-0000` e i moduli si leggono da `premium-src/`. Va rimossa prima della pubblicazione: in `index.html` cerca `MODALITÀ SVILUPPO`.
+
+## Lingua dell'app (italiano / English)
+
+In Impostazioni → Lingua si sceglie **Italiano** o **English**: cambiano menu, spiegazioni, esercizi, lessico, flashcard e frasi; il neerlandese resta identico.
+Al primo avvio l'app parte in italiano se il telefono è in italiano, altrimenti in inglese; chi la usava già resta in italiano.
+
+- Testi dell'interfaccia: in `index.html` passano tutti da `T("testo italiano")`; la traduzione inglese sta nel dizionario `EN_UI` (chiave = testo italiano). Per un testo nuovo basta aggiungere la riga in `EN_UI`.
+- Contenuti del modulo gratuito: versione inglese in `EN` dentro `index.html`.
+- Contenuti sbloccabili: ogni unità, serie di frasi e mazzo in `premium-src/module-N.json` ha un campo `en` con la versione inglese (stessa forma, olandese identico).
+
+## Livello difficile
+
+Ogni unità ha una terza parte facoltativa, **Livello difficile**: 8 esercizi (2 a scelta multipla, 2 da completare, 2 da tradurre, 2 da ordinare) con frasi più lunghe, trabocchetti e regole delle unità precedenti.
+Non serve per completare l'unità; il punteggio è salvato a parte (`hbest`) e gli errori finiscono nel ripasso.
+Per il modulo gratuito stanno in `HARD` dentro `index.html`; per gli altri nel campo `hard` di ogni unità in `premium-src/`.
