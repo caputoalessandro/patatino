@@ -519,6 +519,8 @@ body{background:var(--bg)}
 .lic-state{display:flex;align-items:center;gap:8px;font-family:var(--f-display);font-weight:800;font-size:19px}
 .lic-state.ok svg{color:var(--good)}
 .lic-state.ko{color:var(--bad)}
+.part-hard{border-style:dashed}
+.part-hard .pn{background:var(--ink);color:#fff}
 .lic-dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0;background:var(--surface);border:2.5px solid var(--ink);border-radius:14px;padding:12px 14px}
 .lic-dl dt{color:var(--muted);font-size:14px}
 .lic-dl dd{margin:0;font-weight:700;min-width:0;overflow-wrap:anywhere}
@@ -1067,6 +1069,11 @@ if (typeof module !== "undefined") module.exports = ORDER_SETS;
 
 // Catalogo dei contenuti premium: qui ci sono solo i titoli. Spiegazioni, lessico ed esercizi
 // arrivano dal server dopo lo sblocco (in sviluppo da premium-src/, che non va pubblicata).
+// Esercizi di livello difficile (parte 3, facoltativa) delle unità gratuite: {uN: [esercizi]}
+const HARD = {};
+// Versione inglese dei contenuti gratuiti e dei titoli del catalogo. Stessa forma degli originali; l'olandese è identico.
+const EN = {units:{}, decks:{}};
+
 const PREMIUM_UNITS = [
   {id:"u6", nl:"Het meervoud", it:"Il plurale"},
   {id:"u7", nl:"Vragen", it:"Domande"},
@@ -1139,13 +1146,389 @@ function REGISTER_UNIT(U){
 // I moduli gratuiti devono avere i contenuti dentro index.html; gli altri arrivano dal Worker (premium-src/ in sviluppo).
 const PREMIUM_CONFIG = {
   freeModules: [1],                            // moduli del percorso sempre gratuiti (1 = "Le basi")
-  donationLabel: "da 1 €",                     // donazione libera: il minimo si imposta sul prodotto «paga quanto vuoi» del provider
+  minDonation: 1,                              // euro; donazione libera: il minimo vero si imposta sul prodotto «paga quanto vuoi» del provider
   checkoutUrl: "",                             // link della donazione Lemon Squeezy / Paddle; vuoto = "Presto disponibile"
   apiBase: "/api",                             // Cloudflare Worker sullo stesso dominio
   maxDevices: 3,                               // solo per i testi: il limite vero lo applica il provider
   supportEmail: "[EMAIL]",
   ordersUrl: "[LINK PAGINA ORDINI CLIENTI]"    // pagina dove chi ha donato ritrova ricevute e codici
 };
+/* ---------- LINGUA DELL'INTERFACCIA ---------- */
+// T("testo italiano", {segnaposto}) restituisce il testo nella lingua scelta. La chiave è l'italiano stesso:
+// per un testo nuovo basta aggiungere qui la traduzione inglese.
+const EN_UI = {
+  "Percorso": "Path",
+  "Flashcards": "Flashcards",
+  "Frasi": "Sentences",
+  "Sezioni": "Sections",
+  "Il file non è un JSON valido.": "The file is not valid JSON.",
+  "Il file non contiene un backup.": "The file doesn't contain a backup.",
+  "Questo file non è un backup di Patatino.": "This file is not a Patatino backup.",
+  "Il file non indica una versione valida.": "The file doesn't show a valid version.",
+  "Il backup viene da una versione più recente di Patatino: aggiorna l'app e riprova.": "This backup comes from a newer version of Patatino: update the app and try again.",
+  "Nel file mancano i dati.": "The file has no data.",
+  "Nel file mancano i progressi.": "The file has no progress in it.",
+  "Non sono riuscito a salvare i dati: forse lo spazio è pieno.": "I couldn't save the data: your storage may be full.",
+  "Non riesco a leggere il file.": "I can't read the file.",
+  "I progressi nel file sono danneggiati.": "The progress in the file is damaged.",
+  "Annulla": "Cancel",
+  "Ripristinare il backup?": "Restore the backup?",
+  "I progressi e le impostazioni di questo dispositivo verranno <b>sostituiti</b> con quelli del backup del {d}. Non si può annullare.": "The progress and settings on this device will be <b>replaced</b> with those from the backup of {d}. This can't be undone.",
+  "I progressi e le impostazioni di questo dispositivo verranno <b>sostituiti</b> con quelli del backup. Non si può annullare.": "The progress and settings on this device will be <b>replaced</b> with those from the backup. This can't be undone.",
+  "Sì, ripristina": "Yes, restore",
+  "Ehi, sono passati {n} giorni dal tuo ultimo backup! Salviamo i progressi in un file?": "Hey, it's been {n} days since your last backup! Shall we save your progress to a file?",
+  "Ehi, i tuoi progressi stanno solo in questo browser. Salviamoli in un file, per sicurezza?": "Hey, your progress only lives in this browser. Shall we save it to a file, just in case?",
+  "Promemoria backup": "Backup reminder",
+  "Esporta ora": "Export now",
+  "Più tardi": "Later",
+  "Fatto, backup scaricato! Tienilo in un posto sicuro.": "Done, backup downloaded! Keep it somewhere safe.",
+  "Installa l'app": "Install the app",
+  "Chiudi": "Close",
+  "Ti è piaciuto? Mettimi sulla schermata Home così mi ritrovi subito!": "Enjoying it? Put me on your Home Screen so you can find me right away!",
+  "Nuovo indirizzo": "New address",
+  "<b>L'app si è trasferita!</b> Patatino ora abita a un nuovo indirizzo. I progressi non traslocano da soli: esportali qui, poi aprili dal nuovo indirizzo con <i>Impostazioni → Importa backup</i>.": "<b>The app has moved!</b> Patatino now lives at a new address. Your progress doesn't move by itself: export it here, then open it from the new address with <i>Settings → Import backup</i>.",
+  "Esporta i miei dati": "Export my data",
+  "Vai al nuovo indirizzo": "Go to the new address",
+  "Backup scaricato ✓": "Backup downloaded ✓",
+  "Link copiato!": "Link copied!",
+  "Copia il link qui sotto": "Copy the link below",
+  "Barra di Safari in basso con il tasto Condividi evidenziato": "Safari's bottom bar with the Share button highlighted",
+  "Condividi": "Share",
+  "Aggiungi preferito": "Add Bookmark",
+  "Nuovo pannello": "New Tab",
+  "Safari con la barra compatta: tocca ··· e poi Condividi": "Safari with the compact bar: tap ··· and then Share",
+  "Copia": "Copy",
+  "Aggiungi a Elenco lettura": "Add to Reading List",
+  "Aggiungi alla schermata Home": "Add to Home Screen",
+  "Stampa": "Print",
+  "Foglio di condivisione con la voce Aggiungi alla schermata Home": "Share sheet with the Add to Home Screen option",
+  "Schermata Home": "Home Screen",
+  "Aggiungi": "Add",
+  "Apri come app web": "Open as Web App",
+  "Conferma con Aggiungi in alto a destra": "Confirm with Add at the top right",
+  "Apri in Chrome": "Open in Chrome",
+  "Apri in Safari": "Open in Safari",
+  "Copia link": "Copy link",
+  "Condividi…": "Share…",
+  "Menu ··· in alto a destra con la voce per aprire la pagina nel browser": "··· menu at the top right with the option to open the page in the browser",
+  "Tocca il menu <b>⋮</b> in alto a destra, poi <b>Installa app</b> (o <b>Aggiungi a schermata Home</b>).": "Tap the <b>⋮</b> menu at the top right, then <b>Install app</b> (or <b>Add to Home screen</b>).",
+  "Tocca il menu <b>···</b> in basso, poi <b>Aggiungi al telefono</b>.": "Tap the <b>···</b> menu at the bottom, then <b>Add to phone</b>.",
+  "Tocca il menu <b>≡</b> in basso, poi <b>Aggiungi pagina a</b> → <b>Schermata Home</b>.": "Tap the <b>≡</b> menu at the bottom, then <b>Add page to</b> → <b>Home screen</b>.",
+  "Tocca il menu <b>⋮</b>, poi <b>Installa</b> (o <b>Aggiungi a schermata Home</b>).": "Tap the <b>⋮</b> menu, then <b>Install</b> (or <b>Add to Home screen</b>).",
+  "Tocca il menu <b>⋮</b>, poi <b>Schermata Home</b>.": "Tap the <b>⋮</b> menu, then <b>Home screen</b>.",
+  "Tocca il tasto <b>Condividi</b> accanto alla barra dell'indirizzo (in alto a destra), poi <b>Aggiungi alla schermata Home</b>.": "Tap the <b>Share</b> button next to the address bar (top right), then <b>Add to Home Screen</b>.",
+  "Tocca il menu <b>···</b> in basso, poi <b>Condividi</b> e <b>Aggiungi alla schermata Home</b>.": "Tap the <b>···</b> menu at the bottom, then <b>Share</b> and <b>Add to Home Screen</b>.",
+  "Tocca il menu <b>≡</b> in basso a destra, poi <b>Condividi</b> e <b>Aggiungi alla schermata Home</b>.": "Tap the <b>≡</b> menu at the bottom right, then <b>Share</b> and <b>Add to Home Screen</b>.",
+  "Installa Patatino": "Install Patatino",
+  "Link della pagina": "Page link",
+  "Patatino è già installata: la trovi sulla schermata Home.": "Patatino is already installed: you'll find it on your Home Screen.",
+  "Su iPhone l'installazione si fa da Safari, in tre tocchi:": "On iPhone you install from Safari, in three taps:",
+  "Tocca il tasto <b>Condividi</b> nella barra in basso.": "Tap the <b>Share</b> button in the bottom bar.",
+  "Scorri le voci e tocca <b>Aggiungi alla schermata Home</b>.": "Scroll the list and tap <b>Add to Home Screen</b>.",
+  "Tocca <b>Aggiungi</b> in alto a destra. Fatto: Patatino è sulla schermata Home!": "Tap <b>Add</b> at the top right. Done: Patatino is on your Home Screen!",
+  "Tocca <b>Aggiungi alla schermata Home</b>.": "Tap <b>Add to Home Screen</b>.",
+  "Conferma con <b>Aggiungi</b>.": "Confirm with <b>Add</b>.",
+  "Il tuo browser non ha ancora proposto l'installazione automatica. Puoi farlo dal menu:": "Your browser hasn't offered automatic installation yet. You can do it from the menu:",
+  "Apri il menu del browser e cerca <b>Installa app</b> o <b>Aggiungi a schermata Home</b>.": "Open the browser menu and look for <b>Install app</b> or <b>Add to Home screen</b>.",
+  "Conferma con <b>Installa</b>.": "Confirm with <b>Install</b>.",
+  "Patatino è pensata per il telefono: apri questa pagina sul tuo smartphone e installala da lì.": "Patatino is made for phones: open this page on your smartphone and install it from there.",
+  "Su Mac: menu <b>File → Aggiungi al Dock</b>.": "On a Mac: <b>File → Add to Dock</b>.",
+  "Su computer con Chrome o Edge: tocca l'icona <b>Installa</b> nella barra dell'indirizzo.": "On a computer with Chrome or Edge: click the <b>Install</b> icon in the address bar.",
+  "<b>Non lo vedi?</b> Nelle versioni recenti di Safari la barra è compatta: tocca <b>···</b> accanto all'indirizzo, poi <b>Condividi</b>.": "<b>Can't see it?</b> In recent versions of Safari the bar is compact: tap <b>···</b> next to the address, then <b>Share</b>.",
+  "Non trovi «Aggiungi alla schermata Home»?": "Can't find “Add to Home Screen”?",
+  "Se hai aperto il link da WhatsApp, Mail o un'altra app, sei in un'anteprima di Safari: tocca l'icona della <b>bussola</b> (o «Apri in Safari») e ripeti i passaggi.": "If you opened the link from WhatsApp, Mail or another app, you're in a Safari preview: tap the <b>compass</b> icon (or “Open in Safari”) and repeat the steps.",
+  "Stai usando {b}.": "You're using {b}.",
+  "Puoi installare Patatino anche da qui:": "You can install Patatino from here too:",
+  "Il modo più sicuro è aprire Patatino in Safari:": "The safest way is to open Patatino in Safari:",
+  "Non trovi la voce?": "Can't find the option?",
+  "Come fare": "How to do it",
+  "Copia il link, apri <b>Safari</b>, incollalo nella barra dell'indirizzo e poi segui le istruzioni da lì.": "Copy the link, open <b>Safari</b>, paste it into the address bar and follow the instructions from there.",
+  "Apri questa pagina in {w} per installarla": "Open this page in {w} to install it",
+  "Sei nel browser interno di {a}: da qui non si può installare Patatino.": "You're in {a}'s built-in browser: Patatino can't be installed from here.",
+  "Sei nel browser interno di un'app: da qui non si può installare Patatino.": "You're in an app's built-in browser: Patatino can't be installed from here.",
+  "Tocca il menu <b>···</b> (di solito in alto a destra) e scegli <b>{o}</b> o <b>Apri nel browser</b>.": "Tap the <b>···</b> menu (usually at the top right) and choose <b>{o}</b> or <b>Open in browser</b>.",
+  "In {w} tocca di nuovo <b>Installa l'app</b> nelle impostazioni di Patatino.": "In {w}, tap <b>Install the app</b> again in Patatino's settings.",
+  "Non c'è la voce nel menu?": "No such option in the menu?",
+  "Copia il link e incollalo nella barra dell'indirizzo di {w}.": "Copy the link and paste it into {w}'s address bar.",
+  "I tuoi progressi": "Your progress",
+  "questa app": "this app",
+  "Quello che hai fatto qui resta nel browser di {a}. Per portarlo con te esporta i dati e poi importali in {w} da <i>Impostazioni → Importa backup</i>.": "What you've done here stays in {a}'s browser. To take it with you, export your data and then import it in {w} from <i>Settings → Import backup</i>.",
+  "Consiglio": "Tip",
+  "Con <b>Chrome</b> l'installazione è più semplice: copia il link e aprilo lì.": "Installing is easier with <b>Chrome</b>: copy the link and open it there.",
+  "Sul telefono": "On your phone",
+  "Mandati il link e aprilo su iPhone (Safari) o Android (Chrome).": "Send yourself the link and open it on iPhone (Safari) or Android (Chrome).",
+  "Indietro": "Back",
+  "I tuoi dati restano tuoi": "Your data stays yours",
+  "In breve": "In short",
+  "Patatino non ha account, non ha pubblicità, non usa statistiche né cookie di profilazione. Quello che fai nell'app resta sul tuo dispositivo. Solo se attivi il codice ricevuto con una donazione, viene verificato da un nostro server (vedi sotto).": "Patatino has no accounts, no ads, no analytics and no tracking cookies. What you do in the app stays on your device. Only if you activate the code you receive with a donation is it checked by our server (see below).",
+  "Cosa viene salvato e dove": "What is saved and where",
+  "Progressi, punteggi, flashcard, errori da ripassare e impostazioni (voce, audio, lingua) sono salvati solo nella memoria del browser di questo dispositivo (<i>localStorage</i>). Nessuno di questi dati viene inviato a noi o ad altri.": "Progress, scores, flashcards, mistakes to review and settings (voice, audio, language) are saved only in this device's browser storage (<i>localStorage</i>). None of this data is sent to us or anyone else.",
+  "Se usi <b>Esporta i miei dati</b>, il file di backup viene creato sul tuo dispositivo e lo gestisci tu: noi non lo riceviamo.": "If you use <b>Export my data</b>, the backup file is created on your device and you manage it: we never receive it.",
+  "Codice per i sostenitori": "Supporter code",
+  "La verifica si ripete al massimo una volta a settimana. I tuoi progressi non vengono mai inviati. Rimuovendo la licenza dalle impostazioni, l'attivazione viene cancellata anche sul server.": "The check is repeated at most once a week. Your progress is never sent. If you remove the code in the settings, the activation is deleted on the server too.",
+  "Servizi esterni usati dall'app": "External services used by the app",
+  "<b>Hosting</b>: la pagina è servita da un servizio di hosting (oggi GitHub Pages), che come ogni sito web riceve l'indirizzo IP e il tipo di browser quando la scarichi e può conservarli nei registri tecnici per sicurezza.": "<b>Hosting</b>: the page is served by a hosting service (currently GitHub Pages), which, like any website, receives your IP address and browser type when you load it and may keep them in technical logs for security.",
+  "<b>Caratteri tipografici</b>: i font arrivano da Google Fonts; al primo caricamento il browser contatta i server di Google, che ricevono indirizzo IP e tipo di browser.": "<b>Fonts</b>: the fonts come from Google Fonts; on first load your browser contacts Google's servers, which receive your IP address and browser type.",
+  "<b>Pronuncia</b>: l'app usa la sintesi vocale del tuo dispositivo. Alcune voci, indicate come «richiede internet» nelle impostazioni, sono fornite online dal sistema operativo (Apple, Google o Microsoft): in quel caso la frase da pronunciare passa dal loro servizio.": "<b>Pronunciation</b>: the app uses your device's speech synthesis. Some voices, marked “needs internet” in the settings, are provided online by the operating system (Apple, Google or Microsoft): in that case the sentence to be spoken goes through their service.",
+  "Come cancellare i dati": "How to delete your data",
+  "Disinstalla l'app oppure cancella i dati del sito dalle impostazioni del browser. Ricorda che senza un backup i progressi non si possono recuperare.": "Uninstall the app or clear the site's data in your browser settings. Remember that without a backup your progress can't be recovered.",
+  "Titolare e contatti": "Data controller and contact",
+  "Puoi scriverci per qualsiasi domanda su questa informativa. Non conserviamo i tuoi progressi; per i sostenitori esistono solo i dati della donazione e delle attivazioni presso il provider, che puoi chiederci di consultare o cancellare.": "You can write to us with any question about this policy. We don't keep your progress; for supporters, only the donation and activation data held by the provider exist, and you can ask us to show or delete them.",
+  "Il modulo 1 non richiede nulla. Se attivi il codice ricevuto dopo una donazione, l'app invia al nostro server di verifica ({server}, gestito su Cloudflare) il <b>codice di licenza</b>, un <b>nome descrittivo del dispositivo</b> (per esempio «iPhone – Safari») e un <b>identificativo dell'attivazione</b>. Il server li inoltra a {provider}, che gestisce donazioni e codici, solo per controllare che il codice sia valido e contare i dispositivi. Il codice viene inviato anche per scaricare i contenuti sbloccati.": "Module 1 requires nothing. If you activate the code you received after a donation, the app sends our verification server ({server}, run on Cloudflare) the <b>license code</b>, a <b>descriptive device name</b> (for example “iPhone – Safari”) and an <b>activation ID</b>. The server forwards them to {provider}, which handles donations and codes, only to check that the code is valid and to count devices. The code is also sent to download the unlocked content.",
+  "I dati della donazione (email, dati di pagamento, paese) li raccoglie e li tratta {provider}, secondo la sua informativa: {policy}. Noi riceviamo da loro solo i dati necessari per l'assistenza.": "Donation data (email, payment details, country) is collected and processed by {provider}, according to its privacy policy: {policy}. We only receive from them the data needed for support.",
+  "Ultimo aggiornamento: {d}": "Last updated: {d}",
+  "Titolare: {o}<br>Contatto: {c}": "Controller: {o}<br>Contact: {c}",
+  "Scrivi o incolla qui il codice che hai ricevuto per email dopo la donazione.": "Type or paste the code you received by email after your donation.",
+  "Mmh, questo codice non lo riconosco. Controlla di averlo copiato tutto, trattini compresi: lo trovi nell'email della donazione.": "Hmm, I don't recognize this code. Check you copied all of it, dashes included: you'll find it in your donation email.",
+  "Questo codice esiste, ma è di un altro prodotto. Cerca nell'email il codice di Patatino.": "This code exists, but it's for another product. Look in your email for the Patatino code.",
+  "Non riesco a collegarmi. Controlla la connessione e riprova: il codice non si perde.": "I can't connect. Check your connection and try again: the code won't get lost.",
+  "Questo codice è già attivo su {n} dispositivi, il massimo. Rimuovi la licenza da un altro dispositivo (Impostazioni → Sostieni Patatino) o scrivimi a {mail}.": "This code is already active on {n} devices, the maximum. Remove it from another device (Settings → Support Patatino) or write to me at {mail}.",
+  "Questo codice non è più attivo (per esempio dopo un rimborso della donazione). Se pensi sia un errore, scrivimi a {mail}.": "This code is no longer active (for example after a donation refund). If you think this is a mistake, write to me at {mail}.",
+  "Il codice non è stato accettato. Riprova fra poco o scrivimi a {mail}.": "The code wasn't accepted. Try again in a moment or write to me at {mail}.",
+  "Modalità sviluppo: il server non risponde, quindi accetto solo il codice di prova <b>{k}</b>.": "Development mode: the server isn't responding, so I only accept the test code <b>{k}</b>.",
+  "Sostieni il progetto": "Support the project",
+  "Sostieni Patatino": "Support Patatino",
+  "Patatino è un progetto indipendente. Il modulo 1 è libero per tutti: con una piccola donazione mi aiuti a farlo crescere e, per ringraziarti, sblocchi tutto il resto.": "Patatino is an independent project. Module 1 is free for everyone: with a small donation you help it grow and, as a thank-you, you unlock everything else.",
+  "Il grazie di Patatino": "Patatino's thank-you",
+  "<b>{u} unità in {m} moduli</b>, con spiegazioni, lessico ed esercizi": "<b>{u} units in {m} modules</b>, with explanations, vocabulary and exercises",
+  "Tutti gli esercizi <b>Costruisci la frase</b> e altri <b>{d} mazzi di flashcard</b>": "All the <b>Build the sentence</b> exercises and <b>{d} more flashcard decks</b>",
+  "Funziona <b>offline</b> dopo il primo download": "Works <b>offline</b> after the first download",
+  "Un codice per <b>{n} dispositivi</b>: telefono, tablet, computer": "One code for <b>{n} devices</b>: phone, tablet, computer",
+  "Donazione libera": "Pay what you want",
+  "Scegli tu quanto: anche {x} fa la differenza.": "You choose how much: even {x} makes a difference.",
+  "Fai una donazione": "Make a donation",
+  "Presto disponibile": "Coming soon",
+  "Dopo la donazione ricevi per email un codice per sbloccare tutto.": "After donating you'll get a code by email to unlock everything.",
+  "da {x}": "from {x}",
+  "Hai già un codice?": "Already have a code?",
+  "Attiva": "Activate",
+  "Verifico…": "Checking…",
+  "Grazie per il supporto": "Thanks for your support",
+  "Grazie di cuore! È tutto sbloccato": "Thank you so much! Everything is unlocked",
+  "Sei un sostenitore": "You're a supporter",
+  "Vai al percorso": "Go to the path",
+  "Non sono riuscito a scaricare tutti i moduli. Controlla la connessione e riprova: quelli già scaricati funzionano.": "I couldn't download all the modules. Check your connection and try again: the ones already downloaded work.",
+  "Riprova il download": "Retry the download",
+  "Tutti i moduli sono sul telefono: funzionano anche offline.": "All modules are on your phone: they work offline too.",
+  "Scarico i moduli… {a} di {b}": "Downloading modules… {a} of {b}",
+  "Modulo {n}": "Module {n}",
+  "la pagina con le tue donazioni": "the page with your donations",
+  "Hai perso il codice?": "Lost your code?",
+  "Lo trovi nell'email di conferma della donazione: cerca «Patatino», anche nello spam. Oppure apri {o}: lì ci sono le tue donazioni con il codice. Se non lo trovi, scrivimi a {mail}.": "You'll find it in your donation confirmation email: search for “Patatino”, spam folder included. Or open {o}: your donations are listed there with the code. If you can't find it, write to me at {mail}.",
+  "Il modulo 1 è libero per tutti. Con una donazione libera ({x}) sostieni il progetto e sblocchi gli altri {n} moduli.": "Module 1 is free for everyone. With a pay-what-you-want donation ({x}) you support the project and unlock the other {n} modules.",
+  "Hai già un codice? Inseriscilo": "Already have a code? Enter it",
+  "mai": "never",
+  "Sei un sostenitore, grazie!": "You're a supporter, thank you!",
+  "Codice non più valido": "Code no longer valid",
+  "I tuoi progressi restano salvati.": "Your progress stays saved.",
+  "Codice": "Code",
+  "Dispositivo": "Device",
+  "Ultima verifica": "Last check",
+  "modalità sviluppo": "development mode",
+  "Moduli": "Modules",
+  "{a} di {b} sul dispositivo": "{a} of {b} on this device",
+  "Scarica i moduli": "Download the modules",
+  "Inserisci un altro codice": "Enter another code",
+  "Rimuovi licenza da questo dispositivo": "Remove the code from this device",
+  "Rimuovere la licenza?": "Remove the code?",
+  "Su questo dispositivo restano liberi solo i contenuti gratuiti. I tuoi progressi restano. Potrai usare il codice su un altro dispositivo (vale per {n}).": "Only the free content will stay available on this device. Your progress stays. You can use the code on another device (it works on {n}).",
+  "Rimuovi": "Remove",
+  "Rimuovo…": "Removing…",
+  "Sei offline": "You're offline",
+  "Posso rimuovere la licenza da questo dispositivo, ma sul server l'attivazione resterà <b>occupata</b> e conterà ancora come uno dei tuoi {n} dispositivi. Potrai liberarla più tardi dalla pagina delle tue donazioni o scrivendomi.": "I can remove the code from this device, but on the server the activation will stay <b>in use</b> and still count as one of your {n} devices. You can free it later from the page with your donations or by writing to me.",
+  "Rimuovi comunque": "Remove anyway",
+  "Licenza rimossa da questo dispositivo. Sul server l'attivazione è ancora occupata.": "Code removed from this device. The activation is still in use on the server.",
+  "Licenza rimossa da questo dispositivo.": "Code removed from this device.",
+  "Le basi": "The basics",
+  "Pronomi, presente, articoli, numeri": "Pronouns, present tense, articles, numbers",
+  "Prime frasi": "First sentences",
+  "Plurale, domande, possessivi, modali, ordine": "Plural, questions, possessives, modals, word order",
+  "Descrivere": "Describing",
+  "L'ora, negazione, dimostrativi, aggettivi, confronti": "Telling time, negation, demonstratives, adjectives, comparisons",
+  "Agire e raccontare": "Doing and telling",
+  "Avverbi, separabili, imperativo, passato": "Adverbs, separable verbs, imperative, past tense",
+  "Precisare": "Being precise",
+  "Riflessivi, diminutivi, er, preposizioni, te": "Reflexives, diminutives, er, prepositions, te",
+  "Frasi complesse": "Complex sentences",
+  "Subordinate, relative, discorso indiretto, negazione, ortografia": "Subordinate clauses, relative clauses, reported speech, negation, spelling",
+  "Lessico": "Vocabulary",
+  "Grammatica": "Grammar",
+  "{w} parole nuove da memorizzare, in {k} blocchi": "{w} new words to learn, in {k} blocks",
+  "{w} parole nuove da memorizzare": "{w} new words to learn",
+  "{n} parole chiave, esercizi sulla regola e frasi con tutto quello che hai imparato": "{n} key words, exercises on the rule and sentences with everything you've learned",
+  "Esercizi sulla regola e frasi con tutto quello che hai imparato": "Exercises on the rule and sentences with everything you've learned",
+  "Livello difficile": "Hard level",
+  "{n} esercizi difficili: frasi più lunghe, trabocchetti e regole delle unità precedenti": "{n} hard exercises: longer sentences, traps and rules from earlier units",
+  "Giorni di fila": "Day streak",
+  "Punti esperienza": "Experience points",
+  "Audio automatico dopo ogni risposta": "Automatic audio after each answer",
+  "Impostazioni": "Settings",
+  "Metti Patatino sulla schermata Home": "Put Patatino on your Home Screen",
+  "Installa": "Install",
+  "Prossima lezione": "Next lesson",
+  "Inizia da qui": "Start here",
+  "Unità {n}": "Unit {n}",
+  "Parte {n}: {t}": "Part {n}: {t}",
+  "Hai finito il modulo gratuito: sostieni Patatino per continuare.": "You've finished the free module: support Patatino to continue.",
+  "Il modulo si sta scaricando…": "The module is downloading…",
+  "blocco {b} di {k} · {w} parole": "block {b} of {k} · {w} words",
+  "Sostieni e sblocca": "Support and unlock",
+  "Continua": "Continue",
+  "Inizia": "Start",
+  "Ripasso errori": "Review mistakes",
+  "Rifai solo quello che hai sbagliato": "Redo only what you got wrong",
+  "Nessuna voce olandese": "No Dutch voice",
+  "Per sentire la pronuncia installa una voce olandese. Tocca qui per sapere come.": "To hear the pronunciation, install a Dutch voice. Tap here to find out how.",
+  "I progressi sono salvati in questo browser.": "Your progress is saved in this browser.",
+  "Esercizi e spiegazioni originali. Pronuncia: voce olandese del tuo dispositivo.": "Original exercises and explanations. Pronunciation: your device's Dutch voice.",
+  "Sostenitori": "Supporters",
+  "(bloccata, per i sostenitori)": "(locked, for supporters)",
+  "Lingua": "Language",
+  "Lingua dell'app": "App language",
+  "Cambia la lingua di menu, spiegazioni ed esercizi. Il neerlandese resta lo stesso.": "Changes the language of menus, explanations and exercises. The Dutch stays the same.",
+  "Metti Patatino sulla schermata Home: si apre come un'app e funziona anche offline.": "Put Patatino on your Home Screen: it opens like an app and works offline too.",
+  "I tuoi dati": "Your data",
+  "I progressi sono salvati solo in questo browser.": "Your progress is saved only in this browser.",
+  "Ultimo backup: {d}.": "Last backup: {d}.",
+  "Non hai ancora fatto un backup.": "You haven't made a backup yet.",
+  "Importa backup": "Import backup",
+  "Voce": "Voice",
+  "Neerlandese del Belgio": "Belgian Dutch",
+  "Neerlandese dei Paesi Bassi": "Netherlands Dutch",
+  "funziona offline": "works offline",
+  "richiede internet": "needs internet",
+  "Prova": "Try",
+  "Torna al percorso": "Back to the path",
+  "Nessuna voce olandese trovata": "No Dutch voice found",
+  "Su Android apri <b>Impostazioni → Sistema → Lingue → Sintesi vocale</b>, scegli il motore di Google, poi <b>Installa dati vocali → Nederlands (België)</b>. Su iPhone: <b>Impostazioni → Accessibilità → Contenuto letto ad alta voce → Voci → Olandese</b>. Poi riapri l'app.": "On Android open <b>Settings → System → Languages → Text-to-speech</b>, choose the Google engine, then <b>Install voice data → Nederlands (België)</b>. On iPhone: <b>Settings → Accessibility → Spoken Content → Voices → Dutch</b>. Then reopen the app.",
+  "Backup scaricato: {f}": "Backup downloaded: {f}",
+  "Backup ripristinato. Bentornato!": "Backup restored. Welcome back!",
+  "Completata": "Completed",
+  "Miglior risultato {n}%": "Best result {n}%",
+  "Da fare": "To do",
+  "Parte {n}": "Part {n}",
+  "Rifai": "Redo",
+  "Blocco {b} · {w} parole": "Block {b} · {w} words",
+  "da fare": "to do",
+  "Unità {n} di {t}": "Unit {n} of {t}",
+  "Spiegazione": "Explanation",
+  "Parole chiave della grammatica": "Key grammar words",
+  "Tocca per ascoltare": "Tap to listen",
+  "Lessico dell'unità": "Unit vocabulary",
+  "Blocco {b}": "Block {b}",
+  "Esercizi": "Exercises",
+  "blocco {b}": "block {b}",
+  "Metti in ordine": "Put it in order",
+  "Parola nuova": "New word",
+  "Scegli la risposta": "Choose the answer",
+  "Completa la frase": "Complete the sentence",
+  "Componi la frase": "Build the sentence",
+  "Traduci con le tessere": "Translate with the tiles",
+  "Cosa significa?": "What does it mean?",
+  "Come si dice in olandese?": "How do you say it in Dutch?",
+  "Ascolta e scegli": "Listen and choose",
+  "Ascolta": "Listen",
+  "Ascolta di nuovo": "Listen again",
+  "Riprova": "Try again",
+  "Regola": "Rule",
+  "Controlla": "Check",
+  "La parola mancante": "The missing word",
+  "La tua frase": "Your sentence",
+  "Già al suo posto": "Already in place",
+  "Esci dalla lezione": "Leave the lesson",
+  "Ascolta (tocca di nuovo per la versione lenta)": "Listen (tap again for the slow version)",
+  "Ascoltala, ripetila ad alta voce e poi continua.": "Listen to it, repeat it out loud and then continue.",
+  "La tua scelta": "Your choice",
+  "Giusta": "Correct",
+  "Significato": "Meaning",
+  "La tua risposta": "Your answer",
+  "(vuota)": "(empty)",
+  "in olandese: {w}": "in Dutch: {w}",
+  "Traduzione": "Translation",
+  "Parole memorizzate. Ora passa alla grammatica.": "Words learned. Now move on to the grammar.",
+  "Perfetto.": "Perfect.",
+  "Ottimo lavoro.": "Great job.",
+  "Ci sei quasi. Un altro giro e la chiudi.": "Almost there. One more round and you've got it.",
+  "Rileggi la spiegazione e riprova.": "Reread the explanation and try again.",
+  "1 giorno di fila": "1-day streak",
+  "{n} giorni di fila": "{n}-day streak",
+  "Prossima unità": "Next unit",
+  "Vai al blocco {b}": "Go to block {b}",
+  "Vai alla parte {n}": "Go to part {n}",
+  "Rifai la parte {n}": "Redo part {n}",
+  "Ripassa gli errori ({n})": "Review mistakes ({n})",
+  "Forme da memorizzare": "Forms to memorize",
+  "Parole per tema": "Words by topic",
+  "Vlaams": "Vlaams",
+  "Il neerlandese del Belgio": "Belgian Dutch",
+  "Neerlandese → italiano": "Dutch → English",
+  "Italiano → neerlandese": "English → Dutch",
+  "Misto": "Mixed",
+  "Ripasso": "Review",
+  "Gira la carta, poi dimmi se la sapevi. Le carte che non sai tornano prima.": "Flip the card, then tell me if you knew it. Cards you don't know come back sooner.",
+  "Ripassa tutto": "Review everything",
+  "Le carte di tutti i mazzi in scadenza oggi": "Cards from all decks due today",
+  "Direzione": "Direction",
+  "Direzione delle carte": "Card direction",
+  "Da scaricare": "To download",
+  "{n} carte": "{n} cards",
+  "{n} da ripassare": "{n} to review",
+  "nuovo": "new",
+  "{n} nuove": "{n} new",
+  "al passo": "up to date",
+  "{a}/{b} imparate": "{a}/{b} learned",
+  "Tutti i mazzi": "All decks",
+  "Tutto ripassato per oggi": "All reviewed for today",
+  "Le prossime carte tornano nei prossimi giorni. Se vuoi, puoi ripassare lo stesso.": "The next cards come back in the coming days. If you like, you can review anyway.",
+  "Ripassa comunque": "Review anyway",
+  "Torna ai mazzi": "Back to the decks",
+  "Esci dalle flashcard": "Leave the flashcards",
+  "di nuovo": "again",
+  "Carta": "Card",
+  "Tocca per girare la carta": "Tap to flip the card",
+  "de o het?": "de or het?",
+  "Tocca per girare": "Tap to flip",
+  "Gira la carta": "Flip the card",
+  "Carta girata": "Card flipped",
+  "Non ancora": "Not yet",
+  "Lo so": "I know it",
+  "Ripasso di tutti i mazzi": "Review of all decks",
+  "Ottima memoria.": "Great memory.",
+  "Bene, le carte difficili tornano presto.": "Good, the hard cards will come back soon.",
+  "Le rivedrai presto: è così che si memorizza.": "You'll see them again soon: that's how memorizing works.",
+  "Altre carte ({n})": "More cards ({n})",
+  "La frase principale": "The main clause",
+  "Più verbi nella frase": "Several verbs in one sentence",
+  "Frase giusta": "Correct sentence",
+  "verbo coniugato": "conjugated verb",
+  "in fondo": "at the end",
+  "Ordine delle parole": "Word order",
+  "Costruisci la frase": "Build the sentence",
+  "In neerlandese ogni pezzo della frase ha il suo posto. Metti i blocchi nell'ordine giusto: dopo ogni risposta vedi dove va il verbo.": "In Dutch every part of the sentence has its place. Put the blocks in the right order: after each answer you'll see where the verb goes.",
+  "unità {n}": "unit {n}",
+  "{n} frasi": "{n} sentences",
+  "Ordine perfetto.": "Perfect order.",
+  "Ottimo: la regola è tua.": "Great: you've got the rule.",
+  "Ci sei quasi. Riguarda lo schema dei verbi e riprova.": "Almost there. Look at the verb diagram again and retry.",
+  "Apri «Regola» durante l'esercizio e riprova.": "Open “Rule” during the exercise and try again.",
+  "Prossima serie": "Next set",
+  "Rifai la serie": "Redo the set",
+  "Tutte le serie": "All sets",
+  "app installata": "installed app",
+  "browser di {a}": "{a} browser",
+  "un'app": "an app"
+};
+const missingT = new Set();   // testi senza traduzione (controllati dai test)
+function T(s, v){
+  let r = s;
+  if(S && S.lang === "en"){ if(EN_UI[s] !== undefined) r = EN_UI[s]; else missingT.add(s); }
+  if(v) r = r.replace(/\{(\w+)\}/g, (m, k) => k in v ? v[k] : m);
+  return r;
+}
+const locale = () => S.lang === "en" ? "en-GB" : "it-IT";
+const fmtDate = (d) => new Date(d).toLocaleDateString(locale(), {day:"numeric", month:"short", year:"numeric"});
+const euro = (n) => { try{ return new Intl.NumberFormat(locale(), {style:"currency", currency:"EUR", minimumFractionDigits:0, maximumFractionDigits:2}).format(n); }catch(err){ return n + " €"; } };
+const donationLabel = () => T("da {x}", {x:euro(PREMIUM_CONFIG.minDonation)});
 const KEY = "goesting.v1";
 const PER_SESSION = 10;     // esercizi di grammatica per sessione
 const BATCH = 6;            // parole presentate per gruppo nella parte 1
@@ -1160,11 +1543,55 @@ PREMIUM_DECKS.forEach(p => { if(!DECKS.some(d => d.id === p.id)) DECKS.splice(p.
 PREMIUM_SETS.forEach(p => { if(!ORDER_SETS.some(x => x.id === p.id)) ORDER_SETS.push({id:p.id, unit:p.unit, t:p.t, s:p.s, n:p.n, rule:"", items:[], premium:true}); });
 UNITS.forEach(u => { const n = NOTES[u.id]; if(n){ u.note = n.note; u.vlaams = n.vlaams; u.vocab = n.vocab; } const c = CORE[u.id]; u.core = c ? c.words : []; u.drills = c ? c.drills : []; });
 
+/* ---------- LINGUA DEI CONTENUTI: italiano (originale) o inglese ---------- */
+// Ogni unità, serie di frasi e mazzo tiene le sue versioni in .i18n.it / .i18n.en; localize() copia quella scelta
+// nei campi che usa l'app. Se manca l'inglese si usa l'italiano. L'olandese è identico nelle due versioni.
+const UNIT_FIELDS = ["it", "note", "vlaams", "vocab", "core", "drills", "items", "hard"];
+const GLOSS_I18N = {it:Object.assign({}, GLOSS), en:{}};
+function unitLang(u, it, en){ u.i18n = {it, en}; }
+// unità premium non ancora scaricata: solo il titolo, nelle due lingue
+function stubLang(u){ const p = PREMIUM_UNITS.find(x => x.id === u.id) || {}; unitLang(u, {it:p.it}, p.en ? {it:p.en} : null); }
+function unitFromData(x){ return {it:x.it, note:x.note, vlaams:x.vlaams, vocab:x.vocab || [], core:x.core || [], drills:x.drills || [], items:x.items || [], hard:x.hard || []}; }
+function enGloss(id, g){ Object.keys(g || {}).forEach(i => { GLOSS_I18N.en[id + "-" + i] = g[i]; }); }
+UNITS.forEach(u => {
+  if(u.premium) return stubLang(u);
+  const e = EN.units[u.id];
+  unitLang(u, unitFromData(Object.assign({}, u, {hard:HARD[u.id] || []})), e ? unitFromData(e) : null);
+  if(e) enGloss(u.id, e.gloss);
+});
+// serie "Costruisci la frase": l'inglese cambia frase da tradurre, spiegazioni, titolo e regola
+function setLang(st, en){
+  const it = {t:st.t, s:st.s, rule:st.rule, items:st.items};
+  st.i18n = {it, en: en ? {t:en.t, s:en.s, rule:en.rule || st.rule, items:en.items ? st.items.map((x, i) => Object.assign({}, x, en.items[i] ? {it:en.items[i].it, e:en.items[i].e} : {})) : st.items} : null};
+}
+ORDER_SETS.forEach(st => setLang(st, st.premium ? (PREMIUM_SETS.find(p => p.id === st.id) || {}).en : null));
+function deckLang(d, en){ d.i18n = {it:{t:d.t, s:d.s, cards:d.cards}, en: en ? {t:en.t, s:en.s, cards:en.cards || d.cards} : null}; }
+DECKS.forEach(d => deckLang(d, d.premium ? (PREMIUM_DECKS.find(p => p.id === d.id) || {}).en : EN.decks[d.id]));
+function localize(){
+  const en = S.lang === "en";
+  UNITS.forEach(u => { const v = (en && u.i18n.en) || u.i18n.it; Object.keys(v).forEach(k => { if(v[k] !== undefined) u[k] = v[k]; }); if(!u.hard) u.hard = []; });
+  ORDER_SETS.forEach(st => { const v = (en && st.i18n.en) || st.i18n.it; st.t = v.t; st.s = v.s; if(v.rule !== undefined) st.rule = v.rule; if(st.loaded || !st.premium) st.items = v.items; });
+  DECKS.forEach(d => { const v = (en && d.i18n.en) || d.i18n.it; d.t = v.t; d.s = v.s; if(d.loaded || !d.premium) d.cards = v.cards; });
+  Object.keys(GLOSS).forEach(k => delete GLOSS[k]);
+  Object.assign(GLOSS, GLOSS_I18N.it, en ? GLOSS_I18N.en : {});
+  try{ document.documentElement.lang = en ? "en" : "it"; }catch(e){}
+  try{ PROPER = null; }catch(e){}   // all'avvio PROPER non è ancora definito
+}
+
 /* ---------- stato salvato ---------- */
-function fresh(){ return {xp:0, streak:0, last:null, best:{}, vbest:{}, vblk:{}, fc:{}, wob:{}, fcDir:"nl", wrong:[], audio:true, voice:"auto", palette:"frietkot", lastExport:null, backupSnooze:null, installSnooze:null, installed:false}; }
-function load(){ try{ const r = localStorage.getItem(KEY); if(r) return Object.assign(fresh(), JSON.parse(r)); }catch(e){} return fresh(); }
+function fresh(){ return {xp:0, streak:0, last:null, best:{}, vbest:{}, vblk:{}, fc:{}, wob:{}, fcDir:"nl", wrong:[], audio:true, voice:"auto", palette:"frietkot", lastExport:null, backupSnooze:null, installSnooze:null, installed:false, hbest:{}, lang:firstLang()}; }
+// al primo avvio: italiano se il telefono è in italiano, altrimenti inglese
+function firstLang(){ try{ return /^it\b/i.test(navigator.language || "it") ? "it" : "en"; }catch(e){ return "it"; } }
+function load(){
+  try{
+    const r = localStorage.getItem(KEY);
+    if(r){ const saved = JSON.parse(r); if(!("lang" in saved)) saved.lang = "it"; return Object.assign(fresh(), saved); }   // chi usava già l'app resta in italiano
+  }catch(e){}
+  return fresh();
+}
 function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} }
 let S = load();
+localize();
 
 // chiede al browser di non cancellare i dati in caso di poco spazio (silenzioso se non supportato)
 try{
@@ -1355,8 +1782,8 @@ const TAB_IC = {
 };
 function tabBar(active){
   const due = fcDueAll();
-  const tabs = [["path","Percorso",home],["cards","Flashcards",decksScreen],["words","Frasi",woScreen]];
-  const bar = $(`<nav class="tabbar" aria-label="Sezioni">${tabs.map(([id, l]) => `<button class="tab ${id === active ? "on" : ""}" data-t="${id}" ${id === active ? 'aria-current="page"' : ""}>
+  const tabs = [["path",T("Percorso"),home],["cards",T("Flashcards"),decksScreen],["words",T("Frasi"),woScreen]];
+  const bar = $(`<nav class="tabbar" aria-label="${T("Sezioni")}">${tabs.map(([id, l]) => `<button class="tab ${id === active ? "on" : ""}" data-t="${id}" ${id === active ? 'aria-current="page"' : ""}>
     <span class="tab-ic">${TAB_IC[id]}${id === "cards" && due ? `<span class="tab-n">${due > 99 ? "99+" : due}</span>` : ""}</span><span>${l}</span></button>`).join("")}</nav>`);
   bar.querySelectorAll(".tab").forEach(b => b.onclick = () => { if(b.dataset.t !== active) tabs.find(t => t[0] === b.dataset.t)[2](); else window.scrollTo({top:0, behavior:"smooth"}); });
   return bar;
@@ -1394,21 +1821,21 @@ const MIGRATIONS = {
 const BadBackup = (msg) => Object.assign(new Error(msg), {bad:true});
 function readBackup(text){
   let f;
-  try{ f = JSON.parse(text); }catch(e){ throw BadBackup("Il file non è un JSON valido."); }
-  if(!f || typeof f !== "object" || Array.isArray(f)) throw BadBackup("Il file non contiene un backup.");
+  try{ f = JSON.parse(text); }catch(e){ throw BadBackup(T("Il file non è un JSON valido.")); }
+  if(!f || typeof f !== "object" || Array.isArray(f)) throw BadBackup(T("Il file non contiene un backup."));
   if(f.app === undefined && f.schemaVersion === undefined && "xp" in f && "best" in f) f = {schemaVersion:0, state:f};
-  else if(f.app !== APP_NAME) throw BadBackup("Questo file non è un backup di Patatino.");
+  else if(f.app !== APP_NAME) throw BadBackup(T("Questo file non è un backup di Patatino."));
   let v = Number(f.schemaVersion);
-  if(!Number.isInteger(v) || v < 0) throw BadBackup("Il file non indica una versione valida.");
-  if(v > SCHEMA_VERSION) throw BadBackup("Il backup viene da una versione più recente di Patatino: aggiorna l'app e riprova.");
+  if(!Number.isInteger(v) || v < 0) throw BadBackup(T("Il file non indica una versione valida."));
+  if(v > SCHEMA_VERSION) throw BadBackup(T("Il backup viene da una versione più recente di Patatino: aggiorna l'app e riprova."));
   while(v < SCHEMA_VERSION){ f = MIGRATIONS[v](f); v = f.schemaVersion; }
   const d = f.data;
-  if(!d || typeof d !== "object" || Array.isArray(d)) throw BadBackup("Nel file mancano i dati.");
+  if(!d || typeof d !== "object" || Array.isArray(d)) throw BadBackup(T("Nel file mancano i dati."));
   const keys = Object.keys(d).filter(k => k.indexOf(KEY_PREFIX) === 0 && typeof d[k] === "string");
-  if(!keys.includes(KEY)) throw BadBackup("Nel file mancano i progressi.");
+  if(!keys.includes(KEY)) throw BadBackup(T("Nel file mancano i progressi."));
   let st;
-  try{ st = JSON.parse(d[KEY]); }catch(e){ throw BadBackup("I progressi nel file sono danneggiati."); }
-  if(!st || typeof st !== "object" || Array.isArray(st)) throw BadBackup("I progressi nel file sono danneggiati.");
+  try{ st = JSON.parse(d[KEY]); }catch(e){ throw BadBackup(T("I progressi nel file sono danneggiati.")); }
+  if(!st || typeof st !== "object" || Array.isArray(st)) throw BadBackup(T("I progressi nel file sono danneggiati."));
   return {exportedAt:f.exportedAt, data:keys.reduce((o, k) => (o[k] = d[k], o), {})};
 }
 function restoreBackup(b){
@@ -1420,7 +1847,7 @@ function ask(title, text, okLabel){
   return new Promise(res => {
     const m = $(`<div class="modal" role="dialog" aria-modal="true" aria-labelledby="mt"><div class="modal-box">
       <h3 id="mt">${esc(title)}</h3><p>${text}</p>
-      <div class="modal-row"><button class="btn btn-deep" id="mok">${esc(okLabel)}</button><button class="btn btn-ghost" id="mno">Annulla</button></div>
+      <div class="modal-row"><button class="btn btn-deep" id="mok">${esc(okLabel)}</button><button class="btn btn-ghost" id="mno">${T("Annulla")}</button></div>
     </div></div>`);
     const close = (r) => { m.remove(); document.removeEventListener("keydown", key, true); res(r); };
     const key = (e) => { if(e.key === "Escape"){ e.preventDefault(); close(false); } else if(e.key === "Enter"){ e.preventDefault(); e.stopPropagation(); close(true); } };
@@ -1435,15 +1862,15 @@ function ask(title, text, okLabel){
 function importFile(file, done){
   if(!file) return;
   file.text().then(readBackup).then(b => {
-    const when = b.exportedAt && !isNaN(new Date(b.exportedAt)) ? " del " + new Date(b.exportedAt).toLocaleDateString("it-IT") : "";
-    return ask("Ripristinare il backup?", `I progressi e le impostazioni di questo dispositivo verranno <b>sostituiti</b> con quelli del backup${esc(when)}. Non si può annullare.`, "Sì, ripristina")
+    const when = b.exportedAt && !isNaN(new Date(b.exportedAt)) ? fmtDate(b.exportedAt) : "";
+    return ask(T("Ripristinare il backup?"), when ? T("I progressi e le impostazioni di questo dispositivo verranno <b>sostituiti</b> con quelli del backup del {d}. Non si può annullare.", {d:esc(when)}) : T("I progressi e le impostazioni di questo dispositivo verranno <b>sostituiti</b> con quelli del backup. Non si può annullare."), T("Sì, ripristina"))
       .then(ok => {
         if(!ok) return done(null);
-        try{ restoreBackup(b); }catch(e){ return done({err:true, msg:"Non sono riuscito a salvare i dati: forse lo spazio è pieno."}); }
+        try{ restoreBackup(b); }catch(e){ return done({err:true, msg:T("Non sono riuscito a salvare i dati: forse lo spazio è pieno.")}); }
         try{ sessionStorage.setItem("patatino.restored", "1"); }catch(e){}
         location.reload();
       });
-  }).catch(e => done({err:true, msg:e && e.bad ? e.message : "Non riesco a leggere il file."}));
+  }).catch(e => done({err:true, msg:e && e.bad ? e.message : T("Non riesco a leggere il file.")}));
 }
 const DAY_MS = 864e5;
 const hasProgress = () => S.xp > 0 || Object.keys(S.best || {}).length + Object.keys(S.vbest || {}).length + Object.keys(S.fc || {}).length > 0;
@@ -1463,14 +1890,14 @@ function backupNudge(){
   try{ sessionStorage.setItem("patatino.nudged", "1"); }catch(e){}
   const days = S.lastExport ? Math.floor((Date.now() - new Date(S.lastExport).getTime()) / DAY_MS) : 0;
   const txt = S.lastExport
-    ? `Ehi, sono passati ${days} giorni dal tuo ultimo backup! Salviamo i progressi in un file?`
-    : "Ehi, i tuoi progressi stanno solo in questo browser. Salviamoli in un file, per sicurezza?";
-  const n = $(`<aside class="nudge" aria-label="Promemoria backup">
+    ? T("Ehi, sono passati {n} giorni dal tuo ultimo backup! Salviamo i progressi in un file?", {n:days})
+    : T("Ehi, i tuoi progressi stanno solo in questo browser. Salviamoli in un file, per sicurezza?");
+  const n = $(`<aside class="nudge" aria-label="${T("Promemoria backup")}">
     <span class="nudge-art">${patatino("wave", 64)}</span>
     <div class="nudge-box"><p>${txt}</p>
-      <div class="nudge-row"><button class="btn btn-deep" id="nexp">Esporta ora</button><button class="btn btn-ghost" id="nlat">Più tardi</button></div>
+      <div class="nudge-row"><button class="btn btn-deep" id="nexp">${T("Esporta ora")}</button><button class="btn btn-ghost" id="nlat">${T("Più tardi")}</button></div>
     </div></aside>`);
-  n.querySelector("#nexp").onclick = () => { exportData(); n.querySelector(".nudge-box").innerHTML = "<p style=\"margin:0\">Fatto, backup scaricato! Tienilo in un posto sicuro.</p>"; };
+  n.querySelector("#nexp").onclick = () => { exportData(); n.querySelector(".nudge-box").innerHTML = "<p style=\"margin:0\">" + T("Fatto, backup scaricato! Tienilo in un posto sicuro.") + "</p>"; };
   n.querySelector("#nlat").onclick = () => { S.backupSnooze = new Date(Date.now() + SNOOZE_DAYS * DAY_MS).toISOString(); save(); n.remove(); };
   return n;
 }
@@ -1534,11 +1961,11 @@ function installBannerDue(){
 }
 function installBanner(){
   if(!installBannerDue()) return null;
-  const n = $(`<aside class="nudge inst-banner" aria-label="Installa l'app">
+  const n = $(`<aside class="nudge inst-banner" aria-label="${T("Installa l'app")}">
     <span class="nudge-art">${patatino("cheer", 64)}</span>
-    <div class="nudge-box"><button class="nudge-x" aria-label="Chiudi">${ICON.x}</button>
-      <p>Ti è piaciuto? Mettimi sulla schermata Home così mi ritrovi subito!</p>
-      <div class="nudge-row"><button class="btn btn-deep" id="ninst">Installa l'app</button></div>
+    <div class="nudge-box"><button class="nudge-x" aria-label="${T("Chiudi")}">${ICON.x}</button>
+      <p>${T("Ti è piaciuto? Mettimi sulla schermata Home così mi ritrovi subito!")}</p>
+      <div class="nudge-row"><button class="btn btn-deep" id="ninst">${T("Installa l'app")}</button></div>
     </div></aside>`);
   n.querySelector("#ninst").onclick = startInstall;
   n.querySelector(".nudge-x").onclick = () => { S.installSnooze = new Date(Date.now() + INSTALL_SNOOZE_DAYS * DAY_MS).toISOString(); save(); n.remove(); };
@@ -1547,19 +1974,19 @@ function installBanner(){
 
 function movedBanner(){
   if(!OLD_HOST || location.hostname !== OLD_HOST) return null;
-  const n = $(`<aside class="nudge moved" aria-label="Nuovo indirizzo">
+  const n = $(`<aside class="nudge moved" aria-label="${T("Nuovo indirizzo")}">
     <span class="nudge-art">${patatino("wave", 64)}</span>
-    <div class="nudge-box"><p><b>L'app si è trasferita!</b> Patatino ora abita a un nuovo indirizzo. I progressi non traslocano da soli: esportali qui, poi aprili dal nuovo indirizzo con <i>Impostazioni → Importa backup</i>.</p>
-      <div class="nudge-row"><button class="btn btn-deep" id="mexp">Esporta i miei dati</button>${NEW_URL ? `<a class="btn btn-ghost" href="${esc(NEW_URL)}" rel="noopener">Vai al nuovo indirizzo</a>` : ""}</div>
+    <div class="nudge-box"><p>${T("<b>L'app si è trasferita!</b> Patatino ora abita a un nuovo indirizzo. I progressi non traslocano da soli: esportali qui, poi aprili dal nuovo indirizzo con <i>Impostazioni → Importa backup</i>.")}</p>
+      <div class="nudge-row"><button class="btn btn-deep" id="mexp">${T("Esporta i miei dati")}</button>${NEW_URL ? `<a class="btn btn-ghost" href="${esc(NEW_URL)}" rel="noopener">${T("Vai al nuovo indirizzo")}</a>` : ""}</div>
     </div></aside>`);
-  n.querySelector("#mexp").onclick = () => { exportData(); n.querySelector("#mexp").textContent = "Backup scaricato ✓"; };
+  n.querySelector("#mexp").onclick = () => { exportData(); n.querySelector("#mexp").textContent = T("Backup scaricato ✓"); };
   return n;
 }
 
 function copyLink(btn){
   const url = location.href.split("#")[0];
-  const ok = () => { btn.innerHTML = ICON.check + " Link copiato!"; };
-  const manual = () => { const f = btn.parentNode.querySelector(".linkbox"); if(f){ f.hidden = false; f.focus(); f.select(); } btn.textContent = "Copia il link qui sotto"; };
+  const ok = () => { btn.innerHTML = ICON.check + " " + T("Link copiato!"); };
+  const manual = () => { const f = btn.parentNode.querySelector(".linkbox"); if(f){ f.hidden = false; f.focus(); f.select(); } btn.textContent = T("Copia il link qui sotto"); };
   const legacy = () => {
     try{
       const t = document.createElement("textarea"); t.value = url; t.setAttribute("readonly", ""); t.style.cssText = "position:fixed;top:0;left:0;opacity:0";
@@ -1588,43 +2015,43 @@ const ILL = {
     <circle cx="140" cy="121" r="17" fill="var(--bg)" stroke="${IK}" stroke-width="3"/>${SHARE_IC(140, 121, 1)}
     <path d="M180 113 h14 v15 h-14 Z M187 113 v15" fill="none" stroke="#0A66E8" stroke-width="2.2" stroke-linejoin="round"/>
     <rect x="222" y="113" width="14" height="14" rx="3" fill="none" stroke="#0A66E8" stroke-width="2.2"/>
-    ${ARROW_DOWN(140, 98)}`, "Barra di Safari in basso con il tasto Condividi evidenziato"),
+    ${ARROW_DOWN(140, 98)}`, T("Barra di Safari in basso con il tasto Condividi evidenziato")),
   // passo 1, Safari recente: barra compatta, Condividi è dentro il menu "···"
   shareMenu: () => svgWrap(170, `
     <rect x="20" y="8" width="240" height="158" rx="18" fill="#fff" stroke="${IK}" stroke-width="3"/>
     <g class="pop-in"><rect x="120" y="22" width="126" height="92" rx="12" fill="#fff" stroke="${IK}" stroke-width="2.5"/>
       <rect x="126" y="28" width="114" height="26" rx="8" fill="var(--bg)" stroke="${IK}" stroke-width="2.5"/>${SHARE_IC(140, 41, .75)}
-      <text x="152" y="46" font-size="13" font-weight="700" fill="${IK}">Condividi</text>
-      <text x="132" y="76" font-size="11" fill="#666">Aggiungi preferito</text><text x="132" y="102" font-size="11" fill="#666">Nuovo pannello</text>
+      <text x="152" y="46" font-size="13" font-weight="700" fill="${IK}">${T("Condividi")}</text>
+      <text x="132" y="76" font-size="11" fill="#666">${T("Aggiungi preferito")}</text><text x="132" y="102" font-size="11" fill="#666">${T("Nuovo pannello")}</text>
       <g class="bnc-x2">${ARROW_LEFT(242, 41).replace('class="bnc-x"', "")}</g></g>
     <rect x="34" y="128" width="170" height="28" rx="14" fill="#F4F4F4" stroke="${IK}" stroke-width="2.5"/>
     <text x="56" y="147" font-size="13" fill="#444">patatino…</text>
     <circle cx="228" cy="142" r="17" fill="var(--bg)" stroke="${IK}" stroke-width="3"/>
     <g fill="${IK}"><circle cx="220" cy="142" r="2.6"/><circle cx="228" cy="142" r="2.6"/><circle cx="236" cy="142" r="2.6"/></g>
-    <g class="arr-first">${ARROW_DOWN(228, 123)}</g>`, "Safari con la barra compatta: tocca ··· e poi Condividi"),
+    <g class="arr-first">${ARROW_DOWN(228, 123)}</g>`, T("Safari con la barra compatta: tocca ··· e poi Condividi")),
   // passo 2: nel foglio di condivisione, "Aggiungi alla schermata Home"
   addHome: () => svgWrap(168, `
     <rect x="20" y="8" width="240" height="156" rx="18" fill="#F4F4F4" stroke="${IK}" stroke-width="3"/>
     <rect x="118" y="16" width="44" height="5" rx="2.5" fill="#C9C9C9"/>
-    ${[["Copia", 34], ["Aggiungi a Elenco lettura", 64]].map(([t, y]) => `<rect x="34" y="${y}" width="212" height="24" rx="8" fill="#fff"/><text x="46" y="${y+16}" font-size="12.5" fill="#444">${t}</text>`).join("")}
+    ${[[T("Copia"), 34], [T("Aggiungi a Elenco lettura"), 64]].map(([t, y]) => `<rect x="34" y="${y}" width="212" height="24" rx="8" fill="#fff"/><text x="46" y="${y+16}" font-size="12.5" fill="#444">${t}</text>`).join("")}
     <rect x="30" y="96" width="220" height="34" rx="10" fill="var(--bg)" stroke="${IK}" stroke-width="3"/>
-    <text x="40" y="117" font-size="11.5" font-weight="700" fill="${IK}">Aggiungi alla schermata Home</text>
+    <text x="40" y="117" font-size="11.5" font-weight="700" fill="${IK}">${T("Aggiungi alla schermata Home")}</text>
     <rect x="224" y="104" width="18" height="18" rx="4" fill="none" stroke="${IK}" stroke-width="2.2"/><path d="M233 108 v10 M228 113 h10" stroke="${IK}" stroke-width="2.2" stroke-linecap="round"/>
-    <rect x="34" y="138" width="212" height="20" rx="8" fill="#fff"/><text x="46" y="152" font-size="12.5" fill="#444">Stampa</text>
-    ${ARROW_LEFT(252, 113)}`, "Foglio di condivisione con la voce Aggiungi alla schermata Home"),
+    <rect x="34" y="138" width="212" height="20" rx="8" fill="#fff"/><text x="46" y="152" font-size="12.5" fill="#444">${T("Stampa")}</text>
+    ${ARROW_LEFT(252, 113)}`, T("Foglio di condivisione con la voce Aggiungi alla schermata Home")),
   // passo 3: "Aggiungi" in alto a destra
   confirm: () => svgWrap(150, `
     <rect x="20" y="8" width="240" height="138" rx="18" fill="#F4F4F4" stroke="${IK}" stroke-width="3"/>
-    <text x="34" y="36" font-size="13" fill="#0A66E8">Annulla</text>
-    <text x="132" y="36" font-size="11" font-weight="700" fill="${IK}" text-anchor="middle">Schermata Home</text>
+    <text x="34" y="36" font-size="13" fill="#0A66E8">${T("Annulla")}</text>
+    <text x="132" y="36" font-size="11" font-weight="700" fill="${IK}" text-anchor="middle">${T("Schermata Home")}</text>
     <rect x="182" y="18" width="70" height="28" rx="10" fill="var(--bg)" stroke="${IK}" stroke-width="3"/>
-    <text x="217" y="37" font-size="13" font-weight="700" fill="${IK}" text-anchor="middle">Aggiungi</text>
+    <text x="217" y="37" font-size="13" font-weight="700" fill="${IK}" text-anchor="middle">${T("Aggiungi")}</text>
     <rect x="34" y="60" width="212" height="54" rx="12" fill="#fff"/>
     <g transform="translate(44 63)">${patatino("happy", 48)}</g>
     <text x="100" y="92" font-size="15" font-weight="700" fill="${IK}">Patatino</text>
-    <rect x="34" y="120" width="212" height="20" rx="8" fill="#fff"/><text x="46" y="134" font-size="11.5" fill="#444">Apri come app web</text>
+    <rect x="34" y="120" width="212" height="20" rx="8" fill="#fff"/><text x="46" y="134" font-size="11.5" fill="#444">${T("Apri come app web")}</text>
     <rect x="214" y="123" width="26" height="14" rx="7" fill="#34C759"/><circle cx="233" cy="130" r="5.5" fill="#fff"/>
-    <g transform="translate(217 50)"><g class="bnc-y"><path d="M0 34 V12" stroke="${IK}" stroke-width="9" stroke-linecap="round"/><path d="M0 34 V12" stroke="var(--deep)" stroke-width="4" stroke-linecap="round"/><path d="M-11 16 L0 2 L11 16 Z" fill="var(--deep)" stroke="${IK}" stroke-width="3" stroke-linejoin="round"/></g></g>`, "Conferma con Aggiungi in alto a destra"),
+    <g transform="translate(217 50)"><g class="bnc-y"><path d="M0 34 V12" stroke="${IK}" stroke-width="9" stroke-linecap="round"/><path d="M0 34 V12" stroke="var(--deep)" stroke-width="4" stroke-linecap="round"/><path d="M-11 16 L0 2 L11 16 Z" fill="var(--deep)" stroke="${IK}" stroke-width="3" stroke-linejoin="round"/></g></g>`, T("Conferma con Aggiungi in alto a destra")),
   // browser interno di un'app: menu ··· in alto a destra → apri nel browser
   inapp: (os) => svgWrap(158, `
     <rect x="20" y="8" width="240" height="146" rx="18" fill="#fff" stroke="${IK}" stroke-width="3"/>
@@ -1635,10 +2062,10 @@ const ILL = {
     <g fill="${IK}"><circle cx="225" cy="28" r="2.4"/><circle cx="232" cy="28" r="2.4"/><circle cx="239" cy="28" r="2.4"/></g>
     <g class="pop-in"><rect x="96" y="56" width="152" height="84" rx="12" fill="#fff" stroke="${IK}" stroke-width="2.5"/>
       <rect x="102" y="62" width="140" height="28" rx="8" fill="var(--bg)" stroke="${IK}" stroke-width="2.5"/>
-      <text x="112" y="81" font-size="12.5" font-weight="700" fill="${IK}">${os === "android" ? "Apri in Chrome" : "Apri in Safari"}</text>
-      <text x="112" y="110" font-size="12" fill="#666">Copia link</text><text x="112" y="130" font-size="12" fill="#666">Condividi…</text>
+      <text x="112" y="81" font-size="12.5" font-weight="700" fill="${IK}">${os === "android" ? T("Apri in Chrome") : T("Apri in Safari")}</text>
+      <text x="112" y="110" font-size="12" fill="#666">${T("Copia link")}</text><text x="112" y="130" font-size="12" fill="#666">${T("Condividi…")}</text>
       <g class="bnc-x2">${ARROW_LEFT(244, 76).replace('class="bnc-x"', "")}</g></g>
-    <g class="arr-first"><g transform="translate(232 44)"><g class="bnc-y"><path d="M0 34 V12" stroke="${IK}" stroke-width="9" stroke-linecap="round"/><path d="M0 34 V12" stroke="var(--deep)" stroke-width="4" stroke-linecap="round"/><path d="M-11 16 L0 2 L11 16 Z" fill="var(--deep)" stroke="${IK}" stroke-width="3" stroke-linejoin="round"/></g></g></g>`, "Menu ··· in alto a destra con la voce per aprire la pagina nel browser")
+    <g class="arr-first"><g transform="translate(232 44)"><g class="bnc-y"><path d="M0 34 V12" stroke="${IK}" stroke-width="9" stroke-linecap="round"/><path d="M0 34 V12" stroke="var(--deep)" stroke-width="4" stroke-linecap="round"/><path d="M-11 16 L0 2 L11 16 Z" fill="var(--deep)" stroke="${IK}" stroke-width="3" stroke-linejoin="round"/></g></g></g>`, T("Menu ··· in alto a destra con la voce per aprire la pagina nel browser"))
 };
 const step = (n, html, ill) => `<li class="step"><span class="step-n">${n}</span><div class="step-b"><p>${html}</p>${ill || ""}</div></li>`;
 
@@ -1659,90 +2086,91 @@ const IOS_HOW = {
 function installScreen(){
   screen({s:"install"});
   const c = CTX;
-  let title = "Installa Patatino", intro = "", body = "", extra = "";
-  const linkTools = `<div class="copy-row"><button class="btn btn-ghost" id="copy">Copia link</button><input class="linkbox" readonly hidden value="${esc(location.href.split("#")[0])}" aria-label="Link della pagina"></div>`;
+  let title = T("Installa Patatino"), intro = "", body = "", extra = "";
+  const linkTools = `<div class="copy-row"><button class="btn btn-ghost" id="copy">${T("Copia link")}</button><input class="linkbox" readonly hidden value="${esc(location.href.split("#")[0])}" aria-label="${T("Link della pagina")}"></div>`;
+  const AH = (b) => ANDROID_HOW[b] && T(ANDROID_HOW[b]), IH = (b) => IOS_HOW[b] && T(IOS_HOW[b]);
   if(c.k === "installed"){
-    intro = "Patatino è già installata: la trovi sulla schermata Home.";
+    intro = T("Patatino è già installata: la trovi sulla schermata Home.");
   } else if(c.k === "ios-safari"){
-    intro = "Su iPhone l'installazione si fa da Safari, in tre tocchi:";
+    intro = T("Su iPhone l'installazione si fa da Safari, in tre tocchi:");
     body = `<ol class="steps">
-      ${step(1, "Tocca il tasto <b>Condividi</b> nella barra in basso.", ILL.shareBar())}
-      <li class="step step-alt"><div class="step-b"><p><b>Non lo vedi?</b> Nelle versioni recenti di Safari la barra è compatta: tocca <b>···</b> accanto all'indirizzo, poi <b>Condividi</b>.</p>${ILL.shareMenu()}</div></li>
-      ${step(2, "Scorri le voci e tocca <b>Aggiungi alla schermata Home</b>.", ILL.addHome())}
-      ${step(3, "Tocca <b>Aggiungi</b> in alto a destra. Fatto: Patatino è sulla schermata Home!", ILL.confirm())}
+      ${step(1, T("Tocca il tasto <b>Condividi</b> nella barra in basso."), ILL.shareBar())}
+      <li class="step step-alt"><div class="step-b"><p>${T("<b>Non lo vedi?</b> Nelle versioni recenti di Safari la barra è compatta: tocca <b>···</b> accanto all'indirizzo, poi <b>Condividi</b>.")}</p>${ILL.shareMenu()}</div></li>
+      ${step(2, T("Scorri le voci e tocca <b>Aggiungi alla schermata Home</b>."), ILL.addHome())}
+      ${step(3, T("Tocca <b>Aggiungi</b> in alto a destra. Fatto: Patatino è sulla schermata Home!"), ILL.confirm())}
     </ol>`;
-    extra = `<div class="vl"><span class="label">Non trovi «Aggiungi alla schermata Home»?</span>Se hai aperto il link da WhatsApp, Mail o un'altra app, sei in un'anteprima di Safari: tocca l'icona della <b>bussola</b> (o «Apri in Safari») e ripeti i passaggi.</div>`;
+    extra = `<div class="vl"><span class="label">${T("Non trovi «Aggiungi alla schermata Home»?")}</span>${T("Se hai aperto il link da WhatsApp, Mail o un'altra app, sei in un'anteprima di Safari: tocca l'icona della <b>bussola</b> (o «Apri in Safari») e ripeti i passaggi.")}</div>`;
   } else if(c.k === "ios-other"){
-    intro = `Stai usando ${esc(c.b)}. ${IOS_HOW[c.b] ? "Puoi installare Patatino anche da qui:" : "Il modo più sicuro è aprire Patatino in Safari:"}`;
+    intro = T("Stai usando {b}.", {b:esc(c.b)}) + " " + (IOS_HOW[c.b] ? T("Puoi installare Patatino anche da qui:") : T("Il modo più sicuro è aprire Patatino in Safari:"));
     body = IOS_HOW[c.b] ? `<ol class="steps">
-      ${step(1, IOS_HOW[c.b])}
-      ${step(2, "Tocca <b>Aggiungi alla schermata Home</b>.", ILL.addHome())}
-      ${step(3, "Conferma con <b>Aggiungi</b>.", ILL.confirm())}
+      ${step(1, IH(c.b))}
+      ${step(2, T("Tocca <b>Aggiungi alla schermata Home</b>."), ILL.addHome())}
+      ${step(3, T("Conferma con <b>Aggiungi</b>."), ILL.confirm())}
     </ol>` : "";
-    extra = `<div class="vl"><span class="label">${IOS_HOW[c.b] ? "Non trovi la voce?" : "Come fare"}</span>Copia il link, apri <b>Safari</b>, incollalo nella barra dell'indirizzo e poi segui le istruzioni da lì.${linkTools}</div>`;
+    extra = `<div class="vl"><span class="label">${IOS_HOW[c.b] ? T("Non trovi la voce?") : T("Come fare")}</span>${T("Copia il link, apri <b>Safari</b>, incollalo nella barra dell'indirizzo e poi segui le istruzioni da lì.")}${linkTools}</div>`;
   } else if(c.k === "inapp"){
     const where = c.os === "android" ? "Chrome" : "Safari";
-    title = "Apri questa pagina in " + where + " per installarla";
-    intro = `${c.app ? "Sei nel browser interno di " + esc(c.app) : "Sei nel browser interno di un'app"}: da qui non si può installare Patatino.`;
+    title = T("Apri questa pagina in {w} per installarla", {w:where});
+    intro = c.app ? T("Sei nel browser interno di {a}: da qui non si può installare Patatino.", {a:esc(c.app)}) : T("Sei nel browser interno di un'app: da qui non si può installare Patatino.");
     body = `<ol class="steps">
-      ${step(1, `Tocca il menu <b>···</b> (di solito in alto a destra) e scegli <b>${c.os === "android" ? "Apri in Chrome" : "Apri in Safari"}</b> o <b>Apri nel browser</b>.`, ILL.inapp(c.os))}
-      ${step(2, `In ${where} tocca di nuovo <b>Installa l'app</b> nelle impostazioni di Patatino.`)}
+      ${step(1, T("Tocca il menu <b>···</b> (di solito in alto a destra) e scegli <b>{o}</b> o <b>Apri nel browser</b>.", {o: c.os === "android" ? T("Apri in Chrome") : T("Apri in Safari")}), ILL.inapp(c.os))}
+      ${step(2, T("In {w} tocca di nuovo <b>Installa l'app</b> nelle impostazioni di Patatino.", {w:where}))}
     </ol>`;
-    extra = `<div class="vl"><span class="label">Non c'è la voce nel menu?</span>Copia il link e incollalo nella barra dell'indirizzo di ${where}.${linkTools}</div>
-      ${hasProgress() ? `<div class="vl"><span class="label">I tuoi progressi</span>Quello che hai fatto qui resta nel browser di ${c.app ? esc(c.app) : "questa app"}. Per portarlo con te esporta i dati e poi importali in ${where} da <i>Impostazioni → Importa backup</i>.<button class="btn btn-ghost" id="iexp" style="margin-top:10px">Esporta i miei dati</button></div>` : ""}`;
+    extra = `<div class="vl"><span class="label">${T("Non c'è la voce nel menu?")}</span>${T("Copia il link e incollalo nella barra dell'indirizzo di {w}.", {w:where})}${linkTools}</div>
+      ${hasProgress() ? `<div class="vl"><span class="label">${T("I tuoi progressi")}</span>${T("Quello che hai fatto qui resta nel browser di {a}. Per portarlo con te esporta i dati e poi importali in {w} da <i>Impostazioni → Importa backup</i>.", {a: c.app ? esc(c.app) : T("questa app"), w:where})}<button class="btn btn-ghost" id="iexp" style="margin-top:10px">${T("Esporta i miei dati")}</button></div>` : ""}`;
   } else if(c.k === "android"){
-    intro = "Il tuo browser non ha ancora proposto l'installazione automatica. Puoi farlo dal menu:";
-    body = `<ol class="steps">${step(1, ANDROID_HOW[c.b] || "Apri il menu del browser e cerca <b>Installa app</b> o <b>Aggiungi a schermata Home</b>.")}${step(2, "Conferma con <b>Installa</b>.")}</ol>`;
-    extra = c.b && ANDROID_HOW[c.b] ? "" : `<div class="vl"><span class="label">Consiglio</span>Con <b>Chrome</b> l'installazione è più semplice: copia il link e aprilo lì.${linkTools}</div>`;
+    intro = T("Il tuo browser non ha ancora proposto l'installazione automatica. Puoi farlo dal menu:");
+    body = `<ol class="steps">${step(1, AH(c.b) || T("Apri il menu del browser e cerca <b>Installa app</b> o <b>Aggiungi a schermata Home</b>."))}${step(2, T("Conferma con <b>Installa</b>."))}</ol>`;
+    extra = c.b && ANDROID_HOW[c.b] ? "" : `<div class="vl"><span class="label">${T("Consiglio")}</span>${T("Con <b>Chrome</b> l'installazione è più semplice: copia il link e aprilo lì.")}${linkTools}</div>`;
   } else {
-    intro = "Patatino è pensata per il telefono: apri questa pagina sul tuo smartphone e installala da lì.";
-    body = `<ol class="steps">${step(1, c.b === "Safari" ? "Su Mac: menu <b>File → Aggiungi al Dock</b>." : "Su computer con Chrome o Edge: tocca l'icona <b>Installa</b> nella barra dell'indirizzo.")}</ol>`;
-    extra = `<div class="vl"><span class="label">Sul telefono</span>Mandati il link e aprilo su iPhone (Safari) o Android (Chrome).${linkTools}</div>`;
+    intro = T("Patatino è pensata per il telefono: apri questa pagina sul tuo smartphone e installala da lì.");
+    body = `<ol class="steps">${step(1, c.b === "Safari" ? T("Su Mac: menu <b>File → Aggiungi al Dock</b>.") : T("Su computer con Chrome o Edge: tocca l'icona <b>Installa</b> nella barra dell'indirizzo."))}</ol>`;
+    extra = `<div class="vl"><span class="label">${T("Sul telefono")}</span>${T("Mandati il link e aprilo su iPhone (Safari) o Android (Chrome).")}${linkTools}</div>`;
   }
   const v = $(`<div class="pop inst">
-    <button class="back" id="bk">${ICON.back} Indietro</button>
-    <div class="inst-h">${patatino(c.k === "inapp" ? "wave" : "cheer", 96)}<div class="lesson-h"><span class="label">Installa l'app</span><h2>${esc(title)}</h2><p>${intro}</p></div></div>
+    <button class="back" id="bk">${ICON.back} ${T("Indietro")}</button>
+    <div class="inst-h">${patatino(c.k === "inapp" ? "wave" : "cheer", 96)}<div class="lesson-h"><span class="label">${T("Installa l'app")}</span><h2>${esc(title)}</h2><p>${intro}</p></div></div>
     ${body}${extra}
-    <div class="dock"><div class="dock-in"><button class="btn btn-lion" id="bk2">${ICON.back} Indietro</button></div></div>
+    <div class="dock"><div class="dock-in"><button class="btn btn-lion" id="bk2">${ICON.back} ${T("Indietro")}</button></div></div>
   </div>`);
   const back = () => { if(curDepth > 0 && history.state && history.state.s === "install") history.back(); else home(); };
   v.querySelector("#bk").onclick = back;
   v.querySelector("#bk2").onclick = back;
   const cp = v.querySelector("#copy"); if(cp) cp.onclick = () => copyLink(cp);
-  const ie = v.querySelector("#iexp"); if(ie) ie.onclick = () => { exportData(); ie.textContent = "Backup scaricato ✓"; };
+  const ie = v.querySelector("#iexp"); if(ie) ie.onclick = () => { exportData(); ie.textContent = T("Backup scaricato ✓"); };
   mount(v);
 }
 
 /* ---------- PRIVACY ---------- */
 // Segnaposti da completare prima della pubblicazione sul nuovo dominio / negli store.
-const PRIVACY = {owner:"[NOME E COGNOME DEL TITOLARE]", contact:"[EMAIL DI CONTATTO]", updated:"20 ottobre 2026",
+const PRIVACY = {owner:"[NOME E COGNOME DEL TITOLARE]", contact:"[EMAIL DI CONTATTO]", updated:"20 ottobre 2026", updatedEn:"October 20, 2026",
   provider:"[Lemon Squeezy / Paddle]", providerPolicy:"[LINK INFORMATIVA DEL PROVIDER]", server:"[DOMINIO DEL WORKER]"};
 function privacy(){
   screen({s:"privacy"});
   const v = $(`<div class="pop privacy">
-    <button class="back" id="bk">${ICON.back} Indietro</button>
-    <div class="lesson-h"><span class="label">Privacy</span><h2>I tuoi dati restano tuoi</h2><p>Ultimo aggiornamento: ${esc(PRIVACY.updated)}</p></div>
-    <h3>In breve</h3>
-    <p>Patatino non ha account, non ha pubblicità, non usa statistiche né cookie di profilazione. Quello che fai nell'app resta sul tuo dispositivo. Solo se attivi il codice ricevuto con una donazione, viene verificato da un nostro server (vedi sotto).</p>
-    <h3>Cosa viene salvato e dove</h3>
-    <p>Progressi, punteggi, flashcard, errori da ripassare e impostazioni (colori, voce, audio) sono salvati solo nella memoria del browser di questo dispositivo (<i>localStorage</i>). Nessuno di questi dati viene inviato a noi o ad altri.</p>
-    <p>Se usi <b>Esporta i miei dati</b>, il file di backup viene creato sul tuo dispositivo e lo gestisci tu: noi non lo riceviamo.</p>
-    <h3>Codice per i sostenitori</h3>
-    <p>Il modulo 1 non richiede nulla. Se attivi il codice ricevuto dopo una donazione, l'app invia al nostro server di verifica (${esc(PRIVACY.server)}, gestito su Cloudflare) il <b>codice di licenza</b>, un <b>nome descrittivo del dispositivo</b> (per esempio «iPhone – Safari») e un <b>identificativo dell'attivazione</b>. Il server li inoltra a ${esc(PRIVACY.provider)}, che gestisce donazioni e codici, solo per controllare che il codice sia valido e contare i dispositivi. Il codice viene inviato anche per scaricare i contenuti sbloccati.</p>
-    <p>La verifica si ripete al massimo una volta a settimana. I tuoi progressi non vengono mai inviati. Rimuovendo la licenza dalle impostazioni, l'attivazione viene cancellata anche sul server.</p>
-    <p>I dati della donazione (email, dati di pagamento, paese) li raccoglie e li tratta ${esc(PRIVACY.provider)}, secondo la sua informativa: ${esc(PRIVACY.providerPolicy)}. Noi riceviamo da loro solo i dati necessari per l'assistenza.</p>
-    <h3>Servizi esterni usati dall'app</h3>
+    <button class="back" id="bk">${ICON.back} ${T("Indietro")}</button>
+    <div class="lesson-h"><span class="label">Privacy</span><h2>${T("I tuoi dati restano tuoi")}</h2><p>${T("Ultimo aggiornamento: {d}", {d:esc(S.lang === "en" ? PRIVACY.updatedEn : PRIVACY.updated)})}</p></div>
+    <h3>${T("In breve")}</h3>
+    <p>${T("Patatino non ha account, non ha pubblicità, non usa statistiche né cookie di profilazione. Quello che fai nell'app resta sul tuo dispositivo. Solo se attivi il codice ricevuto con una donazione, viene verificato da un nostro server (vedi sotto).")}</p>
+    <h3>${T("Cosa viene salvato e dove")}</h3>
+    <p>${T("Progressi, punteggi, flashcard, errori da ripassare e impostazioni (voce, audio, lingua) sono salvati solo nella memoria del browser di questo dispositivo (<i>localStorage</i>). Nessuno di questi dati viene inviato a noi o ad altri.")}</p>
+    <p>${T("Se usi <b>Esporta i miei dati</b>, il file di backup viene creato sul tuo dispositivo e lo gestisci tu: noi non lo riceviamo.")}</p>
+    <h3>${T("Codice per i sostenitori")}</h3>
+    <p>${T("Il modulo 1 non richiede nulla. Se attivi il codice ricevuto dopo una donazione, l'app invia al nostro server di verifica ({server}, gestito su Cloudflare) il <b>codice di licenza</b>, un <b>nome descrittivo del dispositivo</b> (per esempio «iPhone – Safari») e un <b>identificativo dell'attivazione</b>. Il server li inoltra a {provider}, che gestisce donazioni e codici, solo per controllare che il codice sia valido e contare i dispositivi. Il codice viene inviato anche per scaricare i contenuti sbloccati.", {server:esc(PRIVACY.server), provider:esc(PRIVACY.provider)})}</p>
+    <p>${T("La verifica si ripete al massimo una volta a settimana. I tuoi progressi non vengono mai inviati. Rimuovendo la licenza dalle impostazioni, l'attivazione viene cancellata anche sul server.")}</p>
+    <p>${T("I dati della donazione (email, dati di pagamento, paese) li raccoglie e li tratta {provider}, secondo la sua informativa: {policy}. Noi riceviamo da loro solo i dati necessari per l'assistenza.", {provider:esc(PRIVACY.provider), policy:esc(PRIVACY.providerPolicy)})}</p>
+    <h3>${T("Servizi esterni usati dall'app")}</h3>
     <ul>
-      <li><b>Hosting</b>: la pagina è servita da un servizio di hosting (oggi GitHub Pages), che come ogni sito web riceve l'indirizzo IP e il tipo di browser quando la scarichi e può conservarli nei registri tecnici per sicurezza.</li>
-      <li><b>Caratteri tipografici</b>: i font arrivano da Google Fonts; al primo caricamento il browser contatta i server di Google, che ricevono indirizzo IP e tipo di browser.</li>
-      <li><b>Pronuncia</b>: l'app usa la sintesi vocale del tuo dispositivo. Alcune voci, indicate come «richiede internet» nelle impostazioni, sono fornite online dal sistema operativo (Apple, Google o Microsoft): in quel caso la frase da pronunciare passa dal loro servizio.</li>
+      <li>${T("<b>Hosting</b>: la pagina è servita da un servizio di hosting (oggi GitHub Pages), che come ogni sito web riceve l'indirizzo IP e il tipo di browser quando la scarichi e può conservarli nei registri tecnici per sicurezza.")}</li>
+      <li>${T("<b>Caratteri tipografici</b>: i font arrivano da Google Fonts; al primo caricamento il browser contatta i server di Google, che ricevono indirizzo IP e tipo di browser.")}</li>
+      <li>${T("<b>Pronuncia</b>: l'app usa la sintesi vocale del tuo dispositivo. Alcune voci, indicate come «richiede internet» nelle impostazioni, sono fornite online dal sistema operativo (Apple, Google o Microsoft): in quel caso la frase da pronunciare passa dal loro servizio.")}</li>
     </ul>
-    <h3>Come cancellare i dati</h3>
-    <p>Disinstalla l'app oppure cancella i dati del sito dalle impostazioni del browser. Ricorda che senza un backup i progressi non si possono recuperare.</p>
-    <h3>Titolare e contatti</h3>
-    <p>Titolare: ${esc(PRIVACY.owner)}<br>Contatto: ${esc(PRIVACY.contact)}</p>
-    <p>Puoi scriverci per qualsiasi domanda su questa informativa. Non conserviamo i tuoi progressi; per i sostenitori esistono solo i dati della donazione e delle attivazioni presso il provider, che puoi chiederci di consultare o cancellare.</p>
-    <div class="dock"><div class="dock-in"><button class="btn btn-lion" id="bk2">${ICON.back} Indietro</button></div></div>
+    <h3>${T("Come cancellare i dati")}</h3>
+    <p>${T("Disinstalla l'app oppure cancella i dati del sito dalle impostazioni del browser. Ricorda che senza un backup i progressi non si possono recuperare.")}</p>
+    <h3>${T("Titolare e contatti")}</h3>
+    <p>${T("Titolare: {o}<br>Contatto: {c}", {o:esc(PRIVACY.owner), c:esc(PRIVACY.contact)})}</p>
+    <p>${T("Puoi scriverci per qualsiasi domanda su questa informativa. Non conserviamo i tuoi progressi; per i sostenitori esistono solo i dati della donazione e delle attivazioni presso il provider, che puoi chiederci di consultare o cancellare.")}</p>
+    <div class="dock"><div class="dock-in"><button class="btn btn-lion" id="bk2">${ICON.back} ${T("Indietro")}</button></div></div>
   </div>`);
   const back = () => { if(curDepth > 0 && history.state && history.state.s === "privacy") history.back(); else home(); };
   v.querySelector("#bk").onclick = back;
@@ -1780,8 +2208,8 @@ function maskKey(k){
 function deviceName(){
   const ua = navigator.userAgent || "";
   const dev = /iPad/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1) ? "iPad" : /iPhone|iPod/.test(ua) ? "iPhone"
-    : /Android/.test(ua) ? (/Mobile/.test(ua) ? "Android" : "Tablet Android") : /Macintosh/.test(ua) ? "Mac" : /Windows/.test(ua) ? "Windows" : /Linux/.test(ua) ? "Linux" : "Dispositivo";
-  const b = CTX.k === "installed" ? "app installata" : CTX.k === "ios-safari" ? "Safari" : CTX.k === "inapp" ? "browser di " + (CTX.app || "un'app") : CTX.b || "browser";
+    : /Android/.test(ua) ? (/Mobile/.test(ua) ? "Android" : "Tablet Android") : /Macintosh/.test(ua) ? "Mac" : /Windows/.test(ua) ? "Windows" : /Linux/.test(ua) ? "Linux" : T("Dispositivo");
+  const b = CTX.k === "installed" ? T("app installata") : CTX.k === "ios-safari" ? "Safari" : CTX.k === "inapp" ? T("browser di {a}", {a:CTX.app || T("un'app")}) : CTX.b || "browser";
   return dev + " – " + b;
 }
 
@@ -1818,14 +2246,14 @@ const reasonOf = (r) => Object.keys(REASONS).find(k => REASONS[k].includes(Strin
 function licenseMessage(reason){
   const mail = esc(PREMIUM_CONFIG.supportEmail);
   return {
-    empty: "Scrivi o incolla qui il codice che hai ricevuto per email dopo la donazione.",
-    not_found: "Mmh, questo codice non lo riconosco. Controlla di averlo copiato tutto, trattini compresi: lo trovi nell'email della donazione.",
-    wrong_product: "Questo codice esiste, ma è di un altro prodotto. Cerca nell'email il codice di Patatino.",
-    limit_reached: `Questo codice è già attivo su ${PREMIUM_CONFIG.maxDevices} dispositivi, il massimo. Rimuovi la licenza da un altro dispositivo (Impostazioni → Sostieni Patatino) o scrivimi a ${mail}.`,
-    revoked: `Questo codice non è più attivo (per esempio dopo un rimborso della donazione). Se pensi sia un errore, scrivimi a ${mail}.`,
-    offline: "Non riesco a collegarmi. Controlla la connessione e riprova: il codice non si perde.",
-    rejected: `Il codice non è stato accettato. Riprova fra poco o scrivimi a ${mail}.`,
-    dev: `Modalità sviluppo: il server non risponde, quindi accetto solo il codice di prova <b>${DEV_TEST_KEY}</b>.`
+    empty: T("Scrivi o incolla qui il codice che hai ricevuto per email dopo la donazione."),
+    not_found: T("Mmh, questo codice non lo riconosco. Controlla di averlo copiato tutto, trattini compresi: lo trovi nell'email della donazione."),
+    wrong_product: T("Questo codice esiste, ma è di un altro prodotto. Cerca nell'email il codice di Patatino."),
+    limit_reached: T("Questo codice è già attivo su {n} dispositivi, il massimo. Rimuovi la licenza da un altro dispositivo (Impostazioni → Sostieni Patatino) o scrivimi a {mail}.", {n:PREMIUM_CONFIG.maxDevices, mail}),
+    revoked: T("Questo codice non è più attivo (per esempio dopo un rimborso della donazione). Se pensi sia un errore, scrivimi a {mail}.", {mail}),
+    offline: T("Non riesco a collegarmi. Controlla la connessione e riprova: il codice non si perde."),
+    rejected: T("Il codice non è stato accettato. Riprova fra poco o scrivimi a {mail}.", {mail}),
+    dev: T("Modalità sviluppo: il server non risponde, quindi accetto solo il codice di prova <b>{k}</b>.", {k:DEV_TEST_KEY})
   }[reason];
 }
 
@@ -1903,21 +2331,28 @@ function validModule(m, n){
 function applyModule(m){
   m.units.forEach(x => {
     const u = unitById(x.id); if(!u) return;
-    Object.assign(u, {items:x.items, note:x.note, vlaams:x.vlaams, vocab:x.vocab || [], core:x.core.words || [], drills:x.core.drills || [], loaded:true});
-    Object.keys(x.gloss || {}).forEach(i => { GLOSS[x.id + "-" + i] = x.gloss[i]; });
+    Object.keys(x.gloss || {}).forEach(i => { GLOSS_I18N.it[x.id + "-" + i] = x.gloss[i]; });
+    if(x.en) enGloss(x.id, x.en.gloss);
+    unitLang(u, unitFromData({it:x.it, note:x.note, vlaams:x.vlaams, vocab:x.vocab, core:x.core.words, drills:x.core.drills, items:x.items, hard:x.hard}), x.en ? unitFromData(x.en) : null);
+    u.loaded = true;
   });
-  (m.orderSets || []).forEach(x => { const st = ORDER_SETS.find(s => s.id === x.id); if(st) Object.assign(st, x, {loaded:true}); });
-  (m.decks || []).forEach(x => { const d = DECKS.find(k => k.id === x.id); if(d && d.premium) Object.assign(d, x, {loaded:true}); });
-  PROPER = null;
+  (m.orderSets || []).forEach(x => { const st = ORDER_SETS.find(s => s.id === x.id); if(st){ Object.assign(st, x, {loaded:true}); setLang(st, x.en); } });
+  (m.decks || []).forEach(x => { const d = DECKS.find(k => k.id === x.id); if(d && d.premium){ Object.assign(d, x, {loaded:true}); deckLang(d, x.en); } });
   loadedModules.add(m.module);
+  localize();
   migrate();
 }
 function unloadPremium(){
-  UNITS.forEach(u => { if(PREMIUM_UNIT_IDS.has(u.id)){ Object.assign(u, {items:[], note:"", vlaams:"", vocab:[], core:[], drills:[], loaded:false}); Object.keys(GLOSS).forEach(k => { if(k.startsWith(u.id + "-")) delete GLOSS[k]; }); } });
-  ORDER_SETS.forEach(st => { if(st.premium) Object.assign(st, {items:[], rule:"", loaded:false}); });
-  DECKS.forEach(d => { if(d.premium) Object.assign(d, {cards:[], loaded:false}); });
-  PROPER = null;
+  UNITS.forEach(u => {
+    if(!PREMIUM_UNIT_IDS.has(u.id)) return;
+    Object.assign(u, {items:[], note:"", vlaams:"", vocab:[], core:[], drills:[], hard:[], loaded:false});
+    stubLang(u);
+    ["it", "en"].forEach(l => Object.keys(GLOSS_I18N[l]).forEach(k => { if(k.startsWith(u.id + "-")) delete GLOSS_I18N[l][k]; }));
+  });
+  ORDER_SETS.forEach(st => { if(st.premium){ Object.assign(st, {items:[], rule:"", loaded:false}); setLang(st, (PREMIUM_SETS.find(p => p.id === st.id) || {}).en); } });
+  DECKS.forEach(d => { if(d.premium){ Object.assign(d, {cards:[], loaded:false}); deckLang(d, (PREMIUM_DECKS.find(p => p.id === d.id) || {}).en); } });
   loadedModules.clear();
+  localize();
 }
 async function lockPremium(){ unloadPremium(); await MODDB.clear(); }
 async function loadCachedModules(){
@@ -1984,25 +2419,25 @@ function unlockScreen(opts){
   const C = PREMIUM_CONFIG;
   const mods = GROUPS.filter((g, i) => !isFreeModule(i + 1));
   const v = $(`<div class="pop unlock">
-    <button class="back" id="bk">${ICON.back} Indietro</button>
-    <div class="unlock-h">${patatino("wave", 104)}<div class="lesson-h"><span class="label">Sostieni il progetto</span><h2>Sostieni Patatino</h2><p>Patatino è un progetto indipendente. Il modulo 1 è libero per tutti: con una piccola donazione mi aiuti a farlo crescere e, per ringraziarti, sblocchi tutto il resto.</p></div></div>
-    <h3 class="perks-h">Il grazie di Patatino</h3>
+    <button class="back" id="bk">${ICON.back} ${T("Indietro")}</button>
+    <div class="unlock-h">${patatino("wave", 104)}<div class="lesson-h"><span class="label">${T("Sostieni il progetto")}</span><h2>${T("Sostieni Patatino")}</h2><p>${T("Patatino è un progetto indipendente. Il modulo 1 è libero per tutti: con una piccola donazione mi aiuti a farlo crescere e, per ringraziarti, sblocchi tutto il resto.")}</p></div></div>
+    <h3 class="perks-h">${T("Il grazie di Patatino")}</h3>
     <ul class="perks">
-      <li>${ICON.check}<span><b>${premiumUnitCount()} unità in ${mods.length} moduli</b>, con spiegazioni, lessico ed esercizi</span></li>
-      <li>${ICON.check}<span>Tutti gli esercizi <b>Costruisci la frase</b> e altri <b>${PREMIUM_DECKS.length} mazzi di flashcard</b></span></li>
-      <li>${ICON.check}<span>Funziona <b>offline</b> dopo il primo download</span></li>
-      <li>${ICON.check}<span>Un codice per <b>${C.maxDevices} dispositivi</b>: telefono, tablet, computer</span></li>
+      <li>${ICON.check}<span>${T("<b>{u} unità in {m} moduli</b>, con spiegazioni, lessico ed esercizi", {u:premiumUnitCount(), m:mods.length})}</span></li>
+      <li>${ICON.check}<span>${T("Tutti gli esercizi <b>Costruisci la frase</b> e altri <b>{d} mazzi di flashcard</b>", {d:PREMIUM_DECKS.length})}</span></li>
+      <li>${ICON.check}<span>${T("Funziona <b>offline</b> dopo il primo download")}</span></li>
+      <li>${ICON.check}<span>${T("Un codice per <b>{n} dispositivi</b>: telefono, tablet, computer", {n:C.maxDevices})}</span></li>
     </ul>
-    <div class="mods">${mods.map(g => `<span class="mod-chip">${LOCK(16)}${esc(g.t)}</span>`).join("")}</div>
+    <div class="mods">${mods.map(g => `<span class="mod-chip">${LOCK(16)}${esc(T(g.t))}</span>`).join("")}</div>
     <div class="buy">
-      <div class="price"><span class="label">Donazione libera</span><b>${esc(C.donationLabel)}</b><span class="note">Scegli tu quanto: anche 1 € fa la differenza.</span></div>
-      ${C.checkoutUrl ? `<a class="btn btn-deep" id="buy" href="${esc(C.checkoutUrl)}" target="_blank" rel="noopener">Fai una donazione</a>` : `<button class="btn btn-deep" id="buy" disabled>Presto disponibile</button>`}
-      <span class="note">Dopo la donazione ricevi per email un codice per sbloccare tutto.</span>
+      <div class="price"><span class="label">${T("Donazione libera")}</span><b>${esc(donationLabel())}</b><span class="note">${T("Scegli tu quanto: anche {x} fa la differenza.", {x:euro(C.minDonation)})}</span></div>
+      ${C.checkoutUrl ? `<a class="btn btn-deep" id="buy" href="${esc(C.checkoutUrl)}" target="_blank" rel="noopener">${T("Fai una donazione")}</a>` : `<button class="btn btn-deep" id="buy" disabled>${T("Presto disponibile")}</button>`}
+      <span class="note">${T("Dopo la donazione ricevi per email un codice per sbloccare tutto.")}</span>
     </div>
     <form class="code-box" id="cf" autocomplete="off">
-      <label class="sec-h" for="lic"><h3>Hai già un codice?</h3></label>
+      <label class="sec-h" for="lic"><h3>${T("Hai già un codice?")}</h3></label>
       <input id="lic" class="code-in" placeholder="XXXX-XXXX-XXXX-XXXX" autocapitalize="characters" autocorrect="off" spellcheck="false" enterkeyhint="go">
-      <button class="btn btn-lion" id="act" type="submit">Attiva</button>
+      <button class="btn btn-lion" id="act" type="submit">${T("Attiva")}</button>
       <div id="umsg">${unlockMsg ? sayBox(unlockMsg.mood, unlockMsg.html) : ""}</div>
     </form>
   </div>`);
@@ -2011,12 +2446,12 @@ function unlockScreen(opts){
   const inp = v.querySelector("#lic"), act = v.querySelector("#act");
   v.querySelector("#cf").onsubmit = async (e) => {
     e.preventDefault();
-    act.disabled = true; act.textContent = "Verifico…";
+    act.disabled = true; act.textContent = T("Verifico…");
     const r = await activateLicense(inp.value);
     if(r.ok){ unlockMsg = null; party = true; unlockScreen(); return; }
     unlockMsg = {mood:"sad", html:licenseMessage(r.reason)};
     v.querySelector("#umsg").innerHTML = sayBox("sad", unlockMsg.html);
-    act.disabled = false; act.textContent = "Attiva";
+    act.disabled = false; act.textContent = T("Attiva");
   };
   mount(v);
   if(opts && opts.focus) setTimeout(() => inp.focus(), 50);
@@ -2025,21 +2460,21 @@ function unlockScreen(opts){
 function premiumScreen(){
   const celebrate = party; party = false;
   const v = $(`<div class="pop unlock">
-    <button class="back" id="bk">${ICON.back} Indietro</button>
+    <button class="back" id="bk">${ICON.back} ${T("Indietro")}</button>
     <div class="party-box ${celebrate ? "party" : ""}">${celebrate ? `<div class="confetti" aria-hidden="true">${Array.from({length:18}, (x, i) => `<i style="--i:${i}"></i>`).join("")}</div>` : ""}${patatino("cheer", 130)}</div>
-    <div class="lesson-h" style="text-align:center"><span class="label">Grazie per il supporto</span><h2>${celebrate ? "Grazie di cuore! È tutto sbloccato" : "Sei un sostenitore"}</h2></div>
+    <div class="lesson-h" style="text-align:center"><span class="label">${T("Grazie per il supporto")}</span><h2>${celebrate ? T("Grazie di cuore! È tutto sbloccato") : T("Sei un sostenitore")}</h2></div>
     <div class="dl" id="dl"></div>
-    <div class="dock"><div class="dock-in"><button class="btn btn-lion" id="go">Vai al percorso</button></div></div>
+    <div class="dock"><div class="dock-in"><button class="btn btn-lion" id="go">${T("Vai al percorso")}</button></div></div>
   </div>`);
   const dl = v.querySelector("#dl");
   const draw = (done, total, res) => {
     const all = premiumModules().length, have = all - missingModules().length;
     const pct = Math.round((res ? have : have + 0) / all * 100);
     dl.innerHTML = res && !res.ok
-      ? `${sayBox("sad", "Non sono riuscito a scaricare tutti i moduli. Controlla la connessione e riprova: quelli già scaricati funzionano.")}<button class="btn btn-ghost" id="retry">Riprova il download</button>`
-      : `<p class="dl-t">${have === all ? "Tutti i moduli sono sul telefono: funzionano anche offline." : `Scarico i moduli… ${have} di ${all}`}</p>
+      ? `${sayBox("sad", T("Non sono riuscito a scaricare tutti i moduli. Controlla la connessione e riprova: quelli già scaricati funzionano."))}<button class="btn btn-ghost" id="retry">${T("Riprova il download")}</button>`
+      : `<p class="dl-t">${have === all ? T("Tutti i moduli sono sul telefono: funzionano anche offline.") : T("Scarico i moduli… {a} di {b}", {a:have, b:all})}</p>
          <div class="bar dl-bar" role="progressbar" aria-valuemin="0" aria-valuemax="${all}" aria-valuenow="${have}"><i style="width:${pct}%"></i></div>
-         <ul class="dl-list">${premiumModules().map(n => `<li class="${loadedModules.has(n) ? "ok" : ""}">${loadedModules.has(n) ? ICON.check : LOCK(18)}<span>Modulo ${n} · ${esc(GROUPS[n - 1].t)}</span></li>`).join("")}</ul>`;
+         <ul class="dl-list">${premiumModules().map(n => `<li class="${loadedModules.has(n) ? "ok" : ""}">${loadedModules.has(n) ? ICON.check : LOCK(18)}<span>${T("Modulo {n}", {n})} · ${esc(T(GROUPS[n - 1].t))}</span></li>`).join("")}</ul>`;
     const rt = dl.querySelector("#retry"); if(rt) rt.onclick = start;
   };
   const start = () => { draw(0, 0); ensureModules((d, t) => draw(d, t)).then(res => draw(0, 0, res)); };
@@ -2051,18 +2486,18 @@ function premiumScreen(){
 
 /* ---------- HOME ---------- */
 const GROUPS = [
-  {t:"Le basi", s:"Pronomi, presente, articoli, numeri", u:["u1","u2","u3","u4","u5"]},
-  {t:"Prime frasi", s:"Plurale, domande, possessivi, modali, ordine", u:["u6","u7","u8","u9","u10"]},
-  {t:"Descrivere", s:"L'ora, negazione, dimostrativi, aggettivi, confronti", u:["u11","u12","u13","u14","u15"]},
-  {t:"Agire e raccontare", s:"Avverbi, separabili, imperativo, passato", u:["u16","u17","u18","u19","u20"]},
-  {t:"Precisare", s:"Riflessivi, diminutivi, er, preposizioni, te", u:["u21","u22","u23","u24","u25"]},
-  {t:"Frasi complesse", s:"Subordinate, relative, discorso indiretto, negazione, ortografia", u:["u26","u27","u28","u29","u30"]}
+  {get t(){ return T("Le basi"); }, get s(){ return T("Pronomi, presente, articoli, numeri"); }, u:["u1","u2","u3","u4","u5"]},
+  {get t(){ return T("Prime frasi"); }, get s(){ return T("Plurale, domande, possessivi, modali, ordine"); }, u:["u6","u7","u8","u9","u10"]},
+  {get t(){ return T("Descrivere"); }, get s(){ return T("L'ora, negazione, dimostrativi, aggettivi, confronti"); }, u:["u11","u12","u13","u14","u15"]},
+  {get t(){ return T("Agire e raccontare"); }, get s(){ return T("Avverbi, separabili, imperativo, passato"); }, u:["u16","u17","u18","u19","u20"]},
+  {get t(){ return T("Precisare"); }, get s(){ return T("Riflessivi, diminutivi, er, preposizioni, te"); }, u:["u21","u22","u23","u24","u25"]},
+  {get t(){ return T("Frasi complesse"); }, get s(){ return T("Subordinate, relative, discorso indiretto, negazione, ortografia"); }, u:["u26","u27","u28","u29","u30"]}
 ];
 let openGroups = null;   // gruppi aperti in questa sessione
 // due parti per unità: 1 lessico, 2 grammatica (regola + frasi che uniscono tutto)
 const PARTS = [
-  {n:1, key:"vbest", title:"Lessico", start:(id) => startVocab(id)},
-  {n:2, key:"best",  title:"Grammatica", start:(id) => startUnit(id)}
+  {n:1, key:"vbest", get title(){ return T("Lessico"); }, start:(id) => startVocab(id)},
+  {n:2, key:"best",  get title(){ return T("Grammatica"); }, start:(id) => startUnit(id)}
 ];
 const DRILLS = 6, MIXED = 8;
 // lessico diviso in blocchi di 7-9 parole quando la lista supera le 10
@@ -2089,8 +2524,8 @@ function migrate(){
 migrate();
 function nextUnit(){ return UNITS.find(u => !unitDone(u.id)) || UNITS[UNITS.length-1]; }
 function partSub(u, n){
-  if(n === 1){ const k = blocksOf(u.id).length; return (u.vocab ? u.vocab.length : 0) + " parole nuove da memorizzare" + (k > 1 ? ", in " + k + " blocchi" : ""); }
-  return u.core.length ? u.core.length + " parole chiave, esercizi sulla regola e frasi con tutto quello che hai imparato" : "Esercizi sulla regola e frasi con tutto quello che hai imparato";
+  if(n === 1){ const k = blocksOf(u.id).length, w = u.vocab ? u.vocab.length : 0; return k > 1 ? T("{w} parole nuove da memorizzare, in {k} blocchi", {w, k}) : T("{w} parole nuove da memorizzare", {w}); }
+  return u.core.length ? T("{n} parole chiave, esercizi sulla regola e frasi con tutto quello che hai imparato", {n:u.core.length}) : T("Esercizi sulla regola e frasi con tutto quello che hai imparato");
 }
 
 function home(){
@@ -2104,31 +2539,31 @@ function home(){
     <header class="top">
       <div class="brand"><span class="logo-mini">${patatino("happy", 46)}</span><div><h1 class="logo">Patatino</h1><span class="label">Nederlands · Vlaanderen</span></div></div>
       <div class="stats">
-        <span class="chip" title="Giorni di fila">${ICON.flame}${S.streak}</span>
-        <span class="chip" title="Punti esperienza">${ICON.star}${S.xp}</span>
-        <button class="chip" id="aud" aria-pressed="${S.audio}" title="Audio automatico dopo ogni risposta">${ICON.sound}${S.audio ? "On" : "Off"}</button>
-        <button class="chip" id="vox" title="Impostazioni" aria-label="Impostazioni"><svg class="gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg><span class="chip-l">Impostazioni</span></button>
-        ${canInstall() ? `<button class="chip chip-inst" id="hinst" title="Metti Patatino sulla schermata Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg>Installa</button>` : ""}
+        <span class="chip" title="${T("Giorni di fila")}">${ICON.flame}${S.streak}</span>
+        <span class="chip" title="${T("Punti esperienza")}">${ICON.star}${S.xp}</span>
+        <button class="chip" id="aud" aria-pressed="${S.audio}" title="${T("Audio automatico dopo ogni risposta")}">${ICON.sound}${S.audio ? "On" : "Off"}</button>
+        <button class="chip" id="vox" title="${T("Impostazioni")}" aria-label="${T("Impostazioni")}"><svg class="gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg><span class="chip-l">${T("Impostazioni")}</span></button>
+        ${canInstall() ? `<button class="chip chip-inst" id="hinst" title="${T("Metti Patatino sulla schermata Home")}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg>${T("Installa")}</button>` : ""}
       </div>
     </header>
     <section class="next">
       <div class="hero-art">${CLOUD}<span class="bubble">${GREET[Math.floor(Math.random()*GREET.length)]}</span>${patatino("wave", 104)}</div>
       <div class="next-top">
         <div class="next-txt">
-      <span class="label">${started ? "Prossima lezione" : "Inizia da qui"} · Unità ${ni+1} · ${nlock || nwait ? "Modulo " + moduleOf(nu.id) : "Parte " + np + ": " + PARTS[np-1].title}</span>
+      <span class="label">${started ? T("Prossima lezione") : T("Inizia da qui")} · ${T("Unità {n}", {n:ni+1})} · ${nlock || nwait ? T("Modulo {n}", {n:moduleOf(nu.id)}) : T("Parte {n}: {t}", {n:np, t:PARTS[np-1].title})}</span>
       <h2>${esc(nu.nl)}</h2>
-      <p>${esc(nu.it)} · ${nlock ? "Hai finito il modulo gratuito: sostieni Patatino per continuare." : nwait ? "Il modulo si sta scaricando…" : np === 1 && blocksOf(nu.id).length > 1 ? "blocco " + (nextBlock(nu.id) + 1) + " di " + blocksOf(nu.id).length + " · " + (blocksOf(nu.id)[nextBlock(nu.id)].to - blocksOf(nu.id)[nextBlock(nu.id)].from) + " parole" : partSub(nu, np)}</p>
+      <p>${esc(nu.it)} · ${nlock ? T("Hai finito il modulo gratuito: sostieni Patatino per continuare.") : nwait ? T("Il modulo si sta scaricando…") : np === 1 && blocksOf(nu.id).length > 1 ? T("blocco {b} di {k} · {w} parole", {b:nextBlock(nu.id) + 1, k:blocksOf(nu.id).length, w:blocksOf(nu.id)[nextBlock(nu.id)].to - blocksOf(nu.id)[nextBlock(nu.id)].from}) : partSub(nu, np)}</p>
         </div>
       </div>
-      <button class="btn btn-lion" id="go">${nlock ? LOCK(22) + " Sostieni e sblocca" : started ? "Continua" : "Inizia"}</button>
+      <button class="btn btn-lion" id="go">${nlock ? LOCK(22) + " " + T("Sostieni e sblocca") : started ? T("Continua") : T("Inizia")}</button>
     </section>
-        ${S.wrong.length ? `<button class="review" id="rev"><div><b>Ripasso errori</b><br><span style="font-size:14px">Rifai solo quello che hai sbagliato</span></div><span class="count">${S.wrong.length}</span></button>` : `<div style="height:14px"></div>`}
-    ${phoneVoice() ? "" : `<button class="review novoice" id="nov"><div><b>Nessuna voce olandese</b><br><span style="font-size:14px">Per sentire la pronuncia installa una voce olandese. Tocca qui per sapere come.</span></div></button>`}
-    <span class="label">Percorso</span>
+        ${S.wrong.length ? `<button class="review" id="rev"><div><b>${T("Ripasso errori")}</b><br><span style="font-size:14px">${T("Rifai solo quello che hai sbagliato")}</span></div><span class="count">${S.wrong.length}</span></button>` : `<div style="height:14px"></div>`}
+    ${phoneVoice() ? "" : `<button class="review novoice" id="nov"><div><b>${T("Nessuna voce olandese")}</b><br><span style="font-size:14px">${T("Per sentire la pronuncia installa una voce olandese. Tocca qui per sapere come.")}</span></div></button>`}
+    <span class="label">${T("Percorso")}</span>
     <nav class="path" id="path"></nav>
     <footer class="foot">
-      <span>I progressi sono salvati in questo browser.</span>
-      <span>Esercizi e spiegazioni originali. Pronuncia: voce olandese del tuo dispositivo.</span>
+      <span>${T("I progressi sono salvati in questo browser.")}</span>
+      <span>${T("Esercizi e spiegazioni originali. Pronuncia: voce olandese del tuo dispositivo.")}</span>
     </footer>
   </div>`);
   // al massimo un avviso alla volta: trasloco, poi backup, poi installazione
@@ -2145,7 +2580,7 @@ function home(){
     const glock = !isFreeModule(gi + 1) && !isPremium();
     const box = $(`<section class="grp ${open ? "open" : ""} ${done === ids.length ? "gdone" : ""} ${glock ? "glock" : ""}">
       <button class="grp-h" aria-expanded="${open}">
-        <span class="grp-t"><b>${glock ? LOCK(20) : ""}${esc(g.t)}</b><span>${glock ? '<i class="prem">Sostenitori</i> · ' : ""}${esc(g.s)}</span></span>
+        <span class="grp-t"><b>${glock ? LOCK(20) : ""}${esc(g.t)}</b><span>${glock ? '<i class="prem">' + T("Sostenitori") + '</i> · ' : ""}${esc(g.s)}</span></span>
         <span class="grp-r"><span class="grp-n">${done}/${ids.length}</span><span class="meter"><i style="width:${Math.round(done / ids.length * 100)}%"></i></span></span>
         <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
       </button>
@@ -2158,10 +2593,10 @@ function home(){
       const full = unitDone(u.id);
       const lk = unitLocked(u.id);
       const cls = lk ? "locked" : full ? "done" : sc.some(x => x > 0) ? "prog" : "";
-      const row = $(`<button class="unit ${cls} ${u.id === nu.id && !full ? "cur" : ""}" aria-label="Unità ${i+1}: ${esc(u.it)}${lk ? " (bloccata, per i sostenitori)" : ""}">
+      const row = $(`<button class="unit ${cls} ${u.id === nu.id && !full ? "cur" : ""}" aria-label="${T("Unità {n}", {n:i+1})}: ${esc(u.it)}${lk ? " " + T("(bloccata, per i sostenitori)") : ""}">
         <span class="num">${lk ? LOCK(20) : full ? ICON.check.replace('width="22" height="22"','width="18" height="18"') : String(i+1).padStart(2,"0")}</span>
         <span class="t"><span class="nl">${esc(u.nl)}</span><span class="it">${esc(u.it)}</span></span>
-        <span class="parts" title="${PARTS.map((p,k) => "Parte " + p.n + " " + p.title + " " + sc[k] + "%").join(" · ")}">${sc.map(x => `<span class="meter"><i style="width:${x}%"></i></span>`).join("")}</span>
+        <span class="parts" title="${PARTS.map((p,k) => T("Parte {n}: {t}", {n:p.n, t:p.title}) + " " + sc[k] + "%").join(" · ")}">${sc.map(x => `<span class="meter"><i style="width:${x}%"></i></span>`).join("")}</span>
       </button>`);
       row.onclick = () => lesson(u.id);
       body.appendChild(row);
@@ -2186,20 +2621,21 @@ function home(){
 const SAMPLE = "Goedemorgen! Ik woon in Gent en ik leer Nederlands.";
 function licenseBox(){
   const l = getLicense(), C = PREMIUM_CONFIG, all = premiumModules().length;
-  const orders = /^https?:/.test(C.ordersUrl) ? `<a href="${esc(C.ordersUrl)}" target="_blank" rel="noopener">la pagina con le tue donazioni</a>` : `la pagina con le tue donazioni (${esc(C.ordersUrl)})`;
-  const lost = `<details class="lost"><summary>Hai perso il codice?</summary><p>Lo trovi nell'email di conferma della donazione: cerca «Patatino», anche nello spam. Oppure apri ${orders}: lì ci sono le tue donazioni con il codice. Se non lo trovi, scrivimi a ${esc(C.supportEmail)}.</p></details>`;
-  if(!l) return `<span class="note">Il modulo 1 è libero per tutti. Con una donazione libera (${esc(C.donationLabel)}) sostieni il progetto e sblocchi gli altri ${all} moduli.</span>
-    <button class="btn btn-lion" id="lbuy">${LOCK(20)} Sostieni Patatino</button>
-    <button class="btn btn-ghost" id="lcode">Hai già un codice? Inseriscilo</button>${lost}`;
+  const page = T("la pagina con le tue donazioni");
+  const orders = /^https?:/.test(C.ordersUrl) ? `<a href="${esc(C.ordersUrl)}" target="_blank" rel="noopener">${page}</a>` : `${page} (${esc(C.ordersUrl)})`;
+  const lost = `<details class="lost"><summary>${T("Hai perso il codice?")}</summary><p>${T("Lo trovi nell'email di conferma della donazione: cerca «Patatino», anche nello spam. Oppure apri {o}: lì ci sono le tue donazioni con il codice. Se non lo trovi, scrivimi a {mail}.", {o:orders, mail:esc(C.supportEmail)})}</p></details>`;
+  if(!l) return `<span class="note">${T("Il modulo 1 è libero per tutti. Con una donazione libera ({x}) sostieni il progetto e sblocchi gli altri {n} moduli.", {x:esc(donationLabel()), n:all})}</span>
+    <button class="btn btn-lion" id="lbuy">${LOCK(20)} ${T("Sostieni Patatino")}</button>
+    <button class="btn btn-ghost" id="lcode">${T("Hai già un codice? Inseriscilo")}</button>${lost}`;
   const have = all - missingModules().length;
-  const when = (d) => d && !isNaN(new Date(d)) ? new Date(d).toLocaleDateString("it-IT") : "mai";
-  return `<div class="lic-state ${l.valid ? "ok" : "ko"}">${l.valid ? ICON.check + " Sei un sostenitore, grazie!" : LOCK(18) + " Codice non più valido"}</div>
-    ${l.valid ? "" : `<span class="note">${licenseMessage("revoked")} I tuoi progressi restano salvati.</span>`}
-    <dl class="lic-dl"><dt>Codice</dt><dd class="mono">${esc(maskKey(l.key))}</dd><dt>Dispositivo</dt><dd>${esc(l.device || deviceName())}</dd>
-      <dt>Ultima verifica</dt><dd>${l.dev ? "modalità sviluppo" : when(l.lastCheck)}</dd>${l.valid ? `<dt>Moduli</dt><dd>${have} di ${all} sul dispositivo</dd>` : ""}</dl>
-    ${l.valid && have < all ? `<button class="btn btn-ghost" id="ldl">Scarica i moduli</button>` : ""}
-    ${l.valid ? "" : `<button class="btn btn-lion" id="lcode">Inserisci un altro codice</button>`}
-    <button class="btn btn-ghost btn-danger" id="lrm">Rimuovi licenza da questo dispositivo</button>
+  const when = (d) => d && !isNaN(new Date(d)) ? fmtDate(d) : T("mai");
+  return `<div class="lic-state ${l.valid ? "ok" : "ko"}">${l.valid ? ICON.check + " " + T("Sei un sostenitore, grazie!") : LOCK(18) + " " + T("Codice non più valido")}</div>
+    ${l.valid ? "" : `<span class="note">${licenseMessage("revoked")} ${T("I tuoi progressi restano salvati.")}</span>`}
+    <dl class="lic-dl"><dt>${T("Codice")}</dt><dd class="mono">${esc(maskKey(l.key))}</dd><dt>${T("Dispositivo")}</dt><dd>${esc(l.device || deviceName())}</dd>
+      <dt>${T("Ultima verifica")}</dt><dd>${l.dev ? T("modalità sviluppo") : when(l.lastCheck)}</dd>${l.valid ? `<dt>${T("Moduli")}</dt><dd>${T("{a} di {b} sul dispositivo", {a:have, b:all})}</dd>` : ""}</dl>
+    ${l.valid && have < all ? `<button class="btn btn-ghost" id="ldl">${T("Scarica i moduli")}</button>` : ""}
+    ${l.valid ? "" : `<button class="btn btn-lion" id="lcode">${T("Inserisci un altro codice")}</button>`}
+    <button class="btn btn-ghost btn-danger" id="lrm">${T("Rimuovi licenza da questo dispositivo")}</button>
     ${lost}`;
 }
 function licenseHandlers(v){
@@ -2209,14 +2645,14 @@ function licenseHandlers(v){
   on("#ldl", () => unlockScreen());
   on("#lrm", async () => {
     const n = PREMIUM_CONFIG.maxDevices;
-    if(!await ask("Rimuovere la licenza?", `Su questo dispositivo restano liberi solo i contenuti gratuiti. I tuoi progressi restano. Potrai usare il codice su un altro dispositivo (vale per ${n}).`, "Rimuovi")) return;
-    const b = v.querySelector("#lrm"); if(b){ b.disabled = true; b.textContent = "Rimuovo…"; }
+    if(!await ask(T("Rimuovere la licenza?"), T("Su questo dispositivo restano liberi solo i contenuti gratuiti. I tuoi progressi restano. Potrai usare il codice su un altro dispositivo (vale per {n}).", {n}), T("Rimuovi"))) return;
+    const b = v.querySelector("#lrm"); if(b){ b.disabled = true; b.textContent = T("Rimuovo…"); }
     let r = await deactivateLicense();
     if(!r.ok){
-      if(!await ask("Sei offline", `Posso rimuovere la licenza da questo dispositivo, ma sul server l'attivazione resterà <b>occupata</b> e conterà ancora come uno dei tuoi ${n} dispositivi. Potrai liberarla più tardi dalla pagina delle tue donazioni o scrivendomi.`, "Rimuovi comunque")){ settings(); return; }
+      if(!await ask(T("Sei offline"), T("Posso rimuovere la licenza da questo dispositivo, ma sul server l'attivazione resterà <b>occupata</b> e conterà ancora come uno dei tuoi {n} dispositivi. Potrai liberarla più tardi dalla pagina delle tue donazioni o scrivendomi.", {n}), T("Rimuovi comunque"))){ settings(); return; }
       r = await deactivateLicense({force:true});
     }
-    settings({where:"lic", msg: r.offline ? "Licenza rimossa da questo dispositivo. Sul server l'attivazione è ancora occupata." : "Licenza rimossa da questo dispositivo."});
+    settings({where:"lic", msg: r.offline ? T("Licenza rimossa da questo dispositivo. Sul server l'attivazione è ancora occupata.") : T("Licenza rimossa da questo dispositivo.")});
   });
 }
 let dataMsg = null;   // esito di export/import: resta se la schermata si ridisegna (voci, colori)
@@ -2227,32 +2663,36 @@ function settings(msg){
   const vs = nlVoices();
   const cur = phoneVoice();
   const v = $(`<div class="pop settings-scr">
-    <button class="back" id="bk">${ICON.back} Percorso</button>
-    <div class="lesson-h"><span class="label">Patatino</span><h2>Impostazioni</h2></div>
-    ${canInstall() ? `<div class="sec-h"><h3>Installa l'app</h3></div>
+    <button class="back" id="bk">${ICON.back} ${T("Percorso")}</button>
+    <div class="lesson-h"><span class="label">Patatino</span><h2>${T("Impostazioni")}</h2></div>
+    <div class="sec-h"><h3>${T("Lingua")}</h3><span class="label">Italiano · English</span></div>
+    <div class="seg lang-seg" role="group" aria-label="${T("Lingua dell'app")}">${[["it", "Italiano"], ["en", "English"]].map(([id, l]) => `<button class="seg-b ${S.lang === id ? "on" : ""}" data-lang="${id}" aria-pressed="${S.lang === id}" lang="${id}">${l}</button>`).join("")}</div>
+    <p class="note lang-note">${T("Cambia la lingua di menu, spiegazioni ed esercizi. Il neerlandese resta lo stesso.")}</p>
+    ${canInstall() ? `<div class="sec-h"><h3>${T("Installa l'app")}</h3></div>
     <div class="data-box inst-box">
-      <span class="inst-row">${patatino("cheer", 64)}<span class="note">Metti Patatino sulla schermata Home: si apre come un'app e funziona anche offline.</span></span>
-      <button class="btn btn-lion btn-install" id="inst"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg> Installa l'app</button>
+      <span class="inst-row">${patatino("cheer", 64)}<span class="note">${T("Metti Patatino sulla schermata Home: si apre come un'app e funziona anche offline.")}</span></span>
+      <button class="btn btn-lion btn-install" id="inst"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg> ${T("Installa l'app")}</button>
     </div>` : ""}
-    <div class="sec-h"><h3>Sostieni Patatino</h3></div>
+    <div class="sec-h"><h3>${T("Sostieni Patatino")}</h3></div>
     <div class="data-box lic-box">${msg && msg.where === "lic" ? `<div class="data-msg ${msg.err ? "err" : ""}" role="status">${esc(msg.msg)}</div>` : ""}${licenseBox()}</div>
-    <div class="sec-h"><h3>I tuoi dati</h3></div>
+    <div class="sec-h"><h3>${T("I tuoi dati")}</h3></div>
     <div class="data-box">
       ${msg && msg.where !== "lic" ? `<div class="data-msg ${msg.err ? "err" : ""}" role="status">${esc(msg.msg)}</div>` : ""}
-      <span class="note">I progressi sono salvati solo in questo browser. ${S.lastExport && !isNaN(new Date(S.lastExport)) ? "Ultimo backup: " + new Date(S.lastExport).toLocaleDateString("it-IT") + "." : "Non hai ancora fatto un backup."}</span>
-      <button class="btn btn-ghost" id="exp">Esporta i miei dati</button>
-      <label class="btn btn-ghost" for="imp" tabindex="0" role="button">Importa backup</label><input type="file" id="imp" accept="application/json,.json" hidden>
+      <span class="note">${T("I progressi sono salvati solo in questo browser.")} ${S.lastExport && !isNaN(new Date(S.lastExport)) ? T("Ultimo backup: {d}.", {d:fmtDate(S.lastExport)}) : T("Non hai ancora fatto un backup.")}</span>
+      <button class="btn btn-ghost" id="exp">${T("Esporta i miei dati")}</button>
+      <label class="btn btn-ghost" for="imp" tabindex="0" role="button">${T("Importa backup")}</label><input type="file" id="imp" accept="application/json,.json" hidden>
     </div>
-    <div class="sec-h"><h3>Voce</h3></div>
+    <div class="sec-h"><h3>${T("Voce")}</h3></div>
     <div class="vlist">${vs.map(x => `<label class="vopt ${cur && cur.voiceURI === x.voiceURI ? "on" : ""}">
         <input type="radio" name="voice" value="${esc(x.voiceURI)}" ${cur && cur.voiceURI === x.voiceURI ? "checked" : ""}>
-        <span class="vt"><b>${esc(x.name)}</b><span>${/be/i.test(x.lang) ? "Neerlandese del Belgio" : "Neerlandese dei Paesi Bassi"} · ${esc(x.lang)}${x.localService ? " · funziona offline" : " · richiede internet"}</span></span>
-        <button class="chip vtest" data-id="${esc(x.voiceURI)}" type="button">${ICON.sound} Prova</button>
+        <span class="vt"><b>${esc(x.name)}</b><span>${/be/i.test(x.lang) ? T("Neerlandese del Belgio") : T("Neerlandese dei Paesi Bassi")} · ${esc(x.lang)} · ${x.localService ? T("funziona offline") : T("richiede internet")}</span></span>
+        <button class="chip vtest" data-id="${esc(x.voiceURI)}" type="button">${ICON.sound} ${T("Prova")}</button>
       </label>`).join("")}</div>
     <button class="btn btn-ghost" id="priv">Privacy</button>
-    <div class="dock"><div class="dock-in"><button class="btn btn-lion" id="bk2">${ICON.back} Torna al percorso</button></div></div>
-    ${vs.length ? "" : `<div class="vl"><span class="label">Nessuna voce olandese trovata</span>Su Android apri <b>Impostazioni → Sistema → Lingue → Sintesi vocale</b>, scegli il motore di Google, poi <b>Installa dati vocali → Nederlands (België)</b>. Su iPhone: <b>Impostazioni → Accessibilità → Contenuto letto ad alta voce → Voci → Olandese</b>. Poi riapri l'app.</div>`}
+    <div class="dock"><div class="dock-in"><button class="btn btn-lion" id="bk2">${ICON.back} ${T("Torna al percorso")}</button></div></div>
+    ${vs.length ? "" : `<div class="vl"><span class="label">${T("Nessuna voce olandese trovata")}</span>${T("Su Android apri <b>Impostazioni → Sistema → Lingue → Sintesi vocale</b>, scegli il motore di Google, poi <b>Installa dati vocali → Nederlands (België)</b>. Su iPhone: <b>Impostazioni → Accessibilità → Contenuto letto ad alta voce → Voci → Olandese</b>. Poi riapri l'app.")}</div>`}
   </div>`);
+  v.querySelectorAll("[data-lang]").forEach(b => b.onclick = () => { if(S.lang === b.dataset.lang) return; S.lang = b.dataset.lang; save(); localize(); settings(); });
   v.querySelectorAll("input[name=voice]").forEach(r => r.onchange = () => { S.voice = r.value; save(); settings(); });
   v.querySelectorAll(".vtest").forEach(b => b.onclick = (e) => {
     e.preventDefault();
@@ -2261,7 +2701,7 @@ function settings(msg){
   const inst = v.querySelector("#inst"); if(inst) inst.onclick = startInstall;
   licenseHandlers(v);
   v.querySelector("#priv").onclick = privacy;
-  v.querySelector("#exp").onclick = () => { exportData(); settings({msg:"Backup scaricato: " + APP_NAME + "-backup-" + today() + ".json"}); };
+  v.querySelector("#exp").onclick = () => { exportData(); settings({msg:T("Backup scaricato: {f}", {f:APP_NAME + "-backup-" + today() + ".json"})}); };
   const imp = v.querySelector("#imp");
   imp.onchange = () => { const f = imp.files && imp.files[0]; imp.value = ""; importFile(f, (m) => { if(m) settings(m); }); };
   const lab = v.querySelector("label[for=imp]");
@@ -2273,11 +2713,11 @@ function settings(msg){
 
 /* ---------- LEZIONE ---------- */
 function partCard(n, title, sub, score, id, primary){
-  const st = score >= 80 ? "Completata · " + score + "%" : score > 0 ? "Miglior risultato " + score + "%" : "Da fare";
+  const st = score >= 80 ? T("Completata") + " · " + score + "%" : score > 0 ? T("Miglior risultato {n}%", {n:score}) : T("Da fare");
   return `<div class="part ${score >= 80 ? "ok" : ""}">
     <div class="pn">${score >= 80 ? ICON.check.replace('width="22" height="22"','width="18" height="18"') : n}</div>
-    <div class="pt"><b>Parte ${n} · ${title}</b><span>${sub}</span><span class="label">${st}</span></div>
-    <button class="btn ${primary ? "btn-lion" : "btn-ghost"} pbtn" id="${id}">${score > 0 ? "Rifai" : "Inizia"}</button>
+    <div class="pt"><b>${T("Parte {n}", {n})} · ${title}</b><span>${sub}</span><span class="label">${st}</span></div>
+    <button class="btn ${primary ? "btn-lion" : "btn-ghost"} pbtn" id="${id}">${score > 0 ? T("Rifai") : T("Inizia")}</button>
   </div>`;
 }
 function vocabCard(u, primary){
@@ -2285,9 +2725,9 @@ function vocabCard(u, primary){
   if(bl.length === 1) return partCard(1, PARTS[0].title, partSub(u, 1), done ? Math.max(sc, 80) : sc, "p1", primary).replace('id="p1"', 'id="p1" data-b="0"');
   return `<div class="part ${done ? "ok" : ""}">
     <div class="pn">${done ? ICON.check.replace('width="22" height="22"','width="18" height="18"') : 1}</div>
-    <div class="pt"><b>Parte 1 · ${PARTS[0].title}</b><span>${partSub(u, 1)}</span><span class="label">${done ? "Completata" : "Da fare"}</span></div>
+    <div class="pt"><b>${T("Parte {n}", {n:1})} · ${PARTS[0].title}</b><span>${partSub(u, 1)}</span><span class="label">${done ? T("Completata") : T("Da fare")}</span></div>
     <div class="blocks">${bl.map(x => { const s2 = blockScore(u.id, x.b); return `<button class="btn ${primary && x.b === nb ? "btn-lion" : "btn-ghost"} blk" data-b="${x.b}">
-      <span>Blocco ${x.b + 1} · ${x.to - x.from} parole</span><span class="label">${s2 >= 80 ? "✓ " + s2 + "%" : s2 > 0 ? s2 + "%" : "da fare"}</span></button>`; }).join("")}</div>
+      <span>${T("Blocco {b} · {w} parole", {b:x.b + 1, w:x.to - x.from})}</span><span class="label">${s2 >= 80 ? "✓ " + s2 + "%" : s2 > 0 ? s2 + "%" : T("da fare")}</span></button>`; }).join("")}</div>
   </div>`;
 }
 function wordGrid(list){
@@ -2299,24 +2739,26 @@ function lesson(id){
   const u = unitById(id), i = unitIndex(id);
   const sc = PARTS.map(p => partScore(id, p.n)), np = nextPart(id);
   const v = $(`<div class="pop">
-    <button class="back" id="bk">${ICON.back} Percorso</button>
-    <div class="lesson-h"><span class="label">Unità ${i+1} di ${UNITS.length}</span><h2>${esc(u.nl)}</h2><p>${esc(u.it)}</p></div>
-    <div class="sec-h"><h3>Spiegazione</h3></div>
+    <button class="back" id="bk">${ICON.back} ${T("Percorso")}</button>
+    <div class="lesson-h"><span class="label">${T("Unità {n} di {t}", {n:i+1, t:UNITS.length})}</span><h2>${esc(u.nl)}</h2><p>${esc(u.it)}</p></div>
+    <div class="sec-h"><h3>${T("Spiegazione")}</h3></div>
     <article class="note">${u.note}</article>
     <aside class="vl"><span class="label">In Vlaanderen</span>${u.vlaams}</aside>
-    ${u.core.length ? `<div class="sec-h"><h3>Parole chiave della grammatica</h3><span class="label">Tocca per ascoltare</span></div>${wordGrid(u.core)}` : ""}
-    <div class="sec-h"><h3>Lessico dell'unità</h3><span class="label">Tocca per ascoltare</span></div>
-    ${blocksOf(id).length > 1 ? blocksOf(id).map(x => `<div class="blk-h label">Blocco ${x.b + 1}</div>${wordGrid(u.vocab.slice(x.from, x.to))}`).join("") : wordGrid(u.vocab || [])}
-    <div class="sec-h"><h3>Esercizi</h3></div>
+    ${u.core.length ? `<div class="sec-h"><h3>${T("Parole chiave della grammatica")}</h3><span class="label">${T("Tocca per ascoltare")}</span></div>${wordGrid(u.core)}` : ""}
+    <div class="sec-h"><h3>${T("Lessico dell'unità")}</h3><span class="label">${T("Tocca per ascoltare")}</span></div>
+    ${blocksOf(id).length > 1 ? blocksOf(id).map(x => `<div class="blk-h label">${T("Blocco {b}", {b:x.b + 1})}</div>${wordGrid(u.vocab.slice(x.from, x.to))}`).join("") : wordGrid(u.vocab || [])}
+    <div class="sec-h"><h3>${T("Esercizi")}</h3></div>
     ${vocabCard(u, np === 1)}
     ${partCard(2, PARTS[1].title, partSub(u, 2), sc[1], "p2", np === 2)}
-    <div class="dock"><div class="dock-in dock-row"><button class="btn btn-ghost backbtn" id="bk2" aria-label="Torna al percorso">${ICON.back}<span>Percorso</span></button><button class="btn btn-lion" id="stn">Parte ${np} · ${PARTS[np-1].title}${np === 1 && blocksOf(id).length > 1 ? " · blocco " + (nextBlock(id) + 1) : ""}</button></div></div>
+    ${(u.hard || []).length ? partCard(3, HARD_TITLE(), HARD_SUB(u), (S.hbest || {})[id] || 0, "p3", false).replace('class="part ', 'class="part part-hard ') : ""}
+    <div class="dock"><div class="dock-in dock-row"><button class="btn btn-ghost backbtn" id="bk2" aria-label="${T("Torna al percorso")}">${ICON.back}<span>${T("Percorso")}</span></button><button class="btn btn-lion" id="stn">${T("Parte {n}", {n:np})} · ${PARTS[np-1].title}${np === 1 && blocksOf(id).length > 1 ? " · " + T("blocco {b}", {b:nextBlock(id) + 1}) : ""}</button></div></div>
   </div>`);
   v.querySelectorAll(".vw").forEach(b => b.onclick = () => play(b.dataset.say, {fresh:true}));
   v.querySelectorAll(".note table").forEach(t => { const w = document.createElement("div"); w.className = "table-wrap"; t.replaceWith(w); w.appendChild(t); });
   v.querySelector("#bk").onclick = home;
   v.querySelectorAll("[data-b]").forEach(b => b.onclick = () => startVocab(id, +b.dataset.b));
   v.querySelector("#p2").onclick = () => startUnit(id);
+  const p3 = v.querySelector("#p3"); if(p3) p3.onclick = () => startHard(id);
   v.querySelector("#stn").onclick = () => PARTS[np-1].start(id);
   v.querySelector("#bk2").onclick = home;
   mount(v);
@@ -2371,6 +2813,10 @@ function begin(mode, unit, list, block, set){
   renderItem();
 }
 function startUnit(id){ begin("unit", id, grammarPicks(id)); }
+// parte 3, facoltativa: gli esercizi difficili nell'ordine dato (dal meno al più difficile)
+const HARD_TITLE = () => T("Livello difficile");
+const HARD_SUB = (u) => T("{n} esercizi difficili: frasi più lunghe, trabocchetti e regole delle unità precedenti", {n:u.hard.length});
+function startHard(id){ const u = unitById(id); begin("hard", id, (u.hard || []).map((it, i) => ({u:id, i, hd:true, it}))); }
 function startVocab(id, b){
   if(b == null) b = nextBlock(id);
   const x = blocksOf(id)[b] || blocksOf(id)[0];
@@ -2382,15 +2828,17 @@ function startReview(){
     if(p[0] === "v" || p[0] === "k"){ const src = p[0] === "k" ? "core" : "vocab"; return listOf(p[1], src)[+p[2]] ? {u:p[1], i:+p[2], v:true, src, it:vocabItem(p[1], +p[2], null, src)} : null; }
     if(p[0] === "w"){ const st = ORDER_SETS.find(x => x.id === p[1]); return st && st.items[+p[2]] ? {set:p[1], i:+p[2], w:true, it:woItem(p[1], +p[2])} : null; }
     if(p[0] === "c"){ const un = unitById(p[1]); return un && un.drills[+p[2]] ? {u:p[1], i:+p[2], c:true, it:un.drills[+p[2]]} : null; }
+    if(p[0] === "h"){ const un = unitById(p[1]); return un && (un.hard || [])[+p[2]] ? {u:p[1], i:+p[2], hd:true, it:un.hard[+p[2]]} : null; }
     const un = unitById(p[0]); return un && un.items[+p[1]] ? {u:p[0], i:+p[1], it:un.items[+p[1]]} : null;
   }).filter(Boolean);
-  if(!list.length){ S.wrong = []; save(); return home(); }
+  if(!list.length){ S.wrong = S.wrong.filter(k => { const p = k.split(":"), u = p[0] === "w" ? (ORDER_SETS.find(x => x.id === p[1]) || {}).unit : ["v", "k", "c", "h"].includes(p[0]) ? p[1] : p[0]; return u && unitById(u) && !unitReady(u); }); save(); return home(); }   // restano solo gli errori di contenuti bloccati
   begin("review", null, list);
 }
-const keyOf = (cur) => cur.w ? "w:" + cur.set + ":" + cur.i : (cur.v ? (cur.src === "core" ? "k:" : "v:") : cur.c ? "c:" : "") + cur.u + ":" + cur.i;
+const keyOf = (cur) => cur.w ? "w:" + cur.set + ":" + cur.i : (cur.v ? (cur.src === "core" ? "k:" : "v:") : cur.c ? "c:" : cur.hd ? "h:" : "") + cur.u + ":" + cur.i;
 
-const KIND = {wo:"Metti in ordine", vintro:"Parola nuova", mc:"Scegli la risposta", fill:"Completa la frase", order:"Componi la frase", tr:"Traduci con le tessere",
+const KIND_IT = {wo:"Metti in ordine", vintro:"Parola nuova", mc:"Scegli la risposta", fill:"Completa la frase", order:"Componi la frase", tr:"Traduci con le tessere",
   vnl:"Cosa significa?", vit:"Come si dice in olandese?", vlisten:"Ascolta e scegli"};
+const KIND = new Proxy(KIND_IT, {get:(o, k) => o[k] && T(o[k])});   // etichette nella lingua scelta
 
 function renderItem(){
   const cur = R.queue[R.pos];
@@ -2399,22 +2847,22 @@ function renderItem(){
   const kind = it.t === "vmc" ? it.kind : it.wo ? "wo" : it.t;
   let qHtml;
   if(it.t === "vmc"){
-    if(it.kind === "vnl") qHtml = `<div class="bigword"><span class="wd">${esc(it.word)}</span><button class="qsay" id="qs" aria-label="Ascolta">${ICON.sound}</button></div>`;
+    if(it.kind === "vnl") qHtml = `<div class="bigword"><span class="wd">${esc(it.word)}</span><button class="qsay" id="qs" aria-label="${T("Ascolta")}">${ICON.sound}</button></div>`;
     else if(it.kind === "vit") qHtml = `<div class="q">«${esc(it.it)}»</div>`;
-    else qHtml = `<button class="qsay lg" id="qs" aria-label="Ascolta di nuovo">${ICON.sound}</button>`;
+    else qHtml = `<button class="qsay lg" id="qs" aria-label="${T("Ascolta di nuovo")}">${ICON.sound}</button>`;
   } else {
     qHtml = `<div class="q">${esc(it.q).replace("___", '<span class="blank">____</span>')}</div>`;
   }
   const v = $(`<div>
     ${topBar()}
     <div class="pop">
-      <span class="label">${cur.retry ? "Riprova · " : ""}${KIND[kind]}</span>
+      <span class="label">${cur.retry ? T("Riprova") + " · " : ""}${KIND[kind]}</span>
       ${qHtml}
       ${it.h ? `<span class="hint">${esc(it.h)}</span>` : ""}
-      ${it.wo ? `<button class="rulebtn" id="rb" aria-expanded="false">Regola · ${esc(it.setTitle)}</button><div class="rulebox" id="rbox" hidden>${it.rule}</div>` : ""}
+      ${it.wo ? `<button class="rulebtn" id="rb" aria-expanded="false">${T("Regola")} · ${esc(it.setTitle)}</button><div class="rulebox" id="rbox" hidden>${it.rule}</div>` : ""}
       <div id="area"></div>
     </div>
-    <div class="dock"><div class="dock-in" id="dock"><button class="btn btn-deep" id="chk" disabled>Controlla</button></div></div>
+    <div class="dock"><div class="dock-in" id="dock"><button class="btn btn-deep" id="chk" disabled>${T("Controlla")}</button></div></div>
     <div class="quiz-bg" aria-hidden="true">${patatino(cur.retry ? "sad" : "wave", 240)}</div>
   </div>`);
   const area = v.querySelector("#area");
@@ -2439,7 +2887,7 @@ function renderItem(){
     area.appendChild(wrap);
     getAnswer = () => sel;
   } else if(it.t === "fill"){
-    const f = $(`<input class="field" id="ans" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="La parola mancante">`);
+    const f = $(`<input class="field" id="ans" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="${T("La parola mancante")}">`);
     f.oninput = () => { chk.disabled = !f.value.trim(); };
     area.appendChild(f);
     setTimeout(() => { try{ f.focus({preventScroll:true}); }catch(e){} }, 50);
@@ -2458,8 +2906,8 @@ function renderItem(){
     const locked = words.slice(0, lockN), free = words.slice(lockN);
     let toks = shuffle(free.concat(extra));
     for(let t = 0; t < 6 && toks.length > 2 && toks.join("|") === free.join("|"); t++) toks = shuffle(toks);   // mai già in ordine
-    const slot = $(`<div class="slot ${Array.isArray(it.a) ? "chunks" : ""}" aria-label="La tua frase"></div>`);
-    locked.forEach(w => slot.appendChild($(`<span class="tok lock" title="Già al suo posto">${esc(w)}</span>`)));
+    const slot = $(`<div class="slot ${Array.isArray(it.a) ? "chunks" : ""}" aria-label="${T("La tua frase")}"></div>`);
+    locked.forEach(w => slot.appendChild($(`<span class="tok lock" title="${T("Già al suo posto")}">${esc(w)}</span>`)));
     const bank = $(`<div class="bank"></div>`);
     const picked = [];
     toks.forEach(w => {
@@ -2494,7 +2942,7 @@ function renderItem(){
 function topBar(){
   const p = R.pos / R.queue.length * 100;
   return `<div class="ex-top">
-      <button class="x" id="quit" aria-label="Esci dalla lezione">${ICON.x}</button>
+      <button class="x" id="quit" aria-label="${T("Esci dalla lezione")}">${ICON.x}</button>
       <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.round(p)}"><i style="width:${p}%"></i></div>
       <span class="ex-count">${R.pos+1}/${R.queue.length}</span>
     </div>`;
@@ -2504,12 +2952,12 @@ function renderIntro(cur){
   const v = $(`<div>
     ${topBar()}
     <div class="pop intro">
-      <span class="label">Parola nuova</span>
-      <div class="bigword"><span class="wd">${esc(it.word)}</span><button class="qsay" id="qs" aria-label="Ascolta (tocca di nuovo per la versione lenta)">${ICON.sound}</button></div>
+      <span class="label">${T("Parola nuova")}</span>
+      <div class="bigword"><span class="wd">${esc(it.word)}</span><button class="qsay" id="qs" aria-label="${T("Ascolta (tocca di nuovo per la versione lenta)")}">${ICON.sound}</button></div>
       <div class="mean">${esc(it.it)}</div>
-      <p class="tip">Ascoltala, ripetila ad alta voce e poi continua.</p>
+      <p class="tip">${T("Ascoltala, ripetila ad alta voce e poi continua.")}</p>
     </div>
-    <div class="dock"><div class="dock-in"><button class="btn btn-deep" id="nx">Continua</button></div></div>
+    <div class="dock"><div class="dock-in"><button class="btn btn-deep" id="nx">${T("Continua")}</button></div></div>
     <div class="quiz-bg" aria-hidden="true">${patatino("happy", 240)}</div>
   </div>`);
   v.querySelector("#quit").onclick = home;
@@ -2531,25 +2979,25 @@ function compareHtml(cur, it, ans, ok, right){
     const fromIt = it.kind === "vnl";   // opzioni in italiano
     if(!ok){
       const m = vocabMeaning(cur.u, ans, fromIt, cur.src);
-      out += row("bad", "La tua scelta", ans, fromIt ? (m ? "in olandese: " + m : "") : m);
-      out += row("good", "Giusta", right, fromIt ? "in olandese: " + it.word : it.it);
+      out += row("bad", T("La tua scelta"), ans, fromIt ? (m ? T("in olandese: {w}", {w:m}) : "") : m);
+      out += row("good", T("Giusta"), right, fromIt ? T("in olandese: {w}", {w:it.word}) : it.it);
     }
     return out;
   }
-  const G = cur.c ? {g: it.g, t: it.tt} : (GLOSS[cur.u + "-" + cur.i] || {});
+  const G = cur.c || cur.hd ? {g: it.g, t: it.tt} : (GLOSS[cur.u + "-" + cur.i] || {});
   const g = G.g || {};
   if(it.t === "mc"){
-    if(!ok) out += row("bad", "La tua scelta", ans, g[ans]);
-    if(!ok || g[right]) out += row("good", ok ? "Significato" : "Giusta", right, g[right]);
+    if(!ok) out += row("bad", T("La tua scelta"), ans, g[ans]);
+    if(!ok || g[right]) out += row("good", ok ? T("Significato") : T("Giusta"), right, g[right]);
     trans = G.t;
   } else if(it.t === "fill"){
-    if(!ok){ out += row("bad", "La tua risposta", ans || "(vuota)", ""); out += row("good", "Giusta", right, ""); }
+    if(!ok){ out += row("bad", T("La tua risposta"), ans || T("(vuota)"), ""); out += row("good", T("Giusta"), right, ""); }
     trans = G.t;
   } else {   // order, tr: la domanda è già la frase italiana
-    if(!ok){ out += row("bad", "La tua frase", ans || "(vuota)", ""); if(!it.wo) out += row("good", "Giusta", right, ""); }
+    if(!ok){ out += row("bad", T("La tua frase"), ans || T("(vuota)"), ""); if(!it.wo) out += row("good", T("Giusta"), right, ""); }
     trans = it.q;
   }
-  if(trans) out += `<div class="tr-it"><span class="cl">Traduzione</span> ${esc(trans)}</div>`;
+  if(trans) out += `<div class="tr-it"><span class="cl">${T("Traduzione")}</span> ${esc(trans)}</div>`;
   return out;
 }
 
@@ -2596,12 +3044,12 @@ function check(it, ans, v){
   dock.innerHTML = "";
   const cmp = compareHtml(cur, it, ans, ok, right);
   const fb = $(`<div class="fb ${ok ? "ok" : "no"} pop" role="status">
-    <h3><span class="fbm">${patatino(ok ? "happy" : "sad", 40)}</span>${ok ? "Goed zo!" : "Niet helemaal"}${canPlay ? `<button class="say" aria-label="Ascolta (tocca di nuovo per la versione lenta)">${ICON.sound}</button>` : ""}</h3>
+    <h3><span class="fbm">${patatino(ok ? "happy" : "sad", 40)}</span>${ok ? "Goed zo!" : "Niet helemaal"}${canPlay ? `<button class="say" aria-label="${T("Ascolta (tocca di nuovo per la versione lenta)")}">${ICON.sound}</button>` : ""}</h3>
     ${cmp}
     ${it.wo ? woDiagram(it) : ""}
     ${it.t === "vmc" && !ok ? "" : `<div class="ex">${it.e || ""}</div>`}
   </div>`);
-  const next = $(`<button class="btn ${ok ? "btn-ok" : "btn-no"}" id="nx">Continua</button>`);
+  const next = $(`<button class="btn ${ok ? "btn-ok" : "btn-no"}" id="nx">${T("Continua")}</button>`);
   dock.append(fb, next);
   const say = fb.querySelector(".say"); if(say) say.onclick = () => play(dutch);
   if(canPlay && S.audio) play(dutch, {fresh:true});
@@ -2621,6 +3069,7 @@ function finish(){
   if(R.mode === "wo") return woFinish();
   const pct = Math.round(R.first / R.total * 100);
   if(R.mode === "unit") S.best[R.unit] = Math.max(S.best[R.unit] || 0, pct);
+  if(R.mode === "hard"){ S.hbest = S.hbest || {}; S.hbest[R.unit] = Math.max(S.hbest[R.unit] || 0, pct); }
   if(R.mode === "vocab"){
     const k = R.unit + ":" + R.block;
     S.vblk[k] = Math.max(S.vblk[k] || 0, pct);
@@ -2629,23 +3078,23 @@ function finish(){
   S.xp += R.xp;
   bumpDay();
   save();
-  const msg = pct >= 80 && R.mode === "vocab" ? "Parole memorizzate. Ora passa alla grammatica." : pct === 100 ? "Perfetto." : pct >= 80 ? "Ottimo lavoro." : pct >= 50 ? "Ci sei quasi. Un altro giro e la chiudi." : "Rileggi la spiegazione e riprova.";
-  const pn = {vocab:1, unit:2}[R.mode];
-  const label = pn ? "Parte " + pn + " · " + PARTS[pn-1].title + (pn === 1 && blocksOf(R.unit).length > 1 ? " · blocco " + (R.block + 1) : "") + " · " + esc(unitById(R.unit).it) : "Ripasso errori";
+  const msg = T(pct >= 80 && R.mode === "vocab" ? "Parole memorizzate. Ora passa alla grammatica." : pct === 100 ? "Perfetto." : pct >= 80 ? "Ottimo lavoro." : pct >= 50 ? "Ci sei quasi. Un altro giro e la chiudi." : "Rileggi la spiegazione e riprova.");
+  const pn = {vocab:1, unit:2, hard:3}[R.mode];
+  const label = pn ? T("Parte {n}", {n:pn}) + " · " + (pn === 3 ? HARD_TITLE() : PARTS[pn-1].title) + (pn === 1 && blocksOf(R.unit).length > 1 ? " · " + T("blocco {b}", {b:R.block + 1}) : "") + " · " + esc(unitById(R.unit).it) : T("Ripasso errori");
   const np = R.unit ? nextPart(R.unit) : null;
   const v = $(`<div class="res pop">
     ${patatino(pct >= 80 ? "cheer" : pct >= 50 ? "happy" : "sad", 130)}
     <span class="label">${label}</span>
     <div class="score">${R.first}<small>/${R.total}</small></div>
     <p>${msg}</p>
-    <span class="xpgain">+${R.xp} XP · ${S.streak} ${S.streak === 1 ? "giorno" : "giorni"} di fila</span>
+    <span class="xpgain">+${R.xp} XP · ${S.streak === 1 ? T("1 giorno di fila") : T("{n} giorni di fila", {n:S.streak})}</span>
     <div class="res-inst"></div>
     <div class="row">
-      ${pn && pct >= 80 && unitDone(R.unit) && unitIndex(R.unit) < UNITS.length-1 ? `<button class="btn btn-lion" id="nextu">Prossima unità</button>` : ""}
-      ${pn && pct >= 80 && !unitDone(R.unit) ? `<button class="btn btn-lion" id="nextp">${np === 1 ? "Vai al blocco " + (nextBlock(R.unit) + 1) : "Vai alla parte " + np + " · " + PARTS[np-1].title}</button>` : ""}
-      ${pn ? `<button class="btn ${pct>=80 ? "btn-ghost" : "btn-lion"}" id="again">Rifai la parte ${pn}</button>` : ""}
-      ${S.wrong.length ? `<button class="btn btn-ghost" id="rv">Ripassa gli errori (${S.wrong.length})</button>` : ""}
-      <button class="btn btn-ghost" id="hm">Torna al percorso</button>
+      ${pn && pct >= 80 && unitDone(R.unit) && unitIndex(R.unit) < UNITS.length-1 ? `<button class="btn btn-lion" id="nextu">${T("Prossima unità")}</button>` : ""}
+      ${pn && pn < 3 && pct >= 80 && !unitDone(R.unit) ? `<button class="btn btn-lion" id="nextp">${np === 1 ? T("Vai al blocco {b}", {b:nextBlock(R.unit) + 1}) : T("Vai alla parte {n}", {n:np}) + " · " + PARTS[np-1].title}</button>` : ""}
+      ${pn ? `<button class="btn ${pct>=80 ? "btn-ghost" : "btn-lion"}" id="again">${T("Rifai la parte {n}", {n:pn})}</button>` : ""}
+      ${S.wrong.length ? `<button class="btn btn-ghost" id="rv">${T("Ripassa gli errori ({n})", {n:S.wrong.length})}</button>` : ""}
+      <button class="btn btn-ghost" id="hm">${T("Torna al percorso")}</button>
     </div>
   </div>`);
   const on = (id, fn) => { const b = v.querySelector(id); if(b) b.onclick = fn; };
@@ -2653,7 +3102,7 @@ function finish(){
   on("#nextu", () => lesson(UNITS[unitIndex(unit)+1].id));
   on("#nextp", () => PARTS[np-1].start(unit));
   const blk = R.block;
-  on("#again", () => pn === 1 ? startVocab(unit, blk) : PARTS[pn-1].start(unit));
+  on("#again", () => pn === 1 ? startVocab(unit, blk) : pn === 3 ? startHard(unit) : PARTS[pn-1].start(unit));
   on("#rv", startReview);
   on("#hm", home);
   const ib = pct >= 80 && pn ? installBanner() : null;
@@ -2692,36 +3141,37 @@ function bumpDay(){
   const t = today();
   if(S.last !== t){ const y = new Date(); y.setDate(y.getDate()-1); S.streak = (S.last === today(y)) ? S.streak + 1 : 1; S.last = t; }
 }
-const FC_DIRS = [["nl","Neerlandese → italiano"],["it","Italiano → neerlandese"],["mix","Misto"]];
+const FC_DIRS_IT = [["nl","Neerlandese → italiano"],["it","Italiano → neerlandese"],["mix","Misto"]];
+const FC_DIRS = {map:(f) => FC_DIRS_IT.map(([id, l]) => f([id, T(l)]))};   // etichette nella lingua scelta
 
 function decksScreen(){
   screen({s:"decks"});
   const due = fcDueAll();
   const v = $(`<div class="pop">
-    <div class="lesson-h tab-h"><span class="label">Ripasso</span><h2>Flashcards</h2><p>Gira la carta, poi dimmi se la sapevi. Le carte che non sai tornano prima.</p></div>
-    ${due ? `<button class="review fc-due" id="alldue"><div><b>Ripassa tutto</b><br><span style="font-size:14px">Le carte di tutti i mazzi in scadenza oggi</span></div><span class="count">${due}</span></button>` : ""}
-    <div class="sec-h"><h3>Direzione</h3></div>
-    <div class="seg" role="group" aria-label="Direzione delle carte">${FC_DIRS.map(([id, l]) => `<button class="seg-b ${(S.fcDir || "nl") === id ? "on" : ""}" data-dir="${id}" aria-pressed="${(S.fcDir || "nl") === id}">${l}</button>`).join("")}</div>
+    <div class="lesson-h tab-h"><span class="label">${T("Ripasso")}</span><h2>${T("Flashcards")}</h2><p>${T("Gira la carta, poi dimmi se la sapevi. Le carte che non sai tornano prima.")}</p></div>
+    ${due ? `<button class="review fc-due" id="alldue"><div><b>${T("Ripassa tutto")}</b><br><span style="font-size:14px">${T("Le carte di tutti i mazzi in scadenza oggi")}</span></div><span class="count">${due}</span></button>` : ""}
+    <div class="sec-h"><h3>${T("Direzione")}</h3></div>
+    <div class="seg" role="group" aria-label="${T("Direzione delle carte")}">${FC_DIRS.map(([id, l]) => `<button class="seg-b ${(S.fcDir || "nl") === id ? "on" : ""}" data-dir="${id}" aria-pressed="${(S.fcDir || "nl") === id}">${l}</button>`).join("")}</div>
     <div id="dl"></div>
   </div>`);
   const dl = v.querySelector("#dl");
   FC_GROUPS.forEach(([g, gs]) => {
     const list = DECKS.filter(d => d.g === g);
     if(!list.length) return;
-    dl.appendChild($(`<div class="sec-h"><h3>${esc(g)}</h3><span class="label">${esc(gs)}</span></div>`));
+    dl.appendChild($(`<div class="sec-h"><h3>${esc(T(g))}</h3><span class="label">${esc(T(gs))}</span></div>`));
     const box = $(`<div class="decks"></div>`);
     list.forEach(d => {
       if(!deckReady(d)){
         const b = $(`<button class="deck locked"><span class="dk-t"><b>${esc(d.t)}</b><span>${esc(d.s)}</span></span>
-          <span class="dk-r"><span class="fc-badge prem">${LOCK(14)} ${deckLocked(d) ? "Sostenitori" : "Da scaricare"}</span><span class="dk-n">${d.n} carte</span></span></button>`);
+          <span class="dk-r"><span class="fc-badge prem">${LOCK(14)} ${deckLocked(d) ? T("Sostenitori") : T("Da scaricare")}</span><span class="dk-n">${T("{n} carte", {n:d.n})}</span></span></button>`);
         b.onclick = () => unlockScreen();
         box.appendChild(b);
         return;
       }
       const st = fcStats(d), pct = Math.round(st.learned / st.total * 100);
-      const badge = st.due ? `<span class="fc-badge due">${st.due} da ripassare</span>` : st.fresh === st.total ? `<span class="fc-badge">nuovo</span>` : st.fresh ? `<span class="fc-badge">${st.fresh} nuove</span>` : `<span class="fc-badge ok">al passo</span>`;
+      const badge = st.due ? `<span class="fc-badge due">${T("{n} da ripassare", {n:st.due})}</span>` : st.fresh === st.total ? `<span class="fc-badge">${T("nuovo")}</span>` : st.fresh ? `<span class="fc-badge">${T("{n} nuove", {n:st.fresh})}</span>` : `<span class="fc-badge ok">${T("al passo")}</span>`;
       const b = $(`<button class="deck"><span class="dk-t"><b>${esc(d.t)}</b><span>${esc(d.s)}</span></span>
-        <span class="dk-r">${badge}<span class="dk-n">${st.learned}/${st.total} imparate</span><span class="meter"><i style="width:${pct}%"></i></span></span></button>`);
+        <span class="dk-r">${badge}<span class="dk-n">${T("{a}/{b} imparate", {a:st.learned, b:st.total})}</span><span class="meter"><i style="width:${pct}%"></i></span></span></button>`);
       b.onclick = () => studyDeck(d.id);
       box.appendChild(b);
     });
@@ -2757,12 +3207,12 @@ function fcNothing(id){
   screen({s:"cards", deck:id});
   const v = $(`<div class="res pop">
     ${patatino("happy", 130)}
-    <span class="label">${id ? esc(DECKS.find(d => d.id === id).t) : "Tutti i mazzi"}</span>
-    <h2 class="fc-done-h">Tutto ripassato per oggi</h2>
-    <p>Le prossime carte tornano nei prossimi giorni. Se vuoi, puoi ripassare lo stesso.</p>
+    <span class="label">${id ? esc(DECKS.find(d => d.id === id).t) : T("Tutti i mazzi")}</span>
+    <h2 class="fc-done-h">${T("Tutto ripassato per oggi")}</h2>
+    <p>${T("Le prossime carte tornano nei prossimi giorni. Se vuoi, puoi ripassare lo stesso.")}</p>
     <div class="row">
-      ${id ? `<button class="btn btn-lion" id="anyway">Ripassa comunque</button>` : ""}
-      <button class="btn btn-ghost" id="dk">Torna ai mazzi</button>
+      ${id ? `<button class="btn btn-lion" id="anyway">${T("Ripassa comunque")}</button>` : ""}
+      <button class="btn btn-ghost" id="dk">${T("Torna ai mazzi")}</button>
     </div>
   </div>`);
   const a = v.querySelector("#anyway"); if(a) a.onclick = () => studyDeck(id, true);
@@ -2784,25 +3234,25 @@ function fcRender(){
   const isChoice = d.kind === "dehet";
   const v = $(`<div>
     <div class="ex-top">
-      <button class="x" id="quit" aria-label="Esci dalle flashcard">${ICON.x}</button>
+      <button class="x" id="quit" aria-label="${T("Esci dalle flashcard")}">${ICON.x}</button>
       <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.round(p)}"><i style="width:${p}%"></i></div>
       <span class="ex-count">${F.pos+1}/${F.queue.length}</span>
     </div>
     <div class="pop">
-      <span class="label">${esc(d.t)}${x.again ? " · di nuovo" : ""}</span>
+      <span class="label">${esc(d.t)}${x.again ? " · " + T("di nuovo") : ""}</span>
       <div class="fc-wrap">
-        <button class="fc" id="card" aria-label="${isChoice ? "Carta" : "Tocca per girare la carta"}">
+        <button class="fc" id="card" aria-label="${isChoice ? T("Carta") : T("Tocca per girare la carta")}">
           <span class="fc-in">
-            <span class="fc-face fc-f"><span class="fc-txt">${esc(fc.front)}</span>${isChoice ? `<span class="fc-hint">de o het?</span>` : `<span class="fc-hint">Tocca per girare</span>`}</span>
+            <span class="fc-face fc-f"><span class="fc-txt">${esc(fc.front)}</span>${isChoice ? `<span class="fc-hint">${T("de o het?")}</span>` : `<span class="fc-hint">${T("Tocca per girare")}</span>`}</span>
             <span class="fc-face fc-b"><span class="fc-txt">${esc(fc.back)}</span>${fc.backSub ? `<span class="fc-sub">${esc(fc.backSub)}</span>` : ""}<span class="fc-mark" id="mark"></span></span>
           </span>
         </button>
-        ${fc.frontSay || fc.backSay ? `<button class="qsay fc-say" id="say" aria-label="Ascolta">${ICON.sound}</button>` : ""}
+        ${fc.frontSay || fc.backSay ? `<button class="qsay fc-say" id="say" aria-label="${T("Ascolta")}">${ICON.sound}</button>` : ""}
       </div>
     </div>
     <div class="dock"><div class="dock-in" id="dock">
       ${isChoice ? `<div class="fc-row"><button class="btn btn-ghost fc-art" data-a="de">de</button><button class="btn btn-ghost fc-art" data-a="het">het</button></div>`
-                 : `<button class="btn btn-deep" id="flip">Gira la carta</button>`}
+                 : `<button class="btn btn-deep" id="flip">${T("Gira la carta")}</button>`}
     </div></div>
     <div class="quiz-bg" aria-hidden="true">${patatino("wave", 240)}</div>
   </div>`);
@@ -2812,11 +3262,11 @@ function fcRender(){
   if(say){ say.onclick = () => { const t = F.flipped ? (fc.backSay || fc.frontSay) : fc.frontSay; if(t) play(t); }; if(!fc.frontSay) say.hidden = true; }
   const flip = () => {
     if(F.flipped || isChoice) return;
-    F.flipped = true; card.classList.add("flipped"); card.setAttribute("aria-label", "Carta girata");
+    F.flipped = true; card.classList.add("flipped"); card.setAttribute("aria-label", T("Carta girata"));
     if(say) say.hidden = !(fc.backSay || fc.frontSay);
     if(fc.backSay && S.audio) play(fc.backSay, {fresh:true});
     const dock = v.querySelector("#dock");
-    dock.innerHTML = `<div class="fc-row"><button class="btn btn-no" id="again">Non ancora</button><button class="btn btn-ok" id="know">Lo so</button></div>`;
+    dock.innerHTML = `<div class="fc-row"><button class="btn btn-no" id="again">${T("Non ancora")}</button><button class="btn btn-ok" id="know">${T("Lo so")}</button></div>`;
     dock.querySelector("#again").onclick = () => fcAnswer(false);
     dock.querySelector("#know").onclick = () => fcAnswer(true);
   };
@@ -2831,7 +3281,7 @@ function fcRender(){
     if(fc.backSay && S.audio) play(fc.backSay, {fresh:true});
     if(say) say.hidden = false;
     const dock = v.querySelector("#dock");
-    const next = $(`<button class="btn ${ok ? "btn-ok" : "btn-no"}" id="nx">Continua</button>`);
+    const next = $(`<button class="btn ${ok ? "btn-ok" : "btn-no"}" id="nx">${T("Continua")}</button>`);
     next.onclick = () => fcAnswer(ok);
     dock.appendChild(next);
   });
@@ -2865,13 +3315,13 @@ function fcFinish(){
   const more = st.due + (deck ? st.fresh : 0);
   const v = $(`<div class="res pop">
     ${patatino(pct >= 80 ? "cheer" : pct >= 50 ? "happy" : "sad", 130)}
-    <span class="label">${deck ? esc(deck.t) : "Ripasso di tutti i mazzi"}</span>
+    <span class="label">${deck ? esc(deck.t) : T("Ripasso di tutti i mazzi")}</span>
     <div class="score">${F.known}<small>/${F.seen}</small></div>
-    <p>${pct >= 80 ? "Ottima memoria." : pct >= 50 ? "Bene, le carte difficili tornano presto." : "Le rivedrai presto: è così che si memorizza."}</p>
-    <span class="xpgain">+${F.xp} XP · ${S.streak} ${S.streak === 1 ? "giorno" : "giorni"} di fila</span>
+    <p>${T(pct >= 80 ? "Ottima memoria." : pct >= 50 ? "Bene, le carte difficili tornano presto." : "Le rivedrai presto: è così che si memorizza.")}</p>
+    <span class="xpgain">+${F.xp} XP · ${S.streak === 1 ? T("1 giorno di fila") : T("{n} giorni di fila", {n:S.streak})}</span>
     <div class="row">
-      ${more ? `<button class="btn btn-lion" id="more">Altre carte (${more})</button>` : ""}
-      <button class="btn ${more ? "btn-ghost" : "btn-lion"}" id="dk">Torna ai mazzi</button>
+      ${more ? `<button class="btn btn-lion" id="more">${T("Altre carte ({n})", {n:more})}</button>` : ""}
+      <button class="btn ${more ? "btn-ghost" : "btn-lion"}" id="dk">${T("Torna ai mazzi")}</button>
     </div>
   </div>`);
   const m = v.querySelector("#more"); if(m) m.onclick = () => studyDeck(id);
@@ -2910,19 +3360,19 @@ function woDiagram(it){
     const cls = it.v.includes(k) ? "pv" : it.end.includes(k) ? "pe" : "";
     return `<span class="wp ${cls}">${esc(c)}</span>`;
   }).join("");
-  const leg = [it.v.length ? `<span class="wl"><i class="pv"></i>verbo coniugato</span>` : "", it.end.length ? `<span class="wl"><i class="pe"></i>in fondo</span>` : ""].join("");
-  return `<div class="wdiag"><span class="cl">Frase giusta</span><div class="wpills">${pills}</div><div class="wleg">${leg}</div></div>`;
+  const leg = [it.v.length ? `<span class="wl"><i class="pv"></i>${T("verbo coniugato")}</span>` : "", it.end.length ? `<span class="wl"><i class="pe"></i>${T("in fondo")}</span>` : ""].join("");
+  return `<div class="wdiag"><span class="cl">${T("Frase giusta")}</span><div class="wpills">${pills}</div><div class="wleg">${leg}</div></div>`;
 }
 const woDone = () => ORDER_SETS.filter(s => ((S.wob || {})[s.id] || 0) >= 80).length;
 function woScreen(){
   screen({s:"wo"});
   const v = $(`<div class="pop">
-    <div class="lesson-h tab-h"><span class="label">Ordine delle parole</span><h2>Costruisci la frase</h2><p>In neerlandese ogni pezzo della frase ha il suo posto. Metti i blocchi nell'ordine giusto: dopo ogni risposta vedi dove va il verbo.</p></div>
+    <div class="lesson-h tab-h"><span class="label">${T("Ordine delle parole")}</span><h2>${T("Costruisci la frase")}</h2><p>${T("In neerlandese ogni pezzo della frase ha il suo posto. Metti i blocchi nell'ordine giusto: dopo ogni risposta vedi dove va il verbo.")}</p></div>
     <div id="wl"></div>
   </div>`);
   const wl = v.querySelector("#wl");
   WO_GROUPS.forEach(([g, ids]) => {
-    wl.appendChild($(`<div class="sec-h"><h3>${esc(g)}</h3></div>`));
+    wl.appendChild($(`<div class="sec-h"><h3>${esc(T(g))}</h3></div>`));
     const box = $(`<div class="decks"></div>`);
     ids.forEach(id => {
       const st = ORDER_SETS.find(x => x.id === id); if(!st) return;
@@ -2930,7 +3380,7 @@ function woScreen(){
       const lk = setLocked(st);
       const badge = lk ? `<span class="fc-badge prem">${LOCK(14)} Sostenitori</span>` : best >= 80 ? `<span class="fc-badge ok">✓ ${best}%</span>` : best ? `<span class="fc-badge">${best}%</span>` : `<span class="fc-badge">nuovo</span>`;
       const b = $(`<button class="deck ${lk ? "locked" : ""}"><span class="dk-t"><b>${esc(st.t)}</b><span>${esc(st.s)}</span></span>
-        <span class="dk-r">${badge}<span class="dk-n">${u ? "unità " + n : ""} · ${st.items.length || st.n || 0} frasi</span><span class="meter"><i style="width:${best}%"></i></span></span></button>`);
+        <span class="dk-r">${badge}<span class="dk-n">${u ? T("unità {n}", {n}) : ""} · ${T("{n} frasi", {n:st.items.length || st.n || 0})}</span><span class="meter"><i style="width:${best}%"></i></span></span></button>`);
       b.onclick = () => startWo(id);
       box.appendChild(b);
     });
@@ -2954,15 +3404,15 @@ function woFinish(){
   const st = ORDER_SETS.find(x => x.id === id), nx = nextId && ORDER_SETS.find(x => x.id === nextId);
   const v = $(`<div class="res pop">
     ${patatino(pct >= 80 ? "cheer" : pct >= 50 ? "happy" : "sad", 130)}
-    <span class="label">Costruisci la frase · ${esc(st.t)}</span>
+    <span class="label">${T("Costruisci la frase")} · ${esc(st.t)}</span>
     <div class="score">${R.first}<small>/${R.total}</small></div>
-    <p>${pct === 100 ? "Ordine perfetto." : pct >= 80 ? "Ottimo: la regola è tua." : pct >= 50 ? "Ci sei quasi. Riguarda lo schema dei verbi e riprova." : "Apri «Regola» durante l'esercizio e riprova."}</p>
-    <span class="xpgain">+${R.xp} XP · ${S.streak} ${S.streak === 1 ? "giorno" : "giorni"} di fila</span>
+    <p>${T(pct === 100 ? "Ordine perfetto." : pct >= 80 ? "Ottimo: la regola è tua." : pct >= 50 ? "Ci sei quasi. Riguarda lo schema dei verbi e riprova." : "Apri «Regola» durante l'esercizio e riprova.")}</p>
+    <span class="xpgain">+${R.xp} XP · ${S.streak === 1 ? T("1 giorno di fila") : T("{n} giorni di fila", {n:S.streak})}</span>
     <div class="row">
-      ${pct >= 80 && nx ? `<button class="btn btn-lion" id="nextw">Prossima serie · ${esc(nx.t)}</button>` : ""}
-      <button class="btn ${pct >= 80 ? "btn-ghost" : "btn-lion"}" id="againw">Rifai la serie</button>
-      ${S.wrong.length ? `<button class="btn btn-ghost" id="rv">Ripassa gli errori (${S.wrong.length})</button>` : ""}
-      <button class="btn btn-ghost" id="wl">Tutte le serie</button>
+      ${pct >= 80 && nx ? `<button class="btn btn-lion" id="nextw">${T("Prossima serie")} · ${esc(nx.t)}</button>` : ""}
+      <button class="btn ${pct >= 80 ? "btn-ghost" : "btn-lion"}" id="againw">${T("Rifai la serie")}</button>
+      ${S.wrong.length ? `<button class="btn btn-ghost" id="rv">${T("Ripassa gli errori ({n})", {n:S.wrong.length})}</button>` : ""}
+      <button class="btn btn-ghost" id="wl">${T("Tutte le serie")}</button>
     </div>
   </div>`);
   const on = (s, fn) => { const b = v.querySelector(s); if(b) b.onclick = fn; };
@@ -2975,14 +3425,14 @@ function woFinish(){
 
 applyPalette();
 try{ history.replaceState({s:"home"}, ""); }catch(e){}
-window.__goesting = { get session(){ return R; }, readBackup, installContext, activateLicense, deactivateLicense, revalidateLicense, isPremium, getLicense, ensureModules, missingModules };  // usato solo dai test
+window.__goesting = { get session(){ return R; }, missingT, readBackup, installContext, activateLicense, deactivateLicense, revalidateLicense, isPremium, getLicense, ensureModules, missingModules };  // usato solo dai test
 window.APP = { mascot: patatino, PALETTES };   // usato dagli script che generano icone e screenshot
 function boot(){
   let restored = false;
   try{ restored = sessionStorage.getItem("patatino.restored") === "1"; sessionStorage.removeItem("patatino.restored"); }catch(e){}
   // indirizzi diretti: …/#privacy (utile per gli store) e …/#installa
   const hash = (location.hash || "").slice(1);
-  if(restored) settings({msg:"Backup ripristinato. Bentornato!"});
+  if(restored) settings({msg:T("Backup ripristinato. Bentornato!")});
   else if(hash === "privacy"){ home(); privacy(); }
   else if(hash === "installa"){ home(); installScreen(); }
   else home();
