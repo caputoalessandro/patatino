@@ -3822,73 +3822,84 @@ const ICON = {
 /* ---------- Patatino, la mascotte (disegno originale) ---------- */
 let mid = 0;
 function patatino(mood, size){
-  // stile cartone anni '90: contorno blu notte sottile, colori smorzati, occhioni sporgenti, scarpone e ombra morbida a terra
+  // cartone "strambo" anni '90: linee sottili un po' storte, colori piatti, occhi diversi, denti, braccia a spaghetto con le dita
   const id = "pc" + (++mid);
-  const K = "#22243A", C = "#E8705F", CS = "#CF5A4B", Y = "#EBB83F", YS = "#D49C25", W = "#FFFDF6", SW = 2.2;
+  const K = "#22243A", C = "#E8705F", CN = "#D65B4A", Y = "#EBB83F", W = "#FFFDF6", M = "#7C2A2A", SW = 2.1;
   const ln = `stroke="${K}" stroke-width="${SW}" stroke-linecap="round" stroke-linejoin="round"`;
-  // patatine leggermente storte, come disegnate a mano
-  const fries = [[40,30,40,-14],[53,20,46,-6],[66,15,50,1],[79,20,44,8],[91,30,36,15]].map(([x,y,h,r]) =>
-    `<g transform="rotate(${r} ${x+5.5} ${y+h/2})"><path d="M${x} ${y+3} Q${x} ${y} ${x+3} ${y} H${x+8} Q${x+11} ${y} ${x+11} ${y+3} V${y+h} H${x} Z" fill="${Y}" ${ln}/><path d="M${x+7.6} ${y+4} V${y+h-2}" stroke="${YS}" stroke-width="2.4" stroke-linecap="round"/></g>`).join("");
-  // braccine sottili con manine bianche
-  const hand = (x, y) => `<circle cx="${x}" cy="${y}" r="4.6" fill="${W}" ${ln}/>`;
-  const A = {
-    wave:  [["M40 92 Q28 100 24 112", 24, 113], ["M100 90 Q114 80 116 62", 116, 60]],
-    happy: [["M40 92 Q28 100 26 114", 26, 115], ["M100 92 Q112 100 114 114", 114, 115]],
-    cheer: [["M40 90 Q26 80 22 62", 22, 60], ["M100 90 Q114 80 118 62", 118, 60]],
-    sad:   [["M41 94 Q36 108 38 122", 38, 124], ["M99 94 Q104 108 102 122", 102, 124]]
+  // tubi (patatine, braccia, gambe, dita): tratto blu notte largo sotto, colore sopra
+  const tube = (paths, w, col) => paths.map(d => `<path d="${d}" fill="none" stroke="${K}" stroke-width="${w + SW*2}" stroke-linecap="round" stroke-linejoin="round"/>`).join("") +
+    paths.map(d => `<path d="${d}" fill="none" stroke="${col}" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round"/>`).join("");
+  // mano: palmo + quattro dita a ventaglio nella direzione a (gradi)
+  const fingers = (x, y, a) => [-60, -22, 14, 52].map((o, i) => {
+    const r = (a + o) * Math.PI / 180, l = [7.5, 9.5, 9.5, 7][i];
+    return `M${x} ${y} L${(x + Math.cos(r)*l).toFixed(1)} ${(y + Math.sin(r)*l).toFixed(1)}`;
+  });
+  const ARMS = {
+    wave:  [["M39 86 Q28 96 30 108 Q31 116 27 121", 26, 123, 105], ["M101 84 Q114 82 116 70 Q118 58 123 51", 124, 49, -62]],
+    happy: [["M39 88 Q26 94 24 108", 23, 111, 100], ["M101 88 Q114 94 116 108", 117, 111, 80]],
+    cheer: [["M39 84 Q26 78 24 64 Q22 54 17 48", 16, 46, -118], ["M101 84 Q114 78 116 64 Q118 54 123 48", 124, 46, -62]],
+    sad:   [["M40 90 Q35 106 38 120 Q38 127 36 131", 36, 133, 95], ["M100 90 Q105 106 102 120 Q102 127 104 131", 104, 133, 85]]
   }[mood] || [];
-  const arms = A.map(([d, x, y]) => `<path d="${d}" fill="none" ${ln}/>` + hand(x, y)).join("");
-  // occhioni sporgenti che si toccano, pupille piccole
-  const eye = (x, y, px, py, lid) => {
-    const cid = id + "e" + x;
-    return `<clipPath id="${cid}"><ellipse cx="${x}" cy="${y}" rx="9.6" ry="11.6"/></clipPath>
-      <ellipse cx="${x}" cy="${y}" rx="9.6" ry="11.6" fill="${W}"/>
-      <circle cx="${x+px}" cy="${y+py}" r="2.9" fill="${K}"/>
-      ${lid ? `<g clip-path="url(#${cid})"><rect x="${x-10}" y="${y-12}" width="20" height="${22*lid}" fill="${C}"/><path d="M${x-10} ${y-11+22*lid} H${x+10}" ${ln}/></g>` : ""}
-      <ellipse cx="${x}" cy="${y}" rx="9.6" ry="11.6" fill="none" ${ln}/>`;
+  const arms = tube(ARMS.flatMap(([, x, y, a]) => fingers(x, y, a)), 2.2, Y) + tube(ARMS.map(([d]) => d), 3.6, Y) +
+    ARMS.map(([, x, y]) => `<circle cx="${x}" cy="${y}" r="3" fill="${Y}"/>`).join("");
+  const legs = tube(mood === "sad" ? ["M58 118 Q60 128 63 139", "M82 118 Q80 128 77 139"] : ["M58 118 Q54 128 57 139", "M82 118 Q87 128 83 139"], 3.6, Y);
+  const shoe = (x, s) => `<path d="M${x} 139 Q${x + s*9} 136 ${x + s*12} 142 Q${x + s*15} 145 ${x + s*14} 150 L${x - s*9} 150 Q${x - s*11} 141 ${x} 139 Z" fill="${K}" ${ln}/>
+    <path d="M${x - s*9} 147.5 H${x + s*14}" stroke="${W}" stroke-width="2.2" stroke-linecap="round"/><circle cx="${x + s*3}" cy="141.5" r="1.3" fill="${W}"/>`;
+  // patatine come ciuffi di capelli, una con la punta piegata
+  const droop = mood === "sad" ? 6 : 0;
+  const fries = tube([`M44 64 Q40 48 ${34 - droop} ${36 + droop}`, `M56 62 Q55 42 ${51 - droop/2} 24`, "M68 60 Q71 38 66 18 Q65 11 72 9",
+    `M80 62 Q85 44 ${84 + droop/2} 27`, `M92 64 Q99 52 ${105 + droop} ${42 + droop}`], 7.4, Y);
+  // occhi diversi tra loro: palpebra (lid) da 0 a 1, pupilla spostata di (px, py)
+  const eye = (k, x, y, rx, ry, px, py, lid) => {
+    const cid = id + k;
+    return `<clipPath id="${cid}"><ellipse cx="${x}" cy="${y}" rx="${rx}" ry="${ry}"/></clipPath>
+      <ellipse cx="${x}" cy="${y}" rx="${rx}" ry="${ry}" fill="${W}"/>
+      <circle cx="${x + px}" cy="${y + py}" r="2.5" fill="${K}"/>
+      ${lid ? `<g clip-path="url(#${cid})"><rect x="${x - rx - 1}" y="${y - ry - 1}" width="${rx*2 + 2}" height="${ry*2*lid + 1}" fill="${C}"/><path d="M${x - rx - 1} ${y - ry + ry*2*lid} H${x + rx + 1}" ${ln}/></g>` : ""}
+      <ellipse cx="${x}" cy="${y}" rx="${rx}" ry="${ry}" fill="none" ${ln}/>`;
   };
-  let face;
-  if(mood === "cheer"){
-    face = `<path d="M53 80 Q61 70 69 80 M71 80 Q79 70 87 80" fill="none" ${ln}/>
-      <path d="M61 92 Q70 108 79 92 Z" fill="#7C2A2A" ${ln}/><path d="M65 99 Q70 96 75 99" stroke="${C}" stroke-width="2.4" fill="none" stroke-linecap="round"/>`;
-  } else if(mood === "happy"){
-    face = eye(61, 79, 1.5, 1, 0) + eye(79, 79, -1, 1, 0) + `<path d="M63 97 Q70 104 77 97" fill="none" ${ln}/>`;
-  } else if(mood === "sad"){
-    face = eye(61, 80, 0, 4, .38) + eye(79, 80, 0, 4, .38) +
-      `<path d="M52 66 L60 70 M88 66 L80 70" ${ln}/><path d="M64 101 Q70 96 76 101" fill="none" ${ln}/>
-      <path d="M90 88 Q94 95 91 98 Q86 98 87 93 Z" fill="#BFE0F0" ${ln}/>`;
-  } else {
-    // stupito-simpatico: boccuccia aperta come nel saluto
-    face = eye(61, 79, 2, -1, 0) + eye(79, 79, -1, -1, 0) +
-      `<path d="M56 64 Q61 61 66 64 M74 64 Q79 61 84 64" fill="none" ${ln}/><ellipse cx="70" cy="99" rx="3.6" ry="4.6" fill="#7C2A2A" ${ln}/>`;
-  }
+  const E = {
+    wave:  [[2, 2, .42], [2, 2, .36], "M73 61 Q80 55 88 60"],
+    happy: [[2, 1, 0], [-1, 1, 0], "M47 58 Q56 53 64 57 M73 60 Q80 56 87 60"],
+    cheer: [[0, -6, 0], [0, -4.5, 0], "M46 55 Q56 49 65 54 M72 57 Q80 51 88 56"],
+    sad:   [[0, 5, .5], [0, 4, .5], "M47 61 Q55 57 64 55 M74 58 Q82 58 88 63"]
+  }[mood] || [[0, 0, 0], [0, 0, 0], ""];
+  const eyes = eye("a", 58, 72, 11.5, 13.5, ...E[0]) + eye("b", 80, 74, 8.5, 10, ...E[1]) + `<path d="${E[2]}" fill="none" ${ln}/>`;
+  const nose = `<path d="M65 86 Q66 80 73 81 Q80 83 79 89 Q77 94 70 93 Q65 92 65 86 Z" fill="${CN}" ${ln}/>`;
+  // bocca: forma riempita scura, fila di denti in alto, lingua per l'esultanza
+  const mouth = (d, teeth, tongue) => `<clipPath id="${id}m"><path d="${d}"/></clipPath><path d="${d}" fill="${M}"/>
+    <g clip-path="url(#${id}m)"><rect x="40" y="80" width="60" height="${teeth}" fill="${W}"/><path d="M40 ${80 + teeth} H100" ${ln}/>
+    ${[61, 67, 73, 79].map(x => `<path d="M${x} 80 V${80 + teeth}" stroke="${K}" stroke-width="1.4"/>`).join("")}
+    ${tongue ? `<ellipse cx="70" cy="118" rx="9" ry="6" fill="#F29A8E" ${ln}/>` : ""}</g><path d="${d}" fill="none" ${ln}/>`;
+  const mouths = {
+    wave:  mouth("M55 100 Q68 103 84 95 Q83 105 71 107 Q60 108 55 100 Z", 22.5, false),
+    happy: mouth("M52 98 Q68 103 88 93 Q87 109 71 112 Q56 112 52 98 Z", 21.5, false),
+    cheer: mouth("M55 98 Q70 101 85 95 Q86 115 71 119 Q56 117 55 98 Z", 21, true),
+    sad:   `<path d="M66 102.5 h4 v4.6 h-4 Z M70 102.5 h4 v4.2 h-4 Z" fill="${W}" ${ln}/><path d="M55 106 Q61 100 67 103 Q73 99 85 104" fill="none" ${ln}/>`
+  };
   const spark = (x, y, s) => `<path d="M${x} ${y-s} Q${x} ${y} ${x+s} ${y} Q${x} ${y} ${x} ${y+s} Q${x} ${y} ${x-s} ${y} Q${x} ${y} ${x} ${y-s} Z" fill="${Y}" stroke="${K}" stroke-width="1.6" stroke-linejoin="round"/>`;
-  const extras = mood === "cheer" ? spark(14, 44, 6) + spark(128, 40, 6) + spark(26, 24, 3.5) :
-                 mood === "wave" ? `<path d="M124 52 q4 -4 2 -9 M130 60 q5 -2 5 -7" fill="none" ${ln}/>` :
-                 mood === "happy" ? spark(124, 46, 4.5) : "";
-  // cono a camicia hawaiana: corallo con quadratini blu notte, fascia col Belgio in tinte smorzate
-  const CONE = "M33 60 Q70 56 107 60 Q100 96 92 126 Q70 130 48 126 Q40 96 33 60 Z";
-  const dots = [[44,76],[47,98],[54,115],[69,114],[84,115],[91,93],[95,74]].map(([x,y],i) =>
-    `<rect x="${x}" y="${y}" width="${i%2?6:5}" height="4.6" rx="1.2" fill="${K}" transform="rotate(${i*23} ${x} ${y})"/>`).join("");
+  const extras = mood === "cheer" ? spark(10, 30, 6) + spark(132, 26, 6) + spark(24, 14, 3.5) + spark(118, 10, 3.5) :
+                 mood === "wave" ? `<path d="M128 42 q5 -4 3 -10 M134 52 q6 -2 6 -8" fill="none" ${ln}/>` :
+                 mood === "happy" ? spark(124, 70, 4.5) :
+                 mood === "sad" ? `<path d="M92 84 Q97 92 93 96 Q87 96 89 90 Z" fill="#BFE0F0" ${ln}/>` : "";
+  // cono un po' storto, colore piatto, fascia col Belgio in tinte smorzate
+  const CONE = "M32 58 Q52 53 72 56 Q92 53 108 59 Q103 78 99 92 Q95 106 91 120 Q70 124 49 119 Q44 100 40 88 Q35 72 32 58 Z";
   return `<svg class="patatino" viewBox="0 0 140 160" width="${size}" height="${Math.round(size*160/140)}" role="img" aria-label="Patatino, la mascotte">
     <defs><clipPath id="${id}"><path d="${CONE}"/></clipPath></defs>
-    <ellipse class="pt-sh" cx="70" cy="151" rx="38" ry="5.5" fill="rgba(34,36,58,.14)"/>
+    <ellipse class="pt-sh" cx="70" cy="152" rx="40" ry="5" fill="rgba(34,36,58,.14)"/>
     ${extras}
-    <path d="M60 126 V140 M80 126 V140" ${ln}/>
-    <path d="M46 150 Q44 140 56 139 Q66 138 66 146 Q66 151 60 151 Z" fill="${K}" ${ln}/><path d="M47 148 H64" stroke="${W}" stroke-width="2" stroke-linecap="round"/>
-    <path d="M94 150 Q96 140 84 139 Q74 138 74 146 Q74 151 80 151 Z" fill="${K}" ${ln}/><path d="M93 148 H76" stroke="${W}" stroke-width="2" stroke-linecap="round"/>
+    ${legs}${shoe(57, -1)}${shoe(83, 1)}
     ${arms}
     ${fries}
-    <path d="M58 52 Q62 43 70 48 Q78 43 82 52 Q78 58 70 57 Q62 58 58 52 Z" fill="${W}" ${ln}/>
+    <path d="M57 53 Q60 44 68 48 Q74 41 81 47 Q86 52 80 56 Q70 59 60 57 Q55 56 57 53 Z" fill="${W}" ${ln}/>
     <path d="${CONE}" fill="${C}"/>
     <g clip-path="url(#${id})">
-      <path d="M92 50 Q102 52 112 58 L98 132 H86 Q94 96 92 50 Z" fill="${CS}"/>
-      ${dots}
-      <rect x="20" y="58" width="38" height="9" fill="${K}"/><rect x="58" y="58" width="25" height="9" fill="${Y}"/><rect x="83" y="58" width="40" height="9" fill="#C4473A"/>
-      <path d="M30 67 Q70 64 112 67" fill="none" ${ln}/>
+      <rect x="20" y="50" width="38" height="16" fill="${K}"/><rect x="58" y="50" width="25" height="16" fill="${Y}"/><rect x="83" y="50" width="40" height="16" fill="#C4473A"/>
+      <path d="M26 65 Q50 68 70 65 Q92 62 114 66" fill="none" ${ln}/>
+      <path d="M46 112 l2 2 M90 108 l-1 3 M44 96 l2 1" stroke="${K}" stroke-width="1.6" stroke-linecap="round"/>
     </g>
     <path d="${CONE}" fill="none" ${ln}/>
-    ${face}
+    ${eyes}${nose}${mouths[mood] || mouths.happy}
   </svg>`;
 }
 const CLOUD = "";   // niente nuvola: Patatino sta in piedi sulla sua ombra
