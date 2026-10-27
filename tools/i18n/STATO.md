@@ -6,3 +6,6 @@
 
 Come continuare: `node tools/i18n.mjs blocco 820 400` mostra i prossimi testi; la traduzione va in `tools/i18n/en/_b820.json`
 (array nello stesso ordine), `python3 tools/i18n/controlla-blocco.py en tools/i18n/en/_b820.json`, poi `node tools/i18n.mjs unisci en`.
+
+Nota: in 3 spiegazioni (NOTES …note) la versione inglese è adattata e ha tag diversi dall'italiano (es. un esempio <s>…</s> in meno).
+Prima di `costruisci`, nel controllo dei tag di `verifica` accettare per le spiegazioni lunghe tag diversi purché bilanciati.
