@@ -3749,7 +3749,26 @@ if (typeof module !== "undefined") module.exports = UNIT;
 
 REGISTER_UNIT(UNIT);})();</script>
 <script>
-(function(){
+window.patatinoMain = function(){
+/* ---------- lingua delle spiegazioni ---------- */
+// L'italiano è scritto qui; le altre lingue arrivano da lang/xx.js (caricato prima dell'avvio, vedi in fondo)
+// e sostituiscono testi dell'interfaccia (tr) e contenuti (percorsi "UNITS|0|items|3|q").
+const LANGS = [["it","Italiano"],["en","English"],["fr","Français"],["es","Español"],["de","Deutsch"]];
+const PACK = window.PATATINO_LANG && window.PATATINO_LANG.code === window.PATATINO_LANG_WANT ? window.PATATINO_LANG : null;
+const LANG = PACK ? PACK.code : "it";
+const LOCALE = {it:"it-IT", en:"en-GB", fr:"fr-BE", es:"es-ES", de:"de-DE"}[LANG];
+const UI = PACK ? PACK.ui : {};
+function tr(s, v){ let r = UI[s] || s; if(v) r = r.replace(/\{(\w+)\}/g, (m, k) => k in v ? v[k] : m); return r; }
+if(PACK){
+  const ROOT = {UNITS, NOTES, GLOSS, CORE, DECKS, ORDER_SETS};
+  Object.keys(PACK.data).forEach(p => {
+    const k = p.split("|"); let o = ROOT;
+    for(let i = 0; i < k.length - 1 && o; i++) o = o[k[i]];
+    if(o && typeof o[k[k.length - 1]] === "string") o[k[k.length - 1]] = PACK.data[p];
+  });
+}
+try{ document.documentElement.lang = LANG; }catch(e){}
+
 const KEY = "goesting.v1";
 const PER_SESSION = 10;     // esercizi di grammatica per sessione
 const BATCH = 6;            // parole presentate per gruppo nella parte 1
@@ -3760,7 +3779,7 @@ const L = LOGIC;
 UNITS.forEach(u => { const n = NOTES[u.id]; if(n){ u.note = n.note; u.vlaams = n.vlaams; u.vocab = n.vocab; } const c = CORE[u.id]; u.core = c ? c.words : []; u.drills = c ? c.drills : []; });
 
 /* ---------- stato salvato ---------- */
-function fresh(){ return {xp:0, streak:0, last:null, best:{}, vbest:{}, vblk:{}, fc:{}, wob:{}, fcDir:"nl", wrong:[], audio:true, voice:"auto", palette:"frietkot", lastExport:null, backupSnooze:null, installSnooze:null, installed:false}; }
+function fresh(){ return {xp:0, streak:0, last:null, best:{}, vbest:{}, vblk:{}, fc:{}, wob:{}, fcDir:"nl", wrong:[], audio:true, voice:"auto", lang:window.PATATINO_LANG_WANT || "it", palette:"frietkot", lastExport:null, backupSnooze:null, installSnooze:null, installed:false}; }
 function load(){ try{ const r = localStorage.getItem(KEY); if(r) return Object.assign(fresh(), JSON.parse(r)); }catch(e){} return fresh(); }
 function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} }
 let S = load();
@@ -3835,7 +3854,7 @@ function patatino(mood, size){
   const extras = mood === "cheer" ? spark(18, 40, 7) + spark(124, 34, 6) + spark(30, 20, 4) :
                  mood === "wave" ? spark(120, 28, 6) + `<path d="M24 40 l3 -6 M30 44 l5 -3" stroke="${K}" stroke-width="2.6" stroke-linecap="round"/>` :
                  mood === "happy" ? spark(122, 40, 5) : "";
-  return `<svg class="patatino" viewBox="0 0 140 160" width="${size}" height="${Math.round(size*160/140)}" role="img" aria-label="Patatino, la mascotte">
+  return `<svg class="patatino" viewBox="0 0 140 160" width="${size}" height="${Math.round(size*160/140)}" role="img" aria-label="${esc(tr("Patatino, la mascotte"))}">
     <defs><clipPath id="${id}"><path d="M30 62 H110 L92 146 H48 Z"/></clipPath></defs>
     ${extras}
     ${arms}
@@ -3953,8 +3972,8 @@ const TAB_IC = {
 };
 function tabBar(active){
   const due = fcDueAll();
-  const tabs = [["path","Percorso",home],["cards","Flashcards",decksScreen],["words","Frasi",woScreen]];
-  const bar = $(`<nav class="tabbar" aria-label="Sezioni">${tabs.map(([id, l]) => `<button class="tab ${id === active ? "on" : ""}" data-t="${id}" ${id === active ? 'aria-current="page"' : ""}>
+  const tabs = [["path",tr("Percorso"),home],["cards",tr("Flashcards"),decksScreen],["words",tr("Frasi"),woScreen]];
+  const bar = $(`<nav class="tabbar" aria-label="${esc(tr("Sezioni"))}">${tabs.map(([id, l]) => `<button class="tab ${id === active ? "on" : ""}" data-t="${id}" ${id === active ? 'aria-current="page"' : ""}>
     <span class="tab-ic">${TAB_IC[id]}${id === "cards" && due ? `<span class="tab-n">${due > 99 ? "99+" : due}</span>` : ""}</span><span>${l}</span></button>`).join("")}</nav>`);
   bar.querySelectorAll(".tab").forEach(b => b.onclick = () => { if(b.dataset.t !== active) tabs.find(t => t[0] === b.dataset.t)[2](); else window.scrollTo({top:0, behavior:"smooth"}); });
   return bar;
@@ -3992,21 +4011,21 @@ const MIGRATIONS = {
 const BadBackup = (msg) => Object.assign(new Error(msg), {bad:true});
 function readBackup(text){
   let f;
-  try{ f = JSON.parse(text); }catch(e){ throw BadBackup("Il file non è un JSON valido."); }
-  if(!f || typeof f !== "object" || Array.isArray(f)) throw BadBackup("Il file non contiene un backup.");
+  try{ f = JSON.parse(text); }catch(e){ throw BadBackup(tr("Il file non è un JSON valido.")); }
+  if(!f || typeof f !== "object" || Array.isArray(f)) throw BadBackup(tr("Il file non contiene un backup."));
   if(f.app === undefined && f.schemaVersion === undefined && "xp" in f && "best" in f) f = {schemaVersion:0, state:f};
-  else if(f.app !== APP_NAME) throw BadBackup("Questo file non è un backup di Patatino.");
+  else if(f.app !== APP_NAME) throw BadBackup(tr("Questo file non è un backup di Patatino."));
   let v = Number(f.schemaVersion);
-  if(!Number.isInteger(v) || v < 0) throw BadBackup("Il file non indica una versione valida.");
-  if(v > SCHEMA_VERSION) throw BadBackup("Il backup viene da una versione più recente di Patatino: aggiorna l'app e riprova.");
+  if(!Number.isInteger(v) || v < 0) throw BadBackup(tr("Il file non indica una versione valida."));
+  if(v > SCHEMA_VERSION) throw BadBackup(tr("Il backup viene da una versione più recente di Patatino: aggiorna l'app e riprova."));
   while(v < SCHEMA_VERSION){ f = MIGRATIONS[v](f); v = f.schemaVersion; }
   const d = f.data;
-  if(!d || typeof d !== "object" || Array.isArray(d)) throw BadBackup("Nel file mancano i dati.");
+  if(!d || typeof d !== "object" || Array.isArray(d)) throw BadBackup(tr("Nel file mancano i dati."));
   const keys = Object.keys(d).filter(k => k.indexOf(KEY_PREFIX) === 0 && typeof d[k] === "string");
-  if(!keys.includes(KEY)) throw BadBackup("Nel file mancano i progressi.");
+  if(!keys.includes(KEY)) throw BadBackup(tr("Nel file mancano i progressi."));
   let st;
-  try{ st = JSON.parse(d[KEY]); }catch(e){ throw BadBackup("I progressi nel file sono danneggiati."); }
-  if(!st || typeof st !== "object" || Array.isArray(st)) throw BadBackup("I progressi nel file sono danneggiati.");
+  try{ st = JSON.parse(d[KEY]); }catch(e){ throw BadBackup(tr("I progressi nel file sono danneggiati.")); }
+  if(!st || typeof st !== "object" || Array.isArray(st)) throw BadBackup(tr("I progressi nel file sono danneggiati."));
   return {exportedAt:f.exportedAt, data:keys.reduce((o, k) => (o[k] = d[k], o), {})};
 }
 function restoreBackup(b){
@@ -4018,7 +4037,7 @@ function ask(title, text, okLabel){
   return new Promise(res => {
     const m = $(`<div class="modal" role="dialog" aria-modal="true" aria-labelledby="mt"><div class="modal-box">
       <h3 id="mt">${esc(title)}</h3><p>${text}</p>
-      <div class="modal-row"><button class="btn btn-deep" id="mok">${esc(okLabel)}</button><button class="btn btn-ghost" id="mno">Annulla</button></div>
+      <div class="modal-row"><button class="btn btn-deep" id="mok">${esc(okLabel)}</button><button class="btn btn-ghost" id="mno">${esc(tr("Annulla"))}</button></div>
     </div></div>`);
     const close = (r) => { m.remove(); document.removeEventListener("keydown", key, true); res(r); };
     const key = (e) => { if(e.key === "Escape"){ e.preventDefault(); close(false); } else if(e.key === "Enter"){ e.preventDefault(); e.stopPropagation(); close(true); } };
@@ -4033,15 +4052,15 @@ function ask(title, text, okLabel){
 function importFile(file, done){
   if(!file) return;
   file.text().then(readBackup).then(b => {
-    const when = b.exportedAt && !isNaN(new Date(b.exportedAt)) ? " del " + new Date(b.exportedAt).toLocaleDateString("it-IT") : "";
-    return ask("Ripristinare il backup?", `I progressi e le impostazioni di questo dispositivo verranno <b>sostituiti</b> con quelli del backup${esc(when)}. Non si può annullare.`, "Sì, ripristina")
+    const when = b.exportedAt && !isNaN(new Date(b.exportedAt)) ? tr(" del {d}", {d:new Date(b.exportedAt).toLocaleDateString(LOCALE)}) : "";
+    return ask(tr("Ripristinare il backup?"), tr("I progressi e le impostazioni di questo dispositivo verranno <b>sostituiti</b> con quelli del backup{when}. Non si può annullare.", {when:esc(when)}), tr("Sì, ripristina"))
       .then(ok => {
         if(!ok) return done(null);
-        try{ restoreBackup(b); }catch(e){ return done({err:true, msg:"Non sono riuscito a salvare i dati: forse lo spazio è pieno."}); }
+        try{ restoreBackup(b); }catch(e){ return done({err:true, msg:tr("Non sono riuscito a salvare i dati: forse lo spazio è pieno.")}); }
         try{ sessionStorage.setItem("patatino.restored", "1"); }catch(e){}
         location.reload();
       });
-  }).catch(e => done({err:true, msg:e && e.bad ? e.message : "Non riesco a leggere il file."}));
+  }).catch(e => done({err:true, msg:e && e.bad ? e.message : tr("Non riesco a leggere il file.")}));
 }
 const DAY_MS = 864e5;
 const hasProgress = () => S.xp > 0 || Object.keys(S.best || {}).length + Object.keys(S.vbest || {}).length + Object.keys(S.fc || {}).length > 0;
@@ -4061,14 +4080,14 @@ function backupNudge(){
   try{ sessionStorage.setItem("patatino.nudged", "1"); }catch(e){}
   const days = S.lastExport ? Math.floor((Date.now() - new Date(S.lastExport).getTime()) / DAY_MS) : 0;
   const txt = S.lastExport
-    ? `Ehi, sono passati ${days} giorni dal tuo ultimo backup! Salviamo i progressi in un file?`
-    : "Ehi, i tuoi progressi stanno solo in questo browser. Salviamoli in un file, per sicurezza?";
-  const n = $(`<aside class="nudge" aria-label="Promemoria backup">
+    ? tr("Ehi, sono passati {n} giorni dal tuo ultimo backup! Salviamo i progressi in un file?", {n:days})
+    : tr("Ehi, i tuoi progressi stanno solo in questo browser. Salviamoli in un file, per sicurezza?");
+  const n = $(`<aside class="nudge" aria-label="${esc(tr("Promemoria backup"))}">
     <span class="nudge-art">${patatino("wave", 64)}</span>
     <div class="nudge-box"><p>${txt}</p>
-      <div class="nudge-row"><button class="btn btn-deep" id="nexp">Esporta ora</button><button class="btn btn-ghost" id="nlat">Più tardi</button></div>
+      <div class="nudge-row"><button class="btn btn-deep" id="nexp">${tr("Esporta ora")}</button><button class="btn btn-ghost" id="nlat">${tr("Più tardi")}</button></div>
     </div></aside>`);
-  n.querySelector("#nexp").onclick = () => { exportData(); n.querySelector(".nudge-box").innerHTML = "<p style=\"margin:0\">Fatto, backup scaricato! Tienilo in un posto sicuro.</p>"; };
+  n.querySelector("#nexp").onclick = () => { exportData(); n.querySelector(".nudge-box").innerHTML = "<p style=\"margin:0\">" + tr("Fatto, backup scaricato! Tienilo in un posto sicuro.") + "</p>"; };
   n.querySelector("#nlat").onclick = () => { S.backupSnooze = new Date(Date.now() + SNOOZE_DAYS * DAY_MS).toISOString(); save(); n.remove(); };
   return n;
 }
@@ -4132,11 +4151,11 @@ function installBannerDue(){
 }
 function installBanner(){
   if(!installBannerDue()) return null;
-  const n = $(`<aside class="nudge inst-banner" aria-label="Installa l'app">
+  const n = $(`<aside class="nudge inst-banner" aria-label="${esc(tr("Installa l'app"))}">
     <span class="nudge-art">${patatino("cheer", 64)}</span>
-    <div class="nudge-box"><button class="nudge-x" aria-label="Chiudi">${ICON.x}</button>
-      <p>Ti è piaciuto? Mettimi sulla schermata Home così mi ritrovi subito!</p>
-      <div class="nudge-row"><button class="btn btn-deep" id="ninst">Installa l'app</button></div>
+    <div class="nudge-box"><button class="nudge-x" aria-label="${esc(tr("Chiudi"))}">${ICON.x}</button>
+      <p>${tr("Ti è piaciuto? Mettimi sulla schermata Home così mi ritrovi subito!")}</p>
+      <div class="nudge-row"><button class="btn btn-deep" id="ninst">${tr("Installa l'app")}</button></div>
     </div></aside>`);
   n.querySelector("#ninst").onclick = startInstall;
   n.querySelector(".nudge-x").onclick = () => { S.installSnooze = new Date(Date.now() + INSTALL_SNOOZE_DAYS * DAY_MS).toISOString(); save(); n.remove(); };
@@ -4145,19 +4164,19 @@ function installBanner(){
 
 function movedBanner(){
   if(!OLD_HOST || location.hostname !== OLD_HOST) return null;
-  const n = $(`<aside class="nudge moved" aria-label="Nuovo indirizzo">
+  const n = $(`<aside class="nudge moved" aria-label="${esc(tr("Nuovo indirizzo"))}">
     <span class="nudge-art">${patatino("wave", 64)}</span>
-    <div class="nudge-box"><p><b>L'app si è trasferita!</b> Patatino ora abita a un nuovo indirizzo. I progressi non traslocano da soli: esportali qui, poi aprili dal nuovo indirizzo con <i>Impostazioni → Importa backup</i>.</p>
-      <div class="nudge-row"><button class="btn btn-deep" id="mexp">Esporta i miei dati</button>${NEW_URL ? `<a class="btn btn-ghost" href="${esc(NEW_URL)}" rel="noopener">Vai al nuovo indirizzo</a>` : ""}</div>
+    <div class="nudge-box"><p>${tr("<b>L'app si è trasferita!</b> Patatino ora abita a un nuovo indirizzo. I progressi non traslocano da soli: esportali qui, poi aprili dal nuovo indirizzo con <i>Impostazioni → Importa backup</i>.")}</p>
+      <div class="nudge-row"><button class="btn btn-deep" id="mexp">${tr("Esporta i miei dati")}</button>${NEW_URL ? `<a class="btn btn-ghost" href="${esc(NEW_URL)}" rel="noopener">${tr("Vai al nuovo indirizzo")}</a>` : ""}</div>
     </div></aside>`);
-  n.querySelector("#mexp").onclick = () => { exportData(); n.querySelector("#mexp").textContent = "Backup scaricato ✓"; };
+  n.querySelector("#mexp").onclick = () => { exportData(); n.querySelector("#mexp").textContent = tr("Backup scaricato ✓"); };
   return n;
 }
 
 function copyLink(btn){
   const url = location.href.split("#")[0];
-  const ok = () => { btn.innerHTML = ICON.check + " Link copiato!"; };
-  const manual = () => { const f = btn.parentNode.querySelector(".linkbox"); if(f){ f.hidden = false; f.focus(); f.select(); } btn.textContent = "Copia il link qui sotto"; };
+  const ok = () => { btn.innerHTML = ICON.check + " " + tr("Link copiato!"); };
+  const manual = () => { const f = btn.parentNode.querySelector(".linkbox"); if(f){ f.hidden = false; f.focus(); f.select(); } btn.textContent = tr("Copia il link qui sotto"); };
   const legacy = () => {
     try{
       const t = document.createElement("textarea"); t.value = url; t.setAttribute("readonly", ""); t.style.cssText = "position:fixed;top:0;left:0;opacity:0";
@@ -4186,43 +4205,43 @@ const ILL = {
     <circle cx="140" cy="121" r="17" fill="var(--bg)" stroke="${IK}" stroke-width="3"/>${SHARE_IC(140, 121, 1)}
     <path d="M180 113 h14 v15 h-14 Z M187 113 v15" fill="none" stroke="#0A66E8" stroke-width="2.2" stroke-linejoin="round"/>
     <rect x="222" y="113" width="14" height="14" rx="3" fill="none" stroke="#0A66E8" stroke-width="2.2"/>
-    ${ARROW_DOWN(140, 98)}`, "Barra di Safari in basso con il tasto Condividi evidenziato"),
+    ${ARROW_DOWN(140, 98)}`, tr("Barra di Safari in basso con il tasto Condividi evidenziato")),
   // passo 1, Safari recente: barra compatta, Condividi è dentro il menu "···"
   shareMenu: () => svgWrap(170, `
     <rect x="20" y="8" width="240" height="158" rx="18" fill="#fff" stroke="${IK}" stroke-width="3"/>
     <g class="pop-in"><rect x="120" y="22" width="126" height="92" rx="12" fill="#fff" stroke="${IK}" stroke-width="2.5"/>
       <rect x="126" y="28" width="114" height="26" rx="8" fill="var(--bg)" stroke="${IK}" stroke-width="2.5"/>${SHARE_IC(140, 41, .75)}
-      <text x="152" y="46" font-size="13" font-weight="700" fill="${IK}">Condividi</text>
-      <text x="132" y="76" font-size="11" fill="#666">Aggiungi preferito</text><text x="132" y="102" font-size="11" fill="#666">Nuovo pannello</text>
+      <text x="152" y="46" font-size="13" font-weight="700" fill="${IK}">${esc(tr("Condividi"))}</text>
+      <text x="132" y="76" font-size="11" fill="#666">${esc(tr("Aggiungi preferito"))}</text><text x="132" y="102" font-size="11" fill="#666">${esc(tr("Nuovo pannello"))}</text>
       <g class="bnc-x2">${ARROW_LEFT(242, 41).replace('class="bnc-x"', "")}</g></g>
     <rect x="34" y="128" width="170" height="28" rx="14" fill="#F4F4F4" stroke="${IK}" stroke-width="2.5"/>
     <text x="56" y="147" font-size="13" fill="#444">patatino…</text>
     <circle cx="228" cy="142" r="17" fill="var(--bg)" stroke="${IK}" stroke-width="3"/>
     <g fill="${IK}"><circle cx="220" cy="142" r="2.6"/><circle cx="228" cy="142" r="2.6"/><circle cx="236" cy="142" r="2.6"/></g>
-    <g class="arr-first">${ARROW_DOWN(228, 123)}</g>`, "Safari con la barra compatta: tocca ··· e poi Condividi"),
+    <g class="arr-first">${ARROW_DOWN(228, 123)}</g>`, tr("Safari con la barra compatta: tocca ··· e poi Condividi")),
   // passo 2: nel foglio di condivisione, "Aggiungi alla schermata Home"
   addHome: () => svgWrap(168, `
     <rect x="20" y="8" width="240" height="156" rx="18" fill="#F4F4F4" stroke="${IK}" stroke-width="3"/>
     <rect x="118" y="16" width="44" height="5" rx="2.5" fill="#C9C9C9"/>
-    ${[["Copia", 34], ["Aggiungi a Elenco lettura", 64]].map(([t, y]) => `<rect x="34" y="${y}" width="212" height="24" rx="8" fill="#fff"/><text x="46" y="${y+16}" font-size="12.5" fill="#444">${t}</text>`).join("")}
+    ${[[tr("Copia"), 34], [tr("Aggiungi a Elenco lettura"), 64]].map(([t, y]) => `<rect x="34" y="${y}" width="212" height="24" rx="8" fill="#fff"/><text x="46" y="${y+16}" font-size="12.5" fill="#444">${t}</text>`).join("")}
     <rect x="30" y="96" width="220" height="34" rx="10" fill="var(--bg)" stroke="${IK}" stroke-width="3"/>
-    <text x="40" y="117" font-size="11.5" font-weight="700" fill="${IK}">Aggiungi alla schermata Home</text>
+    <text x="40" y="117" font-size="11.5" font-weight="700" fill="${IK}">${esc(tr("Aggiungi alla schermata Home"))}</text>
     <rect x="224" y="104" width="18" height="18" rx="4" fill="none" stroke="${IK}" stroke-width="2.2"/><path d="M233 108 v10 M228 113 h10" stroke="${IK}" stroke-width="2.2" stroke-linecap="round"/>
-    <rect x="34" y="138" width="212" height="20" rx="8" fill="#fff"/><text x="46" y="152" font-size="12.5" fill="#444">Stampa</text>
-    ${ARROW_LEFT(252, 113)}`, "Foglio di condivisione con la voce Aggiungi alla schermata Home"),
+    <rect x="34" y="138" width="212" height="20" rx="8" fill="#fff"/><text x="46" y="152" font-size="12.5" fill="#444">${esc(tr("Stampa"))}</text>
+    ${ARROW_LEFT(252, 113)}`, tr("Foglio di condivisione con la voce Aggiungi alla schermata Home")),
   // passo 3: "Aggiungi" in alto a destra
   confirm: () => svgWrap(150, `
     <rect x="20" y="8" width="240" height="138" rx="18" fill="#F4F4F4" stroke="${IK}" stroke-width="3"/>
-    <text x="34" y="36" font-size="13" fill="#0A66E8">Annulla</text>
-    <text x="132" y="36" font-size="11" font-weight="700" fill="${IK}" text-anchor="middle">Schermata Home</text>
+    <text x="34" y="36" font-size="13" fill="#0A66E8">${esc(tr("Annulla"))}</text>
+    <text x="132" y="36" font-size="11" font-weight="700" fill="${IK}" text-anchor="middle">${esc(tr("Schermata Home"))}</text>
     <rect x="182" y="18" width="70" height="28" rx="10" fill="var(--bg)" stroke="${IK}" stroke-width="3"/>
-    <text x="217" y="37" font-size="13" font-weight="700" fill="${IK}" text-anchor="middle">Aggiungi</text>
+    <text x="217" y="37" font-size="13" font-weight="700" fill="${IK}" text-anchor="middle">${esc(tr("Aggiungi"))}</text>
     <rect x="34" y="60" width="212" height="54" rx="12" fill="#fff"/>
     <g transform="translate(44 63)">${patatino("happy", 48)}</g>
     <text x="100" y="92" font-size="15" font-weight="700" fill="${IK}">Patatino</text>
-    <rect x="34" y="120" width="212" height="20" rx="8" fill="#fff"/><text x="46" y="134" font-size="11.5" fill="#444">Apri come app web</text>
+    <rect x="34" y="120" width="212" height="20" rx="8" fill="#fff"/><text x="46" y="134" font-size="11.5" fill="#444">${esc(tr("Apri come app web"))}</text>
     <rect x="214" y="123" width="26" height="14" rx="7" fill="#34C759"/><circle cx="233" cy="130" r="5.5" fill="#fff"/>
-    <g transform="translate(217 50)"><g class="bnc-y"><path d="M0 34 V12" stroke="${IK}" stroke-width="9" stroke-linecap="round"/><path d="M0 34 V12" stroke="var(--deep)" stroke-width="4" stroke-linecap="round"/><path d="M-11 16 L0 2 L11 16 Z" fill="var(--deep)" stroke="${IK}" stroke-width="3" stroke-linejoin="round"/></g></g>`, "Conferma con Aggiungi in alto a destra"),
+    <g transform="translate(217 50)"><g class="bnc-y"><path d="M0 34 V12" stroke="${IK}" stroke-width="9" stroke-linecap="round"/><path d="M0 34 V12" stroke="var(--deep)" stroke-width="4" stroke-linecap="round"/><path d="M-11 16 L0 2 L11 16 Z" fill="var(--deep)" stroke="${IK}" stroke-width="3" stroke-linejoin="round"/></g></g>`, tr("Conferma con Aggiungi in alto a destra")),
   // browser interno di un'app: menu ··· in alto a destra → apri nel browser
   inapp: (os) => svgWrap(158, `
     <rect x="20" y="8" width="240" height="146" rx="18" fill="#fff" stroke="${IK}" stroke-width="3"/>
@@ -4233,111 +4252,112 @@ const ILL = {
     <g fill="${IK}"><circle cx="225" cy="28" r="2.4"/><circle cx="232" cy="28" r="2.4"/><circle cx="239" cy="28" r="2.4"/></g>
     <g class="pop-in"><rect x="96" y="56" width="152" height="84" rx="12" fill="#fff" stroke="${IK}" stroke-width="2.5"/>
       <rect x="102" y="62" width="140" height="28" rx="8" fill="var(--bg)" stroke="${IK}" stroke-width="2.5"/>
-      <text x="112" y="81" font-size="12.5" font-weight="700" fill="${IK}">${os === "android" ? "Apri in Chrome" : "Apri in Safari"}</text>
-      <text x="112" y="110" font-size="12" fill="#666">Copia link</text><text x="112" y="130" font-size="12" fill="#666">Condividi…</text>
+      <text x="112" y="81" font-size="12.5" font-weight="700" fill="${IK}">${esc(os === "android" ? tr("Apri in Chrome") : tr("Apri in Safari"))}</text>
+      <text x="112" y="110" font-size="12" fill="#666">${esc(tr("Copia link"))}</text><text x="112" y="130" font-size="12" fill="#666">${esc(tr("Condividi…"))}</text>
       <g class="bnc-x2">${ARROW_LEFT(244, 76).replace('class="bnc-x"', "")}</g></g>
-    <g class="arr-first"><g transform="translate(232 44)"><g class="bnc-y"><path d="M0 34 V12" stroke="${IK}" stroke-width="9" stroke-linecap="round"/><path d="M0 34 V12" stroke="var(--deep)" stroke-width="4" stroke-linecap="round"/><path d="M-11 16 L0 2 L11 16 Z" fill="var(--deep)" stroke="${IK}" stroke-width="3" stroke-linejoin="round"/></g></g></g>`, "Menu ··· in alto a destra con la voce per aprire la pagina nel browser")
+    <g class="arr-first"><g transform="translate(232 44)"><g class="bnc-y"><path d="M0 34 V12" stroke="${IK}" stroke-width="9" stroke-linecap="round"/><path d="M0 34 V12" stroke="var(--deep)" stroke-width="4" stroke-linecap="round"/><path d="M-11 16 L0 2 L11 16 Z" fill="var(--deep)" stroke="${IK}" stroke-width="3" stroke-linejoin="round"/></g></g></g>`, tr("Menu ··· in alto a destra con la voce per aprire la pagina nel browser"))
 };
 const step = (n, html, ill) => `<li class="step"><span class="step-n">${n}</span><div class="step-b"><p>${html}</p>${ill || ""}</div></li>`;
 
 // istruzioni manuali quando non c'è il prompt automatico
 const ANDROID_HOW = {
-  "Chrome": "Tocca il menu <b>⋮</b> in alto a destra, poi <b>Installa app</b> (o <b>Aggiungi a schermata Home</b>).",
-  "Edge": "Tocca il menu <b>···</b> in basso, poi <b>Aggiungi al telefono</b>.",
-  "Samsung Internet": "Tocca il menu <b>≡</b> in basso, poi <b>Aggiungi pagina a</b> → <b>Schermata Home</b>.",
-  "Firefox": "Tocca il menu <b>⋮</b>, poi <b>Installa</b> (o <b>Aggiungi a schermata Home</b>).",
-  "Opera": "Tocca il menu <b>⋮</b>, poi <b>Schermata Home</b>."
+  "Chrome": tr("Tocca il menu <b>⋮</b> in alto a destra, poi <b>Installa app</b> (o <b>Aggiungi a schermata Home</b>)."),
+  "Edge": tr("Tocca il menu <b>···</b> in basso, poi <b>Aggiungi al telefono</b>."),
+  "Samsung Internet": tr("Tocca il menu <b>≡</b> in basso, poi <b>Aggiungi pagina a</b> → <b>Schermata Home</b>."),
+  "Firefox": tr("Tocca il menu <b>⋮</b>, poi <b>Installa</b> (o <b>Aggiungi a schermata Home</b>)."),
+  "Opera": tr("Tocca il menu <b>⋮</b>, poi <b>Schermata Home</b>.")
 };
 const IOS_HOW = {
-  "Chrome": "Tocca il tasto <b>Condividi</b> accanto alla barra dell'indirizzo (in alto a destra), poi <b>Aggiungi alla schermata Home</b>.",
-  "Edge": "Tocca il menu <b>···</b> in basso, poi <b>Condividi</b> e <b>Aggiungi alla schermata Home</b>.",
-  "Firefox": "Tocca il menu <b>≡</b> in basso a destra, poi <b>Condividi</b> e <b>Aggiungi alla schermata Home</b>."
+  "Chrome": tr("Tocca il tasto <b>Condividi</b> accanto alla barra dell'indirizzo (in alto a destra), poi <b>Aggiungi alla schermata Home</b>."),
+  "Edge": tr("Tocca il menu <b>···</b> in basso, poi <b>Condividi</b> e <b>Aggiungi alla schermata Home</b>."),
+  "Firefox": tr("Tocca il menu <b>≡</b> in basso a destra, poi <b>Condividi</b> e <b>Aggiungi alla schermata Home</b>.")
 };
 
 function installScreen(){
   screen({s:"install"});
   const c = CTX;
-  let title = "Installa Patatino", intro = "", body = "", extra = "";
-  const linkTools = `<div class="copy-row"><button class="btn btn-ghost" id="copy">Copia link</button><input class="linkbox" readonly hidden value="${esc(location.href.split("#")[0])}" aria-label="Link della pagina"></div>`;
+  let title = tr("Installa Patatino"), intro = "", body = "", extra = "";
+  const linkTools = `<div class="copy-row"><button class="btn btn-ghost" id="copy">${tr("Copia link")}</button><input class="linkbox" readonly hidden value="${esc(location.href.split("#")[0])}" aria-label="${esc(tr("Link della pagina"))}"></div>`;
   if(c.k === "installed"){
-    intro = "Patatino è già installata: la trovi sulla schermata Home.";
+    intro = tr("Patatino è già installata: la trovi sulla schermata Home.");
   } else if(c.k === "ios-safari"){
-    intro = "Su iPhone l'installazione si fa da Safari, in tre tocchi:";
+    intro = tr("Su iPhone l'installazione si fa da Safari, in tre tocchi:");
     body = `<ol class="steps">
-      ${step(1, "Tocca il tasto <b>Condividi</b> nella barra in basso.", ILL.shareBar())}
-      <li class="step step-alt"><div class="step-b"><p><b>Non lo vedi?</b> Nelle versioni recenti di Safari la barra è compatta: tocca <b>···</b> accanto all'indirizzo, poi <b>Condividi</b>.</p>${ILL.shareMenu()}</div></li>
-      ${step(2, "Scorri le voci e tocca <b>Aggiungi alla schermata Home</b>.", ILL.addHome())}
-      ${step(3, "Tocca <b>Aggiungi</b> in alto a destra. Fatto: Patatino è sulla schermata Home!", ILL.confirm())}
+      ${step(1, tr("Tocca il tasto <b>Condividi</b> nella barra in basso."), ILL.shareBar())}
+      <li class="step step-alt"><div class="step-b"><p>${tr("<b>Non lo vedi?</b> Nelle versioni recenti di Safari la barra è compatta: tocca <b>···</b> accanto all'indirizzo, poi <b>Condividi</b>.")}</p>${ILL.shareMenu()}</div></li>
+      ${step(2, tr("Scorri le voci e tocca <b>Aggiungi alla schermata Home</b>."), ILL.addHome())}
+      ${step(3, tr("Tocca <b>Aggiungi</b> in alto a destra. Fatto: Patatino è sulla schermata Home!"), ILL.confirm())}
     </ol>`;
-    extra = `<div class="vl"><span class="label">Non trovi «Aggiungi alla schermata Home»?</span>Se hai aperto il link da WhatsApp, Mail o un'altra app, sei in un'anteprima di Safari: tocca l'icona della <b>bussola</b> (o «Apri in Safari») e ripeti i passaggi.</div>`;
+    extra = `<div class="vl"><span class="label">${tr("Non trovi «Aggiungi alla schermata Home»?")}</span>${tr("Se hai aperto il link da WhatsApp, Mail o un'altra app, sei in un'anteprima di Safari: tocca l'icona della <b>bussola</b> (o «Apri in Safari») e ripeti i passaggi.")}</div>`;
   } else if(c.k === "ios-other"){
-    intro = `Stai usando ${esc(c.b)}. ${IOS_HOW[c.b] ? "Puoi installare Patatino anche da qui:" : "Il modo più sicuro è aprire Patatino in Safari:"}`;
+    intro = tr("Stai usando {b}.", {b:esc(c.b)}) + " " + (IOS_HOW[c.b] ? tr("Puoi installare Patatino anche da qui:") : tr("Il modo più sicuro è aprire Patatino in Safari:"));
     body = IOS_HOW[c.b] ? `<ol class="steps">
       ${step(1, IOS_HOW[c.b])}
-      ${step(2, "Tocca <b>Aggiungi alla schermata Home</b>.", ILL.addHome())}
-      ${step(3, "Conferma con <b>Aggiungi</b>.", ILL.confirm())}
+      ${step(2, tr("Tocca <b>Aggiungi alla schermata Home</b>."), ILL.addHome())}
+      ${step(3, tr("Conferma con <b>Aggiungi</b>."), ILL.confirm())}
     </ol>` : "";
-    extra = `<div class="vl"><span class="label">${IOS_HOW[c.b] ? "Non trovi la voce?" : "Come fare"}</span>Copia il link, apri <b>Safari</b>, incollalo nella barra dell'indirizzo e poi segui le istruzioni da lì.${linkTools}</div>`;
+    extra = `<div class="vl"><span class="label">${IOS_HOW[c.b] ? tr("Non trovi la voce?") : tr("Come fare")}</span>${tr("Copia il link, apri <b>Safari</b>, incollalo nella barra dell'indirizzo e poi segui le istruzioni da lì.")}${linkTools}</div>`;
   } else if(c.k === "inapp"){
     const where = c.os === "android" ? "Chrome" : "Safari";
-    title = "Apri questa pagina in " + where + " per installarla";
-    intro = `${c.app ? "Sei nel browser interno di " + esc(c.app) : "Sei nel browser interno di un'app"}: da qui non si può installare Patatino.`;
+    title = tr("Apri questa pagina in {b} per installarla", {b:where});
+    intro = (c.app ? tr("Sei nel browser interno di {app}", {app:esc(c.app)}) : tr("Sei nel browser interno di un'app")) + tr(": da qui non si può installare Patatino.");
     body = `<ol class="steps">
-      ${step(1, `Tocca il menu <b>···</b> (di solito in alto a destra) e scegli <b>${c.os === "android" ? "Apri in Chrome" : "Apri in Safari"}</b> o <b>Apri nel browser</b>.`, ILL.inapp(c.os))}
-      ${step(2, `In ${where} tocca di nuovo <b>Installa l'app</b> nelle impostazioni di Patatino.`)}
+      ${step(1, tr("Tocca il menu <b>···</b> (di solito in alto a destra) e scegli <b>{open}</b> o <b>Apri nel browser</b>.", {open:c.os === "android" ? tr("Apri in Chrome") : tr("Apri in Safari")}), ILL.inapp(c.os))}
+      ${step(2, tr("In {b} tocca di nuovo <b>Installa l'app</b> nelle impostazioni di Patatino.", {b:where}))}
     </ol>`;
-    extra = `<div class="vl"><span class="label">Non c'è la voce nel menu?</span>Copia il link e incollalo nella barra dell'indirizzo di ${where}.${linkTools}</div>
-      ${hasProgress() ? `<div class="vl"><span class="label">I tuoi progressi</span>Quello che hai fatto qui resta nel browser di ${c.app ? esc(c.app) : "questa app"}. Per portarlo con te esporta i dati e poi importali in ${where} da <i>Impostazioni → Importa backup</i>.<button class="btn btn-ghost" id="iexp" style="margin-top:10px">Esporta i miei dati</button></div>` : ""}`;
+    extra = `<div class="vl"><span class="label">${tr("Non c'è la voce nel menu?")}</span>${tr("Copia il link e incollalo nella barra dell'indirizzo di {b}.", {b:where})}${linkTools}</div>
+      ${hasProgress() ? `<div class="vl"><span class="label">${tr("I tuoi progressi")}</span>${tr("Quello che hai fatto qui resta nel browser di {app}. Per portarlo con te esporta i dati e poi importali in {b} da <i>Impostazioni → Importa backup</i>.", {app:c.app ? esc(c.app) : tr("questa app"), b:where})}<button class="btn btn-ghost" id="iexp" style="margin-top:10px">${tr("Esporta i miei dati")}</button></div>` : ""}`;
   } else if(c.k === "android"){
-    intro = "Il tuo browser non ha ancora proposto l'installazione automatica. Puoi farlo dal menu:";
-    body = `<ol class="steps">${step(1, ANDROID_HOW[c.b] || "Apri il menu del browser e cerca <b>Installa app</b> o <b>Aggiungi a schermata Home</b>.")}${step(2, "Conferma con <b>Installa</b>.")}</ol>`;
-    extra = c.b && ANDROID_HOW[c.b] ? "" : `<div class="vl"><span class="label">Consiglio</span>Con <b>Chrome</b> l'installazione è più semplice: copia il link e aprilo lì.${linkTools}</div>`;
+    intro = tr("Il tuo browser non ha ancora proposto l'installazione automatica. Puoi farlo dal menu:");
+    body = `<ol class="steps">${step(1, ANDROID_HOW[c.b] || tr("Apri il menu del browser e cerca <b>Installa app</b> o <b>Aggiungi a schermata Home</b>."))}${step(2, tr("Conferma con <b>Installa</b>."))}</ol>`;
+    extra = c.b && ANDROID_HOW[c.b] ? "" : `<div class="vl"><span class="label">${tr("Consiglio")}</span>${tr("Con <b>Chrome</b> l'installazione è più semplice: copia il link e aprilo lì.")}${linkTools}</div>`;
   } else {
-    intro = "Patatino è pensata per il telefono: apri questa pagina sul tuo smartphone e installala da lì.";
-    body = `<ol class="steps">${step(1, c.b === "Safari" ? "Su Mac: menu <b>File → Aggiungi al Dock</b>." : "Su computer con Chrome o Edge: tocca l'icona <b>Installa</b> nella barra dell'indirizzo.")}</ol>`;
-    extra = `<div class="vl"><span class="label">Sul telefono</span>Mandati il link e aprilo su iPhone (Safari) o Android (Chrome).${linkTools}</div>`;
+    intro = tr("Patatino è pensata per il telefono: apri questa pagina sul tuo smartphone e installala da lì.");
+    body = `<ol class="steps">${step(1, c.b === "Safari" ? tr("Su Mac: menu <b>File → Aggiungi al Dock</b>.") : tr("Su computer con Chrome o Edge: tocca l'icona <b>Installa</b> nella barra dell'indirizzo."))}</ol>`;
+    extra = `<div class="vl"><span class="label">${tr("Sul telefono")}</span>${tr("Mandati il link e aprilo su iPhone (Safari) o Android (Chrome).")}${linkTools}</div>`;
   }
   const v = $(`<div class="pop inst">
-    <button class="back" id="bk">${ICON.back} Indietro</button>
-    <div class="inst-h">${patatino(c.k === "inapp" ? "wave" : "cheer", 96)}<div class="lesson-h"><span class="label">Installa l'app</span><h2>${esc(title)}</h2><p>${intro}</p></div></div>
+    <button class="back" id="bk">${ICON.back} ${tr("Indietro")}</button>
+    <div class="inst-h">${patatino(c.k === "inapp" ? "wave" : "cheer", 96)}<div class="lesson-h"><span class="label">${tr("Installa l'app")}</span><h2>${esc(title)}</h2><p>${intro}</p></div></div>
     ${body}${extra}
-    <div class="dock"><div class="dock-in"><button class="btn btn-lion" id="bk2">${ICON.back} Indietro</button></div></div>
+    <div class="dock"><div class="dock-in"><button class="btn btn-lion" id="bk2">${ICON.back} ${tr("Indietro")}</button></div></div>
   </div>`);
   const back = () => { if(curDepth > 0 && history.state && history.state.s === "install") history.back(); else home(); };
   v.querySelector("#bk").onclick = back;
   v.querySelector("#bk2").onclick = back;
   const cp = v.querySelector("#copy"); if(cp) cp.onclick = () => copyLink(cp);
-  const ie = v.querySelector("#iexp"); if(ie) ie.onclick = () => { exportData(); ie.textContent = "Backup scaricato ✓"; };
+  const ie = v.querySelector("#iexp"); if(ie) ie.onclick = () => { exportData(); ie.textContent = tr("Backup scaricato ✓"); };
   mount(v);
 }
 
 /* ---------- PRIVACY ---------- */
 // Segnaposti da completare prima della pubblicazione sul nuovo dominio / negli store.
-const PRIVACY = {owner:"[NOME E COGNOME DEL TITOLARE]", contact:"[EMAIL DI CONTATTO]", updated:"20 ottobre 2026"};
+const PRIVACY = {owner:"[NOME E COGNOME DEL TITOLARE]", contact:"[EMAIL DI CONTATTO]", updated:"2026-10-20"};
 function privacy(){
   screen({s:"privacy"});
+  const upd = new Date(PRIVACY.updated + "T12:00:00").toLocaleDateString(LOCALE, {day:"numeric", month:"long", year:"numeric"});
   const v = $(`<div class="pop privacy">
-    <button class="back" id="bk">${ICON.back} Indietro</button>
-    <div class="lesson-h"><span class="label">Privacy</span><h2>I tuoi dati restano tuoi</h2><p>Ultimo aggiornamento: ${esc(PRIVACY.updated)}</p></div>
-    <h3>In breve</h3>
-    <p>Patatino non ha account, non ha pubblicità, non usa statistiche né cookie di profilazione. Non raccogliamo dati personali: quello che fai nell'app resta sul tuo dispositivo.</p>
-    <h3>Cosa viene salvato e dove</h3>
-    <p>Progressi, punteggi, flashcard, errori da ripassare e impostazioni (colori, voce, audio) sono salvati solo nella memoria del browser di questo dispositivo (<i>localStorage</i>). Nessuno di questi dati viene inviato a noi o ad altri.</p>
-    <p>Se usi <b>Esporta i miei dati</b>, il file di backup viene creato sul tuo dispositivo e lo gestisci tu: noi non lo riceviamo.</p>
-    <h3>Licenza</h3>
-    <p>Al momento Patatino non usa licenze né codici di attivazione, quindi non invia alcun dato per verificarli.</p>
-    <h3>Servizi esterni usati dall'app</h3>
+    <button class="back" id="bk">${ICON.back} ${tr("Indietro")}</button>
+    <div class="lesson-h"><span class="label">${tr("Privacy")}</span><h2>${tr("I tuoi dati restano tuoi")}</h2><p>${tr("Ultimo aggiornamento: {d}", {d:esc(upd)})}</p></div>
+    <h3>${tr("In breve")}</h3>
+    <p>${tr("Patatino non ha account, non ha pubblicità, non usa statistiche né cookie di profilazione. Non raccogliamo dati personali: quello che fai nell'app resta sul tuo dispositivo.")}</p>
+    <h3>${tr("Cosa viene salvato e dove")}</h3>
+    <p>${tr("Progressi, punteggi, flashcard, errori da ripassare e impostazioni (lingua, voce, audio) sono salvati solo nella memoria del browser di questo dispositivo (<i>localStorage</i>). Nessuno di questi dati viene inviato a noi o ad altri.")}</p>
+    <p>${tr("Se usi <b>Esporta i miei dati</b>, il file di backup viene creato sul tuo dispositivo e lo gestisci tu: noi non lo riceviamo.")}</p>
+    <h3>${tr("Licenza")}</h3>
+    <p>${tr("Al momento Patatino non usa licenze né codici di attivazione, quindi non invia alcun dato per verificarli.")}</p>
+    <h3>${tr("Servizi esterni usati dall'app")}</h3>
     <ul>
-      <li><b>Hosting</b>: la pagina è servita da un servizio di hosting (oggi GitHub Pages), che come ogni sito web riceve l'indirizzo IP e il tipo di browser quando la scarichi e può conservarli nei registri tecnici per sicurezza.</li>
-      <li><b>Caratteri tipografici</b>: i font arrivano da Google Fonts; al primo caricamento il browser contatta i server di Google, che ricevono indirizzo IP e tipo di browser.</li>
-      <li><b>Pronuncia</b>: l'app usa la sintesi vocale del tuo dispositivo. Alcune voci, indicate come «richiede internet» nelle impostazioni, sono fornite online dal sistema operativo (Apple, Google o Microsoft): in quel caso la frase da pronunciare passa dal loro servizio.</li>
+      <li>${tr("<b>Hosting</b>: la pagina è servita da un servizio di hosting (oggi GitHub Pages), che come ogni sito web riceve l'indirizzo IP e il tipo di browser quando la scarichi e può conservarli nei registri tecnici per sicurezza.")}</li>
+      <li>${tr("<b>Caratteri tipografici</b>: i font arrivano da Google Fonts; al primo caricamento il browser contatta i server di Google, che ricevono indirizzo IP e tipo di browser.")}</li>
+      <li>${tr("<b>Pronuncia</b>: l'app usa la sintesi vocale del tuo dispositivo. Alcune voci, indicate come «richiede internet» nelle impostazioni, sono fornite online dal sistema operativo (Apple, Google o Microsoft): in quel caso la frase da pronunciare passa dal loro servizio.")}</li>
     </ul>
-    <h3>Come cancellare i dati</h3>
-    <p>Disinstalla l'app oppure cancella i dati del sito dalle impostazioni del browser. Ricorda che senza un backup i progressi non si possono recuperare.</p>
-    <h3>Titolare e contatti</h3>
-    <p>Titolare: ${esc(PRIVACY.owner)}<br>Contatto: ${esc(PRIVACY.contact)}</p>
-    <p>Puoi scriverci per qualsiasi domanda su questa informativa. Poiché non conserviamo dati personali, di norma non abbiamo informazioni su di te da consultare, correggere o cancellare.</p>
-    <div class="dock"><div class="dock-in"><button class="btn btn-lion" id="bk2">${ICON.back} Indietro</button></div></div>
+    <h3>${tr("Come cancellare i dati")}</h3>
+    <p>${tr("Disinstalla l'app oppure cancella i dati del sito dalle impostazioni del browser. Ricorda che senza un backup i progressi non si possono recuperare.")}</p>
+    <h3>${tr("Titolare e contatti")}</h3>
+    <p>${tr("Titolare")}: ${esc(PRIVACY.owner)}<br>${tr("Contatto")}: ${esc(PRIVACY.contact)}</p>
+    <p>${tr("Puoi scriverci per qualsiasi domanda su questa informativa. Poiché non conserviamo dati personali, di norma non abbiamo informazioni su di te da consultare, correggere o cancellare.")}</p>
+    <div class="dock"><div class="dock-in"><button class="btn btn-lion" id="bk2">${ICON.back} ${tr("Indietro")}</button></div></div>
   </div>`);
   const back = () => { if(curDepth > 0 && history.state && history.state.s === "privacy") history.back(); else home(); };
   v.querySelector("#bk").onclick = back;
@@ -4347,18 +4367,18 @@ function privacy(){
 
 /* ---------- HOME ---------- */
 const GROUPS = [
-  {t:"Le basi", s:"Pronomi, presente, articoli, numeri", u:["u1","u2","u3","u4","u5"]},
-  {t:"Prime frasi", s:"Plurale, domande, possessivi, modali, ordine", u:["u6","u7","u8","u9","u10"]},
-  {t:"Descrivere", s:"L'ora, negazione, dimostrativi, aggettivi, confronti", u:["u11","u12","u13","u14","u15"]},
-  {t:"Agire e raccontare", s:"Avverbi, separabili, imperativo, passato", u:["u16","u17","u18","u19","u20"]},
-  {t:"Precisare", s:"Riflessivi, diminutivi, er, preposizioni, te", u:["u21","u22","u23","u24","u25"]},
-  {t:"Frasi complesse", s:"Subordinate, relative, discorso indiretto, negazione, ortografia", u:["u26","u27","u28","u29","u30"]}
+  {t:tr("Le basi"), s:tr("Pronomi, presente, articoli, numeri"), u:["u1","u2","u3","u4","u5"]},
+  {t:tr("Prime frasi"), s:tr("Plurale, domande, possessivi, modali, ordine"), u:["u6","u7","u8","u9","u10"]},
+  {t:tr("Descrivere"), s:tr("L'ora, negazione, dimostrativi, aggettivi, confronti"), u:["u11","u12","u13","u14","u15"]},
+  {t:tr("Agire e raccontare"), s:tr("Avverbi, separabili, imperativo, passato"), u:["u16","u17","u18","u19","u20"]},
+  {t:tr("Precisare"), s:tr("Riflessivi, diminutivi, er, preposizioni, te"), u:["u21","u22","u23","u24","u25"]},
+  {t:tr("Frasi complesse"), s:tr("Subordinate, relative, discorso indiretto, negazione, ortografia"), u:["u26","u27","u28","u29","u30"]}
 ];
 let openGroups = null;   // gruppi aperti in questa sessione
 // due parti per unità: 1 lessico, 2 grammatica (regola + frasi che uniscono tutto)
 const PARTS = [
-  {n:1, key:"vbest", title:"Lessico", start:(id) => startVocab(id)},
-  {n:2, key:"best",  title:"Grammatica", start:(id) => startUnit(id)}
+  {n:1, key:"vbest", title:tr("Lessico"), start:(id) => startVocab(id)},
+  {n:2, key:"best",  title:tr("Grammatica"), start:(id) => startUnit(id)}
 ];
 const DRILLS = 6, MIXED = 8;
 // lessico diviso in blocchi di 7-9 parole quando la lista supera le 10
@@ -4385,8 +4405,8 @@ function migrate(){
 migrate();
 function nextUnit(){ return UNITS.find(u => !unitDone(u.id)) || UNITS[UNITS.length-1]; }
 function partSub(u, n){
-  if(n === 1){ const k = blocksOf(u.id).length; return (u.vocab ? u.vocab.length : 0) + " parole nuove da memorizzare" + (k > 1 ? ", in " + k + " blocchi" : ""); }
-  return u.core.length ? u.core.length + " parole chiave, esercizi sulla regola e frasi con tutto quello che hai imparato" : "Esercizi sulla regola e frasi con tutto quello che hai imparato";
+  if(n === 1){ const k = blocksOf(u.id).length; return tr("{n} parole nuove da memorizzare", {n:u.vocab ? u.vocab.length : 0}) + (k > 1 ? tr(", in {k} blocchi", {k}) : ""); }
+  return u.core.length ? tr("{n} parole chiave, esercizi sulla regola e frasi con tutto quello che hai imparato", {n:u.core.length}) : tr("Esercizi sulla regola e frasi con tutto quello che hai imparato");
 }
 
 function home(){
@@ -4399,31 +4419,31 @@ function home(){
     <header class="top">
       <div class="brand"><span class="logo-mini">${patatino("happy", 46)}</span><div><h1 class="logo">Patatino</h1><span class="label">Nederlands · Vlaanderen</span></div></div>
       <div class="stats">
-        <span class="chip" title="Giorni di fila">${ICON.flame}${S.streak}</span>
-        <span class="chip" title="Punti esperienza">${ICON.star}${S.xp}</span>
-        <button class="chip" id="aud" aria-pressed="${S.audio}" title="Audio automatico dopo ogni risposta">${ICON.sound}${S.audio ? "On" : "Off"}</button>
-        <button class="chip" id="vox" title="Impostazioni" aria-label="Impostazioni"><svg class="gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg><span class="chip-l">Impostazioni</span></button>
-        ${canInstall() ? `<button class="chip chip-inst" id="hinst" title="Metti Patatino sulla schermata Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg>Installa</button>` : ""}
+        <span class="chip" title="${esc(tr("Giorni di fila"))}">${ICON.flame}${S.streak}</span>
+        <span class="chip" title="${esc(tr("Punti esperienza"))}">${ICON.star}${S.xp}</span>
+        <button class="chip" id="aud" aria-pressed="${S.audio}" title="${esc(tr("Audio automatico dopo ogni risposta"))}">${ICON.sound}${S.audio ? "On" : "Off"}</button>
+        <button class="chip" id="vox" title="${esc(tr("Impostazioni"))}" aria-label="${esc(tr("Impostazioni"))}"><svg class="gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg><span class="chip-l">${tr("Impostazioni")}</span></button>
+        ${canInstall() ? `<button class="chip chip-inst" id="hinst" title="${esc(tr("Metti Patatino sulla schermata Home"))}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg>${tr("Installa")}</button>` : ""}
       </div>
     </header>
     <section class="next">
       <div class="hero-art">${CLOUD}<span class="bubble">${GREET[Math.floor(Math.random()*GREET.length)]}</span>${patatino("wave", 104)}</div>
       <div class="next-top">
         <div class="next-txt">
-      <span class="label">${started ? "Prossima lezione" : "Inizia da qui"} · Unità ${ni+1} · Parte ${np}: ${PARTS[np-1].title}</span>
+      <span class="label">${started ? tr("Prossima lezione") : tr("Inizia da qui")} · ${tr("Unità {n}", {n:ni+1})} · ${tr("Parte {n}", {n:np})}: ${PARTS[np-1].title}</span>
       <h2>${esc(nu.nl)}</h2>
-      <p>${esc(nu.it)} · ${np === 1 && blocksOf(nu.id).length > 1 ? "blocco " + (nextBlock(nu.id) + 1) + " di " + blocksOf(nu.id).length + " · " + (blocksOf(nu.id)[nextBlock(nu.id)].to - blocksOf(nu.id)[nextBlock(nu.id)].from) + " parole" : partSub(nu, np)}</p>
+      <p>${esc(nu.it)} · ${np === 1 && blocksOf(nu.id).length > 1 ? tr("blocco {b} di {k}", {b:nextBlock(nu.id) + 1, k:blocksOf(nu.id).length}) + " · " + tr("{n} parole", {n:blocksOf(nu.id)[nextBlock(nu.id)].to - blocksOf(nu.id)[nextBlock(nu.id)].from}) : partSub(nu, np)}</p>
         </div>
       </div>
-      <button class="btn btn-lion" id="go">${started ? "Continua" : "Inizia"}</button>
+      <button class="btn btn-lion" id="go">${started ? tr("Continua") : tr("Inizia")}</button>
     </section>
-        ${S.wrong.length ? `<button class="review" id="rev"><div><b>Ripasso errori</b><br><span style="font-size:14px">Rifai solo quello che hai sbagliato</span></div><span class="count">${S.wrong.length}</span></button>` : `<div style="height:14px"></div>`}
-    ${phoneVoice() ? "" : `<button class="review novoice" id="nov"><div><b>Nessuna voce olandese</b><br><span style="font-size:14px">Per sentire la pronuncia installa una voce olandese. Tocca qui per sapere come.</span></div></button>`}
-    <span class="label">Percorso</span>
+        ${S.wrong.length ? `<button class="review" id="rev"><div><b>${tr("Ripasso errori")}</b><br><span style="font-size:14px">${tr("Rifai solo quello che hai sbagliato")}</span></div><span class="count">${S.wrong.length}</span></button>` : `<div style="height:14px"></div>`}
+    ${phoneVoice() ? "" : `<button class="review novoice" id="nov"><div><b>${tr("Nessuna voce olandese")}</b><br><span style="font-size:14px">${tr("Per sentire la pronuncia installa una voce olandese. Tocca qui per sapere come.")}</span></div></button>`}
+    <span class="label">${tr("Percorso")}</span>
     <nav class="path" id="path"></nav>
     <footer class="foot">
-      <span>I progressi sono salvati in questo browser.</span>
-      <span>Esercizi e spiegazioni originali. Pronuncia: voce olandese del tuo dispositivo.</span>
+      <span>${tr("I progressi sono salvati in questo browser.")}</span>
+      <span>${tr("Esercizi e spiegazioni originali. Pronuncia: voce olandese del tuo dispositivo.")}</span>
     </footer>
   </div>`);
   // al massimo un avviso alla volta: trasloco, poi backup, poi installazione
@@ -4451,10 +4471,10 @@ function home(){
       const sc = PARTS.map(p => partScore(u.id, p.n));
       const full = unitDone(u.id);
       const cls = full ? "done" : sc.some(x => x > 0) ? "prog" : "";
-      const row = $(`<button class="unit ${cls} ${u.id === nu.id && !full ? "cur" : ""}" aria-label="Unità ${i+1}: ${esc(u.it)}">
+      const row = $(`<button class="unit ${cls} ${u.id === nu.id && !full ? "cur" : ""}" aria-label="${esc(tr("Unità {n}", {n:i+1}))}: ${esc(u.it)}">
         <span class="num">${full ? ICON.check.replace('width="22" height="22"','width="18" height="18"') : String(i+1).padStart(2,"0")}</span>
         <span class="t"><span class="nl">${esc(u.nl)}</span><span class="it">${esc(u.it)}</span></span>
-        <span class="parts" title="${PARTS.map((p,k) => "Parte " + p.n + " " + p.title + " " + sc[k] + "%").join(" · ")}">${sc.map(x => `<span class="meter"><i style="width:${x}%"></i></span>`).join("")}</span>
+        <span class="parts" title="${esc(PARTS.map((p,k) => tr("Parte {n}", {n:p.n}) + " " + p.title + " " + sc[k] + "%").join(" · "))}">${sc.map(x => `<span class="meter"><i style="width:${x}%"></i></span>`).join("")}</span>
       </button>`);
       row.onclick = () => lesson(u.id);
       body.appendChild(row);
@@ -4485,38 +4505,45 @@ function settings(msg){
   const vs = nlVoices();
   const cur = phoneVoice();
   const v = $(`<div class="pop settings-scr">
-    <button class="back" id="bk">${ICON.back} Percorso</button>
-    <div class="lesson-h"><span class="label">Patatino</span><h2>Impostazioni</h2></div>
-    ${canInstall() ? `<div class="sec-h"><h3>Installa l'app</h3></div>
+    <button class="back" id="bk">${ICON.back} ${tr("Percorso")}</button>
+    <div class="lesson-h"><span class="label">Patatino</span><h2>${tr("Impostazioni")}</h2></div>
+    <div class="sec-h"><h3>${tr("Lingua delle spiegazioni")}</h3></div>
+    <div class="vlist lang-list" role="radiogroup" aria-label="${esc(tr("Lingua delle spiegazioni"))}">${LANGS.map(([code, name]) => `<label class="vopt ${code === LANG ? "on" : ""}">
+        <input type="radio" name="lang" value="${code}" ${code === LANG ? "checked" : ""}>
+        <span class="vt"><b>${name}</b></span><span></span>
+      </label>`).join("")}</div>
+    ${canInstall() ? `<div class="sec-h"><h3>${tr("Installa l'app")}</h3></div>
     <div class="data-box inst-box">
-      <span class="inst-row">${patatino("cheer", 64)}<span class="note">Metti Patatino sulla schermata Home: si apre come un'app e funziona anche offline.</span></span>
-      <button class="btn btn-lion btn-install" id="inst"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg> Installa l'app</button>
+      <span class="inst-row">${patatino("cheer", 64)}<span class="note">${tr("Metti Patatino sulla schermata Home: si apre come un'app e funziona anche offline.")}</span></span>
+      <button class="btn btn-lion btn-install" id="inst"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg> ${tr("Installa l'app")}</button>
     </div>` : ""}
-    <div class="sec-h"><h3>I tuoi dati</h3></div>
+    <div class="sec-h"><h3>${tr("I tuoi dati")}</h3></div>
     <div class="data-box">
       ${msg ? `<div class="data-msg ${msg.err ? "err" : ""}" role="status">${esc(msg.msg)}</div>` : ""}
-      <span class="note">I progressi sono salvati solo in questo browser. ${S.lastExport && !isNaN(new Date(S.lastExport)) ? "Ultimo backup: " + new Date(S.lastExport).toLocaleDateString("it-IT") + "." : "Non hai ancora fatto un backup."}</span>
-      <button class="btn btn-ghost" id="exp">Esporta i miei dati</button>
-      <label class="btn btn-ghost" for="imp" tabindex="0" role="button">Importa backup</label><input type="file" id="imp" accept="application/json,.json" hidden>
+      <span class="note">${tr("I progressi sono salvati solo in questo browser.")} ${S.lastExport && !isNaN(new Date(S.lastExport)) ? tr("Ultimo backup: {d}.", {d:new Date(S.lastExport).toLocaleDateString(LOCALE)}) : tr("Non hai ancora fatto un backup.")}</span>
+      <button class="btn btn-ghost" id="exp">${tr("Esporta i miei dati")}</button>
+      <label class="btn btn-ghost" for="imp" tabindex="0" role="button">${tr("Importa backup")}</label><input type="file" id="imp" accept="application/json,.json" hidden>
     </div>
-    <div class="sec-h"><h3>Voce</h3></div>
+    <div class="sec-h"><h3>${tr("Voce")}</h3></div>
     <div class="vlist">${vs.map(x => `<label class="vopt ${cur && cur.voiceURI === x.voiceURI ? "on" : ""}">
         <input type="radio" name="voice" value="${esc(x.voiceURI)}" ${cur && cur.voiceURI === x.voiceURI ? "checked" : ""}>
-        <span class="vt"><b>${esc(x.name)}</b><span>${/be/i.test(x.lang) ? "Neerlandese del Belgio" : "Neerlandese dei Paesi Bassi"} · ${esc(x.lang)}${x.localService ? " · funziona offline" : " · richiede internet"}</span></span>
-        <button class="chip vtest" data-id="${esc(x.voiceURI)}" type="button">${ICON.sound} Prova</button>
+        <span class="vt"><b>${esc(x.name)}</b><span>${/be/i.test(x.lang) ? tr("Neerlandese del Belgio") : tr("Neerlandese dei Paesi Bassi")} · ${esc(x.lang)} · ${x.localService ? tr("funziona offline") : tr("richiede internet")}</span></span>
+        <button class="chip vtest" data-id="${esc(x.voiceURI)}" type="button">${ICON.sound} ${tr("Prova")}</button>
       </label>`).join("")}</div>
-    <button class="btn btn-ghost" id="priv">Privacy</button>
-    <div class="dock"><div class="dock-in"><button class="btn btn-lion" id="bk2">${ICON.back} Torna al percorso</button></div></div>
-    ${vs.length ? "" : `<div class="vl"><span class="label">Nessuna voce olandese trovata</span>Su Android apri <b>Impostazioni → Sistema → Lingue → Sintesi vocale</b>, scegli il motore di Google, poi <b>Installa dati vocali → Nederlands (België)</b>. Su iPhone: <b>Impostazioni → Accessibilità → Contenuto letto ad alta voce → Voci → Olandese</b>. Poi riapri l'app.</div>`}
+    <button class="btn btn-ghost" id="priv">${tr("Privacy")}</button>
+    <div class="dock"><div class="dock-in"><button class="btn btn-lion" id="bk2">${ICON.back} ${tr("Torna al percorso")}</button></div></div>
+    ${vs.length ? "" : `<div class="vl"><span class="label">${tr("Nessuna voce olandese trovata")}</span>${tr("Su Android apri <b>Impostazioni → Sistema → Lingue → Sintesi vocale</b>, scegli il motore di Google, poi <b>Installa dati vocali → Nederlands (België)</b>. Su iPhone: <b>Impostazioni → Accessibilità → Contenuto letto ad alta voce → Voci → Olandese</b>. Poi riapri l'app.")}</div>`}
   </div>`);
   v.querySelectorAll("input[name=voice]").forEach(r => r.onchange = () => { S.voice = r.value; save(); settings(); });
+  // cambiare lingua ricarica l'app con il nuovo pacchetto (le traduzioni si applicano all'avvio)
+  v.querySelectorAll("input[name=lang]").forEach(r => r.onchange = () => { S.lang = r.value; save(); try{ sessionStorage.setItem("patatino.page", "settings"); }catch(e){} location.reload(); });
   v.querySelectorAll(".vtest").forEach(b => b.onclick = (e) => {
     e.preventDefault();
     const x = nlVoices().find(x => x.voiceURI === b.dataset.id); if(x) speakWith(SAMPLE, x, false);
   });
   const inst = v.querySelector("#inst"); if(inst) inst.onclick = startInstall;
   v.querySelector("#priv").onclick = privacy;
-  v.querySelector("#exp").onclick = () => { exportData(); settings({msg:"Backup scaricato: " + APP_NAME + "-backup-" + today() + ".json"}); };
+  v.querySelector("#exp").onclick = () => { exportData(); settings({msg:tr("Backup scaricato: {f}", {f:APP_NAME + "-backup-" + today() + ".json"})}); };
   const imp = v.querySelector("#imp");
   imp.onchange = () => { const f = imp.files && imp.files[0]; imp.value = ""; importFile(f, (m) => { if(m) settings(m); }); };
   const lab = v.querySelector("label[for=imp]");
@@ -4528,11 +4555,11 @@ function settings(msg){
 
 /* ---------- LEZIONE ---------- */
 function partCard(n, title, sub, score, id, primary){
-  const st = score >= 80 ? "Completata · " + score + "%" : score > 0 ? "Miglior risultato " + score + "%" : "Da fare";
+  const st = score >= 80 ? tr("Completata") + " · " + score + "%" : score > 0 ? tr("Miglior risultato {p}%", {p:score}) : tr("Da fare");
   return `<div class="part ${score >= 80 ? "ok" : ""}">
     <div class="pn">${score >= 80 ? ICON.check.replace('width="22" height="22"','width="18" height="18"') : n}</div>
-    <div class="pt"><b>Parte ${n} · ${title}</b><span>${sub}</span><span class="label">${st}</span></div>
-    <button class="btn ${primary ? "btn-lion" : "btn-ghost"} pbtn" id="${id}">${score > 0 ? "Rifai" : "Inizia"}</button>
+    <div class="pt"><b>${tr("Parte {n}", {n})} · ${title}</b><span>${sub}</span><span class="label">${st}</span></div>
+    <button class="btn ${primary ? "btn-lion" : "btn-ghost"} pbtn" id="${id}">${score > 0 ? tr("Rifai") : tr("Inizia")}</button>
   </div>`;
 }
 function vocabCard(u, primary){
@@ -4540,9 +4567,9 @@ function vocabCard(u, primary){
   if(bl.length === 1) return partCard(1, PARTS[0].title, partSub(u, 1), done ? Math.max(sc, 80) : sc, "p1", primary).replace('id="p1"', 'id="p1" data-b="0"');
   return `<div class="part ${done ? "ok" : ""}">
     <div class="pn">${done ? ICON.check.replace('width="22" height="22"','width="18" height="18"') : 1}</div>
-    <div class="pt"><b>Parte 1 · ${PARTS[0].title}</b><span>${partSub(u, 1)}</span><span class="label">${done ? "Completata" : "Da fare"}</span></div>
+    <div class="pt"><b>${tr("Parte {n}", {n:1})} · ${PARTS[0].title}</b><span>${partSub(u, 1)}</span><span class="label">${done ? tr("Completata") : tr("Da fare")}</span></div>
     <div class="blocks">${bl.map(x => { const s2 = blockScore(u.id, x.b); return `<button class="btn ${primary && x.b === nb ? "btn-lion" : "btn-ghost"} blk" data-b="${x.b}">
-      <span>Blocco ${x.b + 1} · ${x.to - x.from} parole</span><span class="label">${s2 >= 80 ? "✓ " + s2 + "%" : s2 > 0 ? s2 + "%" : "da fare"}</span></button>`; }).join("")}</div>
+      <span>${tr("Blocco {b}", {b:x.b + 1})} · ${tr("{n} parole", {n:x.to - x.from})}</span><span class="label">${s2 >= 80 ? "✓ " + s2 + "%" : s2 > 0 ? s2 + "%" : tr("da fare")}</span></button>`; }).join("")}</div>
   </div>`;
 }
 function wordGrid(list){
@@ -4553,18 +4580,18 @@ function lesson(id){
   const u = unitById(id), i = unitIndex(id);
   const sc = PARTS.map(p => partScore(id, p.n)), np = nextPart(id);
   const v = $(`<div class="pop">
-    <button class="back" id="bk">${ICON.back} Percorso</button>
-    <div class="lesson-h"><span class="label">Unità ${i+1} di ${UNITS.length}</span><h2>${esc(u.nl)}</h2><p>${esc(u.it)}</p></div>
-    <div class="sec-h"><h3>Spiegazione</h3></div>
+    <button class="back" id="bk">${ICON.back} ${tr("Percorso")}</button>
+    <div class="lesson-h"><span class="label">${tr("Unità {n} di {k}", {n:i+1, k:UNITS.length})}</span><h2>${esc(u.nl)}</h2><p>${esc(u.it)}</p></div>
+    <div class="sec-h"><h3>${tr("Spiegazione")}</h3></div>
     <article class="note">${u.note}</article>
     <aside class="vl"><span class="label">In Vlaanderen</span>${u.vlaams}</aside>
-    ${u.core.length ? `<div class="sec-h"><h3>Parole chiave della grammatica</h3><span class="label">Tocca per ascoltare</span></div>${wordGrid(u.core)}` : ""}
-    <div class="sec-h"><h3>Lessico dell'unità</h3><span class="label">Tocca per ascoltare</span></div>
-    ${blocksOf(id).length > 1 ? blocksOf(id).map(x => `<div class="blk-h label">Blocco ${x.b + 1}</div>${wordGrid(u.vocab.slice(x.from, x.to))}`).join("") : wordGrid(u.vocab || [])}
-    <div class="sec-h"><h3>Esercizi</h3></div>
+    ${u.core.length ? `<div class="sec-h"><h3>${tr("Parole chiave della grammatica")}</h3><span class="label">${tr("Tocca per ascoltare")}</span></div>${wordGrid(u.core)}` : ""}
+    <div class="sec-h"><h3>${tr("Lessico dell'unità")}</h3><span class="label">${tr("Tocca per ascoltare")}</span></div>
+    ${blocksOf(id).length > 1 ? blocksOf(id).map(x => `<div class="blk-h label">${tr("Blocco {b}", {b:x.b + 1})}</div>${wordGrid(u.vocab.slice(x.from, x.to))}`).join("") : wordGrid(u.vocab || [])}
+    <div class="sec-h"><h3>${tr("Esercizi")}</h3></div>
     ${vocabCard(u, np === 1)}
     ${partCard(2, PARTS[1].title, partSub(u, 2), sc[1], "p2", np === 2)}
-    <div class="dock"><div class="dock-in dock-row"><button class="btn btn-ghost backbtn" id="bk2" aria-label="Torna al percorso">${ICON.back}<span>Percorso</span></button><button class="btn btn-lion" id="stn">Parte ${np} · ${PARTS[np-1].title}${np === 1 && blocksOf(id).length > 1 ? " · blocco " + (nextBlock(id) + 1) : ""}</button></div></div>
+    <div class="dock"><div class="dock-in dock-row"><button class="btn btn-ghost backbtn" id="bk2" aria-label="${esc(tr("Torna al percorso"))}">${ICON.back}<span>${tr("Percorso")}</span></button><button class="btn btn-lion" id="stn">${tr("Parte {n}", {n:np})} · ${PARTS[np-1].title}${np === 1 && blocksOf(id).length > 1 ? " · " + tr("blocco {b}", {b:nextBlock(id) + 1}) : ""}</button></div></div>
   </div>`);
   v.querySelectorAll(".vw").forEach(b => b.onclick = () => play(b.dataset.say, {fresh:true}));
   v.querySelectorAll(".note table").forEach(t => { const w = document.createElement("div"); w.className = "table-wrap"; t.replaceWith(w); w.appendChild(t); });
@@ -4643,8 +4670,8 @@ function startReview(){
 }
 const keyOf = (cur) => cur.w ? "w:" + cur.set + ":" + cur.i : (cur.v ? (cur.src === "core" ? "k:" : "v:") : cur.c ? "c:" : "") + cur.u + ":" + cur.i;
 
-const KIND = {wo:"Metti in ordine", vintro:"Parola nuova", mc:"Scegli la risposta", fill:"Completa la frase", order:"Componi la frase", tr:"Traduci con le tessere",
-  vnl:"Cosa significa?", vit:"Come si dice in olandese?", vlisten:"Ascolta e scegli"};
+const KIND = {wo:tr("Metti in ordine"), vintro:tr("Parola nuova"), mc:tr("Scegli la risposta"), fill:tr("Completa la frase"), order:tr("Componi la frase"), tr:tr("Traduci con le tessere"),
+  vnl:tr("Cosa significa?"), vit:tr("Come si dice in olandese?"), vlisten:tr("Ascolta e scegli")};
 
 function renderItem(){
   const cur = R.queue[R.pos];
@@ -4653,22 +4680,22 @@ function renderItem(){
   const kind = it.t === "vmc" ? it.kind : it.wo ? "wo" : it.t;
   let qHtml;
   if(it.t === "vmc"){
-    if(it.kind === "vnl") qHtml = `<div class="bigword"><span class="wd">${esc(it.word)}</span><button class="qsay" id="qs" aria-label="Ascolta">${ICON.sound}</button></div>`;
+    if(it.kind === "vnl") qHtml = `<div class="bigword"><span class="wd">${esc(it.word)}</span><button class="qsay" id="qs" aria-label="${esc(tr("Ascolta"))}">${ICON.sound}</button></div>`;
     else if(it.kind === "vit") qHtml = `<div class="q">«${esc(it.it)}»</div>`;
-    else qHtml = `<button class="qsay lg" id="qs" aria-label="Ascolta di nuovo">${ICON.sound}</button>`;
+    else qHtml = `<button class="qsay lg" id="qs" aria-label="${esc(tr("Ascolta di nuovo"))}">${ICON.sound}</button>`;
   } else {
     qHtml = `<div class="q">${esc(it.q).replace("___", '<span class="blank">____</span>')}</div>`;
   }
   const v = $(`<div>
     ${topBar()}
     <div class="pop">
-      <span class="label">${cur.retry ? "Riprova · " : ""}${KIND[kind]}</span>
+      <span class="label">${cur.retry ? tr("Riprova") + " · " : ""}${KIND[kind]}</span>
       ${qHtml}
       ${it.h ? `<span class="hint">${esc(it.h)}</span>` : ""}
-      ${it.wo ? `<button class="rulebtn" id="rb" aria-expanded="false">Regola · ${esc(it.setTitle)}</button><div class="rulebox" id="rbox" hidden>${it.rule}</div>` : ""}
+      ${it.wo ? `<button class="rulebtn" id="rb" aria-expanded="false">${tr("Regola")} · ${esc(it.setTitle)}</button><div class="rulebox" id="rbox" hidden>${it.rule}</div>` : ""}
       <div id="area"></div>
     </div>
-    <div class="dock"><div class="dock-in" id="dock"><button class="btn btn-deep" id="chk" disabled>Controlla</button></div></div>
+    <div class="dock"><div class="dock-in" id="dock"><button class="btn btn-deep" id="chk" disabled>${tr("Controlla")}</button></div></div>
     <div class="quiz-bg" aria-hidden="true">${patatino(cur.retry ? "sad" : "wave", 240)}</div>
   </div>`);
   const area = v.querySelector("#area");
@@ -4693,7 +4720,7 @@ function renderItem(){
     area.appendChild(wrap);
     getAnswer = () => sel;
   } else if(it.t === "fill"){
-    const f = $(`<input class="field" id="ans" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="La parola mancante">`);
+    const f = $(`<input class="field" id="ans" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="${esc(tr("La parola mancante"))}">`);
     f.oninput = () => { chk.disabled = !f.value.trim(); };
     area.appendChild(f);
     setTimeout(() => { try{ f.focus({preventScroll:true}); }catch(e){} }, 50);
@@ -4712,8 +4739,8 @@ function renderItem(){
     const locked = words.slice(0, lockN), free = words.slice(lockN);
     let toks = shuffle(free.concat(extra));
     for(let t = 0; t < 6 && toks.length > 2 && toks.join("|") === free.join("|"); t++) toks = shuffle(toks);   // mai già in ordine
-    const slot = $(`<div class="slot ${Array.isArray(it.a) ? "chunks" : ""}" aria-label="La tua frase"></div>`);
-    locked.forEach(w => slot.appendChild($(`<span class="tok lock" title="Già al suo posto">${esc(w)}</span>`)));
+    const slot = $(`<div class="slot ${Array.isArray(it.a) ? "chunks" : ""}" aria-label="${esc(tr("La tua frase"))}"></div>`);
+    locked.forEach(w => slot.appendChild($(`<span class="tok lock" title="${esc(tr("Già al suo posto"))}">${esc(w)}</span>`)));
     const bank = $(`<div class="bank"></div>`);
     const picked = [];
     toks.forEach(w => {
@@ -4748,7 +4775,7 @@ function renderItem(){
 function topBar(){
   const p = R.pos / R.queue.length * 100;
   return `<div class="ex-top">
-      <button class="x" id="quit" aria-label="Esci dalla lezione">${ICON.x}</button>
+      <button class="x" id="quit" aria-label="${esc(tr("Esci dalla lezione"))}">${ICON.x}</button>
       <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.round(p)}"><i style="width:${p}%"></i></div>
       <span class="ex-count">${R.pos+1}/${R.queue.length}</span>
     </div>`;
@@ -4758,12 +4785,12 @@ function renderIntro(cur){
   const v = $(`<div>
     ${topBar()}
     <div class="pop intro">
-      <span class="label">Parola nuova</span>
-      <div class="bigword"><span class="wd">${esc(it.word)}</span><button class="qsay" id="qs" aria-label="Ascolta (tocca di nuovo per la versione lenta)">${ICON.sound}</button></div>
+      <span class="label">${tr("Parola nuova")}</span>
+      <div class="bigword"><span class="wd">${esc(it.word)}</span><button class="qsay" id="qs" aria-label="${esc(tr("Ascolta (tocca di nuovo per la versione lenta)"))}">${ICON.sound}</button></div>
       <div class="mean">${esc(it.it)}</div>
-      <p class="tip">Ascoltala, ripetila ad alta voce e poi continua.</p>
+      <p class="tip">${tr("Ascoltala, ripetila ad alta voce e poi continua.")}</p>
     </div>
-    <div class="dock"><div class="dock-in"><button class="btn btn-deep" id="nx">Continua</button></div></div>
+    <div class="dock"><div class="dock-in"><button class="btn btn-deep" id="nx">${tr("Continua")}</button></div></div>
     <div class="quiz-bg" aria-hidden="true">${patatino("happy", 240)}</div>
   </div>`);
   v.querySelector("#quit").onclick = home;
@@ -4785,25 +4812,25 @@ function compareHtml(cur, it, ans, ok, right){
     const fromIt = it.kind === "vnl";   // opzioni in italiano
     if(!ok){
       const m = vocabMeaning(cur.u, ans, fromIt, cur.src);
-      out += row("bad", "La tua scelta", ans, fromIt ? (m ? "in olandese: " + m : "") : m);
-      out += row("good", "Giusta", right, fromIt ? "in olandese: " + it.word : it.it);
+      out += row("bad", tr("La tua scelta"), ans, fromIt ? (m ? tr("in olandese: {w}", {w:m}) : "") : m);
+      out += row("good", tr("Giusta"), right, fromIt ? tr("in olandese: {w}", {w:it.word}) : it.it);
     }
     return out;
   }
   const G = cur.c ? {g: it.g, t: it.tt} : (GLOSS[cur.u + "-" + cur.i] || {});
   const g = G.g || {};
   if(it.t === "mc"){
-    if(!ok) out += row("bad", "La tua scelta", ans, g[ans]);
-    if(!ok || g[right]) out += row("good", ok ? "Significato" : "Giusta", right, g[right]);
+    if(!ok) out += row("bad", tr("La tua scelta"), ans, g[ans]);
+    if(!ok || g[right]) out += row("good", ok ? tr("Significato") : tr("Giusta"), right, g[right]);
     trans = G.t;
   } else if(it.t === "fill"){
-    if(!ok){ out += row("bad", "La tua risposta", ans || "(vuota)", ""); out += row("good", "Giusta", right, ""); }
+    if(!ok){ out += row("bad", tr("La tua risposta"), ans || tr("(vuota)"), ""); out += row("good", tr("Giusta"), right, ""); }
     trans = G.t;
   } else {   // order, tr: la domanda è già la frase italiana
-    if(!ok){ out += row("bad", "La tua frase", ans || "(vuota)", ""); if(!it.wo) out += row("good", "Giusta", right, ""); }
+    if(!ok){ out += row("bad", tr("La tua frase"), ans || tr("(vuota)"), ""); if(!it.wo) out += row("good", tr("Giusta"), right, ""); }
     trans = it.q;
   }
-  if(trans) out += `<div class="tr-it"><span class="cl">Traduzione</span> ${esc(trans)}</div>`;
+  if(trans) out += `<div class="tr-it"><span class="cl">${tr("Traduzione")}</span> ${esc(trans)}</div>`;
   return out;
 }
 
@@ -4850,12 +4877,12 @@ function check(it, ans, v){
   dock.innerHTML = "";
   const cmp = compareHtml(cur, it, ans, ok, right);
   const fb = $(`<div class="fb ${ok ? "ok" : "no"} pop" role="status">
-    <h3><span class="fbm">${patatino(ok ? "happy" : "sad", 40)}</span>${ok ? "Goed zo!" : "Niet helemaal"}${canPlay ? `<button class="say" aria-label="Ascolta (tocca di nuovo per la versione lenta)">${ICON.sound}</button>` : ""}</h3>
+    <h3><span class="fbm">${patatino(ok ? "happy" : "sad", 40)}</span>${ok ? "Goed zo!" : "Niet helemaal"}${canPlay ? `<button class="say" aria-label="${esc(tr("Ascolta (tocca di nuovo per la versione lenta)"))}">${ICON.sound}</button>` : ""}</h3>
     ${cmp}
     ${it.wo ? woDiagram(it) : ""}
     ${it.t === "vmc" && !ok ? "" : `<div class="ex">${it.e || ""}</div>`}
   </div>`);
-  const next = $(`<button class="btn ${ok ? "btn-ok" : "btn-no"}" id="nx">Continua</button>`);
+  const next = $(`<button class="btn ${ok ? "btn-ok" : "btn-no"}" id="nx">${tr("Continua")}</button>`);
   dock.append(fb, next);
   const say = fb.querySelector(".say"); if(say) say.onclick = () => play(dutch);
   if(canPlay && S.audio) play(dutch, {fresh:true});
@@ -4883,23 +4910,23 @@ function finish(){
   S.xp += R.xp;
   bumpDay();
   save();
-  const msg = pct >= 80 && R.mode === "vocab" ? "Parole memorizzate. Ora passa alla grammatica." : pct === 100 ? "Perfetto." : pct >= 80 ? "Ottimo lavoro." : pct >= 50 ? "Ci sei quasi. Un altro giro e la chiudi." : "Rileggi la spiegazione e riprova.";
+  const msg = pct >= 80 && R.mode === "vocab" ? tr("Parole memorizzate. Ora passa alla grammatica.") : pct === 100 ? tr("Perfetto.") : pct >= 80 ? tr("Ottimo lavoro.") : pct >= 50 ? tr("Ci sei quasi. Un altro giro e la chiudi.") : tr("Rileggi la spiegazione e riprova.");
   const pn = {vocab:1, unit:2}[R.mode];
-  const label = pn ? "Parte " + pn + " · " + PARTS[pn-1].title + (pn === 1 && blocksOf(R.unit).length > 1 ? " · blocco " + (R.block + 1) : "") + " · " + esc(unitById(R.unit).it) : "Ripasso errori";
+  const label = pn ? tr("Parte {n}", {n:pn}) + " · " + PARTS[pn-1].title + (pn === 1 && blocksOf(R.unit).length > 1 ? " · " + tr("blocco {b}", {b:R.block + 1}) : "") + " · " + esc(unitById(R.unit).it) : tr("Ripasso errori");
   const np = R.unit ? nextPart(R.unit) : null;
   const v = $(`<div class="res pop">
     ${patatino(pct >= 80 ? "cheer" : pct >= 50 ? "happy" : "sad", 130)}
     <span class="label">${label}</span>
     <div class="score">${R.first}<small>/${R.total}</small></div>
     <p>${msg}</p>
-    <span class="xpgain">+${R.xp} XP · ${S.streak} ${S.streak === 1 ? "giorno" : "giorni"} di fila</span>
+    <span class="xpgain">+${R.xp} XP · ${S.streak === 1 ? tr("{n} giorno di fila", {n:S.streak}) : tr("{n} giorni di fila", {n:S.streak})}</span>
     <div class="res-inst"></div>
     <div class="row">
-      ${pn && pct >= 80 && unitDone(R.unit) && unitIndex(R.unit) < UNITS.length-1 ? `<button class="btn btn-lion" id="nextu">Prossima unità</button>` : ""}
-      ${pn && pct >= 80 && !unitDone(R.unit) ? `<button class="btn btn-lion" id="nextp">${np === 1 ? "Vai al blocco " + (nextBlock(R.unit) + 1) : "Vai alla parte " + np + " · " + PARTS[np-1].title}</button>` : ""}
-      ${pn ? `<button class="btn ${pct>=80 ? "btn-ghost" : "btn-lion"}" id="again">Rifai la parte ${pn}</button>` : ""}
-      ${S.wrong.length ? `<button class="btn btn-ghost" id="rv">Ripassa gli errori (${S.wrong.length})</button>` : ""}
-      <button class="btn btn-ghost" id="hm">Torna al percorso</button>
+      ${pn && pct >= 80 && unitDone(R.unit) && unitIndex(R.unit) < UNITS.length-1 ? `<button class="btn btn-lion" id="nextu">${tr("Prossima unità")}</button>` : ""}
+      ${pn && pct >= 80 && !unitDone(R.unit) ? `<button class="btn btn-lion" id="nextp">${np === 1 ? tr("Vai al blocco {b}", {b:nextBlock(R.unit) + 1}) : tr("Vai alla parte {n}", {n:np}) + " · " + PARTS[np-1].title}</button>` : ""}
+      ${pn ? `<button class="btn ${pct>=80 ? "btn-ghost" : "btn-lion"}" id="again">${tr("Rifai la parte {n}", {n:pn})}</button>` : ""}
+      ${S.wrong.length ? `<button class="btn btn-ghost" id="rv">${tr("Ripassa gli errori ({n})", {n:S.wrong.length})}</button>` : ""}
+      <button class="btn btn-ghost" id="hm">${tr("Torna al percorso")}</button>
     </div>
   </div>`);
   const on = (id, fn) => { const b = v.querySelector(id); if(b) b.onclick = fn; };
@@ -4932,7 +4959,8 @@ document.addEventListener("keydown", e => {
 /* ---------- FLASHCARDS: mazzi tematici con ripasso a intervalli (sistema Leitner) ---------- */
 const FC_INT = [0, 1, 3, 7, 14, 30];        // giorni di attesa per ogni livello
 const FC_NEW = 10, FC_MAX = 20;            // carte nuove e carte totali per sessione
-const FC_GROUPS = [["Grammatica","Forme da memorizzare"],["Lessico","Parole per tema"],["Vlaams","Il neerlandese del Belgio"]];
+// [gruppo nei dati, nome mostrato, sottotitolo]
+const FC_GROUPS = [["Grammatica",tr("Grammatica"),tr("Forme da memorizzare")],["Lessico",tr("Lessico"),tr("Parole per tema")],["Vlaams",tr("Vlaams"),tr("Il neerlandese del Belgio")]];
 function addDays(n){ const d = new Date(); d.setDate(d.getDate() + n); return today(d); }
 const fcKey = (deck, card) => deck.id + ":" + card[0];
 const fcRec = (deck, card) => (S.fc || {})[fcKey(deck, card)];
@@ -4946,29 +4974,29 @@ function bumpDay(){
   const t = today();
   if(S.last !== t){ const y = new Date(); y.setDate(y.getDate()-1); S.streak = (S.last === today(y)) ? S.streak + 1 : 1; S.last = t; }
 }
-const FC_DIRS = [["nl","Neerlandese → italiano"],["it","Italiano → neerlandese"],["mix","Misto"]];
+const FC_DIRS = [["nl",tr("Neerlandese → italiano")],["it",tr("Italiano → neerlandese")],["mix",tr("Misto")]];
 
 function decksScreen(){
   screen({s:"decks"});
   const due = fcDueAll();
   const v = $(`<div class="pop">
-    <div class="lesson-h tab-h"><span class="label">Ripasso</span><h2>Flashcards</h2><p>Gira la carta, poi dimmi se la sapevi. Le carte che non sai tornano prima.</p></div>
-    ${due ? `<button class="review fc-due" id="alldue"><div><b>Ripassa tutto</b><br><span style="font-size:14px">Le carte di tutti i mazzi in scadenza oggi</span></div><span class="count">${due}</span></button>` : ""}
-    <div class="sec-h"><h3>Direzione</h3></div>
-    <div class="seg" role="group" aria-label="Direzione delle carte">${FC_DIRS.map(([id, l]) => `<button class="seg-b ${(S.fcDir || "nl") === id ? "on" : ""}" data-dir="${id}" aria-pressed="${(S.fcDir || "nl") === id}">${l}</button>`).join("")}</div>
+    <div class="lesson-h tab-h"><span class="label">${tr("Ripasso")}</span><h2>${tr("Flashcards")}</h2><p>${tr("Gira la carta, poi dimmi se la sapevi. Le carte che non sai tornano prima.")}</p></div>
+    ${due ? `<button class="review fc-due" id="alldue"><div><b>${tr("Ripassa tutto")}</b><br><span style="font-size:14px">${tr("Le carte di tutti i mazzi in scadenza oggi")}</span></div><span class="count">${due}</span></button>` : ""}
+    <div class="sec-h"><h3>${tr("Direzione")}</h3></div>
+    <div class="seg" role="group" aria-label="${esc(tr("Direzione delle carte"))}">${FC_DIRS.map(([id, l]) => `<button class="seg-b ${(S.fcDir || "nl") === id ? "on" : ""}" data-dir="${id}" aria-pressed="${(S.fcDir || "nl") === id}">${l}</button>`).join("")}</div>
     <div id="dl"></div>
   </div>`);
   const dl = v.querySelector("#dl");
-  FC_GROUPS.forEach(([g, gs]) => {
+  FC_GROUPS.forEach(([g, gt, gs]) => {
     const list = DECKS.filter(d => d.g === g);
     if(!list.length) return;
-    dl.appendChild($(`<div class="sec-h"><h3>${esc(g)}</h3><span class="label">${esc(gs)}</span></div>`));
+    dl.appendChild($(`<div class="sec-h"><h3>${esc(gt)}</h3><span class="label">${esc(gs)}</span></div>`));
     const box = $(`<div class="decks"></div>`);
     list.forEach(d => {
       const st = fcStats(d), pct = Math.round(st.learned / st.total * 100);
-      const badge = st.due ? `<span class="fc-badge due">${st.due} da ripassare</span>` : st.fresh === st.total ? `<span class="fc-badge">nuovo</span>` : st.fresh ? `<span class="fc-badge">${st.fresh} nuove</span>` : `<span class="fc-badge ok">al passo</span>`;
+      const badge = st.due ? `<span class="fc-badge due">${tr("{n} da ripassare", {n:st.due})}</span>` : st.fresh === st.total ? `<span class="fc-badge">${tr("nuovo")}</span>` : st.fresh ? `<span class="fc-badge">${tr("{n} nuove", {n:st.fresh})}</span>` : `<span class="fc-badge ok">${tr("al passo")}</span>`;
       const b = $(`<button class="deck"><span class="dk-t"><b>${esc(d.t)}</b><span>${esc(d.s)}</span></span>
-        <span class="dk-r">${badge}<span class="dk-n">${st.learned}/${st.total} imparate</span><span class="meter"><i style="width:${pct}%"></i></span></span></button>`);
+        <span class="dk-r">${badge}<span class="dk-n">${tr("{n}/{k} imparate", {n:st.learned, k:st.total})}</span><span class="meter"><i style="width:${pct}%"></i></span></span></button>`);
       b.onclick = () => studyDeck(d.id);
       box.appendChild(b);
     });
@@ -5003,12 +5031,12 @@ function fcNothing(id){
   screen({s:"cards", deck:id});
   const v = $(`<div class="res pop">
     ${patatino("happy", 130)}
-    <span class="label">${id ? esc(DECKS.find(d => d.id === id).t) : "Tutti i mazzi"}</span>
-    <h2 class="fc-done-h">Tutto ripassato per oggi</h2>
-    <p>Le prossime carte tornano nei prossimi giorni. Se vuoi, puoi ripassare lo stesso.</p>
+    <span class="label">${id ? esc(DECKS.find(d => d.id === id).t) : tr("Tutti i mazzi")}</span>
+    <h2 class="fc-done-h">${tr("Tutto ripassato per oggi")}</h2>
+    <p>${tr("Le prossime carte tornano nei prossimi giorni. Se vuoi, puoi ripassare lo stesso.")}</p>
     <div class="row">
-      ${id ? `<button class="btn btn-lion" id="anyway">Ripassa comunque</button>` : ""}
-      <button class="btn btn-ghost" id="dk">Torna ai mazzi</button>
+      ${id ? `<button class="btn btn-lion" id="anyway">${tr("Ripassa comunque")}</button>` : ""}
+      <button class="btn btn-ghost" id="dk">${tr("Torna ai mazzi")}</button>
     </div>
   </div>`);
   const a = v.querySelector("#anyway"); if(a) a.onclick = () => studyDeck(id, true);
@@ -5030,25 +5058,25 @@ function fcRender(){
   const isChoice = d.kind === "dehet";
   const v = $(`<div>
     <div class="ex-top">
-      <button class="x" id="quit" aria-label="Esci dalle flashcard">${ICON.x}</button>
+      <button class="x" id="quit" aria-label="${esc(tr("Esci dalle flashcard"))}">${ICON.x}</button>
       <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.round(p)}"><i style="width:${p}%"></i></div>
       <span class="ex-count">${F.pos+1}/${F.queue.length}</span>
     </div>
     <div class="pop">
-      <span class="label">${esc(d.t)}${x.again ? " · di nuovo" : ""}</span>
+      <span class="label">${esc(d.t)}${x.again ? " · " + tr("di nuovo") : ""}</span>
       <div class="fc-wrap">
-        <button class="fc" id="card" aria-label="${isChoice ? "Carta" : "Tocca per girare la carta"}">
+        <button class="fc" id="card" aria-label="${esc(isChoice ? tr("Carta") : tr("Tocca per girare la carta"))}">
           <span class="fc-in">
-            <span class="fc-face fc-f"><span class="fc-txt">${esc(fc.front)}</span>${isChoice ? `<span class="fc-hint">de o het?</span>` : `<span class="fc-hint">Tocca per girare</span>`}</span>
+            <span class="fc-face fc-f"><span class="fc-txt">${esc(fc.front)}</span>${isChoice ? `<span class="fc-hint">${tr("de o het?")}</span>` : `<span class="fc-hint">${tr("Tocca per girare")}</span>`}</span>
             <span class="fc-face fc-b"><span class="fc-txt">${esc(fc.back)}</span>${fc.backSub ? `<span class="fc-sub">${esc(fc.backSub)}</span>` : ""}<span class="fc-mark" id="mark"></span></span>
           </span>
         </button>
-        ${fc.frontSay || fc.backSay ? `<button class="qsay fc-say" id="say" aria-label="Ascolta">${ICON.sound}</button>` : ""}
+        ${fc.frontSay || fc.backSay ? `<button class="qsay fc-say" id="say" aria-label="${esc(tr("Ascolta"))}">${ICON.sound}</button>` : ""}
       </div>
     </div>
     <div class="dock"><div class="dock-in" id="dock">
       ${isChoice ? `<div class="fc-row"><button class="btn btn-ghost fc-art" data-a="de">de</button><button class="btn btn-ghost fc-art" data-a="het">het</button></div>`
-                 : `<button class="btn btn-deep" id="flip">Gira la carta</button>`}
+                 : `<button class="btn btn-deep" id="flip">${tr("Gira la carta")}</button>`}
     </div></div>
     <div class="quiz-bg" aria-hidden="true">${patatino("wave", 240)}</div>
   </div>`);
@@ -5058,11 +5086,11 @@ function fcRender(){
   if(say){ say.onclick = () => { const t = F.flipped ? (fc.backSay || fc.frontSay) : fc.frontSay; if(t) play(t); }; if(!fc.frontSay) say.hidden = true; }
   const flip = () => {
     if(F.flipped || isChoice) return;
-    F.flipped = true; card.classList.add("flipped"); card.setAttribute("aria-label", "Carta girata");
+    F.flipped = true; card.classList.add("flipped"); card.setAttribute("aria-label", tr("Carta girata"));
     if(say) say.hidden = !(fc.backSay || fc.frontSay);
     if(fc.backSay && S.audio) play(fc.backSay, {fresh:true});
     const dock = v.querySelector("#dock");
-    dock.innerHTML = `<div class="fc-row"><button class="btn btn-no" id="again">Non ancora</button><button class="btn btn-ok" id="know">Lo so</button></div>`;
+    dock.innerHTML = `<div class="fc-row"><button class="btn btn-no" id="again">${tr("Non ancora")}</button><button class="btn btn-ok" id="know">${tr("Lo so")}</button></div>`;
     dock.querySelector("#again").onclick = () => fcAnswer(false);
     dock.querySelector("#know").onclick = () => fcAnswer(true);
   };
@@ -5072,12 +5100,12 @@ function fcRender(){
     if(F.flipped) return;
     const ok = b.dataset.a === x.c[1];
     F.flipped = true; card.classList.add("flipped", ok ? "good" : "bad");
-    v.querySelector("#mark").textContent = ok ? "Giusto!" : "Era «" + x.c[1] + "»";
+    v.querySelector("#mark").textContent = ok ? tr("Giusto!") : tr("Era «{w}»", {w:x.c[1]});
     v.querySelectorAll(".fc-art").forEach(o => { o.disabled = true; if(o.dataset.a === x.c[1]) o.classList.add("right"); });
     if(fc.backSay && S.audio) play(fc.backSay, {fresh:true});
     if(say) say.hidden = false;
     const dock = v.querySelector("#dock");
-    const next = $(`<button class="btn ${ok ? "btn-ok" : "btn-no"}" id="nx">Continua</button>`);
+    const next = $(`<button class="btn ${ok ? "btn-ok" : "btn-no"}" id="nx">${tr("Continua")}</button>`);
     next.onclick = () => fcAnswer(ok);
     dock.appendChild(next);
   });
@@ -5111,13 +5139,13 @@ function fcFinish(){
   const more = st.due + (deck ? st.fresh : 0);
   const v = $(`<div class="res pop">
     ${patatino(pct >= 80 ? "cheer" : pct >= 50 ? "happy" : "sad", 130)}
-    <span class="label">${deck ? esc(deck.t) : "Ripasso di tutti i mazzi"}</span>
+    <span class="label">${deck ? esc(deck.t) : tr("Ripasso di tutti i mazzi")}</span>
     <div class="score">${F.known}<small>/${F.seen}</small></div>
-    <p>${pct >= 80 ? "Ottima memoria." : pct >= 50 ? "Bene, le carte difficili tornano presto." : "Le rivedrai presto: è così che si memorizza."}</p>
-    <span class="xpgain">+${F.xp} XP · ${S.streak} ${S.streak === 1 ? "giorno" : "giorni"} di fila</span>
+    <p>${pct >= 80 ? tr("Ottima memoria.") : pct >= 50 ? tr("Bene, le carte difficili tornano presto.") : tr("Le rivedrai presto: è così che si memorizza.")}</p>
+    <span class="xpgain">+${F.xp} XP · ${S.streak === 1 ? tr("{n} giorno di fila", {n:S.streak}) : tr("{n} giorni di fila", {n:S.streak})}</span>
     <div class="row">
-      ${more ? `<button class="btn btn-lion" id="more">Altre carte (${more})</button>` : ""}
-      <button class="btn ${more ? "btn-ghost" : "btn-lion"}" id="dk">Torna ai mazzi</button>
+      ${more ? `<button class="btn btn-lion" id="more">${tr("Altre carte ({n})", {n:more})}</button>` : ""}
+      <button class="btn ${more ? "btn-ghost" : "btn-lion"}" id="dk">${tr("Torna ai mazzi")}</button>
     </div>
   </div>`);
   const m = v.querySelector("#more"); if(m) m.onclick = () => studyDeck(id);
@@ -5127,9 +5155,9 @@ function fcFinish(){
 
 /* ---------- ORDINE DELLE PAROLE: serie di esercizi con tessere a blocchi ---------- */
 const WO_GROUPS = [
-  ["La frase principale", ["v2","inv","tmp","q","niet"]],
-  ["Più verbi nella frase", ["mod","sep","perf","te"]],
-  ["Frasi complesse", ["sub","want","subfirst","rel","cluster"]]
+  [tr("La frase principale"), ["v2","inv","tmp","q","niet"]],
+  [tr("Più verbi nella frase"), ["mod","sep","perf","te"]],
+  [tr("Frasi complesse"), ["sub","want","subfirst","rel","cluster"]]
 ];
 // parole che restano maiuscole anche a metà frase (nomi propri, lingue, paesi): ricavate dai dati
 let PROPER = null;
@@ -5156,14 +5184,14 @@ function woDiagram(it){
     const cls = it.v.includes(k) ? "pv" : it.end.includes(k) ? "pe" : "";
     return `<span class="wp ${cls}">${esc(c)}</span>`;
   }).join("");
-  const leg = [it.v.length ? `<span class="wl"><i class="pv"></i>verbo coniugato</span>` : "", it.end.length ? `<span class="wl"><i class="pe"></i>in fondo</span>` : ""].join("");
-  return `<div class="wdiag"><span class="cl">Frase giusta</span><div class="wpills">${pills}</div><div class="wleg">${leg}</div></div>`;
+  const leg = [it.v.length ? `<span class="wl"><i class="pv"></i>${tr("verbo coniugato")}</span>` : "", it.end.length ? `<span class="wl"><i class="pe"></i>${tr("in fondo")}</span>` : ""].join("");
+  return `<div class="wdiag"><span class="cl">${tr("Frase giusta")}</span><div class="wpills">${pills}</div><div class="wleg">${leg}</div></div>`;
 }
 const woDone = () => ORDER_SETS.filter(s => ((S.wob || {})[s.id] || 0) >= 80).length;
 function woScreen(){
   screen({s:"wo"});
   const v = $(`<div class="pop">
-    <div class="lesson-h tab-h"><span class="label">Ordine delle parole</span><h2>Costruisci la frase</h2><p>In neerlandese ogni pezzo della frase ha il suo posto. Metti i blocchi nell'ordine giusto: dopo ogni risposta vedi dove va il verbo.</p></div>
+    <div class="lesson-h tab-h"><span class="label">${tr("Ordine delle parole")}</span><h2>${tr("Costruisci la frase")}</h2><p>${tr("In neerlandese ogni pezzo della frase ha il suo posto. Metti i blocchi nell'ordine giusto: dopo ogni risposta vedi dove va il verbo.")}</p></div>
     <div id="wl"></div>
   </div>`);
   const wl = v.querySelector("#wl");
@@ -5173,9 +5201,9 @@ function woScreen(){
     ids.forEach(id => {
       const st = ORDER_SETS.find(x => x.id === id); if(!st) return;
       const best = (S.wob || {})[id] || 0, u = unitById(st.unit), n = unitIndex(st.unit) + 1;
-      const badge = best >= 80 ? `<span class="fc-badge ok">✓ ${best}%</span>` : best ? `<span class="fc-badge">${best}%</span>` : `<span class="fc-badge">nuovo</span>`;
+      const badge = best >= 80 ? `<span class="fc-badge ok">✓ ${best}%</span>` : best ? `<span class="fc-badge">${best}%</span>` : `<span class="fc-badge">${tr("nuovo")}</span>`;
       const b = $(`<button class="deck"><span class="dk-t"><b>${esc(st.t)}</b><span>${esc(st.s)}</span></span>
-        <span class="dk-r">${badge}<span class="dk-n">${u ? "unità " + n : ""} · ${st.items.length} frasi</span><span class="meter"><i style="width:${best}%"></i></span></span></button>`);
+        <span class="dk-r">${badge}<span class="dk-n">${u ? tr("unità {n}", {n}) : ""} · ${tr("{n} frasi", {n:st.items.length})}</span><span class="meter"><i style="width:${best}%"></i></span></span></button>`);
       b.onclick = () => startWo(id);
       box.appendChild(b);
     });
@@ -5198,15 +5226,15 @@ function woFinish(){
   const st = ORDER_SETS.find(x => x.id === id), nx = nextId && ORDER_SETS.find(x => x.id === nextId);
   const v = $(`<div class="res pop">
     ${patatino(pct >= 80 ? "cheer" : pct >= 50 ? "happy" : "sad", 130)}
-    <span class="label">Costruisci la frase · ${esc(st.t)}</span>
+    <span class="label">${tr("Costruisci la frase")} · ${esc(st.t)}</span>
     <div class="score">${R.first}<small>/${R.total}</small></div>
-    <p>${pct === 100 ? "Ordine perfetto." : pct >= 80 ? "Ottimo: la regola è tua." : pct >= 50 ? "Ci sei quasi. Riguarda lo schema dei verbi e riprova." : "Apri «Regola» durante l'esercizio e riprova."}</p>
-    <span class="xpgain">+${R.xp} XP · ${S.streak} ${S.streak === 1 ? "giorno" : "giorni"} di fila</span>
+    <p>${pct === 100 ? tr("Ordine perfetto.") : pct >= 80 ? tr("Ottimo: la regola è tua.") : pct >= 50 ? tr("Ci sei quasi. Riguarda lo schema dei verbi e riprova.") : tr("Apri «Regola» durante l'esercizio e riprova.")}</p>
+    <span class="xpgain">+${R.xp} XP · ${S.streak === 1 ? tr("{n} giorno di fila", {n:S.streak}) : tr("{n} giorni di fila", {n:S.streak})}</span>
     <div class="row">
-      ${pct >= 80 && nx ? `<button class="btn btn-lion" id="nextw">Prossima serie · ${esc(nx.t)}</button>` : ""}
-      <button class="btn ${pct >= 80 ? "btn-ghost" : "btn-lion"}" id="againw">Rifai la serie</button>
-      ${S.wrong.length ? `<button class="btn btn-ghost" id="rv">Ripassa gli errori (${S.wrong.length})</button>` : ""}
-      <button class="btn btn-ghost" id="wl">Tutte le serie</button>
+      ${pct >= 80 && nx ? `<button class="btn btn-lion" id="nextw">${tr("Prossima serie")} · ${esc(nx.t)}</button>` : ""}
+      <button class="btn ${pct >= 80 ? "btn-ghost" : "btn-lion"}" id="againw">${tr("Rifai la serie")}</button>
+      ${S.wrong.length ? `<button class="btn btn-ghost" id="rv">${tr("Ripassa gli errori ({n})", {n:S.wrong.length})}</button>` : ""}
+      <button class="btn btn-ghost" id="wl">${tr("Tutte le serie")}</button>
     </div>
   </div>`);
   const on = (s, fn) => { const b = v.querySelector(s); if(b) b.onclick = fn; };
@@ -5225,10 +5253,27 @@ let restored = false;
 try{ restored = sessionStorage.getItem("patatino.restored") === "1"; sessionStorage.removeItem("patatino.restored"); }catch(e){}
 // indirizzi diretti: …/#privacy (utile per gli store) e …/#installa
 const hash = (location.hash || "").slice(1);
-if(restored) settings({msg:"Backup ripristinato. Bentornato!"});
+let backTo = null;
+try{ backTo = sessionStorage.getItem("patatino.page"); sessionStorage.removeItem("patatino.page"); }catch(e){}
+if(restored) settings({msg:tr("Backup ripristinato. Bentornato!")});
+else if(backTo === "settings"){ home(); settings(); }
 else if(hash === "privacy"){ home(); privacy(); }
 else if(hash === "installa"){ home(); installScreen(); }
 else home();
+};
+</script>
+<script>
+// sceglie la lingua (salvata, altrimenti quella del telefono; chi usava già l'app resta in italiano) e avvia l'app
+(function(){
+  var L = ["it","en","fr","es","de"], want = null;
+  try{ var st = JSON.parse(localStorage.getItem("goesting.v1") || "null"); if(st) want = st.lang || "it"; }catch(e){}
+  if(!want){ var n = navigator.languages || [navigator.language || ""]; for(var i = 0; i < n.length && !want; i++){ var c = String(n[i]).slice(0, 2).toLowerCase(); if(L.indexOf(c) >= 0) want = c; } }
+  if(L.indexOf(want) < 0) want = "en";
+  window.PATATINO_LANG_WANT = want;
+  if(want === "it") return window.patatinoMain();
+  var t = document.createElement("script"); t.src = "lang/" + want + ".js";
+  t.onload = t.onerror = function(){ window.patatinoMain(); };
+  document.head.appendChild(t);
 })();
 </script>
 <script>if("serviceWorker" in navigator && location.protocol.indexOf("http") === 0){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){});});}</script></body></html>
